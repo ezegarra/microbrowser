@@ -1,0 +1,67 @@
+2014-11-07 03:54:27:0161, setup_loaddata
+2014-11-07 03:54:32:0319, diag_itementered, id=48442, type=1
+2014-11-07 03:54:32:0372, diag_itemexited, id=48442, type=1
+2014-11-07 03:54:36:0232, diag_itementered, id=2109443059, type=0
+2014-11-07 03:54:36:0731, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0762, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0778, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0809, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0825, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0856, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0871, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0903, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0934, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0949, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0981, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:36:0996, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:37:0027, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:37:0043, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:37:0074, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:37:0105, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:37:0121, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:37:0152, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:37:0168, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:37:0199, diag_itemdragged, id=2109443059, type=0
+2014-11-07 03:54:37:0277, diag_itemexited, id=2109443059, type=0
+2014-11-07 03:54:37:0620, diag_itementered, id=13751, type=1
+2014-11-07 03:54:37:0714, diag_itemexited, id=13751, type=1
+2014-11-07 03:54:37:0885, diag_itementered, id=29689, type=1
+2014-11-07 03:54:37:0948, diag_itemexited, id=29689, type=1
+2014-11-07 03:54:37:0979, diag_itementered, id=-771804441, type=0
+2014-11-07 03:54:38:0338, diag_itemexited, id=-771804441, type=0
+2014-11-07 03:54:38:0478, diag_itementered, id=1641682794, type=0
+2014-11-07 03:54:39:0149, diag_itemexited, id=1641682794, type=0
+2014-11-07 03:54:39:0149, diag_itementered, id=1796611198, type=0
+2014-11-07 03:54:39:0638, diag_itemexited, id=1796611198, type=0
+2014-11-07 03:54:39:0794, diag_itementered, id=40480, type=1
+2014-11-07 03:54:39:0840, diag_itemexited, id=40480, type=1
+2014-11-07 03:54:40:0028, diag_itementered, id=47605, type=1
+2014-11-07 03:54:40:0090, diag_itemexited, id=47605, type=1
+2014-11-07 03:54:40:0698, diag_itementered, id=47045, type=1
+2014-11-07 03:54:40:0761, diag_itemexited, id=47045, type=1
+2014-11-07 03:54:40:0948, diag_itementered, id=47045, type=1
+2014-11-07 03:54:41:0637, diag_itemexited, id=47045, type=1
+2014-11-07 03:54:42:0121, diag_itementered, id=43157, type=1
+2014-11-07 03:54:42:0464, diag_itemexited, id=43157, type=1
+2014-11-07 03:54:42:0747, diag_itementered, id=65035, type=1
+2014-11-07 03:54:43:0231, diag_itemexited, id=65035, type=1
+2014-11-07 03:54:43:0543, diag_itementered, id=564, type=1
+2014-11-07 03:54:43:0667, diag_itemexited, id=564, type=1
+2014-11-07 03:54:43:0839, list_mouseentered, 3881
+2014-11-07 03:54:44:0234, list_mouseexited
+2014-11-07 03:54:46:0359, list_mouseentered, 22697
+2014-11-07 03:54:46:0655, list_mouseexited
+2014-11-07 03:54:46:0936, list_mouseentered, 22697
+2014-11-07 03:54:47:0030, list_mouseexited
+2014-11-07 03:54:55:0956, diag_itementered, id=57484, type=1
+2014-11-07 03:55:02:0785, diag_itemexited, id=57484, type=1
+2014-11-07 03:55:03:0461, diag_itementered, id=56843, type=1
+2014-11-07 03:55:09:0165, diag_itemexited, id=56843, type=1
+2014-11-07 03:55:10:0010, list_mouseentered, 23402
+2014-11-07 03:55:10:0416, list_mouseexited
+2014-11-07 03:55:14:0193, list_mouseentered, 57484
+2014-11-07 03:55:14:0287, list_mouseexited
+2014-11-07 03:55:15:0165, diag_itementered, id=57484, type=1
+2014-11-07 03:55:20:0516, diag_itemexited, id=57484, type=1
+2014-11-07 03:55:20:0968, list_mouseentered, 57484
+2014-11-07 03:55:33:0130, list_mouseexited

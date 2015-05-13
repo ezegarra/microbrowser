@@ -1,0 +1,259 @@
+2014-10-31 05:27:49:0832, setup_loaddata
+2014-10-31 05:27:52:0472, list_mouseentered, 2109443059
+2014-10-31 05:27:52:0862, list_mouseexited
+2014-10-31 05:28:01:0373, list_mouseentered, 6658
+2014-10-31 05:28:01:0463, list_mouseexited
+2014-10-31 05:28:02:0183, diag_itementered, id=34571, type=1
+2014-10-31 05:28:03:0113, diag_itemexited, id=34571, type=1
+2014-10-31 05:28:03:0663, list_mouseentered, 34571
+2014-10-31 05:28:04:0173, list_mouseexited
+2014-10-31 05:28:05:0133, diag_itementered, id=6658, type=1
+2014-10-31 05:28:09:0829, diag_itemexited, id=6658, type=1
+2014-10-31 05:28:09:0999, list_mouseentered, 34571
+2014-10-31 05:28:10:0079, list_mouseexited
+2014-10-31 05:28:10:0949, list_mouseentered, 34571
+2014-10-31 05:28:10:0989, list_mouseexited
+2014-10-31 05:28:11:0249, diag_itementered, id=34571, type=1
+2014-10-31 05:28:11:0279, diag_itemexited, id=34571, type=1
+2014-10-31 05:28:11:0619, diag_itementered, id=6658, type=1
+2014-10-31 05:28:13:0439, edge_create, Tuple[0,1,0.8459904003541716,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0439, answer_create, 6659
+2014-10-31 05:28:13:0439, edge_create, Tuple[1,2,0.7513532408889879,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0439, answer_create, 6671
+2014-10-31 05:28:13:0439, edge_create, Tuple[1,3,0.4998746315171969,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0439, answer_create, 6713
+2014-10-31 05:28:13:0439, edge_create, Tuple[1,4,0.174486317124952,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0449, answer_create, 14412
+2014-10-31 05:28:13:0449, edge_create, Tuple[1,5,0.52650279089131,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0449, answer_create, 46727
+2014-10-31 05:28:13:0449, edge_create, Tuple[1,6,0.8379238561193781,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0449, answer_create, 430893
+2014-10-31 05:28:13:0449, edge_create, Tuple[1,7,0.9596481668930751,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0449, answer_create, 1232919
+2014-10-31 05:28:13:0449, edge_create, Tuple[1,8,0.8913348824393083,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0459, answer_create, 3522444
+2014-10-31 05:28:13:0459, edge_create, Tuple[1,9,0.27744057417014745,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0459, answer_create, 14729899
+2014-10-31 05:28:13:0459, edge_create, Tuple[1,10,0.7105991555089622,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0459, answer_create, 17062476
+2014-10-31 05:28:13:0459, edge_create, Tuple[1,11,0.42625864453194395,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0469, edge_create, Tuple[0,12,0.7328941769667755,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0469, edge_create, Tuple[12,13,0.34889660346926055,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0469, edge_create, Tuple[12,14,0.2767632022438723,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0469, edge_create, Tuple[12,15,0.3313632503628666,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0469, edge_create, Tuple[12,16,0.6112240202403828,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0479, edge_create, Tuple[12,17,0.3863617617211609,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0479, edge_create, Tuple[12,18,0.8727283753989412,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0479, edge_create, Tuple[12,19,0.003257669025544363,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0489, edge_create, Tuple[0,20,0.2670130879370932,2,1.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0489, pattern_create, 1796611198
+2014-10-31 05:28:13:0489, edge_create, Tuple[20,21,0.47764730523310617,2,1.0,1414747669142,1414747669142]
+2014-10-31 05:28:13:0509, discussion_open, 6658
+2014-10-31 05:28:13:0509, diag_itemclicked, id=6658, type=1
+2014-10-31 05:28:13:0519, diag_itemexited, id=6658, type=1
+2014-10-31 05:28:13:0709, list_mouseentered, type=detailAnswersList
+2014-10-31 05:28:13:0709, list_mouseexited, type=detailAnswersList
+2014-10-31 05:28:14:0379, list_mouseentered, type=detailAnswersList
+2014-10-31 05:28:14:0549, list_mouseexited, type=detailAnswersList
+2014-10-31 05:28:15:0059, list_mouseentered, type=detailAnswersList
+2014-10-31 05:28:15:0259, list_mouseexited, type=detailAnswersList
+2014-10-31 05:28:15:0903, list_mouseentered, type=detailAnswersList
+2014-10-31 05:28:16:0193, list_mouseexited, type=detailAnswersList
+2014-10-31 05:28:17:0643, list_mouseentered, type=detailAnswersList
+2014-10-31 05:28:17:0693, list_mouseexited, type=detailAnswersList
+2014-10-31 05:28:18:0103, diag_detail_itementered, id=0.003257669025544363, type=1
+2014-10-31 05:28:18:0143, diag_detail_itemexited, id=0.003257669025544363, type=1
+2014-10-31 05:28:18:0163, diag_detail_itementered, id=0.3863617617211609, type=1
+2014-10-31 05:28:18:0183, diag_detail_itemexited, id=0.3863617617211609, type=1
+2014-10-31 05:28:18:0243, diag_detail_itementered, id=0.6112240202403828, type=1
+2014-10-31 05:28:18:0263, diag_detail_itemexited, id=0.6112240202403828, type=1
+2014-10-31 05:28:18:0303, diag_detail_itementered, id=0.6112240202403828, type=1
+2014-10-31 05:28:18:0333, diag_detail_itemexited, id=0.6112240202403828, type=1
+2014-10-31 05:28:18:0503, diag_detail_itementered, id=34571, type=1
+2014-10-31 05:28:18:0583, diag_detail_itemexited, id=34571, type=1
+2014-10-31 05:28:20:0153, list_mouseentered, type=detailRelatedList, item=2092
+2014-10-31 05:28:20:0233, list_mouseexited, type=detailRelatedList
+2014-10-31 05:28:22:0353, list_mouseentered, type=detailRelatedList, item=42102
+2014-10-31 05:28:22:0453, list_mouseexited, type=detailRelatedList
+2014-10-31 05:28:24:0403, diag_detail_itementered, id=6659, type=20
+2014-10-31 05:28:24:0923, diag_detail_itemexited, id=6659, type=20
+2014-10-31 05:28:25:0233, diag_detail_itementered, id=6671, type=21
+2014-10-31 05:28:25:0873, answer_open, VisualItem[tree.nodes,3,id=6671,type=21,title=,body=<p>I've used both, but I have to agree with Justin Standard that you shouldn't really consider rewriting your existing tests to any new format.  Regardless of the decision, it is pretty trivial to run both.  TestNG strives to be much more configurable than JUnit, but in the end they both work equally well.</p>
+
+<p>TestNG has a neat feature where you can mark tests as a particular group, and then easily run all tests of a specific group, or exclude tests of a particular group.  Thus you can mark tests that run slowly as in the "slow" group and then ignore them when you want quick results.  A suggestion from their documentation is to mark some subset as "checkin" tests which should be run whenever you check new files in.  I never saw such a feature in JUnit, but then again, if you don't have it, you don't REALLY miss it.</p>
+
+<p>For all its claims of high configuration, I did run into a corner case the a couple weeks ago where I couldn't do what I wanted to do... I wish I could remember what it is, but I wanted to bring it up so you know that it's not perfect.</p>
+
+<p>The biggest advantage TestNG has is annotations... which JUnit added in version 4 anyways.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414747669142L,lastactivitydate=0L,tags=,score=36]
+2014-10-31 05:28:25:0883, diag_detail_itemclicked, id=6671, type=21
+2014-10-31 05:28:26:0854, diag_detail_itemexited, id=6671, type=21
+2014-10-31 05:28:26:0974, diag_detail_itementered, id=0.9596481668930751, type=4
+2014-10-31 05:28:27:0004, diag_detail_itemexited, id=0.9596481668930751, type=4
+2014-10-31 05:28:27:0054, diag_detail_itementered, id=0.8379238561193781, type=4
+2014-10-31 05:28:27:0074, diag_detail_itemexited, id=0.8379238561193781, type=4
+2014-10-31 05:28:27:0194, diag_detail_itementered, id=0.174486317124952, type=4
+2014-10-31 05:28:27:0224, diag_detail_itemexited, id=0.174486317124952, type=4
+2014-10-31 05:28:27:0244, diag_detail_itementered, id=6671, type=21
+2014-10-31 05:28:27:0284, diag_detail_itemexited, id=6671, type=21
+2014-10-31 05:28:27:0554, diag_detail_itementered, id=0.8459904003541716, type=4
+2014-10-31 05:28:27:0574, diag_detail_itemexited, id=0.8459904003541716, type=4
+2014-10-31 05:28:27:0684, diag_detail_itementered, id=6658, type=1
+2014-10-31 05:28:28:0024, diag_detail_itemclicked, id=6658, type=1
+2014-10-31 05:28:28:0474, diag_detail_itemexited, id=6658, type=1
+2014-10-31 05:28:28:0514, diag_detail_itementered, id=6658, type=1
+2014-10-31 05:28:28:0544, diag_detail_itemexited, id=6658, type=1
+2014-10-31 05:28:28:0544, diag_detail_itementered, id=6658, type=1
+2014-10-31 05:28:28:0614, diag_detail_itemexited, id=6658, type=1
+2014-10-31 05:28:28:0754, diag_detail_itementered, id=-675951677, type=3
+2014-10-31 05:28:28:0864, diag_detail_itemexited, id=-675951677, type=3
+2014-10-31 05:28:28:0904, diag_detail_itementered, id=0.2767632022438723, type=1
+2014-10-31 05:28:28:0934, diag_detail_itemexited, id=0.2767632022438723, type=1
+2014-10-31 05:28:29:0034, diag_detail_itementered, id=0.6112240202403828, type=1
+2014-10-31 05:28:29:0074, diag_detail_itemexited, id=0.6112240202403828, type=1
+2014-10-31 05:28:29:0344, diag_detail_itementered, id=0.3863617617211609, type=1
+2014-10-31 05:28:29:0374, diag_detail_itemexited, id=0.3863617617211609, type=1
+2014-10-31 05:28:29:0374, diag_detail_itementered, id=-675951677, type=3
+2014-10-31 05:28:29:0404, diag_detail_itemexited, id=-675951677, type=3
+2014-10-31 05:28:29:0794, diag_detail_itementered, id=260889430, type=3
+2014-10-31 05:28:29:0834, diag_detail_itemexited, id=260889430, type=3
+2014-10-31 05:28:30:0014, diag_detail_itementered, id=0.47764730523310617, type=2
+2014-10-31 05:28:30:0164, diag_detail_itemexited, id=0.47764730523310617, type=2
+2014-10-31 05:28:30:0184, diag_detail_itementered, id=0.47764730523310617, type=2
+2014-10-31 05:28:30:0204, diag_detail_itemexited, id=0.47764730523310617, type=2
+2014-10-31 05:28:30:0294, diag_detail_itementered, id=0.47764730523310617, type=2
+2014-10-31 05:28:30:0374, diag_detail_itemexited, id=0.47764730523310617, type=2
+2014-10-31 05:28:30:0374, diag_detail_itementered, id=1796611198, type=0
+2014-10-31 05:28:30:0634, diag_detail_itemexited, id=1796611198, type=0
+2014-10-31 05:28:30:0634, diag_detail_itementered, id=0.47764730523310617, type=2
+2014-10-31 05:28:30:0664, diag_detail_itemexited, id=0.47764730523310617, type=2
+2014-10-31 05:28:31:0264, diag_detail_itementered, id=0.003257669025544363, type=1
+2014-10-31 05:28:31:0304, diag_detail_itemexited, id=0.003257669025544363, type=1
+2014-10-31 05:28:31:0354, diag_detail_itementered, id=0.8727283753989412, type=1
+2014-10-31 05:28:31:0374, diag_detail_itemexited, id=0.8727283753989412, type=1
+2014-10-31 05:28:31:0644, diag_detail_itementered, id=0.3863617617211609, type=1
+2014-10-31 05:28:31:0664, diag_detail_itemexited, id=0.3863617617211609, type=1
+2014-10-31 05:28:31:0844, diag_detail_itementered, id=34571, type=1
+2014-10-31 05:28:32:0344, diag_detail_itemexited, id=34571, type=1
+2014-10-31 05:28:32:0464, diag_detail_itementered, id=42102, type=1
+2014-10-31 05:28:32:0494, diag_detail_itemexited, id=42102, type=1
+2014-10-31 05:28:32:0724, list_mouseentered, type=detailRelatedList, item=2092
+2014-10-31 05:28:33:0194, list_mouseexited, type=detailRelatedList
+2014-10-31 05:28:34:0264, list_mouseentered, type=detailAnswersList
+2014-10-31 05:28:34:0274, list_mouseexited, type=detailAnswersList
+2014-10-31 05:28:34:0764, list_mouseentered, type=detailAnswersList
+2014-10-31 05:28:35:0494, answer_open, VisualItem[tree.nodes,4,id=6713,type=20,title=,body=<p>About a year ago, we had the same problem. I spent sometime considering which move was better, and eventually we realized that TestNG has no 'killer features'. It's nice, and has some features JUnit 4 doesn't have, but we don't need them.<br>
+We didn't want people to feel uncomfortable writing tests while getting to know TestNG because we wanted them to keep writing a lot of tests.<br>
+Also, JUnit is pretty much the de-facto standard in the Java world. There's no decent tool that doesn't support it from the box, you can find a lot of help on the web and they added a lot of new features in the past year which shows it's alive.</p>
+
+<p>We decided to stick with JUnit and never looked back.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414747669142L,lastactivitydate=0L,tags=,score=12]
+2014-10-31 05:28:35:0494, list_itemclicked, type=detailAnswersList, item=8219
+2014-10-31 05:28:36:0734, list_mouseexited, type=detailAnswersList
+2014-10-31 05:28:37:0354, diag_detail_itementered, id=6659, type=20
+2014-10-31 05:28:37:0694, answer_open, VisualItem[tree.nodes,2,id=6659,type=20,title=,body=<p>First I would say, don't rewrite all your tests just to suit the latest fad.  Junit3 works perfectly well, and the introduction of annotations in 4 doesn't buy you very much (in my opinion).  It is much more important that you guys <em>write</em> tests, and it sounds like you do.  </p>
+
+<p>Use whatever seems most natural and helps you get your work done.</p>
+
+<p>I can't comment on TestNG b/c I haven't used it.  But I would recommend <a href="http://www.unitils.org/summary.html">unitils</a>, a great wrapper for JUnit/TestNG/DBUnit/EasyMock, regardless of which route you take. (It supports all the flavors mentioned above)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414747669142L,lastactivitydate=0L,tags=,score=16]
+2014-10-31 05:28:37:0694, diag_detail_itemclicked, id=6659, type=20
+2014-10-31 05:28:38:0084, diag_detail_itemexited, id=6659, type=20
+2014-10-31 05:28:39:0304, diag_detail_itementered, id=0.174486317124952, type=4
+2014-10-31 05:28:39:0314, diag_detail_itemexited, id=0.174486317124952, type=4
+2014-10-31 05:28:39:0738, diag_detail_itementered, id=6658, type=1
+2014-10-31 05:28:40:0048, diag_detail_itemclicked, id=6658, type=1
+2014-10-31 05:28:40:0478, diag_detail_itemexited, id=6658, type=1
+2014-10-31 05:28:41:0128, diag_detail_itementered, id=59128, type=1
+2014-10-31 05:28:41:0148, diag_detail_itemexited, id=59128, type=1
+2014-10-31 05:28:41:0508, diag_detail_itementered, id=1796611198, type=0
+2014-10-31 05:28:43:0328, diag_detail_itemclicked, id=1796611198, type=0
+2014-10-31 05:28:43:0928, edge_create, Tuple[0,1,0.999631443046016,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:43:0928, edge_create, Tuple[1,2,0.017590065803764654,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:43:0928, edge_create, Tuple[1,3,0.6098837683358492,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:43:0938, edge_create, Tuple[1,4,0.25289373047317176,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:43:0938, edge_create, Tuple[1,5,0.5342681902876434,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:43:0938, edge_create, Tuple[0,6,0.25889140867210314,2,1.0,1414747669142,1414747669142]
+2014-10-31 05:28:43:0938, pattern_create, -771804441
+2014-10-31 05:28:43:0938, edge_create, Tuple[6,7,0.38435866617911196,2,1.0,1414747669142,1414747669142]
+2014-10-31 05:28:43:0988, pattern_open, 1796611198
+2014-10-31 05:28:43:0988, diag_detail_itemclicked, id=1796611198, type=0
+2014-10-31 05:28:46:0958, diag_detail_itementered, id=40471, type=1
+2014-10-31 05:28:47:0698, diag_detail_itemexited, id=40471, type=1
+2014-10-31 05:28:48:0988, list_mouseentered, type=detailRelatedList, item=21934
+2014-10-31 05:28:49:0438, list_itemclicked, type=detailRelatedList, item=6658
+2014-10-31 05:28:49:0678, list_itemclicked, type=detailRelatedList, item=6658
+2014-10-31 05:28:50:0058, edge_create, Tuple[0,1,0.8729013083066071,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0058, answer_create, 6659
+2014-10-31 05:28:50:0058, edge_create, Tuple[1,2,0.31772882260616353,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0058, answer_create, 6671
+2014-10-31 05:28:50:0068, edge_create, Tuple[1,3,0.8216149578202552,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0068, answer_create, 6713
+2014-10-31 05:28:50:0068, edge_create, Tuple[1,4,0.12733969688658375,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0068, answer_create, 14412
+2014-10-31 05:28:50:0068, edge_create, Tuple[1,5,0.8982448663372508,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0068, answer_create, 46727
+2014-10-31 05:28:50:0068, edge_create, Tuple[1,6,0.03348601538837881,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0068, answer_create, 430893
+2014-10-31 05:28:50:0068, edge_create, Tuple[1,7,0.3022287550791558,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0068, answer_create, 1232919
+2014-10-31 05:28:50:0068, edge_create, Tuple[1,8,0.2823644865355839,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0068, answer_create, 3522444
+2014-10-31 05:28:50:0068, edge_create, Tuple[1,9,0.9701110951709742,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0068, answer_create, 14729899
+2014-10-31 05:28:50:0068, edge_create, Tuple[1,10,0.32662616843422243,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0078, answer_create, 17062476
+2014-10-31 05:28:50:0078, edge_create, Tuple[1,11,0.7380072569127406,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0078, edge_create, Tuple[0,12,0.7665690558296587,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0078, edge_create, Tuple[12,13,0.9535240953444876,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0078, edge_create, Tuple[12,14,0.18720362489917874,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0078, edge_create, Tuple[12,15,0.43351907064050144,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0078, edge_create, Tuple[12,16,0.24820004258829986,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0078, edge_create, Tuple[12,17,0.6946006410862957,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0088, edge_create, Tuple[12,18,0.7232366420012047,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0088, edge_create, Tuple[12,19,0.1824099949464909,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0088, edge_create, Tuple[0,20,0.8856830832341142,2,1.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0088, pattern_create, 1796611198
+2014-10-31 05:28:50:0088, edge_create, Tuple[20,21,0.8257039336479537,2,1.0,1414747669142,1414747669142]
+2014-10-31 05:28:50:0098, discussion_open, 6658
+2014-10-31 05:28:51:0128, list_mouseentered, type=detailAnswersList
+2014-10-31 05:28:51:0278, list_mouseexited, type=detailAnswersList
+2014-10-31 05:28:59:0809, pattern_change_cancel
+2014-10-31 05:28:59:0809, pattern_change_open
+2014-10-31 05:29:00:0219, edge_create, Tuple[0,1,0.5826529943621352,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0229, answer_create, 6659
+2014-10-31 05:29:00:0229, edge_create, Tuple[1,2,0.939931431091829,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0229, answer_create, 6671
+2014-10-31 05:29:00:0229, edge_create, Tuple[1,3,0.30366908173614393,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0229, answer_create, 6713
+2014-10-31 05:29:00:0229, edge_create, Tuple[1,4,0.11584038102384309,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0229, answer_create, 14412
+2014-10-31 05:29:00:0229, edge_create, Tuple[1,5,0.4485321308417406,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0229, answer_create, 46727
+2014-10-31 05:29:00:0229, edge_create, Tuple[1,6,0.8307666114053266,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0229, answer_create, 430893
+2014-10-31 05:29:00:0229, edge_create, Tuple[1,7,0.13714304038502412,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0229, answer_create, 1232919
+2014-10-31 05:29:00:0239, edge_create, Tuple[1,8,0.7083713911172722,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0239, answer_create, 3522444
+2014-10-31 05:29:00:0239, edge_create, Tuple[1,9,0.22827985176439336,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0239, answer_create, 14729899
+2014-10-31 05:29:00:0239, edge_create, Tuple[1,10,0.48705784243556416,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0239, answer_create, 17062476
+2014-10-31 05:29:00:0239, edge_create, Tuple[1,11,0.5615949488419842,4,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0239, edge_create, Tuple[0,12,0.21408787454274636,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0239, edge_create, Tuple[12,13,0.7849105702371589,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0249, edge_create, Tuple[12,14,0.10313998733407181,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0249, edge_create, Tuple[12,15,0.8454162439103334,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0249, edge_create, Tuple[12,16,0.03492250384231932,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0249, edge_create, Tuple[12,17,0.3174012496047858,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0259, edge_create, Tuple[12,18,0.26633709137658323,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0259, edge_create, Tuple[12,19,0.11009877104126686,1,0.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0259, edge_create, Tuple[0,20,0.4820504747814315,2,1.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0259, pattern_create, 1796611198
+2014-10-31 05:29:00:0259, edge_create, Tuple[20,21,0.7871203074000921,2,1.0,1414747669142,1414747669142]
+2014-10-31 05:29:00:0269, discussion_open, 6658
+2014-10-31 05:29:00:0539, setup_loaddata
+2014-10-31 05:29:00:0839, list_mouseentered, type=detailAnswersList
+2014-10-31 05:29:00:0839, list_mouseexited, type=detailAnswersList
+2014-10-31 05:30:10:0027, list_mouseentered, type=detailAnswersList
+2014-10-31 05:30:10:0057, list_mouseexited, type=detailAnswersList

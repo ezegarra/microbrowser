@@ -1,0 +1,1363 @@
+2014-12-04 11:42:17:0543, setup_loaddata_begin
+2014-12-04 11:42:19:0821, setup_loaddata_end
+2014-12-04 11:42:19:0868, setup_createactions_begin
+2014-12-04 11:42:20:0055, setup_createactions_end
+2014-12-04 11:42:21:0989, diag_itementered, id=29689, type=1
+2014-12-04 11:42:22:0067, diag_itemexited, id=29689, type=1
+2014-12-04 11:42:22:0067, diag_itementered, id=46898, type=1
+2014-12-04 11:42:22:0161, diag_itemexited, id=46898, type=1
+2014-12-04 11:42:24:0111, diag_itemexited, id=-747161665, type=4
+2014-12-04 11:42:31:0849, diag_itementered, id=51390, type=1
+2014-12-04 11:42:31:0911, diag_itemexited, id=51390, type=1
+2014-12-04 11:42:31:0942, diag_itementered, id=56974, type=1
+2014-12-04 11:42:31:0989, diag_itemexited, id=56974, type=1
+2014-12-04 11:42:32:0036, diag_itemexited, id=1, type=4
+2014-12-04 11:42:32:0067, diag_itementered, id=1, type=0
+2014-12-04 11:42:32:0129, diag_itemexited, id=1, type=0
+2014-12-04 11:42:32:0363, diag_itemexited, id=1, type=4
+2014-12-04 11:42:32:0363, diag_itementered, id=1, type=0
+2014-12-04 11:42:32:0395, diag_itemexited, id=1, type=0
+2014-12-04 11:42:32:0441, diag_itemexited, id=1, type=4
+2014-12-04 11:42:32:0504, diag_itementered, id=41107, type=1
+2014-12-04 11:42:32:0566, diag_itemexited, id=41107, type=1
+2014-12-04 11:42:32:0566, diag_itementered, id=-1404308192, type=0
+2014-12-04 11:42:32:0597, diag_itemexited, id=-1404308192, type=0
+2014-12-04 11:42:32:0660, diag_itemexited, id=-1404308192, type=4
+2014-12-04 11:42:32:0660, diag_itementered, id=2, type=0
+2014-12-04 11:42:32:0738, diag_itemexited, id=2, type=0
+2014-12-04 11:42:32:0800, diag_itemexited, id=-1404308192, type=4
+2014-12-04 11:42:32:0800, diag_itementered, id=-1404308192, type=0
+2014-12-04 11:42:32:0878, diag_itemexited, id=-1404308192, type=0
+2014-12-04 11:42:33:0284, diag_itemexited, id=-1404308192, type=4
+2014-12-04 11:42:33:0284, diag_itementered, id=-1404308192, type=0
+2014-12-04 11:42:34:0392, diag_itemexited, id=-1404308192, type=0
+2014-12-04 11:42:34:0392, diag_itementered, id=41107, type=1
+2014-12-04 11:42:34:0454, diag_itemexited, id=41107, type=1
+2014-12-04 11:42:34:0626, diag_itemexited, id=1, type=4
+2014-12-04 11:42:34:0626, diag_itementered, id=1, type=0
+2014-12-04 11:42:38:0682, diag_itemexited, id=1, type=0
+2014-12-04 11:42:38:0744, diag_itemexited, id=1, type=4
+2014-12-04 11:42:38:0760, diag_itementered, id=25331, type=1
+2014-12-04 11:42:38:0822, diag_itemexited, id=25331, type=1
+2014-12-04 11:42:38:0822, diag_itemexited, id=3, type=4
+2014-12-04 11:42:38:0822, diag_itementered, id=4, type=0
+2014-12-04 11:42:38:0884, diag_itemexited, id=4, type=0
+2014-12-04 11:42:38:0962, diag_itemexited, id=4, type=4
+2014-12-04 11:42:38:0962, diag_itementered, id=40471, type=1
+2014-12-04 11:42:39:0087, diag_itemexited, id=40471, type=1
+2014-12-04 11:42:39:0150, diag_itemexited, id=4, type=4
+2014-12-04 11:42:39:0150, diag_itementered, id=4, type=0
+2014-12-04 11:42:41:0006, diag_itemexited, id=4, type=0
+2014-12-04 11:42:41:0365, diag_itemexited, id=4, type=4
+2014-12-04 11:42:41:0365, diag_itementered, id=4, type=0
+2014-12-04 11:42:43:0642, diag_itemexited, id=4, type=0
+2014-12-04 11:42:43:0705, diag_itemexited, id=4, type=4
+2014-12-04 11:42:43:0986, diag_itemexited, id=3, type=4
+2014-12-04 11:42:43:0986, diag_itementered, id=3, type=0
+2014-12-04 11:42:44:0266, diag_itemexited, id=3, type=0
+2014-12-04 11:42:44:0266, diag_itementered, id=40480, type=1
+2014-12-04 11:42:44:0329, diag_itemexited, id=40480, type=1
+2014-12-04 11:42:44:0344, diag_itemexited, id=-1404308192, type=4
+2014-12-04 11:42:44:0344, diag_itementered, id=2, type=0
+2014-12-04 11:42:49:0009, diag_itemexited, id=2, type=0
+2014-12-04 11:42:49:0134, diag_itemexited, id=2, type=4
+2014-12-04 11:42:49:0134, diag_itementered, id=2, type=0
+2014-12-04 11:42:50:0210, edge_create, Tuple[0,1,0.6537259426491064,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:50:0210, edge_create, Tuple[1,2,0.6512319144506474,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:50:0226, edge_create, Tuple[1,3,0.3921395563401504,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:50:0226, edge_create, Tuple[1,4,0.12018406493841993,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:50:0272, pattern_open, 2
+2014-12-04 11:42:50:0272, diag_itemclicked, id=2, type=0
+2014-12-04 11:42:50:0678, diag_itemexited, id=2, type=0
+2014-12-04 11:42:51:0864, diag_detail_itementered, id=23106, type=1
+2014-12-04 11:42:53:0408, diag_detail_itemexited, id=23106, type=1
+2014-12-04 11:42:53:0845, diag_detail_itementered, id=23445, type=1
+2014-12-04 11:42:55:0592, diag_detail_itemclicked, id=23445, type=1
+2014-12-04 11:42:55:0842, edge_create, Tuple[0,1,0.5187563199478614,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0842, answer_create, 23469
+2014-12-04 11:42:55:0857, edge_create, Tuple[1,2,0.05867798773703781,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0857, answer_create, 23944
+2014-12-04 11:42:55:0857, edge_create, Tuple[1,3,0.3037244891871599,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0857, answer_create, 36997
+2014-12-04 11:42:55:0857, edge_create, Tuple[1,4,0.7780350318662861,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0857, answer_create, 1167234
+2014-12-04 11:42:55:0857, edge_create, Tuple[1,5,0.18764813708169792,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0857, answer_create, 3104434
+2014-12-04 11:42:55:0857, edge_create, Tuple[1,6,0.29252690083688304,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0857, answer_create, 4469413
+2014-12-04 11:42:55:0857, edge_create, Tuple[1,7,0.1884620413385163,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0857, answer_create, 8638140
+2014-12-04 11:42:55:0873, edge_create, Tuple[1,8,0.4362031667196148,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0873, edge_create, Tuple[0,9,0.7136553118450875,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0873, edge_create, Tuple[9,10,0.4522070172681262,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0873, edge_create, Tuple[9,11,0.5224028490134132,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0891, edge_create, Tuple[9,12,0.8057174212883577,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0891, edge_create, Tuple[9,13,0.12029992395538769,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0906, edge_create, Tuple[9,14,0.10283870797488104,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0906, edge_create, Tuple[9,15,0.47375368831229625,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0922, edge_create, Tuple[9,16,0.6136237446179723,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0922, edge_create, Tuple[9,17,0.20811209799826513,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0937, edge_create, Tuple[9,18,0.17471734066290423,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0937, edge_create, Tuple[9,19,0.46287755248090623,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0969, edge_create, Tuple[9,20,0.9407296927941828,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0969, edge_create, Tuple[9,21,0.08155141909057873,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0984, edge_create, Tuple[9,22,0.14640122336347483,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:55:0984, edge_create, Tuple[9,23,0.5286110824667936,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0000, edge_create, Tuple[9,24,0.3950318905005993,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0000, edge_create, Tuple[9,25,0.770774203887084,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0015, edge_create, Tuple[9,26,0.9917809539935086,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0015, edge_create, Tuple[9,27,0.7061300540405662,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0031, edge_create, Tuple[9,28,0.060676209830587746,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0031, edge_create, Tuple[9,29,0.648106037739542,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0047, edge_create, Tuple[9,30,0.017015972918408506,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0047, edge_create, Tuple[9,31,0.8999138454169996,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0062, edge_create, Tuple[0,32,0.885933498948883,2,1.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0062, pattern_create, 2
+2014-12-04 11:42:56:0062, edge_create, Tuple[32,33,0.8205245990053499,2,1.0,1417711338089,1417711338089]
+2014-12-04 11:42:56:0078, discussion_open, 23445
+2014-12-04 11:42:56:0078, diag_detail_itemclicked, id=23445, type=1
+2014-12-04 11:42:56:0858, diag_detail_itementered, id=0.7780350318662861, type=4
+2014-12-04 11:42:56:0905, diag_detail_itemexited, id=0.7780350318662861, type=4
+2014-12-04 11:42:56:0983, answer_open, VisualItem[tree.nodes,5,id=1167234,type=20,title=,body=<p>Apache's commons.collections library has a CollectionUtils class that provides easy-to-use methods for Collection manipulation/checking, such as intersection, difference, and union.</p>
+
+<p>The org.apache.commons.collections.CollectionUtils API docs are <a href="http://commons.apache.org/collections/apidocs/org/apache/commons/collections/CollectionUtils.html">here</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-04 11:42:56:0983, answer_open, VisualItem[tree.nodes,5,id=1167234,type=20,title=,body=<p>Apache's commons.collections library has a CollectionUtils class that provides easy-to-use methods for Collection manipulation/checking, such as intersection, difference, and union.</p>
+
+<p>The org.apache.commons.collections.CollectionUtils API docs are <a href="http://commons.apache.org/collections/apidocs/org/apache/commons/collections/CollectionUtils.html">here</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-04 11:42:56:0998, diag_detail_itementered, id=1167234, type=20
+2014-12-04 11:42:59:0167, diag_detail_itemexited, id=1167234, type=20
+2014-12-04 11:42:59:0276, answer_open, VisualItem[tree.nodes,4,id=36997,type=20,title=,body=<p>I'd move to lists and solve it this way:<br/></p>
+
+<ol>
+<li>Sort both lists by id ascending using custom <a href="http://java.sun.com/j2se/1.5.0/docs/api/index.html?java/util/Comparator.html" rel="nofollow">Comparator</a> if objects in lists aren't <a href="http://java.sun.com/j2se/1.5.0/docs/api/index.html?java/lang/Comparable.html" rel="nofollow">Comparable</a></li>
+<li>Iterate over elements in both lists like in merge phase in <a href="http://en.wikipedia.org/wiki/Merge_sort" rel="nofollow">merge sort algorithm</a>, but instead of merging lists, you check your logic.</li>
+</ol>
+
+<p>The code would be more or less like this:</p>
+
+<pre><code>/* Main method */
+private void execute(Collection&lt;Foo&gt; oldSet, Collection&lt;Foo&gt; newSet) {
+  List&lt;Foo&gt; oldList = asSortedList(oldSet);
+  List&lt;Foo&gt; newList = asSortedList(newSet);
+
+  int oldIndex = 0;
+  int newIndex = 0;
+  // Iterate over both collections but not always in the same pace
+  while( oldIndex &lt; oldList.size() 
+      &amp;&amp; newIndex &lt; newIndex.size())  {
+    Foo oldObject = oldList.get(oldIndex);
+    Foo newObject = newList.get(newIndex);
+
+    // Your logic here
+    if(oldObject.getId() &lt; newObject.getId()) {
+      doRemove(oldObject);
+      oldIndex++;
+    } else if( oldObject.getId() &gt; newObject.getId() ) {
+      doAdd(newObject);
+      newIndex++;
+    } else if( oldObject.getId() == newObject.getId() 
+            &amp;&amp; isModified(oldObject, newObject) ) {
+      doUpdate(oldObject, newObject);
+      oldIndex++;
+      newIndex++;
+    } else {
+      ... 
+    }
+  }// while
+
+  // Check if there are any objects left in *oldList* or *newList*
+
+  for(; oldIndex &lt; oldList.size(); oldIndex++ ) {
+    doRemove( oldList.get(oldIndex) );  
+  }// for( oldIndex )
+
+  for(; newIndex &lt; newList.size(); newIndex++ ) {
+    doAdd( newList.get(newIndex) );
+  }// for( newIndex ) 
+}// execute( oldSet, newSet )
+
+/** Create sorted list from collection 
+    If you actually perform any actions on input collections than you should 
+    always return new instance of list to keep algorithm simple.
+*/
+private List&lt;Foo&gt; asSortedList(Collection&lt;Foo&gt; data) {
+  List&lt;Foo&gt; resultList;
+  if(data instanceof List) {
+     resultList = (List&lt;Foo&gt;)data;
+  } else {
+     resultList = new ArrayList&lt;Foo&gt;(data);
+  }
+  Collections.sort(resultList)
+  return resultList;
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-04 11:42:59:0291, answer_open, VisualItem[tree.nodes,4,id=36997,type=20,title=,body=<p>I'd move to lists and solve it this way:<br/></p>
+
+<ol>
+<li>Sort both lists by id ascending using custom <a href="http://java.sun.com/j2se/1.5.0/docs/api/index.html?java/util/Comparator.html" rel="nofollow">Comparator</a> if objects in lists aren't <a href="http://java.sun.com/j2se/1.5.0/docs/api/index.html?java/lang/Comparable.html" rel="nofollow">Comparable</a></li>
+<li>Iterate over elements in both lists like in merge phase in <a href="http://en.wikipedia.org/wiki/Merge_sort" rel="nofollow">merge sort algorithm</a>, but instead of merging lists, you check your logic.</li>
+</ol>
+
+<p>The code would be more or less like this:</p>
+
+<pre><code>/* Main method */
+private void execute(Collection&lt;Foo&gt; oldSet, Collection&lt;Foo&gt; newSet) {
+  List&lt;Foo&gt; oldList = asSortedList(oldSet);
+  List&lt;Foo&gt; newList = asSortedList(newSet);
+
+  int oldIndex = 0;
+  int newIndex = 0;
+  // Iterate over both collections but not always in the same pace
+  while( oldIndex &lt; oldList.size() 
+      &amp;&amp; newIndex &lt; newIndex.size())  {
+    Foo oldObject = oldList.get(oldIndex);
+    Foo newObject = newList.get(newIndex);
+
+    // Your logic here
+    if(oldObject.getId() &lt; newObject.getId()) {
+      doRemove(oldObject);
+      oldIndex++;
+    } else if( oldObject.getId() &gt; newObject.getId() ) {
+      doAdd(newObject);
+      newIndex++;
+    } else if( oldObject.getId() == newObject.getId() 
+            &amp;&amp; isModified(oldObject, newObject) ) {
+      doUpdate(oldObject, newObject);
+      oldIndex++;
+      newIndex++;
+    } else {
+      ... 
+    }
+  }// while
+
+  // Check if there are any objects left in *oldList* or *newList*
+
+  for(; oldIndex &lt; oldList.size(); oldIndex++ ) {
+    doRemove( oldList.get(oldIndex) );  
+  }// for( oldIndex )
+
+  for(; newIndex &lt; newList.size(); newIndex++ ) {
+    doAdd( newList.get(newIndex) );
+  }// for( newIndex ) 
+}// execute( oldSet, newSet )
+
+/** Create sorted list from collection 
+    If you actually perform any actions on input collections than you should 
+    always return new instance of list to keep algorithm simple.
+*/
+private List&lt;Foo&gt; asSortedList(Collection&lt;Foo&gt; data) {
+  List&lt;Foo&gt; resultList;
+  if(data instanceof List) {
+     resultList = (List&lt;Foo&gt;)data;
+  } else {
+     resultList = new ArrayList&lt;Foo&gt;(data);
+  }
+  Collections.sort(resultList)
+  return resultList;
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-04 11:42:59:0291, diag_detail_itementered, id=36997, type=20
+2014-12-04 11:42:59:0369, diag_detail_itemexited, id=36997, type=20
+2014-12-04 11:42:59:0697, answer_open, VisualItem[tree.nodes,4,id=36997,type=20,title=,body=<p>I'd move to lists and solve it this way:<br/></p>
+
+<ol>
+<li>Sort both lists by id ascending using custom <a href="http://java.sun.com/j2se/1.5.0/docs/api/index.html?java/util/Comparator.html" rel="nofollow">Comparator</a> if objects in lists aren't <a href="http://java.sun.com/j2se/1.5.0/docs/api/index.html?java/lang/Comparable.html" rel="nofollow">Comparable</a></li>
+<li>Iterate over elements in both lists like in merge phase in <a href="http://en.wikipedia.org/wiki/Merge_sort" rel="nofollow">merge sort algorithm</a>, but instead of merging lists, you check your logic.</li>
+</ol>
+
+<p>The code would be more or less like this:</p>
+
+<pre><code>/* Main method */
+private void execute(Collection&lt;Foo&gt; oldSet, Collection&lt;Foo&gt; newSet) {
+  List&lt;Foo&gt; oldList = asSortedList(oldSet);
+  List&lt;Foo&gt; newList = asSortedList(newSet);
+
+  int oldIndex = 0;
+  int newIndex = 0;
+  // Iterate over both collections but not always in the same pace
+  while( oldIndex &lt; oldList.size() 
+      &amp;&amp; newIndex &lt; newIndex.size())  {
+    Foo oldObject = oldList.get(oldIndex);
+    Foo newObject = newList.get(newIndex);
+
+    // Your logic here
+    if(oldObject.getId() &lt; newObject.getId()) {
+      doRemove(oldObject);
+      oldIndex++;
+    } else if( oldObject.getId() &gt; newObject.getId() ) {
+      doAdd(newObject);
+      newIndex++;
+    } else if( oldObject.getId() == newObject.getId() 
+            &amp;&amp; isModified(oldObject, newObject) ) {
+      doUpdate(oldObject, newObject);
+      oldIndex++;
+      newIndex++;
+    } else {
+      ... 
+    }
+  }// while
+
+  // Check if there are any objects left in *oldList* or *newList*
+
+  for(; oldIndex &lt; oldList.size(); oldIndex++ ) {
+    doRemove( oldList.get(oldIndex) );  
+  }// for( oldIndex )
+
+  for(; newIndex &lt; newList.size(); newIndex++ ) {
+    doAdd( newList.get(newIndex) );
+  }// for( newIndex ) 
+}// execute( oldSet, newSet )
+
+/** Create sorted list from collection 
+    If you actually perform any actions on input collections than you should 
+    always return new instance of list to keep algorithm simple.
+*/
+private List&lt;Foo&gt; asSortedList(Collection&lt;Foo&gt; data) {
+  List&lt;Foo&gt; resultList;
+  if(data instanceof List) {
+     resultList = (List&lt;Foo&gt;)data;
+  } else {
+     resultList = new ArrayList&lt;Foo&gt;(data);
+  }
+  Collections.sort(resultList)
+  return resultList;
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-04 11:42:59:0697, answer_open, VisualItem[tree.nodes,4,id=36997,type=20,title=,body=<p>I'd move to lists and solve it this way:<br/></p>
+
+<ol>
+<li>Sort both lists by id ascending using custom <a href="http://java.sun.com/j2se/1.5.0/docs/api/index.html?java/util/Comparator.html" rel="nofollow">Comparator</a> if objects in lists aren't <a href="http://java.sun.com/j2se/1.5.0/docs/api/index.html?java/lang/Comparable.html" rel="nofollow">Comparable</a></li>
+<li>Iterate over elements in both lists like in merge phase in <a href="http://en.wikipedia.org/wiki/Merge_sort" rel="nofollow">merge sort algorithm</a>, but instead of merging lists, you check your logic.</li>
+</ol>
+
+<p>The code would be more or less like this:</p>
+
+<pre><code>/* Main method */
+private void execute(Collection&lt;Foo&gt; oldSet, Collection&lt;Foo&gt; newSet) {
+  List&lt;Foo&gt; oldList = asSortedList(oldSet);
+  List&lt;Foo&gt; newList = asSortedList(newSet);
+
+  int oldIndex = 0;
+  int newIndex = 0;
+  // Iterate over both collections but not always in the same pace
+  while( oldIndex &lt; oldList.size() 
+      &amp;&amp; newIndex &lt; newIndex.size())  {
+    Foo oldObject = oldList.get(oldIndex);
+    Foo newObject = newList.get(newIndex);
+
+    // Your logic here
+    if(oldObject.getId() &lt; newObject.getId()) {
+      doRemove(oldObject);
+      oldIndex++;
+    } else if( oldObject.getId() &gt; newObject.getId() ) {
+      doAdd(newObject);
+      newIndex++;
+    } else if( oldObject.getId() == newObject.getId() 
+            &amp;&amp; isModified(oldObject, newObject) ) {
+      doUpdate(oldObject, newObject);
+      oldIndex++;
+      newIndex++;
+    } else {
+      ... 
+    }
+  }// while
+
+  // Check if there are any objects left in *oldList* or *newList*
+
+  for(; oldIndex &lt; oldList.size(); oldIndex++ ) {
+    doRemove( oldList.get(oldIndex) );  
+  }// for( oldIndex )
+
+  for(; newIndex &lt; newList.size(); newIndex++ ) {
+    doAdd( newList.get(newIndex) );
+  }// for( newIndex ) 
+}// execute( oldSet, newSet )
+
+/** Create sorted list from collection 
+    If you actually perform any actions on input collections than you should 
+    always return new instance of list to keep algorithm simple.
+*/
+private List&lt;Foo&gt; asSortedList(Collection&lt;Foo&gt; data) {
+  List&lt;Foo&gt; resultList;
+  if(data instanceof List) {
+     resultList = (List&lt;Foo&gt;)data;
+  } else {
+     resultList = new ArrayList&lt;Foo&gt;(data);
+  }
+  Collections.sort(resultList)
+  return resultList;
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-04 11:42:59:0697, diag_detail_itementered, id=36997, type=20
+2014-12-04 11:43:00:0290, diag_detail_itemexited, id=36997, type=20
+2014-12-04 11:43:00:0571, answer_open, VisualItem[tree.nodes,3,id=23944,type=20,title=,body=<p>I have created an approximation of what I think you are looking for just using the Collections Framework in Java. Frankly, I think it is probably overkill as @Mike Deck points out. For such a small set of items to compare and process I think arrays would be a better choice from a procedural standpoint but here is my pseudo-coded (because I'm lazy) solution. I have an assumption that the Foo class is comparable based on it's unique id and not all of the data in it's contents:</p>
+
+<pre><code>Collection&lt;Foo&gt; oldSet = ...;
+Collection&lt;Foo&gt; newSet = ...;
+
+private Collection difference(Collection a, Collection b) {
+Collection result = a.clone();
+result.removeAll(b)
+return result;
+}
+
+private Collection intersection(Collection a, Collection b) {
+Collection result = a.clone();
+result.retainAll(b)
+return result;
+}
+
+public doWork() {
+    // if foo is in(*) oldSet but not newSet, call doRemove(foo)
+    Collection removed = difference(oldSet, newSet);
+    if (!removed.isEmpty()) {
+    	loop removed {
+    		Foo foo = removedIter.next();
+    		doRemove(foo);
+    	}
+    }
+//else if foo is not in oldSet but in newSet, call doAdd(foo)
+Collection added = difference(newSet, oldSet);
+if (!added.isEmpty()) {
+	loop added  {
+		Foo foo = addedIter.next();
+		doAdd(foo);
+	}
+}
+
+// else if foo is in both collections but modified, call doUpdate(oldFoo, newFoo)
+Collection matched = intersection(oldSet, newSet);
+Comparator comp = new Comparator() {
+	int compare(Object o1, Object o2) {
+		Foo f1, f2;
+		if (o1 instanceof Foo) f1 = (Foo)o1;
+		if (o2 instanceof Foo) f2 = (Foo)o2;
+		return f1.activated == f2.activated ? f1.startdate.compareTo(f2.startdate) == 0 ? ... : f1.startdate.compareTo(f2.startdate) : f1.activated ? 1 : 0;
+	}
+
+	boolean equals(Object o) {
+		// equal to this Comparator..not used
+	}
+}
+loop matched {
+	Foo foo = matchedIter.next();
+	Foo oldFoo = oldSet.get(foo);
+	Foo newFoo = newSet.get(foo);
+	if (comp.compareTo(oldFoo, newFoo ) != 0) {
+		doUpdate(oldFoo, newFoo);
+	} else {
+		//else if !foo.activated &amp;&amp; foo.startDate &gt;= now, call doStart(foo)
+		if (!foo.activated &amp;&amp; foo.startDate &gt;= now) doStart(foo);
+
+		// else if foo.activated &amp;&amp; foo.endDate &lt;= now, call doEnd(foo)
+		if (foo.activated &amp;&amp; foo.endDate &lt;= now) doEnd(foo);
+	}
+}
+}
+</code></pre>
+
+<p>As far as your questions:
+If I convert oldSet and newSet into HashMap (order is not of concern here), with the IDs as keys, would it made the code easier to read and easier to compare? How much of time &amp; memory performance is loss on the conversion?
+I think that you would probably make the code more readable by using a Map BUT...you would probably use more memory and time during the conversion.</p>
+
+<p>Would iterating the two sets and perform the appropriate operation be more efficient and concise?
+Yes, this would be the best of both worlds especially if you followed @Mike Sharek 's advice of Rolling your own List with the specialized methods or following something like the Visitor Design pattern to run through your collection and process each item.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-04 11:43:00:0586, answer_open, VisualItem[tree.nodes,3,id=23944,type=20,title=,body=<p>I have created an approximation of what I think you are looking for just using the Collections Framework in Java. Frankly, I think it is probably overkill as @Mike Deck points out. For such a small set of items to compare and process I think arrays would be a better choice from a procedural standpoint but here is my pseudo-coded (because I'm lazy) solution. I have an assumption that the Foo class is comparable based on it's unique id and not all of the data in it's contents:</p>
+
+<pre><code>Collection&lt;Foo&gt; oldSet = ...;
+Collection&lt;Foo&gt; newSet = ...;
+
+private Collection difference(Collection a, Collection b) {
+Collection result = a.clone();
+result.removeAll(b)
+return result;
+}
+
+private Collection intersection(Collection a, Collection b) {
+Collection result = a.clone();
+result.retainAll(b)
+return result;
+}
+
+public doWork() {
+    // if foo is in(*) oldSet but not newSet, call doRemove(foo)
+    Collection removed = difference(oldSet, newSet);
+    if (!removed.isEmpty()) {
+    	loop removed {
+    		Foo foo = removedIter.next();
+    		doRemove(foo);
+    	}
+    }
+//else if foo is not in oldSet but in newSet, call doAdd(foo)
+Collection added = difference(newSet, oldSet);
+if (!added.isEmpty()) {
+	loop added  {
+		Foo foo = addedIter.next();
+		doAdd(foo);
+	}
+}
+
+// else if foo is in both collections but modified, call doUpdate(oldFoo, newFoo)
+Collection matched = intersection(oldSet, newSet);
+Comparator comp = new Comparator() {
+	int compare(Object o1, Object o2) {
+		Foo f1, f2;
+		if (o1 instanceof Foo) f1 = (Foo)o1;
+		if (o2 instanceof Foo) f2 = (Foo)o2;
+		return f1.activated == f2.activated ? f1.startdate.compareTo(f2.startdate) == 0 ? ... : f1.startdate.compareTo(f2.startdate) : f1.activated ? 1 : 0;
+	}
+
+	boolean equals(Object o) {
+		// equal to this Comparator..not used
+	}
+}
+loop matched {
+	Foo foo = matchedIter.next();
+	Foo oldFoo = oldSet.get(foo);
+	Foo newFoo = newSet.get(foo);
+	if (comp.compareTo(oldFoo, newFoo ) != 0) {
+		doUpdate(oldFoo, newFoo);
+	} else {
+		//else if !foo.activated &amp;&amp; foo.startDate &gt;= now, call doStart(foo)
+		if (!foo.activated &amp;&amp; foo.startDate &gt;= now) doStart(foo);
+
+		// else if foo.activated &amp;&amp; foo.endDate &lt;= now, call doEnd(foo)
+		if (foo.activated &amp;&amp; foo.endDate &lt;= now) doEnd(foo);
+	}
+}
+}
+</code></pre>
+
+<p>As far as your questions:
+If I convert oldSet and newSet into HashMap (order is not of concern here), with the IDs as keys, would it made the code easier to read and easier to compare? How much of time &amp; memory performance is loss on the conversion?
+I think that you would probably make the code more readable by using a Map BUT...you would probably use more memory and time during the conversion.</p>
+
+<p>Would iterating the two sets and perform the appropriate operation be more efficient and concise?
+Yes, this would be the best of both worlds especially if you followed @Mike Sharek 's advice of Rolling your own List with the specialized methods or following something like the Visitor Design pattern to run through your collection and process each item.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-04 11:43:00:0586, diag_detail_itementered, id=23944, type=20
+2014-12-04 11:43:00:0695, diag_detail_itemexited, id=23944, type=20
+2014-12-04 11:43:02:0396, answer_open, VisualItem[tree.nodes,2,id=23469,type=20,title=,body=<p>For a set that small is generally not worth it to convert from an Array to a HashMap/set.  In fact, you're probably best off keeping them in an array and then sorting them by key and iterating over both lists simultaneously to do the comparison.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:43:02:0396, answer_open, VisualItem[tree.nodes,2,id=23469,type=20,title=,body=<p>For a set that small is generally not worth it to convert from an Array to a HashMap/set.  In fact, you're probably best off keeping them in an array and then sorting them by key and iterating over both lists simultaneously to do the comparison.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:43:02:0396, diag_detail_itementered, id=23469, type=20
+2014-12-04 11:43:02:0458, diag_detail_itemexited, id=23469, type=20
+2014-12-04 11:43:02:0770, answer_open, VisualItem[tree.nodes,2,id=23469,type=20,title=,body=<p>For a set that small is generally not worth it to convert from an Array to a HashMap/set.  In fact, you're probably best off keeping them in an array and then sorting them by key and iterating over both lists simultaneously to do the comparison.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:43:02:0770, answer_open, VisualItem[tree.nodes,2,id=23469,type=20,title=,body=<p>For a set that small is generally not worth it to convert from an Array to a HashMap/set.  In fact, you're probably best off keeping them in an array and then sorting them by key and iterating over both lists simultaneously to do the comparison.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:43:02:0770, diag_detail_itementered, id=23469, type=20
+2014-12-04 11:43:04:0736, diag_detail_itemexited, id=23469, type=20
+2014-12-04 11:43:04:0767, answer_open, VisualItem[tree.nodes,3,id=23944,type=20,title=,body=<p>I have created an approximation of what I think you are looking for just using the Collections Framework in Java. Frankly, I think it is probably overkill as @Mike Deck points out. For such a small set of items to compare and process I think arrays would be a better choice from a procedural standpoint but here is my pseudo-coded (because I'm lazy) solution. I have an assumption that the Foo class is comparable based on it's unique id and not all of the data in it's contents:</p>
+
+<pre><code>Collection&lt;Foo&gt; oldSet = ...;
+Collection&lt;Foo&gt; newSet = ...;
+
+private Collection difference(Collection a, Collection b) {
+Collection result = a.clone();
+result.removeAll(b)
+return result;
+}
+
+private Collection intersection(Collection a, Collection b) {
+Collection result = a.clone();
+result.retainAll(b)
+return result;
+}
+
+public doWork() {
+    // if foo is in(*) oldSet but not newSet, call doRemove(foo)
+    Collection removed = difference(oldSet, newSet);
+    if (!removed.isEmpty()) {
+    	loop removed {
+    		Foo foo = removedIter.next();
+    		doRemove(foo);
+    	}
+    }
+//else if foo is not in oldSet but in newSet, call doAdd(foo)
+Collection added = difference(newSet, oldSet);
+if (!added.isEmpty()) {
+	loop added  {
+		Foo foo = addedIter.next();
+		doAdd(foo);
+	}
+}
+
+// else if foo is in both collections but modified, call doUpdate(oldFoo, newFoo)
+Collection matched = intersection(oldSet, newSet);
+Comparator comp = new Comparator() {
+	int compare(Object o1, Object o2) {
+		Foo f1, f2;
+		if (o1 instanceof Foo) f1 = (Foo)o1;
+		if (o2 instanceof Foo) f2 = (Foo)o2;
+		return f1.activated == f2.activated ? f1.startdate.compareTo(f2.startdate) == 0 ? ... : f1.startdate.compareTo(f2.startdate) : f1.activated ? 1 : 0;
+	}
+
+	boolean equals(Object o) {
+		// equal to this Comparator..not used
+	}
+}
+loop matched {
+	Foo foo = matchedIter.next();
+	Foo oldFoo = oldSet.get(foo);
+	Foo newFoo = newSet.get(foo);
+	if (comp.compareTo(oldFoo, newFoo ) != 0) {
+		doUpdate(oldFoo, newFoo);
+	} else {
+		//else if !foo.activated &amp;&amp; foo.startDate &gt;= now, call doStart(foo)
+		if (!foo.activated &amp;&amp; foo.startDate &gt;= now) doStart(foo);
+
+		// else if foo.activated &amp;&amp; foo.endDate &lt;= now, call doEnd(foo)
+		if (foo.activated &amp;&amp; foo.endDate &lt;= now) doEnd(foo);
+	}
+}
+}
+</code></pre>
+
+<p>As far as your questions:
+If I convert oldSet and newSet into HashMap (order is not of concern here), with the IDs as keys, would it made the code easier to read and easier to compare? How much of time &amp; memory performance is loss on the conversion?
+I think that you would probably make the code more readable by using a Map BUT...you would probably use more memory and time during the conversion.</p>
+
+<p>Would iterating the two sets and perform the appropriate operation be more efficient and concise?
+Yes, this would be the best of both worlds especially if you followed @Mike Sharek 's advice of Rolling your own List with the specialized methods or following something like the Visitor Design pattern to run through your collection and process each item.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-04 11:43:04:0783, answer_open, VisualItem[tree.nodes,3,id=23944,type=20,title=,body=<p>I have created an approximation of what I think you are looking for just using the Collections Framework in Java. Frankly, I think it is probably overkill as @Mike Deck points out. For such a small set of items to compare and process I think arrays would be a better choice from a procedural standpoint but here is my pseudo-coded (because I'm lazy) solution. I have an assumption that the Foo class is comparable based on it's unique id and not all of the data in it's contents:</p>
+
+<pre><code>Collection&lt;Foo&gt; oldSet = ...;
+Collection&lt;Foo&gt; newSet = ...;
+
+private Collection difference(Collection a, Collection b) {
+Collection result = a.clone();
+result.removeAll(b)
+return result;
+}
+
+private Collection intersection(Collection a, Collection b) {
+Collection result = a.clone();
+result.retainAll(b)
+return result;
+}
+
+public doWork() {
+    // if foo is in(*) oldSet but not newSet, call doRemove(foo)
+    Collection removed = difference(oldSet, newSet);
+    if (!removed.isEmpty()) {
+    	loop removed {
+    		Foo foo = removedIter.next();
+    		doRemove(foo);
+    	}
+    }
+//else if foo is not in oldSet but in newSet, call doAdd(foo)
+Collection added = difference(newSet, oldSet);
+if (!added.isEmpty()) {
+	loop added  {
+		Foo foo = addedIter.next();
+		doAdd(foo);
+	}
+}
+
+// else if foo is in both collections but modified, call doUpdate(oldFoo, newFoo)
+Collection matched = intersection(oldSet, newSet);
+Comparator comp = new Comparator() {
+	int compare(Object o1, Object o2) {
+		Foo f1, f2;
+		if (o1 instanceof Foo) f1 = (Foo)o1;
+		if (o2 instanceof Foo) f2 = (Foo)o2;
+		return f1.activated == f2.activated ? f1.startdate.compareTo(f2.startdate) == 0 ? ... : f1.startdate.compareTo(f2.startdate) : f1.activated ? 1 : 0;
+	}
+
+	boolean equals(Object o) {
+		// equal to this Comparator..not used
+	}
+}
+loop matched {
+	Foo foo = matchedIter.next();
+	Foo oldFoo = oldSet.get(foo);
+	Foo newFoo = newSet.get(foo);
+	if (comp.compareTo(oldFoo, newFoo ) != 0) {
+		doUpdate(oldFoo, newFoo);
+	} else {
+		//else if !foo.activated &amp;&amp; foo.startDate &gt;= now, call doStart(foo)
+		if (!foo.activated &amp;&amp; foo.startDate &gt;= now) doStart(foo);
+
+		// else if foo.activated &amp;&amp; foo.endDate &lt;= now, call doEnd(foo)
+		if (foo.activated &amp;&amp; foo.endDate &lt;= now) doEnd(foo);
+	}
+}
+}
+</code></pre>
+
+<p>As far as your questions:
+If I convert oldSet and newSet into HashMap (order is not of concern here), with the IDs as keys, would it made the code easier to read and easier to compare? How much of time &amp; memory performance is loss on the conversion?
+I think that you would probably make the code more readable by using a Map BUT...you would probably use more memory and time during the conversion.</p>
+
+<p>Would iterating the two sets and perform the appropriate operation be more efficient and concise?
+Yes, this would be the best of both worlds especially if you followed @Mike Sharek 's advice of Rolling your own List with the specialized methods or following something like the Visitor Design pattern to run through your collection and process each item.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-04 11:43:04:0783, diag_detail_itementered, id=23944, type=20
+2014-12-04 11:43:04:0876, diag_detail_itemexited, id=23944, type=20
+2014-12-04 11:43:06:0233, answer_open, VisualItem[tree.nodes,8,id=8638140,type=20,title=,body=<p>You can try the <a href="http://guava-libraries.googlecode.com/svn/tags/release04/javadoc/com/google/common/collect/Sets.html">Sets</a> class from <a href="http://code.google.com/p/guava-libraries/">Guava</a>:</p>
+
+<pre><code>Set&lt;String&gt; intersection = Sets.intersection(set1, set2);
+Set&lt;String&gt; difference = Sets.difference(set1, set2);
+Set&lt;String&gt; symmetricDifference = Sets.symmetricDifference(set1, set2);
+Set&lt;String&gt; union = Sets.union(set1, set2);
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=7,searchfield=]
+2014-12-04 11:43:06:0233, answer_open, VisualItem[tree.nodes,8,id=8638140,type=20,title=,body=<p>You can try the <a href="http://guava-libraries.googlecode.com/svn/tags/release04/javadoc/com/google/common/collect/Sets.html">Sets</a> class from <a href="http://code.google.com/p/guava-libraries/">Guava</a>:</p>
+
+<pre><code>Set&lt;String&gt; intersection = Sets.intersection(set1, set2);
+Set&lt;String&gt; difference = Sets.difference(set1, set2);
+Set&lt;String&gt; symmetricDifference = Sets.symmetricDifference(set1, set2);
+Set&lt;String&gt; union = Sets.union(set1, set2);
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=7,searchfield=]
+2014-12-04 11:43:06:0233, diag_detail_itementered, id=8638140, type=20
+2014-12-04 11:43:06:0280, diag_detail_itemexited, id=8638140, type=20
+2014-12-04 11:43:06:0389, answer_open, VisualItem[tree.nodes,8,id=8638140,type=20,title=,body=<p>You can try the <a href="http://guava-libraries.googlecode.com/svn/tags/release04/javadoc/com/google/common/collect/Sets.html">Sets</a> class from <a href="http://code.google.com/p/guava-libraries/">Guava</a>:</p>
+
+<pre><code>Set&lt;String&gt; intersection = Sets.intersection(set1, set2);
+Set&lt;String&gt; difference = Sets.difference(set1, set2);
+Set&lt;String&gt; symmetricDifference = Sets.symmetricDifference(set1, set2);
+Set&lt;String&gt; union = Sets.union(set1, set2);
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=7,searchfield=]
+2014-12-04 11:43:06:0389, answer_open, VisualItem[tree.nodes,8,id=8638140,type=20,title=,body=<p>You can try the <a href="http://guava-libraries.googlecode.com/svn/tags/release04/javadoc/com/google/common/collect/Sets.html">Sets</a> class from <a href="http://code.google.com/p/guava-libraries/">Guava</a>:</p>
+
+<pre><code>Set&lt;String&gt; intersection = Sets.intersection(set1, set2);
+Set&lt;String&gt; difference = Sets.difference(set1, set2);
+Set&lt;String&gt; symmetricDifference = Sets.symmetricDifference(set1, set2);
+Set&lt;String&gt; union = Sets.union(set1, set2);
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=7,searchfield=]
+2014-12-04 11:43:06:0389, diag_detail_itementered, id=8638140, type=20
+2014-12-04 11:43:06:0857, diag_detail_itemexited, id=8638140, type=20
+2014-12-04 11:43:06:0904, answer_open, VisualItem[tree.nodes,7,id=4469413,type=20,title=,body=<p>For comaparing a list or set we can use <code>Arrays.equals(object[], object[])</code>. It will check for the values only. To get the <code>Object[]</code> we can use <code>Collection.toArray()</code> method.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:43:06:0920, answer_open, VisualItem[tree.nodes,7,id=4469413,type=20,title=,body=<p>For comaparing a list or set we can use <code>Arrays.equals(object[], object[])</code>. It will check for the values only. To get the <code>Object[]</code> we can use <code>Collection.toArray()</code> method.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:43:06:0920, diag_detail_itementered, id=4469413, type=20
+2014-12-04 11:43:07:0107, diag_detail_itemexited, id=4469413, type=20
+2014-12-04 11:43:07:0747, answer_open, VisualItem[tree.nodes,7,id=4469413,type=20,title=,body=<p>For comaparing a list or set we can use <code>Arrays.equals(object[], object[])</code>. It will check for the values only. To get the <code>Object[]</code> we can use <code>Collection.toArray()</code> method.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:43:07:0747, answer_open, VisualItem[tree.nodes,7,id=4469413,type=20,title=,body=<p>For comaparing a list or set we can use <code>Arrays.equals(object[], object[])</code>. It will check for the values only. To get the <code>Object[]</code> we can use <code>Collection.toArray()</code> method.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:43:07:0747, diag_detail_itementered, id=4469413, type=20
+2014-12-04 11:43:08:0090, diag_detail_itemexited, id=4469413, type=20
+2014-12-04 11:43:08:0168, answer_open, VisualItem[tree.nodes,6,id=3104434,type=20,title=,body=<p>I think the easiest way to do that is by using apache collections api - CollectionUtils.subtract(list1,list2) as long the lists are of the same type. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-04 11:43:08:0168, answer_open, VisualItem[tree.nodes,6,id=3104434,type=20,title=,body=<p>I think the easiest way to do that is by using apache collections api - CollectionUtils.subtract(list1,list2) as long the lists are of the same type. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-04 11:43:08:0168, diag_detail_itementered, id=3104434, type=20
+2014-12-04 11:43:08:0386, diag_detail_itemexited, id=3104434, type=20
+2014-12-04 11:43:09:0416, answer_open, VisualItem[tree.nodes,6,id=3104434,type=20,title=,body=<p>I think the easiest way to do that is by using apache collections api - CollectionUtils.subtract(list1,list2) as long the lists are of the same type. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-04 11:43:09:0416, answer_open, VisualItem[tree.nodes,6,id=3104434,type=20,title=,body=<p>I think the easiest way to do that is by using apache collections api - CollectionUtils.subtract(list1,list2) as long the lists are of the same type. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-04 11:43:09:0416, diag_detail_itementered, id=3104434, type=20
+2014-12-04 11:43:10:0508, diag_detail_itemexited, id=3104434, type=20
+2014-12-04 11:43:10:0851, answer_open, VisualItem[tree.nodes,5,id=1167234,type=20,title=,body=<p>Apache's commons.collections library has a CollectionUtils class that provides easy-to-use methods for Collection manipulation/checking, such as intersection, difference, and union.</p>
+
+<p>The org.apache.commons.collections.CollectionUtils API docs are <a href="http://commons.apache.org/collections/apidocs/org/apache/commons/collections/CollectionUtils.html">here</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-04 11:43:10:0851, answer_open, VisualItem[tree.nodes,5,id=1167234,type=20,title=,body=<p>Apache's commons.collections library has a CollectionUtils class that provides easy-to-use methods for Collection manipulation/checking, such as intersection, difference, and union.</p>
+
+<p>The org.apache.commons.collections.CollectionUtils API docs are <a href="http://commons.apache.org/collections/apidocs/org/apache/commons/collections/CollectionUtils.html">here</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-04 11:43:10:0851, diag_detail_itementered, id=1167234, type=20
+2014-12-04 11:43:11:0023, diag_detail_itemexited, id=1167234, type=20
+2014-12-04 11:43:11:0054, answer_open, VisualItem[tree.nodes,6,id=3104434,type=20,title=,body=<p>I think the easiest way to do that is by using apache collections api - CollectionUtils.subtract(list1,list2) as long the lists are of the same type. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-04 11:43:11:0054, answer_open, VisualItem[tree.nodes,6,id=3104434,type=20,title=,body=<p>I think the easiest way to do that is by using apache collections api - CollectionUtils.subtract(list1,list2) as long the lists are of the same type. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-04 11:43:11:0054, diag_detail_itementered, id=3104434, type=20
+2014-12-04 11:43:11:0101, diag_detail_itemexited, id=3104434, type=20
+2014-12-04 11:43:11:0428, diag_detail_itementered, id=18538, type=1
+2014-12-04 11:43:11:0491, diag_detail_itemexited, id=18538, type=1
+2014-12-04 11:43:12:0817, diag_detail_itementered, id=23445, type=1
+2014-12-04 11:43:22:0364, diag_detail_itemexited, id=23445, type=1
+2014-12-04 11:43:22:0395, diag_detail_itementered, id=0.648106037739542, type=1
+2014-12-04 11:43:22:0426, diag_detail_itemexited, id=0.648106037739542, type=1
+2014-12-04 11:43:23:0799, diag_itementered, id=43157, type=1
+2014-12-04 11:43:23:0862, diag_itemexited, id=43157, type=1
+2014-12-04 11:43:23:0971, diag_itemexited, id=1, type=4
+2014-12-04 11:43:24:0423, diag_itementered, id=37026, type=1
+2014-12-04 11:43:24:0486, diag_itemexited, id=37026, type=1
+2014-12-04 11:43:24:0688, diag_itementered, id=37026, type=1
+2014-12-04 11:43:24:0813, diag_itemexited, id=37026, type=1
+2014-12-04 11:43:25:0078, diag_itementered, id=12088, type=1
+2014-12-04 11:43:27:0013, edge_create, Tuple[0,1,0.7649804251169032,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0013, answer_create, 12096
+2014-12-04 11:43:27:0013, edge_create, Tuple[1,2,0.6699304253204313,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0013, answer_create, 12100
+2014-12-04 11:43:27:0013, edge_create, Tuple[1,3,0.8035558970936835,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0013, answer_create, 12133
+2014-12-04 11:43:27:0013, edge_create, Tuple[1,4,0.31715332765119175,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0013, answer_create, 110472
+2014-12-04 11:43:27:0013, edge_create, Tuple[1,5,0.6228696580572561,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0013, answer_create, 814349
+2014-12-04 11:43:27:0028, edge_create, Tuple[1,6,0.939983339910984,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0028, answer_create, 871848
+2014-12-04 11:43:27:0028, edge_create, Tuple[1,7,0.41301261217332197,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0028, answer_create, 10137205
+2014-12-04 11:43:27:0028, edge_create, Tuple[1,8,0.6847108100160393,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0028, answer_create, 15829712
+2014-12-04 11:43:27:0028, edge_create, Tuple[1,9,0.632875178182811,4,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0028, edge_create, Tuple[0,10,0.884232749225299,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0028, edge_create, Tuple[10,11,0.49648568324463105,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0045, edge_create, Tuple[10,12,0.5540575254739184,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0046, edge_create, Tuple[10,13,0.2763446846632026,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0046, edge_create, Tuple[10,14,0.15122262239819617,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0062, edge_create, Tuple[10,15,0.9891401579100227,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0062, edge_create, Tuple[10,16,0.8474255587591398,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0077, edge_create, Tuple[10,17,0.6786012281100399,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0093, edge_create, Tuple[10,18,0.14431707212335465,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0093, edge_create, Tuple[10,19,0.27906496280032855,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0109, edge_create, Tuple[10,20,0.5586129561695238,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0109, edge_create, Tuple[10,21,0.7646032732125283,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0124, edge_create, Tuple[10,22,0.2932682276052413,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0124, edge_create, Tuple[10,23,0.8734143932213445,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0140, edge_create, Tuple[10,24,0.4573697188224265,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0140, edge_create, Tuple[10,25,0.38488540321352516,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0155, edge_create, Tuple[10,26,0.12370924520305604,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0155, edge_create, Tuple[10,27,0.534662317478344,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0171, edge_create, Tuple[10,28,0.6443973541331146,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0171, edge_create, Tuple[10,29,0.3267271437850795,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0187, edge_create, Tuple[10,30,0.459685743913821,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0187, edge_create, Tuple[10,31,0.9645143559473032,1,0.0,1417711338089,1417711338089]
+2014-12-04 11:43:27:0202, discussion_open, 12088
+2014-12-04 11:43:27:0202, diag_itemclicked, id=12088, type=1
+2014-12-04 11:43:27:0951, diag_itemexited, id=12088, type=1
+2014-12-04 11:43:28:0154, diag_detail_itementered, id=0.49648568324463105, type=1
+2014-12-04 11:43:28:0232, diag_detail_itemexited, id=0.49648568324463105, type=1
+2014-12-04 11:43:28:0310, diag_detail_itementered, id=0.5540575254739184, type=1
+2014-12-04 11:43:28:0325, diag_detail_itemexited, id=0.5540575254739184, type=1
+2014-12-04 11:43:28:0700, answer_open, VisualItem[tree.nodes,9,id=15829712,type=20,title=,body=<p>I use <a href="http://secureteam.net/DownloadJfuscator.aspx">Jfuscator</a> and highly recommend it, it's very simple to use and let's you configure exclusions simply by listing and enabling search on class &amp; methods you wouldn't like to rename.</p>
+
+<p>The main benefit in using an obfuscator is to hide your implementation from competitors and by thus protecting your intellectual property. We've invested a few man years into the product and wouldn't like our competitors to use the work we've done.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=18,searchfield=]
+2014-12-04 11:43:28:0700, answer_open, VisualItem[tree.nodes,9,id=15829712,type=20,title=,body=<p>I use <a href="http://secureteam.net/DownloadJfuscator.aspx">Jfuscator</a> and highly recommend it, it's very simple to use and let's you configure exclusions simply by listing and enabling search on class &amp; methods you wouldn't like to rename.</p>
+
+<p>The main benefit in using an obfuscator is to hide your implementation from competitors and by thus protecting your intellectual property. We've invested a few man years into the product and wouldn't like our competitors to use the work we've done.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=18,searchfield=]
+2014-12-04 11:43:28:0700, diag_detail_itementered, id=15829712, type=20
+2014-12-04 11:43:29:0105, diag_detail_itemexited, id=15829712, type=20
+2014-12-04 11:43:29:0215, diag_detail_itementered, id=0.632875178182811, type=4
+2014-12-04 11:43:29:0261, diag_detail_itemexited, id=0.632875178182811, type=4
+2014-12-04 11:43:29:0776, diag_detail_itementered, id=0.632875178182811, type=4
+2014-12-04 11:43:29:0807, diag_detail_itemexited, id=0.632875178182811, type=4
+2014-12-04 11:43:29:0963, answer_open, VisualItem[tree.nodes,9,id=15829712,type=20,title=,body=<p>I use <a href="http://secureteam.net/DownloadJfuscator.aspx">Jfuscator</a> and highly recommend it, it's very simple to use and let's you configure exclusions simply by listing and enabling search on class &amp; methods you wouldn't like to rename.</p>
+
+<p>The main benefit in using an obfuscator is to hide your implementation from competitors and by thus protecting your intellectual property. We've invested a few man years into the product and wouldn't like our competitors to use the work we've done.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=18,searchfield=]
+2014-12-04 11:43:29:0963, answer_open, VisualItem[tree.nodes,9,id=15829712,type=20,title=,body=<p>I use <a href="http://secureteam.net/DownloadJfuscator.aspx">Jfuscator</a> and highly recommend it, it's very simple to use and let's you configure exclusions simply by listing and enabling search on class &amp; methods you wouldn't like to rename.</p>
+
+<p>The main benefit in using an obfuscator is to hide your implementation from competitors and by thus protecting your intellectual property. We've invested a few man years into the product and wouldn't like our competitors to use the work we've done.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=18,searchfield=]
+2014-12-04 11:43:29:0963, diag_detail_itementered, id=15829712, type=20
+2014-12-04 11:43:30:0291, diag_detail_itemexited, id=15829712, type=20
+2014-12-04 11:43:30:0431, answer_open, VisualItem[tree.nodes,8,id=10137205,type=20,title=,body=<p>I think that the old (classical) way of the obfuscation is gradually losing its relevance. Because in most cases a classical obfuscators breaking a stack trace (it is not good for support your clients)</p>
+
+<p>Nowadays the main point to not protect some algorithms, but to protect a sensitive data: API logins/passwords/keys, code which responsible for licensing (piracy still here, especially Western Europe, Russia, Asia, IMHO), advertisement account IDs, etc. </p>
+
+<p>Interesting fact: we have all this sensitive data in Strings. Actually Strings is about 50-80% of logic of our applications.
+It seems to me that future of obfuscation is "String encryption tools".</p>
+
+<p>But now "String encryption" feature is available only in commercial obfuscators, such as: <a href="http://www.allatori.com/">Allatori</a>, <a href="http://www.zelix.com/klassmaster/index.html">Zelix KlassMaster</a>, <a href="http://www.leesw.com/smokescreen/">Smokescreen</a>, <a href="https://jfxstore.com/stringer">Stringer Java Obfuscation Toolkit</a>, <a href="http://www.preemptive.com/">DashO</a>.</p>
+
+<p>N.B.
+I'm CEO at Licel LLC. Developer of Stringer Java Obfuscator.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=12,searchfield=]
+2014-12-04 11:43:30:0431, answer_open, VisualItem[tree.nodes,8,id=10137205,type=20,title=,body=<p>I think that the old (classical) way of the obfuscation is gradually losing its relevance. Because in most cases a classical obfuscators breaking a stack trace (it is not good for support your clients)</p>
+
+<p>Nowadays the main point to not protect some algorithms, but to protect a sensitive data: API logins/passwords/keys, code which responsible for licensing (piracy still here, especially Western Europe, Russia, Asia, IMHO), advertisement account IDs, etc. </p>
+
+<p>Interesting fact: we have all this sensitive data in Strings. Actually Strings is about 50-80% of logic of our applications.
+It seems to me that future of obfuscation is "String encryption tools".</p>
+
+<p>But now "String encryption" feature is available only in commercial obfuscators, such as: <a href="http://www.allatori.com/">Allatori</a>, <a href="http://www.zelix.com/klassmaster/index.html">Zelix KlassMaster</a>, <a href="http://www.leesw.com/smokescreen/">Smokescreen</a>, <a href="https://jfxstore.com/stringer">Stringer Java Obfuscation Toolkit</a>, <a href="http://www.preemptive.com/">DashO</a>.</p>
+
+<p>N.B.
+I'm CEO at Licel LLC. Developer of Stringer Java Obfuscator.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=12,searchfield=]
+2014-12-04 11:43:30:0431, diag_detail_itementered, id=10137205, type=20
+2014-12-04 11:43:31:0071, diag_detail_itemexited, id=10137205, type=20
+2014-12-04 11:43:31:0383, answer_open, VisualItem[tree.nodes,7,id=871848,type=20,title=,body=<p>I think that for the most part obfuscation is pointless: even with full source code it's generally hard enough to figure out what the heck intention was (assuming there are no comments, and no meaningful names for local variables -- which is the case when re-generating sources from byte code). Obfuscation just decorates the cake.</p>
+
+<p>I think developers and especially their managers tend to greatly over-exaggerate risk of someone seeing the source code. While good decompilers can produce nice looking source code, it's not trivial to work with it, and costs associated (not to mention legal risks) are high enough to make this approach seldom useful. I have only decompiled to debug problems with closed-source vendors' products (deadlocks in DB abstraction layer, ugh).
+Bytecode was actually obfuscated, I think, but we nonetheless found the underlying problem -- it was an actual design problem.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:31:0383, answer_open, VisualItem[tree.nodes,7,id=871848,type=20,title=,body=<p>I think that for the most part obfuscation is pointless: even with full source code it's generally hard enough to figure out what the heck intention was (assuming there are no comments, and no meaningful names for local variables -- which is the case when re-generating sources from byte code). Obfuscation just decorates the cake.</p>
+
+<p>I think developers and especially their managers tend to greatly over-exaggerate risk of someone seeing the source code. While good decompilers can produce nice looking source code, it's not trivial to work with it, and costs associated (not to mention legal risks) are high enough to make this approach seldom useful. I have only decompiled to debug problems with closed-source vendors' products (deadlocks in DB abstraction layer, ugh).
+Bytecode was actually obfuscated, I think, but we nonetheless found the underlying problem -- it was an actual design problem.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:31:0383, diag_detail_itementered, id=871848, type=20
+2014-12-04 11:43:31:0477, diag_detail_itemexited, id=871848, type=20
+2014-12-04 11:43:31:0773, answer_open, VisualItem[tree.nodes,7,id=871848,type=20,title=,body=<p>I think that for the most part obfuscation is pointless: even with full source code it's generally hard enough to figure out what the heck intention was (assuming there are no comments, and no meaningful names for local variables -- which is the case when re-generating sources from byte code). Obfuscation just decorates the cake.</p>
+
+<p>I think developers and especially their managers tend to greatly over-exaggerate risk of someone seeing the source code. While good decompilers can produce nice looking source code, it's not trivial to work with it, and costs associated (not to mention legal risks) are high enough to make this approach seldom useful. I have only decompiled to debug problems with closed-source vendors' products (deadlocks in DB abstraction layer, ugh).
+Bytecode was actually obfuscated, I think, but we nonetheless found the underlying problem -- it was an actual design problem.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:31:0773, answer_open, VisualItem[tree.nodes,7,id=871848,type=20,title=,body=<p>I think that for the most part obfuscation is pointless: even with full source code it's generally hard enough to figure out what the heck intention was (assuming there are no comments, and no meaningful names for local variables -- which is the case when re-generating sources from byte code). Obfuscation just decorates the cake.</p>
+
+<p>I think developers and especially their managers tend to greatly over-exaggerate risk of someone seeing the source code. While good decompilers can produce nice looking source code, it's not trivial to work with it, and costs associated (not to mention legal risks) are high enough to make this approach seldom useful. I have only decompiled to debug problems with closed-source vendors' products (deadlocks in DB abstraction layer, ugh).
+Bytecode was actually obfuscated, I think, but we nonetheless found the underlying problem -- it was an actual design problem.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:31:0773, diag_detail_itementered, id=871848, type=20
+2014-12-04 11:43:31:0820, diag_detail_itemexited, id=871848, type=20
+2014-12-04 11:43:32:0147, answer_open, VisualItem[tree.nodes,8,id=10137205,type=20,title=,body=<p>I think that the old (classical) way of the obfuscation is gradually losing its relevance. Because in most cases a classical obfuscators breaking a stack trace (it is not good for support your clients)</p>
+
+<p>Nowadays the main point to not protect some algorithms, but to protect a sensitive data: API logins/passwords/keys, code which responsible for licensing (piracy still here, especially Western Europe, Russia, Asia, IMHO), advertisement account IDs, etc. </p>
+
+<p>Interesting fact: we have all this sensitive data in Strings. Actually Strings is about 50-80% of logic of our applications.
+It seems to me that future of obfuscation is "String encryption tools".</p>
+
+<p>But now "String encryption" feature is available only in commercial obfuscators, such as: <a href="http://www.allatori.com/">Allatori</a>, <a href="http://www.zelix.com/klassmaster/index.html">Zelix KlassMaster</a>, <a href="http://www.leesw.com/smokescreen/">Smokescreen</a>, <a href="https://jfxstore.com/stringer">Stringer Java Obfuscation Toolkit</a>, <a href="http://www.preemptive.com/">DashO</a>.</p>
+
+<p>N.B.
+I'm CEO at Licel LLC. Developer of Stringer Java Obfuscator.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=12,searchfield=]
+2014-12-04 11:43:32:0147, answer_open, VisualItem[tree.nodes,8,id=10137205,type=20,title=,body=<p>I think that the old (classical) way of the obfuscation is gradually losing its relevance. Because in most cases a classical obfuscators breaking a stack trace (it is not good for support your clients)</p>
+
+<p>Nowadays the main point to not protect some algorithms, but to protect a sensitive data: API logins/passwords/keys, code which responsible for licensing (piracy still here, especially Western Europe, Russia, Asia, IMHO), advertisement account IDs, etc. </p>
+
+<p>Interesting fact: we have all this sensitive data in Strings. Actually Strings is about 50-80% of logic of our applications.
+It seems to me that future of obfuscation is "String encryption tools".</p>
+
+<p>But now "String encryption" feature is available only in commercial obfuscators, such as: <a href="http://www.allatori.com/">Allatori</a>, <a href="http://www.zelix.com/klassmaster/index.html">Zelix KlassMaster</a>, <a href="http://www.leesw.com/smokescreen/">Smokescreen</a>, <a href="https://jfxstore.com/stringer">Stringer Java Obfuscation Toolkit</a>, <a href="http://www.preemptive.com/">DashO</a>.</p>
+
+<p>N.B.
+I'm CEO at Licel LLC. Developer of Stringer Java Obfuscator.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=12,searchfield=]
+2014-12-04 11:43:32:0163, diag_detail_itementered, id=10137205, type=20
+2014-12-04 11:43:32:0444, diag_detail_itemexited, id=10137205, type=20
+2014-12-04 11:43:32:0491, answer_open, VisualItem[tree.nodes,7,id=871848,type=20,title=,body=<p>I think that for the most part obfuscation is pointless: even with full source code it's generally hard enough to figure out what the heck intention was (assuming there are no comments, and no meaningful names for local variables -- which is the case when re-generating sources from byte code). Obfuscation just decorates the cake.</p>
+
+<p>I think developers and especially their managers tend to greatly over-exaggerate risk of someone seeing the source code. While good decompilers can produce nice looking source code, it's not trivial to work with it, and costs associated (not to mention legal risks) are high enough to make this approach seldom useful. I have only decompiled to debug problems with closed-source vendors' products (deadlocks in DB abstraction layer, ugh).
+Bytecode was actually obfuscated, I think, but we nonetheless found the underlying problem -- it was an actual design problem.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:32:0491, answer_open, VisualItem[tree.nodes,7,id=871848,type=20,title=,body=<p>I think that for the most part obfuscation is pointless: even with full source code it's generally hard enough to figure out what the heck intention was (assuming there are no comments, and no meaningful names for local variables -- which is the case when re-generating sources from byte code). Obfuscation just decorates the cake.</p>
+
+<p>I think developers and especially their managers tend to greatly over-exaggerate risk of someone seeing the source code. While good decompilers can produce nice looking source code, it's not trivial to work with it, and costs associated (not to mention legal risks) are high enough to make this approach seldom useful. I have only decompiled to debug problems with closed-source vendors' products (deadlocks in DB abstraction layer, ugh).
+Bytecode was actually obfuscated, I think, but we nonetheless found the underlying problem -- it was an actual design problem.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:32:0491, diag_detail_itementered, id=871848, type=20
+2014-12-04 11:43:32:0553, diag_detail_itemexited, id=871848, type=20
+2014-12-04 11:43:32:0865, answer_open, VisualItem[tree.nodes,6,id=814349,type=20,title=,body=<p>I use <a href="http://proguard.sourceforge.net">ProGuard</a> and highly recommend it.  While obfuscation does protect your code from casual attackers, it's main benefit is the minimizing effect of removing unused classes and methods and shortening all identifiers to 1 or 2 characters.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:32:0865, answer_open, VisualItem[tree.nodes,6,id=814349,type=20,title=,body=<p>I use <a href="http://proguard.sourceforge.net">ProGuard</a> and highly recommend it.  While obfuscation does protect your code from casual attackers, it's main benefit is the minimizing effect of removing unused classes and methods and shortening all identifiers to 1 or 2 characters.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:32:0865, diag_detail_itementered, id=814349, type=20
+2014-12-04 11:43:33:0551, diag_detail_itemexited, id=814349, type=20
+2014-12-04 11:43:33:0629, answer_open, VisualItem[tree.nodes,5,id=110472,type=20,title=,body=<p>I spent some time this year trying out various Java obfuscators, and I found one to be miles ahead of the rest: <a href="http://www.sable.mcgill.ca/JBCO/">JBCO</a>. It's unfortunately a bit cumbersome to set up, and has no GUI, but in terms of the level of obfuscation it produces, it is unparalleled. You try feeding it a simple loop, and if your decompiler doesn't crash trying to load it, you will see something like this:</p>
+
+<pre><code>    if(i &lt; ll1) goto _L6; else goto _L5
+_L5:
+    char ac[] = run(stop(lI1l));
+    l7 = (long)ac.length &lt;&lt; 32 &amp; 0xffffffff00000000L ^ l7 &amp; 0xffffffffL;
+    if((int)((l7 &amp; 0xffffffff00000000L) &gt;&gt; 32) != $5$)
+    {
+        l = (long)III &lt;&lt; 50 &amp; 0x4000000000000L ^ l &amp; 0xfffbffffffffffffL;
+    } else
+    {
+        for(l3 = (long)III &amp; 0xffffffffL ^ l3 &amp; 0xffffffff00000000L; (int)(l3 &amp; 0xffffffffL) &lt; ll1; l3 = (long)(S$$ + (int)(l3 &amp; 0xffffffffL)) ^ l3 &amp; 0xffffffff00000000L)
+        {
+            for(int j = III; j &lt; ll1; j++)
+            {
+                l2 = (long)actionevent[j][(int)(l3 &amp; 0xffffffffL)] &amp; 65535L ^ l2 &amp; 0xffffffffffff0000L;
+                l6 = (long)(j &lt;&lt; -351) &amp; 0xffffffffL ^ l6 &amp; 0xffffffff00000000L;
+                l1 = (long)((int)(l6 &amp; 0xffffffffL) + j) &amp; 0xffffffffL ^ l1 &amp; 0xffffffff00000000L;
+                l = (long)((int)(l1 &amp; 0xffffffffL) + (int)(l3 &amp; 0xffffffffL)) &lt;&lt; 16 &amp; 0xffffffff0000L ^ l &amp; 0xffff00000000ffffL;
+                l = (long)ac[(int)((l &amp; 0xffffffff0000L) &gt;&gt; 16)] &amp; 65535L ^ l &amp; 0xffffffffffff0000L;
+                if((char)(int)(l2 &amp; 65535L) != (char)(int)(l &amp; 65535L))
+                {
+                    l = (long)III &lt;&lt; 50 &amp; 0x4000000000000L ^ l &amp; 0xfffbffffffffffffL;
+                }
+            }
+
+        }
+
+    }
+</code></pre>
+
+<p>You didn't know Java had goto's? Well, the JVM supports them =)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:33:0629, answer_open, VisualItem[tree.nodes,5,id=110472,type=20,title=,body=<p>I spent some time this year trying out various Java obfuscators, and I found one to be miles ahead of the rest: <a href="http://www.sable.mcgill.ca/JBCO/">JBCO</a>. It's unfortunately a bit cumbersome to set up, and has no GUI, but in terms of the level of obfuscation it produces, it is unparalleled. You try feeding it a simple loop, and if your decompiler doesn't crash trying to load it, you will see something like this:</p>
+
+<pre><code>    if(i &lt; ll1) goto _L6; else goto _L5
+_L5:
+    char ac[] = run(stop(lI1l));
+    l7 = (long)ac.length &lt;&lt; 32 &amp; 0xffffffff00000000L ^ l7 &amp; 0xffffffffL;
+    if((int)((l7 &amp; 0xffffffff00000000L) &gt;&gt; 32) != $5$)
+    {
+        l = (long)III &lt;&lt; 50 &amp; 0x4000000000000L ^ l &amp; 0xfffbffffffffffffL;
+    } else
+    {
+        for(l3 = (long)III &amp; 0xffffffffL ^ l3 &amp; 0xffffffff00000000L; (int)(l3 &amp; 0xffffffffL) &lt; ll1; l3 = (long)(S$$ + (int)(l3 &amp; 0xffffffffL)) ^ l3 &amp; 0xffffffff00000000L)
+        {
+            for(int j = III; j &lt; ll1; j++)
+            {
+                l2 = (long)actionevent[j][(int)(l3 &amp; 0xffffffffL)] &amp; 65535L ^ l2 &amp; 0xffffffffffff0000L;
+                l6 = (long)(j &lt;&lt; -351) &amp; 0xffffffffL ^ l6 &amp; 0xffffffff00000000L;
+                l1 = (long)((int)(l6 &amp; 0xffffffffL) + j) &amp; 0xffffffffL ^ l1 &amp; 0xffffffff00000000L;
+                l = (long)((int)(l1 &amp; 0xffffffffL) + (int)(l3 &amp; 0xffffffffL)) &lt;&lt; 16 &amp; 0xffffffff0000L ^ l &amp; 0xffff00000000ffffL;
+                l = (long)ac[(int)((l &amp; 0xffffffff0000L) &gt;&gt; 16)] &amp; 65535L ^ l &amp; 0xffffffffffff0000L;
+                if((char)(int)(l2 &amp; 65535L) != (char)(int)(l &amp; 65535L))
+                {
+                    l = (long)III &lt;&lt; 50 &amp; 0x4000000000000L ^ l &amp; 0xfffbffffffffffffL;
+                }
+            }
+
+        }
+
+    }
+</code></pre>
+
+<p>You didn't know Java had goto's? Well, the JVM supports them =)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:33:0629, diag_detail_itementered, id=110472, type=20
+2014-12-04 11:43:33:0832, diag_detail_itemexited, id=110472, type=20
+2014-12-04 11:43:34:0285, answer_open, VisualItem[tree.nodes,5,id=110472,type=20,title=,body=<p>I spent some time this year trying out various Java obfuscators, and I found one to be miles ahead of the rest: <a href="http://www.sable.mcgill.ca/JBCO/">JBCO</a>. It's unfortunately a bit cumbersome to set up, and has no GUI, but in terms of the level of obfuscation it produces, it is unparalleled. You try feeding it a simple loop, and if your decompiler doesn't crash trying to load it, you will see something like this:</p>
+
+<pre><code>    if(i &lt; ll1) goto _L6; else goto _L5
+_L5:
+    char ac[] = run(stop(lI1l));
+    l7 = (long)ac.length &lt;&lt; 32 &amp; 0xffffffff00000000L ^ l7 &amp; 0xffffffffL;
+    if((int)((l7 &amp; 0xffffffff00000000L) &gt;&gt; 32) != $5$)
+    {
+        l = (long)III &lt;&lt; 50 &amp; 0x4000000000000L ^ l &amp; 0xfffbffffffffffffL;
+    } else
+    {
+        for(l3 = (long)III &amp; 0xffffffffL ^ l3 &amp; 0xffffffff00000000L; (int)(l3 &amp; 0xffffffffL) &lt; ll1; l3 = (long)(S$$ + (int)(l3 &amp; 0xffffffffL)) ^ l3 &amp; 0xffffffff00000000L)
+        {
+            for(int j = III; j &lt; ll1; j++)
+            {
+                l2 = (long)actionevent[j][(int)(l3 &amp; 0xffffffffL)] &amp; 65535L ^ l2 &amp; 0xffffffffffff0000L;
+                l6 = (long)(j &lt;&lt; -351) &amp; 0xffffffffL ^ l6 &amp; 0xffffffff00000000L;
+                l1 = (long)((int)(l6 &amp; 0xffffffffL) + j) &amp; 0xffffffffL ^ l1 &amp; 0xffffffff00000000L;
+                l = (long)((int)(l1 &amp; 0xffffffffL) + (int)(l3 &amp; 0xffffffffL)) &lt;&lt; 16 &amp; 0xffffffff0000L ^ l &amp; 0xffff00000000ffffL;
+                l = (long)ac[(int)((l &amp; 0xffffffff0000L) &gt;&gt; 16)] &amp; 65535L ^ l &amp; 0xffffffffffff0000L;
+                if((char)(int)(l2 &amp; 65535L) != (char)(int)(l &amp; 65535L))
+                {
+                    l = (long)III &lt;&lt; 50 &amp; 0x4000000000000L ^ l &amp; 0xfffbffffffffffffL;
+                }
+            }
+
+        }
+
+    }
+</code></pre>
+
+<p>You didn't know Java had goto's? Well, the JVM supports them =)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:34:0300, answer_open, VisualItem[tree.nodes,5,id=110472,type=20,title=,body=<p>I spent some time this year trying out various Java obfuscators, and I found one to be miles ahead of the rest: <a href="http://www.sable.mcgill.ca/JBCO/">JBCO</a>. It's unfortunately a bit cumbersome to set up, and has no GUI, but in terms of the level of obfuscation it produces, it is unparalleled. You try feeding it a simple loop, and if your decompiler doesn't crash trying to load it, you will see something like this:</p>
+
+<pre><code>    if(i &lt; ll1) goto _L6; else goto _L5
+_L5:
+    char ac[] = run(stop(lI1l));
+    l7 = (long)ac.length &lt;&lt; 32 &amp; 0xffffffff00000000L ^ l7 &amp; 0xffffffffL;
+    if((int)((l7 &amp; 0xffffffff00000000L) &gt;&gt; 32) != $5$)
+    {
+        l = (long)III &lt;&lt; 50 &amp; 0x4000000000000L ^ l &amp; 0xfffbffffffffffffL;
+    } else
+    {
+        for(l3 = (long)III &amp; 0xffffffffL ^ l3 &amp; 0xffffffff00000000L; (int)(l3 &amp; 0xffffffffL) &lt; ll1; l3 = (long)(S$$ + (int)(l3 &amp; 0xffffffffL)) ^ l3 &amp; 0xffffffff00000000L)
+        {
+            for(int j = III; j &lt; ll1; j++)
+            {
+                l2 = (long)actionevent[j][(int)(l3 &amp; 0xffffffffL)] &amp; 65535L ^ l2 &amp; 0xffffffffffff0000L;
+                l6 = (long)(j &lt;&lt; -351) &amp; 0xffffffffL ^ l6 &amp; 0xffffffff00000000L;
+                l1 = (long)((int)(l6 &amp; 0xffffffffL) + j) &amp; 0xffffffffL ^ l1 &amp; 0xffffffff00000000L;
+                l = (long)((int)(l1 &amp; 0xffffffffL) + (int)(l3 &amp; 0xffffffffL)) &lt;&lt; 16 &amp; 0xffffffff0000L ^ l &amp; 0xffff00000000ffffL;
+                l = (long)ac[(int)((l &amp; 0xffffffff0000L) &gt;&gt; 16)] &amp; 65535L ^ l &amp; 0xffffffffffff0000L;
+                if((char)(int)(l2 &amp; 65535L) != (char)(int)(l &amp; 65535L))
+                {
+                    l = (long)III &lt;&lt; 50 &amp; 0x4000000000000L ^ l &amp; 0xfffbffffffffffffL;
+                }
+            }
+
+        }
+
+    }
+</code></pre>
+
+<p>You didn't know Java had goto's? Well, the JVM supports them =)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:43:34:0300, diag_detail_itementered, id=110472, type=20
+2014-12-04 11:43:34:0472, diag_detail_itemexited, id=110472, type=20
+2014-12-04 11:43:34:0643, answer_open, VisualItem[tree.nodes,4,id=12133,type=21,title=,body=<p>If you do obfuscate, stay away from obfuscators that modify the code by changing code flow and/or adding exception blocks and such to make it hard to disassemble it. To make the code unreadable it is usually enough to just change all names of methods, fields and classes.</p>
+
+<p>The reason to stay away from chaining code flow is that some of those changes makes it impossible for the JVM to efficiently optimize the code. In effect it will actually degrade the performance of your application. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-04 11:43:34:0643, answer_open, VisualItem[tree.nodes,4,id=12133,type=21,title=,body=<p>If you do obfuscate, stay away from obfuscators that modify the code by changing code flow and/or adding exception blocks and such to make it hard to disassemble it. To make the code unreadable it is usually enough to just change all names of methods, fields and classes.</p>
+
+<p>The reason to stay away from chaining code flow is that some of those changes makes it impossible for the JVM to efficiently optimize the code. In effect it will actually degrade the performance of your application. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-04 11:43:34:0643, diag_detail_itementered, id=12133, type=21
+2014-12-04 11:43:36:0001, diag_detail_itemexited, id=12133, type=21
+2014-12-04 11:43:36:0437, answer_open, VisualItem[tree.nodes,3,id=12100,type=20,title=,body=<p>I use proguard for JavaME development. It's not only very very good at making jar files smaller (Essential for mobile) but it is useful as a nicer way of doing device-specific code without resorting to IDE-unfriendly preprocessing tools such as antenna.</p>
+
+<p>E.g.</p>
+
+<pre><code>public void doSomething()
+{
+    /* Generated config class containing static finals: */
+    if (Configuration.ISMOTOROLA)
+    {
+        System.out.println("This is a motorola phone");
+    }
+    else
+    {
+        System.out.println("This is not a motorola phone");
+    }
+}
+</code></pre>
+
+<p>This gets compiled, obfuscated, and the class file ends up as though you had written:</p>
+
+<pre><code>public void doSomething()
+{
+    System.out.println("This is a motorola phone");
+}
+</code></pre>
+
+<p>So you can have variants of code to work around manufacturer bugs in JVM/library implementations without bulking out the final executable class files.</p>
+
+<p>I believe that some commercial obfuscators can also merge class files together in certain cases. This is useful because the more classes you have, the larger the size overhead you have in the zip (jar) file.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=14,searchfield=]
+2014-12-04 11:43:36:0437, answer_open, VisualItem[tree.nodes,3,id=12100,type=20,title=,body=<p>I use proguard for JavaME development. It's not only very very good at making jar files smaller (Essential for mobile) but it is useful as a nicer way of doing device-specific code without resorting to IDE-unfriendly preprocessing tools such as antenna.</p>
+
+<p>E.g.</p>
+
+<pre><code>public void doSomething()
+{
+    /* Generated config class containing static finals: */
+    if (Configuration.ISMOTOROLA)
+    {
+        System.out.println("This is a motorola phone");
+    }
+    else
+    {
+        System.out.println("This is not a motorola phone");
+    }
+}
+</code></pre>
+
+<p>This gets compiled, obfuscated, and the class file ends up as though you had written:</p>
+
+<pre><code>public void doSomething()
+{
+    System.out.println("This is a motorola phone");
+}
+</code></pre>
+
+<p>So you can have variants of code to work around manufacturer bugs in JVM/library implementations without bulking out the final executable class files.</p>
+
+<p>I believe that some commercial obfuscators can also merge class files together in certain cases. This is useful because the more classes you have, the larger the size overhead you have in the zip (jar) file.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=14,searchfield=]
+2014-12-04 11:43:36:0437, diag_detail_itementered, id=12100, type=20
+2014-12-04 11:43:36:0515, diag_detail_itemexited, id=12100, type=20
+2014-12-04 11:43:36:0515, answer_open, VisualItem[tree.nodes,3,id=12100,type=20,title=,body=<p>I use proguard for JavaME development. It's not only very very good at making jar files smaller (Essential for mobile) but it is useful as a nicer way of doing device-specific code without resorting to IDE-unfriendly preprocessing tools such as antenna.</p>
+
+<p>E.g.</p>
+
+<pre><code>public void doSomething()
+{
+    /* Generated config class containing static finals: */
+    if (Configuration.ISMOTOROLA)
+    {
+        System.out.println("This is a motorola phone");
+    }
+    else
+    {
+        System.out.println("This is not a motorola phone");
+    }
+}
+</code></pre>
+
+<p>This gets compiled, obfuscated, and the class file ends up as though you had written:</p>
+
+<pre><code>public void doSomething()
+{
+    System.out.println("This is a motorola phone");
+}
+</code></pre>
+
+<p>So you can have variants of code to work around manufacturer bugs in JVM/library implementations without bulking out the final executable class files.</p>
+
+<p>I believe that some commercial obfuscators can also merge class files together in certain cases. This is useful because the more classes you have, the larger the size overhead you have in the zip (jar) file.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=14,searchfield=]
+2014-12-04 11:43:36:0531, answer_open, VisualItem[tree.nodes,3,id=12100,type=20,title=,body=<p>I use proguard for JavaME development. It's not only very very good at making jar files smaller (Essential for mobile) but it is useful as a nicer way of doing device-specific code without resorting to IDE-unfriendly preprocessing tools such as antenna.</p>
+
+<p>E.g.</p>
+
+<pre><code>public void doSomething()
+{
+    /* Generated config class containing static finals: */
+    if (Configuration.ISMOTOROLA)
+    {
+        System.out.println("This is a motorola phone");
+    }
+    else
+    {
+        System.out.println("This is not a motorola phone");
+    }
+}
+</code></pre>
+
+<p>This gets compiled, obfuscated, and the class file ends up as though you had written:</p>
+
+<pre><code>public void doSomething()
+{
+    System.out.println("This is a motorola phone");
+}
+</code></pre>
+
+<p>So you can have variants of code to work around manufacturer bugs in JVM/library implementations without bulking out the final executable class files.</p>
+
+<p>I believe that some commercial obfuscators can also merge class files together in certain cases. This is useful because the more classes you have, the larger the size overhead you have in the zip (jar) file.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=14,searchfield=]
+2014-12-04 11:43:36:0531, diag_detail_itementered, id=12100, type=20
+2014-12-04 11:43:37:0545, diag_detail_itemexited, id=12100, type=20
+2014-12-04 11:43:37:0639, diag_detail_itementered, id=0.6699304253204313, type=4
+2014-12-04 11:43:37:0717, diag_detail_itemexited, id=0.6699304253204313, type=4
+2014-12-04 11:43:37:0717, diag_detail_itementered, id=0.6699304253204313, type=4
+2014-12-04 11:43:37:0748, diag_detail_itemexited, id=0.6699304253204313, type=4
+2014-12-04 11:43:37:0810, answer_open, VisualItem[tree.nodes,2,id=12096,type=20,title=,body=<p>I guess it really comes down to <em>what</em> your Java code is for, how it's distributed and who your clients are. We don't obfuscate anything, as we've never found one that was particularly good and it tends to be more trouble than it's worth. If someone has access to our JAR files and has the knowledge to be able to sniff around inside them, then there's far more worrying things that they can do than rip off our source code.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-04 11:43:37:0810, answer_open, VisualItem[tree.nodes,2,id=12096,type=20,title=,body=<p>I guess it really comes down to <em>what</em> your Java code is for, how it's distributed and who your clients are. We don't obfuscate anything, as we've never found one that was particularly good and it tends to be more trouble than it's worth. If someone has access to our JAR files and has the knowledge to be able to sniff around inside them, then there's far more worrying things that they can do than rip off our source code.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-04 11:43:37:0826, diag_detail_itementered, id=12096, type=20
+2014-12-04 11:43:40:0883, diag_detail_itemexited, id=12096, type=20
+2014-12-04 11:43:41:0164, diag_detail_itementered, id=12088, type=1
+2014-12-04 11:43:41:0227, diag_detail_itemexited, id=12088, type=1
+2014-12-04 11:43:41:0523, diag_detail_itementered, id=12088, type=1
+2014-12-04 11:44:21:0226, diag_detail_itemexited, id=12088, type=1
+2014-12-04 12:11:44:0704, answer_open, VisualItem[tree.nodes,4,id=12133,type=21,title=,body=<p>If you do obfuscate, stay away from obfuscators that modify the code by changing code flow and/or adding exception blocks and such to make it hard to disassemble it. To make the code unreadable it is usually enough to just change all names of methods, fields and classes.</p>
+
+<p>The reason to stay away from chaining code flow is that some of those changes makes it impossible for the JVM to efficiently optimize the code. In effect it will actually degrade the performance of your application. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-04 12:11:44:0704, answer_open, VisualItem[tree.nodes,4,id=12133,type=21,title=,body=<p>If you do obfuscate, stay away from obfuscators that modify the code by changing code flow and/or adding exception blocks and such to make it hard to disassemble it. To make the code unreadable it is usually enough to just change all names of methods, fields and classes.</p>
+
+<p>The reason to stay away from chaining code flow is that some of those changes makes it impossible for the JVM to efficiently optimize the code. In effect it will actually degrade the performance of your application. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711338089L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-04 12:11:44:0704, diag_detail_itementered, id=12133, type=21
+2014-12-04 12:11:44:0750, diag_detail_itemexited, id=12133, type=21
+2014-12-04 12:11:44:0813, diag_detail_itementered, id=7661, type=1
+2014-12-04 12:11:44:0844, diag_detail_itemexited, id=7661, type=1
+2014-12-04 12:11:45:0203, diag_detail_itementered, id=0.4573697188224265, type=1
+2014-12-04 12:11:45:0218, diag_detail_itemexited, id=0.4573697188224265, type=1
+2014-12-04 12:11:46:0576, diag_itemexited, id=1, type=4
+2014-12-04 12:11:46:0576, diag_itementered, id=41894, type=1
+2014-12-04 12:11:46:0638, diag_itemexited, id=41894, type=1
+2014-12-04 12:11:46:0700, diag_itemexited, id=3, type=4
+2014-12-04 12:11:46:0716, diag_itementered, id=40480, type=1
+2014-12-04 12:11:46:0778, diag_itemexited, id=40480, type=1
+2014-12-04 12:11:46:0966, diag_itementered, id=14801, type=1
+2014-12-04 12:11:47:0028, diag_itemexited, id=14801, type=1
+2014-12-04 12:11:47:0964, diag_itementered, id=51438, type=1
+2014-12-04 12:11:48:0026, diag_itemexited, id=51438, type=1
+2014-12-04 12:11:48:0104, diag_itemexited, id=3, type=4
+2014-12-04 12:11:48:0136, diag_itementered, id=50532, type=1
+2014-12-04 12:11:48:0182, diag_itemexited, id=50532, type=1
+2014-12-04 12:11:48:0245, diag_itemexited, id=3, type=4
+2014-12-04 12:11:48:0245, diag_itementered, id=382, type=1
+2014-12-04 12:11:48:0401, diag_itemexited, id=382, type=1
+2014-12-04 12:11:48:0401, diag_itementered, id=35785, type=1
+2014-12-04 12:11:48:0479, diag_itemexited, id=35785, type=1
+2014-12-04 12:11:48:0588, diag_itemexited, id=4, type=4
+2014-12-04 12:11:49:0259, diag_itementered, id=25552, type=1
+2014-12-04 12:11:49:0306, diag_itemexited, id=25552, type=1
+2014-12-04 12:12:02:0285, diag_itementered, id=39399, type=1
+2014-12-04 12:12:02:0332, diag_itemexited, id=39399, type=1
+2014-12-04 12:12:02:0800, diag_itementered, id=40663, type=1
+2014-12-04 12:12:04:0110, diag_itemexited, id=40663, type=1
+2014-12-04 12:12:40:0771, diag_itementered, id=65475, type=1
+2014-12-04 12:12:40:0817, diag_itemexited, id=65475, type=1
+2014-12-04 12:12:40:0849, diag_itementered, id=47605, type=1
+2014-12-04 12:12:40:0911, diag_itemexited, id=47605, type=1
+2014-12-04 12:12:40:0911, diag_itementered, id=3, type=0
+2014-12-04 12:12:41:0020, diag_itemexited, id=3, type=0
+2014-12-04 12:12:41:0083, diag_itemexited, id=3, type=4
+2014-12-04 12:12:41:0176, diag_itemexited, id=2, type=4
+2014-12-04 12:12:41:0223, diag_itemexited, id=3, type=4
+2014-12-04 12:12:41:0223, diag_itementered, id=47045, type=1
+2014-12-04 12:12:41:0285, diag_itemexited, id=47045, type=1
+2014-12-04 12:12:41:0426, diag_itemexited, id=3, type=4
+2014-12-04 12:12:41:0457, diag_itementered, id=40480, type=1
+2014-12-04 12:12:41:0504, diag_itemexited, id=40480, type=1
+2014-12-04 12:12:41:0504, diag_itementered, id=3, type=0
+2014-12-04 12:12:41:0566, diag_itemexited, id=3, type=0
+2014-12-04 12:12:41:0722, diag_itemexited, id=3, type=4
+2014-12-04 12:12:41:0722, diag_itementered, id=47045, type=1
+2014-12-04 12:12:41:0816, diag_itemexited, id=47045, type=1
+2014-12-04 12:12:42:0331, diag_itementered, id=25552, type=1
+2014-12-04 12:12:42:0393, diag_itemexited, id=25552, type=1
+2014-12-04 12:12:42:0643, diag_itementered, id=25552, type=1
+2014-12-04 12:12:45:0966, diag_itemexited, id=25552, type=1
+2014-12-04 12:12:46:0028, list_mouseentered, id=51574, type=1
+2014-12-04 12:12:46:0028, list_mousemoved, id=51574, type=1
+2014-12-04 12:12:46:0075, list_mouseexited
+2014-12-04 12:13:17:0618, list_mouseentered, id=51574, type=1
+2014-12-04 12:13:17:0618, list_mousemoved, id=51574, type=1
+2014-12-04 12:13:17:0665, list_mouseexited
+2014-12-04 12:13:17:0915, list_mouseentered, id=25552, type=1
+2014-12-04 12:13:17:0915, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:17:0946, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:17:0977, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:17:0993, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:18:0024, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:18:0039, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:18:0055, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:18:0071, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:18:0102, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:18:0133, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:18:0149, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:18:0164, list_mousemoved, id=25552, type=1
+2014-12-04 12:13:18:0195, list_mouseexited
+2014-12-04 12:13:20:0598, diag_itementered, id=47676, type=1
+2014-12-04 12:13:20:0645, diag_itemexited, id=47676, type=1
+2014-12-04 12:13:36:0838, diag_itementered, id=51574, type=1
+2014-12-04 12:13:36:0884, diag_itemexited, id=51574, type=1
+2014-12-04 12:13:43:0390, diag_itemexited, id=-747161665, type=4
+2014-12-04 12:13:43:0405, diag_itementered, id=-747161665, type=0
+2014-12-04 12:13:45:0293, diag_itemexited, id=-747161665, type=0
+2014-12-04 12:13:45:0621, diag_itemexited, id=-747161665, type=4
+2014-12-04 12:13:45:0621, diag_itementered, id=-747161665, type=0
+2014-12-04 12:14:05:0558, diag_itemexited, id=-747161665, type=0
+2014-12-04 12:14:05:0667, diag_itemexited, id=-747161665, type=4
+2014-12-04 12:14:05:0714, list_mouseentered, id=1, type=0
+2014-12-04 12:14:05:0714, list_mousemoved, id=1, type=0
+2014-12-04 12:14:05:0760, list_mouseexited
+2014-12-04 12:14:10:0362, diag_itemexited, id=1, type=4
+2014-12-04 12:14:10:0362, diag_itementered, id=-1404308192, type=0
+2014-12-04 12:14:10:0409, diag_itemexited, id=-1404308192, type=0
+2014-12-04 12:15:54:0384, diag_itementered, id=57484, type=1
+2014-12-04 12:15:54:0447, diag_itemexited, id=57484, type=1
+2014-12-04 12:16:03:0963, diag_itemexited, id=1, type=4
+2014-12-04 12:16:03:0963, diag_itementered, id=-1404308192, type=0
+2014-12-04 12:16:04:0010, diag_itemexited, id=-1404308192, type=0
+2014-12-04 12:16:04:0010, diag_itementered, id=22697, type=1
+2014-12-04 12:16:04:0088, diag_itemexited, id=22697, type=1
+2014-12-04 12:16:04:0493, diag_itemexited, id=4, type=4
+2014-12-04 12:16:04:0509, diag_itementered, id=1, type=0
+2014-12-04 12:16:04:0571, diag_itemexited, id=1, type=0
+2014-12-04 12:16:04:0665, diag_itementered, id=27129, type=1
+2014-12-04 12:16:04:0727, diag_itemexited, id=27129, type=1
+2014-12-04 12:16:04:0868, diag_itementered, id=43157, type=1
+2014-12-04 12:16:04:0930, diag_itemexited, id=43157, type=1
+2014-12-04 12:16:05:0008, diag_itementered, id=1, type=0
+2014-12-04 12:16:05:0071, diag_itemexited, id=1, type=0
+2014-12-04 12:16:05:0336, diag_itemexited, id=1, type=4
+2014-12-04 12:16:05:0336, diag_itementered, id=1, type=0
+2014-12-04 12:16:05:0414, diag_itemexited, id=1, type=0
+2014-12-04 12:16:05:0476, diag_itemexited, id=4, type=4

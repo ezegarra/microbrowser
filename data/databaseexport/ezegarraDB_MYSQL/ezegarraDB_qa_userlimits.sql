@@ -1,0 +1,60 @@
+CREATE DATABASE  IF NOT EXISTS `ezegarraDB` /*!40100 DEFAULT CHARACTER SET latin1 */;
+USE `ezegarraDB`;
+-- MySQL dump 10.13  Distrib 5.6.13, for Win32 (x86)
+--
+-- Host: mysql.cs.pitt.edu    Database: ezegarraDB
+-- ------------------------------------------------------
+-- Server version	5.0.45-community-log
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Not dumping tablespaces as no INFORMATION_SCHEMA.FILES table on this server
+--
+
+--
+-- Table structure for table `qa_userlimits`
+--
+
+DROP TABLE IF EXISTS `qa_userlimits`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `qa_userlimits` (
+  `userid` int(10) unsigned NOT NULL,
+  `action` char(1) character set ascii NOT NULL,
+  `period` int(10) unsigned NOT NULL,
+  `count` smallint(5) unsigned NOT NULL,
+  UNIQUE KEY `userid` (`userid`,`action`),
+  CONSTRAINT `qa_userlimits_ibfk_1` FOREIGN KEY (`userid`) REFERENCES `qa_users` (`userid`) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `qa_userlimits`
+--
+
+LOCK TABLES `qa_userlimits` WRITE;
+/*!40000 ALTER TABLE `qa_userlimits` DISABLE KEYS */;
+INSERT INTO `qa_userlimits` VALUES (1,'A',366068,1),(1,'Q',366827,1),(2,'A',367707,1),(2,'C',367632,1),(2,'Q',367632,3),(2,'V',366886,2),(5,'A',367695,1),(5,'Q',367368,1),(6,'Q',367661,1),(7,'Q',366024,1),(7,'V',367699,3),(8,'C',367698,2),(8,'V',367698,5),(10,'V',366890,2),(11,'Q',367623,1),(13,'V',367633,15),(14,'A',366087,1),(14,'Q',367377,1),(18,'A',367381,1),(18,'C',367055,1),(18,'Q',367055,1),(18,'V',367055,1),(19,'F',367699,2),(19,'Q',367704,1),(19,'V',367699,1),(20,'C',366087,1),(20,'Q',366982,1),(20,'V',367634,3),(22,'A',365252,1),(22,'V',365252,3),(23,'A',368941,1),(23,'F',367698,2),(23,'Q',368907,1),(23,'V',367695,1),(25,'A',365252,1),(25,'V',367195,1),(26,'A',367625,1),(26,'C',366026,1),(26,'Q',366014,1),(26,'V',366028,1),(27,'Q',365849,1),(29,'A',367055,1),(29,'V',367698,2),(30,'A',366088,1),(30,'C',369523,1),(30,'Q',368711,1),(30,'V',369498,2),(31,'V',365252,1),(33,'A',365354,1),(33,'V',366068,1),(34,'A',366046,1),(34,'C',367177,2),(34,'Q',367076,1),(35,'C',367633,1),(35,'Q',367606,2),(35,'V',367606,9),(36,'A',366039,1),(36,'C',366427,1),(36,'Q',365799,1),(36,'V',366086,1),(38,'A',369502,1),(38,'C',369503,2),(39,'A',365725,1),(39,'C',367168,1),(39,'Q',366061,1),(39,'V',366066,1),(40,'Q',367078,1),(40,'V',365776,1),(42,'A',367606,1),(42,'C',367560,1),(42,'Q',367560,1),(42,'V',367698,2),(43,'A',367367,1),(43,'C',367179,1),(45,'V',366886,1),(46,'A',367697,1),(46,'C',367388,1),(46,'Q',367698,2),(46,'U',367697,1),(46,'V',367698,5),(47,'Q',367698,1),(47,'V',367698,6),(49,'Q',367697,1),(51,'A',369604,2),(51,'Q',368587,1),(51,'V',369604,1),(53,'A',369348,1),(53,'C',367634,1),(53,'Q',369348,1),(53,'V',368822,1),(58,'V',366721,1),(59,'V',366721,1),(64,'V',367698,4),(65,'A',367698,1),(65,'U',367698,1),(65,'V',367698,11),(66,'C',367698,1),(66,'V',367698,3),(67,'C',367698,1),(67,'F',367698,2),(67,'V',367700,1),(70,'A',369560,1),(73,'Q',368785,1),(73,'V',368824,1),(74,'C',369521,1),(74,'Q',369501,1),(74,'V',369521,1),(75,'A',369321,1),(75,'C',369403,1),(75,'Q',369263,1),(78,'A',369498,1),(78,'U',368635,1),(79,'V',368778,1),(80,'A',368664,1),(80,'Q',368665,1),(82,'C',369602,1),(82,'Q',369559,1),(82,'V',369595,1),(90,'V',371484,1),(91,'Q',371551,1);
+/*!40000 ALTER TABLE `qa_userlimits` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-03-03 14:25:31

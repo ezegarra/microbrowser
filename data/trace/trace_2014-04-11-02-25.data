@@ -1,0 +1,196 @@
+2014-04-11 02:25:46:0581, setup_loaddata
+2014-04-11 02:25:57:0502, list_mouseentered, 123
+2014-04-11 02:25:57:0658, list_mouseexited
+2014-04-11 02:25:58:0423, list_mouseentered, 10586
+2014-04-11 02:26:00:0794, list_mouseexited
+2014-04-11 02:26:03:0649, list_mouseentered, 123
+2014-04-11 02:26:03:0883, list_mouseexited
+2014-04-11 02:26:39:0296, list_mouseentered, 564
+2014-04-11 02:26:39:0842, list_mouseexited
+2014-04-11 02:26:41:0277, search_update, j
+2014-04-11 02:26:43:0898, search_update, ja
+2014-04-11 02:26:43:0898, search_update, jav
+2014-04-11 02:26:43:0898, search_update, java
+2014-04-11 02:26:45:0426, list_mouseentered, 123
+2014-04-11 02:26:46:0394, search_update, java 
+2014-04-11 02:26:47:0860, search_update, java i
+2014-04-11 02:26:47:0860, search_update, java io
+2014-04-11 02:26:53:0242, search_update, java i
+2014-04-11 02:26:55:0816, search_update, java 
+2014-04-11 02:26:55:0816, search_update, java
+2014-04-11 02:26:57:0314, search_update, javai
+2014-04-11 02:26:57:0470, search_update, javaio
+2014-04-11 02:26:58:0889, search_update, javai
+2014-04-11 02:26:59:0513, search_update, java
+2014-04-11 02:27:00:0917, search_update, java-
+2014-04-11 02:27:01:0151, search_update, java-i
+2014-04-11 02:27:01:0338, search_update, java-io
+2014-04-11 02:27:01:0947, search_update, java-i
+2014-04-11 02:27:02:0181, search_update, java-
+2014-04-11 02:27:02:0384, search_update, java
+2014-04-11 02:27:03:0663, search_update, java 
+2014-04-11 02:27:03:0663, search_update, java o
+2014-04-11 02:27:03:0663, search_update, java op
+2014-04-11 02:27:04:0989, search_update, java o
+2014-04-11 02:27:04:0989, search_update, java 
+2014-04-11 02:27:04:0989, search_update, java i
+2014-04-11 02:27:04:0989, search_update, java io
+2014-04-11 02:27:08:0046, list_mouseexited
+2014-04-11 02:27:13:0288, list_mouseentered, 26732
+2014-04-11 02:27:17:0500, list_mouseexited
+2014-04-11 02:27:22:0726, search_update,  io
+2014-04-11 02:27:23:0584, search_update, io
+2014-04-11 02:27:25:0846, list_mouseentered, 9913
+2014-04-11 02:27:34:0847, list_mouseexited
+2014-04-11 02:27:36:0080, search_update, io 
+2014-04-11 02:27:36:0392, search_update, io j
+2014-04-11 02:27:38:0061, search_update, io ja
+2014-04-11 02:27:38:0061, search_update, io jav
+2014-04-11 02:27:38:0061, search_update, io java
+2014-04-11 02:27:39:0340, list_mouseentered, 123
+2014-04-11 02:27:48:0141, edge_create, Tuple[0,1,0.6609437482158219,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0141, edge_create, Tuple[1,2,0.959302901092043,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0141, edge_create, Tuple[1,3,0.2373925823258024,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0141, edge_create, Tuple[1,4,0.21881855886886237,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,5,0.4668282274548057,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,6,0.3907251225503069,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,7,0.4285317892015128,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,8,0.8618378050467266,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,9,0.7191941968009438,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,10,0.5772097496807027,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,11,0.23328258285441617,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,12,0.07397829626257979,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,13,0.8927096183728058,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,14,0.6261020889693922,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,15,0.8689719306391681,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,16,0.5384420202785012,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0157, edge_create, Tuple[1,17,0.27591050744931744,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0173, edge_create, Tuple[1,18,0.8666348397928108,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0173, edge_create, Tuple[1,19,0.5683138090611881,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0173, edge_create, Tuple[1,20,0.9271174293473107,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0173, edge_create, Tuple[1,21,0.16093165991062208,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0173, edge_create, Tuple[1,22,0.4199920541683688,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0173, edge_create, Tuple[1,23,0.23741167481637526,1,0.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0173, edge_create, Tuple[0,24,0.41481003526982174,2,1.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0173, pattern_create, -1942838772
+2014-04-11 02:27:48:0173, edge_create, Tuple[24,25,0.7056588979336921,2,1.0,1397240745659,1397240745659]
+2014-04-11 02:27:48:0906, discussion_open, 564
+2014-04-11 02:27:53:0757, list_mouseexited
+2014-04-11 02:27:53:0757, list_mouseentered, 17944
+2014-04-11 02:27:53:0882, list_mouseexited
+2014-04-11 02:28:40:0403, list_mouseentered, 16689
+2014-04-11 02:28:40:0840, list_mouseexited
+2014-04-11 02:28:42:0041, list_mouseentered, 18088
+2014-04-11 02:28:42:0899, list_mouseexited
+2014-04-11 02:28:43:0102, diag_itementered, id=59175, type=1
+2014-04-11 02:28:43:0133, diag_itemexited, id=59175, type=1
+2014-04-11 02:28:44:0162, diag_itementered, id=4080, type=1
+2014-04-11 02:28:44:0178, diag_itemexited, id=4080, type=1
+2014-04-11 02:28:44:0318, list_mouseentered, 564
+2014-04-11 02:28:45:0551, list_mouseexited
+2014-04-11 02:28:46:0159, diag_itementered, id=6612, type=1
+2014-04-11 02:28:46:0627, diag_itemexited, id=6612, type=1
+2014-04-11 02:28:46:0955, list_mouseentered, 4242
+2014-04-11 02:28:47:0485, list_mouseexited
+2014-04-11 02:28:48:0468, list_mouseentered, 123
+2014-04-11 02:28:51:0650, list_mouseexited
+2014-04-11 02:28:52:0883, search_update, 
+2014-04-11 02:28:56:0377, list_mouseentered, 123
+2014-04-11 02:28:57:0500, list_mouseexited
+2014-04-11 02:28:58:0514, list_mouseentered, 11341
+2014-04-11 02:29:07:0937, list_mouseexited
+2014-04-11 02:29:09:0122, search_update, j
+2014-04-11 02:29:09:0403, search_update, jn
+2014-04-11 02:29:09:0653, search_update, jni
+2014-04-11 02:30:00:0446, list_mouseentered, 15305
+2014-04-11 02:30:01:0336, search_update, jn
+2014-04-11 02:30:02:0911, search_update, j
+2014-04-11 02:30:04:0580, search_update, ja
+2014-04-11 02:30:04:0580, search_update, jav
+2014-04-11 02:30:04:0580, search_update, java
+2014-04-11 02:30:04:0580, search_update, java 
+2014-04-11 02:30:04:0580, search_update, java s
+2014-04-11 02:30:07:0154, search_update, java sw
+2014-04-11 02:30:07:0154, search_update, java swi
+2014-04-11 02:30:07:0154, search_update, java swin
+2014-04-11 02:30:07:0154, search_update, java swing
+2014-04-11 02:30:13:0691, list_mouseexited
+2014-04-11 02:30:28:0761, diag_itementered, id=4080, type=1
+2014-04-11 02:30:32:0364, diag_itemexited, id=4080, type=1
+2014-04-11 02:30:33:0144, diag_itementered, id=4080, type=1
+2014-04-11 02:30:37:0575, diag_itemexited, id=4080, type=1
+2014-04-11 02:30:37:0871, list_mouseentered, 564
+2014-04-11 02:30:38:0058, list_mouseexited
+2014-04-11 02:30:41:0194, search_update,  swing
+2014-04-11 02:30:43:0253, search_update, swing
+2014-04-11 02:30:45:0858, list_mouseentered, 19766
+2014-04-11 02:30:57:0012, list_mouseexited
+2014-04-11 02:30:58:0198, search_update, swing 
+2014-04-11 02:30:58:0432, search_update, swing j
+2014-04-11 02:31:00:0085, search_update, swing ja
+2014-04-11 02:31:00:0085, search_update, swing jav
+2014-04-11 02:31:00:0085, search_update, swing java
+2014-04-11 02:31:18:0712, list_mouseentered, 123
+2014-04-11 02:31:18:0759, list_mouseexited
+2014-04-11 02:31:33:0298, diag_itementered, id=4080, type=1
+2014-04-11 02:31:33:0345, diag_itemexited, id=4080, type=1
+2014-04-11 02:31:33:0407, diag_itementered, id=2968, type=1
+2014-04-11 02:31:33:0454, diag_itemexited, id=2968, type=1
+2014-04-11 02:48:26:0832, search_update, 
+2014-04-11 02:48:26:0832, search_update, S
+2014-04-11 02:48:27:0097, search_update, ST
+2014-04-11 02:48:27:0300, search_update, STR
+2014-04-11 02:48:27:0908, search_update, STRI
+2014-04-11 02:48:28:0096, search_update, STRIN
+2014-04-11 02:48:28:0330, search_update, STRING
+2014-04-11 02:48:28:0501, search_update, STRING 
+2014-04-11 02:48:29:0063, search_update, STRING P
+2014-04-11 02:48:29:0484, search_update, STRING PA
+2014-04-11 02:48:29:0827, search_update, STRING PAR
+2014-04-11 02:48:30:0092, search_update, STRING PARS
+2014-04-11 02:48:30:0217, search_update, STRING PARSE
+2014-04-11 02:48:32:0713, list_mouseentered, 2968
+2014-04-11 02:48:32:0932, list_mouseexited
+2014-04-11 02:48:33:0712, diag_itementered, id=2968, type=1
+2014-04-11 02:48:36:0145, diag_itemexited, id=2968, type=1
+2014-04-11 02:48:43:0290, search_update, STRING PARS
+2014-04-11 02:48:43:0789, search_update, STRING PAR
+2014-04-11 02:48:44:0054, search_update, STRING PA
+2014-04-11 02:48:44:0054, search_update, STRING P
+2014-04-11 02:48:44:0054, search_update, STRING 
+2014-04-11 02:48:44:0054, search_update, STRING
+2014-04-11 02:48:44:0054, search_update, STRIN
+2014-04-11 02:48:44:0054, search_update, STRI
+2014-04-11 02:48:44:0054, search_update, STR
+2014-04-11 02:48:44:0054, search_update, ST
+2014-04-11 02:48:44:0522, search_update, S
+2014-04-11 02:48:44:0522, search_update, 
+2014-04-11 02:48:52:0660, search_update, P
+2014-04-11 02:48:52:0660, search_update, PA
+2014-04-11 02:48:52:0660, search_update, PAR
+2014-04-11 02:48:52:0660, search_update, PARS
+2014-04-11 02:48:52:0660, search_update, PARSE
+2014-04-11 02:48:52:0660, search_update, PARSE 
+2014-04-11 02:48:52:0660, search_update, PARSE S
+2014-04-11 02:48:52:0660, search_update, PARSE ST
+2014-04-11 02:48:52:0660, search_update, PARSE STR
+2014-04-11 02:48:52:0660, search_update, PARSE STRI
+2014-04-11 02:48:52:0660, search_update, PARSE STRIN
+2014-04-11 02:48:52:0660, search_update, PARSE STRING
+2014-04-11 02:50:02:0026, setup_loaddata
+2014-04-11 02:50:08:0612, setup_loaddata
+2014-04-11 02:50:19:0844, diag_itementered, id=15732, type=1
+2014-04-11 02:50:20:0717, diag_itemexited, id=15732, type=1
+2014-04-11 02:50:21:0248, diag_itementered, id=10586, type=1
+2014-04-11 02:50:21:0528, diag_itemexited, id=10586, type=1
+2014-04-11 03:04:05:0117, list_mouseentered, 10586
+2014-04-11 03:04:05:0320, list_mouseexited
+2014-04-11 03:04:06:0740, search_update, u
+2014-04-11 03:04:07:0098, search_update, um
+2014-04-11 03:04:07:0473, search_update, uml
+2014-04-11 03:04:09:0454, search_update, um
+2014-04-11 03:04:09:0704, search_update, u
+2014-04-11 03:04:09:0906, search_update, 
+2014-04-11 03:04:10:0702, search_update, U
+2014-04-11 03:04:11:0030, search_update, UM
+2014-04-11 03:04:11:0186, search_update, UML

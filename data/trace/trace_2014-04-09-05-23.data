@@ -1,0 +1,60 @@
+2014-04-09 05:23:11:0955, setup_loaddata
+2014-04-09 05:23:13:0624, diag_itementered, id=6612, type=1
+2014-04-09 05:23:13:0671, diag_itemexited, id=6612, type=1
+2014-04-09 05:23:14:0077, diag_itementered, id=6612, type=1
+2014-04-09 05:23:14:0139, diag_itemexited, id=6612, type=1
+2014-04-09 05:23:14:0482, diag_itementered, id=7291, type=1
+2014-04-09 05:23:14:0560, diag_itemexited, id=7291, type=1
+2014-04-09 05:23:14:0872, diag_itementered, id=7291, type=1
+2014-04-09 05:23:16:0605, edge_create, Tuple[0,1,0.8073599012892373,1,0.0,1397035391471,1397035391471]
+2014-04-09 05:23:16:0605, edge_create, Tuple[1,2,0.23938614337532615,1,0.0,1397035391471,1397035391471]
+2014-04-09 05:23:16:0654, discussion_open, 7291
+2014-04-09 05:23:16:0654, diag_itemclicked, id=7291, type=1
+2014-04-09 05:23:18:0619, diag_itemexited, id=7291, type=1
+2014-04-09 05:23:18:0775, diag_itementered, id=7291, type=1
+2014-04-09 05:23:18:0807, diag_itemexited, id=7291, type=1
+2014-04-09 05:23:18:0963, diag_itementered, id=7291, type=1
+2014-04-09 05:23:19:0321, diag_itemexited, id=7291, type=1
+2014-04-09 05:23:19:0477, diag_itementered, id=0.23938614337532615, type=1
+2014-04-09 05:23:19:0509, diag_itemexited, id=0.23938614337532615, type=1
+2014-04-09 05:23:19:0680, diag_itementered, id=4080, type=1
+2014-04-09 05:23:20:0491, diag_itemexited, id=4080, type=1
+2014-04-09 05:23:20:0647, list_mouseentered, 4080
+2014-04-09 05:23:21:0100, list_mouseexited
+2014-04-09 05:23:21:0396, diag_itementered, id=4080, type=1
+2014-04-09 05:23:21:0708, diag_itemexited, id=4080, type=1
+2014-04-09 05:23:21:0989, diag_itementered, id=7291, type=1
+2014-04-09 05:23:22:0020, diag_itemexited, id=7291, type=1
+2014-04-09 05:23:22:0301, diag_itementered, id=7291, type=1
+2014-04-09 05:23:22:0317, diag_itemexited, id=7291, type=1
+2014-04-09 05:23:22:0426, list_mouseentered, 4080
+2014-04-09 05:23:22:0441, list_mouseexited
+2014-04-09 05:23:32:0318, setup_loaddata
+2014-04-09 05:23:35:0235, diag_itementered, id=7291, type=1
+2014-04-09 05:23:37:0019, edge_create, Tuple[0,1,0.9410576480120517,1,0.0,1397035411834,1397035411834]
+2014-04-09 05:23:37:0019, edge_create, Tuple[1,2,0.7522679214918551,1,0.0,1397035411834,1397035411834]
+2014-04-09 05:23:37:0050, discussion_open, 7291
+2014-04-09 05:23:37:0050, diag_itemclicked, id=7291, type=1
+2014-04-09 05:23:38:0064, diag_itemexited, id=7291, type=1
+2014-04-09 05:23:38:0797, diag_itementered, id=4080, type=1
+2014-04-09 05:23:40:0638, diag_itemexited, id=4080, type=1
+2014-04-09 05:23:41:0184, list_mouseentered, 4080
+2014-04-09 05:23:42:0073, list_mouseexited
+2014-04-09 05:23:42:0838, diag_itementered, id=4080, type=1
+2014-04-09 05:23:42:0884, diag_itemexited, id=4080, type=1
+2014-04-09 05:23:43:0259, diag_itementered, id=4080, type=1
+2014-04-09 05:23:43:0820, diag_itemexited, id=4080, type=1
+2014-04-09 05:23:44:0070, list_mouseentered, 4080
+2014-04-09 05:23:44:0538, list_mouseexited
+2014-04-09 05:23:45:0084, diag_itementered, id=4080, type=1
+2014-04-09 05:23:45:0505, diag_itemexited, id=4080, type=1
+2014-04-09 05:23:45:0646, list_mouseentered, 4080
+2014-04-09 05:23:46:0238, list_mouseexited
+2014-04-09 05:23:46:0660, diag_itementered, id=4080, type=1
+2014-04-09 05:23:47:0252, diag_itemexited, id=4080, type=1
+2014-04-09 05:23:47:0424, list_mouseentered, 4080
+2014-04-09 05:23:47:0861, list_mouseexited
+2014-04-09 05:23:48:0360, diag_itementered, id=4080, type=1
+2014-04-09 05:23:50:0201, diag_itemexited, id=4080, type=1
+2014-04-09 05:23:50:0310, list_mouseentered, 4080
+2014-04-09 05:23:50:0357, list_mouseexited

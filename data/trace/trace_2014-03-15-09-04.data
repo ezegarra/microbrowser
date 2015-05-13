@@ -1,0 +1,29 @@
+2014-03-15 09:04:33:0019, setup_loaddata
+2014-03-15 09:04:33:0171, question_create, 2015327792
+2014-03-15 09:04:33:0171, question_create, -112302091
+2014-03-15 09:04:33:0386, setup_resizewin
+2014-03-15 09:04:34:0633, diag_itementered, id=4080, type=1
+2014-03-15 09:04:34:0686, diag_itemexited, id=4080, type=1
+2014-03-15 09:04:34:0757, diag_itementered, id=11088, type=1
+2014-03-15 09:04:34:0802, diag_itemexited, id=11088, type=1
+2014-03-15 09:04:34:0835, diag_itementered, id=5078, type=1
+2014-03-15 09:04:34:0873, diag_itemexited, id=5078, type=1
+2014-03-15 11:05:03:0532, list_mouseentered, 5328
+2014-03-15 11:05:04:0425, list_mouseexited
+2014-03-15 11:05:05:0512, list_mouseentered, 6658
+2014-03-15 11:05:08:0486, list_mouseexited
+2014-03-15 11:05:08:0984, diag_itementered, id=4630, type=1
+2014-03-15 11:05:09:0017, diag_itemexited, id=4630, type=1
+2014-03-15 11:05:09:0084, diag_itementered, id=8569, type=1
+2014-03-15 11:05:09:0124, diag_itemexited, id=8569, type=1
+2014-03-15 11:05:09:0132, diag_itementered, id=7779, type=1
+2014-03-15 11:05:09:0162, diag_itemexited, id=7779, type=1
+2014-03-15 11:05:13:0319, list_mouseentered, 7661
+2014-03-15 11:05:15:0262, list_mouseexited
+2014-03-15 11:05:15:0359, list_mouseentered, 8318
+2014-03-15 11:05:15:0694, list_mouseexited
+2014-03-15 11:05:16:0091, list_mouseentered, 9044
+2014-03-15 11:05:17:0794, discussion_open, 11088
+2014-03-15 11:05:17:0823, list_mouseexited
+2014-03-15 11:05:27:0674, list_mouseentered, 9913
+2014-03-15 11:05:28:0039, list_mouseexited

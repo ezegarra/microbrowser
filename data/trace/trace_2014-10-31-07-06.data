@@ -1,0 +1,183 @@
+2014-10-31 07:06:39:0218, setup_loaddata
+2014-10-31 07:06:40:0818, list_mouseentered, 2109443059
+2014-10-31 07:06:41:0238, list_mouseexited
+2014-10-31 07:06:41:0388, diag_itementered, id=17373, type=1
+2014-10-31 07:06:41:0448, diag_itemexited, id=17373, type=1
+2014-10-31 07:06:41:0498, diag_itementered, id=29751, type=1
+2014-10-31 07:06:41:0548, diag_itemexited, id=29751, type=1
+2014-10-31 07:06:41:0578, diag_itementered, id=31924, type=1
+2014-10-31 07:06:41:0818, diag_itemexited, id=31924, type=1
+2014-10-31 07:06:41:0908, diag_itementered, id=15649, type=1
+2014-10-31 07:06:41:0988, diag_itemexited, id=15649, type=1
+2014-10-31 07:06:42:0088, diag_itementered, id=25033, type=1
+2014-10-31 07:06:44:0137, edge_create, Tuple[0,1,0.4641592728800835,4,0.0,1414753598568,1414753598568]
+2014-10-31 07:06:44:0137, answer_create, 25036
+2014-10-31 07:06:44:0137, edge_create, Tuple[1,2,0.3760640135341021,4,0.0,1414753598568,1414753598568]
+2014-10-31 07:06:44:0137, answer_create, 25043
+2014-10-31 07:06:44:0137, edge_create, Tuple[1,3,0.7310975859433939,4,0.0,1414753598568,1414753598568]
+2014-10-31 07:06:44:0137, answer_create, 36438
+2014-10-31 07:06:44:0137, edge_create, Tuple[1,4,0.37507876883603286,4,0.0,1414753598568,1414753598568]
+2014-10-31 07:06:44:0147, edge_create, Tuple[0,5,0.5811549665895461,1,0.0,1414753598568,1414753598568]
+2014-10-31 07:06:44:0147, edge_create, Tuple[5,6,0.10255605834740589,1,0.0,1414753598568,1414753598568]
+2014-10-31 07:06:44:0177, discussion_open, 25033
+2014-10-31 07:06:44:0177, diag_itemclicked, id=25033, type=1
+2014-10-31 07:06:44:0907, diag_itemexited, id=25033, type=1
+2014-10-31 07:06:46:0337, answer_open, VisualItem[tree.nodes,2,id=25036,type=20,title=,body=<p>No input is not the same as the end of the stream. You can usually simulate the end of the stream in a console by pressing Ctrl+D (AFAIK some systems use Ctrl+Z instead). But I guess this is not what you want so better test for empty strings additionally to null strings.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 07:06:46:0337, answer_open, VisualItem[tree.nodes,2,id=25036,type=20,title=,body=<p>No input is not the same as the end of the stream. You can usually simulate the end of the stream in a console by pressing Ctrl+D (AFAIK some systems use Ctrl+Z instead). But I guess this is not what you want so better test for empty strings additionally to null strings.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 07:06:46:0347, diag_detail_itementered, id=25036, type=20
+2014-10-31 07:06:48:0067, diag_detail_itemexited, id=25036, type=20
+2014-10-31 07:06:48:0697, answer_open, VisualItem[tree.nodes,3,id=25043,type=21,title=,body=<blockquote>
+  <p>From my understanding of this, readLine should return null the first time no input is entered other than a line termination, like '\r'.</p>
+</blockquote>
+
+<p>That is not correct. <code>readLine</code> will return <code>null</code> if the end of the stream is reached. That is, for example, if you are reading a file, and the file ends, or if you're reading from a socket and the socket closses.</p>
+
+<p>But if you're simply reading the console input, hitting the return key on your keyboard does not constitute an end of stream. It's simply a character that is returned (<code>\n</code> or <code>\r\n</code> depending on your OS).</p>
+
+<p>So, if you want to break on both the empty string and the end of line, you should do:</p>
+
+<pre><code>while (line != null &amp;&amp; !line.equals(""))
+</code></pre>
+
+<p>Also, your current program should work as expected if you pipe some file directly into it, like so:</p>
+
+<pre><code>java -cp . Echo &lt; test.txt
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=9]
+2014-10-31 07:06:48:0707, answer_open, VisualItem[tree.nodes,3,id=25043,type=21,title=,body=<blockquote>
+  <p>From my understanding of this, readLine should return null the first time no input is entered other than a line termination, like '\r'.</p>
+</blockquote>
+
+<p>That is not correct. <code>readLine</code> will return <code>null</code> if the end of the stream is reached. That is, for example, if you are reading a file, and the file ends, or if you're reading from a socket and the socket closses.</p>
+
+<p>But if you're simply reading the console input, hitting the return key on your keyboard does not constitute an end of stream. It's simply a character that is returned (<code>\n</code> or <code>\r\n</code> depending on your OS).</p>
+
+<p>So, if you want to break on both the empty string and the end of line, you should do:</p>
+
+<pre><code>while (line != null &amp;&amp; !line.equals(""))
+</code></pre>
+
+<p>Also, your current program should work as expected if you pipe some file directly into it, like so:</p>
+
+<pre><code>java -cp . Echo &lt; test.txt
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=9]
+2014-10-31 07:06:48:0707, diag_detail_itementered, id=25043, type=21
+2014-10-31 07:06:48:0807, diag_detail_itemexited, id=25043, type=21
+2014-10-31 07:06:49:0307, answer_open, VisualItem[tree.nodes,3,id=25043,type=21,title=,body=<blockquote>
+  <p>From my understanding of this, readLine should return null the first time no input is entered other than a line termination, like '\r'.</p>
+</blockquote>
+
+<p>That is not correct. <code>readLine</code> will return <code>null</code> if the end of the stream is reached. That is, for example, if you are reading a file, and the file ends, or if you're reading from a socket and the socket closses.</p>
+
+<p>But if you're simply reading the console input, hitting the return key on your keyboard does not constitute an end of stream. It's simply a character that is returned (<code>\n</code> or <code>\r\n</code> depending on your OS).</p>
+
+<p>So, if you want to break on both the empty string and the end of line, you should do:</p>
+
+<pre><code>while (line != null &amp;&amp; !line.equals(""))
+</code></pre>
+
+<p>Also, your current program should work as expected if you pipe some file directly into it, like so:</p>
+
+<pre><code>java -cp . Echo &lt; test.txt
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=9]
+2014-10-31 07:06:49:0317, answer_open, VisualItem[tree.nodes,3,id=25043,type=21,title=,body=<blockquote>
+  <p>From my understanding of this, readLine should return null the first time no input is entered other than a line termination, like '\r'.</p>
+</blockquote>
+
+<p>That is not correct. <code>readLine</code> will return <code>null</code> if the end of the stream is reached. That is, for example, if you are reading a file, and the file ends, or if you're reading from a socket and the socket closses.</p>
+
+<p>But if you're simply reading the console input, hitting the return key on your keyboard does not constitute an end of stream. It's simply a character that is returned (<code>\n</code> or <code>\r\n</code> depending on your OS).</p>
+
+<p>So, if you want to break on both the empty string and the end of line, you should do:</p>
+
+<pre><code>while (line != null &amp;&amp; !line.equals(""))
+</code></pre>
+
+<p>Also, your current program should work as expected if you pipe some file directly into it, like so:</p>
+
+<pre><code>java -cp . Echo &lt; test.txt
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=9]
+2014-10-31 07:06:49:0317, diag_detail_itementered, id=25043, type=21
+2014-10-31 07:06:50:0657, diag_detail_itemexited, id=25043, type=21
+2014-10-31 07:06:50:0967, diag_detail_itemexited, id=0.37507876883603286, type=4
+2014-10-31 07:06:51:0267, answer_open, VisualItem[tree.nodes,4,id=36438,type=20,title=,body=<p>There's a nice <a href="http://commons.apache.org/lang/" rel="nofollow">apache commons lang</a> library which has a good api for common :) actions. You could use statically import StringUtils and use its method isNotEmpty(String ) to get:</p>
+
+<pre><code>while(isNotEmpty(line)) {
+    System.out.println(line);
+    line = br.readLine();
+}
+</code></pre>
+
+<p>It might be useful someday:) There are also other useful classes in this lib.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 07:06:51:0277, answer_open, VisualItem[tree.nodes,4,id=36438,type=20,title=,body=<p>There's a nice <a href="http://commons.apache.org/lang/" rel="nofollow">apache commons lang</a> library which has a good api for common :) actions. You could use statically import StringUtils and use its method isNotEmpty(String ) to get:</p>
+
+<pre><code>while(isNotEmpty(line)) {
+    System.out.println(line);
+    line = br.readLine();
+}
+</code></pre>
+
+<p>It might be useful someday:) There are also other useful classes in this lib.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 07:06:51:0277, diag_detail_itementered, id=36438, type=20
+2014-10-31 07:06:52:0427, diag_detail_itemexited, id=36438, type=20
+2014-10-31 07:06:53:0707, answer_open, VisualItem[tree.nodes,4,id=36438,type=20,title=,body=<p>There's a nice <a href="http://commons.apache.org/lang/" rel="nofollow">apache commons lang</a> library which has a good api for common :) actions. You could use statically import StringUtils and use its method isNotEmpty(String ) to get:</p>
+
+<pre><code>while(isNotEmpty(line)) {
+    System.out.println(line);
+    line = br.readLine();
+}
+</code></pre>
+
+<p>It might be useful someday:) There are also other useful classes in this lib.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 07:06:53:0717, answer_open, VisualItem[tree.nodes,4,id=36438,type=20,title=,body=<p>There's a nice <a href="http://commons.apache.org/lang/" rel="nofollow">apache commons lang</a> library which has a good api for common :) actions. You could use statically import StringUtils and use its method isNotEmpty(String ) to get:</p>
+
+<pre><code>while(isNotEmpty(line)) {
+    System.out.println(line);
+    line = br.readLine();
+}
+</code></pre>
+
+<p>It might be useful someday:) There are also other useful classes in this lib.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 07:06:53:0717, diag_detail_itementered, id=36438, type=20
+2014-10-31 07:06:54:0867, diag_detail_itemexited, id=36438, type=20
+2014-10-31 07:06:55:0657, answer_open, VisualItem[tree.nodes,4,id=36438,type=20,title=,body=<p>There's a nice <a href="http://commons.apache.org/lang/" rel="nofollow">apache commons lang</a> library which has a good api for common :) actions. You could use statically import StringUtils and use its method isNotEmpty(String ) to get:</p>
+
+<pre><code>while(isNotEmpty(line)) {
+    System.out.println(line);
+    line = br.readLine();
+}
+</code></pre>
+
+<p>It might be useful someday:) There are also other useful classes in this lib.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 07:06:55:0657, answer_open, VisualItem[tree.nodes,4,id=36438,type=20,title=,body=<p>There's a nice <a href="http://commons.apache.org/lang/" rel="nofollow">apache commons lang</a> library which has a good api for common :) actions. You could use statically import StringUtils and use its method isNotEmpty(String ) to get:</p>
+
+<pre><code>while(isNotEmpty(line)) {
+    System.out.println(line);
+    line = br.readLine();
+}
+</code></pre>
+
+<p>It might be useful someday:) There are also other useful classes in this lib.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753598568L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 07:06:55:0657, diag_detail_itementered, id=36438, type=20
+2014-10-31 07:06:55:0737, diag_detail_itemexited, id=36438, type=20
+2014-10-31 07:06:56:0377, diag_detail_itemexited, id=0.37507876883603286, type=4
+2014-10-31 07:06:56:0807, diag_detail_itemexited, id=0.37507876883603286, type=4
+2014-10-31 07:06:58:0317, diag_detail_itemexited, id=55709, type=1
+2014-10-31 07:06:59:0827, diag_detail_itemexited, id=55709, type=1
+2014-10-31 07:07:00:0358, diag_detail_itemexited, id=55709, type=1
+2014-10-31 07:07:00:0798, diag_detail_itemexited, id=-1731827608, type=3
+2014-10-31 07:07:00:0908, list_mouseentered, type=detailRelatedList, item=55709
+2014-10-31 07:07:00:0958, list_mouseexited, type=detailRelatedList
+2014-10-31 07:08:13:0054, list_mouseentered, type=detailRelatedList, item=55709
+2014-10-31 07:08:13:0254, list_mouseexited, type=detailRelatedList

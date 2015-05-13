@@ -1,0 +1,78 @@
+2013-11-16 03:51:43:0959, setup_loaddata
+2013-11-16 03:51:44:0128, setup_resizewin
+2013-11-16 03:51:45:0451, diag_itementered, id=123, type=1
+2013-11-16 03:51:45:0460, diag_itemexited, id=123, type=1
+2013-11-16 03:52:35:0132, diag_itementered, id=48249, type=1
+2013-11-16 03:52:35:0178, diag_itemexited, id=48249, type=1
+2013-11-16 03:52:35:0180, diag_itementered, id=5078, type=1
+2013-11-16 03:52:35:0387, diag_itemexited, id=5078, type=1
+2013-11-16 03:52:35:0389, diag_itementered, id=8569, type=1
+2013-11-16 03:52:35:0410, diag_itemexited, id=8569, type=1
+2013-11-16 03:52:35:0414, diag_itementered, id=65200, type=1
+2013-11-16 03:52:35:0427, diag_itemexited, id=65200, type=1
+2013-11-16 03:52:35:0429, diag_itementered, id=39399, type=1
+2013-11-16 03:52:35:0459, diag_itemexited, id=39399, type=1
+2013-11-16 03:52:35:0460, diag_itementered, id=12870, type=1
+2013-11-16 03:52:35:0474, diag_itemexited, id=12870, type=1
+2013-11-16 03:52:35:0476, diag_itementered, id=7720, type=1
+2013-11-16 03:52:35:0490, diag_itemexited, id=7720, type=1
+2013-11-16 03:52:35:0515, diag_itementered, id=54886, type=1
+2013-11-16 03:52:35:0537, diag_itemexited, id=54886, type=1
+2013-11-16 03:52:36:0726, setup_resizewin
+2013-11-16 03:52:36:0762, setup_resizewin
+2013-11-16 03:52:36:0910, setup_resizewin
+2013-11-16 03:52:36:0945, setup_resizewin
+2013-11-16 03:52:37:0061, setup_resizewin
+2013-11-16 03:52:37:0062, setup_resizewin
+2013-11-16 03:52:37:0191, setup_resizewin
+2013-11-16 03:52:37:0294, setup_resizewin
+2013-11-16 03:52:37:0749, setup_resizewin
+2013-11-16 03:52:37:0773, setup_resizewin
+2013-11-16 03:52:37:0774, setup_resizewin
+2013-11-16 03:52:37:0874, setup_resizewin
+2013-11-16 03:52:37:0961, setup_resizewin
+2013-11-16 03:52:37:0962, setup_resizewin
+2013-11-16 03:52:37:0965, setup_resizewin
+2013-11-16 03:52:38:0043, setup_resizewin
+2013-11-16 03:52:38:0045, setup_resizewin
+2013-11-16 03:52:38:0219, setup_resizewin
+2013-11-16 03:52:38:0221, setup_resizewin
+2013-11-16 03:52:38:0250, setup_resizewin
+2013-11-16 03:52:38:0330, setup_resizewin
+2013-11-16 03:52:38:0331, setup_resizewin
+2013-11-16 03:52:38:0404, setup_resizewin
+2013-11-16 03:52:38:0407, setup_resizewin
+2013-11-16 03:52:38:0483, setup_resizewin
+2013-11-16 03:52:38:0485, setup_resizewin
+2013-11-16 03:52:38:0486, setup_resizewin
+2013-11-16 03:52:38:0567, setup_resizewin
+2013-11-16 03:52:38:0569, setup_resizewin
+2013-11-16 03:52:38:0640, setup_resizewin
+2013-11-16 03:52:38:0642, setup_resizewin
+2013-11-16 03:52:39:0636, setup_resizewin
+2013-11-16 03:52:39:0658, setup_resizewin
+2013-11-16 03:52:39:0723, setup_resizewin
+2013-11-16 03:52:39:0742, setup_resizewin
+2013-11-16 03:52:39:0789, setup_resizewin
+2013-11-16 03:52:39:0851, setup_resizewin
+2013-11-16 03:52:39:0913, setup_resizewin
+2013-11-16 03:52:39:0978, setup_resizewin
+2013-11-16 03:52:39:0979, setup_resizewin
+2013-11-16 03:52:39:0993, setup_resizewin
+2013-11-16 03:52:40:0060, setup_resizewin
+2013-11-16 03:52:41:0920, setup_resizewin
+2013-11-16 03:52:42:0713, list_mouseentered, 15496
+2013-11-16 03:52:44:0099, list_mouseexited, 
+2013-11-16 03:52:45:0464, list_mouseentered, 7720
+2013-11-16 03:52:50:0853, list_mouseexited, 
+2013-11-16 03:52:58:0219, list_mouseentered, 26458
+2013-11-16 03:53:14:0462, list_mouseexited, 
+2013-11-16 03:53:16:0198, list_mouseentered, 8569
+2013-11-16 03:53:23:0672, list_itemclicked, -1596700516
+2013-11-16 03:53:25:0168, pattern_open, -1596700516
+2013-11-16 03:53:25:0187, list_mouseexited, 
+2013-11-16 03:53:25:0351, diag_itementered, id=-1596700516, type=0
+2013-11-16 03:53:26:0630, diag_itemexited, id=-1596700516, type=0
+2013-11-16 03:53:39:0730, discussion_open, 61559
+2013-11-16 03:54:10:0700, list_mouseentered, 11930
+2013-11-16 03:54:10:0701, list_mouseexited, 

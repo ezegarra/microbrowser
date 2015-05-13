@@ -1,0 +1,606 @@
+2014-12-17 04:40:35:0965, setup_loaddata_begin
+2014-12-17 04:40:37:0573, setup_loaddata_end
+2014-12-17 04:40:37:0603, setup_createactions_begin
+2014-12-17 04:40:37:0773, setup_createactions_end
+2014-12-17 04:40:52:0667, search_update, test
+2014-12-17 04:40:54:0157, search_update, 
+2014-12-17 04:40:55:0301, search_update, unit
+2014-12-17 04:40:56:0371, search_update, 
+2014-12-17 04:40:57:0973, search_update, help
+2014-12-17 04:40:59:0394, search_update, 
+2014-12-17 04:41:01:0478, search_update, swing
+2014-12-17 04:41:02:0738, search_update, 
+2014-12-17 04:41:04:0985, search_update, test
+2014-12-17 04:41:06:0255, search_update, 
+2014-12-17 04:41:07:0850, search_update, test
+2014-12-17 04:41:09:0181, search_update, 
+2014-12-17 04:41:10:0311, diag_itementered, id=35842, type=1
+2014-12-17 04:41:10:0331, diag_itemexited, id=35842, type=1
+2014-12-17 04:41:11:0021, diag_itementered, id=62289, type=1
+2014-12-17 04:41:13:0244, edge_create, Tuple[0,1,0.4776006196344733,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0244, answer_create, 62291
+2014-12-17 04:41:13:0244, edge_create, Tuple[1,2,0.4822990006269946,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0244, answer_create, 62299
+2014-12-17 04:41:13:0244, edge_create, Tuple[1,3,0.4469543895974154,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0244, answer_create, 62312
+2014-12-17 04:41:13:0244, edge_create, Tuple[1,4,0.9844459880322538,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0244, answer_create, 62690
+2014-12-17 04:41:13:0254, edge_create, Tuple[1,5,0.3767299500935981,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0254, answer_create, 63231
+2014-12-17 04:41:13:0254, edge_create, Tuple[1,6,0.4635142251450951,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0254, answer_create, 876862
+2014-12-17 04:41:13:0254, edge_create, Tuple[1,7,0.6821681755299891,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0254, answer_create, 878336
+2014-12-17 04:41:13:0254, edge_create, Tuple[1,8,0.5407179082547614,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0254, answer_create, 1982033
+2014-12-17 04:41:13:0254, edge_create, Tuple[1,9,0.18343919408724674,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0254, answer_create, 5841923
+2014-12-17 04:41:13:0254, edge_create, Tuple[1,10,0.019840817758306595,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0254, answer_create, 5902131
+2014-12-17 04:41:13:0254, edge_create, Tuple[1,11,0.5441234953327346,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0254, answer_create, 6028547
+2014-12-17 04:41:13:0254, edge_create, Tuple[1,12,0.33629133436290926,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0254, answer_create, 6163701
+2014-12-17 04:41:13:0254, edge_create, Tuple[1,13,0.1334534688262331,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0254, answer_create, 6287763
+2014-12-17 04:41:13:0264, edge_create, Tuple[1,14,0.17049765237908165,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0264, answer_create, 8955801
+2014-12-17 04:41:13:0264, edge_create, Tuple[1,15,0.4491309193078252,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0264, answer_create, 11854901
+2014-12-17 04:41:13:0264, edge_create, Tuple[1,16,0.34098460853223667,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0264, answer_create, 15689078
+2014-12-17 04:41:13:0264, edge_create, Tuple[1,17,0.9856185863109793,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0264, answer_create, 15831762
+2014-12-17 04:41:13:0264, edge_create, Tuple[1,18,0.7288911068673809,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0264, answer_create, 17310303
+2014-12-17 04:41:13:0264, edge_create, Tuple[1,19,0.4851443759643752,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0264, edge_create, Tuple[0,20,0.475680964636526,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0264, edge_create, Tuple[20,21,0.34279801579338076,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0274, edge_create, Tuple[20,22,0.6809721465511939,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0284, edge_create, Tuple[20,23,0.421204026947645,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0284, edge_create, Tuple[20,24,0.9649867772374748,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0284, edge_create, Tuple[20,25,0.1731114386474183,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0284, edge_create, Tuple[20,26,0.47295738100774387,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0294, edge_create, Tuple[20,27,0.17126387801726783,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0294, edge_create, Tuple[20,28,0.6253914915529568,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0294, edge_create, Tuple[20,29,0.44414230986530423,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0294, edge_create, Tuple[20,30,0.3624969022564606,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0304, edge_create, Tuple[20,31,0.3442706581963748,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0304, edge_create, Tuple[20,32,0.013032686655402359,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0304, edge_create, Tuple[20,33,0.6040323784164964,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0314, edge_create, Tuple[20,34,0.7227241639185534,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0314, edge_create, Tuple[20,35,0.22427453338091408,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0314, edge_create, Tuple[20,36,0.6061451818267659,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0324, edge_create, Tuple[20,37,0.49591896567088256,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0324, edge_create, Tuple[20,38,0.20522378923781648,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0324, edge_create, Tuple[20,39,0.7675161193584483,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0324, edge_create, Tuple[20,40,0.22950023983101342,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0334, edge_create, Tuple[20,41,0.1759606210582837,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0334, edge_create, Tuple[20,42,0.9658058158304234,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0334, edge_create, Tuple[20,43,0.9778484991754247,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0334, edge_create, Tuple[20,44,0.7416174113767336,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0344, edge_create, Tuple[20,45,0.020235378265642923,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0344, edge_create, Tuple[20,46,0.7360752796093093,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0344, edge_create, Tuple[20,47,0.3275169797683781,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0354, edge_create, Tuple[20,48,0.6002578045627233,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0354, edge_create, Tuple[20,49,0.4520853842292448,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0354, edge_create, Tuple[20,50,0.38413865005731274,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0354, edge_create, Tuple[20,51,0.7272332917493739,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0364, edge_create, Tuple[20,52,0.29768472881993346,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0364, edge_create, Tuple[20,53,0.5990201404041116,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0364, edge_create, Tuple[20,54,0.7493896094029884,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0364, edge_create, Tuple[20,55,0.9176451124301057,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0374, edge_create, Tuple[20,56,0.8144035792144765,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0374, edge_create, Tuple[20,57,0.19708020155937278,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0374, edge_create, Tuple[20,58,0.9591682544580689,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0374, edge_create, Tuple[20,59,0.053715758349940024,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0384, edge_create, Tuple[20,60,0.17856984834193412,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0384, edge_create, Tuple[20,61,0.10060185039550207,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0384, edge_create, Tuple[20,62,0.13918954487112578,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0394, edge_create, Tuple[20,63,0.6841929775663766,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0394, edge_create, Tuple[20,64,0.9379803720743509,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0394, edge_create, Tuple[20,65,0.8266125712287685,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0394, edge_create, Tuple[20,66,0.4149885465241109,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0404, edge_create, Tuple[20,67,0.29026006317884456,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0404, edge_create, Tuple[20,68,0.8525399861469396,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0404, edge_create, Tuple[20,69,0.6656261440669262,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0414, edge_create, Tuple[20,70,0.36823081477632436,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:13:0424, discussion_open, 62289
+2014-12-17 04:41:13:0424, diag_itemclicked, id=62289, type=1
+2014-12-17 04:41:19:0141, diag_itemexited, id=62289, type=1
+2014-12-17 04:41:19:0281, diag_detail_itementered, id=64010, type=1
+2014-12-17 04:41:19:0341, diag_detail_itemexited, id=64010, type=1
+2014-12-17 04:41:19:0431, diag_detail_itementered, id=0.020235378265642923, type=1
+2014-12-17 04:41:19:0471, diag_detail_itemexited, id=0.020235378265642923, type=1
+2014-12-17 04:41:19:0481, diag_detail_itementered, id=0.7416174113767336, type=1
+2014-12-17 04:41:19:0511, diag_detail_itemexited, id=0.7416174113767336, type=1
+2014-12-17 04:41:19:0531, diag_detail_itementered, id=590818054, type=3
+2014-12-17 04:41:19:0551, diag_detail_itemexited, id=590818054, type=3
+2014-12-17 04:41:19:0561, diag_detail_itementered, id=0.3442706581963748, type=1
+2014-12-17 04:41:19:0581, diag_detail_itemexited, id=0.3442706581963748, type=1
+2014-12-17 04:41:19:0581, diag_detail_itementered, id=0.1731114386474183, type=1
+2014-12-17 04:41:19:0601, diag_detail_itemexited, id=0.1731114386474183, type=1
+2014-12-17 04:41:19:0601, diag_detail_itementered, id=0.6809721465511939, type=1
+2014-12-17 04:41:19:0631, diag_detail_itemexited, id=0.6809721465511939, type=1
+2014-12-17 04:41:20:0491, diag_detail_itementered, id=62289, type=1
+2014-12-17 04:41:22:0131, diag_detail_itemclicked, id=62289, type=1
+2014-12-17 04:41:22:0421, edge_create, Tuple[0,1,0.040626113918810325,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0421, answer_create, 62291
+2014-12-17 04:41:22:0421, edge_create, Tuple[1,2,0.3973215323232825,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0421, answer_create, 62299
+2014-12-17 04:41:22:0421, edge_create, Tuple[1,3,0.02439506532314173,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0421, answer_create, 62312
+2014-12-17 04:41:22:0421, edge_create, Tuple[1,4,0.6595889008599386,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0421, answer_create, 62690
+2014-12-17 04:41:22:0421, edge_create, Tuple[1,5,0.4447266007611367,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0421, answer_create, 63231
+2014-12-17 04:41:22:0421, edge_create, Tuple[1,6,0.7298146305914204,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0421, answer_create, 876862
+2014-12-17 04:41:22:0431, edge_create, Tuple[1,7,0.8312174735370205,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0431, answer_create, 878336
+2014-12-17 04:41:22:0431, edge_create, Tuple[1,8,0.3589866610575513,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0431, answer_create, 1982033
+2014-12-17 04:41:22:0431, edge_create, Tuple[1,9,0.1413696706319737,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0431, answer_create, 5841923
+2014-12-17 04:41:22:0431, edge_create, Tuple[1,10,0.6196844747573972,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0431, answer_create, 5902131
+2014-12-17 04:41:22:0431, edge_create, Tuple[1,11,0.03068423826925426,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0431, answer_create, 6028547
+2014-12-17 04:41:22:0431, edge_create, Tuple[1,12,0.6343651253043134,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0431, answer_create, 6163701
+2014-12-17 04:41:22:0431, edge_create, Tuple[1,13,0.14707732276769225,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0431, answer_create, 6287763
+2014-12-17 04:41:22:0441, edge_create, Tuple[1,14,0.46533894413821253,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0441, answer_create, 8955801
+2014-12-17 04:41:22:0441, edge_create, Tuple[1,15,0.4222916525886875,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0441, answer_create, 11854901
+2014-12-17 04:41:22:0441, edge_create, Tuple[1,16,0.8417247106656828,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0441, answer_create, 15689078
+2014-12-17 04:41:22:0441, edge_create, Tuple[1,17,0.5065346241871608,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0441, answer_create, 15831762
+2014-12-17 04:41:22:0441, edge_create, Tuple[1,18,0.9288282739350536,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0441, answer_create, 17310303
+2014-12-17 04:41:22:0441, edge_create, Tuple[1,19,0.35613346776036003,4,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0441, edge_create, Tuple[0,20,0.7320511087465326,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0441, edge_create, Tuple[20,21,0.4369746072853119,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0451, edge_create, Tuple[20,22,0.9090792970165713,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0451, edge_create, Tuple[20,23,0.08892565409094189,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0451, edge_create, Tuple[20,24,0.44483228568047106,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0451, edge_create, Tuple[20,25,0.7389902524488678,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0461, edge_create, Tuple[20,26,0.5431910024822816,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0461, edge_create, Tuple[20,27,0.9249061186267296,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0461, edge_create, Tuple[20,28,0.1932270882489997,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0461, edge_create, Tuple[20,29,0.45817895550960996,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0471, edge_create, Tuple[20,30,0.6764968550536715,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0471, edge_create, Tuple[20,31,0.618690597302175,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0471, edge_create, Tuple[20,32,0.06254651096471242,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0471, edge_create, Tuple[20,33,0.5251891286878563,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0481, edge_create, Tuple[20,34,0.7743237437131355,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0481, edge_create, Tuple[20,35,0.900955155610731,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0481, edge_create, Tuple[20,36,0.1415606209230328,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0491, edge_create, Tuple[20,37,0.3761526076016777,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0491, edge_create, Tuple[20,38,0.5618558333217525,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0491, edge_create, Tuple[20,39,0.4028546265716638,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0491, edge_create, Tuple[20,40,0.2852455972378476,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0501, edge_create, Tuple[20,41,0.36115063394908486,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0501, edge_create, Tuple[20,42,0.7732369607492303,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0501, edge_create, Tuple[20,43,0.7013756178532982,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0501, edge_create, Tuple[20,44,0.1679370351835584,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0511, edge_create, Tuple[20,45,0.08527481716912666,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0511, edge_create, Tuple[20,46,0.26702222630769024,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0511, edge_create, Tuple[20,47,0.6853614330071235,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0511, edge_create, Tuple[20,48,0.9274571596358745,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0521, edge_create, Tuple[20,49,0.6950096008056927,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0521, edge_create, Tuple[20,50,0.4223159362281401,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0521, edge_create, Tuple[20,51,0.9507358798855812,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0521, edge_create, Tuple[20,52,0.6236349923442178,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0531, edge_create, Tuple[20,53,0.5220752428131474,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0531, edge_create, Tuple[20,54,0.16840973800790326,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0531, edge_create, Tuple[20,55,0.47349103866874354,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0531, edge_create, Tuple[20,56,0.9387403445205751,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0541, edge_create, Tuple[20,57,0.42753609431789563,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0541, edge_create, Tuple[20,58,0.220461076543636,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0541, edge_create, Tuple[20,59,0.3802944174064138,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0541, edge_create, Tuple[20,60,0.032703970431435914,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0551, edge_create, Tuple[20,61,0.6508916059841209,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0551, edge_create, Tuple[20,62,0.09472884931524506,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0551, edge_create, Tuple[20,63,0.23910884072666627,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0551, edge_create, Tuple[20,64,0.23259757245087276,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0561, edge_create, Tuple[20,65,0.9620324887525609,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0561, edge_create, Tuple[20,66,0.2591097574545417,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0561, edge_create, Tuple[20,67,0.9260079504853314,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0561, edge_create, Tuple[20,68,0.2836994278388495,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0571, edge_create, Tuple[20,69,0.438357976729869,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0571, edge_create, Tuple[20,70,0.3381952767142121,1,0.0,1418852436540,1418852436540]
+2014-12-17 04:41:22:0581, discussion_open, 62289
+2014-12-17 04:41:22:0581, diag_detail_itemclicked, id=62289, type=1
+2014-12-17 04:41:24:0083, diag_detail_itementered, id=-1972766596, type=3
+2014-12-17 04:41:24:0836, diag_detail_itemclicked, id=-1972766596, type=3
+2014-12-17 04:41:25:0056, diag_detail_itemclicked, id=-1972766596, type=3
+2014-12-17 04:41:27:0917, diag_detail_itemexited, id=-1972766596, type=3
+2014-12-17 04:41:27:0917, diag_detail_itementered, id=0.3589866610575513, type=4
+2014-12-17 04:41:28:0007, diag_detail_itemexited, id=0.3589866610575513, type=4
+2014-12-17 04:41:28:0487, diag_detail_itementered, id=0.3589866610575513, type=4
+2014-12-17 04:41:28:0507, diag_detail_itemexited, id=0.3589866610575513, type=4
+2014-12-17 04:41:28:0567, answer_open, VisualItem[tree.nodes,9,id=1982033,type=20,title=,body=<p>You don't actually need a 3rd party package. Windows has a reg utility for all registry operations. To get the command format, go to the DOS propmt and type:</p>
+
+<pre><code>reg /?
+</code></pre>
+
+<p>You can invoke <em>reg</em> through the Runtime class:</p>
+
+<pre><code>Runtime.getRuntime().exec("reg &lt;your parameters here&gt;");
+</code></pre>
+
+<p>Editing keys and adding new ones is straightforward using the command above. To read the registry, you need to get <em>reg</em>'s output, and it's a little tricky. Here's the code:</p>
+
+<pre><code>import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringWriter;
+
+/**
+ * @author Oleg Ryaboy, based on work by Miguel Enriquez 
+ */
+public class WindowsReqistry {
+
+    /**
+     * 
+     * @param location path in the registry
+     * @param key registry key
+     * @return registry value or null if not found
+     */
+    public static final String readRegistry(String location, String key){
+        try {
+            // Run reg query, then read output with StreamReader (internal class)
+            Process process = Runtime.getRuntime().exec("reg query " + 
+                    '"'+ location + "\" /v " + key);
+
+            StreamReader reader = new StreamReader(process.getInputStream());
+            reader.start();
+            process.waitFor();
+            reader.join();
+            String output = reader.getResult();
+
+            // Output has the following format:
+            // \n&lt;Version information&gt;\n\n&lt;key&gt;\t&lt;registry type&gt;\t&lt;value&gt;
+            if( ! output.contains("\t")){
+                    return null;
+            }
+
+            // Parse out the value
+            String[] parsed = output.split("\t");
+            return parsed[parsed.length-1];
+        }
+        catch (Exception e) {
+            return null;
+        }
+
+    }
+
+    static class StreamReader extends Thread {
+        private InputStream is;
+        private StringWriter sw= new StringWriter();
+
+        public StreamReader(InputStream is) {
+            this.is = is;
+        }
+
+        public void run() {
+            try {
+                int c;
+                while ((c = is.read()) != -1)
+                    sw.write(c);
+            }
+            catch (IOException e) { 
+        }
+        }
+
+        public String getResult() {
+            return sw.toString();
+        }
+    }
+    public static void main(String[] args) {
+
+        // Sample usage
+        String value = WindowsReqistry.readRegistry("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\" 
+                 + "Explorer\\Shell Folders", "Personal");
+        System.out.println(value);
+    }
+}
+</code></pre>
+
+<hr>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418852436540L,lastactivitydate=0L,tags=,score=73,searchfield=]
+2014-12-17 04:41:28:0587, answer_open, VisualItem[tree.nodes,9,id=1982033,type=20,title=,body=<p>You don't actually need a 3rd party package. Windows has a reg utility for all registry operations. To get the command format, go to the DOS propmt and type:</p>
+
+<pre><code>reg /?
+</code></pre>
+
+<p>You can invoke <em>reg</em> through the Runtime class:</p>
+
+<pre><code>Runtime.getRuntime().exec("reg &lt;your parameters here&gt;");
+</code></pre>
+
+<p>Editing keys and adding new ones is straightforward using the command above. To read the registry, you need to get <em>reg</em>'s output, and it's a little tricky. Here's the code:</p>
+
+<pre><code>import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringWriter;
+
+/**
+ * @author Oleg Ryaboy, based on work by Miguel Enriquez 
+ */
+public class WindowsReqistry {
+
+    /**
+     * 
+     * @param location path in the registry
+     * @param key registry key
+     * @return registry value or null if not found
+     */
+    public static final String readRegistry(String location, String key){
+        try {
+            // Run reg query, then read output with StreamReader (internal class)
+            Process process = Runtime.getRuntime().exec("reg query " + 
+                    '"'+ location + "\" /v " + key);
+
+            StreamReader reader = new StreamReader(process.getInputStream());
+            reader.start();
+            process.waitFor();
+            reader.join();
+            String output = reader.getResult();
+
+            // Output has the following format:
+            // \n&lt;Version information&gt;\n\n&lt;key&gt;\t&lt;registry type&gt;\t&lt;value&gt;
+            if( ! output.contains("\t")){
+                    return null;
+            }
+
+            // Parse out the value
+            String[] parsed = output.split("\t");
+            return parsed[parsed.length-1];
+        }
+        catch (Exception e) {
+            return null;
+        }
+
+    }
+
+    static class StreamReader extends Thread {
+        private InputStream is;
+        private StringWriter sw= new StringWriter();
+
+        public StreamReader(InputStream is) {
+            this.is = is;
+        }
+
+        public void run() {
+            try {
+                int c;
+                while ((c = is.read()) != -1)
+                    sw.write(c);
+            }
+            catch (IOException e) { 
+        }
+        }
+
+        public String getResult() {
+            return sw.toString();
+        }
+    }
+    public static void main(String[] args) {
+
+        // Sample usage
+        String value = WindowsReqistry.readRegistry("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\" 
+                 + "Explorer\\Shell Folders", "Personal");
+        System.out.println(value);
+    }
+}
+</code></pre>
+
+<hr>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418852436540L,lastactivitydate=0L,tags=,score=73,searchfield=]
+2014-12-17 04:41:28:0587, diag_detail_itementered, id=1982033, type=20
+2014-12-17 04:41:28:0747, diag_detail_itemexited, id=1982033, type=20
+2014-12-17 04:41:28:0937, answer_open, VisualItem[tree.nodes,9,id=1982033,type=20,title=,body=<p>You don't actually need a 3rd party package. Windows has a reg utility for all registry operations. To get the command format, go to the DOS propmt and type:</p>
+
+<pre><code>reg /?
+</code></pre>
+
+<p>You can invoke <em>reg</em> through the Runtime class:</p>
+
+<pre><code>Runtime.getRuntime().exec("reg &lt;your parameters here&gt;");
+</code></pre>
+
+<p>Editing keys and adding new ones is straightforward using the command above. To read the registry, you need to get <em>reg</em>'s output, and it's a little tricky. Here's the code:</p>
+
+<pre><code>import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringWriter;
+
+/**
+ * @author Oleg Ryaboy, based on work by Miguel Enriquez 
+ */
+public class WindowsReqistry {
+
+    /**
+     * 
+     * @param location path in the registry
+     * @param key registry key
+     * @return registry value or null if not found
+     */
+    public static final String readRegistry(String location, String key){
+        try {
+            // Run reg query, then read output with StreamReader (internal class)
+            Process process = Runtime.getRuntime().exec("reg query " + 
+                    '"'+ location + "\" /v " + key);
+
+            StreamReader reader = new StreamReader(process.getInputStream());
+            reader.start();
+            process.waitFor();
+            reader.join();
+            String output = reader.getResult();
+
+            // Output has the following format:
+            // \n&lt;Version information&gt;\n\n&lt;key&gt;\t&lt;registry type&gt;\t&lt;value&gt;
+            if( ! output.contains("\t")){
+                    return null;
+            }
+
+            // Parse out the value
+            String[] parsed = output.split("\t");
+            return parsed[parsed.length-1];
+        }
+        catch (Exception e) {
+            return null;
+        }
+
+    }
+
+    static class StreamReader extends Thread {
+        private InputStream is;
+        private StringWriter sw= new StringWriter();
+
+        public StreamReader(InputStream is) {
+            this.is = is;
+        }
+
+        public void run() {
+            try {
+                int c;
+                while ((c = is.read()) != -1)
+                    sw.write(c);
+            }
+            catch (IOException e) { 
+        }
+        }
+
+        public String getResult() {
+            return sw.toString();
+        }
+    }
+    public static void main(String[] args) {
+
+        // Sample usage
+        String value = WindowsReqistry.readRegistry("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\" 
+                 + "Explorer\\Shell Folders", "Personal");
+        System.out.println(value);
+    }
+}
+</code></pre>
+
+<hr>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418852436540L,lastactivitydate=0L,tags=,score=73,searchfield=]
+2014-12-17 04:41:28:0947, answer_open, VisualItem[tree.nodes,9,id=1982033,type=20,title=,body=<p>You don't actually need a 3rd party package. Windows has a reg utility for all registry operations. To get the command format, go to the DOS propmt and type:</p>
+
+<pre><code>reg /?
+</code></pre>
+
+<p>You can invoke <em>reg</em> through the Runtime class:</p>
+
+<pre><code>Runtime.getRuntime().exec("reg &lt;your parameters here&gt;");
+</code></pre>
+
+<p>Editing keys and adding new ones is straightforward using the command above. To read the registry, you need to get <em>reg</em>'s output, and it's a little tricky. Here's the code:</p>
+
+<pre><code>import java.io.IOException;
+import java.io.InputStream;
+import java.io.StringWriter;
+
+/**
+ * @author Oleg Ryaboy, based on work by Miguel Enriquez 
+ */
+public class WindowsReqistry {
+
+    /**
+     * 
+     * @param location path in the registry
+     * @param key registry key
+     * @return registry value or null if not found
+     */
+    public static final String readRegistry(String location, String key){
+        try {
+            // Run reg query, then read output with StreamReader (internal class)
+            Process process = Runtime.getRuntime().exec("reg query " + 
+                    '"'+ location + "\" /v " + key);
+
+            StreamReader reader = new StreamReader(process.getInputStream());
+            reader.start();
+            process.waitFor();
+            reader.join();
+            String output = reader.getResult();
+
+            // Output has the following format:
+            // \n&lt;Version information&gt;\n\n&lt;key&gt;\t&lt;registry type&gt;\t&lt;value&gt;
+            if( ! output.contains("\t")){
+                    return null;
+            }
+
+            // Parse out the value
+            String[] parsed = output.split("\t");
+            return parsed[parsed.length-1];
+        }
+        catch (Exception e) {
+            return null;
+        }
+
+    }
+
+    static class StreamReader extends Thread {
+        private InputStream is;
+        private StringWriter sw= new StringWriter();
+
+        public StreamReader(InputStream is) {
+            this.is = is;
+        }
+
+        public void run() {
+            try {
+                int c;
+                while ((c = is.read()) != -1)
+                    sw.write(c);
+            }
+            catch (IOException e) { 
+        }
+        }
+
+        public String getResult() {
+            return sw.toString();
+        }
+    }
+    public static void main(String[] args) {
+
+        // Sample usage
+        String value = WindowsReqistry.readRegistry("HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\" 
+                 + "Explorer\\Shell Folders", "Personal");
+        System.out.println(value);
+    }
+}
+</code></pre>
+
+<hr>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418852436540L,lastactivitydate=0L,tags=,score=73,searchfield=]
+2014-12-17 04:41:28:0947, diag_detail_itementered, id=1982033, type=20
+2014-12-17 04:41:28:0987, diag_detail_itemexited, id=1982033, type=20
+2014-12-17 04:41:29:0177, diag_detail_itementered, id=-1972766596, type=3
+2014-12-17 04:41:29:0247, diag_detail_itemexited, id=-1972766596, type=3
+2014-12-17 04:41:29:0911, diag_detail_itementered, id=62289, type=1
+2014-12-17 04:41:30:0081, diag_detail_itemexited, id=62289, type=1
+2014-12-17 04:41:30:0251, diag_detail_itementered, id=0.2836994278388495, type=1
+2014-12-17 04:41:30:0281, diag_detail_itemexited, id=0.2836994278388495, type=1
+2014-12-17 04:41:30:0341, diag_detail_itementered, id=32586, type=1
+2014-12-17 04:41:30:0361, diag_detail_itemexited, id=32586, type=1
+2014-12-17 04:41:30:0631, diag_detail_itementered, id=36832, type=1
+2014-12-17 04:41:30:0661, diag_detail_itemexited, id=36832, type=1
+2014-12-17 04:41:30:0661, diag_detail_itementered, id=56943, type=1
+2014-12-17 04:41:30:0671, diag_detail_itemexited, id=56943, type=1
+2014-12-17 04:41:30:0671, diag_detail_itementered, id=0.09472884931524506, type=1
+2014-12-17 04:41:30:0701, diag_detail_itemexited, id=0.09472884931524506, type=1
+2014-12-17 04:41:30:0721, diag_detail_itementered, id=0.6508916059841209, type=1
+2014-12-17 04:41:30:0741, diag_detail_itemexited, id=0.6508916059841209, type=1
+2014-12-17 04:41:30:0751, diag_detail_itementered, id=0.032703970431435914, type=1
+2014-12-17 04:41:30:0771, diag_detail_itemexited, id=0.032703970431435914, type=1
+2014-12-17 04:41:30:0851, diag_detail_itementered, id=0.3802944174064138, type=1
+2014-12-17 04:41:30:0891, diag_detail_itemexited, id=0.3802944174064138, type=1
+2014-12-17 04:41:31:0111, diag_detail_itementered, id=10042, type=1
+2014-12-17 04:41:31:0131, diag_detail_itemexited, id=10042, type=1

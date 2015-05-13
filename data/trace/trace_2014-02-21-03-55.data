@@ -1,0 +1,9 @@
+2014-02-21 03:55:37:0702, setup_loaddata
+2014-02-21 03:55:38:0496, setup_resizewin
+2014-02-21 03:55:42:0724, diag_itementered, id=123, type=1
+2014-02-21 03:55:42:0865, diag_itemexited, id=123, type=1
+2014-02-21 03:55:42:0889, list_mouseentered, 123
+2014-02-21 03:55:47:0010, list_mouseexited
+2014-02-21 03:55:53:0021, list_mouseentered, 123
+2014-02-21 03:55:57:0245, discussion_open, 123
+2014-02-21 03:55:57:0322, list_mouseexited

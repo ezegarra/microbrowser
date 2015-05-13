@@ -1,0 +1,1208 @@
+2014-12-10 01:44:16:0006, setup_loaddata_begin
+2014-12-10 01:44:19:0096, setup_loaddata_end
+2014-12-10 01:44:19:0159, setup_createactions_begin
+2014-12-10 01:44:19:0424, setup_createactions_end
+2014-12-10 01:44:53:0370, list_mouseentered, id=24723, type=1
+2014-12-10 01:44:53:0370, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0386, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0432, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0448, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0464, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0495, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0510, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0542, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0557, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0604, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0635, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0666, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0682, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0713, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0729, list_mousemoved, id=24723, type=1
+2014-12-10 01:44:53:0760, list_mouseexited
+2014-12-10 01:44:54:0212, list_mouseentered, id=3049, type=1
+2014-12-10 01:44:54:0212, list_mousemoved, id=3049, type=1
+2014-12-10 01:44:54:0259, list_mousemoved, id=3049, type=1
+2014-12-10 01:44:54:0275, list_mousemoved, id=3049, type=1
+2014-12-10 01:44:54:0290, list_mousemoved, id=3049, type=1
+2014-12-10 01:44:54:0322, list_mousemoved, id=3049, type=1
+2014-12-10 01:44:54:0400, list_mousemoved, id=3049, type=1
+2014-12-10 01:44:54:0431, list_mousemoved, id=3049, type=1
+2014-12-10 01:44:54:0431, list_mousemoved, id=3049, type=1
+2014-12-10 01:44:54:0478, list_mouseexited
+2014-12-10 01:44:55:0928, diag_itementered, id=60764, type=1
+2014-12-10 01:44:55:0975, diag_itemexited, id=60764, type=1
+2014-12-10 01:45:03:0635, diag_itementered, id=19893, type=1
+2014-12-10 01:45:03:0666, diag_itemexited, id=19893, type=1
+2014-12-10 01:45:03:0775, diag_itementered, id=50064, type=1
+2014-12-10 01:45:03:0807, diag_itemexited, id=50064, type=1
+2014-12-10 01:45:03:0807, diag_itementered, id=14801, type=1
+2014-12-10 01:45:03:0853, diag_itemexited, id=14801, type=1
+2014-12-10 01:45:04:0056, diag_itementered, id=11341, type=1
+2014-12-10 01:45:04:0181, diag_itemexited, id=11341, type=1
+2014-12-10 01:45:07:0566, diag_itementered, id=31446, type=1
+2014-12-10 01:45:07:0644, diag_itemexited, id=31446, type=1
+2014-12-10 01:45:30:0561, diag_itemexited, id=1, type=4
+2014-12-10 01:45:30:0561, diag_itementered, id=1, type=0
+2014-12-10 01:45:30:0639, diag_itemexited, id=1, type=0
+2014-12-10 01:45:37:0706, diag_itemexited, id=1, type=4
+2014-12-10 01:45:49:0281, diag_itementered, id=39399, type=1
+2014-12-10 01:45:49:0609, diag_itemexited, id=39399, type=1
+2014-12-10 01:45:49:0952, diag_itementered, id=39399, type=1
+2014-12-10 01:45:50:0311, diag_itemexited, id=39399, type=1
+2014-12-10 01:46:00:0685, diag_itementered, id=39399, type=1
+2014-12-10 01:46:01:0122, diag_itemexited, id=39399, type=1
+2014-12-10 01:46:01:0824, diag_itementered, id=31446, type=1
+2014-12-10 01:46:02:0463, diag_itemexited, id=31446, type=1
+2014-12-10 01:46:06:0129, diag_itementered, id=3881, type=1
+2014-12-10 01:46:06:0285, diag_itemexited, id=3881, type=1
+2014-12-10 01:46:07:0424, diag_itemexited, id=1, type=4
+2014-12-10 01:46:07:0440, diag_itementered, id=1, type=0
+2014-12-10 01:46:07:0705, diag_itemexited, id=1, type=0
+2014-12-10 01:46:08:0438, diag_itemexited, id=1, type=4
+2014-12-10 01:46:10:0950, diag_itemexited, id=1, type=4
+2014-12-10 01:46:10:0950, diag_itementered, id=1, type=0
+2014-12-10 01:46:11:0761, diag_itemexited, id=1, type=0
+2014-12-10 01:46:11:0823, diag_itemexited, id=1, type=4
+2014-12-10 01:46:11:0964, diag_itementered, id=1, type=0
+2014-12-10 01:46:12:0385, diag_itemexited, id=1, type=0
+2014-12-10 01:46:12:0494, diag_itemexited, id=1, type=4
+2014-12-10 01:46:12:0494, diag_itementered, id=27129, type=1
+2014-12-10 01:46:12:0603, diag_itemexited, id=27129, type=1
+2014-12-10 01:46:12:0666, diag_itemexited, id=1, type=4
+2014-12-10 01:46:12:0666, diag_itementered, id=1, type=0
+2014-12-10 01:46:12:0884, diag_itemexited, id=1, type=0
+2014-12-10 01:46:12:0962, diag_itemexited, id=1, type=4
+2014-12-10 01:46:12:0962, diag_itementered, id=27129, type=1
+2014-12-10 01:46:13:0227, diag_itemexited, id=27129, type=1
+2014-12-10 01:46:13:0305, diag_itemexited, id=1, type=4
+2014-12-10 01:46:13:0305, diag_itementered, id=1, type=0
+2014-12-10 01:46:14:0007, diag_itemexited, id=1, type=0
+2014-12-10 01:46:14:0070, diag_itemexited, id=1, type=4
+2014-12-10 01:46:14:0273, diag_itementered, id=39399, type=1
+2014-12-10 01:46:14:0725, diag_itemexited, id=39399, type=1
+2014-12-10 01:46:14:0959, diag_itementered, id=31446, type=1
+2014-12-10 01:46:15:0349, diag_itemexited, id=31446, type=1
+2014-12-10 01:46:15:0536, list_mouseentered, id=49379, type=1
+2014-12-10 01:46:15:0536, list_mousemoved, id=49379, type=1
+2014-12-10 01:46:15:0599, list_mousemoved, id=49379, type=1
+2014-12-10 01:46:15:0614, list_mousemoved, id=49379, type=1
+2014-12-10 01:46:15:0645, list_mouseexited
+2014-12-10 01:46:16:0269, diag_itementered, id=33901, type=1
+2014-12-10 01:46:16:0301, diag_itemexited, id=33901, type=1
+2014-12-10 01:46:24:0959, diag_itementered, id=19766, type=1
+2014-12-10 01:46:25:0005, diag_itemexited, id=19766, type=1
+2014-12-10 01:46:46:0471, diag_itementered, id=25552, type=1
+2014-12-10 01:46:46:0534, diag_itemexited, id=25552, type=1
+2014-12-10 01:46:46:0939, diag_itementered, id=23402, type=1
+2014-12-10 01:46:46:0986, diag_itemexited, id=23402, type=1
+2014-12-10 01:46:47:0064, list_mouseentered, id=23402, type=1
+2014-12-10 01:46:47:0064, list_mousemoved, id=23402, type=1
+2014-12-10 01:46:47:0064, list_mousemoved, id=23402, type=1
+2014-12-10 01:46:47:0095, list_mousemoved, id=23402, type=1
+2014-12-10 01:46:47:0111, list_mousemoved, id=23402, type=1
+2014-12-10 01:46:47:0142, list_mouseexited
+2014-12-10 01:46:48:0546, diag_itementered, id=31446, type=1
+2014-12-10 01:46:48:0609, diag_itemexited, id=31446, type=1
+2014-12-10 01:46:48:0858, diag_itemexited, id=1, type=4
+2014-12-10 01:46:49:0623, diag_itemexited, id=1, type=4
+2014-12-10 01:46:49:0638, diag_itementered, id=1, type=0
+2014-12-10 01:46:50:0605, diag_itemexited, id=1, type=0
+2014-12-10 01:46:50:0668, diag_itemexited, id=1, type=4
+2014-12-10 01:46:51:0011, diag_itemexited, id=2, type=4
+2014-12-10 01:46:51:0011, diag_itementered, id=2, type=0
+2014-12-10 01:46:51:0588, diag_itemexited, id=2, type=0
+2014-12-10 01:46:51:0682, diag_itemexited, id=2, type=4
+2014-12-10 01:46:51:0713, diag_itementered, id=35186, type=1
+2014-12-10 01:46:51:0775, diag_itemexited, id=35186, type=1
+2014-12-10 01:46:51:0838, diag_itementered, id=41107, type=1
+2014-12-10 01:46:51:0916, diag_itemexited, id=41107, type=1
+2014-12-10 01:46:51:0931, diag_itementered, id=37628, type=1
+2014-12-10 01:46:52:0025, diag_itemexited, id=37628, type=1
+2014-12-10 01:46:52:0025, diag_itementered, id=4, type=0
+2014-12-10 01:46:52:0462, diag_itemexited, id=4, type=0
+2014-12-10 01:46:52:0524, diag_itemexited, id=4, type=4
+2014-12-10 01:46:52:0587, diag_itementered, id=41894, type=1
+2014-12-10 01:46:52:0633, diag_itemexited, id=41894, type=1
+2014-12-10 01:46:52:0977, diag_itemexited, id=1, type=4
+2014-12-10 01:46:52:0977, diag_itementered, id=1, type=0
+2014-12-10 01:46:56:0050, diag_itemexited, id=1, type=0
+2014-12-10 01:46:56:0159, diag_itemexited, id=1, type=4
+2014-12-10 01:46:56:0159, diag_itementered, id=27129, type=1
+2014-12-10 01:46:56:0331, diag_itemexited, id=27129, type=1
+2014-12-10 01:46:56:0409, diag_itemexited, id=1, type=4
+2014-12-10 01:46:56:0409, diag_itementered, id=1, type=0
+2014-12-10 01:46:56:0955, diag_itemexited, id=1, type=0
+2014-12-10 01:46:57:0173, diag_itemexited, id=1, type=4
+2014-12-10 01:46:57:0469, list_mouseentered, id=36347, type=1
+2014-12-10 01:46:57:0469, list_mousemoved, id=36347, type=1
+2014-12-10 01:46:57:0532, list_mousemoved, id=36347, type=1
+2014-12-10 01:46:57:0547, list_mousemoved, id=36347, type=1
+2014-12-10 01:46:57:0579, list_mousemoved, id=36347, type=1
+2014-12-10 01:46:57:0594, list_mousemoved, id=36347, type=1
+2014-12-10 01:46:57:0610, list_mousemoved, id=36347, type=1
+2014-12-10 01:46:57:0641, list_mousemoved, id=36347, type=1
+2014-12-10 01:46:57:0657, list_mouseexited
+2014-12-10 01:46:59:0061, list_pattern_mouseentered, id=1, type=0
+2014-12-10 01:46:59:0076, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0107, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0139, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0154, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0170, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0201, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0388, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0404, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0435, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0451, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0466, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0497, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0513, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0544, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0825, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0856, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0872, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0903, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0919, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0934, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0965, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:46:59:0981, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:47:00:0012, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:47:00:0028, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:47:00:0090, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:47:00:0137, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:47:00:0153, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:47:00:0153, list_pattern_mousemoved, id=1, type=0
+2014-12-10 01:47:00:0199, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0215, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0246, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0262, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0262, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0309, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0324, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0340, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0371, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0371, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0418, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:00:0433, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0433, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0465, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0496, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0527, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0543, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0558, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0589, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0605, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0621, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0636, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0667, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0667, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:00:0699, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:00:0714, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:00:0730, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:00:0777, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:00:0777, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:00:0808, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:00:0839, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:00:0839, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:00:0886, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:00:0995, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0011, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0042, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0057, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0073, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0120, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0151, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0182, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0198, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0213, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0245, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0260, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0291, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0307, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0323, list_pattern_mousemoved, id=4, type=0
+2014-12-10 01:47:01:0354, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0354, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0401, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0416, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0416, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0463, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0635, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0650, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0666, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0697, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0697, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:01:0744, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:01:0759, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:01:0791, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0744, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0759, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0775, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0806, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0806, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0837, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0868, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0868, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0915, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0931, list_pattern_mousemoved, id=2, type=0
+2014-12-10 01:47:11:0946, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:11:0978, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:11:0993, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:12:0102, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:12:0118, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:12:0149, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:12:0165, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:12:0165, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:12:0196, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:12:0212, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:12:0243, list_pattern_mousemoved, id=3, type=0
+2014-12-10 01:47:14:0411, list_pattern_itemclicked, id=3, type=0
+2014-12-10 01:47:14:0895, edge_create, Tuple[0,1,0.23630462597104707,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:47:14:0895, edge_create, Tuple[1,2,0.9195703540972198,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:47:14:0910, edge_create, Tuple[1,3,0.06296138411198471,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:47:14:0926, edge_create, Tuple[1,4,0.9141074899188709,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:47:14:0926, edge_create, Tuple[1,5,0.8317632576970595,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:47:14:0942, edge_create, Tuple[0,6,0.6457189892758775,2,1.0,1418237056708,1418237056708]
+2014-12-10 01:47:14:0942, pattern_create, 4
+2014-12-10 01:47:14:0942, edge_create, Tuple[6,7,0.4854538095254981,2,1.0,1418237056708,1418237056708]
+2014-12-10 01:47:14:0973, pattern_open, 3
+2014-12-10 01:47:15:0503, list_pattern_mouseexited
+2014-12-10 01:47:15:0503, list_mouseentered, type=detailAnswersList
+2014-12-10 01:47:15:0566, list_mouseexited, type=detailAnswersList
+2014-12-10 01:47:42:0055, diag_itementered, id=56974, type=1
+2014-12-10 01:47:42:0086, diag_itemexited, id=56974, type=1
+2014-12-10 01:47:50:0978, diag_itementered, id=41894, type=1
+2014-12-10 01:47:51:0009, diag_itemexited, id=41894, type=1
+2014-12-10 01:47:51:0056, diag_itemexited, id=1, type=4
+2014-12-10 01:47:51:0306, diag_itementered, id=61615, type=1
+2014-12-10 01:47:51:0352, diag_itemexited, id=61615, type=1
+2014-12-10 01:47:51:0711, diag_itementered, id=31446, type=1
+2014-12-10 01:47:51:0758, diag_itemexited, id=31446, type=1
+2014-12-10 01:47:51:0883, diag_itementered, id=39399, type=1
+2014-12-10 01:47:51:0914, diag_itemexited, id=39399, type=1
+2014-12-10 01:47:52:0117, diag_itemexited, id=1, type=4
+2014-12-10 01:47:52:0132, diag_itementered, id=1, type=0
+2014-12-10 01:47:52:0866, diag_itemexited, id=1, type=0
+2014-12-10 01:47:53:0037, diag_itemexited, id=1, type=4
+2014-12-10 01:47:54:0691, diag_itementered, id=39399, type=1
+2014-12-10 01:47:54:0816, diag_itemexited, id=39399, type=1
+2014-12-10 01:47:55:0268, diag_itementered, id=39399, type=1
+2014-12-10 01:48:07:0545, diag_itemexited, id=39399, type=1
+2014-12-10 01:48:08:0372, diag_itemexited, id=1, type=4
+2014-12-10 01:48:08:0372, diag_itementered, id=1, type=0
+2014-12-10 01:48:08:0715, diag_itemexited, id=1, type=0
+2014-12-10 01:48:08:0887, diag_itemexited, id=1, type=4
+2014-12-10 01:48:19:0667, diag_itementered, id=39399, type=1
+2014-12-10 01:48:19:0745, diag_itemexited, id=39399, type=1
+2014-12-10 01:48:19:0838, diag_itementered, id=34571, type=1
+2014-12-10 01:48:19:0885, diag_itemexited, id=34571, type=1
+2014-12-10 01:48:19:0885, diag_itementered, id=65035, type=1
+2014-12-10 01:48:19:0948, diag_itemexited, id=65035, type=1
+2014-12-10 01:48:19:0979, diag_itemexited, id=2, type=4
+2014-12-10 01:48:20:0478, diag_itemexited, id=2, type=4
+2014-12-10 01:48:20:0478, diag_itementered, id=65035, type=1
+2014-12-10 01:48:20:0603, diag_itemexited, id=65035, type=1
+2014-12-10 01:48:20:0696, diag_itemexited, id=2, type=4
+2014-12-10 01:48:21:0196, diag_itemexited, id=2, type=4
+2014-12-10 01:48:21:0539, diag_itementered, id=34571, type=1
+2014-12-10 01:48:22:0553, edge_create, Tuple[0,1,0.9094499621535586,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0553, answer_create, 34586
+2014-12-10 01:48:22:0568, edge_create, Tuple[1,2,0.864806268955013,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0568, answer_create, 34630
+2014-12-10 01:48:22:0568, edge_create, Tuple[1,3,0.770383624176354,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0568, answer_create, 57795
+2014-12-10 01:48:22:0568, edge_create, Tuple[1,4,0.09145752370981852,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0568, answer_create, 5820700
+2014-12-10 01:48:22:0568, edge_create, Tuple[1,5,0.8062363876837614,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0568, answer_create, 8704898
+2014-12-10 01:48:22:0568, edge_create, Tuple[1,6,0.058359219796605855,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0568, answer_create, 12061743
+2014-12-10 01:48:22:0568, edge_create, Tuple[1,7,0.4937379465397961,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0584, answer_create, 15192546
+2014-12-10 01:48:22:0584, edge_create, Tuple[1,8,0.20104325248595756,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0584, answer_create, 15980437
+2014-12-10 01:48:22:0584, edge_create, Tuple[1,9,0.8088839825807022,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0584, answer_create, 34598
+2014-12-10 01:48:22:0584, edge_create, Tuple[1,10,0.8333455953214471,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0584, answer_create, 34594
+2014-12-10 01:48:22:0584, edge_create, Tuple[1,11,0.45221761705880315,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0584, answer_create, 34590
+2014-12-10 01:48:22:0584, edge_create, Tuple[1,12,0.27816599169737477,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0584, answer_create, 52054
+2014-12-10 01:48:22:0584, edge_create, Tuple[1,13,0.688729307302361,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0584, answer_create, 38425
+2014-12-10 01:48:22:0584, edge_create, Tuple[1,14,0.5504258778441345,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0584, answer_create, 34658
+2014-12-10 01:48:22:0584, edge_create, Tuple[1,15,0.13999159243683712,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0584, answer_create, 34644
+2014-12-10 01:48:22:0584, edge_create, Tuple[1,16,0.8394117865165664,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0600, answer_create, 5083041
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,17,0.7816148229132144,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0602, answer_create, 4667692
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,18,0.765569154619497,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0602, answer_create, 3177465
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,19,0.19550097835985547,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0602, answer_create, 1043013
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,20,0.767584068581016,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0602, answer_create, 1038507
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,21,0.8827846928976921,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0602, answer_create, 549592
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,22,0.8149184896462375,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0602, answer_create, 549558
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,23,0.2545119847666001,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0602, answer_create, 549551
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,24,0.38514028013837376,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0602, answer_create, 311412
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,25,0.14336845892021077,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0602, answer_create, 190338
+2014-12-10 01:48:22:0602, edge_create, Tuple[1,26,0.6313233757724518,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0617, answer_create, 91206
+2014-12-10 01:48:22:0617, edge_create, Tuple[1,27,0.19710586843303302,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0617, answer_create, 53571
+2014-12-10 01:48:22:0617, edge_create, Tuple[1,28,0.3700293338859141,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0617, answer_create, 51192
+2014-12-10 01:48:22:0617, edge_create, Tuple[1,29,0.9643328064866954,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0617, answer_create, 46255
+2014-12-10 01:48:22:0617, edge_create, Tuple[1,30,0.8130783204172455,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0617, answer_create, 8139572
+2014-12-10 01:48:22:0617, edge_create, Tuple[1,31,0.5232556737913961,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0617, edge_create, Tuple[0,32,0.3552685095099165,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0617, edge_create, Tuple[32,33,0.056632861314412364,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0633, edge_create, Tuple[32,34,0.6148195673992953,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0633, edge_create, Tuple[32,35,0.2801160790039754,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0648, edge_create, Tuple[32,36,0.8436382791476359,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0664, edge_create, Tuple[32,37,0.2903964518069574,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0664, edge_create, Tuple[32,38,0.7111964846659234,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0680, edge_create, Tuple[32,39,0.4338788249140251,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0695, edge_create, Tuple[32,40,0.8901622293699271,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0695, edge_create, Tuple[32,41,0.6913262856618244,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0711, edge_create, Tuple[32,42,0.2958482861918048,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0711, edge_create, Tuple[32,43,0.830023450310593,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0726, edge_create, Tuple[32,44,0.8575782565371314,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0726, edge_create, Tuple[32,45,0.9591060491114637,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0742, edge_create, Tuple[32,46,0.321380371854349,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0742, edge_create, Tuple[32,47,0.9180188596739345,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0758, edge_create, Tuple[32,48,0.4337966449214852,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0758, edge_create, Tuple[32,49,0.18044865494050677,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0773, edge_create, Tuple[32,50,0.46044924121618436,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0773, edge_create, Tuple[32,51,0.23000855964375289,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0789, edge_create, Tuple[32,52,0.015379181513885842,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0789, edge_create, Tuple[32,53,0.9885261242670261,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:48:22:0820, discussion_open, 34571
+2014-12-10 01:48:22:0820, diag_itemclicked, id=34571, type=1
+2014-12-10 01:48:24:0942, diag_itemexited, id=34571, type=1
+2014-12-10 01:48:24:0957, diag_detail_itementered, id=0.5504258778441345, type=4
+2014-12-10 01:48:25:0004, diag_detail_itemexited, id=0.5504258778441345, type=4
+2014-12-10 01:48:25:0004, diag_detail_itementered, id=0.058359219796605855, type=4
+2014-12-10 01:48:25:0020, diag_detail_itemexited, id=0.058359219796605855, type=4
+2014-12-10 01:48:27:0843, diag_detail_itementered, id=34571, type=1
+2014-12-10 01:48:30:0807, diag_detail_itemexited, id=34571, type=1
+2014-12-10 01:48:30:0823, diag_detail_itementered, id=0.3552685095099165, type=1
+2014-12-10 01:48:30:0854, diag_detail_itemexited, id=0.3552685095099165, type=1
+2014-12-10 01:48:31:0962, diag_detail_itementered, id=-183853450, type=3
+2014-12-10 01:48:32:0430, diag_detail_itemexited, id=-183853450, type=3
+2014-12-10 01:48:32:0757, diag_detail_itementered, id=0.3552685095099165, type=1
+2014-12-10 01:48:32:0820, diag_detail_itemexited, id=0.3552685095099165, type=1
+2014-12-10 01:48:33:0038, diag_detail_itementered, id=0.3552685095099165, type=1
+2014-12-10 01:48:33:0069, diag_detail_itemexited, id=0.3552685095099165, type=1
+2014-12-10 01:48:33:0147, diag_detail_itementered, id=-183853450, type=3
+2014-12-10 01:48:35:0300, diag_detail_itemexited, id=-183853450, type=3
+2014-12-10 01:48:35:0316, diag_detail_itementered, id=0.9591060491114637, type=1
+2014-12-10 01:48:35:0347, diag_detail_itemexited, id=0.9591060491114637, type=1
+2014-12-10 01:48:35:0347, diag_detail_itementered, id=0.8901622293699271, type=1
+2014-12-10 01:48:35:0394, diag_detail_itemexited, id=0.8901622293699271, type=1
+2014-12-10 01:48:35:0425, diag_detail_itementered, id=0.2903964518069574, type=1
+2014-12-10 01:48:35:0456, diag_detail_itemexited, id=0.2903964518069574, type=1
+2014-12-10 01:48:35:0487, diag_detail_itementered, id=0.2801160790039754, type=1
+2014-12-10 01:48:35:0519, diag_detail_itemexited, id=0.2801160790039754, type=1
+2014-12-10 01:48:35:0534, diag_detail_itementered, id=0.6148195673992953, type=1
+2014-12-10 01:48:35:0565, diag_detail_itemexited, id=0.6148195673992953, type=1
+2014-12-10 01:48:35:0659, diag_detail_itementered, id=0.056632861314412364, type=1
+2014-12-10 01:48:35:0737, diag_detail_itemexited, id=0.056632861314412364, type=1
+2014-12-10 01:48:36:0018, diag_detail_itementered, id=0.056632861314412364, type=1
+2014-12-10 01:48:36:0049, diag_detail_itemexited, id=0.056632861314412364, type=1
+2014-12-10 01:48:36:0174, diag_detail_itementered, id=0.6148195673992953, type=1
+2014-12-10 01:48:36:0205, diag_detail_itemexited, id=0.6148195673992953, type=1
+2014-12-10 01:48:36:0330, diag_detail_itementered, id=0.8436382791476359, type=1
+2014-12-10 01:48:36:0361, diag_detail_itemexited, id=0.8436382791476359, type=1
+2014-12-10 01:48:36:0408, diag_detail_itementered, id=0.7111964846659234, type=1
+2014-12-10 01:48:36:0439, diag_detail_itemexited, id=0.7111964846659234, type=1
+2014-12-10 01:48:36:0501, diag_detail_itementered, id=0.8901622293699271, type=1
+2014-12-10 01:48:36:0533, diag_detail_itemexited, id=0.8901622293699271, type=1
+2014-12-10 01:48:36:0579, diag_detail_itementered, id=0.6913262856618244, type=1
+2014-12-10 01:48:36:0611, diag_detail_itemexited, id=0.6913262856618244, type=1
+2014-12-10 01:48:36:0673, diag_detail_itementered, id=0.2958482861918048, type=1
+2014-12-10 01:48:36:0704, diag_detail_itemexited, id=0.2958482861918048, type=1
+2014-12-10 01:48:36:0845, diag_detail_itementered, id=0.321380371854349, type=1
+2014-12-10 01:48:36:0876, diag_detail_itemexited, id=0.321380371854349, type=1
+2014-12-10 01:48:36:0907, diag_detail_itementered, id=0.4337966449214852, type=1
+2014-12-10 01:48:36:0938, diag_detail_itemexited, id=0.4337966449214852, type=1
+2014-12-10 01:48:36:0954, diag_detail_itementered, id=0.46044924121618436, type=1
+2014-12-10 01:48:36:0985, diag_detail_itemexited, id=0.46044924121618436, type=1
+2014-12-10 01:48:37:0047, diag_detail_itementered, id=0.015379181513885842, type=1
+2014-12-10 01:48:37:0079, diag_detail_itemexited, id=0.015379181513885842, type=1
+2014-12-10 01:48:37:0531, diag_detail_itementered, id=0.015379181513885842, type=1
+2014-12-10 01:48:37:0562, diag_detail_itemexited, id=0.015379181513885842, type=1
+2014-12-10 01:48:37:0874, diag_detail_itementered, id=0.321380371854349, type=1
+2014-12-10 01:48:37:0905, diag_detail_itemexited, id=0.321380371854349, type=1
+2014-12-10 01:48:37:0937, diag_detail_itementered, id=59806, type=1
+2014-12-10 01:48:37:0983, diag_detail_itemexited, id=59806, type=1
+2014-12-10 01:48:37:0983, diag_detail_itementered, id=59128, type=1
+2014-12-10 01:48:38:0015, diag_detail_itemexited, id=59128, type=1
+2014-12-10 01:48:38:0373, diag_detail_itementered, id=56954, type=1
+2014-12-10 01:48:38:0451, diag_detail_itemexited, id=56954, type=1
+2014-12-10 01:48:38:0576, diag_detail_itementered, id=55440, type=1
+2014-12-10 01:48:38:0763, diag_detail_itemexited, id=55440, type=1
+2014-12-10 01:48:39:0044, diag_detail_itementered, id=54909, type=1
+2014-12-10 01:48:39:0122, diag_detail_itemexited, id=54909, type=1
+2014-12-10 01:48:39:0949, diag_detail_itementered, id=54909, type=1
+2014-12-10 01:48:40:0417, diag_detail_itemexited, id=54909, type=1
+2014-12-10 01:48:40:0854, diag_detail_itementered, id=55440, type=1
+2014-12-10 01:48:41:0010, diag_detail_itemexited, id=55440, type=1
+2014-12-10 01:48:41:0103, diag_detail_itementered, id=54909, type=1
+2014-12-10 01:48:41:0462, diag_detail_itemexited, id=54909, type=1
+2014-12-10 01:48:41:0977, diag_detail_itementered, id=61150, type=1
+2014-12-10 01:48:41:0993, diag_detail_itemexited, id=61150, type=1
+2014-12-10 01:48:42:0008, diag_detail_itementered, id=63748, type=1
+2014-12-10 01:48:42:0024, diag_detail_itemexited, id=63748, type=1
+2014-12-10 01:48:42:0039, diag_detail_itementered, id=64036, type=1
+2014-12-10 01:48:42:0071, diag_detail_itemexited, id=64036, type=1
+2014-12-10 01:48:42:0133, diag_detail_itementered, id=0.015379181513885842, type=1
+2014-12-10 01:48:42:0164, diag_detail_itemexited, id=0.015379181513885842, type=1
+2014-12-10 01:48:42:0398, diag_detail_itementered, id=0.864806268955013, type=4
+2014-12-10 01:48:42:0414, diag_detail_itemexited, id=0.864806268955013, type=4
+2014-12-10 01:48:42:0851, diag_detail_itementered, id=0.8130783204172455, type=4
+2014-12-10 01:48:42:0882, diag_detail_itemexited, id=0.8130783204172455, type=4
+2014-12-10 01:48:43:0053, diag_detail_itementered, id=0.9643328064866954, type=4
+2014-12-10 01:48:43:0085, diag_detail_itemexited, id=0.9643328064866954, type=4
+2014-12-10 01:48:43:0100, diag_detail_itementered, id=0.3700293338859141, type=4
+2014-12-10 01:48:43:0147, diag_detail_itemexited, id=0.3700293338859141, type=4
+2014-12-10 01:48:43:0163, diag_detail_itementered, id=0.19710586843303302, type=4
+2014-12-10 01:48:43:0194, diag_detail_itemexited, id=0.19710586843303302, type=4
+2014-12-10 01:48:43:0209, diag_detail_itementered, id=0.6313233757724518, type=4
+2014-12-10 01:48:43:0241, diag_detail_itemexited, id=0.6313233757724518, type=4
+2014-12-10 01:48:43:0256, diag_detail_itementered, id=0.14336845892021077, type=4
+2014-12-10 01:48:43:0287, diag_detail_itemexited, id=0.14336845892021077, type=4
+2014-12-10 01:48:43:0397, diag_detail_itementered, id=0.767584068581016, type=4
+2014-12-10 01:48:43:0428, diag_detail_itemexited, id=0.767584068581016, type=4
+2014-12-10 01:48:43:0459, diag_detail_itementered, id=0.19550097835985547, type=4
+2014-12-10 01:48:43:0490, diag_detail_itemexited, id=0.19550097835985547, type=4
+2014-12-10 01:48:43:0506, diag_detail_itementered, id=0.765569154619497, type=4
+2014-12-10 01:48:43:0537, diag_detail_itemexited, id=0.765569154619497, type=4
+2014-12-10 01:48:43:0553, diag_detail_itementered, id=0.7816148229132144, type=4
+2014-12-10 01:48:43:0584, diag_detail_itemexited, id=0.7816148229132144, type=4
+2014-12-10 01:48:43:0599, answer_open, VisualItem[tree.nodes,16,id=34644,type=20,title=,body=<p>I'd use <a href="http://docs.oracle.com/javase/tutorial/reflect/index.html" rel="nofollow">reflection</a>, since I don't like the idea of changing the access to a package on the declared method just for the sake of testing. However, I usually just test the public methods which should also ensure the the private methods are working correctly.</p>
+
+<blockquote>
+  <p>you can't use reflection to get private methods from outside the owner class, the private modifier affects reflection also</p>
+</blockquote>
+
+<p>This is not true. You most certainly can, as mentioned in <a href="http://stackoverflow.com/questions/34571/whats-the-best-way-of-unit-testing-private-methods#34658">Cem Catikkas's answer</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-10 01:48:43:0599, answer_open, VisualItem[tree.nodes,16,id=34644,type=20,title=,body=<p>I'd use <a href="http://docs.oracle.com/javase/tutorial/reflect/index.html" rel="nofollow">reflection</a>, since I don't like the idea of changing the access to a package on the declared method just for the sake of testing. However, I usually just test the public methods which should also ensure the the private methods are working correctly.</p>
+
+<blockquote>
+  <p>you can't use reflection to get private methods from outside the owner class, the private modifier affects reflection also</p>
+</blockquote>
+
+<p>This is not true. You most certainly can, as mentioned in <a href="http://stackoverflow.com/questions/34571/whats-the-best-way-of-unit-testing-private-methods#34658">Cem Catikkas's answer</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-10 01:48:43:0599, diag_detail_itementered, id=34644, type=20
+2014-12-10 01:48:43:0693, diag_detail_itemexited, id=34644, type=20
+2014-12-10 01:48:43:0880, answer_open, VisualItem[tree.nodes,12,id=34590,type=20,title=,body=<p>Generally a unit test is intended to exercise the public interface of a class or unit. Therefore, private methods are implementation detail that you would not expect to test explicitly.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-10 01:48:43:0880, answer_open, VisualItem[tree.nodes,12,id=34590,type=20,title=,body=<p>Generally a unit test is intended to exercise the public interface of a class or unit. Therefore, private methods are implementation detail that you would not expect to test explicitly.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=22,searchfield=]
+2014-12-10 01:48:43:0880, diag_detail_itementered, id=34590, type=20
+2014-12-10 01:48:43:0927, diag_detail_itemexited, id=34590, type=20
+2014-12-10 01:48:43:0989, answer_open, VisualItem[tree.nodes,11,id=34594,type=20,title=,body=<p>The private methods are called by a public method, so the inputs to your public methods should also test private methods that are called by those public methods. When a public method fails, then that could be a failure in the private method.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=24,searchfield=]
+2014-12-10 01:48:43:0989, answer_open, VisualItem[tree.nodes,11,id=34594,type=20,title=,body=<p>The private methods are called by a public method, so the inputs to your public methods should also test private methods that are called by those public methods. When a public method fails, then that could be a failure in the private method.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=24,searchfield=]
+2014-12-10 01:48:43:0989, diag_detail_itementered, id=34594, type=20
+2014-12-10 01:48:44:0052, diag_detail_itemexited, id=34594, type=20
+2014-12-10 01:48:44:0348, diag_detail_itementered, id=0.20104325248595756, type=4
+2014-12-10 01:48:44:0395, diag_detail_itemexited, id=0.20104325248595756, type=4
+2014-12-10 01:48:44:0426, diag_detail_itementered, id=0.058359219796605855, type=4
+2014-12-10 01:48:44:0457, diag_detail_itemexited, id=0.058359219796605855, type=4
+2014-12-10 01:48:44:0489, diag_detail_itementered, id=0.8062363876837614, type=4
+2014-12-10 01:48:44:0520, diag_detail_itemexited, id=0.8062363876837614, type=4
+2014-12-10 01:48:44:0551, diag_detail_itementered, id=0.09145752370981852, type=4
+2014-12-10 01:48:44:0582, diag_detail_itemexited, id=0.09145752370981852, type=4
+2014-12-10 01:48:44:0598, diag_detail_itementered, id=0.770383624176354, type=4
+2014-12-10 01:48:44:0629, diag_detail_itemexited, id=0.770383624176354, type=4
+2014-12-10 01:48:45:0627, answer_open, VisualItem[tree.nodes,2,id=34586,type=20,title=,body=<p>The best way to test a private method is via another public method. If this cannot be done, then one of the following conditions is true:</p>
+
+<ol>
+<li>The private method is dead code</li>
+<li>There is a design smell near the class that you are testing</li>
+<li>The method that you are trying to test should not be private</li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=150,searchfield=]
+2014-12-10 01:48:45:0627, answer_open, VisualItem[tree.nodes,2,id=34586,type=20,title=,body=<p>The best way to test a private method is via another public method. If this cannot be done, then one of the following conditions is true:</p>
+
+<ol>
+<li>The private method is dead code</li>
+<li>There is a design smell near the class that you are testing</li>
+<li>The method that you are trying to test should not be private</li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=150,searchfield=]
+2014-12-10 01:48:45:0627, diag_detail_itementered, id=34586, type=20
+2014-12-10 01:48:46:0361, diag_detail_itemexited, id=34586, type=20
+2014-12-10 01:48:46:0860, diag_detail_itementered, id=31201, type=1
+2014-12-10 01:48:46:0969, diag_detail_itemexited, id=31201, type=1
+2014-12-10 01:48:47:0515, diag_detail_itementered, id=0.864806268955013, type=4
+2014-12-10 01:48:47:0546, diag_detail_itemexited, id=0.864806268955013, type=4
+2014-12-10 01:48:47:0999, diag_detail_itementered, id=31201, type=1
+2014-12-10 01:48:48:0045, diag_detail_itemexited, id=31201, type=1
+2014-12-10 01:48:48:0077, diag_detail_itementered, id=0.9885261242670261, type=1
+2014-12-10 01:48:48:0124, diag_detail_itemexited, id=0.9885261242670261, type=1
+2014-12-10 01:48:48:0748, diag_detail_itementered, id=31201, type=1
+2014-12-10 01:48:52:0133, diag_detail_itemexited, id=31201, type=1
+2014-12-10 01:48:52:0289, diag_detail_itementered, id=31201, type=1
+2014-12-10 01:48:52:0320, diag_detail_itemexited, id=31201, type=1
+2014-12-10 01:48:52:0382, diag_detail_itementered, id=0.14336845892021077, type=4
+2014-12-10 01:48:52:0414, diag_detail_itemexited, id=0.14336845892021077, type=4
+2014-12-10 01:48:52:0445, diag_detail_itementered, id=0.8149184896462375, type=4
+2014-12-10 01:48:52:0476, diag_detail_itemexited, id=0.8149184896462375, type=4
+2014-12-10 01:48:53:0084, diag_detail_itementered, id=0.8827846928976921, type=4
+2014-12-10 01:48:53:0116, diag_detail_itemexited, id=0.8827846928976921, type=4
+2014-12-10 01:48:53:0443, diag_detail_itementered, id=0.767584068581016, type=4
+2014-12-10 01:48:53:0927, diag_detail_itemexited, id=0.767584068581016, type=4
+2014-12-10 01:48:53:0942, answer_open, VisualItem[tree.nodes,15,id=34658,type=21,title=,body=<p>If you have somewhat of a legacy application, and you're not allowed to change the visibility of your methods, the best way to test private methods is to use <a href="http://en.wikipedia.org/wiki/Reflection_%28computer_programming%29">reflection</a>. </p>
+
+<p>Internally we're using helpers to get/set <code>private</code> and <code>private static</code> variables as well as invoke <code>private</code> and <code>private static</code> methods. The following patterns will let you do pretty much anything related to the private methods and fields. Of course you can't change <code>private static final</code> variables through reflection.</p>
+
+<pre><code>Method method = targetClass.getDeclaredMethod(methodName, argClasses);
+method.setAccessible(true);
+return method.invoke(targetObject, argObjects);
+</code></pre>
+
+<p>And for fields:</p>
+
+<pre><code>Field field = targetClass.getDeclaredField(fieldName);
+field.setAccessible(true);
+field.set(object, value);
+</code></pre>
+
+<p>Notes:<br>
+*  <code>targetClass.getDeclaredMethod(methodName, argClasses)</code> lets you look into <code>private</code> methods. The same thing applies for <code>getDeclaredField</code>.<br>
+*  The <code>setAccessible(true)</code> is required to play around with privates.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=371,searchfield=]
+2014-12-10 01:48:53:0942, answer_open, VisualItem[tree.nodes,15,id=34658,type=21,title=,body=<p>If you have somewhat of a legacy application, and you're not allowed to change the visibility of your methods, the best way to test private methods is to use <a href="http://en.wikipedia.org/wiki/Reflection_%28computer_programming%29">reflection</a>. </p>
+
+<p>Internally we're using helpers to get/set <code>private</code> and <code>private static</code> variables as well as invoke <code>private</code> and <code>private static</code> methods. The following patterns will let you do pretty much anything related to the private methods and fields. Of course you can't change <code>private static final</code> variables through reflection.</p>
+
+<pre><code>Method method = targetClass.getDeclaredMethod(methodName, argClasses);
+method.setAccessible(true);
+return method.invoke(targetObject, argObjects);
+</code></pre>
+
+<p>And for fields:</p>
+
+<pre><code>Field field = targetClass.getDeclaredField(fieldName);
+field.setAccessible(true);
+field.set(object, value);
+</code></pre>
+
+<p>Notes:<br>
+*  <code>targetClass.getDeclaredMethod(methodName, argClasses)</code> lets you look into <code>private</code> methods. The same thing applies for <code>getDeclaredField</code>.<br>
+*  The <code>setAccessible(true)</code> is required to play around with privates.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=371,searchfield=]
+2014-12-10 01:48:53:0942, diag_detail_itementered, id=34658, type=21
+2014-12-10 01:48:57:0312, diag_detail_itemexited, id=34658, type=21
+2014-12-10 01:48:57:0312, diag_detail_itementered, id=0.767584068581016, type=4
+2014-12-10 01:48:57:0359, diag_detail_itemexited, id=0.767584068581016, type=4
+2014-12-10 01:48:57:0359, diag_detail_itementered, id=0.8827846928976921, type=4
+2014-12-10 01:48:57:0359, diag_detail_itemexited, id=0.8827846928976921, type=4
+2014-12-10 01:48:57:0406, diag_detail_itementered, id=0.38514028013837376, type=4
+2014-12-10 01:48:57:0437, diag_detail_itemexited, id=0.38514028013837376, type=4
+2014-12-10 01:48:57:0452, diag_detail_itementered, id=0.3700293338859141, type=4
+2014-12-10 01:48:57:0499, diag_detail_itemexited, id=0.3700293338859141, type=4
+2014-12-10 01:48:57:0515, diag_detail_itementered, id=0.8130783204172455, type=4
+2014-12-10 01:48:57:0546, diag_detail_itemexited, id=0.8130783204172455, type=4
+2014-12-10 01:48:57:0546, diag_detail_itementered, id=0.5232556737913961, type=4
+2014-12-10 01:48:57:0546, diag_detail_itemexited, id=0.5232556737913961, type=4
+2014-12-10 01:49:00:0136, diag_detail_itementered, id=0.767584068581016, type=4
+2014-12-10 01:49:00:0167, diag_detail_itemexited, id=0.767584068581016, type=4
+2014-12-10 01:49:00:0198, diag_detail_itementered, id=0.765569154619497, type=4
+2014-12-10 01:49:00:0229, diag_detail_itemexited, id=0.765569154619497, type=4
+2014-12-10 01:49:00:0370, answer_open, VisualItem[tree.nodes,14,id=38425,type=20,title=,body=<p>EDIT: Having tried Cem Catikkas' <a href="http://stackoverflow.com/questions/34571/whats-the-best-way-of-unit-testing-private-methods#34658">solution using reflection</a>, I'd have to say his was a more elegant solution than I have described here. However, if you're looking for an alternative to using reflection, and have access to the source you're testing, this will still be an option.</p>
+
+<p>There is possible merit in testing private methods of a class, particularly with <a href="http://en.wikipedia.org/wiki/Test-driven_development">test driven development</a>, where you would like to design small tests before you write any code. </p>
+
+<p>Creating a test with access to private members and methods can test areas of code which are difficult to target specifically with access only to public methods. If a public method has several steps involved, it can consist of several private methods, which can then be tested individually. </p>
+
+<p>Advantages:</p>
+
+<ul>
+<li>can test to a finer granularity</li>
+</ul>
+
+<p>Disadvantages:</p>
+
+<ul>
+<li>test code must reside in the same
+file as source code, which can be
+more difficult to maintain</li>
+<li>similarly with .class output files, they must remain within the same package as declared in source code</li>
+</ul>
+
+<p>However, if continuous testing requires this method, it may be a signal that the private methods should be extracted, which could be tested in the traditional, public way.</p>
+
+<p>Here is a convoluted example of how this would work:</p>
+
+<pre><code>// import statements and package declarations
+
+public class ClassToTest 
+{
+    private int decrement(int toDecrement) {
+    	toDecrement--;
+    	return toDecrement;
+    }
+
+    // constructor and rest of class
+
+    public static class StaticInnerTest extends TestCase
+    {
+    	public StaticInnerTest(){
+    		super();
+    	}
+
+    	public void testDecrement(){
+    		int number = 10;
+    		ClassToTest toTest= new ClassToTest();
+    		int decremented = toTest.decrement(number);
+    		assertEquals(9, decremented);
+    	}
+
+    	public static void main(String[] args) {
+    		junit.textui.TestRunner.run(StaticInnerTest.class);
+    	}
+
+    }
+}
+</code></pre>
+
+<p>Inner class would be compiled to <code>ClassToTest$StaticInnerTest</code>.</p>
+
+<p>See also:
+<a href="http://www.javaworld.com/javaworld/javatips/jw-javatip106.html">http://www.javaworld.com/javaworld/javatips/jw-javatip106.html</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=10,searchfield=]
+2014-12-10 01:49:00:0370, answer_open, VisualItem[tree.nodes,14,id=38425,type=20,title=,body=<p>EDIT: Having tried Cem Catikkas' <a href="http://stackoverflow.com/questions/34571/whats-the-best-way-of-unit-testing-private-methods#34658">solution using reflection</a>, I'd have to say his was a more elegant solution than I have described here. However, if you're looking for an alternative to using reflection, and have access to the source you're testing, this will still be an option.</p>
+
+<p>There is possible merit in testing private methods of a class, particularly with <a href="http://en.wikipedia.org/wiki/Test-driven_development">test driven development</a>, where you would like to design small tests before you write any code. </p>
+
+<p>Creating a test with access to private members and methods can test areas of code which are difficult to target specifically with access only to public methods. If a public method has several steps involved, it can consist of several private methods, which can then be tested individually. </p>
+
+<p>Advantages:</p>
+
+<ul>
+<li>can test to a finer granularity</li>
+</ul>
+
+<p>Disadvantages:</p>
+
+<ul>
+<li>test code must reside in the same
+file as source code, which can be
+more difficult to maintain</li>
+<li>similarly with .class output files, they must remain within the same package as declared in source code</li>
+</ul>
+
+<p>However, if continuous testing requires this method, it may be a signal that the private methods should be extracted, which could be tested in the traditional, public way.</p>
+
+<p>Here is a convoluted example of how this would work:</p>
+
+<pre><code>// import statements and package declarations
+
+public class ClassToTest 
+{
+    private int decrement(int toDecrement) {
+    	toDecrement--;
+    	return toDecrement;
+    }
+
+    // constructor and rest of class
+
+    public static class StaticInnerTest extends TestCase
+    {
+    	public StaticInnerTest(){
+    		super();
+    	}
+
+    	public void testDecrement(){
+    		int number = 10;
+    		ClassToTest toTest= new ClassToTest();
+    		int decremented = toTest.decrement(number);
+    		assertEquals(9, decremented);
+    	}
+
+    	public static void main(String[] args) {
+    		junit.textui.TestRunner.run(StaticInnerTest.class);
+    	}
+
+    }
+}
+</code></pre>
+
+<p>Inner class would be compiled to <code>ClassToTest$StaticInnerTest</code>.</p>
+
+<p>See also:
+<a href="http://www.javaworld.com/javaworld/javatips/jw-javatip106.html">http://www.javaworld.com/javaworld/javatips/jw-javatip106.html</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418237056708L,lastactivitydate=0L,tags=,score=10,searchfield=]
+2014-12-10 01:49:00:0370, diag_detail_itementered, id=38425, type=20
+2014-12-10 01:49:00:0479, diag_detail_itemexited, id=38425, type=20
+2014-12-10 01:49:00:0541, diag_detail_itementered, id=0.8088839825807022, type=4
+2014-12-10 01:49:00:0588, diag_detail_itemexited, id=0.8088839825807022, type=4
+2014-12-10 01:49:00:0650, diag_detail_itementered, id=0.8088839825807022, type=4
+2014-12-10 01:49:00:0682, diag_detail_itemexited, id=0.8088839825807022, type=4
+2014-12-10 01:49:00:0697, diag_detail_itementered, id=0.8333455953214471, type=4
+2014-12-10 01:49:00:0728, diag_detail_itemexited, id=0.8333455953214471, type=4
+2014-12-10 01:49:00:0744, diag_detail_itementered, id=0.45221761705880315, type=4
+2014-12-10 01:49:00:0775, diag_detail_itemexited, id=0.45221761705880315, type=4
+2014-12-10 01:49:00:0822, diag_detail_itementered, id=0.688729307302361, type=4
+2014-12-10 01:49:00:0853, diag_detail_itemexited, id=0.688729307302361, type=4
+2014-12-10 01:49:00:0869, diag_detail_itementered, id=0.5504258778441345, type=4
+2014-12-10 01:49:00:0900, diag_detail_itemexited, id=0.5504258778441345, type=4
+2014-12-10 01:49:00:0900, diag_detail_itementered, id=-974116991, type=3
+2014-12-10 01:49:00:0947, diag_detail_itemexited, id=-974116991, type=3
+2014-12-10 01:49:00:0978, diag_detail_itementered, id=0.864806268955013, type=4
+2014-12-10 01:49:01:0009, diag_detail_itemexited, id=0.864806268955013, type=4
+2014-12-10 01:49:01:0524, diag_detail_itementered, id=0.864806268955013, type=4
+2014-12-10 01:49:01:0555, diag_detail_itemexited, id=0.864806268955013, type=4
+2014-12-10 01:49:01:0805, diag_detail_itementered, id=0.015379181513885842, type=1
+2014-12-10 01:49:01:0836, diag_detail_itemexited, id=0.015379181513885842, type=1
+2014-12-10 01:49:02:0694, diag_detail_itementered, id=6816, type=1
+2014-12-10 01:49:02:0725, diag_detail_itemexited, id=6816, type=1
+2014-12-10 01:49:02:0788, diag_detail_itementered, id=0.9885261242670261, type=1
+2014-12-10 01:49:02:0819, diag_detail_itemexited, id=0.9885261242670261, type=1
+2014-12-10 01:49:06:0750, diag_detail_itementered, id=0.9885261242670261, type=1
+2014-12-10 01:49:06:0781, diag_detail_itemexited, id=0.9885261242670261, type=1
+2014-12-10 01:49:06:0859, diag_detail_itementered, id=65475, type=1
+2014-12-10 01:49:06:0891, diag_detail_itemexited, id=65475, type=1
+2014-12-10 01:49:07:0218, diag_detail_itementered, id=64036, type=1
+2014-12-10 01:49:07:0249, diag_detail_itemexited, id=64036, type=1
+2014-12-10 01:49:07:0249, diag_detail_itementered, id=0.9180188596739345, type=1
+2014-12-10 01:49:07:0281, diag_detail_itemexited, id=0.9180188596739345, type=1
+2014-12-10 01:49:07:0437, diag_detail_itementered, id=59806, type=1
+2014-12-10 01:49:07:0468, diag_detail_itemexited, id=59806, type=1
+2014-12-10 01:49:07:0577, diag_detail_itementered, id=59128, type=1
+2014-12-10 01:49:07:0608, diag_detail_itemexited, id=59128, type=1
+2014-12-10 01:49:07:0655, diag_detail_itementered, id=0.6913262856618244, type=1
+2014-12-10 01:49:07:0686, diag_detail_itemexited, id=0.6913262856618244, type=1
+2014-12-10 01:49:07:0686, diag_detail_itementered, id=0.8901622293699271, type=1
+2014-12-10 01:49:07:0733, diag_detail_itemexited, id=0.8901622293699271, type=1
+2014-12-10 01:49:07:0733, diag_detail_itementered, id=0.7111964846659234, type=1
+2014-12-10 01:49:07:0780, diag_detail_itemexited, id=0.7111964846659234, type=1
+2014-12-10 01:49:07:0780, diag_detail_itementered, id=0.8436382791476359, type=1
+2014-12-10 01:49:07:0811, diag_detail_itemexited, id=0.8436382791476359, type=1
+2014-12-10 01:49:07:0827, diag_detail_itementered, id=0.2801160790039754, type=1
+2014-12-10 01:49:07:0827, diag_detail_itemexited, id=0.2801160790039754, type=1
+2014-12-10 01:49:07:0858, diag_detail_itementered, id=0.6148195673992953, type=1
+2014-12-10 01:49:07:0905, diag_detail_itemexited, id=0.6148195673992953, type=1
+2014-12-10 01:49:07:0905, diag_detail_itementered, id=0.2801160790039754, type=1
+2014-12-10 01:49:07:0936, diag_detail_itemexited, id=0.2801160790039754, type=1
+2014-12-10 01:49:07:0936, diag_detail_itementered, id=0.8436382791476359, type=1
+2014-12-10 01:49:07:0951, diag_detail_itemexited, id=0.8436382791476359, type=1
+2014-12-10 01:49:07:0967, diag_detail_itementered, id=0.7111964846659234, type=1
+2014-12-10 01:49:07:0998, diag_detail_itemexited, id=0.7111964846659234, type=1
+2014-12-10 01:49:08:0014, diag_detail_itementered, id=0.4338788249140251, type=1
+2014-12-10 01:49:08:0045, diag_detail_itemexited, id=0.4338788249140251, type=1
+2014-12-10 01:49:08:0201, diag_detail_itementered, id=0.6913262856618244, type=1
+2014-12-10 01:49:08:0232, diag_detail_itemexited, id=0.6913262856618244, type=1
+2014-12-10 01:49:08:0326, diag_detail_itementered, id=0.2958482861918048, type=1
+2014-12-10 01:49:08:0357, diag_detail_itemexited, id=0.2958482861918048, type=1
+2014-12-10 01:49:08:0404, diag_detail_itementered, id=57194, type=1
+2014-12-10 01:49:08:0841, diag_detail_itemexited, id=57194, type=1
+2014-12-10 01:49:09:0137, diag_detail_itementered, id=57194, type=1
+2014-12-10 01:49:09:0511, diag_detail_itemclicked, id=57194, type=1
+2014-12-10 01:49:09:0917, edge_create, Tuple[0,1,0.6737285498891288,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0917, answer_create, 57324
+2014-12-10 01:49:09:0917, edge_create, Tuple[1,2,0.19773841645532042,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0917, answer_create, 57460
+2014-12-10 01:49:09:0917, edge_create, Tuple[1,3,0.5073628762783782,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0933, answer_create, 57447
+2014-12-10 01:49:09:0933, edge_create, Tuple[1,4,0.2808719302055718,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0933, answer_create, 91422
+2014-12-10 01:49:09:0933, edge_create, Tuple[1,5,0.10744296533815867,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0933, answer_create, 958415
+2014-12-10 01:49:09:0933, edge_create, Tuple[1,6,0.26796232646030926,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0933, edge_create, Tuple[0,7,0.5672910390982603,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0933, edge_create, Tuple[7,8,0.7494488487058433,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0933, edge_create, Tuple[7,9,0.4113208786954238,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0950, edge_create, Tuple[7,10,0.4337884940084611,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0950, edge_create, Tuple[7,11,0.3301030422442417,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0966, edge_create, Tuple[7,12,0.8994259794904463,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0966, edge_create, Tuple[7,13,0.46723062280619465,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0981, edge_create, Tuple[7,14,0.2379044528086789,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0981, edge_create, Tuple[7,15,0.6905735451025572,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0997, edge_create, Tuple[7,16,0.9373112092781033,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:09:0997, edge_create, Tuple[7,17,0.949429511867098,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0013, edge_create, Tuple[7,18,0.023346467419131933,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0028, edge_create, Tuple[7,19,0.29128099462950063,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0028, edge_create, Tuple[7,20,0.8944360713695344,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0044, edge_create, Tuple[7,21,0.09926813203771057,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0044, edge_create, Tuple[7,22,0.708455157974258,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0059, edge_create, Tuple[7,23,0.46662412367054573,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0059, edge_create, Tuple[7,24,0.618391973546312,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0075, edge_create, Tuple[7,25,0.5903576453033338,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0075, edge_create, Tuple[7,26,0.6448854596477833,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0091, edge_create, Tuple[7,27,0.5271942628214574,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0091, edge_create, Tuple[7,28,0.8128683468501235,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0106, edge_create, Tuple[7,29,0.3846207416749431,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0106, edge_create, Tuple[7,30,0.18101635705287888,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0122, edge_create, Tuple[7,31,0.933850604619045,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0122, edge_create, Tuple[7,32,0.13544458998499853,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0137, edge_create, Tuple[7,33,0.03531171317676929,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0137, edge_create, Tuple[7,34,0.3978314213750047,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0153, edge_create, Tuple[7,35,0.10713400884454716,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0153, edge_create, Tuple[7,36,0.4732393885680921,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0169, edge_create, Tuple[7,37,0.9800046636384248,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0169, edge_create, Tuple[7,38,0.11031864550205628,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0184, edge_create, Tuple[7,39,0.8451948242830433,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0184, edge_create, Tuple[7,40,0.9079225537049316,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0200, edge_create, Tuple[7,41,0.9847136293731803,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0215, edge_create, Tuple[7,42,0.6346640073941824,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0215, edge_create, Tuple[7,43,0.5821986494836572,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0231, edge_create, Tuple[7,44,0.5544461888011942,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:49:10:0247, discussion_open, 57194
+2014-12-10 01:49:10:0247, diag_detail_itemclicked, id=57194, type=1
+2014-12-10 01:49:11:0229, diag_detail_itementered, id=64454, type=1
+2014-12-10 01:49:11:0292, diag_detail_itemexited, id=64454, type=1
+2014-12-10 01:49:11:0635, diag_detail_itementered, id=51582, type=1
+2014-12-10 01:49:11:0697, diag_detail_itemexited, id=51582, type=1
+2014-12-10 01:49:11:0807, diag_detail_itementered, id=48203, type=1
+2014-12-10 01:49:11:0885, diag_detail_itemexited, id=48203, type=1
+2014-12-10 01:49:11:0963, diag_detail_itementered, id=49473, type=1
+2014-12-10 01:49:12:0041, diag_detail_itemexited, id=49473, type=1
+2014-12-10 01:49:12:0150, diag_detail_itementered, id=0.9847136293731803, type=1
+2014-12-10 01:49:12:0181, diag_detail_itemexited, id=0.9847136293731803, type=1
+2014-12-10 01:49:12:0680, diag_detail_itementered, id=31840, type=1
+2014-12-10 01:49:12:0727, diag_detail_itemexited, id=31840, type=1
+2014-12-10 01:49:13:0164, diag_detail_itementered, id=0.6346640073941824, type=1
+2014-12-10 01:49:13:0289, diag_detail_itemexited, id=0.6346640073941824, type=1
+2014-12-10 01:49:13:0289, diag_detail_itementered, id=0.8128683468501235, type=1
+2014-12-10 01:49:13:0289, diag_detail_itemexited, id=0.8128683468501235, type=1
+2014-12-10 01:49:13:0335, diag_detail_itementered, id=0.6448854596477833, type=1
+2014-12-10 01:49:13:0367, diag_detail_itemexited, id=0.6448854596477833, type=1
+2014-12-10 01:49:13:0367, diag_detail_itementered, id=0.618391973546312, type=1
+2014-12-10 01:49:13:0398, diag_detail_itemexited, id=0.618391973546312, type=1
+2014-12-10 01:49:13:0429, diag_detail_itementered, id=0.8944360713695344, type=1
+2014-12-10 01:49:13:0460, diag_detail_itemexited, id=0.8944360713695344, type=1
+2014-12-10 01:49:13:0538, diag_detail_itementered, id=0.9373112092781033, type=1
+2014-12-10 01:49:13:0569, diag_detail_itemexited, id=0.9373112092781033, type=1
+2014-12-10 01:49:13:0601, diag_detail_itementered, id=0.6905735451025572, type=1
+2014-12-10 01:49:13:0632, diag_detail_itemexited, id=0.6905735451025572, type=1
+2014-12-10 01:49:13:0647, diag_detail_itementered, id=0.2379044528086789, type=1
+2014-12-10 01:49:13:0679, diag_detail_itemexited, id=0.2379044528086789, type=1
+2014-12-10 01:49:13:0866, diag_detail_itementered, id=0.8994259794904463, type=1
+2014-12-10 01:49:13:0897, diag_detail_itemexited, id=0.8994259794904463, type=1
+2014-12-10 01:49:13:0944, diag_detail_itementered, id=0.3301030422442417, type=1
+2014-12-10 01:49:14:0240, diag_detail_itemexited, id=0.3301030422442417, type=1
+2014-12-10 01:49:17:0641, diag_detail_itementered, id=0.8994259794904463, type=1
+2014-12-10 01:49:17:0672, diag_detail_itemexited, id=0.8994259794904463, type=1
+2014-12-10 01:49:17:0688, diag_detail_itementered, id=0.46723062280619465, type=1
+2014-12-10 01:49:17:0719, diag_detail_itemexited, id=0.46723062280619465, type=1
+2014-12-10 01:49:17:0719, diag_detail_itementered, id=0.46723062280619465, type=1
+2014-12-10 01:49:17:0750, diag_detail_itemexited, id=0.46723062280619465, type=1
+2014-12-10 01:49:18:0031, diag_detail_itementered, id=0.46723062280619465, type=1
+2014-12-10 01:49:18:0062, diag_detail_itemexited, id=0.46723062280619465, type=1
+2014-12-10 01:49:28:0546, diag_detail_itementered, id=8219, type=1
+2014-12-10 01:49:28:0592, diag_detail_itemexited, id=8219, type=1
+2014-12-10 01:49:28:0982, diag_detail_itementered, id=0.4113208786954238, type=1
+2014-12-10 01:49:29:0060, diag_detail_itemexited, id=0.4113208786954238, type=1
+2014-12-10 01:49:30:0605, diag_detail_itementered, id=6658, type=1
+2014-12-10 01:49:30:0620, diag_detail_itemexited, id=6658, type=1
+2014-12-10 01:49:34:0474, list_mouseentered, type=detailRelatedList, item=45361
+2014-12-10 01:49:34:0520, list_mouseexited, type=detailRelatedList
+2014-12-10 01:49:34:0630, diag_detail_itementered, id=0.19773841645532042, type=4
+2014-12-10 01:49:34:0661, diag_detail_itemexited, id=0.19773841645532042, type=4
+2014-12-10 01:49:34:0692, diag_detail_itementered, id=0.11031864550205628, type=1
+2014-12-10 01:49:34:0723, diag_detail_itemexited, id=0.11031864550205628, type=1
+2014-12-10 01:49:35:0207, diag_detail_itementered, id=0.6346640073941824, type=1
+2014-12-10 01:49:35:0238, diag_detail_itemexited, id=0.6346640073941824, type=1
+2014-12-10 01:49:38:0280, diag_itementered, id=62289, type=1
+2014-12-10 01:49:38:0327, diag_itemexited, id=62289, type=1
+2014-12-10 01:49:38:0483, diag_itementered, id=61615, type=1
+2014-12-10 01:49:38:0561, diag_itemexited, id=61615, type=1
+2014-12-10 01:49:40:0823, list_mouseentered, id=21817, type=1
+2014-12-10 01:49:40:0823, list_mousemoved, id=21817, type=1
+2014-12-10 01:49:40:0885, list_mousemoved, id=21817, type=1
+2014-12-10 01:49:40:0916, list_mousemoved, id=21817, type=1
+2014-12-10 01:49:40:0932, list_mousemoved, id=21817, type=1
+2014-12-10 01:49:40:0963, list_mousemoved, id=21817, type=1
+2014-12-10 01:49:40:0979, list_mouseexited
+2014-12-10 01:50:10:0541, list_mouseentered, id=21817, type=1
+2014-12-10 01:50:10:0541, list_mousemoved, id=21817, type=1
+2014-12-10 01:50:10:0572, list_mousemoved, id=21817, type=1
+2014-12-10 01:50:11:0306, list_mousemoved, id=21817, type=1
+2014-12-10 01:50:11:0321, list_mousemoved, id=21817, type=1
+2014-12-10 01:50:11:0352, list_mousemoved, id=21817, type=1
+2014-12-10 01:50:11:0368, list_mouseexited
+2014-12-10 01:50:16:0594, search_update, unix
+2014-12-10 01:50:18:0809, list_mouseentered, id=3049, type=1
+2014-12-10 01:50:18:0809, list_mousemoved, id=3049, type=1
+2014-12-10 01:50:18:0841, list_mousemoved, id=3049, type=1
+2014-12-10 01:50:18:0841, list_mouseexited
+2014-12-10 01:50:21:0945, diag_itementered, id=3049, type=1
+2014-12-10 01:50:28:0559, diag_itemexited, id=3049, type=1
+2014-12-10 01:50:31:0133, diag_itementered, id=3049, type=1
+2014-12-10 01:50:31:0477, diag_itemexited, id=3049, type=1
+2014-12-10 01:50:35:0923, diag_itementered, id=3049, type=1
+2014-12-10 01:50:36:0282, edge_create, Tuple[0,1,0.04972146166048741,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0282, answer_create, 3054
+2014-12-10 01:50:36:0282, edge_create, Tuple[1,2,0.009990082916027432,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0282, answer_create, 3060
+2014-12-10 01:50:36:0282, edge_create, Tuple[1,3,0.009213123576019333,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0282, answer_create, 3090
+2014-12-10 01:50:36:0282, edge_create, Tuple[1,4,0.4119531163951782,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0282, answer_create, 6352
+2014-12-10 01:50:36:0282, edge_create, Tuple[1,5,0.7683592739366623,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0282, answer_create, 9725
+2014-12-10 01:50:36:0282, edge_create, Tuple[1,6,0.333117475628005,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0282, answer_create, 24078
+2014-12-10 01:50:36:0282, edge_create, Tuple[1,7,0.900868131972043,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0282, answer_create, 41526
+2014-12-10 01:50:36:0282, edge_create, Tuple[1,8,0.6006728215389967,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0282, answer_create, 65870
+2014-12-10 01:50:36:0282, edge_create, Tuple[1,9,0.3418920001924214,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0282, answer_create, 118609
+2014-12-10 01:50:36:0297, edge_create, Tuple[1,10,0.6158033541411744,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0297, answer_create, 15475192
+2014-12-10 01:50:36:0297, edge_create, Tuple[1,11,0.3436205900686147,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0297, edge_create, Tuple[0,12,0.8752158487503946,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0297, edge_create, Tuple[12,13,0.1968292787679512,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0315, edge_create, Tuple[12,14,0.10613809189049717,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0315, edge_create, Tuple[12,15,0.9452443633545463,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0315, edge_create, Tuple[12,16,0.10252999346337344,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0330, edge_create, Tuple[12,17,0.4253958682345411,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0346, edge_create, Tuple[12,18,0.32925736803305883,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0346, edge_create, Tuple[12,19,0.020204568410747914,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0362, edge_create, Tuple[12,20,0.4718823587597766,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0362, edge_create, Tuple[12,21,0.07555864738596552,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0377, edge_create, Tuple[12,22,0.19725393119510615,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0377, edge_create, Tuple[12,23,0.19186466826894033,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0393, edge_create, Tuple[12,24,0.5645838163315338,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0393, edge_create, Tuple[12,25,0.6539226135962115,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0408, edge_create, Tuple[12,26,0.414149491992045,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0408, edge_create, Tuple[12,27,0.33001427844973796,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0424, edge_create, Tuple[12,28,0.05277308552919169,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0440, edge_create, Tuple[12,29,0.0729711959449828,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0440, edge_create, Tuple[12,30,0.0590137598961995,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0455, edge_create, Tuple[12,31,0.25099396152061904,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0455, edge_create, Tuple[12,32,0.7194298787579452,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0471, edge_create, Tuple[12,33,0.6735410821146945,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0471, edge_create, Tuple[12,34,0.6687948923606755,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0486, edge_create, Tuple[12,35,0.1477325794595873,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0486, edge_create, Tuple[12,36,0.6958877625855626,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:50:36:0502, discussion_open, 3049
+2014-12-10 01:50:36:0502, diag_itemclicked, id=3049, type=1
+2014-12-10 01:50:37:0142, diag_itemexited, id=3049, type=1
+2014-12-10 01:50:42:0945, diag_detail_itementered, id=40568, type=1
+2014-12-10 01:50:42:0976, diag_detail_itemexited, id=40568, type=1
+2014-12-10 01:50:43:0569, diag_detail_itementered, id=3049, type=1
+2014-12-10 01:50:54:0676, diag_detail_itemexited, id=3049, type=1
+2014-12-10 01:50:55:0721, diag_detail_itementered, id=0.1477325794595873, type=1
+2014-12-10 01:50:55:0737, diag_detail_itemexited, id=0.1477325794595873, type=1
+2014-12-10 01:50:55:0753, list_mouseentered, type=detailRelatedList, item=65475
+2014-12-10 01:50:55:0831, list_mouseexited, type=detailRelatedList
+2014-12-10 01:50:56:0018, list_mouseentered, type=detailRelatedList, item=65475
+2014-12-10 01:50:56:0143, list_mouseexited, type=detailRelatedList
+2014-12-10 01:50:57:0313, list_mouseentered, type=detailAnswersList
+2014-12-10 01:50:57:0313, list_mouseexited, type=detailAnswersList
+2014-12-10 01:50:59:0185, list_mouseentered, id=3049, type=1
+2014-12-10 01:50:59:0185, list_mousemoved, id=3049, type=1
+2014-12-10 01:50:59:0216, list_mousemoved, id=3049, type=1
+2014-12-10 01:50:59:0231, list_mousemoved, id=3049, type=1
+2014-12-10 01:50:59:0231, list_mousemoved, id=3049, type=1
+2014-12-10 01:50:59:0247, list_mousemoved, id=3049, type=1
+2014-12-10 01:50:59:0263, list_mousemoved, id=3049, type=1
+2014-12-10 01:50:59:0278, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:00:0230, list_pattern_itemclicked, id=3049, type=1
+2014-12-10 01:51:00:0261, edge_create, Tuple[0,1,0.8840852981634697,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0261, answer_create, 3054
+2014-12-10 01:51:00:0261, edge_create, Tuple[1,2,0.36215080750811257,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0261, answer_create, 3060
+2014-12-10 01:51:00:0261, edge_create, Tuple[1,3,0.2883024878417164,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0261, answer_create, 3090
+2014-12-10 01:51:00:0261, edge_create, Tuple[1,4,0.29846907164583325,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0277, answer_create, 6352
+2014-12-10 01:51:00:0277, edge_create, Tuple[1,5,0.5401929514707113,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0277, answer_create, 9725
+2014-12-10 01:51:00:0277, edge_create, Tuple[1,6,0.546549052159905,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0277, answer_create, 24078
+2014-12-10 01:51:00:0277, edge_create, Tuple[1,7,0.12413583321490396,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0277, answer_create, 41526
+2014-12-10 01:51:00:0277, edge_create, Tuple[1,8,0.6124656864018638,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0277, answer_create, 65870
+2014-12-10 01:51:00:0277, edge_create, Tuple[1,9,0.8809970182145245,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0277, answer_create, 118609
+2014-12-10 01:51:00:0277, edge_create, Tuple[1,10,0.5331280007303929,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0277, answer_create, 15475192
+2014-12-10 01:51:00:0292, edge_create, Tuple[1,11,0.5828348971662592,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0294, edge_create, Tuple[0,12,0.019541282517522296,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0294, edge_create, Tuple[12,13,0.7635171043068681,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0294, edge_create, Tuple[12,14,0.9472896605758759,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0310, edge_create, Tuple[12,15,0.985548776042542,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0310, edge_create, Tuple[12,16,0.19373189980405936,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0325, edge_create, Tuple[12,17,0.6916468534636337,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0325, edge_create, Tuple[12,18,0.16772071439254166,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0341, edge_create, Tuple[12,19,0.7251769490188932,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0341, edge_create, Tuple[12,20,0.7015733161367537,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0357, edge_create, Tuple[12,21,0.8434104609002625,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0372, edge_create, Tuple[12,22,0.15251437035743176,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0372, edge_create, Tuple[12,23,0.5692000173083096,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0388, edge_create, Tuple[12,24,0.23348574637331054,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0403, edge_create, Tuple[12,25,0.3982765808856311,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0403, edge_create, Tuple[12,26,0.9182935149893517,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0419, edge_create, Tuple[12,27,0.20972659037484465,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0419, edge_create, Tuple[12,28,0.6663970449135354,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0435, edge_create, Tuple[12,29,0.11573213216225531,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0435, edge_create, Tuple[12,30,0.6267104461727014,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0450, edge_create, Tuple[12,31,0.4733847093933803,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0450, edge_create, Tuple[12,32,0.6116880172634918,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0466, edge_create, Tuple[12,33,0.2969821980785632,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0466, edge_create, Tuple[12,34,0.7024268397614316,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0481, edge_create, Tuple[12,35,0.42497484377188943,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0497, edge_create, Tuple[12,36,0.8378944966619469,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:00:0513, discussion_open, 3049
+2014-12-10 01:51:01:0246, list_mouseexited
+2014-12-10 01:51:01:0246, list_mouseentered, type=detailAnswersList
+2014-12-10 01:51:01:0402, list_mouseexited, type=detailAnswersList
+2014-12-10 01:51:14:0366, diag_detail_itementered, id=0.7635171043068681, type=1
+2014-12-10 01:51:14:0412, diag_detail_itemexited, id=0.7635171043068681, type=1
+2014-12-10 01:51:14:0662, diag_detail_itementered, id=0.7635171043068681, type=1
+2014-12-10 01:51:14:0693, diag_detail_itemexited, id=0.7635171043068681, type=1
+2014-12-10 01:51:14:0709, diag_detail_itementered, id=0.6916468534636337, type=1
+2014-12-10 01:51:14:0740, diag_detail_itemexited, id=0.6916468534636337, type=1
+2014-12-10 01:51:14:0756, diag_detail_itementered, id=53845, type=1
+2014-12-10 01:51:14:0787, diag_detail_itemexited, id=53845, type=1
+2014-12-10 01:51:16:0440, list_mouseentered, id=3049, type=1
+2014-12-10 01:51:16:0440, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:16:0472, list_mouseexited
+2014-12-10 01:51:18:0172, list_mouseentered, id=3049, type=1
+2014-12-10 01:51:18:0172, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0188, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0203, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0219, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0234, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0234, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0266, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0281, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0297, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0297, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0312, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0328, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0344, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0359, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0375, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0890, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0905, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0921, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0936, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0952, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0968, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0968, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0983, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:18:0999, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:19:0014, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:19:0030, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:19:0046, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:19:0061, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:19:0077, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:19:0077, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:19:0092, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:19:0108, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:20:0528, list_pattern_itemclicked, id=3049, type=1
+2014-12-10 01:51:20:0637, edge_create, Tuple[0,1,0.9735568484928533,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0637, answer_create, 3054
+2014-12-10 01:51:20:0637, edge_create, Tuple[1,2,0.657652643622758,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0637, answer_create, 3060
+2014-12-10 01:51:20:0637, edge_create, Tuple[1,3,0.4513406846205874,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0637, answer_create, 3090
+2014-12-10 01:51:20:0637, edge_create, Tuple[1,4,0.9742026920619251,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0637, answer_create, 6352
+2014-12-10 01:51:20:0637, edge_create, Tuple[1,5,0.40976928134299795,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0637, answer_create, 9725
+2014-12-10 01:51:20:0637, edge_create, Tuple[1,6,0.3305501242449195,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0637, answer_create, 24078
+2014-12-10 01:51:20:0637, edge_create, Tuple[1,7,0.2957035406046338,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0637, answer_create, 41526
+2014-12-10 01:51:20:0652, edge_create, Tuple[1,8,0.1986255628264888,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0652, answer_create, 65870
+2014-12-10 01:51:20:0652, edge_create, Tuple[1,9,0.780383891963336,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0652, answer_create, 118609
+2014-12-10 01:51:20:0652, edge_create, Tuple[1,10,0.05828557292868042,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0652, answer_create, 15475192
+2014-12-10 01:51:20:0652, edge_create, Tuple[1,11,0.9277441049963364,4,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0652, edge_create, Tuple[0,12,0.19384991979646582,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0652, edge_create, Tuple[12,13,0.19051713172408846,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0668, edge_create, Tuple[12,14,0.9002374628060082,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0670, edge_create, Tuple[12,15,0.0810056716580061,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0670, edge_create, Tuple[12,16,0.5140951167037862,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0686, edge_create, Tuple[12,17,0.04170782263069828,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0686, edge_create, Tuple[12,18,0.4028468348359606,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0701, edge_create, Tuple[12,19,0.26673103198702786,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0701, edge_create, Tuple[12,20,0.647926174661625,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0717, edge_create, Tuple[12,21,0.11625775581344688,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0717, edge_create, Tuple[12,22,0.5548221586220913,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0732, edge_create, Tuple[12,23,0.08203472670859235,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0732, edge_create, Tuple[12,24,0.48481536633626876,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0748, edge_create, Tuple[12,25,0.6513574276232189,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0748, edge_create, Tuple[12,26,0.5198870113892304,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0764, edge_create, Tuple[12,27,0.6703512676695276,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0764, edge_create, Tuple[12,28,0.5973479866977025,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0779, edge_create, Tuple[12,29,0.10517610436220581,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0795, edge_create, Tuple[12,30,0.453986374285022,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0795, edge_create, Tuple[12,31,0.2633893093407721,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0810, edge_create, Tuple[12,32,0.736319911229669,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0810, edge_create, Tuple[12,33,0.2790088038211167,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0826, edge_create, Tuple[12,34,0.2148429555834409,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0826, edge_create, Tuple[12,35,0.8363602709775476,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0842, edge_create, Tuple[12,36,0.20257538316128954,1,0.0,1418237056708,1418237056708]
+2014-12-10 01:51:20:0842, discussion_open, 3049
+2014-12-10 01:51:21:0029, list_mouseexited
+2014-12-10 01:51:21:0029, list_mouseentered, type=detailAnswersList
+2014-12-10 01:51:21:0060, list_mouseexited, type=detailAnswersList
+2014-12-10 01:51:21:0107, diag_detail_itementered, id=66104, type=1
+2014-12-10 01:51:21:0154, diag_detail_itemexited, id=66104, type=1
+2014-12-10 01:51:21:0200, diag_detail_itementered, id=65475, type=1
+2014-12-10 01:51:21:0263, diag_detail_itemexited, id=65475, type=1
+2014-12-10 01:51:24:0336, diag_detail_itementered, id=3049, type=1
+2014-12-10 01:51:41:0044, diag_detail_itemexited, id=3049, type=1
+2014-12-10 01:51:41:0091, diag_detail_itementered, id=0.9002374628060082, type=1
+2014-12-10 01:51:41:0106, diag_detail_itemexited, id=0.9002374628060082, type=1
+2014-12-10 01:51:43:0165, list_mouseentered, id=3049, type=1
+2014-12-10 01:51:43:0165, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0181, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0197, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0212, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0212, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0243, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0243, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0384, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0384, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0399, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0415, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0415, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0446, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0462, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0462, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0477, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0493, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0509, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0524, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0540, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0555, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0571, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0587, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0602, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0618, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0633, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0649, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0665, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0680, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0696, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0711, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0727, list_mousemoved, id=3049, type=1
+2014-12-10 01:51:43:0727, list_mouseexited
+2014-12-10 01:51:45:0147, search_update, 

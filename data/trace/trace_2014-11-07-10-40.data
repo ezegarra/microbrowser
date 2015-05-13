@@ -1,0 +1,43 @@
+2014-11-07 10:40:30:0944, setup_loaddata
+2014-11-07 10:40:32:0566, list_mouseentered, -771804441
+2014-11-07 10:40:33:0767, list_mouseexited
+2014-11-07 10:40:41:0159, list_mouseentered, 51276
+2014-11-07 10:40:41:0471, list_mouseexited
+2014-11-07 10:40:41:0627, diag_itementered, id=47676, type=1
+2014-11-07 10:40:41:0658, diag_itemexited, id=47676, type=1
+2014-11-07 10:40:42:0344, diag_itementered, id=33262, type=1
+2014-11-07 10:40:42:0453, diag_itemexited, id=33262, type=1
+2014-11-07 10:40:42:0485, diag_itementered, id=65035, type=1
+2014-11-07 10:40:42:0531, diag_itemexited, id=65035, type=1
+2014-11-07 10:40:42:0531, list_mouseentered, 3881
+2014-11-07 10:40:42:0734, list_mouseexited
+2014-11-07 10:40:44:0996, list_mouseentered, 24723
+2014-11-07 10:40:45:0636, list_mouseexited
+2014-11-07 10:40:53:0857, diag_itementered, id=65310, type=1
+2014-11-07 10:40:53:0888, diag_itemexited, id=65310, type=1
+2014-11-07 10:40:54:0029, list_mouseentered, 24991
+2014-11-07 10:40:54:0762, list_mouseexited
+2014-11-07 10:40:59:0679, list_mouseentered, 56843
+2014-11-07 10:40:59:0884, list_mouseexited
+2014-11-07 10:40:59:0931, diag_itementered, id=47045, type=1
+2014-11-07 10:40:59:0947, diag_itemexited, id=47045, type=1
+2014-11-07 10:41:00:0181, diag_itementered, id=65310, type=1
+2014-11-07 10:41:00:0212, diag_itemexited, id=65310, type=1
+2014-11-07 10:41:02:0240, diag_itementered, id=65310, type=1
+2014-11-07 10:41:02:0318, diag_itemexited, id=65310, type=1
+2014-11-07 10:41:02:0318, diag_itementered, id=57484, type=1
+2014-11-07 10:41:02:0412, diag_itemexited, id=57484, type=1
+2014-11-07 10:41:07:0086, list_mouseentered, 27581
+2014-11-07 10:41:07:0476, list_mouseexited
+2014-11-07 10:41:09:0400, list_mouseentered, 57484
+2014-11-07 10:41:09:0603, list_mouseexited
+2014-11-07 10:41:09:0774, diag_itementered, id=57484, type=1
+2014-11-07 10:41:09:0852, diag_itemexited, id=57484, type=1
+2014-11-07 10:41:09:0868, diag_itementered, id=33262, type=1
+2014-11-07 10:41:09:0899, diag_itemexited, id=33262, type=1
+2014-11-07 10:41:13:0151, list_mouseentered, 33262
+2014-11-07 10:41:13:0307, list_mouseexited
+2014-11-07 10:41:15:0320, list_mouseentered, 33262
+2014-11-07 10:41:15:0569, list_mouseexited
+2014-11-07 10:41:15:0788, diag_itementered, id=33262, type=1
+2014-11-07 10:41:15:0866, diag_itemexited, id=33262, type=1

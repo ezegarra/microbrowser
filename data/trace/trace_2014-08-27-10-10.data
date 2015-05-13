@@ -1,0 +1,624 @@
+2014-08-27 10:10:21:0485, edge_create, Tuple[0,1,0.6136528203315963,3,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0905, question_create, 123
+2014-08-27 10:10:21:0905, edge_create, Tuple[1,2,0.39457887016737303,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0905, question_create, 126
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,3,0.914795407983949,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 382
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,4,0.24672771529443638,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 564
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,5,0.7716735697319401,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 2092
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,6,0.4065071955596601,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 2158
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,7,0.23590606897334399,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 2931
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,8,0.5971986985230857,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 2968
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,9,0.2084149067625679,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 3049
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,10,0.03163117944963645,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 3881
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,11,0.5607426191908508,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 4080
+2014-08-27 10:10:21:0915, edge_create, Tuple[1,12,0.5493002408742198,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0915, question_create, 4149
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,13,0.30503533167041164,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 4242
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,14,0.1657381378525984,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 4630
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,15,0.881877500269465,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 4922
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,16,0.916021460151409,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 5078
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,17,0.2940892711793126,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 5222
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,18,0.9070373974070998,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 5328
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,19,0.050486196600130984,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 5514
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,20,0.13847282951212292,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 5527
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,21,0.7247766473621672,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 5855
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,22,0.38407709804451096,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0925, question_create, 6222
+2014-08-27 10:10:21:0925, edge_create, Tuple[1,23,0.6126776880161776,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 6392
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,24,0.044336256369509,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 6612
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,25,0.16953808267418724,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 6639
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,26,0.7691671391627929,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 6658
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,27,0.018960642697478436,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 6682
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,28,0.012600195603987396,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 6765
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,29,0.6809369736946606,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 6816
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,30,0.8068062589394838,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 7269
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,31,0.3197906617429188,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 7291
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,32,0.5444886705144955,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 7539
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,33,0.7548406853965665,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 7596
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,34,0.6289942831610823,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0935, question_create, 7661
+2014-08-27 10:10:21:0935, edge_create, Tuple[1,35,0.4103395431487511,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 7681
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,36,0.5110002464710021,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 7720
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,37,0.4592330273645292,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 7779
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,38,0.9779435638239122,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 8219
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,39,0.9940726085397933,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 8318
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,40,0.024230997516520025,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 8569
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,41,0.9475605826372702,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 8599
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,42,0.21158648917054323,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 8968
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,43,0.6974159571335156,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 9044
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,44,0.9626634609409197,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 9361
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,45,0.7913358621214899,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 9913
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,46,0.6284081046206218,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 10042
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,47,0.18673984289969603,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 10506
+2014-08-27 10:10:21:0945, edge_create, Tuple[1,48,0.6698613400987798,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0945, question_create, 10586
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,49,0.43879033988556904,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 10980
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,50,0.7155169757410779,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 11088
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,51,0.7140809678031257,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 11338
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,52,0.2415172020623284,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 11341
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,53,0.634691200372595,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 11561
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,54,0.8974985921995541,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 11930
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,55,0.2494706078145419,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 12088
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,56,0.11755878637881279,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 12144
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,57,0.8210053244348147,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 12870
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,58,0.24348000973614403,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 12877
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,59,0.24543159449276963,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 12927
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,60,0.4040267676814563,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 13225
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,61,0.3789146985447627,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0955, question_create, 13751
+2014-08-27 10:10:21:0955, edge_create, Tuple[1,62,0.3759660653053061,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, question_create, 13863
+2014-08-27 10:10:21:0965, edge_create, Tuple[1,63,0.1231520149258124,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, question_create, 14397
+2014-08-27 10:10:21:0965, edge_create, Tuple[1,64,0.46369535687611985,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, question_create, 14617
+2014-08-27 10:10:21:0965, edge_create, Tuple[1,65,0.06975802240190043,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, question_create, 14801
+2014-08-27 10:10:21:0965, edge_create, Tuple[1,66,0.5173910576467747,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, question_create, 15305
+2014-08-27 10:10:21:0965, edge_create, Tuple[1,67,0.7700393167456958,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, question_create, 15481
+2014-08-27 10:10:21:0965, edge_create, Tuple[1,68,0.8349138687491899,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, question_create, 15496
+2014-08-27 10:10:21:0965, edge_create, Tuple[1,69,0.18579289055563264,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, question_create, 15528
+2014-08-27 10:10:21:0965, edge_create, Tuple[1,70,0.20896207279290824,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, question_create, 15649
+2014-08-27 10:10:21:0965, edge_create, Tuple[1,71,0.6948030180223996,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0965, pattern_create, 2109443059
+2014-08-27 10:10:21:0965, edge_create, Tuple[0,72,0.4649064855400443,3,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0985, question_create, 43344
+2014-08-27 10:10:21:0985, edge_create, Tuple[72,73,0.7312438581871806,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0985, question_create, 6612
+2014-08-27 10:10:21:0985, edge_create, Tuple[72,74,0.7412533567820575,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0985, question_create, 7291
+2014-08-27 10:10:21:0985, edge_create, Tuple[72,75,0.998910568241244,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0985, pattern_create, 1641682794
+2014-08-27 10:10:21:0985, edge_create, Tuple[0,76,0.5767741379221055,3,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0995, question_create, 123
+2014-08-27 10:10:21:0995, edge_create, Tuple[76,77,0.419921704857497,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0995, question_create, 29324
+2014-08-27 10:10:21:0995, edge_create, Tuple[76,78,0.7471436420943226,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0995, question_create, 19347
+2014-08-27 10:10:21:0995, edge_create, Tuple[76,79,0.9922051225667299,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:21:0995, pattern_create, -771804441
+2014-08-27 10:10:21:0995, edge_create, Tuple[0,80,0.2287009090674561,3,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:22:0005, question_create, 41107
+2014-08-27 10:10:22:0005, edge_create, Tuple[80,81,0.39776974314999314,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:22:0005, question_create, 11930
+2014-08-27 10:10:22:0005, edge_create, Tuple[80,82,0.725071535667788,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:22:0005, question_create, 37628
+2014-08-27 10:10:22:0005, edge_create, Tuple[80,83,0.10567032402501664,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:22:0005, pattern_create, 1796611198
+2014-08-27 10:10:22:0005, edge_create, Tuple[0,84,0.7693748873164181,3,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:22:0005, question_create, 40471
+2014-08-27 10:10:22:0005, edge_create, Tuple[84,85,0.37701305353519776,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:22:0015, question_create, 24596
+2014-08-27 10:10:22:0015, edge_create, Tuple[84,86,0.48421615684833763,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:22:0015, question_create, 6658
+2014-08-27 10:10:22:0015, edge_create, Tuple[84,87,0.735771718091569,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:22:0015, question_create, 21934
+2014-08-27 10:10:22:0015, edge_create, Tuple[84,88,0.9453913938480458,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:22:0195, setup_loaddata
+2014-08-27 10:10:25:0385, diag_itementered, id=11930, type=1
+2014-08-27 10:10:25:0685, diag_itemexited, id=11930, type=1
+2014-08-27 10:10:25:0745, diag_itementered, id=41107, type=1
+2014-08-27 10:10:29:0285, edge_create, Tuple[0,1,0.30315691182576365,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0295, answer_create, 41156
+2014-08-27 10:10:29:0295, edge_create, Tuple[1,2,0.6330940939020331,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0295, answer_create, 41762
+2014-08-27 10:10:29:0295, edge_create, Tuple[1,3,0.7925001167810781,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0295, answer_create, 41177
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,4,0.374414099580458,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 41772
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,5,0.7669014112744845,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 43496
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,6,0.2691954640669212,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 157202
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,7,0.0171875647851345,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 1016930
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,8,0.46212752498406295,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 1439556
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,9,0.12010883287558038,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 2178588
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,10,0.9696655570638286,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 6530353
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,11,0.5863616427974208,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 10177396
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,12,0.6115222660253495,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 10189194
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,13,0.65828124776017,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 7816591
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,14,0.03167062434335155,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0305, answer_create, 7367588
+2014-08-27 10:10:29:0305, edge_create, Tuple[1,15,0.12434938816214325,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 10361524
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,16,0.7498118004577903,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 11577455
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,17,0.29157595425989535,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 11629612
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,18,0.6659699157580755,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 12576779
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,19,0.010037315716322825,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 12792917
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,20,0.7812880783312464,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 12891357
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,21,0.8422065980212295,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 13072330
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,22,0.5083482007920944,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 13171599
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,23,0.782139165292486,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 13365516
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,24,0.563680262344168,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 13678355
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,25,0.4781481368824656,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 13686133
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,26,0.3809463059538877,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 14021567
+2014-08-27 10:10:29:0315, edge_create, Tuple[1,27,0.522518921270262,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0315, answer_create, 14241303
+2014-08-27 10:10:29:0325, edge_create, Tuple[1,28,0.40108934169963517,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0325, answer_create, 14433887
+2014-08-27 10:10:29:0325, edge_create, Tuple[1,29,0.8213842526803685,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0325, answer_create, 17672925
+2014-08-27 10:10:29:0325, edge_create, Tuple[1,30,0.7091597013914214,4,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0335, edge_create, Tuple[0,31,0.3285610192322511,1,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0335, edge_create, Tuple[31,32,0.8483289453947612,1,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0335, edge_create, Tuple[31,33,0.9535061562165791,1,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0335, edge_create, Tuple[31,34,0.37965830873145767,1,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0335, edge_create, Tuple[31,35,0.37327579815023115,1,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0335, edge_create, Tuple[31,36,0.8295102277277733,1,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0335, edge_create, Tuple[31,37,0.8822915024479183,1,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0335, edge_create, Tuple[31,38,0.11121309277048008,1,0.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0345, edge_create, Tuple[0,39,0.5957732529747268,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0345, pattern_create, -2139576420
+2014-08-27 10:10:29:0345, edge_create, Tuple[39,40,0.6879672929341021,2,1.0,1409191821475,1409191821475]
+2014-08-27 10:10:29:0355, discussion_open, 41107
+2014-08-27 10:10:29:0355, diag_itemclicked, id=41107, type=1
+2014-08-27 10:10:30:0415, diag_itemexited, id=41107, type=1
+2014-08-27 10:10:30:0475, diag_itementered, id=283167098, type=3
+2014-08-27 10:10:31:0085, diag_itemexited, id=283167098, type=3
+2014-08-27 10:10:32:0375, diag_itementered, id=-2139576420, type=0
+2014-08-27 10:10:32:0405, diag_itemexited, id=-2139576420, type=0
+2014-08-27 10:10:32:0455, diag_itementered, id=0.6879672929341021, type=2
+2014-08-27 10:10:32:0485, diag_itemexited, id=0.6879672929341021, type=2
+2014-08-27 10:10:32:0765, diag_itementered, id=0.6879672929341021, type=2
+2014-08-27 10:10:32:0805, diag_itemexited, id=0.6879672929341021, type=2
+2014-08-27 10:10:32:0945, diag_itementered, id=63150, type=1
+2014-08-27 10:10:34:0495, diag_itemexited, id=63150, type=1
+2014-08-27 10:10:34:0745, diag_itementered, id=0.6879672929341021, type=2
+2014-08-27 10:10:34:0795, diag_itemexited, id=0.6879672929341021, type=2
+2014-08-27 10:10:35:0125, diag_itementered, id=41156, type=21
+2014-08-27 10:10:38:0585, diag_itemexited, id=41156, type=21
+2014-08-27 10:10:38:0705, diag_itementered, id=41762, type=20
+2014-08-27 10:10:39:0355, diag_itemexited, id=41762, type=20
+2014-08-27 10:10:39:0735, diag_itementered, id=41177, type=20
+2014-08-27 10:10:40:0505, diag_itemexited, id=41177, type=20
+2014-08-27 10:10:40:0885, list_mouseentered, 7681
+2014-08-27 10:10:41:0035, list_mouseexited
+2014-08-27 10:10:42:0165, diag_itementered, id=63150, type=1
+2014-08-27 10:10:42:0995, diag_itemexited, id=63150, type=1
+2014-08-27 10:10:43:0065, diag_itementered, id=-2139576420, type=0
+2014-08-27 10:10:43:0135, diag_itemexited, id=-2139576420, type=0
+2014-08-27 10:11:05:0665, diag_itementered, id=10189194, type=20
+2014-08-27 10:11:05:0675, diag_itemexited, id=10189194, type=20
+2014-08-27 10:11:05:0675, diag_itementered, id=7816591, type=20
+2014-08-27 10:11:05:0695, diag_itemexited, id=7816591, type=20
+2014-08-27 10:11:05:0955, diag_itementered, id=0.6659699157580755, type=4
+2014-08-27 10:11:05:0965, diag_itemexited, id=0.6659699157580755, type=4
+2014-08-27 10:11:06:0135, diag_itementered, id=0.7925001167810781, type=4
+2014-08-27 10:11:06:0205, diag_itemexited, id=0.7925001167810781, type=4
+2014-08-27 10:11:06:0395, diag_itementered, id=0.7925001167810781, type=4
+2014-08-27 10:11:06:0405, diag_itemexited, id=0.7925001167810781, type=4
+2014-08-27 10:11:06:0405, diag_itementered, id=41762, type=20
+2014-08-27 10:11:07:0255, diag_itemexited, id=41762, type=20
+2014-08-27 10:11:07:0975, answer_open, VisualItem[tree.nodes,6,id=43496,type=20,title=,body=<p>If you're happy to use Apache classes, why not just use <code>org.apache.commons.lang.RandomStringUtils</code> (commons-lang)</p>
+
+<p><a href="http://commons.apache.org/proper/commons-lang/javadocs/api-3.1/org/apache/commons/lang3/RandomStringUtils.html">http://commons.apache.org/proper/commons-lang/javadocs/api-3.1/org/apache/commons/lang3/RandomStringUtils.html</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=146]
+2014-08-27 10:11:08:0755, answer_open, VisualItem[tree.nodes,5,id=41772,type=20,title=,body=<p>I found this solution that generates a random hex encoded string.  The provided unit test seems to hold up to my primary use case.  Although, it is slightly more complex than some of the other answers provided.</p>
+
+<pre><code>/**
+ * Generate a random hex encoded string token of the specified length
+ *  
+ * @param length
+ * @return random hex string
+ */
+public static synchronized String generateUniqueToken(Integer length) 
+{
+
+    byte random[] = new byte[length];
+    Random randomGenerator = new Random();
+    StringBuffer buffer = new StringBuffer();
+
+    randomGenerator.nextBytes(random);
+
+    for (int j = 0; j &lt; random.length; j++)
+    {
+        byte b1 = (byte) ((random[j] &amp; 0xf0) &gt;&gt; 4);
+        byte b2 = (byte) (random[j] &amp; 0x0f);
+        if (b1 &lt; 10)
+            buffer.append((char) ('0' + b1));
+        else
+            buffer.append((char) ('A' + (b1 - 10)));
+        if (b2 &lt; 10)
+            buffer.append((char) ('0' + b2));
+        else
+            buffer.append((char) ('A' + (b2 - 10)));
+    }
+
+    return (buffer.toString());
+}
+
+@Test
+public void testGenerateUniqueToken()
+{
+    Set set = new HashSet();
+    String token = null;
+    int size = 16;
+
+    /* Seems like we should be able to generate 500K tokens 
+     * without a duplicate 
+    */
+    for (int i=0; i&lt;500000; i++)
+    {
+        token = Utility.generateUniqueToken(size);
+
+        if (token.length() != size * 2)
+        {
+            fail("Incorrect length");
+        }
+        else
+        if (set.contains(token)) 
+        {
+            fail("Duplicate token generated");
+        }
+        else
+        {
+            set.add(token);
+        }
+    }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 10:11:09:0745, answer_open, VisualItem[tree.nodes,4,id=41177,type=20,title=,body=<p>Here it is in Java:</p>
+
+<pre><code>import static java.lang.Math.round;
+import static java.lang.Math.random;
+import static java.lang.Math.pow;
+import static java.lang.Math.abs;
+import static java.lang.Math.min;
+import static org.apache.commons.lang.StringUtils.leftPad
+
+public class RandomAlphaNum {
+  public static String gen(int length) {
+    StringBuffer sb = new StringBuffer();
+    for (int i = length; i &gt; 0; i -= 12) {
+      int n = min(12, abs(i));
+      sb.append(leftPad(Long.toString(round(random() * pow(36, n)), 36), n, '0'));
+    }
+    return sb.toString();
+  }
+}
+</code></pre>
+
+<p>Here's a sample run:</p>
+
+<pre><code>scala&gt; RandomAlphaNum.gen(42)
+res3: java.lang.String = uja6snx21bswf9t89s00bxssu8g6qlu16ffzqaxxoy
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=20]
+2014-08-27 10:11:10:0215, diag_itementered, id=0.5863616427974208, type=4
+2014-08-27 10:11:10:0235, diag_itemexited, id=0.5863616427974208, type=4
+2014-08-27 10:11:10:0235, diag_itementered, id=0.6115222660253495, type=4
+2014-08-27 10:11:10:0245, diag_itemexited, id=0.6115222660253495, type=4
+2014-08-27 10:11:11:0075, diag_itementered, id=-1075014423, type=3
+2014-08-27 10:11:11:0095, diag_itemexited, id=-1075014423, type=3
+2014-08-27 10:11:11:0145, diag_itementered, id=41156, type=21
+2014-08-27 10:11:11:0155, diag_itemexited, id=41156, type=21
+2014-08-27 10:11:11:0375, diag_itementered, id=41156, type=21
+2014-08-27 10:11:11:0465, diag_itemexited, id=41156, type=21
+2014-08-27 10:11:11:0745, diag_itementered, id=41762, type=20
+2014-08-27 10:11:12:0415, answer_open, VisualItem[tree.nodes,3,id=41762,type=20,title=,body=<p>Java supplies a way of doing this directly. If you don't want the dashes, they are easy to strip out. </p>
+
+<pre><code>import java.util.UUID;
+String uuid = UUID.randomUUID().toString();
+System.out.println("uuid = " + uuid);
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<p>uuid = 2d7428a6-b58c-4008-8575-f05549f16316</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=197]
+2014-08-27 10:11:12:0905, diag_itemexited, id=41762, type=20
+2014-08-27 10:11:12:0945, diag_itementered, id=41762, type=20
+2014-08-27 10:11:12:0985, diag_itemexited, id=41762, type=20
+2014-08-27 10:11:12:0995, diag_itementered, id=0.7925001167810781, type=4
+2014-08-27 10:11:12:0995, diag_itemexited, id=0.7925001167810781, type=4
+2014-08-27 10:11:13:0035, diag_itementered, id=0.6330940939020331, type=4
+2014-08-27 10:11:13:0045, diag_itemexited, id=0.6330940939020331, type=4
+2014-08-27 10:11:13:0065, diag_itementered, id=0.7091597013914214, type=4
+2014-08-27 10:11:13:0075, diag_itemexited, id=0.7091597013914214, type=4
+2014-08-27 10:11:13:0075, diag_itementered, id=0.3809463059538877, type=4
+2014-08-27 10:11:13:0085, diag_itemexited, id=0.3809463059538877, type=4
+2014-08-27 10:11:13:0085, diag_itementered, id=0.563680262344168, type=4
+2014-08-27 10:11:13:0085, diag_itemexited, id=0.563680262344168, type=4
+2014-08-27 10:11:13:0115, diag_itementered, id=0.010037315716322825, type=4
+2014-08-27 10:11:13:0125, diag_itemexited, id=0.010037315716322825, type=4
+2014-08-27 10:11:13:0155, diag_itementered, id=0.6659699157580755, type=4
+2014-08-27 10:11:13:0165, diag_itemexited, id=0.6659699157580755, type=4
+2014-08-27 10:11:13:0265, diag_itementered, id=11629612, type=20
+2014-08-27 10:11:13:0335, diag_itemexited, id=11629612, type=20
+2014-08-27 10:11:13:0355, diag_itementered, id=12576779, type=20
+2014-08-27 10:11:13:0365, diag_itemexited, id=12576779, type=20
+2014-08-27 10:11:13:0775, diag_itementered, id=13072330, type=20
+2014-08-27 10:11:13:0955, answer_open, VisualItem[tree.nodes,22,id=13072330,type=20,title=,body=<p>Surprising no-one here has suggested it but: </p>
+
+<pre><code>import java.util.UUID
+
+UUID.randomUUID.toString();
+</code></pre>
+
+<p>Easy. </p>
+
+<p>Benefit of this is UUIDs are nice and long and guaranteed to be almost impossible to collide.</p>
+
+<p>Wikipedia has a good explanation of it: </p>
+
+<blockquote>
+  <p>" ...only after generating 1 billion UUIDs every second for the next 100 years, the probability of creating just one duplicate would be about 50%."</p>
+</blockquote>
+
+<p><a href="http://en.wikipedia.org/wiki/Universally_unique_identifier#Random_UUID_probability_of_duplicates">http://en.wikipedia.org/wiki/Universally_unique_identifier#Random_UUID_probability_of_duplicates</a></p>
+
+<p>The first 4 bits are the version type and 2 for the variant so you get 122 bits of random. So if you <em>want</em> to you can truncate from the end to reduce the size of the UUID. It's not recommended but you still have loads of randomness, enough for your 500k records easy.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=7]
+2014-08-27 10:11:14:0075, diag_itemexited, id=13072330, type=20
+2014-08-27 10:11:14:0085, diag_itementered, id=0.782139165292486, type=4
+2014-08-27 10:11:14:0095, diag_itemexited, id=0.782139165292486, type=4
+2014-08-27 10:11:14:0485, diag_itementered, id=41107, type=1
+2014-08-27 10:11:14:0845, diag_itemexited, id=41107, type=1
+2014-08-27 10:11:14:0895, diag_itementered, id=-1141539503, type=3
+2014-08-27 10:11:14:0915, diag_itemexited, id=-1141539503, type=3
+2014-08-27 10:11:36:0035, diag_itementered, id=41107, type=1
+2014-08-27 10:11:36:0075, diag_itemexited, id=41107, type=1
+2014-08-27 10:11:36:0495, diag_itementered, id=41156, type=21
+2014-08-27 10:11:39:0125, diag_itemexited, id=41156, type=21
+2014-08-27 10:11:39:0355, diag_itementered, id=41762, type=20
+2014-08-27 10:11:40:0065, diag_itemexited, id=41762, type=20
+2014-08-27 10:11:40:0205, diag_itementered, id=41156, type=21
+2014-08-27 10:11:42:0135, diag_itemexited, id=41156, type=21
+2014-08-27 10:11:47:0185, diag_itementered, id=41156, type=21
+2014-08-27 10:11:47:0265, diag_itemexited, id=41156, type=21
+2014-08-27 10:11:47:0675, diag_itementered, id=41156, type=21
+2014-08-27 10:11:48:0355, diag_itemexited, id=41156, type=21
+2014-08-27 10:11:48:0625, diag_itementered, id=41762, type=20
+2014-08-27 10:11:49:0135, diag_itemexited, id=41762, type=20
+2014-08-27 10:11:51:0905, answer_open, VisualItem[tree.nodes,4,id=41177,type=20,title=,body=<p>Here it is in Java:</p>
+
+<pre><code>import static java.lang.Math.round;
+import static java.lang.Math.random;
+import static java.lang.Math.pow;
+import static java.lang.Math.abs;
+import static java.lang.Math.min;
+import static org.apache.commons.lang.StringUtils.leftPad
+
+public class RandomAlphaNum {
+  public static String gen(int length) {
+    StringBuffer sb = new StringBuffer();
+    for (int i = length; i &gt; 0; i -= 12) {
+      int n = min(12, abs(i));
+      sb.append(leftPad(Long.toString(round(random() * pow(36, n)), 36), n, '0'));
+    }
+    return sb.toString();
+  }
+}
+</code></pre>
+
+<p>Here's a sample run:</p>
+
+<pre><code>scala&gt; RandomAlphaNum.gen(42)
+res3: java.lang.String = uja6snx21bswf9t89s00bxssu8g6qlu16ffzqaxxoy
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=20]
+2014-08-27 10:11:52:0895, answer_open, VisualItem[tree.nodes,3,id=41762,type=20,title=,body=<p>Java supplies a way of doing this directly. If you don't want the dashes, they are easy to strip out. </p>
+
+<pre><code>import java.util.UUID;
+String uuid = UUID.randomUUID().toString();
+System.out.println("uuid = " + uuid);
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<p>uuid = 2d7428a6-b58c-4008-8575-f05549f16316</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=197]
+2014-08-27 10:11:53:0505, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=238]
+2014-08-27 10:11:54:0325, diag_itementered, id=41156, type=21
+2014-08-27 10:11:54:0925, diag_itemexited, id=41156, type=21
+2014-08-27 10:11:55:0105, diag_itementered, id=41762, type=20
+2014-08-27 10:11:55:0745, diag_itemexited, id=41762, type=20
+2014-08-27 10:11:55:0795, diag_itementered, id=0.6330940939020331, type=4
+2014-08-27 10:11:55:0805, diag_itemexited, id=0.6330940939020331, type=4
+2014-08-27 10:11:55:0815, diag_itementered, id=0.5957732529747268, type=2
+2014-08-27 10:11:55:0825, diag_itemexited, id=0.5957732529747268, type=2
+2014-08-27 10:12:29:0325, diag_itementered, id=12792917, type=20
+2014-08-27 10:12:29:0335, diag_itemexited, id=12792917, type=20
+2014-08-27 10:12:34:0335, diag_itementered, id=41762, type=20
+2014-08-27 10:12:35:0525, diag_itemexited, id=41762, type=20
+2014-08-27 10:12:35:0995, diag_itementered, id=41177, type=20
+2014-08-27 10:12:38:0195, answer_open, VisualItem[tree.nodes,4,id=41177,type=20,title=,body=<p>Here it is in Java:</p>
+
+<pre><code>import static java.lang.Math.round;
+import static java.lang.Math.random;
+import static java.lang.Math.pow;
+import static java.lang.Math.abs;
+import static java.lang.Math.min;
+import static org.apache.commons.lang.StringUtils.leftPad
+
+public class RandomAlphaNum {
+  public static String gen(int length) {
+    StringBuffer sb = new StringBuffer();
+    for (int i = length; i &gt; 0; i -= 12) {
+      int n = min(12, abs(i));
+      sb.append(leftPad(Long.toString(round(random() * pow(36, n)), 36), n, '0'));
+    }
+    return sb.toString();
+  }
+}
+</code></pre>
+
+<p>Here's a sample run:</p>
+
+<pre><code>scala&gt; RandomAlphaNum.gen(42)
+res3: java.lang.String = uja6snx21bswf9t89s00bxssu8g6qlu16ffzqaxxoy
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=20]
+2014-08-27 10:12:39:0635, diag_itemexited, id=41177, type=20
+2014-08-27 10:12:39:0955, diag_itementered, id=0.2691954640669212, type=4
+2014-08-27 10:12:39:0975, diag_itemexited, id=0.2691954640669212, type=4
+2014-08-27 10:12:40:0255, diag_itementered, id=41762, type=20
+2014-08-27 10:12:40:0535, answer_open, VisualItem[tree.nodes,3,id=41762,type=20,title=,body=<p>Java supplies a way of doing this directly. If you don't want the dashes, they are easy to strip out. </p>
+
+<pre><code>import java.util.UUID;
+String uuid = UUID.randomUUID().toString();
+System.out.println("uuid = " + uuid);
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<p>uuid = 2d7428a6-b58c-4008-8575-f05549f16316</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409191821475L,lastactivitydate=0L,tags=,score=197]
+2014-08-27 10:12:41:0775, diag_itemexited, id=41762, type=20
+2014-08-27 10:12:42:0055, diag_itementered, id=41177, type=20
+2014-08-27 10:12:42:0095, diag_itemexited, id=41177, type=20

@@ -1,0 +1,1981 @@
+2014-12-12 02:20:02:0589, setup_loaddata_begin
+2014-12-12 02:20:04:0898, setup_loaddata_end
+2014-12-12 02:20:04:0945, setup_createactions_begin
+2014-12-12 02:20:05:0132, setup_createactions_end
+2014-12-12 02:20:06:0645, diag_itementered, id=35842, type=1
+2014-12-12 02:20:06:0801, diag_itemexited, id=35842, type=1
+2014-12-12 02:20:07:0082, diag_itementered, id=35842, type=1
+2014-12-12 02:20:07:0207, diag_itemexited, id=35842, type=1
+2014-12-12 02:20:11:0232, list_mouseentered, id=55440, type=1
+2014-12-12 02:20:11:0232, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0279, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0310, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0326, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0357, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0388, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0404, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0435, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0466, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0482, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0497, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:11:0528, list_mouseexited
+2014-12-12 02:20:12:0355, list_mouseentered, id=55440, type=1
+2014-12-12 02:20:12:0371, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:12:0402, list_mousemoved, id=38057, type=1
+2014-12-12 02:20:12:0433, list_mouseexited
+2014-12-12 02:20:12:0917, list_mouseentered, id=38057, type=1
+2014-12-12 02:20:12:0917, list_mousemoved, id=38057, type=1
+2014-12-12 02:20:12:0964, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:12:0995, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:13:0010, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:13:0026, list_mousemoved, id=55440, type=1
+2014-12-12 02:20:13:0104, list_mouseexited
+2014-12-12 02:20:23:0868, diag_itementered, id=51390, type=1
+2014-12-12 02:20:25:0023, diag_itemexited, id=51390, type=1
+2014-12-12 02:20:25:0116, diag_itementered, id=47605, type=1
+2014-12-12 02:20:25:0194, diag_itemexited, id=47605, type=1
+2014-12-12 02:20:25:0257, diag_itemexited, id=4, type=4
+2014-12-12 02:20:25:0350, diag_itementered, id=2158, type=1
+2014-12-12 02:20:25:0413, diag_itemexited, id=2158, type=1
+2014-12-12 02:20:25:0506, diag_itementered, id=12088, type=1
+2014-12-12 02:20:25:0631, diag_itemexited, id=12088, type=1
+2014-12-12 02:20:25:0771, diag_itementered, id=44005, type=1
+2014-12-12 02:20:27:0846, diag_itemexited, id=44005, type=1
+2014-12-12 02:20:27:0940, diag_itementered, id=65310, type=1
+2014-12-12 02:20:28:0002, diag_itemexited, id=65310, type=1
+2014-12-12 02:20:28:0330, diag_itemexited, id=1, type=4
+2014-12-12 02:20:28:0345, diag_itementered, id=27129, type=1
+2014-12-12 02:20:28:0423, diag_itemexited, id=27129, type=1
+2014-12-12 02:20:28:0455, diag_itementered, id=46898, type=1
+2014-12-12 02:20:28:0455, diag_itemexited, id=46898, type=1
+2014-12-12 02:20:28:0611, diag_itemexited, id=3, type=4
+2014-12-12 02:20:29:0188, diag_itementered, id=15899, type=1
+2014-12-12 02:20:29:0781, diag_itemexited, id=15899, type=1
+2014-12-12 02:20:30:0124, diag_itementered, id=25552, type=1
+2014-12-12 02:20:31:0153, diag_itemexited, id=25552, type=1
+2014-12-12 02:20:36:0083, diag_itemexited, id=2, type=4
+2014-12-12 02:20:36:0645, diag_itementered, id=62289, type=1
+2014-12-12 02:20:51:0137, edge_create, Tuple[0,1,0.050833942619263106,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0137, answer_create, 62291
+2014-12-12 02:20:51:0137, edge_create, Tuple[1,2,0.16255054754239606,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0137, answer_create, 62299
+2014-12-12 02:20:51:0137, edge_create, Tuple[1,3,0.6030127481102698,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0137, answer_create, 62312
+2014-12-12 02:20:51:0137, edge_create, Tuple[1,4,0.24099472554935508,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0137, answer_create, 62690
+2014-12-12 02:20:51:0153, edge_create, Tuple[1,5,0.6413019892254,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0153, answer_create, 63231
+2014-12-12 02:20:51:0153, edge_create, Tuple[1,6,0.6168851752261437,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0153, answer_create, 876862
+2014-12-12 02:20:51:0153, edge_create, Tuple[1,7,0.5302706748214883,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0153, answer_create, 878336
+2014-12-12 02:20:51:0153, edge_create, Tuple[1,8,0.8296424160902821,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0153, answer_create, 1982033
+2014-12-12 02:20:51:0153, edge_create, Tuple[1,9,0.827476951792514,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0153, answer_create, 5841923
+2014-12-12 02:20:51:0153, edge_create, Tuple[1,10,0.7123435054329471,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0153, answer_create, 5902131
+2014-12-12 02:20:51:0153, edge_create, Tuple[1,11,0.8026550672083844,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0153, answer_create, 6028547
+2014-12-12 02:20:51:0153, edge_create, Tuple[1,12,0.3281603642997015,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0153, answer_create, 6163701
+2014-12-12 02:20:51:0168, edge_create, Tuple[1,13,0.8331541392602535,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0168, answer_create, 6287763
+2014-12-12 02:20:51:0170, edge_create, Tuple[1,14,0.46104428912593887,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0170, answer_create, 8955801
+2014-12-12 02:20:51:0170, edge_create, Tuple[1,15,0.95862012518142,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0170, answer_create, 11854901
+2014-12-12 02:20:51:0170, edge_create, Tuple[1,16,0.3333972428277989,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0170, answer_create, 15689078
+2014-12-12 02:20:51:0170, edge_create, Tuple[1,17,0.9501516436555193,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0170, answer_create, 15831762
+2014-12-12 02:20:51:0170, edge_create, Tuple[1,18,0.7401993261724992,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0170, answer_create, 17310303
+2014-12-12 02:20:51:0170, edge_create, Tuple[1,19,0.3278076745564783,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0170, edge_create, Tuple[0,20,0.38495026546490485,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0170, edge_create, Tuple[20,21,0.8073159097777972,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0186, edge_create, Tuple[20,22,0.3788136087612911,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0186, edge_create, Tuple[20,23,0.7746623521786276,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0202, edge_create, Tuple[20,24,0.8871206142839256,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0217, edge_create, Tuple[20,25,0.06910095839527586,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0217, edge_create, Tuple[20,26,0.05912960478209439,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0233, edge_create, Tuple[20,27,0.7347952078331196,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0233, edge_create, Tuple[20,28,0.2054912916052053,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0248, edge_create, Tuple[20,29,0.5032053704549285,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0264, edge_create, Tuple[20,30,0.7567229220627139,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0264, edge_create, Tuple[20,31,0.7575052631274951,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0280, edge_create, Tuple[20,32,0.6742421320646252,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0280, edge_create, Tuple[20,33,0.1624147302019474,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0295, edge_create, Tuple[20,34,0.5378834969791566,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0295, edge_create, Tuple[20,35,0.21415731927252435,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0311, edge_create, Tuple[20,36,0.6106678073264689,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0311, edge_create, Tuple[20,37,0.7627110525177315,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0326, edge_create, Tuple[20,38,0.4088928790683304,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0326, edge_create, Tuple[20,39,0.3096537936440509,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0342, edge_create, Tuple[20,40,0.0749666123883681,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0342, edge_create, Tuple[20,41,0.20787521635470763,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0358, edge_create, Tuple[20,42,0.5690348074289853,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0358, edge_create, Tuple[20,43,0.04302695004492141,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0373, edge_create, Tuple[20,44,0.036219237267370086,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0373, edge_create, Tuple[20,45,0.6102222358649435,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0389, edge_create, Tuple[20,46,0.857652707466293,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0389, edge_create, Tuple[20,47,0.3032174770546857,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0404, edge_create, Tuple[20,48,0.8095779885639856,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0404, edge_create, Tuple[20,49,0.08777351578069148,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0420, edge_create, Tuple[20,50,0.40529439515085974,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0420, edge_create, Tuple[20,51,0.8573938318886063,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0436, edge_create, Tuple[20,52,0.11503932837605568,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0436, edge_create, Tuple[20,53,0.08008350808790965,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0451, edge_create, Tuple[20,54,0.49996111572060886,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0451, edge_create, Tuple[20,55,0.5917064879725065,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0467, edge_create, Tuple[20,56,0.8747728948232337,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0467, edge_create, Tuple[20,57,0.9181038254043626,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0482, edge_create, Tuple[20,58,0.46170372354934464,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0482, edge_create, Tuple[20,59,0.9981595803717375,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0498, edge_create, Tuple[20,60,0.9138332168243921,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0498, edge_create, Tuple[20,61,0.9078798824653077,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0514, edge_create, Tuple[20,62,0.8822867570059889,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0514, edge_create, Tuple[20,63,0.5663222655117025,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0529, edge_create, Tuple[20,64,0.05818039879726611,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0545, edge_create, Tuple[20,65,0.24354116012654992,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0545, edge_create, Tuple[20,66,0.9313661462258952,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0560, edge_create, Tuple[20,67,0.43489039025935017,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0560, edge_create, Tuple[20,68,0.7342888655691879,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0576, edge_create, Tuple[20,69,0.651958750835049,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0576, edge_create, Tuple[20,70,0.5566043477805666,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:20:51:0607, discussion_open, 62289
+2014-12-12 02:20:51:0607, diag_itemclicked, id=62289, type=1
+2014-12-12 02:20:51:0997, diag_itemexited, id=62289, type=1
+2014-12-12 02:20:52:0028, diag_detail_itementered, id=0.3032174770546857, type=1
+2014-12-12 02:20:52:0169, diag_detail_itemexited, id=0.3032174770546857, type=1
+2014-12-12 02:20:52:0169, diag_detail_itementered, id=0.8095779885639856, type=1
+2014-12-12 02:20:52:0231, diag_detail_itemexited, id=0.8095779885639856, type=1
+2014-12-12 02:20:52:0231, diag_detail_itementered, id=-1671452970, type=3
+2014-12-12 02:20:52:0621, diag_detail_itemexited, id=-1671452970, type=3
+2014-12-12 02:20:52:0746, diag_detail_itementered, id=0.050833942619263106, type=4
+2014-12-12 02:20:52:0777, diag_detail_itemexited, id=0.050833942619263106, type=4
+2014-12-12 02:20:52:0777, diag_detail_itementered, id=401747135, type=3
+2014-12-12 02:20:52:0808, diag_detail_itemexited, id=401747135, type=3
+2014-12-12 02:20:53:0214, diag_detail_itementered, id=0.3278076745564783, type=4
+2014-12-12 02:20:53:0245, diag_detail_itemexited, id=0.3278076745564783, type=4
+2014-12-12 02:20:53:0245, diag_detail_itementered, id=0.7401993261724992, type=4
+2014-12-12 02:20:53:0276, diag_detail_itemexited, id=0.7401993261724992, type=4
+2014-12-12 02:20:53:0276, diag_detail_itementered, id=0.9501516436555193, type=4
+2014-12-12 02:20:53:0308, diag_detail_itemexited, id=0.9501516436555193, type=4
+2014-12-12 02:20:53:0308, diag_detail_itementered, id=0.3333972428277989, type=4
+2014-12-12 02:20:53:0354, diag_detail_itemexited, id=0.3333972428277989, type=4
+2014-12-12 02:20:53:0354, diag_detail_itementered, id=0.95862012518142, type=4
+2014-12-12 02:20:53:0386, diag_detail_itemexited, id=0.95862012518142, type=4
+2014-12-12 02:20:53:0386, diag_detail_itementered, id=0.46104428912593887, type=4
+2014-12-12 02:20:53:0432, diag_detail_itemexited, id=0.46104428912593887, type=4
+2014-12-12 02:20:53:0464, diag_detail_itementered, id=0.3281603642997015, type=4
+2014-12-12 02:20:53:0495, diag_detail_itemexited, id=0.3281603642997015, type=4
+2014-12-12 02:20:53:0495, diag_detail_itementered, id=401747135, type=3
+2014-12-12 02:20:53:0542, diag_detail_itemexited, id=401747135, type=3
+2014-12-12 02:20:53:0822, diag_detail_itementered, id=62289, type=1
+2014-12-12 02:20:53:0994, diag_detail_itemexited, id=62289, type=1
+2014-12-12 02:20:54:0041, diag_detail_itementered, id=0.050833942619263106, type=4
+2014-12-12 02:20:54:0072, diag_detail_itemexited, id=0.050833942619263106, type=4
+2014-12-12 02:20:54:0088, diag_detail_itementered, id=0.050833942619263106, type=4
+2014-12-12 02:20:54:0119, diag_detail_itemexited, id=0.050833942619263106, type=4
+2014-12-12 02:20:54:0119, diag_detail_itementered, id=401747135, type=3
+2014-12-12 02:20:54:0181, diag_detail_itemexited, id=401747135, type=3
+2014-12-12 02:20:54:0181, diag_detail_itementered, id=0.3281603642997015, type=4
+2014-12-12 02:20:54:0400, diag_detail_itemexited, id=0.3281603642997015, type=4
+2014-12-12 02:20:54:0400, diag_detail_itementered, id=401747135, type=3
+2014-12-12 02:20:54:0665, diag_detail_itemexited, id=401747135, type=3
+2014-12-12 02:20:54:0665, diag_detail_itementered, id=0.9501516436555193, type=4
+2014-12-12 02:20:54:0696, diag_detail_itemexited, id=0.9501516436555193, type=4
+2014-12-12 02:20:54:0758, answer_open, VisualItem[tree.nodes,13,id=6163701,type=20,title=,body=<p>I know this question is old, but it is the first search result on google to "java read/write to registry".  Recently I found this amazing piece of code which:</p>
+
+<ul>
+<li>Can read/write to ANY part of the registry. </li>
+<li>DOES NOT USE JNI.</li>
+<li>DOES NOT USE ANY 3rd PARTY/EXTERNAL APPLICATIONS TO WORK.</li>
+<li>DOES NOT USE THE WINDOWS API (directly)</li>
+</ul>
+
+<p>This is pure, Java code.</p>
+
+<p>It uses reflection to work, by actually accessing the private methods in the java.util.prefs.Preferences class. The internals of this class are complicated, but the class itself is very easy to use.</p>
+
+<p>For example, the following code obtains the exact windows distribution <strong>from the registry</strong>:</p>
+
+<pre><code>String value = WinRegistry.readString (
+    WinRegistry.HKEY_LOCAL_MACHINE,                             //HKEY
+   "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",           //Key
+   "ProductName");                                              //ValueName
+    System.out.println("Windows Distribution = " + value);          
+</code></pre>
+
+<p>Here is the original class. Just copy paste it and it should work:</p>
+
+<pre><code>import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.prefs.Preferences;
+
+public class WinRegistry {
+  public static final int HKEY_CURRENT_USER = 0x80000001;
+  public static final int HKEY_LOCAL_MACHINE = 0x80000002;
+  public static final int REG_SUCCESS = 0;
+  public static final int REG_NOTFOUND = 2;
+  public static final int REG_ACCESSDENIED = 5;
+
+  private static final int KEY_ALL_ACCESS = 0xf003f;
+  private static final int KEY_READ = 0x20019;
+  private static Preferences userRoot = Preferences.userRoot();
+  private static Preferences systemRoot = Preferences.systemRoot();
+  private static Class&lt;? extends Preferences&gt; userClass = userRoot.getClass();
+  private static Method regOpenKey = null;
+  private static Method regCloseKey = null;
+  private static Method regQueryValueEx = null;
+  private static Method regEnumValue = null;
+  private static Method regQueryInfoKey = null;
+  private static Method regEnumKeyEx = null;
+  private static Method regCreateKeyEx = null;
+  private static Method regSetValueEx = null;
+  private static Method regDeleteKey = null;
+  private static Method regDeleteValue = null;
+
+  static {
+    try {
+      regOpenKey = userClass.getDeclaredMethod("WindowsRegOpenKey",
+          new Class[] { int.class, byte[].class, int.class });
+      regOpenKey.setAccessible(true);
+      regCloseKey = userClass.getDeclaredMethod("WindowsRegCloseKey",
+          new Class[] { int.class });
+      regCloseKey.setAccessible(true);
+      regQueryValueEx = userClass.getDeclaredMethod("WindowsRegQueryValueEx",
+          new Class[] { int.class, byte[].class });
+      regQueryValueEx.setAccessible(true);
+      regEnumValue = userClass.getDeclaredMethod("WindowsRegEnumValue",
+          new Class[] { int.class, int.class, int.class });
+      regEnumValue.setAccessible(true);
+      regQueryInfoKey = userClass.getDeclaredMethod("WindowsRegQueryInfoKey1",
+          new Class[] { int.class });
+      regQueryInfoKey.setAccessible(true);
+      regEnumKeyEx = userClass.getDeclaredMethod(  
+          "WindowsRegEnumKeyEx", new Class[] { int.class, int.class,  
+              int.class });  
+      regEnumKeyEx.setAccessible(true);
+      regCreateKeyEx = userClass.getDeclaredMethod(  
+          "WindowsRegCreateKeyEx", new Class[] { int.class,  
+              byte[].class });  
+      regCreateKeyEx.setAccessible(true);  
+      regSetValueEx = userClass.getDeclaredMethod(  
+          "WindowsRegSetValueEx", new Class[] { int.class,  
+              byte[].class, byte[].class });  
+      regSetValueEx.setAccessible(true); 
+      regDeleteValue = userClass.getDeclaredMethod(  
+          "WindowsRegDeleteValue", new Class[] { int.class,  
+              byte[].class });  
+      regDeleteValue.setAccessible(true); 
+      regDeleteKey = userClass.getDeclaredMethod(  
+          "WindowsRegDeleteKey", new Class[] { int.class,  
+              byte[].class });  
+      regDeleteKey.setAccessible(true); 
+    }
+    catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  private WinRegistry() {  }
+
+  /**
+   * Read a value from key and value name
+   * @param hkey   HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @param valueName
+   * @return the value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static String readString(int hkey, String key, String valueName) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readString(systemRoot, hkey, key, valueName);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readString(userRoot, hkey, key, valueName);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Read value(s) and value name(s) form given key 
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @return the value name(s) plus the value(s)
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static Map&lt;String, String&gt; readStringValues(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readStringValues(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readStringValues(userRoot, hkey, key);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Read the value name(s) from a given key
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @return the value name(s)
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static List&lt;String&gt; readStringSubKeys(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readStringSubKeys(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readStringSubKeys(userRoot, hkey, key);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Create a key
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void createKey(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int [] ret;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      ret = createKey(systemRoot, hkey, key);
+      regCloseKey.invoke(systemRoot, new Object[] { new Integer(ret[0]) });
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      ret = createKey(userRoot, hkey, key);
+      regCloseKey.invoke(userRoot, new Object[] { new Integer(ret[0]) });
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+    if (ret[1] != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + ret[1] + "  key=" + key);
+    }
+  }
+
+  /**
+   * Write a value in a given key/value name
+   * @param hkey
+   * @param key
+   * @param valueName
+   * @param value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void writeStringValue
+    (int hkey, String key, String valueName, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      writeStringValue(systemRoot, hkey, key, valueName, value);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      writeStringValue(userRoot, hkey, key, valueName, value);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Delete a given key
+   * @param hkey
+   * @param key
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void deleteKey(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc = -1;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      rc = deleteKey(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      rc = deleteKey(userRoot, hkey, key);
+    }
+    if (rc != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + rc + "  key=" + key);
+    }
+  }
+
+  /**
+   * delete a value from a given key/value name
+   * @param hkey
+   * @param key
+   * @param value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void deleteValue(int hkey, String key, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc = -1;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      rc = deleteValue(systemRoot, hkey, key, value);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      rc = deleteValue(userRoot, hkey, key, value);
+    }
+    if (rc != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + rc + "  key=" + key + "  value=" + value);
+    }
+  }
+
+  // =====================
+
+  private static int deleteValue
+    (Preferences root, int hkey, String key, String value)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_ALL_ACCESS) });
+    if (handles[1] != REG_SUCCESS) {
+      return handles[1];  // can be REG_NOTFOUND, REG_ACCESSDENIED
+    }
+    int rc =((Integer) regDeleteValue.invoke(root,  
+        new Object[] { 
+          new Integer(handles[0]), toCstr(value) 
+          })).intValue();
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return rc;
+  }
+
+  private static int deleteKey(Preferences root, int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc =((Integer) regDeleteKey.invoke(root,  
+        new Object[] { new Integer(hkey), toCstr(key) })).intValue();
+    return rc;  // can REG_NOTFOUND, REG_ACCESSDENIED, REG_SUCCESS
+  }
+
+  private static String readString(Preferences root, int hkey, String key, String value)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) });
+    if (handles[1] != REG_SUCCESS) {
+      return null; 
+    }
+    byte[] valb = (byte[]) regQueryValueEx.invoke(root, new Object[] {
+        new Integer(handles[0]), toCstr(value) });
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return (valb != null ? new String(valb).trim() : null);
+  }
+
+  private static Map&lt;String,String&gt; readStringValues
+    (Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    HashMap&lt;String, String&gt; results = new HashMap&lt;String,String&gt;();
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) });
+    if (handles[1] != REG_SUCCESS) {
+      return null;
+    }
+    int[] info = (int[]) regQueryInfoKey.invoke(root,
+        new Object[] { new Integer(handles[0]) });
+
+    int count = info[0]; // count  
+    int maxlen = info[3]; // value length max
+    for(int index=0; index&lt;count; index++)  {
+      byte[] name = (byte[]) regEnumValue.invoke(root, new Object[] {
+          new Integer
+            (handles[0]), new Integer(index), new Integer(maxlen + 1)});
+      String value = readString(hkey, key, new String(name));
+      results.put(new String(name).trim(), value);
+    }
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return results;
+  }
+
+  private static List&lt;String&gt; readStringSubKeys
+    (Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    List&lt;String&gt; results = new ArrayList&lt;String&gt;();
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) 
+        });
+    if (handles[1] != REG_SUCCESS) {
+      return null;
+    }
+    int[] info = (int[]) regQueryInfoKey.invoke(root,
+        new Object[] { new Integer(handles[0]) });
+
+    int count  = info[0]; // Fix: info[2] was being used here with wrong results. Suggested by davenpcj, confirmed by Petrucio
+    int maxlen = info[3]; // value length max
+    for(int index=0; index&lt;count; index++)  {
+      byte[] name = (byte[]) regEnumKeyEx.invoke(root, new Object[] {
+          new Integer
+            (handles[0]), new Integer(index), new Integer(maxlen + 1)
+          });
+      results.add(new String(name).trim());
+    }
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return results;
+  }
+
+  private static int [] createKey(Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    return  (int[]) regCreateKeyEx.invoke(root,
+        new Object[] { new Integer(hkey), toCstr(key) });
+  }
+
+  private static void writeStringValue 
+    (Preferences root, int hkey, String key, String valueName, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_ALL_ACCESS) });
+
+    regSetValueEx.invoke(root,  
+        new Object[] { 
+          new Integer(handles[0]), toCstr(valueName), toCstr(value) 
+          }); 
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+  }
+
+  // utility
+  private static byte[] toCstr(String str) {
+    byte[] result = new byte[str.length() + 1];
+
+    for (int i = 0; i &lt; str.length(); i++) {
+      result[i] = (byte) str.charAt(i);
+    }
+    result[str.length()] = 0;
+    return result;
+  }
+}
+</code></pre>
+
+<p>I was unable to find and give credit to the original author of this code. If you find any details, please add a comment and I will add it here.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418412003104L,lastactivitydate=0L,tags=,score=141,searchfield=]
+2014-12-12 02:20:54:0805, answer_open, VisualItem[tree.nodes,13,id=6163701,type=20,title=,body=<p>I know this question is old, but it is the first search result on google to "java read/write to registry".  Recently I found this amazing piece of code which:</p>
+
+<ul>
+<li>Can read/write to ANY part of the registry. </li>
+<li>DOES NOT USE JNI.</li>
+<li>DOES NOT USE ANY 3rd PARTY/EXTERNAL APPLICATIONS TO WORK.</li>
+<li>DOES NOT USE THE WINDOWS API (directly)</li>
+</ul>
+
+<p>This is pure, Java code.</p>
+
+<p>It uses reflection to work, by actually accessing the private methods in the java.util.prefs.Preferences class. The internals of this class are complicated, but the class itself is very easy to use.</p>
+
+<p>For example, the following code obtains the exact windows distribution <strong>from the registry</strong>:</p>
+
+<pre><code>String value = WinRegistry.readString (
+    WinRegistry.HKEY_LOCAL_MACHINE,                             //HKEY
+   "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",           //Key
+   "ProductName");                                              //ValueName
+    System.out.println("Windows Distribution = " + value);          
+</code></pre>
+
+<p>Here is the original class. Just copy paste it and it should work:</p>
+
+<pre><code>import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.prefs.Preferences;
+
+public class WinRegistry {
+  public static final int HKEY_CURRENT_USER = 0x80000001;
+  public static final int HKEY_LOCAL_MACHINE = 0x80000002;
+  public static final int REG_SUCCESS = 0;
+  public static final int REG_NOTFOUND = 2;
+  public static final int REG_ACCESSDENIED = 5;
+
+  private static final int KEY_ALL_ACCESS = 0xf003f;
+  private static final int KEY_READ = 0x20019;
+  private static Preferences userRoot = Preferences.userRoot();
+  private static Preferences systemRoot = Preferences.systemRoot();
+  private static Class&lt;? extends Preferences&gt; userClass = userRoot.getClass();
+  private static Method regOpenKey = null;
+  private static Method regCloseKey = null;
+  private static Method regQueryValueEx = null;
+  private static Method regEnumValue = null;
+  private static Method regQueryInfoKey = null;
+  private static Method regEnumKeyEx = null;
+  private static Method regCreateKeyEx = null;
+  private static Method regSetValueEx = null;
+  private static Method regDeleteKey = null;
+  private static Method regDeleteValue = null;
+
+  static {
+    try {
+      regOpenKey = userClass.getDeclaredMethod("WindowsRegOpenKey",
+          new Class[] { int.class, byte[].class, int.class });
+      regOpenKey.setAccessible(true);
+      regCloseKey = userClass.getDeclaredMethod("WindowsRegCloseKey",
+          new Class[] { int.class });
+      regCloseKey.setAccessible(true);
+      regQueryValueEx = userClass.getDeclaredMethod("WindowsRegQueryValueEx",
+          new Class[] { int.class, byte[].class });
+      regQueryValueEx.setAccessible(true);
+      regEnumValue = userClass.getDeclaredMethod("WindowsRegEnumValue",
+          new Class[] { int.class, int.class, int.class });
+      regEnumValue.setAccessible(true);
+      regQueryInfoKey = userClass.getDeclaredMethod("WindowsRegQueryInfoKey1",
+          new Class[] { int.class });
+      regQueryInfoKey.setAccessible(true);
+      regEnumKeyEx = userClass.getDeclaredMethod(  
+          "WindowsRegEnumKeyEx", new Class[] { int.class, int.class,  
+              int.class });  
+      regEnumKeyEx.setAccessible(true);
+      regCreateKeyEx = userClass.getDeclaredMethod(  
+          "WindowsRegCreateKeyEx", new Class[] { int.class,  
+              byte[].class });  
+      regCreateKeyEx.setAccessible(true);  
+      regSetValueEx = userClass.getDeclaredMethod(  
+          "WindowsRegSetValueEx", new Class[] { int.class,  
+              byte[].class, byte[].class });  
+      regSetValueEx.setAccessible(true); 
+      regDeleteValue = userClass.getDeclaredMethod(  
+          "WindowsRegDeleteValue", new Class[] { int.class,  
+              byte[].class });  
+      regDeleteValue.setAccessible(true); 
+      regDeleteKey = userClass.getDeclaredMethod(  
+          "WindowsRegDeleteKey", new Class[] { int.class,  
+              byte[].class });  
+      regDeleteKey.setAccessible(true); 
+    }
+    catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  private WinRegistry() {  }
+
+  /**
+   * Read a value from key and value name
+   * @param hkey   HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @param valueName
+   * @return the value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static String readString(int hkey, String key, String valueName) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readString(systemRoot, hkey, key, valueName);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readString(userRoot, hkey, key, valueName);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Read value(s) and value name(s) form given key 
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @return the value name(s) plus the value(s)
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static Map&lt;String, String&gt; readStringValues(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readStringValues(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readStringValues(userRoot, hkey, key);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Read the value name(s) from a given key
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @return the value name(s)
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static List&lt;String&gt; readStringSubKeys(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readStringSubKeys(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readStringSubKeys(userRoot, hkey, key);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Create a key
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void createKey(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int [] ret;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      ret = createKey(systemRoot, hkey, key);
+      regCloseKey.invoke(systemRoot, new Object[] { new Integer(ret[0]) });
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      ret = createKey(userRoot, hkey, key);
+      regCloseKey.invoke(userRoot, new Object[] { new Integer(ret[0]) });
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+    if (ret[1] != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + ret[1] + "  key=" + key);
+    }
+  }
+
+  /**
+   * Write a value in a given key/value name
+   * @param hkey
+   * @param key
+   * @param valueName
+   * @param value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void writeStringValue
+    (int hkey, String key, String valueName, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      writeStringValue(systemRoot, hkey, key, valueName, value);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      writeStringValue(userRoot, hkey, key, valueName, value);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Delete a given key
+   * @param hkey
+   * @param key
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void deleteKey(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc = -1;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      rc = deleteKey(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      rc = deleteKey(userRoot, hkey, key);
+    }
+    if (rc != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + rc + "  key=" + key);
+    }
+  }
+
+  /**
+   * delete a value from a given key/value name
+   * @param hkey
+   * @param key
+   * @param value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void deleteValue(int hkey, String key, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc = -1;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      rc = deleteValue(systemRoot, hkey, key, value);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      rc = deleteValue(userRoot, hkey, key, value);
+    }
+    if (rc != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + rc + "  key=" + key + "  value=" + value);
+    }
+  }
+
+  // =====================
+
+  private static int deleteValue
+    (Preferences root, int hkey, String key, String value)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_ALL_ACCESS) });
+    if (handles[1] != REG_SUCCESS) {
+      return handles[1];  // can be REG_NOTFOUND, REG_ACCESSDENIED
+    }
+    int rc =((Integer) regDeleteValue.invoke(root,  
+        new Object[] { 
+          new Integer(handles[0]), toCstr(value) 
+          })).intValue();
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return rc;
+  }
+
+  private static int deleteKey(Preferences root, int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc =((Integer) regDeleteKey.invoke(root,  
+        new Object[] { new Integer(hkey), toCstr(key) })).intValue();
+    return rc;  // can REG_NOTFOUND, REG_ACCESSDENIED, REG_SUCCESS
+  }
+
+  private static String readString(Preferences root, int hkey, String key, String value)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) });
+    if (handles[1] != REG_SUCCESS) {
+      return null; 
+    }
+    byte[] valb = (byte[]) regQueryValueEx.invoke(root, new Object[] {
+        new Integer(handles[0]), toCstr(value) });
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return (valb != null ? new String(valb).trim() : null);
+  }
+
+  private static Map&lt;String,String&gt; readStringValues
+    (Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    HashMap&lt;String, String&gt; results = new HashMap&lt;String,String&gt;();
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) });
+    if (handles[1] != REG_SUCCESS) {
+      return null;
+    }
+    int[] info = (int[]) regQueryInfoKey.invoke(root,
+        new Object[] { new Integer(handles[0]) });
+
+    int count = info[0]; // count  
+    int maxlen = info[3]; // value length max
+    for(int index=0; index&lt;count; index++)  {
+      byte[] name = (byte[]) regEnumValue.invoke(root, new Object[] {
+          new Integer
+            (handles[0]), new Integer(index), new Integer(maxlen + 1)});
+      String value = readString(hkey, key, new String(name));
+      results.put(new String(name).trim(), value);
+    }
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return results;
+  }
+
+  private static List&lt;String&gt; readStringSubKeys
+    (Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    List&lt;String&gt; results = new ArrayList&lt;String&gt;();
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) 
+        });
+    if (handles[1] != REG_SUCCESS) {
+      return null;
+    }
+    int[] info = (int[]) regQueryInfoKey.invoke(root,
+        new Object[] { new Integer(handles[0]) });
+
+    int count  = info[0]; // Fix: info[2] was being used here with wrong results. Suggested by davenpcj, confirmed by Petrucio
+    int maxlen = info[3]; // value length max
+    for(int index=0; index&lt;count; index++)  {
+      byte[] name = (byte[]) regEnumKeyEx.invoke(root, new Object[] {
+          new Integer
+            (handles[0]), new Integer(index), new Integer(maxlen + 1)
+          });
+      results.add(new String(name).trim());
+    }
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return results;
+  }
+
+  private static int [] createKey(Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    return  (int[]) regCreateKeyEx.invoke(root,
+        new Object[] { new Integer(hkey), toCstr(key) });
+  }
+
+  private static void writeStringValue 
+    (Preferences root, int hkey, String key, String valueName, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_ALL_ACCESS) });
+
+    regSetValueEx.invoke(root,  
+        new Object[] { 
+          new Integer(handles[0]), toCstr(valueName), toCstr(value) 
+          }); 
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+  }
+
+  // utility
+  private static byte[] toCstr(String str) {
+    byte[] result = new byte[str.length() + 1];
+
+    for (int i = 0; i &lt; str.length(); i++) {
+      result[i] = (byte) str.charAt(i);
+    }
+    result[str.length()] = 0;
+    return result;
+  }
+}
+</code></pre>
+
+<p>I was unable to find and give credit to the original author of this code. If you find any details, please add a comment and I will add it here.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418412003104L,lastactivitydate=0L,tags=,score=141,searchfield=]
+2014-12-12 02:20:54:0805, diag_detail_itementered, id=6163701, type=20
+2014-12-12 02:20:54:0977, diag_detail_itemexited, id=6163701, type=20
+2014-12-12 02:20:55:0523, answer_open, VisualItem[tree.nodes,13,id=6163701,type=20,title=,body=<p>I know this question is old, but it is the first search result on google to "java read/write to registry".  Recently I found this amazing piece of code which:</p>
+
+<ul>
+<li>Can read/write to ANY part of the registry. </li>
+<li>DOES NOT USE JNI.</li>
+<li>DOES NOT USE ANY 3rd PARTY/EXTERNAL APPLICATIONS TO WORK.</li>
+<li>DOES NOT USE THE WINDOWS API (directly)</li>
+</ul>
+
+<p>This is pure, Java code.</p>
+
+<p>It uses reflection to work, by actually accessing the private methods in the java.util.prefs.Preferences class. The internals of this class are complicated, but the class itself is very easy to use.</p>
+
+<p>For example, the following code obtains the exact windows distribution <strong>from the registry</strong>:</p>
+
+<pre><code>String value = WinRegistry.readString (
+    WinRegistry.HKEY_LOCAL_MACHINE,                             //HKEY
+   "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",           //Key
+   "ProductName");                                              //ValueName
+    System.out.println("Windows Distribution = " + value);          
+</code></pre>
+
+<p>Here is the original class. Just copy paste it and it should work:</p>
+
+<pre><code>import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.prefs.Preferences;
+
+public class WinRegistry {
+  public static final int HKEY_CURRENT_USER = 0x80000001;
+  public static final int HKEY_LOCAL_MACHINE = 0x80000002;
+  public static final int REG_SUCCESS = 0;
+  public static final int REG_NOTFOUND = 2;
+  public static final int REG_ACCESSDENIED = 5;
+
+  private static final int KEY_ALL_ACCESS = 0xf003f;
+  private static final int KEY_READ = 0x20019;
+  private static Preferences userRoot = Preferences.userRoot();
+  private static Preferences systemRoot = Preferences.systemRoot();
+  private static Class&lt;? extends Preferences&gt; userClass = userRoot.getClass();
+  private static Method regOpenKey = null;
+  private static Method regCloseKey = null;
+  private static Method regQueryValueEx = null;
+  private static Method regEnumValue = null;
+  private static Method regQueryInfoKey = null;
+  private static Method regEnumKeyEx = null;
+  private static Method regCreateKeyEx = null;
+  private static Method regSetValueEx = null;
+  private static Method regDeleteKey = null;
+  private static Method regDeleteValue = null;
+
+  static {
+    try {
+      regOpenKey = userClass.getDeclaredMethod("WindowsRegOpenKey",
+          new Class[] { int.class, byte[].class, int.class });
+      regOpenKey.setAccessible(true);
+      regCloseKey = userClass.getDeclaredMethod("WindowsRegCloseKey",
+          new Class[] { int.class });
+      regCloseKey.setAccessible(true);
+      regQueryValueEx = userClass.getDeclaredMethod("WindowsRegQueryValueEx",
+          new Class[] { int.class, byte[].class });
+      regQueryValueEx.setAccessible(true);
+      regEnumValue = userClass.getDeclaredMethod("WindowsRegEnumValue",
+          new Class[] { int.class, int.class, int.class });
+      regEnumValue.setAccessible(true);
+      regQueryInfoKey = userClass.getDeclaredMethod("WindowsRegQueryInfoKey1",
+          new Class[] { int.class });
+      regQueryInfoKey.setAccessible(true);
+      regEnumKeyEx = userClass.getDeclaredMethod(  
+          "WindowsRegEnumKeyEx", new Class[] { int.class, int.class,  
+              int.class });  
+      regEnumKeyEx.setAccessible(true);
+      regCreateKeyEx = userClass.getDeclaredMethod(  
+          "WindowsRegCreateKeyEx", new Class[] { int.class,  
+              byte[].class });  
+      regCreateKeyEx.setAccessible(true);  
+      regSetValueEx = userClass.getDeclaredMethod(  
+          "WindowsRegSetValueEx", new Class[] { int.class,  
+              byte[].class, byte[].class });  
+      regSetValueEx.setAccessible(true); 
+      regDeleteValue = userClass.getDeclaredMethod(  
+          "WindowsRegDeleteValue", new Class[] { int.class,  
+              byte[].class });  
+      regDeleteValue.setAccessible(true); 
+      regDeleteKey = userClass.getDeclaredMethod(  
+          "WindowsRegDeleteKey", new Class[] { int.class,  
+              byte[].class });  
+      regDeleteKey.setAccessible(true); 
+    }
+    catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  private WinRegistry() {  }
+
+  /**
+   * Read a value from key and value name
+   * @param hkey   HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @param valueName
+   * @return the value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static String readString(int hkey, String key, String valueName) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readString(systemRoot, hkey, key, valueName);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readString(userRoot, hkey, key, valueName);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Read value(s) and value name(s) form given key 
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @return the value name(s) plus the value(s)
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static Map&lt;String, String&gt; readStringValues(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readStringValues(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readStringValues(userRoot, hkey, key);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Read the value name(s) from a given key
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @return the value name(s)
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static List&lt;String&gt; readStringSubKeys(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readStringSubKeys(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readStringSubKeys(userRoot, hkey, key);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Create a key
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void createKey(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int [] ret;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      ret = createKey(systemRoot, hkey, key);
+      regCloseKey.invoke(systemRoot, new Object[] { new Integer(ret[0]) });
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      ret = createKey(userRoot, hkey, key);
+      regCloseKey.invoke(userRoot, new Object[] { new Integer(ret[0]) });
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+    if (ret[1] != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + ret[1] + "  key=" + key);
+    }
+  }
+
+  /**
+   * Write a value in a given key/value name
+   * @param hkey
+   * @param key
+   * @param valueName
+   * @param value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void writeStringValue
+    (int hkey, String key, String valueName, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      writeStringValue(systemRoot, hkey, key, valueName, value);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      writeStringValue(userRoot, hkey, key, valueName, value);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Delete a given key
+   * @param hkey
+   * @param key
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void deleteKey(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc = -1;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      rc = deleteKey(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      rc = deleteKey(userRoot, hkey, key);
+    }
+    if (rc != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + rc + "  key=" + key);
+    }
+  }
+
+  /**
+   * delete a value from a given key/value name
+   * @param hkey
+   * @param key
+   * @param value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void deleteValue(int hkey, String key, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc = -1;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      rc = deleteValue(systemRoot, hkey, key, value);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      rc = deleteValue(userRoot, hkey, key, value);
+    }
+    if (rc != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + rc + "  key=" + key + "  value=" + value);
+    }
+  }
+
+  // =====================
+
+  private static int deleteValue
+    (Preferences root, int hkey, String key, String value)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_ALL_ACCESS) });
+    if (handles[1] != REG_SUCCESS) {
+      return handles[1];  // can be REG_NOTFOUND, REG_ACCESSDENIED
+    }
+    int rc =((Integer) regDeleteValue.invoke(root,  
+        new Object[] { 
+          new Integer(handles[0]), toCstr(value) 
+          })).intValue();
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return rc;
+  }
+
+  private static int deleteKey(Preferences root, int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc =((Integer) regDeleteKey.invoke(root,  
+        new Object[] { new Integer(hkey), toCstr(key) })).intValue();
+    return rc;  // can REG_NOTFOUND, REG_ACCESSDENIED, REG_SUCCESS
+  }
+
+  private static String readString(Preferences root, int hkey, String key, String value)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) });
+    if (handles[1] != REG_SUCCESS) {
+      return null; 
+    }
+    byte[] valb = (byte[]) regQueryValueEx.invoke(root, new Object[] {
+        new Integer(handles[0]), toCstr(value) });
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return (valb != null ? new String(valb).trim() : null);
+  }
+
+  private static Map&lt;String,String&gt; readStringValues
+    (Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    HashMap&lt;String, String&gt; results = new HashMap&lt;String,String&gt;();
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) });
+    if (handles[1] != REG_SUCCESS) {
+      return null;
+    }
+    int[] info = (int[]) regQueryInfoKey.invoke(root,
+        new Object[] { new Integer(handles[0]) });
+
+    int count = info[0]; // count  
+    int maxlen = info[3]; // value length max
+    for(int index=0; index&lt;count; index++)  {
+      byte[] name = (byte[]) regEnumValue.invoke(root, new Object[] {
+          new Integer
+            (handles[0]), new Integer(index), new Integer(maxlen + 1)});
+      String value = readString(hkey, key, new String(name));
+      results.put(new String(name).trim(), value);
+    }
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return results;
+  }
+
+  private static List&lt;String&gt; readStringSubKeys
+    (Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    List&lt;String&gt; results = new ArrayList&lt;String&gt;();
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) 
+        });
+    if (handles[1] != REG_SUCCESS) {
+      return null;
+    }
+    int[] info = (int[]) regQueryInfoKey.invoke(root,
+        new Object[] { new Integer(handles[0]) });
+
+    int count  = info[0]; // Fix: info[2] was being used here with wrong results. Suggested by davenpcj, confirmed by Petrucio
+    int maxlen = info[3]; // value length max
+    for(int index=0; index&lt;count; index++)  {
+      byte[] name = (byte[]) regEnumKeyEx.invoke(root, new Object[] {
+          new Integer
+            (handles[0]), new Integer(index), new Integer(maxlen + 1)
+          });
+      results.add(new String(name).trim());
+    }
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return results;
+  }
+
+  private static int [] createKey(Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    return  (int[]) regCreateKeyEx.invoke(root,
+        new Object[] { new Integer(hkey), toCstr(key) });
+  }
+
+  private static void writeStringValue 
+    (Preferences root, int hkey, String key, String valueName, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_ALL_ACCESS) });
+
+    regSetValueEx.invoke(root,  
+        new Object[] { 
+          new Integer(handles[0]), toCstr(valueName), toCstr(value) 
+          }); 
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+  }
+
+  // utility
+  private static byte[] toCstr(String str) {
+    byte[] result = new byte[str.length() + 1];
+
+    for (int i = 0; i &lt; str.length(); i++) {
+      result[i] = (byte) str.charAt(i);
+    }
+    result[str.length()] = 0;
+    return result;
+  }
+}
+</code></pre>
+
+<p>I was unable to find and give credit to the original author of this code. If you find any details, please add a comment and I will add it here.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418412003104L,lastactivitydate=0L,tags=,score=141,searchfield=]
+2014-12-12 02:20:55:0554, answer_open, VisualItem[tree.nodes,13,id=6163701,type=20,title=,body=<p>I know this question is old, but it is the first search result on google to "java read/write to registry".  Recently I found this amazing piece of code which:</p>
+
+<ul>
+<li>Can read/write to ANY part of the registry. </li>
+<li>DOES NOT USE JNI.</li>
+<li>DOES NOT USE ANY 3rd PARTY/EXTERNAL APPLICATIONS TO WORK.</li>
+<li>DOES NOT USE THE WINDOWS API (directly)</li>
+</ul>
+
+<p>This is pure, Java code.</p>
+
+<p>It uses reflection to work, by actually accessing the private methods in the java.util.prefs.Preferences class. The internals of this class are complicated, but the class itself is very easy to use.</p>
+
+<p>For example, the following code obtains the exact windows distribution <strong>from the registry</strong>:</p>
+
+<pre><code>String value = WinRegistry.readString (
+    WinRegistry.HKEY_LOCAL_MACHINE,                             //HKEY
+   "SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion",           //Key
+   "ProductName");                                              //ValueName
+    System.out.println("Windows Distribution = " + value);          
+</code></pre>
+
+<p>Here is the original class. Just copy paste it and it should work:</p>
+
+<pre><code>import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.prefs.Preferences;
+
+public class WinRegistry {
+  public static final int HKEY_CURRENT_USER = 0x80000001;
+  public static final int HKEY_LOCAL_MACHINE = 0x80000002;
+  public static final int REG_SUCCESS = 0;
+  public static final int REG_NOTFOUND = 2;
+  public static final int REG_ACCESSDENIED = 5;
+
+  private static final int KEY_ALL_ACCESS = 0xf003f;
+  private static final int KEY_READ = 0x20019;
+  private static Preferences userRoot = Preferences.userRoot();
+  private static Preferences systemRoot = Preferences.systemRoot();
+  private static Class&lt;? extends Preferences&gt; userClass = userRoot.getClass();
+  private static Method regOpenKey = null;
+  private static Method regCloseKey = null;
+  private static Method regQueryValueEx = null;
+  private static Method regEnumValue = null;
+  private static Method regQueryInfoKey = null;
+  private static Method regEnumKeyEx = null;
+  private static Method regCreateKeyEx = null;
+  private static Method regSetValueEx = null;
+  private static Method regDeleteKey = null;
+  private static Method regDeleteValue = null;
+
+  static {
+    try {
+      regOpenKey = userClass.getDeclaredMethod("WindowsRegOpenKey",
+          new Class[] { int.class, byte[].class, int.class });
+      regOpenKey.setAccessible(true);
+      regCloseKey = userClass.getDeclaredMethod("WindowsRegCloseKey",
+          new Class[] { int.class });
+      regCloseKey.setAccessible(true);
+      regQueryValueEx = userClass.getDeclaredMethod("WindowsRegQueryValueEx",
+          new Class[] { int.class, byte[].class });
+      regQueryValueEx.setAccessible(true);
+      regEnumValue = userClass.getDeclaredMethod("WindowsRegEnumValue",
+          new Class[] { int.class, int.class, int.class });
+      regEnumValue.setAccessible(true);
+      regQueryInfoKey = userClass.getDeclaredMethod("WindowsRegQueryInfoKey1",
+          new Class[] { int.class });
+      regQueryInfoKey.setAccessible(true);
+      regEnumKeyEx = userClass.getDeclaredMethod(  
+          "WindowsRegEnumKeyEx", new Class[] { int.class, int.class,  
+              int.class });  
+      regEnumKeyEx.setAccessible(true);
+      regCreateKeyEx = userClass.getDeclaredMethod(  
+          "WindowsRegCreateKeyEx", new Class[] { int.class,  
+              byte[].class });  
+      regCreateKeyEx.setAccessible(true);  
+      regSetValueEx = userClass.getDeclaredMethod(  
+          "WindowsRegSetValueEx", new Class[] { int.class,  
+              byte[].class, byte[].class });  
+      regSetValueEx.setAccessible(true); 
+      regDeleteValue = userClass.getDeclaredMethod(  
+          "WindowsRegDeleteValue", new Class[] { int.class,  
+              byte[].class });  
+      regDeleteValue.setAccessible(true); 
+      regDeleteKey = userClass.getDeclaredMethod(  
+          "WindowsRegDeleteKey", new Class[] { int.class,  
+              byte[].class });  
+      regDeleteKey.setAccessible(true); 
+    }
+    catch (Exception e) {
+      e.printStackTrace();
+    }
+  }
+
+  private WinRegistry() {  }
+
+  /**
+   * Read a value from key and value name
+   * @param hkey   HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @param valueName
+   * @return the value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static String readString(int hkey, String key, String valueName) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readString(systemRoot, hkey, key, valueName);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readString(userRoot, hkey, key, valueName);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Read value(s) and value name(s) form given key 
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @return the value name(s) plus the value(s)
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static Map&lt;String, String&gt; readStringValues(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readStringValues(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readStringValues(userRoot, hkey, key);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Read the value name(s) from a given key
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @return the value name(s)
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static List&lt;String&gt; readStringSubKeys(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      return readStringSubKeys(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      return readStringSubKeys(userRoot, hkey, key);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Create a key
+   * @param hkey  HKEY_CURRENT_USER/HKEY_LOCAL_MACHINE
+   * @param key
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void createKey(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int [] ret;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      ret = createKey(systemRoot, hkey, key);
+      regCloseKey.invoke(systemRoot, new Object[] { new Integer(ret[0]) });
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      ret = createKey(userRoot, hkey, key);
+      regCloseKey.invoke(userRoot, new Object[] { new Integer(ret[0]) });
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+    if (ret[1] != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + ret[1] + "  key=" + key);
+    }
+  }
+
+  /**
+   * Write a value in a given key/value name
+   * @param hkey
+   * @param key
+   * @param valueName
+   * @param value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void writeStringValue
+    (int hkey, String key, String valueName, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      writeStringValue(systemRoot, hkey, key, valueName, value);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      writeStringValue(userRoot, hkey, key, valueName, value);
+    }
+    else {
+      throw new IllegalArgumentException("hkey=" + hkey);
+    }
+  }
+
+  /**
+   * Delete a given key
+   * @param hkey
+   * @param key
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void deleteKey(int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc = -1;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      rc = deleteKey(systemRoot, hkey, key);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      rc = deleteKey(userRoot, hkey, key);
+    }
+    if (rc != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + rc + "  key=" + key);
+    }
+  }
+
+  /**
+   * delete a value from a given key/value name
+   * @param hkey
+   * @param key
+   * @param value
+   * @throws IllegalArgumentException
+   * @throws IllegalAccessException
+   * @throws InvocationTargetException
+   */
+  public static void deleteValue(int hkey, String key, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc = -1;
+    if (hkey == HKEY_LOCAL_MACHINE) {
+      rc = deleteValue(systemRoot, hkey, key, value);
+    }
+    else if (hkey == HKEY_CURRENT_USER) {
+      rc = deleteValue(userRoot, hkey, key, value);
+    }
+    if (rc != REG_SUCCESS) {
+      throw new IllegalArgumentException("rc=" + rc + "  key=" + key + "  value=" + value);
+    }
+  }
+
+  // =====================
+
+  private static int deleteValue
+    (Preferences root, int hkey, String key, String value)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_ALL_ACCESS) });
+    if (handles[1] != REG_SUCCESS) {
+      return handles[1];  // can be REG_NOTFOUND, REG_ACCESSDENIED
+    }
+    int rc =((Integer) regDeleteValue.invoke(root,  
+        new Object[] { 
+          new Integer(handles[0]), toCstr(value) 
+          })).intValue();
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return rc;
+  }
+
+  private static int deleteKey(Preferences root, int hkey, String key) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int rc =((Integer) regDeleteKey.invoke(root,  
+        new Object[] { new Integer(hkey), toCstr(key) })).intValue();
+    return rc;  // can REG_NOTFOUND, REG_ACCESSDENIED, REG_SUCCESS
+  }
+
+  private static String readString(Preferences root, int hkey, String key, String value)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) });
+    if (handles[1] != REG_SUCCESS) {
+      return null; 
+    }
+    byte[] valb = (byte[]) regQueryValueEx.invoke(root, new Object[] {
+        new Integer(handles[0]), toCstr(value) });
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return (valb != null ? new String(valb).trim() : null);
+  }
+
+  private static Map&lt;String,String&gt; readStringValues
+    (Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    HashMap&lt;String, String&gt; results = new HashMap&lt;String,String&gt;();
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) });
+    if (handles[1] != REG_SUCCESS) {
+      return null;
+    }
+    int[] info = (int[]) regQueryInfoKey.invoke(root,
+        new Object[] { new Integer(handles[0]) });
+
+    int count = info[0]; // count  
+    int maxlen = info[3]; // value length max
+    for(int index=0; index&lt;count; index++)  {
+      byte[] name = (byte[]) regEnumValue.invoke(root, new Object[] {
+          new Integer
+            (handles[0]), new Integer(index), new Integer(maxlen + 1)});
+      String value = readString(hkey, key, new String(name));
+      results.put(new String(name).trim(), value);
+    }
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return results;
+  }
+
+  private static List&lt;String&gt; readStringSubKeys
+    (Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    List&lt;String&gt; results = new ArrayList&lt;String&gt;();
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_READ) 
+        });
+    if (handles[1] != REG_SUCCESS) {
+      return null;
+    }
+    int[] info = (int[]) regQueryInfoKey.invoke(root,
+        new Object[] { new Integer(handles[0]) });
+
+    int count  = info[0]; // Fix: info[2] was being used here with wrong results. Suggested by davenpcj, confirmed by Petrucio
+    int maxlen = info[3]; // value length max
+    for(int index=0; index&lt;count; index++)  {
+      byte[] name = (byte[]) regEnumKeyEx.invoke(root, new Object[] {
+          new Integer
+            (handles[0]), new Integer(index), new Integer(maxlen + 1)
+          });
+      results.add(new String(name).trim());
+    }
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+    return results;
+  }
+
+  private static int [] createKey(Preferences root, int hkey, String key)
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    return  (int[]) regCreateKeyEx.invoke(root,
+        new Object[] { new Integer(hkey), toCstr(key) });
+  }
+
+  private static void writeStringValue 
+    (Preferences root, int hkey, String key, String valueName, String value) 
+    throws IllegalArgumentException, IllegalAccessException,
+    InvocationTargetException 
+  {
+    int[] handles = (int[]) regOpenKey.invoke(root, new Object[] {
+        new Integer(hkey), toCstr(key), new Integer(KEY_ALL_ACCESS) });
+
+    regSetValueEx.invoke(root,  
+        new Object[] { 
+          new Integer(handles[0]), toCstr(valueName), toCstr(value) 
+          }); 
+    regCloseKey.invoke(root, new Object[] { new Integer(handles[0]) });
+  }
+
+  // utility
+  private static byte[] toCstr(String str) {
+    byte[] result = new byte[str.length() + 1];
+
+    for (int i = 0; i &lt; str.length(); i++) {
+      result[i] = (byte) str.charAt(i);
+    }
+    result[str.length()] = 0;
+    return result;
+  }
+}
+</code></pre>
+
+<p>I was unable to find and give credit to the original author of this code. If you find any details, please add a comment and I will add it here.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418412003104L,lastactivitydate=0L,tags=,score=141,searchfield=]
+2014-12-12 02:20:55:0554, diag_detail_itementered, id=6163701, type=20
+2014-12-12 02:20:55:0648, diag_detail_itemexited, id=6163701, type=20
+2014-12-12 02:20:55:0819, list_mouseentered, type=detailAnswersList
+2014-12-12 02:21:53:0493, list_mouseexited, type=detailAnswersList
+2014-12-12 02:21:55:0708, diag_detail_itementered, id=51320, type=1
+2014-12-12 02:21:55:0755, diag_detail_itemexited, id=51320, type=1
+2014-12-12 02:21:55:0755, diag_detail_itementered, id=0.651958750835049, type=1
+2014-12-12 02:21:55:0786, diag_detail_itemexited, id=0.651958750835049, type=1
+2014-12-12 02:21:55:0849, diag_detail_itementered, id=0.5566043477805666, type=1
+2014-12-12 02:21:55:0880, diag_detail_itemexited, id=0.5566043477805666, type=1
+2014-12-12 02:21:55:0989, diag_detail_itementered, id=0.38495026546490485, type=1
+2014-12-12 02:21:56:0020, diag_detail_itemexited, id=0.38495026546490485, type=1
+2014-12-12 02:21:56:0332, diag_detail_itementered, id=62289, type=1
+2014-12-12 02:23:36:0236, diag_detail_itemexited, id=62289, type=1
+2014-12-12 02:23:40:0978, diag_detail_itementered, id=62289, type=1
+2014-12-12 02:23:42:0445, diag_detail_itemexited, id=62289, type=1
+2014-12-12 02:23:42:0507, list_mouseentered, type=detailRelatedList, item=11338
+2014-12-12 02:23:43:0459, list_mouseexited, type=detailRelatedList
+2014-12-12 02:23:43:0506, diag_detail_itementered, id=0.24099472554935508, type=4
+2014-12-12 02:23:43:0537, diag_detail_itemexited, id=0.24099472554935508, type=4
+2014-12-12 02:23:44:0254, diag_detail_itementered, id=-1671452970, type=3
+2014-12-12 02:23:44:0301, diag_detail_itemexited, id=-1671452970, type=3
+2014-12-12 02:23:44:0348, diag_detail_itementered, id=57034, type=1
+2014-12-12 02:23:44:0395, diag_detail_itemexited, id=57034, type=1
+2014-12-12 02:23:44:0800, diag_detail_itementered, id=64010, type=1
+2014-12-12 02:23:44:0941, diag_detail_itemexited, id=64010, type=1
+2014-12-12 02:23:47:0062, diag_itementered, id=20227, type=1
+2014-12-12 02:23:47:0125, diag_itemexited, id=20227, type=1
+2014-12-12 02:23:47:0530, diag_itemexited, id=2, type=4
+2014-12-12 02:23:47:0562, diag_itementered, id=41894, type=1
+2014-12-12 02:23:47:0624, diag_itemexited, id=41894, type=1
+2014-12-12 02:23:47:0702, diag_itemexited, id=2, type=4
+2014-12-12 02:23:47:0702, diag_itementered, id=41894, type=1
+2014-12-12 02:23:47:0764, diag_itemexited, id=41894, type=1
+2014-12-12 02:23:47:0827, diag_itemexited, id=2, type=4
+2014-12-12 02:23:47:0827, diag_itementered, id=23445, type=1
+2014-12-12 02:23:48:0295, edge_create, Tuple[0,1,0.38564895944604305,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0295, answer_create, 23469
+2014-12-12 02:23:48:0295, edge_create, Tuple[1,2,0.06622399602363382,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0295, answer_create, 23944
+2014-12-12 02:23:48:0295, edge_create, Tuple[1,3,0.7896089557592373,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0295, answer_create, 36997
+2014-12-12 02:23:48:0295, edge_create, Tuple[1,4,0.31237198700935187,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0295, answer_create, 1167234
+2014-12-12 02:23:48:0295, edge_create, Tuple[1,5,0.021173928331641,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0295, answer_create, 3104434
+2014-12-12 02:23:48:0295, edge_create, Tuple[1,6,0.6389186078300475,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0295, answer_create, 4469413
+2014-12-12 02:23:48:0295, edge_create, Tuple[1,7,0.06159492116873555,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0310, answer_create, 8638140
+2014-12-12 02:23:48:0310, edge_create, Tuple[1,8,0.2401627322657185,4,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0310, edge_create, Tuple[0,9,0.7576521549591722,2,1.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0310, pattern_create, 2
+2014-12-12 02:23:48:0310, edge_create, Tuple[9,10,0.5504820879038532,2,1.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0310, edge_create, Tuple[0,11,0.7134431120779346,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0310, edge_create, Tuple[11,12,0.6935737296889427,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0310, edge_create, Tuple[11,13,0.0854862627656433,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0328, edge_create, Tuple[11,14,0.11172763816472586,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0328, edge_create, Tuple[11,15,0.7582049337946948,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0344, edge_create, Tuple[11,16,0.25168129213563617,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0344, edge_create, Tuple[11,17,0.4028908287201771,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0359, edge_create, Tuple[11,18,0.5677033023673188,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0359, edge_create, Tuple[11,19,0.544558187512558,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0375, edge_create, Tuple[11,20,0.8968675472517331,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0390, edge_create, Tuple[11,21,0.6114754914815724,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0390, edge_create, Tuple[11,22,0.5138652832691901,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0406, edge_create, Tuple[11,23,0.54601694334787,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0406, edge_create, Tuple[11,24,0.44663062760743166,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0422, edge_create, Tuple[11,25,0.5778489993826768,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0422, edge_create, Tuple[11,26,0.25863278180405436,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0437, edge_create, Tuple[11,27,0.25702251870548376,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0437, edge_create, Tuple[11,28,0.8236374041517589,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0453, edge_create, Tuple[11,29,0.5115680203246697,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0453, edge_create, Tuple[11,30,0.24441542479668155,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0468, edge_create, Tuple[11,31,0.9186024721513019,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0468, edge_create, Tuple[11,32,0.12425419980707098,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0484, edge_create, Tuple[11,33,0.28729321150541975,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:48:0500, discussion_open, 23445
+2014-12-12 02:23:48:0500, diag_itemclicked, id=23445, type=1
+2014-12-12 02:23:48:0624, diag_itemexited, id=23445, type=1
+2014-12-12 02:23:52:0306, diag_detail_itementered, id=497618685, type=3
+2014-12-12 02:23:53:0554, diag_detail_itemexited, id=497618685, type=3
+2014-12-12 02:23:56:0565, diag_detail_itementered, id=0.5504820879038532, type=2
+2014-12-12 02:23:56:0596, diag_detail_itemexited, id=0.5504820879038532, type=2
+2014-12-12 02:23:57:0423, diag_detail_itementered, id=0.5504820879038532, type=2
+2014-12-12 02:23:57:0438, diag_detail_itemexited, id=0.5504820879038532, type=2
+2014-12-12 02:23:57:0641, diag_detail_itementered, id=0.5504820879038532, type=2
+2014-12-12 02:23:57:0766, diag_detail_itemexited, id=0.5504820879038532, type=2
+2014-12-12 02:23:57:0766, diag_detail_itementered, id=2, type=0
+2014-12-12 02:23:58:0172, diag_detail_itemexited, id=2, type=0
+2014-12-12 02:23:58:0250, diag_detail_itementered, id=497618685, type=3
+2014-12-12 02:23:58:0281, diag_detail_itemexited, id=497618685, type=3
+2014-12-12 02:23:58:0952, diag_detail_itementered, id=2, type=0
+2014-12-12 02:23:59:0279, diag_detail_itemclicked, id=2, type=0
+2014-12-12 02:23:59:0451, edge_create, Tuple[0,1,0.7808059241819495,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:59:0451, edge_create, Tuple[1,2,0.16444817762337993,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:59:0467, edge_create, Tuple[1,3,0.6030180731714888,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:59:0467, edge_create, Tuple[1,4,0.7478038778123436,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:59:0482, edge_create, Tuple[1,5,0.7664823310060748,1,0.0,1418412003104,1418412003104]
+2014-12-12 02:23:59:0498, pattern_open, 2
+2014-12-12 02:23:59:0498, diag_detail_itemclicked, id=2, type=0
+2014-12-12 02:24:00:0325, diag_detail_itementered, id=0.16444817762337993, type=1
+2014-12-12 02:24:00:0418, diag_detail_itemexited, id=0.16444817762337993, type=1
+2014-12-12 02:24:00:0621, diag_detail_itementered, id=1654720639, type=3
+2014-12-12 02:24:01:0229, diag_detail_itemexited, id=1654720639, type=3
+2014-12-12 02:24:01:0292, diag_detail_itementered, id=2, type=0
+2014-12-12 02:24:01:0323, diag_detail_itemexited, id=2, type=0
+2014-12-12 02:24:02:0134, diag_detail_itementered, id=2, type=0
+2014-12-12 02:24:04:0724, diag_detail_itemexited, id=2, type=0
+2014-12-12 02:24:04:0786, diag_detail_itementered, id=0.16444817762337993, type=1
+2014-12-12 02:24:04:0802, diag_detail_itemexited, id=0.16444817762337993, type=1
+2014-12-12 02:24:10:0496, diag_detail_itementered, id=0.16444817762337993, type=1
+2014-12-12 02:24:10:0527, diag_detail_itemexited, id=0.16444817762337993, type=1
+2014-12-12 02:24:10:0574, diag_detail_itementered, id=2, type=0
+2014-12-12 02:24:10:0808, diag_detail_itemexited, id=2, type=0
+2014-12-12 02:24:10:0855, diag_detail_itementered, id=0.7808059241819495, type=1
+2014-12-12 02:24:10:0870, diag_detail_itemexited, id=0.7808059241819495, type=1
+2014-12-12 02:24:10:0917, diag_detail_itementered, id=1654720639, type=3
+2014-12-12 02:24:11:0167, diag_detail_itemexited, id=1654720639, type=3
+2014-12-12 02:24:14:0567, diag_detail_itementered, id=0.6030180731714888, type=1
+2014-12-12 02:24:14:0583, diag_detail_itemexited, id=0.6030180731714888, type=1
+2014-12-12 02:24:14:0708, diag_detail_itementered, id=0.6030180731714888, type=1
+2014-12-12 02:24:14:0755, diag_detail_itemexited, id=0.6030180731714888, type=1
+2014-12-12 02:24:57:0047, diag_detail_itementered, id=23106, type=1
+2014-12-12 02:24:57:0062, diag_detail_itemexited, id=23106, type=1
+2014-12-12 02:24:57:0312, diag_detail_itementered, id=23106, type=1
+2014-12-12 02:25:02:0460, diag_detail_itemexited, id=23106, type=1
+2014-12-12 02:25:03:0115, diag_detail_itementered, id=0.7478038778123436, type=1
+2014-12-12 02:25:03:0131, diag_detail_itemexited, id=0.7478038778123436, type=1
+2014-12-12 02:25:03:0131, diag_detail_itementered, id=65035, type=1
+2014-12-12 02:25:42:0334, diag_detail_itemexited, id=65035, type=1
+2014-12-12 02:25:43:0691, list_mouseentered, type=detailRelatedList, item=23445
+2014-12-12 02:25:43:0925, list_mouseexited, type=detailRelatedList
+2014-12-12 02:25:44:0315, list_mouseentered, type=detailRelatedList, item=65035
+2014-12-12 02:25:45:0080, list_mouseexited, type=detailRelatedList

@@ -1,0 +1,28 @@
+2014-05-09 04:12:06:0239, setup_loaddata
+2014-05-09 04:12:11:0114, search_update, p
+2014-05-09 04:12:11:0507, search_update, pa
+2014-05-09 04:12:11:0579, search_update, par
+2014-05-09 04:12:11:0802, search_update, pars
+2014-05-09 04:12:12:0018, search_update, pars 
+2014-05-09 04:12:12:0297, search_update, pars
+2014-05-09 04:12:12:0404, search_update, parse
+2014-05-09 04:12:12:0580, search_update, parse 
+2014-05-09 04:12:12:0692, search_update, parse s
+2014-05-09 04:12:12:0974, search_update, parse st
+2014-05-09 04:12:13:0155, search_update, parse str
+2014-05-09 04:12:13:0312, search_update, parse stri
+2014-05-09 04:12:13:0464, search_update, parse strin
+2014-05-09 04:12:13:0573, search_update, parse string
+2014-05-09 04:12:14:0830, list_mouseentered, 2968
+2014-05-09 04:12:15:0346, list_mouseexited
+2014-05-09 04:12:19:0594, diag_itementered, id=2968, type=1
+2014-05-09 04:12:19:0744, diag_itemexited, id=2968, type=1
+2014-05-09 04:12:20:0194, diag_itementered, id=2968, type=1
+2014-05-09 04:12:20:0586, diag_itemexited, id=2968, type=1
+2014-05-09 04:12:21:0320, diag_itementered, id=9913, type=1
+2014-05-09 04:12:21:0637, diag_itemexited, id=9913, type=1
+2014-05-09 04:20:14:0460, edge_create, Tuple[0,1,0.9436787700304612,1,0.0,1399666324994,1399666324994]
+2014-05-09 04:20:14:0461, edge_create, Tuple[1,2,0.14797711188099705,1,0.0,1399666324994,1399666324994]
+2014-05-09 04:20:14:0462, edge_create, Tuple[1,3,0.763627784093748,1,0.0,1399666324994,1399666324994]
+2014-05-09 04:20:14:0463, edge_create, Tuple[1,4,0.3504389340049615,1,0.0,1399666324994,1399666324994]
+2014-05-09 04:20:14:0862, pattern_open, 2109443059

@@ -1,0 +1,182 @@
+2014-10-31 07:08:21:0054, setup_loaddata
+2014-10-31 07:08:22:0864, list_mouseentered, 2109443059
+2014-10-31 07:08:22:0884, list_mouseexited
+2014-10-31 07:08:23:0574, diag_itementered, id=3049, type=1
+2014-10-31 07:08:23:0644, diag_itemexited, id=3049, type=1
+2014-10-31 07:08:23:0944, diag_itementered, id=29516, type=1
+2014-10-31 07:08:25:0444, edge_create, Tuple[0,1,0.5479264973966825,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0444, answer_create, 29595
+2014-10-31 07:08:25:0444, edge_create, Tuple[1,2,0.6665628203281746,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0444, answer_create, 30011
+2014-10-31 07:08:25:0444, edge_create, Tuple[1,3,0.9590520278370682,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0444, answer_create, 44275
+2014-10-31 07:08:25:0444, edge_create, Tuple[1,4,0.21462743020768071,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0454, answer_create, 61201
+2014-10-31 07:08:25:0454, edge_create, Tuple[1,5,0.5694085302400645,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0454, answer_create, 61205
+2014-10-31 07:08:25:0454, edge_create, Tuple[1,6,0.18892285961981847,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0454, answer_create, 64037
+2014-10-31 07:08:25:0454, edge_create, Tuple[1,7,0.07413170865434848,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0454, answer_create, 75916
+2014-10-31 07:08:25:0454, edge_create, Tuple[1,8,0.15851074221676054,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0454, answer_create, 304204
+2014-10-31 07:08:25:0454, edge_create, Tuple[1,9,0.9673371496914037,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0464, answer_create, 2546995
+2014-10-31 07:08:25:0464, edge_create, Tuple[1,10,0.7962844819058649,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0464, answer_create, 6441840
+2014-10-31 07:08:25:0464, edge_create, Tuple[1,11,0.7686638221171378,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0464, answer_create, 6552078
+2014-10-31 07:08:25:0464, edge_create, Tuple[1,12,0.1858805661635058,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0474, edge_create, Tuple[0,13,0.6193794517777896,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0474, edge_create, Tuple[13,14,0.6048710958421459,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0474, edge_create, Tuple[13,15,0.5125365374155444,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0474, edge_create, Tuple[13,16,0.14598051972271653,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0484, edge_create, Tuple[13,17,0.7002961678899344,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0484, edge_create, Tuple[13,18,0.08516057579111025,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0494, edge_create, Tuple[13,19,0.8228847370258067,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0494, edge_create, Tuple[13,20,0.49401591277418166,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0494, edge_create, Tuple[13,21,0.07556250141866938,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0494, edge_create, Tuple[13,22,0.7487087246859044,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0504, edge_create, Tuple[13,23,0.8359454194165306,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0504, edge_create, Tuple[13,24,0.9731253351270331,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:25:0534, discussion_open, 29516
+2014-10-31 07:08:25:0534, diag_itemclicked, id=29516, type=1
+2014-10-31 07:08:27:0009, diag_itemexited, id=29516, type=1
+2014-10-31 07:08:27:0299, diag_detail_itementered, id=62713, type=1
+2014-10-31 07:08:28:0749, diag_detail_itemexited, id=62713, type=1
+2014-10-31 07:08:29:0069, answer_open, VisualItem[tree.nodes,2,id=29595,type=20,title=,body=<p>When you say Spring Framework are you referring to Spring MVC or just the core Spring concepts (dependency injection, AOP, etc)?</p>
+
+<p>If it is really the concept of Spring you like then I recommend checking out <a href="http://www.stripesframework.org/" rel="nofollow">Stripes</a>.
+Stripes makes using <a href="http://www.stripesframework.org/display/stripes/Spring+with+Stripes" rel="nofollow">Spring dependency injection</a> really easy and offers a lot in the way of writing controllers and views. Unlike Spring MVC it is configured primarily through annotations which is something you will either love or hate.</p>
+
+<p>On the topic of template engines it really boils down to identifying what exactly you do not like about jsp in the first place. Personally I find Java web development is hindered more by the controller frameworks than the templating language. Stripes is the best I have tried so far, but compared to Django and Rails it still feels a little cumbersome. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 07:08:29:0079, answer_open, VisualItem[tree.nodes,2,id=29595,type=20,title=,body=<p>When you say Spring Framework are you referring to Spring MVC or just the core Spring concepts (dependency injection, AOP, etc)?</p>
+
+<p>If it is really the concept of Spring you like then I recommend checking out <a href="http://www.stripesframework.org/" rel="nofollow">Stripes</a>.
+Stripes makes using <a href="http://www.stripesframework.org/display/stripes/Spring+with+Stripes" rel="nofollow">Spring dependency injection</a> really easy and offers a lot in the way of writing controllers and views. Unlike Spring MVC it is configured primarily through annotations which is something you will either love or hate.</p>
+
+<p>On the topic of template engines it really boils down to identifying what exactly you do not like about jsp in the first place. Personally I find Java web development is hindered more by the controller frameworks than the templating language. Stripes is the best I have tried so far, but compared to Django and Rails it still feels a little cumbersome. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 07:08:29:0119, diag_detail_itementered, id=29595, type=20
+2014-10-31 07:08:30:0260, diag_detail_itemexited, id=29595, type=20
+2014-10-31 07:08:30:0510, diag_detail_itementered, id=0.9731253351270331, type=1
+2014-10-31 07:08:30:0550, diag_detail_itemexited, id=0.9731253351270331, type=1
+2014-10-31 07:08:30:0900, diag_detail_itementered, id=62713, type=1
+2014-10-31 07:08:31:0610, diag_detail_itemexited, id=62713, type=1
+2014-10-31 07:08:32:0030, diag_detail_itementered, id=59850, type=1
+2014-10-31 07:08:32:0650, diag_detail_itemexited, id=59850, type=1
+2014-10-31 07:08:33:0060, diag_detail_itementered, id=53387, type=1
+2014-10-31 07:08:33:0600, diag_detail_itemexited, id=53387, type=1
+2014-10-31 07:08:34:0150, diag_detail_itementered, id=45546, type=1
+2014-10-31 07:08:34:0970, diag_detail_itemexited, id=45546, type=1
+2014-10-31 07:08:35:0070, diag_detail_itementered, id=0.7487087246859044, type=1
+2014-10-31 07:08:35:0090, diag_detail_itemexited, id=0.7487087246859044, type=1
+2014-10-31 07:08:35:0480, diag_detail_itementered, id=59850, type=1
+2014-10-31 07:08:36:0090, diag_detail_itemexited, id=59850, type=1
+2014-10-31 07:08:36:0950, diag_detail_itementered, id=62713, type=1
+2014-10-31 07:08:37:0630, diag_detail_itemexited, id=62713, type=1
+2014-10-31 07:08:38:0000, diag_detail_itementered, id=62713, type=1
+2014-10-31 07:08:38:0040, diag_detail_itemexited, id=62713, type=1
+2014-10-31 07:08:38:0120, diag_detail_itementered, id=0.8359454194165306, type=1
+2014-10-31 07:08:38:0160, diag_detail_itemexited, id=0.8359454194165306, type=1
+2014-10-31 07:08:38:0220, diag_detail_itementered, id=0.7487087246859044, type=1
+2014-10-31 07:08:38:0240, diag_detail_itemexited, id=0.7487087246859044, type=1
+2014-10-31 07:08:38:0290, diag_detail_itementered, id=0.7002961678899344, type=1
+2014-10-31 07:08:38:0310, diag_detail_itemexited, id=0.7002961678899344, type=1
+2014-10-31 07:08:38:0330, diag_detail_itementered, id=0.14598051972271653, type=1
+2014-10-31 07:08:38:0350, diag_detail_itemexited, id=0.14598051972271653, type=1
+2014-10-31 07:08:38:0560, diag_detail_itementered, id=0.14598051972271653, type=1
+2014-10-31 07:08:38:0620, diag_detail_itemexited, id=0.14598051972271653, type=1
+2014-10-31 07:08:39:0230, diag_detail_itementered, id=23853, type=1
+2014-10-31 07:08:40:0320, diag_detail_itemexited, id=23853, type=1
+2014-10-31 07:08:40:0400, diag_detail_itementered, id=37912, type=1
+2014-10-31 07:08:40:0430, diag_detail_itemexited, id=37912, type=1
+2014-10-31 07:08:40:0990, list_mouseentered, type=detailRelatedList, item=23853
+2014-10-31 07:08:41:0300, list_itemclicked, type=detailRelatedList, item=23853
+2014-10-31 07:08:41:0560, list_itemclicked, type=detailRelatedList, item=23853
+2014-10-31 07:08:41:0890, edge_create, Tuple[0,1,0.943128155720471,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0890, answer_create, 23879
+2014-10-31 07:08:41:0900, edge_create, Tuple[1,2,0.12642410432975582,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0900, answer_create, 63970
+2014-10-31 07:08:41:0900, edge_create, Tuple[1,3,0.5970383295322454,4,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0900, edge_create, Tuple[0,4,0.1003922033009792,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0900, edge_create, Tuple[4,5,0.24165810097645235,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0910, edge_create, Tuple[4,6,0.4172311065216674,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0910, edge_create, Tuple[4,7,0.9351576380451578,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0910, edge_create, Tuple[4,8,0.6410088392600465,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0920, edge_create, Tuple[4,9,0.4851960416448573,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0920, edge_create, Tuple[4,10,0.554222091076134,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0920, edge_create, Tuple[4,11,0.9458865706300549,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0920, edge_create, Tuple[4,12,0.2634945892088557,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0920, edge_create, Tuple[4,13,0.10704547351668292,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0920, edge_create, Tuple[4,14,0.3348133978866208,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0920, edge_create, Tuple[4,15,0.04482405889446961,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0930, edge_create, Tuple[4,16,0.6089087298526765,1,0.0,1414753700474,1414753700474]
+2014-10-31 07:08:41:0940, discussion_open, 23853
+2014-10-31 07:08:42:0760, list_mouseentered, type=detailRelatedList, item=13225
+2014-10-31 07:08:42:0790, list_mouseexited, type=detailRelatedList
+2014-10-31 07:08:43:0430, answer_open, VisualItem[tree.nodes,2,id=23879,type=21,title=,body=<p>You can mark variables as "<a href="http://velocity.apache.org/engine/releases/velocity-1.5/vtl-reference-guide.html">silent</a>" like this:</p>
+
+<pre><code>$!variable
+</code></pre>
+
+<p>If $variable is null, nothing will be rendered. If it is not null, its value will render as it normally would.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=29]
+2014-10-31 07:08:43:0430, answer_open, VisualItem[tree.nodes,2,id=23879,type=21,title=,body=<p>You can mark variables as "<a href="http://velocity.apache.org/engine/releases/velocity-1.5/vtl-reference-guide.html">silent</a>" like this:</p>
+
+<pre><code>$!variable
+</code></pre>
+
+<p>If $variable is null, nothing will be rendered. If it is not null, its value will render as it normally would.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=29]
+2014-10-31 07:08:43:0450, diag_detail_itementered, id=23879, type=21
+2014-10-31 07:08:44:0070, diag_detail_itemexited, id=23879, type=21
+2014-10-31 07:08:44:0470, answer_open, VisualItem[tree.nodes,3,id=63970,type=20,title=,body=<p>You will also need to be sure and use the proper syntax.  Your example is missing the dollar before the variable.  It should be $!{person.age}, not just {person.age}.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=4]
+2014-10-31 07:08:44:0470, answer_open, VisualItem[tree.nodes,3,id=63970,type=20,title=,body=<p>You will also need to be sure and use the proper syntax.  Your example is missing the dollar before the variable.  It should be $!{person.age}, not just {person.age}.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=4]
+2014-10-31 07:08:44:0480, diag_detail_itementered, id=63970, type=20
+2014-10-31 07:08:44:0930, diag_detail_itemexited, id=63970, type=20
+2014-10-31 07:08:44:0940, diag_detail_itementered, id=0.5970383295322454, type=4
+2014-10-31 07:08:44:0970, diag_detail_itemexited, id=0.5970383295322454, type=4
+2014-10-31 07:08:45:0220, diag_detail_itementered, id=-1485455679, type=3
+2014-10-31 07:08:45:0580, diag_detail_itemexited, id=-1485455679, type=3
+2014-10-31 07:08:45:0590, diag_detail_itementered, id=0.943128155720471, type=4
+2014-10-31 07:08:45:0610, diag_detail_itemexited, id=0.943128155720471, type=4
+2014-10-31 07:08:45:0620, diag_detail_itementered, id=0.943128155720471, type=4
+2014-10-31 07:08:45:0640, diag_detail_itemexited, id=0.943128155720471, type=4
+2014-10-31 07:08:45:0720, diag_detail_itementered, id=0.943128155720471, type=4
+2014-10-31 07:08:45:0760, diag_detail_itemexited, id=0.943128155720471, type=4
+2014-10-31 07:08:45:0860, diag_detail_itementered, id=0.12642410432975582, type=4
+2014-10-31 07:08:45:0880, diag_detail_itemexited, id=0.12642410432975582, type=4
+2014-10-31 07:08:45:0880, answer_open, VisualItem[tree.nodes,2,id=23879,type=21,title=,body=<p>You can mark variables as "<a href="http://velocity.apache.org/engine/releases/velocity-1.5/vtl-reference-guide.html">silent</a>" like this:</p>
+
+<pre><code>$!variable
+</code></pre>
+
+<p>If $variable is null, nothing will be rendered. If it is not null, its value will render as it normally would.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=29]
+2014-10-31 07:08:45:0890, answer_open, VisualItem[tree.nodes,2,id=23879,type=21,title=,body=<p>You can mark variables as "<a href="http://velocity.apache.org/engine/releases/velocity-1.5/vtl-reference-guide.html">silent</a>" like this:</p>
+
+<pre><code>$!variable
+</code></pre>
+
+<p>If $variable is null, nothing will be rendered. If it is not null, its value will render as it normally would.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=29]
+2014-10-31 07:08:45:0890, diag_detail_itementered, id=23879, type=21
+2014-10-31 07:08:46:0690, diag_detail_itemclicked, id=23879, type=21
+2014-10-31 07:08:47:0000, diag_detail_itemexited, id=23879, type=21
+2014-10-31 07:08:48:0120, answer_open, VisualItem[tree.nodes,3,id=63970,type=20,title=,body=<p>You will also need to be sure and use the proper syntax.  Your example is missing the dollar before the variable.  It should be $!{person.age}, not just {person.age}.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=4]
+2014-10-31 07:08:48:0120, answer_open, VisualItem[tree.nodes,3,id=63970,type=20,title=,body=<p>You will also need to be sure and use the proper syntax.  Your example is missing the dollar before the variable.  It should be $!{person.age}, not just {person.age}.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753700474L,lastactivitydate=0L,tags=,score=4]
+2014-10-31 07:08:48:0130, diag_detail_itementered, id=63970, type=20
+2014-10-31 07:08:48:0530, diag_detail_itemclicked, id=63970, type=20
+2014-10-31 07:08:48:0670, diag_detail_itemexited, id=63970, type=20
+2014-10-31 07:08:49:0160, list_mouseentered, type=detailRelatedList, item=24495
+2014-10-31 07:08:49:0440, list_mouseexited, type=detailRelatedList
+2014-10-31 07:08:49:0730, list_mouseentered, type=detailRelatedList, item=24495
+2014-10-31 07:08:49:0990, list_mouseexited, type=detailRelatedList
+2014-10-31 07:08:51:0910, list_mouseentered, type=detailRelatedList, item=13225
+2014-10-31 07:08:52:0080, list_mouseexited, type=detailRelatedList

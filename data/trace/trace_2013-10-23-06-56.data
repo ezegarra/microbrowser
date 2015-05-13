@@ -1,0 +1,19 @@
+2013-10-23 06:56:36:0908, setup_loaddata
+2013-10-23 06:56:37:0122, setup_resizewin
+2013-10-23 06:56:39:0906, pattern_create_open
+2013-10-23 06:56:39:0908, pattern_create_close
+2013-10-23 06:56:56:0927, setup_loaddata
+2013-10-23 06:56:57:0139, setup_resizewin
+2013-10-23 06:57:00:0043, question_create_open
+2013-10-23 06:57:00:0044, question_create_close
+2013-10-23 06:57:03:0775, pattern_create_open
+2013-10-23 06:57:03:0776, pattern_create_close
+2013-10-23 06:57:06:0236, leaderboard_open
+2013-10-23 06:57:06:0238, leaderboard_close
+2013-10-23 06:57:08:0059, diag_itementered, id=54295, type=1
+2013-10-23 06:57:10:0742, diag_itemclicked, id=54295, type=1
+2013-10-23 06:57:10:0802, diag_itemexited, id=54295, type=1
+2013-10-23 06:57:18:0209, answer_create_cancel, 3168ms
+2013-10-23 06:57:18:0210, answer_create_open
+2013-10-23 06:57:28:0926, pattern_change_cancel
+2013-10-23 06:57:28:0928, pattern_change_open

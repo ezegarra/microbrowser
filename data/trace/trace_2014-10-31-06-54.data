@@ -1,0 +1,317 @@
+2014-10-31 06:54:14:0649, setup_loaddata
+2014-10-31 06:54:17:0141, diag_itementered, id=26458, type=1
+2014-10-31 06:54:18:0581, edge_create, Tuple[0,1,0.31969312742411493,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0581, answer_create, 26469
+2014-10-31 06:54:18:0581, edge_create, Tuple[1,2,0.10163721352899935,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0581, answer_create, 26470
+2014-10-31 06:54:18:0581, edge_create, Tuple[1,3,0.179236286128991,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0581, answer_create, 26474
+2014-10-31 06:54:18:0581, edge_create, Tuple[1,4,0.006001271418424325,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0581, answer_create, 26481
+2014-10-31 06:54:18:0581, edge_create, Tuple[1,5,0.8385791904817527,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0581, answer_create, 26517
+2014-10-31 06:54:18:0581, edge_create, Tuple[1,6,0.045271693355023346,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0581, answer_create, 26545
+2014-10-31 06:54:18:0581, edge_create, Tuple[1,7,0.856520256871758,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0581, answer_create, 27523
+2014-10-31 06:54:18:0581, edge_create, Tuple[1,8,0.22155193540050977,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0581, answer_create, 27586
+2014-10-31 06:54:18:0581, edge_create, Tuple[1,9,0.1721484841247103,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0581, answer_create, 27615
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,10,0.3030495165340943,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 29033
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,11,0.22551053736382443,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 86373
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,12,0.3533396757759708,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 279385
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,13,0.31864251820345624,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 281446
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,14,0.5507899172774646,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 504353
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,15,0.7236984166900622,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 1723283
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,16,0.2395260268120316,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 1980815
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,17,0.8178452806974656,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 5175073
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,18,0.03248970149999142,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 5600179
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,19,0.5112169033325942,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 9124933
+2014-10-31 06:54:18:0591, edge_create, Tuple[1,20,0.13438614337357369,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0591, answer_create, 10248992
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,21,0.6503443762359844,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10254476
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,22,0.028779461169478937,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10274630
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,23,0.3440573093348076,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10275130
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,24,0.7685222240701584,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10275157
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,25,0.14394579082923264,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10288168
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,26,0.38948672025831654,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10298568
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,27,0.292284601815074,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10305800
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,28,0.32970561182185454,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10314688
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,29,0.3551679131457316,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10314850
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,30,0.15316363883778583,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10317964
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,31,0.21893061965379124,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10321573
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,32,0.6513651243138033,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0601, answer_create, 10328205
+2014-10-31 06:54:18:0601, edge_create, Tuple[1,33,0.8283117813870534,4,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0611, edge_create, Tuple[0,34,0.40631982845697356,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0611, edge_create, Tuple[34,35,0.07294124218896003,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0611, edge_create, Tuple[34,36,0.8537474997004946,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0611, edge_create, Tuple[34,37,0.7254235021585187,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0611, edge_create, Tuple[34,38,0.5712335764762363,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0611, edge_create, Tuple[34,39,0.3434972185703442,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0611, edge_create, Tuple[34,40,0.04703316672376112,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0611, edge_create, Tuple[34,41,0.06753649991033306,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0621, edge_create, Tuple[34,42,0.253597443787726,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0621, edge_create, Tuple[34,43,0.4732254159698306,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0621, edge_create, Tuple[34,44,0.47619896418724195,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0621, edge_create, Tuple[34,45,0.230900248703363,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0621, edge_create, Tuple[34,46,0.6298873704979103,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0621, edge_create, Tuple[34,47,0.6342608526905992,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0621, edge_create, Tuple[34,48,0.6641762900778484,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0621, edge_create, Tuple[34,49,0.9014734935331719,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0621, edge_create, Tuple[34,50,0.10922690557639791,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0631, edge_create, Tuple[34,51,0.03381650056293273,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0631, edge_create, Tuple[34,52,0.6928622851399902,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0631, edge_create, Tuple[34,53,0.4067797225161909,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0631, edge_create, Tuple[34,54,0.6656509973718298,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0631, edge_create, Tuple[34,55,0.834862522674415,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0631, edge_create, Tuple[34,56,0.7507981022054857,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0631, edge_create, Tuple[34,57,0.7162930539783241,1,0.0,1414752854009,1414752854009]
+2014-10-31 06:54:18:0651, discussion_open, 26458
+2014-10-31 06:54:18:0651, diag_itemclicked, id=26458, type=1
+2014-10-31 06:54:18:0651, diag_itemexited, id=26458, type=1
+2014-10-31 06:54:19:0751, diag_detail_itementered, id=0.10922690557639791, type=1
+2014-10-31 06:54:19:0781, diag_detail_itemexited, id=0.10922690557639791, type=1
+2014-10-31 06:54:20:0311, diag_detail_itementered, id=26469, type=20
+2014-10-31 06:54:21:0781, diag_detail_itemexited, id=26469, type=20
+2014-10-31 06:54:21:0901, diag_detail_itementered, id=26470, type=20
+2014-10-31 06:54:23:0161, diag_detail_itemexited, id=26470, type=20
+2014-10-31 06:54:23:0261, diag_detail_itementered, id=26474, type=20
+2014-10-31 06:54:23:0941, diag_detail_itemexited, id=26474, type=20
+2014-10-31 06:54:23:0981, diag_detail_itementered, id=26470, type=20
+2014-10-31 06:54:25:0551, answer_open, VisualItem[tree.nodes,3,id=26470,type=20,title=,body=<p>I like the <a href="http://www.netbeans.org/features/java/swing.html" rel="nofollow">Swing GUI Builder</a> from the <a href="http://www.netbeans.org/" rel="nofollow">NetBeans IDE</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=20]
+2014-10-31 06:54:25:0551, diag_detail_itemclicked, id=26470, type=20
+2014-10-31 06:54:27:0401, diag_detail_itemexited, id=26470, type=20
+2014-10-31 06:54:27:0481, diag_detail_itementered, id=0.5112169033325942, type=4
+2014-10-31 06:54:28:0761, diag_detail_itemexited, id=0.5112169033325942, type=4
+2014-10-31 06:54:28:0781, diag_detail_itementered, id=0.03248970149999142, type=4
+2014-10-31 06:54:28:0811, diag_detail_itemexited, id=0.03248970149999142, type=4
+2014-10-31 06:54:28:0811, diag_detail_itementered, id=0.2395260268120316, type=4
+2014-10-31 06:54:28:0841, diag_detail_itemexited, id=0.2395260268120316, type=4
+2014-10-31 06:54:28:0841, diag_detail_itementered, id=0.5507899172774646, type=4
+2014-10-31 06:54:28:0871, diag_detail_itemexited, id=0.5507899172774646, type=4
+2014-10-31 06:54:28:0871, diag_detail_itementered, id=0.3533396757759708, type=4
+2014-10-31 06:54:28:0871, diag_detail_itemexited, id=0.3533396757759708, type=4
+2014-10-31 06:54:28:0871, diag_detail_itementered, id=0.22551053736382443, type=4
+2014-10-31 06:54:28:0901, diag_detail_itemexited, id=0.22551053736382443, type=4
+2014-10-31 06:54:28:0901, diag_detail_itementered, id=0.1721484841247103, type=4
+2014-10-31 06:54:28:0921, diag_detail_itemexited, id=0.1721484841247103, type=4
+2014-10-31 06:54:28:0971, diag_detail_itementered, id=26470, type=20
+2014-10-31 06:54:29:0021, diag_detail_itemexited, id=26470, type=20
+2014-10-31 06:54:29:0031, diag_detail_itementered, id=0.006001271418424325, type=4
+2014-10-31 06:54:29:0061, diag_detail_itemexited, id=0.006001271418424325, type=4
+2014-10-31 06:54:29:0161, diag_detail_itementered, id=0.10163721352899935, type=4
+2014-10-31 06:54:29:0211, diag_detail_itemexited, id=0.10163721352899935, type=4
+2014-10-31 06:54:29:0511, diag_detail_itementered, id=26469, type=20
+2014-10-31 06:54:29:0781, diag_detail_itemexited, id=26469, type=20
+2014-10-31 06:54:29:0781, diag_detail_itementered, id=26474, type=20
+2014-10-31 06:54:32:0711, diag_detail_itemexited, id=26474, type=20
+2014-10-31 06:54:32:0771, diag_detail_itementered, id=26481, type=20
+2014-10-31 06:54:33:0771, answer_open, VisualItem[tree.nodes,5,id=26481,type=20,title=,body=<p>The latest version of NetBeans include a very nice and simple visual editor for Swing called Matisse</p>
+
+<p><a href="http://www.netbeans.org/kb/articles/matisse.html">Matisse</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=5]
+2014-10-31 06:54:33:0771, diag_detail_itemclicked, id=26481, type=20
+2014-10-31 06:54:38:0034, diag_detail_itemexited, id=26481, type=20
+2014-10-31 06:54:38:0044, diag_detail_itementered, id=26517, type=20
+2014-10-31 06:54:38:0104, diag_detail_itemexited, id=26517, type=20
+2014-10-31 06:54:38:0114, diag_detail_itementered, id=26545, type=20
+2014-10-31 06:54:38:0274, diag_detail_itemexited, id=26545, type=20
+2014-10-31 06:54:38:0274, diag_detail_itementered, id=0.856520256871758, type=4
+2014-10-31 06:54:38:0304, diag_detail_itemexited, id=0.856520256871758, type=4
+2014-10-31 06:54:38:0664, diag_detail_itementered, id=26545, type=20
+2014-10-31 06:54:39:0614, diag_detail_itemexited, id=26545, type=20
+2014-10-31 06:54:39:0964, list_mouseentered, type=detailRelatedList, item=19766
+2014-10-31 06:54:40:0724, list_mouseexited, type=detailRelatedList
+2014-10-31 06:54:41:0764, list_mouseentered, type=detailRelatedList, item=2158
+2014-10-31 06:54:41:0784, list_mouseexited, type=detailRelatedList
+2014-10-31 06:54:42:0564, diag_detail_itementered, id=27523, type=20
+2014-10-31 06:54:43:0314, answer_open, VisualItem[tree.nodes,8,id=27523,type=20,title=,body=<p>Try <a href="http://www.instantiations.com/index.html">Instantiations</a>' <a href="http://www.instantiations.com/windowbuilder/index.html">Windows Builder Pro</a>. It includes <a href="http://www.instantiations.com/windowbuilder/swingdesigner/index.html">Swing Designer</a>, which is a Swing UI builder. It is based on Eclipse.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=7]
+2014-10-31 06:54:43:0314, diag_detail_itemclicked, id=27523, type=20
+2014-10-31 06:54:44:0164, diag_detail_itemexited, id=27523, type=20
+2014-10-31 06:54:44:0294, list_mouseentered, type=detailAnswersList
+2014-10-31 06:54:46:0084, list_mouseexited, type=detailAnswersList
+2014-10-31 06:54:46:0674, diag_detail_itementered, id=26545, type=20
+2014-10-31 06:54:47:0264, diag_detail_itemexited, id=26545, type=20
+2014-10-31 06:54:47:0264, diag_detail_itementered, id=26517, type=20
+2014-10-31 06:54:47:0834, diag_detail_itemexited, id=26517, type=20
+2014-10-31 06:54:47:0834, diag_detail_itementered, id=26481, type=20
+2014-10-31 06:54:48:0244, diag_detail_itemexited, id=26481, type=20
+2014-10-31 06:54:48:0254, diag_detail_itementered, id=26474, type=20
+2014-10-31 06:54:48:0714, diag_detail_itemexited, id=26474, type=20
+2014-10-31 06:54:48:0774, diag_detail_itementered, id=26470, type=20
+2014-10-31 06:54:49:0284, diag_detail_itemexited, id=26470, type=20
+2014-10-31 06:54:49:0364, diag_detail_itementered, id=26469, type=20
+2014-10-31 06:54:50:0294, diag_detail_itemexited, id=26469, type=20
+2014-10-31 06:54:50:0824, list_mouseentered, type=detailRelatedList, item=2158
+2014-10-31 06:54:51:0014, list_mouseexited, type=detailRelatedList
+2014-10-31 06:54:52:0244, list_mouseentered, type=detailAnswersList
+2014-10-31 06:54:53:0084, answer_open, VisualItem[tree.nodes,4,id=26474,type=20,title=,body=<p>I used to use MyEclipse quite a bit.  It had a decent IDE for making Swing forms and such.  I assume it has improved in the past year - they seem to add features in gobs and heaps, quite often.</p>
+
+<p>http://www.myeclipseide.com/</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:54:53:0084, list_itemclicked, type=detailAnswersList, item=7269
+2014-10-31 06:54:54:0924, answer_open, VisualItem[tree.nodes,5,id=26481,type=20,title=,body=<p>The latest version of NetBeans include a very nice and simple visual editor for Swing called Matisse</p>
+
+<p><a href="http://www.netbeans.org/kb/articles/matisse.html">Matisse</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=5]
+2014-10-31 06:54:54:0924, list_itemclicked, type=detailAnswersList, item=15649
+2014-10-31 06:54:55:0754, answer_open, VisualItem[tree.nodes,6,id=26517,type=20,title=,body=<p>I'm a big fan of JetBrains, and when it comes to Java, <a href="http://www.jetbrains.com/idea/index.html" rel="nofollow">IntelliJ</a> is the best IDE I have used.</p>
+
+<p>For Swing, they have a fully interactive UI builder. And, for actual coding, their intellisense can't be beat.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=3]
+2014-10-31 06:54:55:0754, list_itemclicked, type=detailAnswersList, item=19766
+2014-10-31 06:54:56:0284, list_mouseexited, type=detailAnswersList
+2014-10-31 06:54:56:0924, diag_detail_itementered, id=26545, type=20
+2014-10-31 06:54:58:0244, diag_detail_itemexited, id=26545, type=20
+2014-10-31 06:54:58:0304, diag_detail_itementered, id=0.1721484841247103, type=4
+2014-10-31 06:54:58:0344, diag_detail_itemexited, id=0.1721484841247103, type=4
+2014-10-31 06:54:58:0694, diag_detail_itementered, id=0.3030495165340943, type=4
+2014-10-31 06:54:58:0734, diag_detail_itemexited, id=0.3030495165340943, type=4
+2014-10-31 06:54:58:0854, diag_detail_itementered, id=86373, type=20
+2014-10-31 06:54:59:0054, diag_detail_itemexited, id=86373, type=20
+2014-10-31 06:54:59:0124, diag_detail_itementered, id=29033, type=20
+2014-10-31 06:54:59:0194, diag_detail_itemexited, id=29033, type=20
+2014-10-31 06:54:59:0204, diag_detail_itementered, id=27615, type=20
+2014-10-31 06:54:59:0284, diag_detail_itemexited, id=27615, type=20
+2014-10-31 06:54:59:0284, diag_detail_itementered, id=27586, type=20
+2014-10-31 06:54:59:0444, diag_detail_itemexited, id=27586, type=20
+2014-10-31 06:54:59:0444, diag_detail_itementered, id=26545, type=20
+2014-10-31 06:55:01:0384, answer_open, VisualItem[tree.nodes,7,id=26545,type=20,title=,body=<p>Like others have mentioned, Netbeans' visual editor is pretty good, but its based pretty heavily on the <a href="https://appframework.dev.java.net/">Swing Application Framework</a> so you'd need to get an understanding of how it works to properly use it (although you don't need to dig in to just test things).</p>
+
+<p>Other than that there's also:</p>
+
+<ul>
+<li>the <a href="http://www.jetbrains.com/idea/">IntelliJ IDEA</a> visual editor (<a href="http://www.jetbrains.com/idea/features/gui_builder.html">flash demo of the features</a>)</li>
+<li>and Eclipse's <a href="http://www.eclipse.org/vep/WebContent/main.php">Visual Editor</a></li>
+</ul>
+
+<p>Personally I've used Netbeans' and IDEA's visual editors. Both are nice but I thought Netbeans had a leg up because it doesn't use any proprietary way of saving the GUI structure and instead does something similar to what Visual Studio does - auto-generating the code that you can then add to. IDEA stores the information in a separate file which means you have to use IDEA to edit the layout visually later.</p>
+
+<p>I have not used Eclipse's Visual Editor.</p>
+
+<p>My vote is for Netbeans' visual editor. I think it satisfies what most people are looking for in a visual editor and leaves it flexible enough to plug the holes manually through code without affecting the visual editor (so you can switch back and forth between code and design views without breaking either).</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=32]
+2014-10-31 06:55:01:0384, diag_detail_itemclicked, id=26545, type=20
+2014-10-31 06:55:01:0584, diag_detail_itemexited, id=26545, type=20
+2014-10-31 06:55:02:0597, list_mouseentered, type=detailAnswersList
+2014-10-31 06:55:03:0138, list_mouseexited, type=detailAnswersList
+2014-10-31 06:56:12:0586, list_mouseentered, type=detailAnswersList
+2014-10-31 06:56:12:0626, list_mouseexited, type=detailAnswersList
+2014-10-31 06:56:13:0776, diag_detail_itementered, id=27586, type=20
+2014-10-31 06:56:14:0066, answer_open, VisualItem[tree.nodes,9,id=27586,type=20,title=,body=<p>For me, the best visual swing editor is <a href="http://www.jformdesigner.com" rel="nofollow">JFormDesigner</a>, which you can run standalone or as a plugin for Intellij and Eclipse. </p>
+
+<p>It generates proper (actually readable) source code, it's very ergonomic and intuitive and, above all, very extensible. That last point is really important, because if you want to build a decent swing application, you'll have to extend the base components or use some third-party libraries and it <strong>must be easy</strong> to integrate those in the visual editor.</p>
+
+<p>It's not free but it's a bargain for the power you get (129 EUR / 159 USD). I've been using it for a few years and love it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=12]
+2014-10-31 06:56:14:0076, diag_detail_itemclicked, id=27586, type=20
+2014-10-31 06:56:15:0616, diag_detail_itemexited, id=27586, type=20
+2014-10-31 06:56:15:0616, diag_detail_itementered, id=27615, type=20
+2014-10-31 06:56:15:0686, diag_detail_itemexited, id=27615, type=20
+2014-10-31 06:56:15:0696, diag_detail_itementered, id=27523, type=20
+2014-10-31 06:56:15:0726, diag_detail_itemexited, id=27523, type=20
+2014-10-31 06:56:15:0736, diag_detail_itementered, id=26545, type=20
+2014-10-31 06:56:15:0756, diag_detail_itemexited, id=26545, type=20
+2014-10-31 06:56:16:0292, diag_detail_itementered, id=0.7162930539783241, type=1
+2014-10-31 06:56:16:0332, diag_detail_itemexited, id=0.7162930539783241, type=1
+2014-10-31 06:56:16:0462, diag_detail_itementered, id=66455, type=1
+2014-10-31 06:56:16:0752, diag_detail_itemclicked, id=66455, type=1
+2014-10-31 06:56:17:0372, diag_detail_itemexited, id=66455, type=1
+2014-10-31 06:56:17:0472, diag_detail_itementered, id=0.10163721352899935, type=4
+2014-10-31 06:56:17:0502, diag_detail_itemexited, id=0.10163721352899935, type=4
+2014-10-31 06:56:17:0522, diag_detail_itementered, id=0.22155193540050977, type=4
+2014-10-31 06:56:17:0542, diag_detail_itemexited, id=0.22155193540050977, type=4
+2014-10-31 06:56:17:0552, diag_detail_itementered, id=0.22551053736382443, type=4
+2014-10-31 06:56:17:0562, diag_detail_itemexited, id=0.22551053736382443, type=4
+2014-10-31 06:56:17:0562, diag_detail_itementered, id=0.31864251820345624, type=4
+2014-10-31 06:56:17:0582, diag_detail_itemexited, id=0.31864251820345624, type=4
+2014-10-31 06:56:17:0592, diag_detail_itementered, id=0.5507899172774646, type=4
+2014-10-31 06:56:17:0602, diag_detail_itemexited, id=0.5507899172774646, type=4
+2014-10-31 06:56:17:0882, diag_detail_itementered, id=0.7236984166900622, type=4
+2014-10-31 06:56:17:0922, diag_detail_itemexited, id=0.7236984166900622, type=4
+2014-10-31 06:56:18:0232, diag_detail_itementered, id=1723283, type=20
+2014-10-31 06:56:18:0572, answer_open, VisualItem[tree.nodes,16,id=1723283,type=20,title=,body=<p>We are doing Swing development since nearly 10 years. There are some nice GUI builders available (e.g. <a href="http://www.jformdesigner.com" rel="nofollow">JFormDesigner</a>), but <strong>all restrict us too much</strong> in different kinds.</p>
+
+<p>For example, we have a lot of components without public no-arg constructor (e.g. a JTable subclass which requires the model in the constructor) or we have component factories.</p>
+
+<p>Desktop applications usually have to be obfuscated. Obfuscation very easily breaks user interfaces created with a GUI designer or requires much work to avoid obfuscating such classes.</p>
+
+<p>Another often happening case is that, for example, a panel should only contain some components depending on some condition. Simply hiding them would make the GUI look bad; they rather should not be added instead. I never found a GUI editor which provides this flexibility and even if there would be one, it would be so hard to use, that I definitely would be faster with good old Java code.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:56:18:0572, diag_detail_itemclicked, id=1723283, type=20
+2014-10-31 06:56:19:0062, diag_detail_itemexited, id=1723283, type=20
+2014-10-31 06:56:19:0122, diag_detail_itementered, id=1723283, type=20
+2014-10-31 06:56:19:0152, diag_detail_itemexited, id=1723283, type=20
+2014-10-31 06:56:19:0172, diag_detail_itementered, id=0.7236984166900622, type=4
+2014-10-31 06:56:19:0182, diag_detail_itemexited, id=0.7236984166900622, type=4
+2014-10-31 06:56:19:0192, diag_detail_itementered, id=0.5507899172774646, type=4
+2014-10-31 06:56:19:0212, diag_detail_itemexited, id=0.5507899172774646, type=4
+2014-10-31 06:56:19:0222, diag_detail_itementered, id=0.3533396757759708, type=4
+2014-10-31 06:56:19:0242, diag_detail_itemexited, id=0.3533396757759708, type=4
+2014-10-31 06:56:19:0262, diag_detail_itementered, id=0.856520256871758, type=4
+2014-10-31 06:56:19:0282, diag_detail_itemexited, id=0.856520256871758, type=4
+2014-10-31 06:56:19:0292, diag_detail_itementered, id=0.006001271418424325, type=4
+2014-10-31 06:56:19:0302, diag_detail_itemexited, id=0.006001271418424325, type=4
+2014-10-31 06:56:19:0852, diag_detail_itementered, id=26458, type=1
+2014-10-31 06:56:20:0152, diag_detail_itemclicked, id=26458, type=1
+2014-10-31 06:56:20:0922, diag_detail_itemexited, id=26458, type=1
+2014-10-31 06:56:20:0932, diag_detail_itementered, id=0.40631982845697356, type=1
+2014-10-31 06:56:20:0942, diag_detail_itemexited, id=0.40631982845697356, type=1
+2014-10-31 06:56:21:0252, diag_detail_itementered, id=26458, type=1
+2014-10-31 06:56:21:0272, diag_detail_itemexited, id=26458, type=1
+2014-10-31 06:56:21:0362, diag_detail_itementered, id=27523, type=20
+2014-10-31 06:56:21:0382, diag_detail_itemexited, id=27523, type=20
+2014-10-31 06:56:21:0662, diag_detail_itementered, id=27523, type=20
+2014-10-31 06:56:21:0722, diag_detail_itemexited, id=27523, type=20
+2014-10-31 06:56:22:0192, diag_detail_itementered, id=27523, type=20
+2014-10-31 06:56:23:0032, answer_open, VisualItem[tree.nodes,8,id=27523,type=20,title=,body=<p>Try <a href="http://www.instantiations.com/index.html">Instantiations</a>' <a href="http://www.instantiations.com/windowbuilder/index.html">Windows Builder Pro</a>. It includes <a href="http://www.instantiations.com/windowbuilder/swingdesigner/index.html">Swing Designer</a>, which is a Swing UI builder. It is based on Eclipse.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=7]
+2014-10-31 06:56:23:0032, diag_detail_itemclicked, id=27523, type=20
+2014-10-31 06:56:23:0262, diag_detail_itemexited, id=27523, type=20
+2014-10-31 06:56:23:0932, list_mouseentered, type=detailAnswersList
+2014-10-31 06:56:24:0152, list_mouseexited, type=detailAnswersList
+2014-10-31 06:56:25:0712, list_mouseentered, type=detailAnswersList
+2014-10-31 06:56:26:0412, list_mouseexited, type=detailAnswersList
+2014-10-31 06:56:26:0682, diag_detail_itementered, id=0.10163721352899935, type=4
+2014-10-31 06:56:26:0722, diag_detail_itemexited, id=0.10163721352899935, type=4
+2014-10-31 06:56:26:0742, diag_detail_itementered, id=0.006001271418424325, type=4
+2014-10-31 06:56:26:0762, diag_detail_itemexited, id=0.006001271418424325, type=4
+2014-10-31 06:56:26:0762, diag_detail_itementered, id=0.8385791904817527, type=4
+2014-10-31 06:56:26:0782, diag_detail_itemexited, id=0.8385791904817527, type=4
+2014-10-31 06:56:26:0782, diag_detail_itementered, id=26517, type=20
+2014-10-31 06:56:26:0802, diag_detail_itemexited, id=26517, type=20
+2014-10-31 06:56:26:0802, diag_detail_itementered, id=26545, type=20
+2014-10-31 06:56:26:0832, diag_detail_itemexited, id=26545, type=20
+2014-10-31 06:56:27:0322, diag_detail_itementered, id=27615, type=20
+2014-10-31 06:56:27:0752, answer_open, VisualItem[tree.nodes,10,id=27615,type=20,title=,body=<p>As I'm using eclipse, I use the Visual Editor plugin. It generates clean source code, with good patterns and easy to patch/modify/extend.
+Unfortunately, it is not very stable. But it's worth trying.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414752854009L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:56:27:0752, diag_detail_itemclicked, id=27615, type=20
+2014-10-31 06:56:28:0162, diag_detail_itemexited, id=27615, type=20
+2014-10-31 06:56:28:0362, list_mouseentered, type=detailAnswersList
+2014-10-31 06:56:28:0402, list_mouseexited, type=detailAnswersList

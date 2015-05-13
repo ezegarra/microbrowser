@@ -1,0 +1,1448 @@
+2014-12-16 04:09:21:0595, setup_loaddata_begin
+2014-12-16 04:09:23:0610, setup_loaddata_end
+2014-12-16 04:09:23:0650, setup_createactions_begin
+2014-12-16 04:09:23:0813, setup_createactions_end
+2014-12-16 04:09:28:0711, diag_itementered, id=3881, type=1
+2014-12-16 04:09:29:0235, diag_itemexited, id=3881, type=1
+2014-12-16 04:09:29:0615, diag_itementered, id=25552, type=1
+2014-12-16 04:09:30:0829, edge_create, Tuple[0,1,0.40575344052604323,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0829, answer_create, 25583
+2014-12-16 04:09:30:0829, edge_create, Tuple[1,2,0.4179242056451269,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0829, answer_create, 25596
+2014-12-16 04:09:30:0829, edge_create, Tuple[1,3,0.6619705440983147,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0829, answer_create, 27502
+2014-12-16 04:09:30:0829, edge_create, Tuple[1,4,0.27213225395135987,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0829, answer_create, 61727
+2014-12-16 04:09:30:0839, edge_create, Tuple[1,5,0.12782540165658574,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0839, answer_create, 677173
+2014-12-16 04:09:30:0839, edge_create, Tuple[1,6,0.0855957498851857,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0839, answer_create, 678954
+2014-12-16 04:09:30:0839, edge_create, Tuple[1,7,0.8655331647287817,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0839, answer_create, 937635
+2014-12-16 04:09:30:0839, edge_create, Tuple[1,8,0.8823051294511026,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0839, answer_create, 3098296
+2014-12-16 04:09:30:0839, edge_create, Tuple[1,9,0.8817968601844736,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0839, answer_create, 8076368
+2014-12-16 04:09:30:0839, edge_create, Tuple[1,10,0.8494172352530445,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0839, answer_create, 11989443
+2014-12-16 04:09:30:0839, edge_create, Tuple[1,11,0.2643146119307648,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0839, answer_create, 15465687
+2014-12-16 04:09:30:0839, edge_create, Tuple[1,12,0.4316555513713505,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0839, edge_create, Tuple[0,13,0.545536343146817,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0839, edge_create, Tuple[13,14,0.3894259929855348,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0851, edge_create, Tuple[13,15,0.46215973152722956,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0861, edge_create, Tuple[13,16,0.3456844373455771,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0871, edge_create, Tuple[13,17,0.8315626635339227,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0872, edge_create, Tuple[13,18,0.3125380553625595,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0872, edge_create, Tuple[13,19,0.5129860602268173,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0872, edge_create, Tuple[13,20,0.9211719145707646,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0882, edge_create, Tuple[13,21,0.32371985577732987,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0892, edge_create, Tuple[13,22,0.0789394693093608,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0892, edge_create, Tuple[13,23,0.44134590300688326,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0902, edge_create, Tuple[13,24,0.8119450284565047,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0902, edge_create, Tuple[13,25,0.73541841160894,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0902, edge_create, Tuple[13,26,0.4024015469938529,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0912, edge_create, Tuple[13,27,0.7696042876467324,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0912, edge_create, Tuple[13,28,0.1453225816263548,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0912, edge_create, Tuple[13,29,0.922676368260501,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0922, edge_create, Tuple[13,30,0.1921769138680245,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0922, edge_create, Tuple[13,31,0.35889174380810607,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0922, edge_create, Tuple[13,32,0.849101689074981,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0932, edge_create, Tuple[13,33,0.9908577936962756,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0932, edge_create, Tuple[13,34,0.1988610261951641,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0932, edge_create, Tuple[13,35,0.3172809171060138,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:30:0962, discussion_open, 25552
+2014-12-16 04:09:30:0962, diag_itemclicked, id=25552, type=1
+2014-12-16 04:09:32:0704, diag_itemexited, id=25552, type=1
+2014-12-16 04:09:33:0188, diag_detail_itementered, id=0.1921769138680245, type=1
+2014-12-16 04:09:33:0218, diag_detail_itemexited, id=0.1921769138680245, type=1
+2014-12-16 04:09:36:0031, diag_itemexited, id=2, type=4
+2014-12-16 04:09:36:0051, diag_itementered, id=2, type=0
+2014-12-16 04:09:36:0111, diag_itemexited, id=2, type=0
+2014-12-16 04:09:36:0161, diag_itemexited, id=2, type=4
+2014-12-16 04:09:36:0161, diag_itementered, id=65035, type=1
+2014-12-16 04:09:37:0001, diag_itemdragged, id=65035, type=1
+2014-12-16 04:09:37:0651, edge_create, Tuple[0,1,0.12930213487669484,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0651, answer_create, 65056
+2014-12-16 04:09:37:0651, edge_create, Tuple[1,2,0.17092080094474627,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0651, answer_create, 65059
+2014-12-16 04:09:37:0661, edge_create, Tuple[1,3,0.40257934924689054,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0661, answer_create, 65185
+2014-12-16 04:09:37:0661, edge_create, Tuple[1,4,0.20617390724193618,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0661, answer_create, 65049
+2014-12-16 04:09:37:0661, edge_create, Tuple[1,5,0.6804862444212345,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0661, answer_create, 65282
+2014-12-16 04:09:37:0661, edge_create, Tuple[1,6,0.009150602577209455,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0661, answer_create, 65362
+2014-12-16 04:09:37:0661, edge_create, Tuple[1,7,0.8390874883475973,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0661, answer_create, 65219
+2014-12-16 04:09:37:0661, edge_create, Tuple[1,8,0.2846777563606536,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0661, answer_create, 65943
+2014-12-16 04:09:37:0661, edge_create, Tuple[1,9,0.13332314767461806,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0661, answer_create, 65949
+2014-12-16 04:09:37:0661, edge_create, Tuple[1,10,0.8137675519485527,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0661, answer_create, 158141
+2014-12-16 04:09:37:0661, edge_create, Tuple[1,11,0.9978480424170734,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0661, answer_create, 296053
+2014-12-16 04:09:37:0671, edge_create, Tuple[1,12,0.07178289788860504,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0671, answer_create, 277249
+2014-12-16 04:09:37:0671, edge_create, Tuple[1,13,0.44816864255433253,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0671, answer_create, 2902578
+2014-12-16 04:09:37:0671, edge_create, Tuple[1,14,0.23246422416043588,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0671, answer_create, 2824754
+2014-12-16 04:09:37:0671, edge_create, Tuple[1,15,0.14587422084727808,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0671, answer_create, 2824758
+2014-12-16 04:09:37:0671, edge_create, Tuple[1,16,0.07745004451738768,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0671, answer_create, 2824998
+2014-12-16 04:09:37:0671, edge_create, Tuple[1,17,0.4487826015530382,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0671, answer_create, 2824759
+2014-12-16 04:09:37:0671, edge_create, Tuple[1,18,0.2968396499515473,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0671, answer_create, 2824762
+2014-12-16 04:09:37:0681, edge_create, Tuple[1,19,0.9321075811440412,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0681, answer_create, 2826472
+2014-12-16 04:09:37:0681, edge_create, Tuple[1,20,0.15624879253120605,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0681, answer_create, 2902505
+2014-12-16 04:09:37:0681, edge_create, Tuple[1,21,0.45690787516746534,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0681, answer_create, 10188271
+2014-12-16 04:09:37:0681, edge_create, Tuple[1,22,0.26286230832294977,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0681, answer_create, 7756997
+2014-12-16 04:09:37:0681, edge_create, Tuple[1,23,0.40932253712964717,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0681, answer_create, 16604763
+2014-12-16 04:09:37:0681, edge_create, Tuple[1,24,0.5709811253295981,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0681, answer_create, 17634958
+2014-12-16 04:09:37:0681, edge_create, Tuple[1,25,0.03628633806503134,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0681, edge_create, Tuple[0,26,0.10090868854643054,2,1.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0681, pattern_create, 2
+2014-12-16 04:09:37:0681, edge_create, Tuple[26,27,0.1740284730210192,2,1.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0691, edge_create, Tuple[0,28,0.518761554697214,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0691, edge_create, Tuple[28,29,0.18378877042433606,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0691, edge_create, Tuple[28,30,0.5445871557690187,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0701, edge_create, Tuple[28,31,0.6695652380921513,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0701, edge_create, Tuple[28,32,0.5683149749868509,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0711, edge_create, Tuple[28,33,0.9156874109529927,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0711, edge_create, Tuple[28,34,0.19447143062399186,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0711, edge_create, Tuple[28,35,0.8235655397699694,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0721, edge_create, Tuple[28,36,0.18479223081745844,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0721, edge_create, Tuple[28,37,0.08870115865346362,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0731, edge_create, Tuple[28,38,0.2910322551344885,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0741, edge_create, Tuple[28,39,0.0981838742550808,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0741, edge_create, Tuple[28,40,0.27719259859883527,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0741, edge_create, Tuple[28,41,0.4682950573931608,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0751, edge_create, Tuple[28,42,0.4204694518258737,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0761, edge_create, Tuple[28,43,0.7199680404515139,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0761, edge_create, Tuple[28,44,0.49352123033047746,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0771, edge_create, Tuple[28,45,0.5108176174192786,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0781, edge_create, Tuple[28,46,0.5978107526378655,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0781, edge_create, Tuple[28,47,0.3259761539464956,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0781, edge_create, Tuple[28,48,0.8100988497415623,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0791, edge_create, Tuple[28,49,0.061410280630197156,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0791, edge_create, Tuple[28,50,0.8835582256273635,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0791, edge_create, Tuple[28,51,0.513718399723607,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0801, edge_create, Tuple[28,52,0.813980074599399,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0801, edge_create, Tuple[28,53,0.18622597641185534,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0801, edge_create, Tuple[28,54,0.9333264747699387,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0811, edge_create, Tuple[28,55,0.8147296379062127,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0811, edge_create, Tuple[28,56,0.9612255904090428,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0821, edge_create, Tuple[28,57,0.655344233756889,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0821, edge_create, Tuple[28,58,0.6543316838087544,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0831, edge_create, Tuple[28,59,0.42505502030490383,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0841, edge_create, Tuple[28,60,0.008812720111732397,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0841, edge_create, Tuple[28,61,0.1718727216189342,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0841, edge_create, Tuple[28,62,0.4482536961053174,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0851, edge_create, Tuple[28,63,0.6206580134407329,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:09:37:0861, discussion_open, 65035
+2014-12-16 04:09:37:0861, diag_itemclicked, id=65035, type=1
+2014-12-16 04:09:38:0212, diag_itemexited, id=65035, type=1
+2014-12-16 04:09:39:0356, answer_open, VisualItem[tree.nodes,12,id=296053,type=20,title=,body=<p>I tried the above example with slight modification-</p>
+
+<blockquote>
+  <p>public static void main(String[] args)
+  {</p>
+
+<pre><code>System.out.println(Test.test());
+</code></pre>
+  
+  <p>}</p>
+  
+  <p>public static int test() {</p>
+
+<pre><code>int i = 0;
+try {
+  i=2;
+  return i;
+} finally {
+  i = 12;
+  System.out.println("finally trumps return.");
+}  
+</code></pre>
+  
+  <p>}</p>
+</blockquote>
+
+<p>The above code outputs-</p>
+
+<blockquote>
+  <p>finally trumps return.<br>
+  2</p>
+</blockquote>
+
+<p>This is because when <strong>return i</strong>; is executed i has a value 2. After this the finally block is executed where 12 is assigned to i and then sys out is executed.</p>
+
+<p>After executing finally block the <strong>try</strong> block returns <strong>2</strong>, rather than returning i=12, because this return statement is not executed again.</p>
+
+<p>If you will debug this code in Eclipse then you'll get a feeling that after executing Sys out of <strong>finally</strong> block the <strong>return</strong> statement of <strong>try</strong> block is executed again.  But this is not the case. It simply returns the value 2.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=23,searchfield=]
+2014-12-16 04:09:39:0366, answer_open, VisualItem[tree.nodes,12,id=296053,type=20,title=,body=<p>I tried the above example with slight modification-</p>
+
+<blockquote>
+  <p>public static void main(String[] args)
+  {</p>
+
+<pre><code>System.out.println(Test.test());
+</code></pre>
+  
+  <p>}</p>
+  
+  <p>public static int test() {</p>
+
+<pre><code>int i = 0;
+try {
+  i=2;
+  return i;
+} finally {
+  i = 12;
+  System.out.println("finally trumps return.");
+}  
+</code></pre>
+  
+  <p>}</p>
+</blockquote>
+
+<p>The above code outputs-</p>
+
+<blockquote>
+  <p>finally trumps return.<br>
+  2</p>
+</blockquote>
+
+<p>This is because when <strong>return i</strong>; is executed i has a value 2. After this the finally block is executed where 12 is assigned to i and then sys out is executed.</p>
+
+<p>After executing finally block the <strong>try</strong> block returns <strong>2</strong>, rather than returning i=12, because this return statement is not executed again.</p>
+
+<p>If you will debug this code in Eclipse then you'll get a feeling that after executing Sys out of <strong>finally</strong> block the <strong>return</strong> statement of <strong>try</strong> block is executed again.  But this is not the case. It simply returns the value 2.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=23,searchfield=]
+2014-12-16 04:09:39:0386, diag_detail_itementered, id=296053, type=20
+2014-12-16 04:09:39:0456, diag_detail_itemexited, id=296053, type=20
+2014-12-16 04:09:39:0456, diag_detail_itementered, id=0.8137675519485527, type=4
+2014-12-16 04:09:39:0476, diag_detail_itemexited, id=0.8137675519485527, type=4
+2014-12-16 04:09:44:0656, list_mouseentered, type=detailRelatedList, item=30160
+2014-12-16 04:09:44:0856, list_mouseexited, type=detailRelatedList
+2014-12-16 04:09:50:0214, list_mouseentered, type=detailRelatedList, item=44912
+2014-12-16 04:09:53:0946, list_mouseexited, type=detailRelatedList
+2014-12-16 04:09:55:0270, diag_detail_itementered, id=64036, type=1
+2014-12-16 04:09:55:0940, diag_detail_itemexited, id=64036, type=1
+2014-12-16 04:09:56:0700, diag_detail_itementered, id=14617, type=1
+2014-12-16 04:09:56:0720, diag_detail_itemexited, id=14617, type=1
+2014-12-16 04:09:56:0850, diag_detail_itementered, id=14617, type=1
+2014-12-16 04:10:02:0949, diag_detail_itemexited, id=14617, type=1
+2014-12-16 04:10:03:0439, diag_detail_itementered, id=14617, type=1
+2014-12-16 04:10:07:0241, diag_detail_itemexited, id=14617, type=1
+2014-12-16 04:10:07:0321, answer_open, VisualItem[tree.nodes,5,id=65049,type=21,title=,body=<p>finally will be called.</p>
+
+<p>The only time finally won't be called is if you call System.exit() or if the JVM crashes first.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=332,searchfield=]
+2014-12-16 04:10:07:0321, answer_open, VisualItem[tree.nodes,5,id=65049,type=21,title=,body=<p>finally will be called.</p>
+
+<p>The only time finally won't be called is if you call System.exit() or if the JVM crashes first.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=332,searchfield=]
+2014-12-16 04:10:07:0321, diag_detail_itementered, id=65049, type=21
+2014-12-16 04:10:07:0371, diag_detail_itemexited, id=65049, type=21
+2014-12-16 04:10:07:0461, diag_detail_itementered, id=0.03628633806503134, type=4
+2014-12-16 04:10:07:0491, diag_detail_itemexited, id=0.03628633806503134, type=4
+2014-12-16 04:10:08:0391, answer_open, VisualItem[tree.nodes,18,id=2824759,type=20,title=,body=<p>That is the whole idea of a finally block. It lets you make sure you do cleanups that might otherwise be skipped because you return, among other things, of course.</p>
+
+<p>Finally gets called <strong>regardless of what happens</strong> in the try block, <strong><em>unless</em></strong> you call <code>System.exit(int)</code> or the Java Virtual Machine kicks out for some other reason.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=27,searchfield=]
+2014-12-16 04:10:08:0391, answer_open, VisualItem[tree.nodes,18,id=2824759,type=20,title=,body=<p>That is the whole idea of a finally block. It lets you make sure you do cleanups that might otherwise be skipped because you return, among other things, of course.</p>
+
+<p>Finally gets called <strong>regardless of what happens</strong> in the try block, <strong><em>unless</em></strong> you call <code>System.exit(int)</code> or the Java Virtual Machine kicks out for some other reason.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=27,searchfield=]
+2014-12-16 04:10:08:0391, diag_detail_itementered, id=2824759, type=20
+2014-12-16 04:10:08:0441, diag_detail_itemexited, id=2824759, type=20
+2014-12-16 04:10:08:0461, diag_detail_itementered, id=0.07745004451738768, type=4
+2014-12-16 04:10:08:0481, diag_detail_itemexited, id=0.07745004451738768, type=4
+2014-12-16 04:10:08:0561, diag_detail_itementered, id=0.8137675519485527, type=4
+2014-12-16 04:10:08:0581, diag_detail_itemexited, id=0.8137675519485527, type=4
+2014-12-16 04:10:08:0711, diag_detail_itementered, id=0.8390874883475973, type=4
+2014-12-16 04:10:08:0731, diag_detail_itemexited, id=0.8390874883475973, type=4
+2014-12-16 04:10:08:0751, diag_detail_itementered, id=0.009150602577209455, type=4
+2014-12-16 04:10:08:0781, diag_detail_itemexited, id=0.009150602577209455, type=4
+2014-12-16 04:10:09:0181, answer_open, VisualItem[tree.nodes,4,id=65185,type=20,title=,body=<p>//proof code</p>
+
+<pre><code>class Test
+{
+    public static void main(String args[]) 
+    { 
+    	System.out.println(Test.test()); 
+    }
+
+    public static int test()
+    {
+    	try {  
+            	return 0;  
+    	}  
+    	finally {  
+    	    System.out.println("finally trumps return.");
+    	}
+    }
+}
+</code></pre>
+
+<p>output: </p>
+
+<pre><code>finally trumps return. 
+0
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=127,searchfield=]
+2014-12-16 04:10:09:0181, answer_open, VisualItem[tree.nodes,4,id=65185,type=20,title=,body=<p>//proof code</p>
+
+<pre><code>class Test
+{
+    public static void main(String args[]) 
+    { 
+    	System.out.println(Test.test()); 
+    }
+
+    public static int test()
+    {
+    	try {  
+            	return 0;  
+    	}  
+    	finally {  
+    	    System.out.println("finally trumps return.");
+    	}
+    }
+}
+</code></pre>
+
+<p>output: </p>
+
+<pre><code>finally trumps return. 
+0
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=127,searchfield=]
+2014-12-16 04:10:09:0181, diag_detail_itementered, id=65185, type=20
+2014-12-16 04:10:10:0889, diag_detail_itemexited, id=65185, type=20
+2014-12-16 04:10:10:0929, answer_open, VisualItem[tree.nodes,3,id=65059,type=20,title=,body=<p>Yes it will get called. That's the whole point of having a finally keyword. If jumping out of the try/catch block could just skip the finally block it was the same as putting the System.out.println outside the try/catch.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-16 04:10:10:0939, answer_open, VisualItem[tree.nodes,3,id=65059,type=20,title=,body=<p>Yes it will get called. That's the whole point of having a finally keyword. If jumping out of the try/catch block could just skip the finally block it was the same as putting the System.out.println outside the try/catch.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-16 04:10:10:0949, diag_detail_itementered, id=65059, type=20
+2014-12-16 04:10:13:0395, diag_detail_itemexited, id=65059, type=20
+2014-12-16 04:10:13:0455, diag_detail_itementered, id=0.17092080094474627, type=4
+2014-12-16 04:10:13:0475, diag_detail_itemexited, id=0.17092080094474627, type=4
+2014-12-16 04:10:13:0725, answer_open, VisualItem[tree.nodes,2,id=65056,type=20,title=,body=<p>finally is always executed unless there is abnormal program termination (like calling System.exit(0)..). so, you sysout will get printed</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-16 04:10:13:0725, answer_open, VisualItem[tree.nodes,2,id=65056,type=20,title=,body=<p>finally is always executed unless there is abnormal program termination (like calling System.exit(0)..). so, you sysout will get printed</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-16 04:10:13:0735, diag_detail_itementered, id=65056, type=20
+2014-12-16 04:10:13:0905, diag_detail_itemexited, id=65056, type=20
+2014-12-16 04:10:14:0005, answer_open, VisualItem[tree.nodes,2,id=65056,type=20,title=,body=<p>finally is always executed unless there is abnormal program termination (like calling System.exit(0)..). so, you sysout will get printed</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-16 04:10:14:0005, answer_open, VisualItem[tree.nodes,2,id=65056,type=20,title=,body=<p>finally is always executed unless there is abnormal program termination (like calling System.exit(0)..). so, you sysout will get printed</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-16 04:10:14:0005, diag_detail_itementered, id=65056, type=20
+2014-12-16 04:10:14:0695, diag_detail_itemexited, id=65056, type=20
+2014-12-16 04:10:14:0735, answer_open, VisualItem[tree.nodes,4,id=65185,type=20,title=,body=<p>//proof code</p>
+
+<pre><code>class Test
+{
+    public static void main(String args[]) 
+    { 
+    	System.out.println(Test.test()); 
+    }
+
+    public static int test()
+    {
+    	try {  
+            	return 0;  
+    	}  
+    	finally {  
+    	    System.out.println("finally trumps return.");
+    	}
+    }
+}
+</code></pre>
+
+<p>output: </p>
+
+<pre><code>finally trumps return. 
+0
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=127,searchfield=]
+2014-12-16 04:10:14:0745, answer_open, VisualItem[tree.nodes,4,id=65185,type=20,title=,body=<p>//proof code</p>
+
+<pre><code>class Test
+{
+    public static void main(String args[]) 
+    { 
+    	System.out.println(Test.test()); 
+    }
+
+    public static int test()
+    {
+    	try {  
+            	return 0;  
+    	}  
+    	finally {  
+    	    System.out.println("finally trumps return.");
+    	}
+    }
+}
+</code></pre>
+
+<p>output: </p>
+
+<pre><code>finally trumps return. 
+0
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=127,searchfield=]
+2014-12-16 04:10:14:0745, diag_detail_itementered, id=65185, type=20
+2014-12-16 04:10:14:0795, diag_detail_itemexited, id=65185, type=20
+2014-12-16 04:10:14:0905, answer_open, VisualItem[tree.nodes,5,id=65049,type=21,title=,body=<p>finally will be called.</p>
+
+<p>The only time finally won't be called is if you call System.exit() or if the JVM crashes first.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=332,searchfield=]
+2014-12-16 04:10:14:0905, answer_open, VisualItem[tree.nodes,5,id=65049,type=21,title=,body=<p>finally will be called.</p>
+
+<p>The only time finally won't be called is if you call System.exit() or if the JVM crashes first.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=332,searchfield=]
+2014-12-16 04:10:14:0905, diag_detail_itementered, id=65049, type=21
+2014-12-16 04:10:20:0544, diag_detail_itemexited, id=65049, type=21
+2014-12-16 04:10:20:0874, answer_open, VisualItem[tree.nodes,5,id=65049,type=21,title=,body=<p>finally will be called.</p>
+
+<p>The only time finally won't be called is if you call System.exit() or if the JVM crashes first.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=332,searchfield=]
+2014-12-16 04:10:20:0874, answer_open, VisualItem[tree.nodes,5,id=65049,type=21,title=,body=<p>finally will be called.</p>
+
+<p>The only time finally won't be called is if you call System.exit() or if the JVM crashes first.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=332,searchfield=]
+2014-12-16 04:10:20:0874, diag_detail_itementered, id=65049, type=21
+2014-12-16 04:10:25:0499, diag_detail_itemexited, id=65049, type=21
+2014-12-16 04:10:25:0619, diag_detail_itementered, id=-1671081089, type=3
+2014-12-16 04:10:25:0639, diag_detail_itemexited, id=-1671081089, type=3
+2014-12-16 04:10:25:0639, diag_detail_itementered, id=0.07178289788860504, type=4
+2014-12-16 04:10:25:0649, diag_detail_itemexited, id=0.07178289788860504, type=4
+2014-12-16 04:12:36:0674, answer_open, VisualItem[tree.nodes,7,id=65362,type=20,title=,body=<p>Also, although it's bad practice, if there is a return statement within the finally block, it will trump any other return from the regular block. That is, the following block would return false:</p>
+
+<pre><code>try { return true; } finally { return false; }
+</code></pre>
+
+<p>Same thing with throwing exceptions from the finally block.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=89,searchfield=]
+2014-12-16 04:12:36:0674, answer_open, VisualItem[tree.nodes,7,id=65362,type=20,title=,body=<p>Also, although it's bad practice, if there is a return statement within the finally block, it will trump any other return from the regular block. That is, the following block would return false:</p>
+
+<pre><code>try { return true; } finally { return false; }
+</code></pre>
+
+<p>Same thing with throwing exceptions from the finally block.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=89,searchfield=]
+2014-12-16 04:12:36:0674, diag_detail_itementered, id=65362, type=20
+2014-12-16 04:12:36:0714, diag_detail_itemexited, id=65362, type=20
+2014-12-16 04:12:36:0734, diag_detail_itementered, id=0.6804862444212345, type=4
+2014-12-16 04:12:36:0754, diag_detail_itemexited, id=0.6804862444212345, type=4
+2014-12-16 04:12:36:0824, diag_detail_itementered, id=2119213258, type=3
+2014-12-16 04:12:36:0844, diag_detail_itemexited, id=2119213258, type=3
+2014-12-16 04:12:36:0844, diag_detail_itementered, id=0.5108176174192786, type=1
+2014-12-16 04:12:36:0874, diag_detail_itemexited, id=0.5108176174192786, type=1
+2014-12-16 04:12:42:0085, diag_itementered, id=62289, type=1
+2014-12-16 04:12:42:0105, diag_itemexited, id=62289, type=1
+2014-12-16 04:12:42:0638, diag_itementered, id=39399, type=1
+2014-12-16 04:12:42:0688, diag_itemexited, id=39399, type=1
+2014-12-16 04:12:43:0048, diag_itementered, id=39399, type=1
+2014-12-16 04:12:43:0278, diag_itemexited, id=39399, type=1
+2014-12-16 04:12:44:0233, diag_itementered, id=61615, type=1
+2014-12-16 04:12:44:0983, diag_itemexited, id=61615, type=1
+2014-12-16 04:12:45:0213, diag_itementered, id=35842, type=1
+2014-12-16 04:12:45:0672, diag_itemexited, id=35842, type=1
+2014-12-16 04:12:45:0732, diag_itementered, id=31446, type=1
+2014-12-16 04:12:45:0882, diag_itemexited, id=31446, type=1
+2014-12-16 04:12:55:0304, list_mouseentered, id=31446, type=1
+2014-12-16 04:12:55:0304, list_mousemoved, id=31446, type=1
+2014-12-16 04:12:55:0324, list_mousemoved, id=31446, type=1
+2014-12-16 04:12:55:0344, list_mousemoved, id=47676, type=1
+2014-12-16 04:12:55:0374, list_mousemoved, id=47676, type=1
+2014-12-16 04:12:55:0404, list_mousemoved, id=31693, type=1
+2014-12-16 04:12:55:0424, list_mousemoved, id=31693, type=1
+2014-12-16 04:12:55:0455, list_mousemoved, id=31693, type=1
+2014-12-16 04:12:55:0475, list_mousemoved, id=31693, type=1
+2014-12-16 04:12:55:0495, list_mousemoved, id=36701, type=1
+2014-12-16 04:12:55:0525, list_mousemoved, id=36701, type=1
+2014-12-16 04:12:55:0545, list_mousemoved, id=36701, type=1
+2014-12-16 04:12:55:0575, list_mousemoved, id=40480, type=1
+2014-12-16 04:12:55:0595, list_mousemoved, id=40480, type=1
+2014-12-16 04:12:55:0615, list_mousemoved, id=40480, type=1
+2014-12-16 04:12:55:0645, list_mousemoved, id=49379, type=1
+2014-12-16 04:12:55:0665, list_mousemoved, id=49379, type=1
+2014-12-16 04:12:55:0695, list_mousemoved, id=49379, type=1
+2014-12-16 04:12:55:0715, list_mousemoved, id=49379, type=1
+2014-12-16 04:12:55:0745, list_mousemoved, id=49379, type=1
+2014-12-16 04:12:55:0765, list_mousemoved, id=49379, type=1
+2014-12-16 04:12:55:0795, list_mousemoved, id=49379, type=1
+2014-12-16 04:12:55:0815, list_mousemoved, id=49379, type=1
+2014-12-16 04:12:55:0845, list_mouseexited
+2014-12-16 04:32:20:0744, diag_itementered, id=57484, type=1
+2014-12-16 04:32:20:0784, diag_itemexited, id=57484, type=1
+2014-12-16 04:32:21:0115, diag_itementered, id=40480, type=1
+2014-12-16 04:32:21:0185, diag_itemexited, id=40480, type=1
+2014-12-16 04:32:21:0458, diag_itementered, id=65475, type=1
+2014-12-16 04:32:21:0498, diag_itemexited, id=65475, type=1
+2014-12-16 04:32:21:0528, diag_itementered, id=34571, type=1
+2014-12-16 04:32:22:0277, diag_itemexited, id=34571, type=1
+2014-12-16 04:32:22:0859, diag_itementered, id=3049, type=1
+2014-12-16 04:32:23:0019, diag_itemexited, id=3049, type=1
+2014-12-16 04:32:23:0149, diag_itementered, id=3049, type=1
+2014-12-16 04:32:23:0643, diag_itemexited, id=3049, type=1
+2014-12-16 04:32:23:0793, diag_itemexited, id=1, type=4
+2014-12-16 04:32:23:0793, diag_itementered, id=27065, type=1
+2014-12-16 04:32:23:0865, diag_itemexited, id=27065, type=1
+2014-12-16 04:32:25:0468, diag_itemexited, id=1, type=4
+2014-12-16 04:32:25:0468, diag_itementered, id=27065, type=1
+2014-12-16 04:32:25:0578, diag_itemexited, id=27065, type=1
+2014-12-16 04:32:25:0608, diag_itemexited, id=1, type=4
+2014-12-16 04:32:25:0718, diag_itemexited, id=4, type=4
+2014-12-16 04:32:25:0788, diag_itementered, id=35186, type=1
+2014-12-16 04:32:25:0828, diag_itemexited, id=35186, type=1
+2014-12-16 04:32:25:0900, diag_itementered, id=45865, type=1
+2014-12-16 04:32:25:0930, diag_itemexited, id=45865, type=1
+2014-12-16 04:53:15:0623, diag_itementered, id=57484, type=1
+2014-12-16 04:53:15:0653, diag_itemexited, id=57484, type=1
+2014-12-16 04:53:15:0723, diag_itementered, id=40480, type=1
+2014-12-16 04:53:15:0743, diag_itemexited, id=40480, type=1
+2014-12-16 04:53:15:0993, diag_itementered, id=34571, type=1
+2014-12-16 04:53:16:0325, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0345, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0375, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0395, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0415, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0445, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0465, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0495, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0515, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0545, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0565, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0615, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0635, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0665, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0685, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0715, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0735, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0765, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0785, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0815, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0835, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0865, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0885, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0905, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0935, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0965, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:16:0985, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:17:0015, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:17:0035, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:17:0055, diag_itemdragged, id=34571, type=1
+2014-12-16 04:53:17:0105, diag_itemexited, id=34571, type=1
+2014-12-16 04:53:17:0165, diag_itementered, id=24551, type=1
+2014-12-16 04:53:17:0185, diag_itemexited, id=24551, type=1
+2014-12-16 04:53:17:0285, diag_itementered, id=65475, type=1
+2014-12-16 04:53:17:0305, diag_itemexited, id=65475, type=1
+2014-12-16 04:53:17:0475, diag_itementered, id=65475, type=1
+2014-12-16 04:53:17:0505, diag_itemexited, id=65475, type=1
+2014-12-16 04:57:26:0890, diag_itementered, id=31446, type=1
+2014-12-16 04:57:26:0970, diag_itemexited, id=31446, type=1
+2014-12-16 04:57:27:0981, diag_itementered, id=34571, type=1
+2014-12-16 04:57:30:0736, diag_itemexited, id=34571, type=1
+2014-12-16 04:57:30:0796, diag_itementered, id=24551, type=1
+2014-12-16 04:57:30:0836, diag_itemexited, id=24551, type=1
+2014-12-16 04:57:31:0066, diag_itemexited, id=3, type=4
+2014-12-16 04:57:31:0066, diag_itementered, id=4, type=0
+2014-12-16 04:57:31:0266, diag_itemexited, id=4, type=0
+2014-12-16 04:57:31:0306, diag_itemexited, id=4, type=4
+2014-12-16 04:57:31:0316, diag_itementered, id=56843, type=1
+2014-12-16 04:57:31:0446, diag_itemexited, id=56843, type=1
+2014-12-16 04:57:31:0456, diag_itementered, id=41107, type=1
+2014-12-16 04:57:33:0831, diag_itemexited, id=41107, type=1
+2014-12-16 04:57:33:0972, diag_itemexited, id=4, type=4
+2014-12-16 04:57:33:0972, diag_itementered, id=40471, type=1
+2014-12-16 04:57:35:0115, diag_itemexited, id=40471, type=1
+2014-12-16 04:57:35:0125, diag_itementered, id=564, type=1
+2014-12-16 04:57:35:0145, diag_itemexited, id=564, type=1
+2014-12-16 04:57:35:0225, diag_itemexited, id=4, type=4
+2014-12-16 04:57:35:0225, diag_itementered, id=4, type=0
+2014-12-16 04:57:35:0295, diag_itemexited, id=4, type=0
+2014-12-16 04:57:35:0355, diag_itemexited, id=4, type=4
+2014-12-16 04:57:35:0365, diag_itementered, id=31693, type=1
+2014-12-16 04:57:35:0405, diag_itemexited, id=31693, type=1
+2014-12-16 04:57:35:0445, diag_itemexited, id=4, type=4
+2014-12-16 04:57:35:0595, diag_itemexited, id=3, type=4
+2014-12-16 04:57:35:0595, diag_itementered, id=35785, type=1
+2014-12-16 04:57:35:0695, diag_itemexited, id=35785, type=1
+2014-12-16 04:57:35:0745, diag_itementered, id=51438, type=1
+2014-12-16 04:57:35:0825, diag_itemexited, id=51438, type=1
+2014-12-16 04:57:35:0875, diag_itementered, id=40480, type=1
+2014-12-16 04:57:37:0645, diag_itemexited, id=40480, type=1
+2014-12-16 04:57:37:0795, diag_itementered, id=54909, type=1
+2014-12-16 04:57:37:0855, diag_itemexited, id=54909, type=1
+2014-12-16 04:57:37:0975, diag_itementered, id=60764, type=1
+2014-12-16 04:57:38:0045, diag_itemexited, id=60764, type=1
+2014-12-16 04:57:38:0675, diag_itementered, id=65475, type=1
+2014-12-16 04:57:38:0715, diag_itemexited, id=65475, type=1
+2014-12-16 04:57:38:0715, diag_itementered, id=34571, type=1
+2014-12-16 04:57:39:0265, diag_itemexited, id=34571, type=1
+2014-12-16 04:57:40:0045, diag_itementered, id=34571, type=1
+2014-12-16 04:57:40:0635, diag_itemexited, id=34571, type=1
+2014-12-16 04:57:40:0795, diag_itementered, id=54909, type=1
+2014-12-16 04:57:40:0835, diag_itemexited, id=54909, type=1
+2014-12-16 04:57:41:0057, diag_itementered, id=40480, type=1
+2014-12-16 04:57:44:0697, edge_create, Tuple[0,1,0.9347859630869225,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0697, answer_create, 40499
+2014-12-16 04:57:44:0697, edge_create, Tuple[1,2,0.10450910794136425,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0697, answer_create, 40501
+2014-12-16 04:57:44:0697, edge_create, Tuple[1,3,0.9161797821634823,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0697, answer_create, 40505
+2014-12-16 04:57:44:0697, edge_create, Tuple[1,4,0.1082448456620917,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0697, answer_create, 40507
+2014-12-16 04:57:44:0697, edge_create, Tuple[1,5,0.14574188141448885,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0697, answer_create, 40514
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,6,0.13577035745856325,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 40517
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,7,0.275689032855291,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 40523
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,8,0.0028300890374655108,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 40630
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,9,0.9493955173903578,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 42455
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,10,0.09221401099451088,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 42392
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,11,0.30517311301808026,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 49857
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,12,0.19862649269154553,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 49863
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,13,0.05782644375130408,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 73021
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,14,0.9893124972813965,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 85711
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,15,0.16700809322234844,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0707, answer_create, 436924
+2014-12-16 04:57:44:0707, edge_create, Tuple[1,16,0.6291472467883573,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 436969
+2014-12-16 04:57:44:0717, edge_create, Tuple[1,17,0.894644228593418,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 707416
+2014-12-16 04:57:44:0717, edge_create, Tuple[1,18,0.12274484936868812,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 623155
+2014-12-16 04:57:44:0717, edge_create, Tuple[1,19,0.31136573359212294,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 1964361
+2014-12-16 04:57:44:0717, edge_create, Tuple[1,20,0.599972928259327,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 1964260
+2014-12-16 04:57:44:0717, edge_create, Tuple[1,21,0.07399904815665992,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 3663123
+2014-12-16 04:57:44:0717, edge_create, Tuple[1,22,0.8191771295742728,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 3439923
+2014-12-16 04:57:44:0717, edge_create, Tuple[1,23,0.9934097214445257,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 6428407
+2014-12-16 04:57:44:0717, edge_create, Tuple[1,24,0.30414649626154977,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 6462053
+2014-12-16 04:57:44:0717, edge_create, Tuple[1,25,0.6156391713633285,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0717, answer_create, 7034719
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,26,0.7517409803531839,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0727, answer_create, 10236169
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,27,0.7112462839881871,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0727, answer_create, 11079512
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,28,0.14813134613107792,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0727, answer_create, 11764499
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,29,0.3105963129849625,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0727, answer_create, 12429953
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,30,0.6793718728021486,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0727, answer_create, 12851599
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,31,0.2296989169341056,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0727, answer_create, 14105447
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,32,0.29876332867602495,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0727, answer_create, 16880062
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,33,0.03586963503013574,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0727, answer_create, 17303467
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,34,0.2670197767269369,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0727, answer_create, 17563873
+2014-12-16 04:57:44:0727, edge_create, Tuple[1,35,0.12939062126638867,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0737, edge_create, Tuple[0,36,0.17510427372698534,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0737, edge_create, Tuple[36,37,0.23151765341495745,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0737, edge_create, Tuple[36,38,0.722846927948675,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0747, edge_create, Tuple[36,39,0.6262815695856887,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0747, edge_create, Tuple[36,40,0.7038309379435458,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0747, edge_create, Tuple[36,41,0.19985626733819783,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0757, edge_create, Tuple[36,42,0.3488787340069065,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:44:0767, discussion_open, 40480
+2014-12-16 04:57:44:0767, diag_itemclicked, id=40480, type=1
+2014-12-16 04:57:45:0167, diag_itemexited, id=40480, type=1
+2014-12-16 04:57:48:0030, diag_detail_itementered, id=0.722846927948675, type=1
+2014-12-16 04:57:48:0050, diag_detail_itemexited, id=0.722846927948675, type=1
+2014-12-16 04:57:48:0120, diag_detail_itementered, id=0.03586963503013574, type=4
+2014-12-16 04:57:48:0140, diag_detail_itemexited, id=0.03586963503013574, type=4
+2014-12-16 04:57:48:0140, diag_detail_itementered, id=0.29876332867602495, type=4
+2014-12-16 04:57:48:0150, diag_detail_itemexited, id=0.29876332867602495, type=4
+2014-12-16 04:57:48:0400, diag_detail_itementered, id=0.07399904815665992, type=4
+2014-12-16 04:57:48:0410, diag_detail_itemexited, id=0.07399904815665992, type=4
+2014-12-16 04:57:48:0460, answer_open, VisualItem[tree.nodes,8,id=40523,type=20,title=,body=<p>Java is always pass-by-value. The difficult thing can be to understand that Java passes objects as references passed by value.</p>
+
+<p>It goes like this:</p>
+
+<pre><code>public void foo(Dog d) {
+  d.name.equals("Max"); // true
+  d = new Dog("Fifi");
+  d.name.equals("Fifi"); // true
+}
+
+Dog aDog = new Dog("Max");
+foo(aDog);
+aDog.name.equals("Max"); // true
+</code></pre>
+
+<p>In this example aDog.name will still be "Max". "d" is not overwritten in the function as the object reference is passed by value.</p>
+
+<p>Likewise:</p>
+
+<pre><code>public void foo(Dog d) {
+  d.name.equals("Max"); // true
+  d.setname("Fifi");
+}
+
+Dog aDog = new Dog("Max");
+foo(aDog);
+aDog.name.equals("Fifi"); // true
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=748,searchfield=]
+2014-12-16 04:57:48:0460, answer_open, VisualItem[tree.nodes,8,id=40523,type=20,title=,body=<p>Java is always pass-by-value. The difficult thing can be to understand that Java passes objects as references passed by value.</p>
+
+<p>It goes like this:</p>
+
+<pre><code>public void foo(Dog d) {
+  d.name.equals("Max"); // true
+  d = new Dog("Fifi");
+  d.name.equals("Fifi"); // true
+}
+
+Dog aDog = new Dog("Max");
+foo(aDog);
+aDog.name.equals("Max"); // true
+</code></pre>
+
+<p>In this example aDog.name will still be "Max". "d" is not overwritten in the function as the object reference is passed by value.</p>
+
+<p>Likewise:</p>
+
+<pre><code>public void foo(Dog d) {
+  d.name.equals("Max"); // true
+  d.setname("Fifi");
+}
+
+Dog aDog = new Dog("Max");
+foo(aDog);
+aDog.name.equals("Fifi"); // true
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=748,searchfield=]
+2014-12-16 04:57:48:0460, diag_detail_itementered, id=40523, type=20
+2014-12-16 04:57:48:0530, diag_detail_itemexited, id=40523, type=20
+2014-12-16 04:57:48:0560, diag_detail_itementered, id=0.7112462839881871, type=4
+2014-12-16 04:57:48:0570, diag_detail_itemexited, id=0.7112462839881871, type=4
+2014-12-16 04:57:48:0640, diag_detail_itementered, id=0.6156391713633285, type=4
+2014-12-16 04:57:48:0670, diag_detail_itemexited, id=0.6156391713633285, type=4
+2014-12-16 04:57:50:0696, diag_itementered, id=48249, type=1
+2014-12-16 04:57:50:0726, diag_itemexited, id=48249, type=1
+2014-12-16 04:57:50:0826, diag_itementered, id=65475, type=1
+2014-12-16 04:57:50:0846, diag_itemexited, id=65475, type=1
+2014-12-16 04:57:50:0978, diag_itementered, id=55709, type=1
+2014-12-16 04:57:51:0008, diag_itemexited, id=55709, type=1
+2014-12-16 04:57:51:0048, diag_itementered, id=51574, type=1
+2014-12-16 04:57:51:0109, diag_itemexited, id=51574, type=1
+2014-12-16 04:57:51:0109, diag_itementered, id=51390, type=1
+2014-12-16 04:57:51:0249, diag_itemexited, id=51390, type=1
+2014-12-16 04:57:51:0523, diag_itementered, id=40480, type=1
+2014-12-16 04:57:52:0463, diag_itemexited, id=40480, type=1
+2014-12-16 04:57:52:0843, diag_itementered, id=40480, type=1
+2014-12-16 04:57:57:0581, edge_create, Tuple[0,1,0.7437239359507859,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0581, answer_create, 40499
+2014-12-16 04:57:57:0581, edge_create, Tuple[1,2,0.032770186924721,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0581, answer_create, 40501
+2014-12-16 04:57:57:0581, edge_create, Tuple[1,3,0.3640009892663333,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0581, answer_create, 40505
+2014-12-16 04:57:57:0581, edge_create, Tuple[1,4,0.7431753389858169,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0581, answer_create, 40507
+2014-12-16 04:57:57:0581, edge_create, Tuple[1,5,0.7872596875791829,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0581, answer_create, 40514
+2014-12-16 04:57:57:0581, edge_create, Tuple[1,6,0.05441732428697199,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0581, answer_create, 40517
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,7,0.13177942752330618,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 40523
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,8,0.3144431108573039,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 40630
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,9,0.4718011253001848,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 42455
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,10,0.5297513750791348,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 42392
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,11,0.5510802291924257,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 49857
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,12,0.9741068883667869,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 49863
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,13,0.9814982746151223,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 73021
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,14,0.8223877001120263,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 85711
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,15,0.5139927070368532,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 436924
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,16,0.35621506517204626,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 436969
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,17,0.7045112447603361,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0591, answer_create, 707416
+2014-12-16 04:57:57:0591, edge_create, Tuple[1,18,0.25408471050328996,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 623155
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,19,0.8696313482498444,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 1964361
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,20,0.6821517483794967,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 1964260
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,21,0.37806921047537734,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 3663123
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,22,0.8748480405042608,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 3439923
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,23,0.4393279226904506,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 6428407
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,24,0.4349809077191811,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 6462053
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,25,0.9036127121059976,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 7034719
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,26,0.004352232078263296,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 10236169
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,27,0.5929129556991467,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 11079512
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,28,0.337350191736948,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 11764499
+2014-12-16 04:57:57:0601, edge_create, Tuple[1,29,0.14747905714952747,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0601, answer_create, 12429953
+2014-12-16 04:57:57:0611, edge_create, Tuple[1,30,0.24612638440748458,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0611, answer_create, 12851599
+2014-12-16 04:57:57:0611, edge_create, Tuple[1,31,0.7410979205220248,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0611, answer_create, 14105447
+2014-12-16 04:57:57:0611, edge_create, Tuple[1,32,0.7372323091997711,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0611, answer_create, 16880062
+2014-12-16 04:57:57:0611, edge_create, Tuple[1,33,0.6295052421520461,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0611, answer_create, 17303467
+2014-12-16 04:57:57:0611, edge_create, Tuple[1,34,0.8019271152799136,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0611, answer_create, 17563873
+2014-12-16 04:57:57:0611, edge_create, Tuple[1,35,0.8265078198600917,4,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0611, edge_create, Tuple[0,36,0.39738457909931457,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0611, edge_create, Tuple[36,37,0.12008680752163547,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0611, edge_create, Tuple[36,38,0.8209479002187589,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0621, edge_create, Tuple[36,39,0.6547034132004065,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0621, edge_create, Tuple[36,40,0.8572580751594076,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0621, edge_create, Tuple[36,41,0.815644851265982,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0621, edge_create, Tuple[36,42,0.20699187123481355,1,0.0,1418764162300,1418764162300]
+2014-12-16 04:57:57:0631, discussion_open, 40480
+2014-12-16 04:57:57:0631, diag_itemclicked, id=40480, type=1
+2014-12-16 04:57:58:0225, diag_itemexited, id=40480, type=1
+2014-12-16 04:57:59:0596, diag_detail_itementered, id=2006581312, type=3
+2014-12-16 04:57:59:0616, diag_detail_itemexited, id=2006581312, type=3
+2014-12-16 04:57:59:0616, diag_detail_itementered, id=0.39738457909931457, type=1
+2014-12-16 04:57:59:0626, diag_detail_itemexited, id=0.39738457909931457, type=1
+2014-12-16 04:57:59:0916, diag_detail_itementered, id=0.5297513750791348, type=4
+2014-12-16 04:57:59:0926, diag_detail_itemexited, id=0.5297513750791348, type=4
+2014-12-16 04:58:00:0886, answer_open, VisualItem[tree.nodes,16,id=436924,type=20,title=,body=<p>it's a bit hard to understand, but java always copies the value - the point is, normally the value is a reference. therefore you end up with the same object without thinking about it...</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-16 04:58:00:0886, answer_open, VisualItem[tree.nodes,16,id=436924,type=20,title=,body=<p>it's a bit hard to understand, but java always copies the value - the point is, normally the value is a reference. therefore you end up with the same object without thinking about it...</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-16 04:58:00:0886, diag_detail_itementered, id=436924, type=20
+2014-12-16 04:58:00:0916, diag_detail_itemexited, id=436924, type=20
+2014-12-16 04:58:00:0966, answer_open, VisualItem[tree.nodes,18,id=707416,type=20,title=,body=<p>As far as I know, Java only knows call by value. This means for primitive datatypes you will work with an copy and for objects you will work with an copy of the reference to the objects. However I think there are some pitfalls; for example, this will not work:</p>
+
+<pre><code>public static void swap(StringBuffer s1, StringBuffer s2) {
+    StringBuffer temp = s1;
+    s1 = s2;
+    s2 = temp;
+}
+
+
+public static void main(String[] args) {
+    StringBuffer s1 = new StringBuffer("Hello");
+    StringBuffer s2 = new StringBuffer("World");
+    swap(s1, s2);
+    System.out.println(s1);
+    System.out.println(s2);
+}
+</code></pre>
+
+<p>This will populate Hello World and not World Hello because in the swap function you use copys which have no impact on the references in the main. But if your objects are not immutable you can change it for example:</p>
+
+<pre><code>public static void appendWorld(StringBuffer s1) {
+    s1.append(" World");
+}
+
+public static void main(String[] args) {
+    StringBuffer s = new StringBuffer("Hello");
+    appendWorld(s);
+    System.out.println(s);
+}
+</code></pre>
+
+<p>This will populate Hello World on the command line. If you change StringBuffer into String it will produce just Hello because String is immutable. For example:</p>
+
+<pre><code>public static void appendWorld(String s){
+    s = s+" World";
+}
+
+public static void main(String[] args) {
+    String s = new String("Hello");
+    appendWorld(s);
+    System.out.println(s);
+}
+</code></pre>
+
+<p>However you could make a wrapper for String like this which would make it able to use it with Strings:</p>
+
+<pre><code>class StringWrapper {
+    public String value;
+
+    public StringWrapper(String value) {
+        this.value = value;
+    }
+}
+
+public static void appendWorld(StringWrapper s){
+    s.value = s.value +" World";
+}
+
+public static void main(String[] args) {
+    StringWrapper s = new StringWrapper("Hello");
+    appendWorld(s);
+    System.out.println(s.value);
+}
+</code></pre>
+
+<p>edit: i believe this is also the reason to use StringBuffer when it comes to "adding" two Strings because you can modifie the original object which u can't with immutable objects like String is.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=12,searchfield=]
+2014-12-16 04:58:00:0968, answer_open, VisualItem[tree.nodes,18,id=707416,type=20,title=,body=<p>As far as I know, Java only knows call by value. This means for primitive datatypes you will work with an copy and for objects you will work with an copy of the reference to the objects. However I think there are some pitfalls; for example, this will not work:</p>
+
+<pre><code>public static void swap(StringBuffer s1, StringBuffer s2) {
+    StringBuffer temp = s1;
+    s1 = s2;
+    s2 = temp;
+}
+
+
+public static void main(String[] args) {
+    StringBuffer s1 = new StringBuffer("Hello");
+    StringBuffer s2 = new StringBuffer("World");
+    swap(s1, s2);
+    System.out.println(s1);
+    System.out.println(s2);
+}
+</code></pre>
+
+<p>This will populate Hello World and not World Hello because in the swap function you use copys which have no impact on the references in the main. But if your objects are not immutable you can change it for example:</p>
+
+<pre><code>public static void appendWorld(StringBuffer s1) {
+    s1.append(" World");
+}
+
+public static void main(String[] args) {
+    StringBuffer s = new StringBuffer("Hello");
+    appendWorld(s);
+    System.out.println(s);
+}
+</code></pre>
+
+<p>This will populate Hello World on the command line. If you change StringBuffer into String it will produce just Hello because String is immutable. For example:</p>
+
+<pre><code>public static void appendWorld(String s){
+    s = s+" World";
+}
+
+public static void main(String[] args) {
+    String s = new String("Hello");
+    appendWorld(s);
+    System.out.println(s);
+}
+</code></pre>
+
+<p>However you could make a wrapper for String like this which would make it able to use it with Strings:</p>
+
+<pre><code>class StringWrapper {
+    public String value;
+
+    public StringWrapper(String value) {
+        this.value = value;
+    }
+}
+
+public static void appendWorld(StringWrapper s){
+    s.value = s.value +" World";
+}
+
+public static void main(String[] args) {
+    StringWrapper s = new StringWrapper("Hello");
+    appendWorld(s);
+    System.out.println(s.value);
+}
+</code></pre>
+
+<p>edit: i believe this is also the reason to use StringBuffer when it comes to "adding" two Strings because you can modifie the original object which u can't with immutable objects like String is.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=12,searchfield=]
+2014-12-16 04:58:00:0968, diag_detail_itementered, id=707416, type=20
+2014-12-16 04:58:01:0008, diag_detail_itemexited, id=707416, type=20
+2014-12-16 04:58:01:0318, answer_open, VisualItem[tree.nodes,26,id=7034719,type=20,title=,body=<p><strong>This will give you some insights of how Java really works to the point that in your next discussion about Java passing by reference or passing by value you'll just smile :-)</strong></p>
+
+<p>Step one please erase from your mind that word that starts with 'p' "_ _ _ _ _ _ _", especially if you come from other programming languages. Java and 'p' cannot be written in the same book, forum, or even txt.</p>
+
+<p>Step two remember that when you pass an Object into a method you're passing the Object reference and not the Object itself.</p>
+
+<ul>
+<li><em>Student</em>: Master, does this mean that Java is pass-by-reference?</li>
+<li><em>Master</em>: Grasshopper, No.</li>
+</ul>
+
+<p>Now think of what an Object's reference/variable does/is:</p>
+
+<ol>
+<li><strong>A variable holds the bits that tell the JVM how to get to the referenced Object in memory (Heap).</strong></li>
+<li>When passing arguments to a method <strong>you ARE NOT passing the reference variable, but a copy of the bits in the reference variable</strong>. Something like this: 3bad086a. 3bad086a represents a way to get to the passed object.</li>
+<li>So you're just passing 3bad086a that it's the value of the reference.</li>
+<li>You're passing the value of the reference and not the reference itself (and not the object).</li>
+<li><em><strong>This value is actually COPIED and given to the method</em></strong>. </li>
+</ol>
+
+<p>In the following (please don't try to compile/execute this...):</p>
+
+<pre><code>1. Person person;
+2. person = new Person("Tom");
+3. changeName(person);
+4.
+5. //I didn't use Person person below as an argument to be nice
+6. static void changeName(Person anotherReferenceToTheSamePersonObject) {
+7.     anotherReferenceToTheSamePersonObject.setName("Jerry");
+8. }
+</code></pre>
+
+<p>What happens?</p>
+
+<ul>
+<li>The variable <em>person</em> is created in line #1 and it's null at the beginning.</li>
+<li>A new Person Object is created in line #2, stored in memory, and the variable <em>person</em> is given the reference to the Person object. That is, its address. Let's say 3bad086a.</li>
+<li>The variable <em>person</em> holding the address of the Object is passed to the function in line #3.</li>
+<li>In line #4 you can listen to the sound of silence </li>
+<li>Check the comment on line #5</li>
+<li>A method local variable -<em>anotherReferenceToTheSamePersonObject</em>- is created and then comes the magic in line #6:
+<ul>
+<li>The variable/reference <em>person</em> is copied bit-by-bit and passed to <em>anotherReferenceToTheSamePersonObject</em> inside the function.</li>
+<li>No new instances of Person are created.</li>
+<li>Both "<em>person</em>" and "<em>anotherReferenceToTheSamePersonObject</em>" hold the same value of 3bad086a.</li>
+<li>Don't try this but person==anotherReferenceToTheSamePersonObject would be true.</li>
+<li>Both variables have IDENTICAL COPIES of the reference and they both refer to the same Person Object, the SAME Object on the Heap and NOT A COPY.</li>
+</ul></li>
+</ul>
+
+<p>A picture is worth a thousand words:</p>
+
+<p><img src="http://i.stack.imgur.com/Ba3hJ.jpg" alt="Pass by Value"></p>
+
+<p><strong>Note that the anotherReferenceToTheSamePersonObject arrows is directed towards the Object and not towards the variable person!</strong></p>
+
+<p>If you didn't get it then just trust me and remember that it's better to say that <strong>Java is pass by value</strong>. Well, <strong>pass by reference value</strong>. Oh well, even better is <strong><em>pass-by-copy-of-the-variable-value! ;)</em></strong></p>
+
+<p>Now feel free to hate me but note that given this <strong>there is no difference between passing primitive data types and Objects</strong> when talking about method arguments.</p>
+
+<p>You always pass a copy of the bits of the value of the reference!</p>
+
+<ul>
+<li>If it's a primitive data type these bits will contain the value of the primitive data type itself.</li>
+<li>If it's an Object the bits will contain the value of the address that tells the JVM how to get to the Object.</li>
+</ul>
+
+<blockquote>
+  <p>Java is pass-by-value because inside a method you can modify the referenced Object as much as you want but no matter how hard you try you'll never be able to modify the passed variable that will keep referencing (not p _ _ _ _ _ _ _) the same Object no matter what!</p>
+</blockquote>
+
+<hr>
+
+<blockquote>
+  <p>The changeName function above will never be able to modify the actual content (the bit values) of the passed reference. In other word changeName cannot make Person person refer to another Object.</p>
+</blockquote>
+
+<hr>
+
+<p>Of course you can cut it short and just say that  <strong>Java is pass-by-value!</strong></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=191,searchfield=]
+2014-12-16 04:58:01:0328, answer_open, VisualItem[tree.nodes,26,id=7034719,type=20,title=,body=<p><strong>This will give you some insights of how Java really works to the point that in your next discussion about Java passing by reference or passing by value you'll just smile :-)</strong></p>
+
+<p>Step one please erase from your mind that word that starts with 'p' "_ _ _ _ _ _ _", especially if you come from other programming languages. Java and 'p' cannot be written in the same book, forum, or even txt.</p>
+
+<p>Step two remember that when you pass an Object into a method you're passing the Object reference and not the Object itself.</p>
+
+<ul>
+<li><em>Student</em>: Master, does this mean that Java is pass-by-reference?</li>
+<li><em>Master</em>: Grasshopper, No.</li>
+</ul>
+
+<p>Now think of what an Object's reference/variable does/is:</p>
+
+<ol>
+<li><strong>A variable holds the bits that tell the JVM how to get to the referenced Object in memory (Heap).</strong></li>
+<li>When passing arguments to a method <strong>you ARE NOT passing the reference variable, but a copy of the bits in the reference variable</strong>. Something like this: 3bad086a. 3bad086a represents a way to get to the passed object.</li>
+<li>So you're just passing 3bad086a that it's the value of the reference.</li>
+<li>You're passing the value of the reference and not the reference itself (and not the object).</li>
+<li><em><strong>This value is actually COPIED and given to the method</em></strong>. </li>
+</ol>
+
+<p>In the following (please don't try to compile/execute this...):</p>
+
+<pre><code>1. Person person;
+2. person = new Person("Tom");
+3. changeName(person);
+4.
+5. //I didn't use Person person below as an argument to be nice
+6. static void changeName(Person anotherReferenceToTheSamePersonObject) {
+7.     anotherReferenceToTheSamePersonObject.setName("Jerry");
+8. }
+</code></pre>
+
+<p>What happens?</p>
+
+<ul>
+<li>The variable <em>person</em> is created in line #1 and it's null at the beginning.</li>
+<li>A new Person Object is created in line #2, stored in memory, and the variable <em>person</em> is given the reference to the Person object. That is, its address. Let's say 3bad086a.</li>
+<li>The variable <em>person</em> holding the address of the Object is passed to the function in line #3.</li>
+<li>In line #4 you can listen to the sound of silence </li>
+<li>Check the comment on line #5</li>
+<li>A method local variable -<em>anotherReferenceToTheSamePersonObject</em>- is created and then comes the magic in line #6:
+<ul>
+<li>The variable/reference <em>person</em> is copied bit-by-bit and passed to <em>anotherReferenceToTheSamePersonObject</em> inside the function.</li>
+<li>No new instances of Person are created.</li>
+<li>Both "<em>person</em>" and "<em>anotherReferenceToTheSamePersonObject</em>" hold the same value of 3bad086a.</li>
+<li>Don't try this but person==anotherReferenceToTheSamePersonObject would be true.</li>
+<li>Both variables have IDENTICAL COPIES of the reference and they both refer to the same Person Object, the SAME Object on the Heap and NOT A COPY.</li>
+</ul></li>
+</ul>
+
+<p>A picture is worth a thousand words:</p>
+
+<p><img src="http://i.stack.imgur.com/Ba3hJ.jpg" alt="Pass by Value"></p>
+
+<p><strong>Note that the anotherReferenceToTheSamePersonObject arrows is directed towards the Object and not towards the variable person!</strong></p>
+
+<p>If you didn't get it then just trust me and remember that it's better to say that <strong>Java is pass by value</strong>. Well, <strong>pass by reference value</strong>. Oh well, even better is <strong><em>pass-by-copy-of-the-variable-value! ;)</em></strong></p>
+
+<p>Now feel free to hate me but note that given this <strong>there is no difference between passing primitive data types and Objects</strong> when talking about method arguments.</p>
+
+<p>You always pass a copy of the bits of the value of the reference!</p>
+
+<ul>
+<li>If it's a primitive data type these bits will contain the value of the primitive data type itself.</li>
+<li>If it's an Object the bits will contain the value of the address that tells the JVM how to get to the Object.</li>
+</ul>
+
+<blockquote>
+  <p>Java is pass-by-value because inside a method you can modify the referenced Object as much as you want but no matter how hard you try you'll never be able to modify the passed variable that will keep referencing (not p _ _ _ _ _ _ _) the same Object no matter what!</p>
+</blockquote>
+
+<hr>
+
+<blockquote>
+  <p>The changeName function above will never be able to modify the actual content (the bit values) of the passed reference. In other word changeName cannot make Person person refer to another Object.</p>
+</blockquote>
+
+<hr>
+
+<p>Of course you can cut it short and just say that  <strong>Java is pass-by-value!</strong></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=191,searchfield=]
+2014-12-16 04:58:01:0338, diag_detail_itementered, id=7034719, type=20
+2014-12-16 04:58:01:0408, diag_detail_itemexited, id=7034719, type=20
+2014-12-16 04:58:03:0497, answer_open, VisualItem[tree.nodes,30,id=12429953,type=20,title=,body=<p>Java always passes arguments by value NOT by reference.</p>
+
+<hr>
+
+<p>Let me explain this through an <a href="http://stackoverflow.com/a/9404727/597657">example</a>:</p>
+
+<pre><code>public class Main
+{
+     public static void main(String[] args)
+     {
+          Foo f = new Foo("f");
+          changeReference(f); // It won't change the reference!
+          modifyReference(f); // It will modify the object that the reference variable "f" refers to!
+     }
+     public static void changeReference(Foo a)
+     {
+          Foo b = new Foo("b");
+          a = b;
+     }
+     public static void modifyReference(Foo c)
+     {
+          c.setAttribute("c");
+     }
+}
+</code></pre>
+
+<p>I will explain this in steps:</p>
+
+<ol>
+<li><p>Declaring a reference named <code>f</code> of type <code>Foo</code> and assign it to a new object of type <code>Foo</code> with an attribute <code>"f"</code>.</p>
+
+<pre><code>Foo f = new Foo("f");
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/arXpP.png" alt="enter image description here"></p></li>
+<li><p>From the method side, a reference of type <code>Foo</code> with a name <code>a</code> is declared and it's initially assigned to <code>null</code>.</p>
+
+<pre><code>public static void changeReference(Foo a)
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/k2LBD.png" alt="enter image description here"></p></li>
+<li><p>As you call the method <code>changeReference</code>, the reference <code>a</code> will be assigned to the object which is passed as an argument.</p>
+
+<pre><code>changeReference(f);
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/1Ez74.png" alt="enter image description here"></p></li>
+<li><p>Declaring a reference named <code>b</code> of type <code>Foo</code> and assign it to a new object of type <code>Foo</code> with an attribute <code>"b"</code>.</p>
+
+<pre><code>Foo b = new Foo("b");
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/Krx4N.png" alt="enter image description here"></p></li>
+<li><p><code>a = b</code> is re-assigning the reference <code>a</code> NOT <code>f</code> to the object whose its attribute is <code>"b"</code>.</p>
+
+<p><img src="http://i.stack.imgur.com/rCluu.png" alt="enter image description here"></p>
+
+<hr></li>
+<li><p>As you call <code>modifyReference(Foo c)</code> method, a reference <code>c</code> is created and assigned to the object with attribute <code>"f"</code>.</p>
+
+<p><img src="http://i.stack.imgur.com/PRZPg.png" alt="enter image description here"></p></li>
+<li><p><code>c.setAttribute("c");</code> will change the attribute of the object that reference <code>c</code> points to it, and it's same object that reference <code>f</code> points to it.</p>
+
+<p><img src="http://i.stack.imgur.com/H9Qsf.png" alt="enter image description here"></p></li>
+</ol>
+
+<p>I hope you understand now how passing objects as arguments works in Java :)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=129,searchfield=]
+2014-12-16 04:58:03:0497, answer_open, VisualItem[tree.nodes,30,id=12429953,type=20,title=,body=<p>Java always passes arguments by value NOT by reference.</p>
+
+<hr>
+
+<p>Let me explain this through an <a href="http://stackoverflow.com/a/9404727/597657">example</a>:</p>
+
+<pre><code>public class Main
+{
+     public static void main(String[] args)
+     {
+          Foo f = new Foo("f");
+          changeReference(f); // It won't change the reference!
+          modifyReference(f); // It will modify the object that the reference variable "f" refers to!
+     }
+     public static void changeReference(Foo a)
+     {
+          Foo b = new Foo("b");
+          a = b;
+     }
+     public static void modifyReference(Foo c)
+     {
+          c.setAttribute("c");
+     }
+}
+</code></pre>
+
+<p>I will explain this in steps:</p>
+
+<ol>
+<li><p>Declaring a reference named <code>f</code> of type <code>Foo</code> and assign it to a new object of type <code>Foo</code> with an attribute <code>"f"</code>.</p>
+
+<pre><code>Foo f = new Foo("f");
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/arXpP.png" alt="enter image description here"></p></li>
+<li><p>From the method side, a reference of type <code>Foo</code> with a name <code>a</code> is declared and it's initially assigned to <code>null</code>.</p>
+
+<pre><code>public static void changeReference(Foo a)
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/k2LBD.png" alt="enter image description here"></p></li>
+<li><p>As you call the method <code>changeReference</code>, the reference <code>a</code> will be assigned to the object which is passed as an argument.</p>
+
+<pre><code>changeReference(f);
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/1Ez74.png" alt="enter image description here"></p></li>
+<li><p>Declaring a reference named <code>b</code> of type <code>Foo</code> and assign it to a new object of type <code>Foo</code> with an attribute <code>"b"</code>.</p>
+
+<pre><code>Foo b = new Foo("b");
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/Krx4N.png" alt="enter image description here"></p></li>
+<li><p><code>a = b</code> is re-assigning the reference <code>a</code> NOT <code>f</code> to the object whose its attribute is <code>"b"</code>.</p>
+
+<p><img src="http://i.stack.imgur.com/rCluu.png" alt="enter image description here"></p>
+
+<hr></li>
+<li><p>As you call <code>modifyReference(Foo c)</code> method, a reference <code>c</code> is created and assigned to the object with attribute <code>"f"</code>.</p>
+
+<p><img src="http://i.stack.imgur.com/PRZPg.png" alt="enter image description here"></p></li>
+<li><p><code>c.setAttribute("c");</code> will change the attribute of the object that reference <code>c</code> points to it, and it's same object that reference <code>f</code> points to it.</p>
+
+<p><img src="http://i.stack.imgur.com/H9Qsf.png" alt="enter image description here"></p></li>
+</ol>
+
+<p>I hope you understand now how passing objects as arguments works in Java :)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=129,searchfield=]
+2014-12-16 04:58:03:0507, diag_detail_itementered, id=12429953, type=20
+2014-12-16 04:58:03:0577, diag_detail_itemexited, id=12429953, type=20
+2014-12-16 04:58:04:0187, answer_open, VisualItem[tree.nodes,30,id=12429953,type=20,title=,body=<p>Java always passes arguments by value NOT by reference.</p>
+
+<hr>
+
+<p>Let me explain this through an <a href="http://stackoverflow.com/a/9404727/597657">example</a>:</p>
+
+<pre><code>public class Main
+{
+     public static void main(String[] args)
+     {
+          Foo f = new Foo("f");
+          changeReference(f); // It won't change the reference!
+          modifyReference(f); // It will modify the object that the reference variable "f" refers to!
+     }
+     public static void changeReference(Foo a)
+     {
+          Foo b = new Foo("b");
+          a = b;
+     }
+     public static void modifyReference(Foo c)
+     {
+          c.setAttribute("c");
+     }
+}
+</code></pre>
+
+<p>I will explain this in steps:</p>
+
+<ol>
+<li><p>Declaring a reference named <code>f</code> of type <code>Foo</code> and assign it to a new object of type <code>Foo</code> with an attribute <code>"f"</code>.</p>
+
+<pre><code>Foo f = new Foo("f");
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/arXpP.png" alt="enter image description here"></p></li>
+<li><p>From the method side, a reference of type <code>Foo</code> with a name <code>a</code> is declared and it's initially assigned to <code>null</code>.</p>
+
+<pre><code>public static void changeReference(Foo a)
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/k2LBD.png" alt="enter image description here"></p></li>
+<li><p>As you call the method <code>changeReference</code>, the reference <code>a</code> will be assigned to the object which is passed as an argument.</p>
+
+<pre><code>changeReference(f);
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/1Ez74.png" alt="enter image description here"></p></li>
+<li><p>Declaring a reference named <code>b</code> of type <code>Foo</code> and assign it to a new object of type <code>Foo</code> with an attribute <code>"b"</code>.</p>
+
+<pre><code>Foo b = new Foo("b");
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/Krx4N.png" alt="enter image description here"></p></li>
+<li><p><code>a = b</code> is re-assigning the reference <code>a</code> NOT <code>f</code> to the object whose its attribute is <code>"b"</code>.</p>
+
+<p><img src="http://i.stack.imgur.com/rCluu.png" alt="enter image description here"></p>
+
+<hr></li>
+<li><p>As you call <code>modifyReference(Foo c)</code> method, a reference <code>c</code> is created and assigned to the object with attribute <code>"f"</code>.</p>
+
+<p><img src="http://i.stack.imgur.com/PRZPg.png" alt="enter image description here"></p></li>
+<li><p><code>c.setAttribute("c");</code> will change the attribute of the object that reference <code>c</code> points to it, and it's same object that reference <code>f</code> points to it.</p>
+
+<p><img src="http://i.stack.imgur.com/H9Qsf.png" alt="enter image description here"></p></li>
+</ol>
+
+<p>I hope you understand now how passing objects as arguments works in Java :)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=129,searchfield=]
+2014-12-16 04:58:04:0197, answer_open, VisualItem[tree.nodes,30,id=12429953,type=20,title=,body=<p>Java always passes arguments by value NOT by reference.</p>
+
+<hr>
+
+<p>Let me explain this through an <a href="http://stackoverflow.com/a/9404727/597657">example</a>:</p>
+
+<pre><code>public class Main
+{
+     public static void main(String[] args)
+     {
+          Foo f = new Foo("f");
+          changeReference(f); // It won't change the reference!
+          modifyReference(f); // It will modify the object that the reference variable "f" refers to!
+     }
+     public static void changeReference(Foo a)
+     {
+          Foo b = new Foo("b");
+          a = b;
+     }
+     public static void modifyReference(Foo c)
+     {
+          c.setAttribute("c");
+     }
+}
+</code></pre>
+
+<p>I will explain this in steps:</p>
+
+<ol>
+<li><p>Declaring a reference named <code>f</code> of type <code>Foo</code> and assign it to a new object of type <code>Foo</code> with an attribute <code>"f"</code>.</p>
+
+<pre><code>Foo f = new Foo("f");
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/arXpP.png" alt="enter image description here"></p></li>
+<li><p>From the method side, a reference of type <code>Foo</code> with a name <code>a</code> is declared and it's initially assigned to <code>null</code>.</p>
+
+<pre><code>public static void changeReference(Foo a)
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/k2LBD.png" alt="enter image description here"></p></li>
+<li><p>As you call the method <code>changeReference</code>, the reference <code>a</code> will be assigned to the object which is passed as an argument.</p>
+
+<pre><code>changeReference(f);
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/1Ez74.png" alt="enter image description here"></p></li>
+<li><p>Declaring a reference named <code>b</code> of type <code>Foo</code> and assign it to a new object of type <code>Foo</code> with an attribute <code>"b"</code>.</p>
+
+<pre><code>Foo b = new Foo("b");
+</code></pre>
+
+<p><img src="http://i.stack.imgur.com/Krx4N.png" alt="enter image description here"></p></li>
+<li><p><code>a = b</code> is re-assigning the reference <code>a</code> NOT <code>f</code> to the object whose its attribute is <code>"b"</code>.</p>
+
+<p><img src="http://i.stack.imgur.com/rCluu.png" alt="enter image description here"></p>
+
+<hr></li>
+<li><p>As you call <code>modifyReference(Foo c)</code> method, a reference <code>c</code> is created and assigned to the object with attribute <code>"f"</code>.</p>
+
+<p><img src="http://i.stack.imgur.com/PRZPg.png" alt="enter image description here"></p></li>
+<li><p><code>c.setAttribute("c");</code> will change the attribute of the object that reference <code>c</code> points to it, and it's same object that reference <code>f</code> points to it.</p>
+
+<p><img src="http://i.stack.imgur.com/H9Qsf.png" alt="enter image description here"></p></li>
+</ol>
+
+<p>I hope you understand now how passing objects as arguments works in Java :)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=129,searchfield=]
+2014-12-16 04:58:04:0197, diag_detail_itementered, id=12429953, type=20
+2014-12-16 04:58:06:0548, diag_detail_itemexited, id=12429953, type=20
+2014-12-16 05:02:33:0829, diag_detail_itementered, id=0.5929129556991467, type=4
+2014-12-16 05:02:33:0839, diag_detail_itemexited, id=0.5929129556991467, type=4
+2014-12-16 05:02:33:0859, diag_detail_itementered, id=0.7437239359507859, type=4
+2014-12-16 05:02:33:0889, diag_detail_itemexited, id=0.7437239359507859, type=4
+2014-12-16 05:02:33:0959, answer_open, VisualItem[tree.nodes,11,id=42392,type=20,title=,body=<p>The distinction, or perhaps just the way I remember as I used to be under the same impression as the original poster is this:  Java is always pass by value.  All Objects(in java, anything except for primitives) in java are references.  These references are passed by value.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-16 05:02:33:0959, answer_open, VisualItem[tree.nodes,11,id=42392,type=20,title=,body=<p>The distinction, or perhaps just the way I remember as I used to be under the same impression as the original poster is this:  Java is always pass by value.  All Objects(in java, anything except for primitives) in java are references.  These references are passed by value.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418764162300L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-16 05:02:33:0959, diag_detail_itementered, id=42392, type=20
+2014-12-16 05:02:33:0989, diag_detail_itemexited, id=42392, type=20

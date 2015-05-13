@@ -1,0 +1,360 @@
+2014-08-29 05:13:29:0126, edge_create, Tuple[0,1,0.09744312018825652,3,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0560, question_create, 123
+2014-08-29 05:13:29:0561, edge_create, Tuple[1,2,0.6963528039260468,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0561, question_create, 126
+2014-08-29 05:13:29:0562, edge_create, Tuple[1,3,0.6764230119738759,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0562, question_create, 382
+2014-08-29 05:13:29:0562, edge_create, Tuple[1,4,0.4316781900287052,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0563, question_create, 564
+2014-08-29 05:13:29:0563, edge_create, Tuple[1,5,0.39026516840218584,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0564, question_create, 2092
+2014-08-29 05:13:29:0564, edge_create, Tuple[1,6,0.20595248238102426,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0564, question_create, 2158
+2014-08-29 05:13:29:0565, edge_create, Tuple[1,7,0.4469296144527808,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0566, question_create, 2931
+2014-08-29 05:13:29:0566, edge_create, Tuple[1,8,0.22477604332250545,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0567, question_create, 2968
+2014-08-29 05:13:29:0567, edge_create, Tuple[1,9,0.93061657128135,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0568, question_create, 3049
+2014-08-29 05:13:29:0568, edge_create, Tuple[1,10,0.5632223656238008,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0568, question_create, 3881
+2014-08-29 05:13:29:0569, edge_create, Tuple[1,11,0.13898192560099176,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0569, question_create, 4080
+2014-08-29 05:13:29:0570, edge_create, Tuple[1,12,0.4057000038193118,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0570, question_create, 4149
+2014-08-29 05:13:29:0570, edge_create, Tuple[1,13,0.6719741397489031,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0571, question_create, 4242
+2014-08-29 05:13:29:0571, edge_create, Tuple[1,14,0.8253841396447815,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0572, question_create, 4630
+2014-08-29 05:13:29:0572, edge_create, Tuple[1,15,0.6936001507742969,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0572, question_create, 4922
+2014-08-29 05:13:29:0573, edge_create, Tuple[1,16,0.38851122773694236,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0574, question_create, 5078
+2014-08-29 05:13:29:0575, edge_create, Tuple[1,17,0.17210257194201262,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0575, question_create, 5222
+2014-08-29 05:13:29:0575, edge_create, Tuple[1,18,0.6934641738887528,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0576, question_create, 5328
+2014-08-29 05:13:29:0576, edge_create, Tuple[1,19,0.5551114406091293,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0576, question_create, 5514
+2014-08-29 05:13:29:0577, edge_create, Tuple[1,20,0.08566688408763368,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0577, question_create, 5527
+2014-08-29 05:13:29:0578, edge_create, Tuple[1,21,0.6967043015724882,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0578, question_create, 5855
+2014-08-29 05:13:29:0578, edge_create, Tuple[1,22,0.17705344133997203,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0579, question_create, 6222
+2014-08-29 05:13:29:0579, edge_create, Tuple[1,23,0.19347661050251996,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0579, question_create, 6392
+2014-08-29 05:13:29:0580, edge_create, Tuple[1,24,0.34659371542907313,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0580, question_create, 6612
+2014-08-29 05:13:29:0580, edge_create, Tuple[1,25,0.9553223032755934,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0581, question_create, 6639
+2014-08-29 05:13:29:0581, edge_create, Tuple[1,26,0.2124945369093577,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0582, question_create, 6658
+2014-08-29 05:13:29:0582, edge_create, Tuple[1,27,0.510410972063448,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0582, question_create, 6682
+2014-08-29 05:13:29:0583, edge_create, Tuple[1,28,0.7068208167083069,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0583, question_create, 6765
+2014-08-29 05:13:29:0583, edge_create, Tuple[1,29,0.47770467001774164,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0584, question_create, 6816
+2014-08-29 05:13:29:0584, edge_create, Tuple[1,30,0.11209001762487059,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0586, question_create, 7269
+2014-08-29 05:13:29:0588, edge_create, Tuple[1,31,0.91729312487078,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0589, question_create, 7291
+2014-08-29 05:13:29:0589, edge_create, Tuple[1,32,0.45270715229365954,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0590, question_create, 7539
+2014-08-29 05:13:29:0590, edge_create, Tuple[1,33,0.049973190851391736,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0591, question_create, 7596
+2014-08-29 05:13:29:0591, edge_create, Tuple[1,34,0.3908715770084209,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0591, question_create, 7661
+2014-08-29 05:13:29:0592, edge_create, Tuple[1,35,0.6121143540283306,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0592, question_create, 7681
+2014-08-29 05:13:29:0592, edge_create, Tuple[1,36,0.12886926836493795,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0593, question_create, 7720
+2014-08-29 05:13:29:0593, edge_create, Tuple[1,37,0.9473207924030582,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0594, question_create, 7779
+2014-08-29 05:13:29:0594, edge_create, Tuple[1,38,0.34266416991712123,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0595, question_create, 8219
+2014-08-29 05:13:29:0595, edge_create, Tuple[1,39,0.7282283071156956,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0596, question_create, 8318
+2014-08-29 05:13:29:0597, edge_create, Tuple[1,40,0.3937356906083417,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0597, question_create, 8569
+2014-08-29 05:13:29:0598, edge_create, Tuple[1,41,0.9235953542194888,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0598, question_create, 8599
+2014-08-29 05:13:29:0599, edge_create, Tuple[1,42,0.7186255519227157,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0599, question_create, 8968
+2014-08-29 05:13:29:0600, edge_create, Tuple[1,43,0.5794190124382362,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0600, question_create, 9044
+2014-08-29 05:13:29:0601, edge_create, Tuple[1,44,0.5632237497155468,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0601, question_create, 9361
+2014-08-29 05:13:29:0602, edge_create, Tuple[1,45,0.048010617820685386,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0602, question_create, 9913
+2014-08-29 05:13:29:0603, edge_create, Tuple[1,46,0.9991360041056027,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0603, question_create, 10042
+2014-08-29 05:13:29:0604, edge_create, Tuple[1,47,0.18381270949864525,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0604, question_create, 10506
+2014-08-29 05:13:29:0605, edge_create, Tuple[1,48,0.2733562218415123,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0605, question_create, 10586
+2014-08-29 05:13:29:0606, edge_create, Tuple[1,49,0.5153572068016194,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0606, question_create, 10980
+2014-08-29 05:13:29:0607, edge_create, Tuple[1,50,0.04385919895442503,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0607, question_create, 11088
+2014-08-29 05:13:29:0608, edge_create, Tuple[1,51,0.6134171357817405,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0609, question_create, 11338
+2014-08-29 05:13:29:0609, edge_create, Tuple[1,52,0.4397038584158002,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0609, question_create, 11341
+2014-08-29 05:13:29:0610, edge_create, Tuple[1,53,0.49847011263931174,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0610, question_create, 11561
+2014-08-29 05:13:29:0610, edge_create, Tuple[1,54,0.35498985822630447,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0611, question_create, 11930
+2014-08-29 05:13:29:0611, edge_create, Tuple[1,55,0.48657916743231044,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0611, question_create, 12088
+2014-08-29 05:13:29:0612, edge_create, Tuple[1,56,0.09486191271879296,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0612, question_create, 12144
+2014-08-29 05:13:29:0613, edge_create, Tuple[1,57,0.9603414259463068,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0613, question_create, 12870
+2014-08-29 05:13:29:0613, edge_create, Tuple[1,58,0.7951493539152604,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0614, question_create, 12877
+2014-08-29 05:13:29:0614, edge_create, Tuple[1,59,0.09741032509063152,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0614, question_create, 12927
+2014-08-29 05:13:29:0615, edge_create, Tuple[1,60,0.7447377866313091,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0615, question_create, 13225
+2014-08-29 05:13:29:0615, edge_create, Tuple[1,61,0.09815006607927157,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0616, question_create, 13751
+2014-08-29 05:13:29:0616, edge_create, Tuple[1,62,0.3640858893333212,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0617, question_create, 13863
+2014-08-29 05:13:29:0617, edge_create, Tuple[1,63,0.25923676900874537,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0617, question_create, 14397
+2014-08-29 05:13:29:0618, edge_create, Tuple[1,64,0.600247658513002,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0618, question_create, 14617
+2014-08-29 05:13:29:0618, edge_create, Tuple[1,65,0.7526129487974494,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0619, question_create, 14801
+2014-08-29 05:13:29:0619, edge_create, Tuple[1,66,0.5572810409047556,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0620, question_create, 15305
+2014-08-29 05:13:29:0620, edge_create, Tuple[1,67,0.9283884931954819,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0621, question_create, 15481
+2014-08-29 05:13:29:0621, edge_create, Tuple[1,68,0.41309077313387466,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0621, question_create, 15496
+2014-08-29 05:13:29:0622, edge_create, Tuple[1,69,0.6834452665350408,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0622, question_create, 15528
+2014-08-29 05:13:29:0622, edge_create, Tuple[1,70,0.9047596151377548,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0623, question_create, 15649
+2014-08-29 05:13:29:0623, edge_create, Tuple[1,71,0.07015032443896485,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0626, pattern_create, 2109443059
+2014-08-29 05:13:29:0626, edge_create, Tuple[0,72,0.6725891888348833,3,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0639, question_create, 43344
+2014-08-29 05:13:29:0639, edge_create, Tuple[72,73,0.08534961026955779,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0640, question_create, 6612
+2014-08-29 05:13:29:0640, edge_create, Tuple[72,74,0.5198454413057811,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0640, question_create, 7291
+2014-08-29 05:13:29:0641, edge_create, Tuple[72,75,0.030454889620335934,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0641, pattern_create, 1641682794
+2014-08-29 05:13:29:0642, edge_create, Tuple[0,76,0.6051525963716635,3,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0649, question_create, 123
+2014-08-29 05:13:29:0649, edge_create, Tuple[76,77,0.09883726284731409,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0650, question_create, 29324
+2014-08-29 05:13:29:0650, edge_create, Tuple[76,78,0.8753009249683462,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0650, question_create, 19347
+2014-08-29 05:13:29:0651, edge_create, Tuple[76,79,0.8849060215464408,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0652, pattern_create, -771804441
+2014-08-29 05:13:29:0653, edge_create, Tuple[0,80,0.7587467602644512,3,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0660, question_create, 41107
+2014-08-29 05:13:29:0661, edge_create, Tuple[80,81,0.35631727994450213,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0661, question_create, 11930
+2014-08-29 05:13:29:0661, edge_create, Tuple[80,82,0.5682328709835524,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0662, question_create, 37628
+2014-08-29 05:13:29:0662, edge_create, Tuple[80,83,0.8509779540227062,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0662, pattern_create, 1796611198
+2014-08-29 05:13:29:0663, edge_create, Tuple[0,84,0.9518153576402001,3,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0669, question_create, 40471
+2014-08-29 05:13:29:0669, edge_create, Tuple[84,85,0.7962719880568858,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0670, question_create, 24596
+2014-08-29 05:13:29:0670, edge_create, Tuple[84,86,0.5353438250132018,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0670, question_create, 6658
+2014-08-29 05:13:29:0671, edge_create, Tuple[84,87,0.8697448363506963,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0671, question_create, 21934
+2014-08-29 05:13:29:0671, edge_create, Tuple[84,88,0.019424910329898792,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:29:0947, setup_loaddata
+2014-08-29 05:13:32:0672, diag_itementered, id=7291, type=1
+2014-08-29 05:13:32:0826, diag_itemexited, id=7291, type=1
+2014-08-29 05:13:32:0869, diag_itementered, id=6612, type=1
+2014-08-29 05:13:33:0428, diag_itemdragged, id=6612, type=1
+2014-08-29 05:13:33:0444, diag_itemdragged, id=6612, type=1
+2014-08-29 05:13:33:0835, diag_itemexited, id=6612, type=1
+2014-08-29 05:13:35:0349, diag_itementered, id=4630, type=1
+2014-08-29 05:13:35:0388, diag_itemexited, id=4630, type=1
+2014-08-29 05:13:36:0322, diag_itementered, id=6612, type=1
+2014-08-29 05:13:38:0061, edge_create, Tuple[0,1,0.0769703600521301,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0063, answer_create, 6648
+2014-08-29 05:13:38:0065, edge_create, Tuple[1,2,0.03655179409156528,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0066, answer_create, 6655
+2014-08-29 05:13:38:0067, edge_create, Tuple[1,3,0.8902514796707488,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0068, answer_create, 6683
+2014-08-29 05:13:38:0069, edge_create, Tuple[1,4,0.09897286681099449,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0070, answer_create, 194501
+2014-08-29 05:13:38:0071, edge_create, Tuple[1,5,0.9260534821943658,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0072, answer_create, 520402
+2014-08-29 05:13:38:0073, edge_create, Tuple[1,6,0.737697873602892,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0075, answer_create, 520504
+2014-08-29 05:13:38:0076, edge_create, Tuple[1,7,0.22264497347925238,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0077, answer_create, 555932
+2014-08-29 05:13:38:0078, edge_create, Tuple[1,8,0.1636193189326336,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0079, answer_create, 863528
+2014-08-29 05:13:38:0080, edge_create, Tuple[1,9,0.6734590915676842,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0081, answer_create, 1881391
+2014-08-29 05:13:38:0082, edge_create, Tuple[1,10,0.39200576988053626,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0083, answer_create, 2573538
+2014-08-29 05:13:38:0083, edge_create, Tuple[1,11,0.5654445572736121,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0086, answer_create, 3548418
+2014-08-29 05:13:38:0087, edge_create, Tuple[1,12,0.13367293189875507,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0087, answer_create, 3558349
+2014-08-29 05:13:38:0088, edge_create, Tuple[1,13,0.03253508849550035,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0088, answer_create, 3867975
+2014-08-29 05:13:38:0089, edge_create, Tuple[1,14,0.9451529812762219,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0090, answer_create, 8769904
+2014-08-29 05:13:38:0090, edge_create, Tuple[1,15,0.9578343019470903,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0091, answer_create, 11265300
+2014-08-29 05:13:38:0091, edge_create, Tuple[1,16,0.1744822144724868,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0092, answer_create, 12954099
+2014-08-29 05:13:38:0092, edge_create, Tuple[1,17,0.9178247466552139,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0093, answer_create, 13782534
+2014-08-29 05:13:38:0094, edge_create, Tuple[1,18,0.3702587127132665,4,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0096, edge_create, Tuple[0,19,0.9596219685435416,1,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0097, edge_create, Tuple[19,20,0.7239535743513636,1,0.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0099, edge_create, Tuple[0,21,0.7178890392211642,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0099, pattern_create, -33839106
+2014-08-29 05:13:38:0100, edge_create, Tuple[21,22,0.1767883749267557,2,1.0,1409303609120,1409303609120]
+2014-08-29 05:13:38:0117, discussion_open, 6612
+2014-08-29 05:13:38:0117, diag_itemclicked, id=6612, type=1
+2014-08-29 05:13:38:0626, diag_itemexited, id=6612, type=1
+2014-08-29 05:13:39:0355, diag_itementered, id=13782534, type=20
+2014-08-29 05:13:40:0213, diag_itemexited, id=13782534, type=20
+2014-08-29 05:13:46:0105, diag_itementered, id=180761472, type=3
+2014-08-29 05:13:46:0156, diag_itemexited, id=180761472, type=3
+2014-08-29 05:13:46:0661, diag_itementered, id=6648, type=20
+2014-08-29 05:13:46:0674, diag_itemexited, id=6648, type=20
+2014-08-29 05:13:47:0101, diag_itementered, id=6648, type=20
+2014-08-29 05:13:47:0566, answer_open, VisualItem[tree.nodes,2,id=6648,type=20,title=,body=<P>I used JFreeChart (<A href="http://www.jfree.org/jfreechart/" rel="nofollow">http://www.jfree.org/jfreechart/</A>) on a previous project. It has some very good built-in capabilities, and the design was WAY extensible so you could always roll your own extension later if you needed some custom chart annotation or wanted an axis to render differently, or whatever. It's definitely worth checking out.</P>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:13:49:0435, diag_itemexited, id=6648, type=20
+2014-08-29 05:13:49:0471, diag_itementered, id=0.03253508849550035, type=4
+2014-08-29 05:13:49:0489, diag_itemexited, id=0.03253508849550035, type=4
+2014-08-29 05:13:49:0806, diag_itementered, id=0.13367293189875507, type=4
+2014-08-29 05:13:49:0825, diag_itemexited, id=0.13367293189875507, type=4
+2014-08-29 05:13:49:0827, diag_itementered, id=3548418, type=20
+2014-08-29 05:13:50:0191, diag_itemexited, id=3548418, type=20
+2014-08-29 05:13:50:0716, diag_itementered, id=0.13367293189875507, type=4
+2014-08-29 05:13:50:0725, diag_itemexited, id=0.13367293189875507, type=4
+2014-08-29 05:13:50:0884, diag_itementered, id=8769904, type=20
+2014-08-29 05:13:50:0949, diag_itemexited, id=8769904, type=20
+2014-08-29 05:13:51:0005, diag_itementered, id=11265300, type=20
+2014-08-29 05:13:51:0015, diag_itemexited, id=11265300, type=20
+2014-08-29 05:13:51:0037, diag_itementered, id=12954099, type=20
+2014-08-29 05:13:51:0053, diag_itemexited, id=12954099, type=20
+2014-08-29 05:13:51:0566, diag_itementered, id=25765, type=1
+2014-08-29 05:13:52:0711, diag_itemexited, id=25765, type=1
+2014-08-29 05:13:52:0854, diag_itementered, id=0.0769703600521301, type=4
+2014-08-29 05:13:52:0877, diag_itemexited, id=0.0769703600521301, type=4
+2014-08-29 05:13:53:0294, diag_itementered, id=0.0769703600521301, type=4
+2014-08-29 05:13:53:0320, diag_itemexited, id=0.0769703600521301, type=4
+2014-08-29 05:13:53:0341, diag_itementered, id=0.3702587127132665, type=4
+2014-08-29 05:13:53:0353, diag_itemexited, id=0.3702587127132665, type=4
+2014-08-29 05:13:53:0397, diag_itementered, id=0.9178247466552139, type=4
+2014-08-29 05:13:53:0408, diag_itemexited, id=0.9178247466552139, type=4
+2014-08-29 05:13:53:0462, diag_itementered, id=0.1744822144724868, type=4
+2014-08-29 05:13:53:0478, diag_itemexited, id=0.1744822144724868, type=4
+2014-08-29 05:13:53:0710, diag_itementered, id=11265300, type=20
+2014-08-29 05:13:54:0267, answer_open, VisualItem[tree.nodes,16,id=11265300,type=20,title=,body=<p><a href="http://autoplot.org/" rel="nofollow">http://autoplot.org/</a> allows for real-time updates and can be used to create many types of scientific plots.</p>
+
+<p>To update the plot, specify the URL to a data file and then append <code>&amp;filePollUpdates=1&amp;tail=100</code>.  See the example at <a href="http://autoplot.org/cookbook#Loading_Data" rel="nofollow">http://autoplot.org/cookbook#Loading_Data</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=1]
+2014-08-29 05:13:55:0054, diag_itemexited, id=11265300, type=20
+2014-08-29 05:13:55:0078, diag_itementered, id=0.9578343019470903, type=4
+2014-08-29 05:13:55:0086, diag_itemexited, id=0.9578343019470903, type=4
+2014-08-29 05:13:55:0126, diag_itementered, id=13782534, type=20
+2014-08-29 05:13:55:0296, diag_itemexited, id=13782534, type=20
+2014-08-29 05:13:56:0822, answer_open, VisualItem[tree.nodes,9,id=863528,type=20,title=,body=<p>I just ran into a similar issue (displaying fast-updating data for engineering purposes), and I'm using <a href="http://jchart2d.sourceforge.net/docs/javadoc/index.html" rel="nofollow">JChart2D</a>. It's pretty minimalist and has a few quirks but it seems fairly fast: I'm running a benchmark speed test where it's adding 2331 points per second (333x7 traces) to a strip chart and uses 1% of the CPU on my 3GHz Pentium 4.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=3]
+2014-08-29 05:13:57:0758, answer_open, VisualItem[tree.nodes,11,id=2573538,type=20,title=,body=<p>Look at SCaVis package <a href="http://jwork.org/scavis/" rel="nofollow">http://jwork.org/scavis/</a></p>
+
+<p>The program is used for scientific plots visualization of data</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=2]
+2014-08-29 05:14:04:0844, answer_open, VisualItem[tree.nodes,10,id=1881391,type=20,title=,body=<p>You might want to check out JMathPlot</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:14:06:0138, answer_open, VisualItem[tree.nodes,12,id=3548418,type=20,title=,body=<p><a href="http://www.brusoftware.com/plot4j.php" rel="nofollow">Plot4j</a> supports also real-time plotting!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=1]
+2014-08-29 05:14:07:0801, diag_itementered, id=6648, type=20
+2014-08-29 05:14:09:0040, answer_open, VisualItem[tree.nodes,2,id=6648,type=20,title=,body=<P>I used JFreeChart (<A href="http://www.jfree.org/jfreechart/" rel="nofollow">http://www.jfree.org/jfreechart/</A>) on a previous project. It has some very good built-in capabilities, and the design was WAY extensible so you could always roll your own extension later if you needed some custom chart annotation or wanted an axis to render differently, or whatever. It's definitely worth checking out.</P>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:14:12:0482, diag_itemexited, id=6648, type=20
+2014-08-29 05:14:44:0128, answer_open, VisualItem[tree.nodes,4,id=6683,type=20,title=,body=<p>I've used <a href="http://www.jfree.org/jfreechart/" rel="nofollow">JFreeChart</a> in a rather complex application that needed to visualize data streams and calculations based on the data. We implemented the ability to visually edit the data plots by mouse and had a very large set of data points. JFreeChart handled it very well.</p>
+
+<p>Unfortunately I was stuck with v0.7, but the newest release are sooo much better when it comes to API clarity. The community is very helpful and the developers are responding to mails too.</p>
+
+<p>If you're doing a web application and don't want to bother with libraries, you can check the <a href="http://code.google.com/apis/chart/" rel="nofollow">Google Chart API</a>. Didn't use it myself, but I started some tests which were very promising.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:14:45:0584, diag_itementered, id=6655, type=21
+2014-08-29 05:14:45:0629, diag_itemexited, id=6655, type=21
+2014-08-29 05:14:45:0943, diag_itementered, id=0.8902514796707488, type=4
+2014-08-29 05:14:45:0957, diag_itemexited, id=0.8902514796707488, type=4
+2014-08-29 05:14:45:0960, diag_itementered, id=6655, type=21
+2014-08-29 05:14:47:0262, answer_open, VisualItem[tree.nodes,3,id=6655,type=21,title=,body=<p>I've had success using JFreeChart on multiple projects. It is <em>very</em> configurable. JFreeChart is open source, but they charge for the developer guide. If you're doing something simple, the sample code is probably good enough. Otherwise, $50 for the developer guide is a pretty good bargain.</p>
+
+<p>With respect to "real-time" data, I've also used JFreeChart for these sorts of applications. Unfortunately, I had to create some custom data models with appropriate synchronization mechanisms to avoid race conditions. However, it wasn't terribly difficult and JFreeChart would still be my first choice. However, as the FAQ suggests, JFreeChart might not give you the best performance if that is a big concern.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=11]
+2014-08-29 05:14:50:0462, diag_itemexited, id=6655, type=21
+2014-08-29 05:14:53:0831, answer_open, VisualItem[tree.nodes,2,id=6648,type=20,title=,body=<P>I used JFreeChart (<A href="http://www.jfree.org/jfreechart/" rel="nofollow">http://www.jfree.org/jfreechart/</A>) on a previous project. It has some very good built-in capabilities, and the design was WAY extensible so you could always roll your own extension later if you needed some custom chart annotation or wanted an axis to render differently, or whatever. It's definitely worth checking out.</P>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:04:0823, diag_itementered, id=6683, type=20
+2014-08-29 05:16:05:0195, diag_itemexited, id=6683, type=20
+2014-08-29 05:16:05:0946, answer_open, VisualItem[tree.nodes,5,id=194501,type=20,title=,body=<p>Check ILOG's <a href="http://www.ilog.com/products/jviews/" rel="nofollow">JViews</a> - they have a lot of stuff and something might fit your needs. All of them are extremely configurable and quite fast. Not free though.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:07:0911, answer_open, VisualItem[tree.nodes,6,id=520402,type=20,title=,body=<p>For real-time plotting you can use QN Plot, JOpenChart or its fork Openchart2.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:09:0027, answer_open, VisualItem[tree.nodes,7,id=520504,type=20,title=,body=<p>JHandles is an alternative graphics package for Octave (a math package).  It is probably worth looking into, but being Octave specific may not have what you need.</p>
+
+
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:11:0034, answer_open, VisualItem[tree.nodes,8,id=555932,type=20,title=,body=<p><a href="http://www.live-graph.org/" rel="nofollow">Live Graph</a> supports real-time rendering.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=2]
+2014-08-29 05:16:13:0165, answer_open, VisualItem[tree.nodes,3,id=6655,type=21,title=,body=<p>I've had success using JFreeChart on multiple projects. It is <em>very</em> configurable. JFreeChart is open source, but they charge for the developer guide. If you're doing something simple, the sample code is probably good enough. Otherwise, $50 for the developer guide is a pretty good bargain.</p>
+
+<p>With respect to "real-time" data, I've also used JFreeChart for these sorts of applications. Unfortunately, I had to create some custom data models with appropriate synchronization mechanisms to avoid race conditions. However, it wasn't terribly difficult and JFreeChart would still be my first choice. However, as the FAQ suggests, JFreeChart might not give you the best performance if that is a big concern.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=11]
+2014-08-29 05:16:14:0323, answer_open, VisualItem[tree.nodes,2,id=6648,type=20,title=,body=<P>I used JFreeChart (<A href="http://www.jfree.org/jfreechart/" rel="nofollow">http://www.jfree.org/jfreechart/</A>) on a previous project. It has some very good built-in capabilities, and the design was WAY extensible so you could always roll your own extension later if you needed some custom chart annotation or wanted an axis to render differently, or whatever. It's definitely worth checking out.</P>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:16:0545, answer_open, VisualItem[tree.nodes,5,id=194501,type=20,title=,body=<p>Check ILOG's <a href="http://www.ilog.com/products/jviews/" rel="nofollow">JViews</a> - they have a lot of stuff and something might fit your needs. All of them are extremely configurable and quite fast. Not free though.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:19:0250, answer_open, VisualItem[tree.nodes,8,id=555932,type=20,title=,body=<p><a href="http://www.live-graph.org/" rel="nofollow">Live Graph</a> supports real-time rendering.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=2]
+2014-08-29 05:16:21:0234, answer_open, VisualItem[tree.nodes,9,id=863528,type=20,title=,body=<p>I just ran into a similar issue (displaying fast-updating data for engineering purposes), and I'm using <a href="http://jchart2d.sourceforge.net/docs/javadoc/index.html" rel="nofollow">JChart2D</a>. It's pretty minimalist and has a few quirks but it seems fairly fast: I'm running a benchmark speed test where it's adding 2331 points per second (333x7 traces) to a strip chart and uses 1% of the CPU on my 3GHz Pentium 4.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=3]
+2014-08-29 05:16:22:0542, answer_open, VisualItem[tree.nodes,10,id=1881391,type=20,title=,body=<p>You might want to check out JMathPlot</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:23:0571, answer_open, VisualItem[tree.nodes,3,id=6655,type=21,title=,body=<p>I've had success using JFreeChart on multiple projects. It is <em>very</em> configurable. JFreeChart is open source, but they charge for the developer guide. If you're doing something simple, the sample code is probably good enough. Otherwise, $50 for the developer guide is a pretty good bargain.</p>
+
+<p>With respect to "real-time" data, I've also used JFreeChart for these sorts of applications. Unfortunately, I had to create some custom data models with appropriate synchronization mechanisms to avoid race conditions. However, it wasn't terribly difficult and JFreeChart would still be my first choice. However, as the FAQ suggests, JFreeChart might not give you the best performance if that is a big concern.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=11]
+2014-08-29 05:16:26:0030, answer_open, VisualItem[tree.nodes,11,id=2573538,type=20,title=,body=<p>Look at SCaVis package <a href="http://jwork.org/scavis/" rel="nofollow">http://jwork.org/scavis/</a></p>
+
+<p>The program is used for scientific plots visualization of data</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=2]
+2014-08-29 05:16:27:0788, answer_open, VisualItem[tree.nodes,12,id=3548418,type=20,title=,body=<p><a href="http://www.brusoftware.com/plot4j.php" rel="nofollow">Plot4j</a> supports also real-time plotting!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=1]
+2014-08-29 05:16:28:0518, answer_open, VisualItem[tree.nodes,13,id=3558349,type=20,title=,body=<p>I'm using <a href="http://trac.erichseifert.de/gral" rel="nofollow">GRAL</a> for real-time plotting. It's an LGPL Java library. Although it's not as powerful as JFreeChart it has a nicer API. I got a plot up and running in very short time. They also ship a real-time plotting example.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=1]
+2014-08-29 05:16:39:0789, answer_open, VisualItem[tree.nodes,15,id=8769904,type=20,title=,body=<p>I found this question when I was googling for open source plotting libraries for java. I wasn't quite happy with the answers posted here so I did some further research on the issue.
+Although this question has been posted back in 2008 this might still be interesting to someone.</p>
+
+<p>Here is a list of <a href="http://java-source.net/open-source/charting-and-reporting" rel="nofollow">Open Source Charting &amp; Reporting Tools in Java</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:43:0218, answer_open, VisualItem[tree.nodes,14,id=3867975,type=20,title=,body=<p><a href="http://ptolemy.berkeley.edu/java/ptplot/" rel="nofollow">PtPlot</a>
+may be a good choice.  Formerly called Ptolemy.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:47:0527, diag_itementered, id=-2046738869, type=3
+2014-08-29 05:16:47:0606, diag_itemexited, id=-2046738869, type=3
+2014-08-29 05:16:47:0703, diag_itementered, id=180761472, type=3
+2014-08-29 05:16:47:0714, diag_itemexited, id=180761472, type=3
+2014-08-29 05:16:48:0718, diag_itementered, id=25765, type=1
+2014-08-29 05:16:49:0949, diag_itemexited, id=25765, type=1
+2014-08-29 05:16:49:0952, diag_itementered, id=0.7239535743513636, type=1
+2014-08-29 05:16:49:0996, diag_itemexited, id=0.7239535743513636, type=1
+2014-08-29 05:16:50:0021, diag_itementered, id=180761472, type=3
+2014-08-29 05:16:50:0044, diag_itemexited, id=180761472, type=3
+2014-08-29 05:16:50:0229, diag_itementered, id=0.7178890392211642, type=2
+2014-08-29 05:16:50:0250, diag_itemexited, id=0.7178890392211642, type=2
+2014-08-29 05:16:50:0686, diag_itementered, id=6648, type=20
+2014-08-29 05:16:51:0231, answer_open, VisualItem[tree.nodes,2,id=6648,type=20,title=,body=<P>I used JFreeChart (<A href="http://www.jfree.org/jfreechart/" rel="nofollow">http://www.jfree.org/jfreechart/</A>) on a previous project. It has some very good built-in capabilities, and the design was WAY extensible so you could always roll your own extension later if you needed some custom chart annotation or wanted an axis to render differently, or whatever. It's definitely worth checking out.</P>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409303609120L,lastactivitydate=0L,tags=,score=0]
+2014-08-29 05:16:51:0334, diag_itemexited, id=6648, type=20

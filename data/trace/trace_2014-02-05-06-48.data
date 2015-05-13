@@ -1,0 +1,19 @@
+2014-02-05 06:48:43:0379, setup_loaddata
+2014-02-05 06:48:44:0101, setup_resizewin
+2014-02-05 06:48:55:0191, diag_itementered, id=6639, type=1
+2014-02-05 06:48:55:0372, diag_itemexited, id=6639, type=1
+2014-02-05 06:48:55:0589, diag_itementered, id=6612, type=1
+2014-02-05 06:48:55:0600, diag_itemexited, id=6612, type=1
+2014-02-05 06:49:01:0760, diag_itementered, id=6392, type=1
+2014-02-05 06:49:05:0352, diag_itemclicked, id=6392, type=1
+2014-02-05 06:49:05:0506, diag_itemexited, id=6392, type=1
+2014-02-05 06:49:06:0984, list_mouseentered, 123
+2014-02-05 06:49:07:0060, list_mouseexited, 
+2014-02-05 06:49:07:0206, diag_itementered, id=5514, type=1
+2014-02-05 06:49:07:0245, diag_itemexited, id=5514, type=1
+2014-02-05 06:49:07:0517, diag_itementered, id=2092, type=1
+2014-02-05 06:49:07:0589, diag_itemexited, id=2092, type=1
+2014-02-05 06:49:07:0854, diag_itementered, id=2968, type=1
+2014-02-05 06:49:08:0633, diag_itemexited, id=2968, type=1
+2014-02-05 06:49:08:0750, list_mouseentered, 126
+2014-02-05 06:49:09:0078, list_mouseexited, 

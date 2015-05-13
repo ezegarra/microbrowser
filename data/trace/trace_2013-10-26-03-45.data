@@ -1,0 +1,14 @@
+2013-10-26 03:45:16:0974, setup_loaddata
+2013-10-26 03:45:17:0208, setup_resizewin
+2013-10-26 03:45:18:0565, diag_itementered, id=35785, type=1
+2013-10-26 03:45:18:0660, diag_itemexited, id=35785, type=1
+2013-10-26 03:45:18:0660, diag_itementered, id=15732, type=1
+2013-10-26 03:45:20:0268, diag_itemclicked, id=15732, type=1
+2013-10-26 03:45:20:0361, diag_itemexited, id=15732, type=1
+2013-10-26 03:45:35:0853, pattern_create, 0.8921984412870805
+2013-10-26 03:45:55:0962, pattern_change_cancel
+2013-10-26 03:45:55:0962, pattern_change_open
+2013-10-26 03:45:59:0910, pattern_change_cancel
+2013-10-26 03:45:59:0910, pattern_change_open
+2013-10-26 03:46:41:0300, diag_itementered, id=0.8074935126914159, type=0
+2013-10-26 03:46:41:0300, diag_itemexited, id=0.8074935126914159, type=0

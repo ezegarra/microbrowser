@@ -1,0 +1,278 @@
+2014-08-27 08:37:32:0352, edge_create, Tuple[0,1,0.8175159911903307,3,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0746, question_create, 123
+2014-08-27 08:37:32:0749, edge_create, Tuple[1,2,0.2555415367659343,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0749, question_create, 126
+2014-08-27 08:37:32:0750, edge_create, Tuple[1,3,0.19857336705734985,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0750, question_create, 382
+2014-08-27 08:37:32:0751, edge_create, Tuple[1,4,0.03242998605457703,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0751, question_create, 564
+2014-08-27 08:37:32:0752, edge_create, Tuple[1,5,0.08398126479608548,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0752, question_create, 2092
+2014-08-27 08:37:32:0752, edge_create, Tuple[1,6,0.5165949437887382,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0753, question_create, 2158
+2014-08-27 08:37:32:0754, edge_create, Tuple[1,7,0.8580349072046847,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0755, question_create, 2931
+2014-08-27 08:37:32:0755, edge_create, Tuple[1,8,0.6601272458733562,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0756, question_create, 2968
+2014-08-27 08:37:32:0756, edge_create, Tuple[1,9,0.10399652540767723,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0756, question_create, 3049
+2014-08-27 08:37:32:0757, edge_create, Tuple[1,10,0.6904735726314557,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0757, question_create, 3881
+2014-08-27 08:37:32:0758, edge_create, Tuple[1,11,0.37662196043025176,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0758, question_create, 4080
+2014-08-27 08:37:32:0758, edge_create, Tuple[1,12,0.12605968667518452,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0759, question_create, 4149
+2014-08-27 08:37:32:0759, edge_create, Tuple[1,13,0.2425677381594994,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0760, question_create, 4242
+2014-08-27 08:37:32:0760, edge_create, Tuple[1,14,0.9125519245701659,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0761, question_create, 4630
+2014-08-27 08:37:32:0761, edge_create, Tuple[1,15,0.7903689104454026,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0761, question_create, 4922
+2014-08-27 08:37:32:0762, edge_create, Tuple[1,16,0.6834965679928892,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0762, question_create, 5078
+2014-08-27 08:37:32:0763, edge_create, Tuple[1,17,0.0760091121467128,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0763, question_create, 5222
+2014-08-27 08:37:32:0763, edge_create, Tuple[1,18,0.5933705239119108,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0764, question_create, 5328
+2014-08-27 08:37:32:0764, edge_create, Tuple[1,19,0.013550464326231526,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0764, question_create, 5514
+2014-08-27 08:37:32:0765, edge_create, Tuple[1,20,0.9535666881606178,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0766, question_create, 5527
+2014-08-27 08:37:32:0766, edge_create, Tuple[1,21,0.5555451660853034,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0766, question_create, 5855
+2014-08-27 08:37:32:0767, edge_create, Tuple[1,22,0.3555308746697894,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0767, question_create, 6222
+2014-08-27 08:37:32:0767, edge_create, Tuple[1,23,0.10083493662464893,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0768, question_create, 6392
+2014-08-27 08:37:32:0768, edge_create, Tuple[1,24,0.5012966337285005,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0768, question_create, 6612
+2014-08-27 08:37:32:0769, edge_create, Tuple[1,25,0.5868033494452386,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0769, question_create, 6639
+2014-08-27 08:37:32:0769, edge_create, Tuple[1,26,0.31928879682410594,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0770, question_create, 6658
+2014-08-27 08:37:32:0770, edge_create, Tuple[1,27,0.7912492855187564,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0770, question_create, 6682
+2014-08-27 08:37:32:0771, edge_create, Tuple[1,28,0.43986728805527353,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0772, question_create, 6765
+2014-08-27 08:37:32:0772, edge_create, Tuple[1,29,0.8109947164821139,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0773, question_create, 6816
+2014-08-27 08:37:32:0773, edge_create, Tuple[1,30,0.8861690004067266,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0773, question_create, 7269
+2014-08-27 08:37:32:0774, edge_create, Tuple[1,31,0.27844429874420507,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0774, question_create, 7291
+2014-08-27 08:37:32:0774, edge_create, Tuple[1,32,0.1250088784725547,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0775, question_create, 7539
+2014-08-27 08:37:32:0775, edge_create, Tuple[1,33,0.6050246096665074,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0776, question_create, 7596
+2014-08-27 08:37:32:0776, edge_create, Tuple[1,34,0.9716810300887373,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0776, question_create, 7661
+2014-08-27 08:37:32:0777, edge_create, Tuple[1,35,0.8363190138380269,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0777, question_create, 7681
+2014-08-27 08:37:32:0777, edge_create, Tuple[1,36,0.3813373098053182,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0778, question_create, 7720
+2014-08-27 08:37:32:0778, edge_create, Tuple[1,37,0.7054713778751635,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0778, question_create, 7779
+2014-08-27 08:37:32:0779, edge_create, Tuple[1,38,0.8462249899631766,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0780, question_create, 8219
+2014-08-27 08:37:32:0780, edge_create, Tuple[1,39,0.26988321315932895,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0780, question_create, 8318
+2014-08-27 08:37:32:0781, edge_create, Tuple[1,40,0.988567742222413,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0781, question_create, 8569
+2014-08-27 08:37:32:0782, edge_create, Tuple[1,41,0.4053162703643619,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0782, question_create, 8599
+2014-08-27 08:37:32:0782, edge_create, Tuple[1,42,0.3575324430162349,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0783, question_create, 8968
+2014-08-27 08:37:32:0783, edge_create, Tuple[1,43,0.15830767088398523,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0783, question_create, 9044
+2014-08-27 08:37:32:0784, edge_create, Tuple[1,44,0.34792411638462717,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0784, question_create, 9361
+2014-08-27 08:37:32:0784, edge_create, Tuple[1,45,0.972502689161934,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0786, question_create, 9913
+2014-08-27 08:37:32:0787, edge_create, Tuple[1,46,0.3284969549354415,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0787, question_create, 10042
+2014-08-27 08:37:32:0788, edge_create, Tuple[1,47,0.5104319138602291,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0788, question_create, 10506
+2014-08-27 08:37:32:0790, edge_create, Tuple[1,48,0.34769559375468784,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0790, question_create, 10586
+2014-08-27 08:37:32:0791, edge_create, Tuple[1,49,0.7958483822240094,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0791, question_create, 10980
+2014-08-27 08:37:32:0791, edge_create, Tuple[1,50,0.3510053278543661,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0792, question_create, 11088
+2014-08-27 08:37:32:0792, edge_create, Tuple[1,51,0.7625694402250249,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0793, question_create, 11338
+2014-08-27 08:37:32:0793, edge_create, Tuple[1,52,0.45177481050087864,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0793, question_create, 11341
+2014-08-27 08:37:32:0794, edge_create, Tuple[1,53,0.7765299473080609,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0794, question_create, 11561
+2014-08-27 08:37:32:0794, edge_create, Tuple[1,54,0.029389012420464322,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0795, question_create, 11930
+2014-08-27 08:37:32:0795, edge_create, Tuple[1,55,0.014270931941666176,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0795, question_create, 12088
+2014-08-27 08:37:32:0796, edge_create, Tuple[1,56,0.9461443418443646,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0796, question_create, 12144
+2014-08-27 08:37:32:0796, edge_create, Tuple[1,57,0.652303627393222,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0797, question_create, 12870
+2014-08-27 08:37:32:0797, edge_create, Tuple[1,58,0.966373246120562,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0797, question_create, 12877
+2014-08-27 08:37:32:0798, edge_create, Tuple[1,59,0.019776254869156906,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0798, question_create, 12927
+2014-08-27 08:37:32:0798, edge_create, Tuple[1,60,0.09566163814370898,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0799, question_create, 13225
+2014-08-27 08:37:32:0799, edge_create, Tuple[1,61,0.2668221223121692,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0800, question_create, 13751
+2014-08-27 08:37:32:0800, edge_create, Tuple[1,62,0.4299082629385892,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0801, question_create, 13863
+2014-08-27 08:37:32:0801, edge_create, Tuple[1,63,0.7312058434042752,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0801, question_create, 14397
+2014-08-27 08:37:32:0802, edge_create, Tuple[1,64,0.6871250352753985,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0802, question_create, 14617
+2014-08-27 08:37:32:0802, edge_create, Tuple[1,65,0.27785231931371646,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0803, question_create, 14801
+2014-08-27 08:37:32:0803, edge_create, Tuple[1,66,0.6910260751347076,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0803, question_create, 15305
+2014-08-27 08:37:32:0804, edge_create, Tuple[1,67,0.12411353211271026,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0804, question_create, 15481
+2014-08-27 08:37:32:0804, edge_create, Tuple[1,68,0.0644861077004375,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0805, question_create, 15496
+2014-08-27 08:37:32:0805, edge_create, Tuple[1,69,0.43589435162133516,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0805, question_create, 15528
+2014-08-27 08:37:32:0806, edge_create, Tuple[1,70,0.48087304405002773,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0806, question_create, 15649
+2014-08-27 08:37:32:0807, edge_create, Tuple[1,71,0.6268416878483669,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0810, pattern_create, 2109443059
+2014-08-27 08:37:32:0810, edge_create, Tuple[0,72,0.2982068763239789,3,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0822, question_create, 43344
+2014-08-27 08:37:32:0822, edge_create, Tuple[72,73,0.3586471856087948,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0823, question_create, 6612
+2014-08-27 08:37:32:0823, edge_create, Tuple[72,74,0.8793268609783306,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0824, question_create, 7291
+2014-08-27 08:37:32:0824, edge_create, Tuple[72,75,0.7221912005853249,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0824, pattern_create, 1641682794
+2014-08-27 08:37:32:0825, edge_create, Tuple[0,76,0.573142953159976,3,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0831, question_create, 123
+2014-08-27 08:37:32:0832, edge_create, Tuple[76,77,0.6769620703402799,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0833, question_create, 29324
+2014-08-27 08:37:32:0833, edge_create, Tuple[76,78,0.2181140138000579,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0834, question_create, 19347
+2014-08-27 08:37:32:0834, edge_create, Tuple[76,79,0.19323836865438193,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0834, pattern_create, -771804441
+2014-08-27 08:37:32:0835, edge_create, Tuple[0,80,0.22796642046984938,3,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0840, question_create, 41107
+2014-08-27 08:37:32:0841, edge_create, Tuple[80,81,0.5343695435759681,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0841, question_create, 11930
+2014-08-27 08:37:32:0841, edge_create, Tuple[80,82,0.2581021828894752,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0842, question_create, 37628
+2014-08-27 08:37:32:0842, edge_create, Tuple[80,83,0.044701227639927454,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0843, pattern_create, 1796611198
+2014-08-27 08:37:32:0844, edge_create, Tuple[0,84,0.13402523756359597,3,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0849, question_create, 40471
+2014-08-27 08:37:32:0850, edge_create, Tuple[84,85,0.6849620012154739,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0850, question_create, 24596
+2014-08-27 08:37:32:0850, edge_create, Tuple[84,86,0.9834489960045079,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0851, question_create, 6658
+2014-08-27 08:37:32:0851, edge_create, Tuple[84,87,0.34707831916713994,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:32:0852, question_create, 21934
+2014-08-27 08:37:32:0852, edge_create, Tuple[84,88,0.2626687669964829,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:33:0059, setup_loaddata
+2014-08-27 08:37:34:0908, diag_itementered, id=6612, type=1
+2014-08-27 08:37:34:0957, diag_itemexited, id=6612, type=1
+2014-08-27 08:37:35:0130, diag_itementered, id=41107, type=1
+2014-08-27 08:37:35:0174, diag_itemexited, id=41107, type=1
+2014-08-27 08:37:35:0407, list_mouseentered, 43344
+2014-08-27 08:37:35:0408, list_mousemoved
+2014-08-27 08:37:35:0477, list_mousemoved
+2014-08-27 08:37:35:0493, list_mousemoved
+2014-08-27 08:37:35:0511, list_mousemoved
+2014-08-27 08:37:35:0559, list_mousemoved
+2014-08-27 08:37:35:0573, list_mousemoved
+2014-08-27 08:37:35:0588, list_mousemoved
+2014-08-27 08:37:35:0604, list_mousemoved
+2014-08-27 08:37:35:0616, list_mouseexited
+2014-08-27 08:37:36:0153, diag_itementered, id=40471, type=1
+2014-08-27 08:37:37:0918, edge_create, Tuple[0,1,0.8533580196225765,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0918, answer_create, 40548
+2014-08-27 08:37:37:0920, edge_create, Tuple[1,2,0.8445470821767426,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0921, answer_create, 40848
+2014-08-27 08:37:37:0921, edge_create, Tuple[1,3,0.12285309738025108,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0922, answer_create, 40483
+2014-08-27 08:37:37:0922, edge_create, Tuple[1,4,0.357451717772586,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0922, answer_create, 40512
+2014-08-27 08:37:37:0923, edge_create, Tuple[1,5,0.5956713066064235,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0923, answer_create, 40522
+2014-08-27 08:37:37:0924, edge_create, Tuple[1,6,0.17721308935648394,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0924, answer_create, 40878
+2014-08-27 08:37:37:0924, edge_create, Tuple[1,7,0.9223774847077407,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0925, answer_create, 40894
+2014-08-27 08:37:37:0925, edge_create, Tuple[1,8,0.6012616249942101,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0925, answer_create, 41454
+2014-08-27 08:37:37:0926, edge_create, Tuple[1,9,0.6318509230042288,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0926, answer_create, 1041798
+2014-08-27 08:37:37:0926, edge_create, Tuple[1,10,0.8273255677577892,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0927, answer_create, 8832544
+2014-08-27 08:37:37:0928, edge_create, Tuple[1,11,0.9216183506170453,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0928, answer_create, 7644118
+2014-08-27 08:37:37:0929, edge_create, Tuple[1,12,0.048297967877148906,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0929, answer_create, 7344090
+2014-08-27 08:37:37:0929, edge_create, Tuple[1,13,0.5074561487770559,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0930, answer_create, 10372667
+2014-08-27 08:37:37:0930, edge_create, Tuple[1,14,0.7181252629385387,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0931, answer_create, 11883473
+2014-08-27 08:37:37:0931, edge_create, Tuple[1,15,0.21477119550289947,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0931, answer_create, 13467173
+2014-08-27 08:37:37:0932, edge_create, Tuple[1,16,0.3769636198428469,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0933, answer_create, 13797704
+2014-08-27 08:37:37:0933, edge_create, Tuple[1,17,0.4868737008755578,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0934, answer_create, 14452144
+2014-08-27 08:37:37:0934, edge_create, Tuple[1,18,0.21164845921092212,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0934, answer_create, 14627155
+2014-08-27 08:37:37:0935, edge_create, Tuple[1,19,0.4718153911763746,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0935, answer_create, 16018266
+2014-08-27 08:37:37:0935, edge_create, Tuple[1,20,0.21211225565670144,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0936, answer_create, 17651399
+2014-08-27 08:37:37:0936, edge_create, Tuple[1,21,0.7801808042572833,4,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0938, edge_create, Tuple[0,22,0.6362724558335021,1,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0938, edge_create, Tuple[22,23,0.28440579409105915,1,0.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0939, edge_create, Tuple[0,24,0.8637281642721724,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0939, pattern_create, 2059608134
+2014-08-27 08:37:37:0940, edge_create, Tuple[24,25,0.562302726574143,2,1.0,1409186252346,1409186252346]
+2014-08-27 08:37:37:0953, discussion_open, 40471
+2014-08-27 08:37:37:0953, diag_itemclicked, id=40471, type=1
+2014-08-27 08:37:37:0955, diag_itemexited, id=40471, type=1
+2014-08-27 08:37:42:0760, answer_open, VisualItem[tree.nodes,4,id=40483,type=20,title=,body=<p>Based on the info <a href="http://www.jguru.com/faq/view.jsp?EID=430247">here</a>, I'd recommend going with HashMap.  I think the biggest advantage is that Java will prevent you from modifying it while you are iterating over it, unless you do it through the iterator.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=5]
+2014-08-27 08:37:44:0641, answer_open, VisualItem[tree.nodes,5,id=40512,type=20,title=,body=<p>Hashtable is synchronized, whereas HashMap isn't. That makes Hashtable slower than Hashmap.</p>
+
+<p>For non-threaded apps, use HashMap since they are otherwise the same in terms of functionality.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=7]
+2014-08-27 08:37:46:0853, answer_open, VisualItem[tree.nodes,6,id=40522,type=20,title=,body=<p>As I understand it, Hashtable is similar to the HashMap and has a similar interface. It is recommended that you use HashMap unless yoou require support for legacy applications or you need synchronisation - as the Hashtables methods are synchronised. So in your case as you are not multi-threading, HashMaps are your best bet.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=8]
+2014-08-27 08:37:47:0721, answer_open, VisualItem[tree.nodes,5,id=40512,type=20,title=,body=<p>Hashtable is synchronized, whereas HashMap isn't. That makes Hashtable slower than Hashmap.</p>
+
+<p>For non-threaded apps, use HashMap since they are otherwise the same in terms of functionality.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=7]
+2014-08-27 08:37:48:0856, answer_open, VisualItem[tree.nodes,4,id=40483,type=20,title=,body=<p>Based on the info <a href="http://www.jguru.com/faq/view.jsp?EID=430247">here</a>, I'd recommend going with HashMap.  I think the biggest advantage is that Java will prevent you from modifying it while you are iterating over it, unless you do it through the iterator.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=5]
+2014-08-27 08:37:50:0245, answer_open, VisualItem[tree.nodes,3,id=40848,type=20,title=,body=<p>For threaded apps, you can often get away with ConcurrentHashMap- depends on your performance requirements.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=4]
+2014-08-27 08:37:51:0177, answer_open, VisualItem[tree.nodes,2,id=40548,type=20,title=,body=<p>In addition to what izb said, <code>HashMap</code> allows null values, whereas the <code>Hashtable</code> does not.</p>
+
+<p>Also note that <code>Hashtable</code> extends the <code>Dictionary</code> class, which as the <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/util/Dictionary.html">Javadocs</a> state, is obsolete and has been replaced by the <code>Map</code> interface.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=23]
+2014-08-27 08:37:52:0657, answer_open, VisualItem[tree.nodes,3,id=40848,type=20,title=,body=<p>For threaded apps, you can often get away with ConcurrentHashMap- depends on your performance requirements.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=4]
+2014-08-27 08:37:53:0200, answer_open, VisualItem[tree.nodes,4,id=40483,type=20,title=,body=<p>Based on the info <a href="http://www.jguru.com/faq/view.jsp?EID=430247">here</a>, I'd recommend going with HashMap.  I think the biggest advantage is that Java will prevent you from modifying it while you are iterating over it, unless you do it through the iterator.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=5]
+2014-08-27 08:37:53:0625, answer_open, VisualItem[tree.nodes,5,id=40512,type=20,title=,body=<p>Hashtable is synchronized, whereas HashMap isn't. That makes Hashtable slower than Hashmap.</p>
+
+<p>For non-threaded apps, use HashMap since they are otherwise the same in terms of functionality.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=7]
+2014-08-27 08:37:54:0097, answer_open, VisualItem[tree.nodes,6,id=40522,type=20,title=,body=<p>As I understand it, Hashtable is similar to the HashMap and has a similar interface. It is recommended that you use HashMap unless yoou require support for legacy applications or you need synchronisation - as the Hashtables methods are synchronised. So in your case as you are not multi-threading, HashMaps are your best bet.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=8]
+2014-08-27 08:37:54:0882, answer_open, VisualItem[tree.nodes,5,id=40512,type=20,title=,body=<p>Hashtable is synchronized, whereas HashMap isn't. That makes Hashtable slower than Hashmap.</p>
+
+<p>For non-threaded apps, use HashMap since they are otherwise the same in terms of functionality.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=7]
+2014-08-27 08:37:55:0329, answer_open, VisualItem[tree.nodes,4,id=40483,type=20,title=,body=<p>Based on the info <a href="http://www.jguru.com/faq/view.jsp?EID=430247">here</a>, I'd recommend going with HashMap.  I think the biggest advantage is that Java will prevent you from modifying it while you are iterating over it, unless you do it through the iterator.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=5]
+2014-08-27 08:37:55:0705, answer_open, VisualItem[tree.nodes,3,id=40848,type=20,title=,body=<p>For threaded apps, you can often get away with ConcurrentHashMap- depends on your performance requirements.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186252346L,lastactivitydate=0L,tags=,score=4]

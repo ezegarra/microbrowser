@@ -1,0 +1,41 @@
+2014-02-26 04:32:01:0829, setup_loaddata
+2014-02-26 04:32:02:0419, setup_resizewin
+2014-02-26 04:32:04:0234, diag_itementered, id=7720, type=1
+2014-02-26 04:32:04:0504, diag_itemexited, id=7720, type=1
+2014-02-26 04:32:04:0615, diag_itementered, id=2033796634, type=0
+2014-02-26 04:32:04:0939, diag_itemdragged, id=2033796634, type=0
+2014-02-26 04:32:05:0188, diag_itemclicked, id=2033796634, type=0
+2014-02-26 04:32:05:0369, diag_itemexited, id=2033796634, type=0
+2014-02-26 04:32:05:0395, diag_itementered, id=6658, type=1
+2014-02-26 04:32:05:0444, diag_itemexited, id=6658, type=1
+2014-02-26 04:32:05:0495, diag_itementered, id=2968, type=1
+2014-02-26 04:32:05:0541, diag_itemexited, id=2968, type=1
+2014-02-26 04:32:05:0542, diag_itementered, id=7291, type=1
+2014-02-26 04:32:05:0579, diag_itemexited, id=7291, type=1
+2014-02-26 04:32:08:0800, edge_create, Tuple[50,51,?,3,0.0,1393450320807,1393450320807]
+2014-02-26 04:32:08:0801, edge_create, Tuple[500,501,?,3,0.0,1393448432261,1393448432261]
+2014-02-26 04:32:16:0789, list_mouseentered, 6639
+2014-02-26 04:32:17:0251, list_mouseexited
+2014-02-26 04:32:34:0130, setup_loaddata
+2014-02-26 04:32:34:0752, setup_resizewin
+2014-02-26 04:32:34:0870, list_mouseentered, 123
+2014-02-26 04:32:34:0871, list_mouseexited
+2014-02-26 04:32:37:0842, diag_itementered, id=11088, type=1
+2014-02-26 04:32:38:0042, diag_itemexited, id=11088, type=1
+2014-02-26 04:32:38:0218, diag_itementered, id=634687556, type=0
+2014-02-26 04:32:38:0857, diag_itemclicked, id=634687556, type=0
+2014-02-26 04:32:39:0099, diag_itemexited, id=634687556, type=0
+2014-02-26 04:32:39:0100, diag_itementered, id=5222, type=1
+2014-02-26 04:32:39:0147, diag_itemexited, id=5222, type=1
+2014-02-26 04:32:39:0170, diag_itementered, id=3881, type=1
+2014-02-26 04:32:39:0199, diag_itemexited, id=3881, type=1
+2014-02-26 04:32:39:0200, diag_itementered, id=7539, type=1
+2014-02-26 04:32:39:0230, diag_itemexited, id=7539, type=1
+2014-02-26 04:34:07:0009, edge_create, Tuple[51,50,?,3,0.0,1393450352931,1393450352931]
+2014-02-26 04:34:52:0353, edge_create, Tuple[501,500,?,3,0.0,1393448432261,1393448432261]
+2014-02-26 04:35:02:0854, diag_itementered, id=8599, type=1
+2014-02-26 04:35:02:0884, diag_itemexited, id=8599, type=1
+2014-02-26 04:35:03:0069, list_mouseentered, 7720
+2014-02-26 04:35:03:0659, list_mouseexited
+2014-02-26 04:35:06:0868, list_mouseentered, 7661
+2014-02-26 04:35:07:0064, list_mouseexited

@@ -1,0 +1,23 @@
+2015-01-21 12:01:28:0898, setup_loaddata_begin
+2015-01-21 12:01:30:0398, setup_loaddata_end
+2015-01-21 12:01:30:0429, setup_createactions_begin
+2015-01-21 12:01:30:0569, setup_createactions_end
+2015-01-21 12:01:32:0301, diag_itementered, id=60764, type=1
+2015-01-21 12:01:32:0348, diag_itemexited, id=60764, type=1
+2015-01-21 12:01:32:0566, diag_itemexited, id=3, type=4
+2015-01-21 12:01:32:0582, diag_itemexited, id=4, type=4
+2015-01-21 12:01:32:0582, diag_itementered, id=564, type=1
+2015-01-21 12:01:32:0644, diag_itemexited, id=564, type=1
+2015-01-21 12:01:32:0675, diag_itemexited, id=4, type=4
+2015-01-21 12:01:34:0363, diag_itemexited, id=2, type=4
+2015-01-21 12:01:35:0191, diag_itemexited, id=1, type=4
+2015-01-21 12:01:35:0191, diag_itementered, id=1, type=0
+2015-01-21 12:01:35:0347, diag_itemexited, id=1, type=0
+2015-01-21 12:01:35:0394, diag_itemexited, id=1, type=4
+2015-01-21 12:01:35:0581, diag_itemexited, id=4, type=4
+2015-01-21 12:01:36:0476, diag_itemexited, id=1, type=4
+2015-01-21 12:01:37:0116, diag_itemexited, id=2, type=4
+2015-01-21 12:01:37:0116, diag_itementered, id=23445, type=1
+2015-01-21 12:01:40:0005, diag_itemexited, id=23445, type=1
+2015-01-21 12:01:40:0052, diag_itemexited, id=2, type=4
+2015-01-21 12:01:40:0083, diag_itemexited, id=1, type=4

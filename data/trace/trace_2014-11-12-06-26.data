@@ -1,0 +1,1906 @@
+2014-11-12 06:26:02:0363, setup_loaddata
+2014-11-12 06:26:05:0146, diag_itementered, id=52353, type=1
+2014-11-12 06:26:05:0208, diag_itemexited, id=52353, type=1
+2014-11-12 06:26:05:0312, list_mouseentered, 37026
+2014-11-12 06:26:05:0560, list_mouseexited
+2014-11-12 06:26:05:0853, diag_itementered, id=48442, type=1
+2014-11-12 06:26:05:0898, diag_itemexited, id=48442, type=1
+2014-11-12 06:26:06:0210, diag_itementered, id=41107, type=1
+2014-11-12 06:26:06:0248, diag_itemexited, id=41107, type=1
+2014-11-12 06:26:06:0286, diag_itementered, id=13751, type=1
+2014-11-12 06:26:06:0336, diag_itemexited, id=13751, type=1
+2014-11-12 06:26:06:0570, diag_itementered, id=13751, type=1
+2014-11-12 06:26:06:0624, diag_itemexited, id=13751, type=1
+2014-11-12 06:26:06:0729, diag_itementered, id=4, type=0
+2014-11-12 06:26:07:0657, diag_itemexited, id=4, type=0
+2014-11-12 06:26:07:0717, diag_itementered, id=1, type=0
+2014-11-12 06:26:07:0763, diag_itemexited, id=1, type=0
+2014-11-12 06:26:08:0090, diag_itementered, id=564, type=1
+2014-11-12 06:26:09:0307, diag_itemexited, id=564, type=1
+2014-11-12 06:26:09:0513, diag_itementered, id=36347, type=1
+2014-11-12 06:26:09:0729, diag_itemexited, id=36347, type=1
+2014-11-12 06:26:09:0800, diag_itementered, id=564, type=1
+2014-11-12 06:26:09:0853, diag_itemexited, id=564, type=1
+2014-11-12 06:26:09:0931, diag_itementered, id=1, type=0
+2014-11-12 06:26:09:0970, diag_itemexited, id=1, type=0
+2014-11-12 06:26:09:0971, diag_itementered, id=4, type=0
+2014-11-12 06:26:10:0425, diag_itemexited, id=4, type=0
+2014-11-12 06:26:10:0710, diag_itementered, id=37026, type=1
+2014-11-12 06:26:10:0756, diag_itemexited, id=37026, type=1
+2014-11-12 06:26:10:0901, diag_itementered, id=3, type=0
+2014-11-12 06:26:11:0324, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0333, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0340, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0347, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0355, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0363, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0372, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0380, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0387, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0395, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0403, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0411, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0419, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0428, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0436, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0443, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0465, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0474, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0482, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0490, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0499, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0506, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0514, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0522, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0530, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0538, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0546, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0554, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0569, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0890, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0898, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0905, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0913, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0921, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0929, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0938, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0946, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0954, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0962, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0970, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0978, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0986, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:11:0994, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0002, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0010, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0018, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0025, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0034, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0042, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0050, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0058, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0086, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0093, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0101, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0108, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0115, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0129, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0161, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0170, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0178, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0186, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0193, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0201, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0209, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0217, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0226, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0234, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0242, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0249, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0257, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0266, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0274, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0282, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0290, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0298, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0306, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0313, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0321, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0329, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0338, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0346, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0354, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0362, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0369, diag_itemdragged, id=3, type=0
+2014-11-12 06:26:12:0531, diag_itemexited, id=3, type=0
+2014-11-12 06:26:12:0674, diag_itementered, id=25331, type=1
+2014-11-12 06:26:12:0724, diag_itemexited, id=25331, type=1
+2014-11-12 06:26:12:0725, diag_itementered, id=1, type=0
+2014-11-12 06:26:13:0012, diag_itemexited, id=1, type=0
+2014-11-12 06:26:13:0014, diag_itementered, id=46898, type=1
+2014-11-12 06:26:13:0070, diag_itemexited, id=46898, type=1
+2014-11-12 06:26:13:0326, diag_itementered, id=46898, type=1
+2014-11-12 06:26:16:0385, edge_create, Tuple[0,1,0.48153571961539476,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0387, answer_create, 46905
+2014-11-12 06:26:16:0391, edge_create, Tuple[1,2,0.3999286926835357,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0392, answer_create, 46908
+2014-11-12 06:26:16:0394, edge_create, Tuple[1,3,0.3278596387065619,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0396, answer_create, 46912
+2014-11-12 06:26:16:0398, edge_create, Tuple[1,4,0.5100747937156066,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0399, answer_create, 46926
+2014-11-12 06:26:16:0401, edge_create, Tuple[1,5,0.4246842963266987,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0402, answer_create, 46989
+2014-11-12 06:26:16:0403, edge_create, Tuple[1,6,0.534491327897643,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0404, answer_create, 47004
+2014-11-12 06:26:16:0405, edge_create, Tuple[1,7,0.895873221679695,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0405, answer_create, 48720
+2014-11-12 06:26:16:0406, edge_create, Tuple[1,8,0.537394773724073,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0407, answer_create, 1295383
+2014-11-12 06:26:16:0408, edge_create, Tuple[1,9,0.2994964878562618,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0409, answer_create, 2190043
+2014-11-12 06:26:16:0410, edge_create, Tuple[1,10,0.26272833283470587,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0410, answer_create, 10632923
+2014-11-12 06:26:16:0411, edge_create, Tuple[1,11,0.8908505452395669,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0412, answer_create, 13943066
+2014-11-12 06:26:16:0413, edge_create, Tuple[1,12,0.4240563826665793,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0414, answer_create, 15556457
+2014-11-12 06:26:16:0415, edge_create, Tuple[1,13,0.07990264865197605,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0415, answer_create, 17404976
+2014-11-12 06:26:16:0416, edge_create, Tuple[1,14,0.1044091273445541,4,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0417, edge_create, Tuple[0,15,0.6242909906586771,2,1.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0418, pattern_create, 3
+2014-11-12 06:26:16:0418, edge_create, Tuple[15,16,0.8808794426842518,2,1.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0419, edge_create, Tuple[0,17,0.5068067461525232,1,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0420, edge_create, Tuple[17,18,0.0623235994965855,1,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0433, edge_create, Tuple[17,19,0.9520406273580844,1,0.0,1415791561354,1415791561354]
+2014-11-12 06:26:16:0447, discussion_open, 46898
+2014-11-12 06:26:16:0447, diag_itemclicked, id=46898, type=1
+2014-11-12 06:26:16:0564, diag_itemexited, id=46898, type=1
+2014-11-12 06:26:19:0292, answer_open, VisualItem[tree.nodes,3,id=46908,type=21,title=,body=<pre><code>for (Map.Entry&lt;String, String&gt; entry : map.entrySet())
+{
+    System.out.println(entry.getKey() + "/" + entry.getValue());
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=572,rawtext=]
+2014-11-12 06:26:19:0298, answer_open, VisualItem[tree.nodes,3,id=46908,type=21,title=,body=<pre><code>for (Map.Entry&lt;String, String&gt; entry : map.entrySet())
+{
+    System.out.println(entry.getKey() + "/" + entry.getValue());
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=572,rawtext=]
+2014-11-12 06:26:19:0299, diag_detail_itementered, id=46908, type=21
+2014-11-12 06:26:21:0576, diag_detail_itemclicked, id=46908, type=21
+2014-11-12 06:26:22:0405, diag_detail_itemexited, id=46908, type=21
+2014-11-12 06:26:27:0803, list_mouseentered, type=detailAnswersList
+2014-11-12 06:26:28:0454, list_mouseexited, type=detailAnswersList
+2014-11-12 06:26:39:0330, list_mouseentered, type=detailAnswersList
+2014-11-12 06:26:39:0441, list_mouseexited, type=detailAnswersList
+2014-11-12 06:26:40:0304, answer_open, VisualItem[tree.nodes,2,id=46905,type=20,title=,body=<p>Yes, the order depends on the specific Map implementation.  </p>
+
+<p>@ScArcher2 has the more elegant Java 1.5 syntax.  In 1.4, I would do something like this:</p>
+
+<pre><code>Iterator entries = myMap.entrySet().iterator();
+while (entries.hasNext()) {
+  Entry thisEntry = (Entry) entries.next();
+  Object key = thisEntry.getKey();
+  Object value = thisEntry.getValue();
+  // ...
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=45,rawtext=]
+2014-11-12 06:26:40:0307, answer_open, VisualItem[tree.nodes,2,id=46905,type=20,title=,body=<p>Yes, the order depends on the specific Map implementation.  </p>
+
+<p>@ScArcher2 has the more elegant Java 1.5 syntax.  In 1.4, I would do something like this:</p>
+
+<pre><code>Iterator entries = myMap.entrySet().iterator();
+while (entries.hasNext()) {
+  Entry thisEntry = (Entry) entries.next();
+  Object key = thisEntry.getKey();
+  Object value = thisEntry.getValue();
+  // ...
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=45,rawtext=]
+2014-11-12 06:26:40:0309, diag_detail_itementered, id=46905, type=20
+2014-11-12 06:26:44:0817, diag_detail_itemclicked, id=46905, type=20
+2014-11-12 06:26:45:0219, diag_detail_itemexited, id=46905, type=20
+2014-11-12 06:27:02:0822, answer_open, VisualItem[tree.nodes,6,id=46989,type=20,title=,body=<p>This is a two part question:</p>
+
+<p><em>How to iterate over the entries of a Map</em> - @ScArcher2 has answered that perfectly.</p>
+
+<p><em>What is the order of iteration</em> - if you are just using <code>Map</code>, then strictly speaking, there are <strong>no ordering guarantees</strong>.  So you shouldn't really rely on the ordering given by any implementation.  However, the <a href="http://java.sun.com/javase/6/docs/api/java/util/SortedMap.html"><code>SortedMap</code></a> interface extends <code>Map</code> and provides exactly what you are looking for - implementations will aways give a consistent sort order.</p>
+
+<p><strong><a href="http://java.sun.com/javase/6/docs/api/java/util/NavigableMap.html"><code>NavigableMap</code></a> is another useful extension</strong> - this is a <code>SortedMap</code> with additional methods for finding entries by their ordered position in the key set.  So potentially this can remove the need for iterating in the first place - you might be able to find the specific <code>entry</code> you are after using the <code>higherEntry</code>, <code>lowerEntry</code>, <code>ceilingEntry</code>, or <code>floorEntry</code> methods.  The <code>descendingMap</code> method even gives you an explicit method of <strong>reversing the traversal order</strong>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=34,rawtext=]
+2014-11-12 06:27:02:0825, answer_open, VisualItem[tree.nodes,6,id=46989,type=20,title=,body=<p>This is a two part question:</p>
+
+<p><em>How to iterate over the entries of a Map</em> - @ScArcher2 has answered that perfectly.</p>
+
+<p><em>What is the order of iteration</em> - if you are just using <code>Map</code>, then strictly speaking, there are <strong>no ordering guarantees</strong>.  So you shouldn't really rely on the ordering given by any implementation.  However, the <a href="http://java.sun.com/javase/6/docs/api/java/util/SortedMap.html"><code>SortedMap</code></a> interface extends <code>Map</code> and provides exactly what you are looking for - implementations will aways give a consistent sort order.</p>
+
+<p><strong><a href="http://java.sun.com/javase/6/docs/api/java/util/NavigableMap.html"><code>NavigableMap</code></a> is another useful extension</strong> - this is a <code>SortedMap</code> with additional methods for finding entries by their ordered position in the key set.  So potentially this can remove the need for iterating in the first place - you might be able to find the specific <code>entry</code> you are after using the <code>higherEntry</code>, <code>lowerEntry</code>, <code>ceilingEntry</code>, or <code>floorEntry</code> methods.  The <code>descendingMap</code> method even gives you an explicit method of <strong>reversing the traversal order</strong>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=34,rawtext=]
+2014-11-12 06:27:02:0827, diag_detail_itementered, id=46989, type=20
+2014-11-12 06:27:03:0082, diag_detail_itemclicked, id=46989, type=20
+2014-11-12 06:27:04:0141, diag_detail_itemexited, id=46989, type=20
+2014-11-12 06:27:07:0656, answer_open, VisualItem[tree.nodes,8,id=48720,type=20,title=,body=<p>The correct way to do this is to use the accepted answer as it is the most efficient. I find the following code looks a bit cleaner.</p>
+
+<pre><code>for (String key: map.keySet()) {
+   System.out.println(key + "/" + map.get(key));
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=10,rawtext=]
+2014-11-12 06:27:07:0659, answer_open, VisualItem[tree.nodes,8,id=48720,type=20,title=,body=<p>The correct way to do this is to use the accepted answer as it is the most efficient. I find the following code looks a bit cleaner.</p>
+
+<pre><code>for (String key: map.keySet()) {
+   System.out.println(key + "/" + map.get(key));
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=10,rawtext=]
+2014-11-12 06:27:07:0660, diag_detail_itementered, id=48720, type=20
+2014-11-12 06:27:07:0696, diag_detail_itemexited, id=48720, type=20
+2014-11-12 06:27:07:0884, diag_detail_itementered, id=0.2994964878562618, type=4
+2014-11-12 06:27:07:0903, diag_detail_itemexited, id=0.2994964878562618, type=4
+2014-11-12 06:27:07:0923, diag_detail_itementered, id=0.26272833283470587, type=4
+2014-11-12 06:27:07:0936, diag_detail_itemexited, id=0.26272833283470587, type=4
+2014-11-12 06:27:07:0947, diag_detail_itementered, id=1404423338, type=3
+2014-11-12 06:27:08:0020, diag_detail_itemexited, id=1404423338, type=3
+2014-11-12 06:27:08:0068, diag_detail_itementered, id=0.1044091273445541, type=4
+2014-11-12 06:27:08:0097, diag_detail_itemexited, id=0.1044091273445541, type=4
+2014-11-12 06:27:08:0163, answer_open, VisualItem[tree.nodes,3,id=46908,type=21,title=,body=<pre><code>for (Map.Entry&lt;String, String&gt; entry : map.entrySet())
+{
+    System.out.println(entry.getKey() + "/" + entry.getValue());
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=572,rawtext=]
+2014-11-12 06:27:08:0166, answer_open, VisualItem[tree.nodes,3,id=46908,type=21,title=,body=<pre><code>for (Map.Entry&lt;String, String&gt; entry : map.entrySet())
+{
+    System.out.println(entry.getKey() + "/" + entry.getValue());
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=572,rawtext=]
+2014-11-12 06:27:08:0167, diag_detail_itementered, id=46908, type=21
+2014-11-12 06:27:12:0710, diag_detail_itemexited, id=46908, type=21
+2014-11-12 06:27:12:0748, diag_detail_itementered, id=1404423338, type=3
+2014-11-12 06:27:12:0765, diag_detail_itemexited, id=1404423338, type=3
+2014-11-12 06:27:12:0820, diag_detail_itementered, id=0.4246842963266987, type=4
+2014-11-12 06:27:12:0981, diag_detail_itemexited, id=0.4246842963266987, type=4
+2014-11-12 06:27:13:0000, answer_open, VisualItem[tree.nodes,6,id=46989,type=20,title=,body=<p>This is a two part question:</p>
+
+<p><em>How to iterate over the entries of a Map</em> - @ScArcher2 has answered that perfectly.</p>
+
+<p><em>What is the order of iteration</em> - if you are just using <code>Map</code>, then strictly speaking, there are <strong>no ordering guarantees</strong>.  So you shouldn't really rely on the ordering given by any implementation.  However, the <a href="http://java.sun.com/javase/6/docs/api/java/util/SortedMap.html"><code>SortedMap</code></a> interface extends <code>Map</code> and provides exactly what you are looking for - implementations will aways give a consistent sort order.</p>
+
+<p><strong><a href="http://java.sun.com/javase/6/docs/api/java/util/NavigableMap.html"><code>NavigableMap</code></a> is another useful extension</strong> - this is a <code>SortedMap</code> with additional methods for finding entries by their ordered position in the key set.  So potentially this can remove the need for iterating in the first place - you might be able to find the specific <code>entry</code> you are after using the <code>higherEntry</code>, <code>lowerEntry</code>, <code>ceilingEntry</code>, or <code>floorEntry</code> methods.  The <code>descendingMap</code> method even gives you an explicit method of <strong>reversing the traversal order</strong>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=34,rawtext=]
+2014-11-12 06:27:13:0005, answer_open, VisualItem[tree.nodes,6,id=46989,type=20,title=,body=<p>This is a two part question:</p>
+
+<p><em>How to iterate over the entries of a Map</em> - @ScArcher2 has answered that perfectly.</p>
+
+<p><em>What is the order of iteration</em> - if you are just using <code>Map</code>, then strictly speaking, there are <strong>no ordering guarantees</strong>.  So you shouldn't really rely on the ordering given by any implementation.  However, the <a href="http://java.sun.com/javase/6/docs/api/java/util/SortedMap.html"><code>SortedMap</code></a> interface extends <code>Map</code> and provides exactly what you are looking for - implementations will aways give a consistent sort order.</p>
+
+<p><strong><a href="http://java.sun.com/javase/6/docs/api/java/util/NavigableMap.html"><code>NavigableMap</code></a> is another useful extension</strong> - this is a <code>SortedMap</code> with additional methods for finding entries by their ordered position in the key set.  So potentially this can remove the need for iterating in the first place - you might be able to find the specific <code>entry</code> you are after using the <code>higherEntry</code>, <code>lowerEntry</code>, <code>ceilingEntry</code>, or <code>floorEntry</code> methods.  The <code>descendingMap</code> method even gives you an explicit method of <strong>reversing the traversal order</strong>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=34,rawtext=]
+2014-11-12 06:27:13:0007, diag_detail_itementered, id=46989, type=20
+2014-11-12 06:27:13:0444, diag_detail_itemexited, id=46989, type=20
+2014-11-12 06:27:13:0564, diag_detail_itementered, id=0.537394773724073, type=4
+2014-11-12 06:27:13:0579, diag_detail_itemexited, id=0.537394773724073, type=4
+2014-11-12 06:27:14:0103, answer_open, VisualItem[tree.nodes,9,id=1295383,type=20,title=,body=<p>Example of using iterator and generics:</p>
+
+<pre><code>Iterator&lt;Map.Entry&lt;String, String&gt;&gt; entries = myMap.entrySet().iterator();
+while (entries.hasNext()) {
+  Map.Entry&lt;String, String&gt; entry = entries.next();
+  String key = entry.getKey();
+  String value = entry.getValue();
+  // ...
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=11,rawtext=]
+2014-11-12 06:27:14:0104, answer_open, VisualItem[tree.nodes,9,id=1295383,type=20,title=,body=<p>Example of using iterator and generics:</p>
+
+<pre><code>Iterator&lt;Map.Entry&lt;String, String&gt;&gt; entries = myMap.entrySet().iterator();
+while (entries.hasNext()) {
+  Map.Entry&lt;String, String&gt; entry = entries.next();
+  String key = entry.getKey();
+  String value = entry.getValue();
+  // ...
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=11,rawtext=]
+2014-11-12 06:27:14:0105, diag_detail_itementered, id=1295383, type=20
+2014-11-12 06:27:14:0231, diag_detail_itemexited, id=1295383, type=20
+2014-11-12 06:27:14:0486, diag_detail_itementered, id=0.895873221679695, type=4
+2014-11-12 06:27:14:0518, diag_detail_itemexited, id=0.895873221679695, type=4
+2014-11-12 06:27:14:0535, answer_open, VisualItem[tree.nodes,6,id=46989,type=20,title=,body=<p>This is a two part question:</p>
+
+<p><em>How to iterate over the entries of a Map</em> - @ScArcher2 has answered that perfectly.</p>
+
+<p><em>What is the order of iteration</em> - if you are just using <code>Map</code>, then strictly speaking, there are <strong>no ordering guarantees</strong>.  So you shouldn't really rely on the ordering given by any implementation.  However, the <a href="http://java.sun.com/javase/6/docs/api/java/util/SortedMap.html"><code>SortedMap</code></a> interface extends <code>Map</code> and provides exactly what you are looking for - implementations will aways give a consistent sort order.</p>
+
+<p><strong><a href="http://java.sun.com/javase/6/docs/api/java/util/NavigableMap.html"><code>NavigableMap</code></a> is another useful extension</strong> - this is a <code>SortedMap</code> with additional methods for finding entries by their ordered position in the key set.  So potentially this can remove the need for iterating in the first place - you might be able to find the specific <code>entry</code> you are after using the <code>higherEntry</code>, <code>lowerEntry</code>, <code>ceilingEntry</code>, or <code>floorEntry</code> methods.  The <code>descendingMap</code> method even gives you an explicit method of <strong>reversing the traversal order</strong>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=34,rawtext=]
+2014-11-12 06:27:14:0537, answer_open, VisualItem[tree.nodes,6,id=46989,type=20,title=,body=<p>This is a two part question:</p>
+
+<p><em>How to iterate over the entries of a Map</em> - @ScArcher2 has answered that perfectly.</p>
+
+<p><em>What is the order of iteration</em> - if you are just using <code>Map</code>, then strictly speaking, there are <strong>no ordering guarantees</strong>.  So you shouldn't really rely on the ordering given by any implementation.  However, the <a href="http://java.sun.com/javase/6/docs/api/java/util/SortedMap.html"><code>SortedMap</code></a> interface extends <code>Map</code> and provides exactly what you are looking for - implementations will aways give a consistent sort order.</p>
+
+<p><strong><a href="http://java.sun.com/javase/6/docs/api/java/util/NavigableMap.html"><code>NavigableMap</code></a> is another useful extension</strong> - this is a <code>SortedMap</code> with additional methods for finding entries by their ordered position in the key set.  So potentially this can remove the need for iterating in the first place - you might be able to find the specific <code>entry</code> you are after using the <code>higherEntry</code>, <code>lowerEntry</code>, <code>ceilingEntry</code>, or <code>floorEntry</code> methods.  The <code>descendingMap</code> method even gives you an explicit method of <strong>reversing the traversal order</strong>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=34,rawtext=]
+2014-11-12 06:27:14:0538, diag_detail_itementered, id=46989, type=20
+2014-11-12 06:27:14:0804, diag_detail_itemclicked, id=46989, type=20
+2014-11-12 06:27:15:0238, diag_detail_itemexited, id=46989, type=20
+2014-11-12 06:27:24:0178, list_mouseentered, type=detailAnswersList
+2014-11-12 06:27:24:0547, list_mouseexited, type=detailAnswersList
+2014-11-12 06:29:46:0157, list_mouseentered, type=detailAnswersList
+2014-11-12 06:29:46:0162, list_mouseexited, type=detailAnswersList
+2014-11-12 06:41:11:0134, list_mouseentered, type=detailAnswersList
+2014-11-12 06:41:11:0189, list_mouseexited, type=detailAnswersList
+2014-11-12 06:41:11:0244, list_mouseentered, type=detailAnswersList
+2014-11-12 06:41:11:0447, list_mouseexited, type=detailAnswersList
+2014-11-12 07:17:19:0954, diag_detail_itementered, id=0.5100747937156066, type=4
+2014-11-12 07:17:19:0970, diag_detail_itemexited, id=0.5100747937156066, type=4
+2014-11-12 07:17:19:0984, diag_detail_itementered, id=0.8908505452395669, type=4
+2014-11-12 07:17:19:0996, diag_detail_itemexited, id=0.8908505452395669, type=4
+2014-11-12 07:17:20:0004, answer_open, VisualItem[tree.nodes,12,id=13943066,type=20,title=,body=<p>In <a href="https://github.com/goldmansachs/gs-collections" rel="nofollow">GS Collections</a>, you would use the forEachKeyValue method on the <a href="https://github.com/goldmansachs/gs-collections/blob/master/collections-api/src/main/java/com/gs/collections/api/map/MapIterable.java" rel="nofollow">MapIterable</a> interface, which is inherited by the MutableMap and ImmutableMap interfaces and their implementations.</p>
+
+<pre><code>final MutableBag&lt;String&gt; result = Bags.mutable.of();
+MutableMap&lt;Integer, String&gt; map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue(new Procedure2&lt;Integer, String&gt;()
+{
+    public void value(Integer key, String value)
+    {
+        result.add(key + value);
+    }
+});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+</code></pre>
+
+<p>When Lambdas arrive in Java 8, you will be able to write the code as follows:</p>
+
+<pre><code>MutableBag&lt;String&gt; result = Bags.mutable.of();
+MutableMap&lt;Integer, String&gt; map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue((key, value) -&gt; { result.add(key + value);});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+</code></pre>
+
+<p>Note: I am a developer on GS Collections.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=3,rawtext=]
+2014-11-12 07:17:20:0006, answer_open, VisualItem[tree.nodes,12,id=13943066,type=20,title=,body=<p>In <a href="https://github.com/goldmansachs/gs-collections" rel="nofollow">GS Collections</a>, you would use the forEachKeyValue method on the <a href="https://github.com/goldmansachs/gs-collections/blob/master/collections-api/src/main/java/com/gs/collections/api/map/MapIterable.java" rel="nofollow">MapIterable</a> interface, which is inherited by the MutableMap and ImmutableMap interfaces and their implementations.</p>
+
+<pre><code>final MutableBag&lt;String&gt; result = Bags.mutable.of();
+MutableMap&lt;Integer, String&gt; map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue(new Procedure2&lt;Integer, String&gt;()
+{
+    public void value(Integer key, String value)
+    {
+        result.add(key + value);
+    }
+});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+</code></pre>
+
+<p>When Lambdas arrive in Java 8, you will be able to write the code as follows:</p>
+
+<pre><code>MutableBag&lt;String&gt; result = Bags.mutable.of();
+MutableMap&lt;Integer, String&gt; map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue((key, value) -&gt; { result.add(key + value);});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+</code></pre>
+
+<p>Note: I am a developer on GS Collections.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=3,rawtext=]
+2014-11-12 07:17:20:0007, diag_detail_itementered, id=13943066, type=20
+2014-11-12 07:17:20:0048, diag_detail_itemexited, id=13943066, type=20
+2014-11-12 07:17:27:0188, answer_create_cancel, 6084ms
+2014-11-12 07:17:27:0189, answer_create_open
+2014-11-12 07:17:27:0639, edge_create, Tuple[0,1,0.26926345850678624,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0640, answer_create, 46905
+2014-11-12 07:17:27:0640, edge_create, Tuple[1,2,0.6298521356214126,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0641, answer_create, 46908
+2014-11-12 07:17:27:0641, edge_create, Tuple[1,3,0.8651072366123495,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0642, answer_create, 46912
+2014-11-12 07:17:27:0642, edge_create, Tuple[1,4,0.34089757755432115,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0643, answer_create, 46926
+2014-11-12 07:17:27:0643, edge_create, Tuple[1,5,0.5422880079833982,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0644, answer_create, 46989
+2014-11-12 07:17:27:0644, edge_create, Tuple[1,6,0.7771398518905316,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0645, answer_create, 47004
+2014-11-12 07:17:27:0645, edge_create, Tuple[1,7,0.7041887695693786,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0646, answer_create, 48720
+2014-11-12 07:17:27:0646, edge_create, Tuple[1,8,0.7716939848314441,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0647, answer_create, 1295383
+2014-11-12 07:17:27:0647, edge_create, Tuple[1,9,0.39522175206749643,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0648, answer_create, 2190043
+2014-11-12 07:17:27:0650, edge_create, Tuple[1,10,0.5992925690907287,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0650, answer_create, 10632923
+2014-11-12 07:17:27:0651, edge_create, Tuple[1,11,0.1017317934865829,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0651, answer_create, 13943066
+2014-11-12 07:17:27:0652, edge_create, Tuple[1,12,0.7409694084591057,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0652, answer_create, 15556457
+2014-11-12 07:17:27:0653, edge_create, Tuple[1,13,0.1631904030054402,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0653, answer_create, 17404976
+2014-11-12 07:17:27:0654, edge_create, Tuple[1,14,0.292264781015413,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0654, edge_create, Tuple[0,15,0.13726175147247544,2,1.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0655, pattern_create, 3
+2014-11-12 07:17:27:0655, edge_create, Tuple[15,16,0.1594847222734016,2,1.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0656, edge_create, Tuple[0,17,0.7976993770821682,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0656, edge_create, Tuple[17,18,0.967557682063212,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0660, edge_create, Tuple[17,19,0.5077403446627663,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:27:0667, discussion_open, 46898
+2014-11-12 07:17:28:0293, setup_loaddata
+2014-11-12 07:17:29:0684, diag_itementered, id=25192, type=1
+2014-11-12 07:17:29:0710, diag_itemexited, id=25192, type=1
+2014-11-12 07:17:30:0015, diag_itementered, id=34571, type=1
+2014-11-12 07:17:30:0055, diag_itemexited, id=34571, type=1
+2014-11-12 07:17:31:0339, diag_itementered, id=20227, type=1
+2014-11-12 07:17:32:0709, edge_create, Tuple[0,1,0.37083906607844175,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0710, answer_create, 20670
+2014-11-12 07:17:32:0710, edge_create, Tuple[1,2,0.3990364574343932,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0711, answer_create, 10164989
+2014-11-12 07:17:32:0711, edge_create, Tuple[1,3,0.07749251058655837,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0712, answer_create, 11367849
+2014-11-12 07:17:32:0712, edge_create, Tuple[1,4,0.30199643314460034,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0713, answer_create, 13612902
+2014-11-12 07:17:32:0715, edge_create, Tuple[1,5,0.9863793553552651,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0716, edge_create, Tuple[0,6,0.16151559017697792,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0717, edge_create, Tuple[6,7,0.09998402115986293,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0720, edge_create, Tuple[6,8,0.5709104867911268,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0723, edge_create, Tuple[6,9,0.06489735459907686,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0726, edge_create, Tuple[6,10,0.10257663492434788,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0729, edge_create, Tuple[6,11,0.1801051838321316,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0732, edge_create, Tuple[6,12,0.8951853409812354,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0735, edge_create, Tuple[6,13,0.5717643810359436,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0738, edge_create, Tuple[6,14,0.3982624412395134,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0741, edge_create, Tuple[6,15,0.009034541764794679,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0744, edge_create, Tuple[6,16,0.4994822072575179,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0747, edge_create, Tuple[6,17,0.3746158274041741,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0750, edge_create, Tuple[6,18,0.9124030232909106,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0753, edge_create, Tuple[6,19,0.4318971865222282,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0756, edge_create, Tuple[6,20,0.9991136159799492,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0759, edge_create, Tuple[6,21,0.3466776801378241,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0762, edge_create, Tuple[6,22,0.9997925129661508,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0765, edge_create, Tuple[6,23,0.8520468240489146,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:32:0773, discussion_open, 20227
+2014-11-12 07:17:32:0773, diag_itemclicked, id=20227, type=1
+2014-11-12 07:17:32:0835, diag_itemexited, id=20227, type=1
+2014-11-12 07:17:41:0945, answer_create, 6288ms
+2014-11-12 07:17:41:0950, answer_create_open
+2014-11-12 07:17:42:0258, edge_create, Tuple[0,1,0.24908304815103066,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0258, answer_create, 20670
+2014-11-12 07:17:42:0259, edge_create, Tuple[1,2,0.9950767713851306,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0260, answer_create, 10164989
+2014-11-12 07:17:42:0260, edge_create, Tuple[1,3,0.3901434558175494,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0261, answer_create, 11367849
+2014-11-12 07:17:42:0261, edge_create, Tuple[1,4,0.9065011836813289,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0262, answer_create, 13612902
+2014-11-12 07:17:42:0262, edge_create, Tuple[1,5,0.8170690077142848,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0263, edge_create, Tuple[0,6,0.9006637409907957,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0264, edge_create, Tuple[6,7,0.7540449848035333,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0267, edge_create, Tuple[6,8,0.6819705863461404,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0270, edge_create, Tuple[6,9,0.13714639219410651,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0273, edge_create, Tuple[6,10,0.3232614931350861,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0277, edge_create, Tuple[6,11,0.12734703513934587,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0280, edge_create, Tuple[6,12,0.6364272724383623,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0283, edge_create, Tuple[6,13,0.9293591380027982,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0286, edge_create, Tuple[6,14,0.2998839792901109,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0289, edge_create, Tuple[6,15,0.10183812416454652,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0292, edge_create, Tuple[6,16,0.6929206101851773,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0296, edge_create, Tuple[6,17,0.6548273953706976,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0299, edge_create, Tuple[6,18,0.4433534345589444,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0302, edge_create, Tuple[6,19,0.5777794917875786,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0305, edge_create, Tuple[6,20,0.6803513513448536,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0308, edge_create, Tuple[6,21,0.6168940840816106,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0311, edge_create, Tuple[6,22,0.43487696506829965,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0314, edge_create, Tuple[6,23,0.9178034158663708,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:17:42:0322, discussion_open, 20227
+2014-11-12 07:17:42:0921, setup_loaddata
+2014-11-12 07:17:45:0291, answer_open, VisualItem[tree.nodes,3,id=10164989,type=20,title=,body=<p>I had hard times figuring it out myself and this post helped me to find the right answer for my case. When working with financial messaging as ISO-8583 the 3DES requirements are quite specific, so for my especial case the "DESede/CBC/PKCS5Padding" combinations wasn't solving the problem. After some comparative testing of my results against some 3DES calculators designed for the financial world I found the the value "DESede/ECB/Nopadding" is more suited for the the specific task.</p>
+
+<p>Here is a demo implementation of my TripleDes class (using the Bouncy Castle provider)</p>
+
+<pre><code>
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+
+    /**
+     *
+     * @author Jose Luis Montes de Oca
+     */
+    public class TripleDesCipher {
+       private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/Nopadding";
+       private static String ALGORITHM = "DESede";
+       private static String BOUNCY_CASTLE_PROVIDER = "BC";
+       private Cipher encrypter;
+       private Cipher decrypter;
+
+       public TripleDesCipher(byte[] key) throws NoSuchAlgorithmException, NoSuchProviderException, NoSuchPaddingException,
+             InvalidKeyException {
+          Security.addProvider(new BouncyCastleProvider());
+          SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+          encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION, BOUNCY_CASTLE_PROVIDER);
+          encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+          decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION, BOUNCY_CASTLE_PROVIDER);
+          decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+       }
+
+       public byte[] encode(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+          return encrypter.doFinal(input);
+       }
+
+       public byte[] decode(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+          return decrypter.doFinal(input);
+       }
+    }
+
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:17:45:0293, answer_open, VisualItem[tree.nodes,3,id=10164989,type=20,title=,body=<p>I had hard times figuring it out myself and this post helped me to find the right answer for my case. When working with financial messaging as ISO-8583 the 3DES requirements are quite specific, so for my especial case the "DESede/CBC/PKCS5Padding" combinations wasn't solving the problem. After some comparative testing of my results against some 3DES calculators designed for the financial world I found the the value "DESede/ECB/Nopadding" is more suited for the the specific task.</p>
+
+<p>Here is a demo implementation of my TripleDes class (using the Bouncy Castle provider)</p>
+
+<pre><code>
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+
+    /**
+     *
+     * @author Jose Luis Montes de Oca
+     */
+    public class TripleDesCipher {
+       private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/Nopadding";
+       private static String ALGORITHM = "DESede";
+       private static String BOUNCY_CASTLE_PROVIDER = "BC";
+       private Cipher encrypter;
+       private Cipher decrypter;
+
+       public TripleDesCipher(byte[] key) throws NoSuchAlgorithmException, NoSuchProviderException, NoSuchPaddingException,
+             InvalidKeyException {
+          Security.addProvider(new BouncyCastleProvider());
+          SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+          encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION, BOUNCY_CASTLE_PROVIDER);
+          encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+          decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION, BOUNCY_CASTLE_PROVIDER);
+          decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+       }
+
+       public byte[] encode(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+          return encrypter.doFinal(input);
+       }
+
+       public byte[] decode(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+          return decrypter.doFinal(input);
+       }
+    }
+
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:17:45:0294, diag_detail_itementered, id=10164989, type=20
+2014-11-12 07:17:46:0113, diag_detail_itemexited, id=10164989, type=20
+2014-11-12 07:17:46:0474, answer_open, VisualItem[tree.nodes,4,id=11367849,type=20,title=,body=<p>Here's a very simply static encrypt/decrypt class biased on the Bouncy Castle no padding example by Jose Luis Montes de Oca.  This one is using "DESede/ECB/PKCS7Padding" so I don't have to bother manually padding.</p>
+
+<pre><code>
+    package com.zenimax.encryption;
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+    /**
+     * 
+     * @author Matthew H. Wagner
+     */
+    public class TripleDesBouncyCastle {
+        private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/PKCS7Padding";
+        private static String ALGORITHM = "DESede";
+        private static String BOUNCY_CASTLE_PROVIDER = "BC";
+
+        private static void init()
+        {
+            Security.addProvider(new BouncyCastleProvider());
+        }
+
+        public static byte[] encode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+            return encrypter.doFinal(input);
+        }
+
+        public static byte[] decode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+            return decrypter.doFinal(input);
+        }
+    }
+</code>
+</pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=1,rawtext=]
+2014-11-12 07:17:46:0476, answer_open, VisualItem[tree.nodes,4,id=11367849,type=20,title=,body=<p>Here's a very simply static encrypt/decrypt class biased on the Bouncy Castle no padding example by Jose Luis Montes de Oca.  This one is using "DESede/ECB/PKCS7Padding" so I don't have to bother manually padding.</p>
+
+<pre><code>
+    package com.zenimax.encryption;
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+    /**
+     * 
+     * @author Matthew H. Wagner
+     */
+    public class TripleDesBouncyCastle {
+        private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/PKCS7Padding";
+        private static String ALGORITHM = "DESede";
+        private static String BOUNCY_CASTLE_PROVIDER = "BC";
+
+        private static void init()
+        {
+            Security.addProvider(new BouncyCastleProvider());
+        }
+
+        public static byte[] encode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+            return encrypter.doFinal(input);
+        }
+
+        public static byte[] decode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+            return decrypter.doFinal(input);
+        }
+    }
+</code>
+</pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=1,rawtext=]
+2014-11-12 07:17:46:0477, diag_detail_itementered, id=11367849, type=20
+2014-11-12 07:17:46:0510, diag_detail_itemexited, id=11367849, type=20
+2014-11-12 07:17:46:0523, answer_open, VisualItem[tree.nodes,4,id=11367849,type=20,title=,body=<p>Here's a very simply static encrypt/decrypt class biased on the Bouncy Castle no padding example by Jose Luis Montes de Oca.  This one is using "DESede/ECB/PKCS7Padding" so I don't have to bother manually padding.</p>
+
+<pre><code>
+    package com.zenimax.encryption;
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+    /**
+     * 
+     * @author Matthew H. Wagner
+     */
+    public class TripleDesBouncyCastle {
+        private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/PKCS7Padding";
+        private static String ALGORITHM = "DESede";
+        private static String BOUNCY_CASTLE_PROVIDER = "BC";
+
+        private static void init()
+        {
+            Security.addProvider(new BouncyCastleProvider());
+        }
+
+        public static byte[] encode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+            return encrypter.doFinal(input);
+        }
+
+        public static byte[] decode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+            return decrypter.doFinal(input);
+        }
+    }
+</code>
+</pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=1,rawtext=]
+2014-11-12 07:17:46:0527, answer_open, VisualItem[tree.nodes,4,id=11367849,type=20,title=,body=<p>Here's a very simply static encrypt/decrypt class biased on the Bouncy Castle no padding example by Jose Luis Montes de Oca.  This one is using "DESede/ECB/PKCS7Padding" so I don't have to bother manually padding.</p>
+
+<pre><code>
+    package com.zenimax.encryption;
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+    /**
+     * 
+     * @author Matthew H. Wagner
+     */
+    public class TripleDesBouncyCastle {
+        private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/PKCS7Padding";
+        private static String ALGORITHM = "DESede";
+        private static String BOUNCY_CASTLE_PROVIDER = "BC";
+
+        private static void init()
+        {
+            Security.addProvider(new BouncyCastleProvider());
+        }
+
+        public static byte[] encode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+            return encrypter.doFinal(input);
+        }
+
+        public static byte[] decode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+            return decrypter.doFinal(input);
+        }
+    }
+</code>
+</pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=1,rawtext=]
+2014-11-12 07:17:46:0528, diag_detail_itementered, id=11367849, type=20
+2014-11-12 07:17:47:0016, diag_detail_itemexited, id=11367849, type=20
+2014-11-12 07:17:47:0323, answer_open, VisualItem[tree.nodes,5,id=13612902,type=20,title=,body=<p>Here is a solution using the <strong>javax.crypto</strong> library and the apache commons codec library for encoding and decoding in Base64: </p>
+
+<pre><code>import java.security.spec.KeySpec;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESedeKeySpec;
+import org.apache.commons.codec.binary.Base64;
+
+public class TrippleDes {
+
+    private static final String UNICODE_FORMAT = "UTF8";
+    public static final String DESEDE_ENCRYPTION_SCHEME = "DESede";
+    private KeySpec ks;
+    private SecretKeyFactory skf;
+    private Cipher cipher;
+    byte[] arrayBytes;
+    private String myEncryptionKey;
+    private String myEncryptionScheme;
+    SecretKey key;
+
+    public TrippleDes() throws Exception {
+        myEncryptionKey = "ThisIsSpartaThisIsSparta";
+        myEncryptionScheme = DESEDE_ENCRYPTION_SCHEME;
+        arrayBytes = myEncryptionKey.getBytes(UNICODE_FORMAT);
+        ks = new DESedeKeySpec(arrayBytes);
+        skf = SecretKeyFactory.getInstance(myEncryptionScheme);
+        cipher = Cipher.getInstance(myEncryptionScheme);
+        key = skf.generateSecret(ks);
+    }
+
+
+    public String encrypt(String unencryptedString) {
+        String encryptedString = null;
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] plainText = unencryptedString.getBytes(UNICODE_FORMAT);
+            byte[] encryptedText = cipher.doFinal(plainText);
+            encryptedString = new String(Base64.encodeBase64(encryptedText));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return encryptedString;
+    }
+
+
+    public String decrypt(String encryptedString) {
+        String decryptedText=null;
+        try {
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            byte[] encryptedText = Base64.decodeBase64(encryptedString);
+            byte[] plainText = cipher.doFinal(encryptedText);
+            decryptedText= new String(plainText);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return decryptedText;
+    }
+
+
+    public static void main(String args []) throws Exception
+    {
+        TrippleDes td= new TrippleDes();
+
+        String target="imparator";
+        String encrypted=td.encrypt(target);
+        String decrypted=td.decrypt(encrypted);
+
+        System.out.println("String To Encrypt: "+ target);
+        System.out.println("Encrypted String:" + encrypted);
+        System.out.println("Decrypted String:" + decrypted);
+
+    }
+
+}
+</code></pre>
+
+<p>Running the above program results with the following output: </p>
+
+<pre><code>String To Encrypt: imparator
+Encrypted String:FdBNaYWfjpWN9eYghMpbRA==
+Decrypted String:imparator
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:17:47:0327, answer_open, VisualItem[tree.nodes,5,id=13612902,type=20,title=,body=<p>Here is a solution using the <strong>javax.crypto</strong> library and the apache commons codec library for encoding and decoding in Base64: </p>
+
+<pre><code>import java.security.spec.KeySpec;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESedeKeySpec;
+import org.apache.commons.codec.binary.Base64;
+
+public class TrippleDes {
+
+    private static final String UNICODE_FORMAT = "UTF8";
+    public static final String DESEDE_ENCRYPTION_SCHEME = "DESede";
+    private KeySpec ks;
+    private SecretKeyFactory skf;
+    private Cipher cipher;
+    byte[] arrayBytes;
+    private String myEncryptionKey;
+    private String myEncryptionScheme;
+    SecretKey key;
+
+    public TrippleDes() throws Exception {
+        myEncryptionKey = "ThisIsSpartaThisIsSparta";
+        myEncryptionScheme = DESEDE_ENCRYPTION_SCHEME;
+        arrayBytes = myEncryptionKey.getBytes(UNICODE_FORMAT);
+        ks = new DESedeKeySpec(arrayBytes);
+        skf = SecretKeyFactory.getInstance(myEncryptionScheme);
+        cipher = Cipher.getInstance(myEncryptionScheme);
+        key = skf.generateSecret(ks);
+    }
+
+
+    public String encrypt(String unencryptedString) {
+        String encryptedString = null;
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] plainText = unencryptedString.getBytes(UNICODE_FORMAT);
+            byte[] encryptedText = cipher.doFinal(plainText);
+            encryptedString = new String(Base64.encodeBase64(encryptedText));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return encryptedString;
+    }
+
+
+    public String decrypt(String encryptedString) {
+        String decryptedText=null;
+        try {
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            byte[] encryptedText = Base64.decodeBase64(encryptedString);
+            byte[] plainText = cipher.doFinal(encryptedText);
+            decryptedText= new String(plainText);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return decryptedText;
+    }
+
+
+    public static void main(String args []) throws Exception
+    {
+        TrippleDes td= new TrippleDes();
+
+        String target="imparator";
+        String encrypted=td.encrypt(target);
+        String decrypted=td.decrypt(encrypted);
+
+        System.out.println("String To Encrypt: "+ target);
+        System.out.println("Encrypted String:" + encrypted);
+        System.out.println("Decrypted String:" + decrypted);
+
+    }
+
+}
+</code></pre>
+
+<p>Running the above program results with the following output: </p>
+
+<pre><code>String To Encrypt: imparator
+Encrypted String:FdBNaYWfjpWN9eYghMpbRA==
+Decrypted String:imparator
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:17:47:0328, diag_detail_itementered, id=13612902, type=20
+2014-11-12 07:17:48:0073, diag_detail_itemexited, id=13612902, type=20
+2014-11-12 07:17:49:0622, list_mouseentered, type=detailAnswersList
+2014-11-12 07:17:49:0714, list_mouseexited, type=detailAnswersList
+2014-11-12 07:18:03:0140, answer_open, VisualItem[tree.nodes,5,id=13612902,type=20,title=,body=<p>Here is a solution using the <strong>javax.crypto</strong> library and the apache commons codec library for encoding and decoding in Base64: </p>
+
+<pre><code>import java.security.spec.KeySpec;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESedeKeySpec;
+import org.apache.commons.codec.binary.Base64;
+
+public class TrippleDes {
+
+    private static final String UNICODE_FORMAT = "UTF8";
+    public static final String DESEDE_ENCRYPTION_SCHEME = "DESede";
+    private KeySpec ks;
+    private SecretKeyFactory skf;
+    private Cipher cipher;
+    byte[] arrayBytes;
+    private String myEncryptionKey;
+    private String myEncryptionScheme;
+    SecretKey key;
+
+    public TrippleDes() throws Exception {
+        myEncryptionKey = "ThisIsSpartaThisIsSparta";
+        myEncryptionScheme = DESEDE_ENCRYPTION_SCHEME;
+        arrayBytes = myEncryptionKey.getBytes(UNICODE_FORMAT);
+        ks = new DESedeKeySpec(arrayBytes);
+        skf = SecretKeyFactory.getInstance(myEncryptionScheme);
+        cipher = Cipher.getInstance(myEncryptionScheme);
+        key = skf.generateSecret(ks);
+    }
+
+
+    public String encrypt(String unencryptedString) {
+        String encryptedString = null;
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] plainText = unencryptedString.getBytes(UNICODE_FORMAT);
+            byte[] encryptedText = cipher.doFinal(plainText);
+            encryptedString = new String(Base64.encodeBase64(encryptedText));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return encryptedString;
+    }
+
+
+    public String decrypt(String encryptedString) {
+        String decryptedText=null;
+        try {
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            byte[] encryptedText = Base64.decodeBase64(encryptedString);
+            byte[] plainText = cipher.doFinal(encryptedText);
+            decryptedText= new String(plainText);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return decryptedText;
+    }
+
+
+    public static void main(String args []) throws Exception
+    {
+        TrippleDes td= new TrippleDes();
+
+        String target="imparator";
+        String encrypted=td.encrypt(target);
+        String decrypted=td.decrypt(encrypted);
+
+        System.out.println("String To Encrypt: "+ target);
+        System.out.println("Encrypted String:" + encrypted);
+        System.out.println("Decrypted String:" + decrypted);
+
+    }
+
+}
+</code></pre>
+
+<p>Running the above program results with the following output: </p>
+
+<pre><code>String To Encrypt: imparator
+Encrypted String:FdBNaYWfjpWN9eYghMpbRA==
+Decrypted String:imparator
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:18:03:0149, answer_open, VisualItem[tree.nodes,5,id=13612902,type=20,title=,body=<p>Here is a solution using the <strong>javax.crypto</strong> library and the apache commons codec library for encoding and decoding in Base64: </p>
+
+<pre><code>import java.security.spec.KeySpec;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESedeKeySpec;
+import org.apache.commons.codec.binary.Base64;
+
+public class TrippleDes {
+
+    private static final String UNICODE_FORMAT = "UTF8";
+    public static final String DESEDE_ENCRYPTION_SCHEME = "DESede";
+    private KeySpec ks;
+    private SecretKeyFactory skf;
+    private Cipher cipher;
+    byte[] arrayBytes;
+    private String myEncryptionKey;
+    private String myEncryptionScheme;
+    SecretKey key;
+
+    public TrippleDes() throws Exception {
+        myEncryptionKey = "ThisIsSpartaThisIsSparta";
+        myEncryptionScheme = DESEDE_ENCRYPTION_SCHEME;
+        arrayBytes = myEncryptionKey.getBytes(UNICODE_FORMAT);
+        ks = new DESedeKeySpec(arrayBytes);
+        skf = SecretKeyFactory.getInstance(myEncryptionScheme);
+        cipher = Cipher.getInstance(myEncryptionScheme);
+        key = skf.generateSecret(ks);
+    }
+
+
+    public String encrypt(String unencryptedString) {
+        String encryptedString = null;
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] plainText = unencryptedString.getBytes(UNICODE_FORMAT);
+            byte[] encryptedText = cipher.doFinal(plainText);
+            encryptedString = new String(Base64.encodeBase64(encryptedText));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return encryptedString;
+    }
+
+
+    public String decrypt(String encryptedString) {
+        String decryptedText=null;
+        try {
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            byte[] encryptedText = Base64.decodeBase64(encryptedString);
+            byte[] plainText = cipher.doFinal(encryptedText);
+            decryptedText= new String(plainText);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return decryptedText;
+    }
+
+
+    public static void main(String args []) throws Exception
+    {
+        TrippleDes td= new TrippleDes();
+
+        String target="imparator";
+        String encrypted=td.encrypt(target);
+        String decrypted=td.decrypt(encrypted);
+
+        System.out.println("String To Encrypt: "+ target);
+        System.out.println("Encrypted String:" + encrypted);
+        System.out.println("Decrypted String:" + decrypted);
+
+    }
+
+}
+</code></pre>
+
+<p>Running the above program results with the following output: </p>
+
+<pre><code>String To Encrypt: imparator
+Encrypted String:FdBNaYWfjpWN9eYghMpbRA==
+Decrypted String:imparator
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:18:03:0151, diag_detail_itementered, id=13612902, type=20
+2014-11-12 07:18:04:0262, diag_detail_itemexited, id=13612902, type=20
+2014-11-12 07:18:05:0239, list_mouseentered, type=detailAnswersList
+2014-11-12 07:18:05:0534, list_mouseexited, type=detailAnswersList
+2014-11-12 07:18:05:0689, diag_detail_itementered, id=33262, type=1
+2014-11-12 07:18:05:0735, diag_detail_itemexited, id=33262, type=1
+2014-11-12 07:18:05:0919, diag_detail_itementered, id=11930, type=1
+2014-11-12 07:18:05:0943, diag_detail_itemexited, id=11930, type=1
+2014-11-12 07:18:06:0985, diag_itementered, id=51276, type=1
+2014-11-12 07:18:07:0025, diag_itemexited, id=51276, type=1
+2014-11-12 07:18:07:0618, diag_itementered, id=20227, type=1
+2014-11-12 07:18:08:0928, edge_create, Tuple[0,1,0.7782844147592486,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0930, answer_create, 20670
+2014-11-12 07:18:08:0932, edge_create, Tuple[1,2,0.4148437416468179,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0932, answer_create, 10164989
+2014-11-12 07:18:08:0933, edge_create, Tuple[1,3,0.4101574634280577,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0934, answer_create, 11367849
+2014-11-12 07:18:08:0935, edge_create, Tuple[1,4,0.02038946307668743,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0935, answer_create, 13612902
+2014-11-12 07:18:08:0936, edge_create, Tuple[1,5,0.16421774779738663,4,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0937, edge_create, Tuple[0,6,0.6409357948838327,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0938, edge_create, Tuple[6,7,0.6489423464468314,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0943, edge_create, Tuple[6,8,0.7729061132963632,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0947, edge_create, Tuple[6,9,0.7152738165522761,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0952, edge_create, Tuple[6,10,0.6905614156711443,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0957, edge_create, Tuple[6,11,0.6055005641400006,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0961, edge_create, Tuple[6,12,0.4601860458129622,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0965, edge_create, Tuple[6,13,0.8029739426362603,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0968, edge_create, Tuple[6,14,0.15291668118366797,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0971, edge_create, Tuple[6,15,0.4852396973251869,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0974, edge_create, Tuple[6,16,0.12562183919162173,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0977, edge_create, Tuple[6,17,0.05007497309659248,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0980, edge_create, Tuple[6,18,0.06399514978600618,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0984, edge_create, Tuple[6,19,0.1603208207638256,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0987, edge_create, Tuple[6,20,0.5839433554261596,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0990, edge_create, Tuple[6,21,0.3629157557320464,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0993, edge_create, Tuple[6,22,0.5478731772457901,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:08:0996, edge_create, Tuple[6,23,0.13192793288979154,1,0.0,1415791561354,1415791561354]
+2014-11-12 07:18:09:0004, discussion_open, 20227
+2014-11-12 07:18:09:0004, diag_itemclicked, id=20227, type=1
+2014-11-12 07:18:09:0049, diag_itemexited, id=20227, type=1
+2014-11-12 07:18:09:0079, diag_detail_itementered, id=0.06399514978600618, type=1
+2014-11-12 07:18:09:0100, diag_detail_itemexited, id=0.06399514978600618, type=1
+2014-11-12 07:18:10:0756, diag_detail_itementered, id=0.4101574634280577, type=4
+2014-11-12 07:18:10:0785, diag_detail_itemexited, id=0.4101574634280577, type=4
+2014-11-12 07:18:11:0191, answer_open, VisualItem[tree.nodes,4,id=11367849,type=20,title=,body=<p>Here's a very simply static encrypt/decrypt class biased on the Bouncy Castle no padding example by Jose Luis Montes de Oca.  This one is using "DESede/ECB/PKCS7Padding" so I don't have to bother manually padding.</p>
+
+<pre><code>
+    package com.zenimax.encryption;
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+    /**
+     * 
+     * @author Matthew H. Wagner
+     */
+    public class TripleDesBouncyCastle {
+        private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/PKCS7Padding";
+        private static String ALGORITHM = "DESede";
+        private static String BOUNCY_CASTLE_PROVIDER = "BC";
+
+        private static void init()
+        {
+            Security.addProvider(new BouncyCastleProvider());
+        }
+
+        public static byte[] encode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+            return encrypter.doFinal(input);
+        }
+
+        public static byte[] decode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+            return decrypter.doFinal(input);
+        }
+    }
+</code>
+</pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=1,rawtext=]
+2014-11-12 07:18:11:0199, answer_open, VisualItem[tree.nodes,4,id=11367849,type=20,title=,body=<p>Here's a very simply static encrypt/decrypt class biased on the Bouncy Castle no padding example by Jose Luis Montes de Oca.  This one is using "DESede/ECB/PKCS7Padding" so I don't have to bother manually padding.</p>
+
+<pre><code>
+    package com.zenimax.encryption;
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+    /**
+     * 
+     * @author Matthew H. Wagner
+     */
+    public class TripleDesBouncyCastle {
+        private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/PKCS7Padding";
+        private static String ALGORITHM = "DESede";
+        private static String BOUNCY_CASTLE_PROVIDER = "BC";
+
+        private static void init()
+        {
+            Security.addProvider(new BouncyCastleProvider());
+        }
+
+        public static byte[] encode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+            return encrypter.doFinal(input);
+        }
+
+        public static byte[] decode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+            return decrypter.doFinal(input);
+        }
+    }
+</code>
+</pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=1,rawtext=]
+2014-11-12 07:18:11:0201, diag_detail_itementered, id=11367849, type=20
+2014-11-12 07:18:11:0243, diag_detail_itemexited, id=11367849, type=20
+2014-11-12 07:18:11:0871, answer_open, VisualItem[tree.nodes,4,id=11367849,type=20,title=,body=<p>Here's a very simply static encrypt/decrypt class biased on the Bouncy Castle no padding example by Jose Luis Montes de Oca.  This one is using "DESede/ECB/PKCS7Padding" so I don't have to bother manually padding.</p>
+
+<pre><code>
+    package com.zenimax.encryption;
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+    /**
+     * 
+     * @author Matthew H. Wagner
+     */
+    public class TripleDesBouncyCastle {
+        private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/PKCS7Padding";
+        private static String ALGORITHM = "DESede";
+        private static String BOUNCY_CASTLE_PROVIDER = "BC";
+
+        private static void init()
+        {
+            Security.addProvider(new BouncyCastleProvider());
+        }
+
+        public static byte[] encode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+            return encrypter.doFinal(input);
+        }
+
+        public static byte[] decode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+            return decrypter.doFinal(input);
+        }
+    }
+</code>
+</pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=1,rawtext=]
+2014-11-12 07:18:11:0892, answer_open, VisualItem[tree.nodes,4,id=11367849,type=20,title=,body=<p>Here's a very simply static encrypt/decrypt class biased on the Bouncy Castle no padding example by Jose Luis Montes de Oca.  This one is using "DESede/ECB/PKCS7Padding" so I don't have to bother manually padding.</p>
+
+<pre><code>
+    package com.zenimax.encryption;
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+    /**
+     * 
+     * @author Matthew H. Wagner
+     */
+    public class TripleDesBouncyCastle {
+        private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/PKCS7Padding";
+        private static String ALGORITHM = "DESede";
+        private static String BOUNCY_CASTLE_PROVIDER = "BC";
+
+        private static void init()
+        {
+            Security.addProvider(new BouncyCastleProvider());
+        }
+
+        public static byte[] encode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+            return encrypter.doFinal(input);
+        }
+
+        public static byte[] decode(byte[] input, byte[] key)
+                throws IllegalBlockSizeException, BadPaddingException,
+                NoSuchAlgorithmException, NoSuchProviderException,
+                NoSuchPaddingException, InvalidKeyException {
+            init();
+            SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+            Cipher decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION,
+                    BOUNCY_CASTLE_PROVIDER);
+            decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+            return decrypter.doFinal(input);
+        }
+    }
+</code>
+</pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=1,rawtext=]
+2014-11-12 07:18:11:0895, diag_detail_itementered, id=11367849, type=20
+2014-11-12 07:18:11:0913, diag_detail_itemexited, id=11367849, type=20
+2014-11-12 07:18:12:0184, answer_open, VisualItem[tree.nodes,5,id=13612902,type=20,title=,body=<p>Here is a solution using the <strong>javax.crypto</strong> library and the apache commons codec library for encoding and decoding in Base64: </p>
+
+<pre><code>import java.security.spec.KeySpec;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESedeKeySpec;
+import org.apache.commons.codec.binary.Base64;
+
+public class TrippleDes {
+
+    private static final String UNICODE_FORMAT = "UTF8";
+    public static final String DESEDE_ENCRYPTION_SCHEME = "DESede";
+    private KeySpec ks;
+    private SecretKeyFactory skf;
+    private Cipher cipher;
+    byte[] arrayBytes;
+    private String myEncryptionKey;
+    private String myEncryptionScheme;
+    SecretKey key;
+
+    public TrippleDes() throws Exception {
+        myEncryptionKey = "ThisIsSpartaThisIsSparta";
+        myEncryptionScheme = DESEDE_ENCRYPTION_SCHEME;
+        arrayBytes = myEncryptionKey.getBytes(UNICODE_FORMAT);
+        ks = new DESedeKeySpec(arrayBytes);
+        skf = SecretKeyFactory.getInstance(myEncryptionScheme);
+        cipher = Cipher.getInstance(myEncryptionScheme);
+        key = skf.generateSecret(ks);
+    }
+
+
+    public String encrypt(String unencryptedString) {
+        String encryptedString = null;
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] plainText = unencryptedString.getBytes(UNICODE_FORMAT);
+            byte[] encryptedText = cipher.doFinal(plainText);
+            encryptedString = new String(Base64.encodeBase64(encryptedText));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return encryptedString;
+    }
+
+
+    public String decrypt(String encryptedString) {
+        String decryptedText=null;
+        try {
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            byte[] encryptedText = Base64.decodeBase64(encryptedString);
+            byte[] plainText = cipher.doFinal(encryptedText);
+            decryptedText= new String(plainText);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return decryptedText;
+    }
+
+
+    public static void main(String args []) throws Exception
+    {
+        TrippleDes td= new TrippleDes();
+
+        String target="imparator";
+        String encrypted=td.encrypt(target);
+        String decrypted=td.decrypt(encrypted);
+
+        System.out.println("String To Encrypt: "+ target);
+        System.out.println("Encrypted String:" + encrypted);
+        System.out.println("Decrypted String:" + decrypted);
+
+    }
+
+}
+</code></pre>
+
+<p>Running the above program results with the following output: </p>
+
+<pre><code>String To Encrypt: imparator
+Encrypted String:FdBNaYWfjpWN9eYghMpbRA==
+Decrypted String:imparator
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:18:12:0194, answer_open, VisualItem[tree.nodes,5,id=13612902,type=20,title=,body=<p>Here is a solution using the <strong>javax.crypto</strong> library and the apache commons codec library for encoding and decoding in Base64: </p>
+
+<pre><code>import java.security.spec.KeySpec;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESedeKeySpec;
+import org.apache.commons.codec.binary.Base64;
+
+public class TrippleDes {
+
+    private static final String UNICODE_FORMAT = "UTF8";
+    public static final String DESEDE_ENCRYPTION_SCHEME = "DESede";
+    private KeySpec ks;
+    private SecretKeyFactory skf;
+    private Cipher cipher;
+    byte[] arrayBytes;
+    private String myEncryptionKey;
+    private String myEncryptionScheme;
+    SecretKey key;
+
+    public TrippleDes() throws Exception {
+        myEncryptionKey = "ThisIsSpartaThisIsSparta";
+        myEncryptionScheme = DESEDE_ENCRYPTION_SCHEME;
+        arrayBytes = myEncryptionKey.getBytes(UNICODE_FORMAT);
+        ks = new DESedeKeySpec(arrayBytes);
+        skf = SecretKeyFactory.getInstance(myEncryptionScheme);
+        cipher = Cipher.getInstance(myEncryptionScheme);
+        key = skf.generateSecret(ks);
+    }
+
+
+    public String encrypt(String unencryptedString) {
+        String encryptedString = null;
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] plainText = unencryptedString.getBytes(UNICODE_FORMAT);
+            byte[] encryptedText = cipher.doFinal(plainText);
+            encryptedString = new String(Base64.encodeBase64(encryptedText));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return encryptedString;
+    }
+
+
+    public String decrypt(String encryptedString) {
+        String decryptedText=null;
+        try {
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            byte[] encryptedText = Base64.decodeBase64(encryptedString);
+            byte[] plainText = cipher.doFinal(encryptedText);
+            decryptedText= new String(plainText);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return decryptedText;
+    }
+
+
+    public static void main(String args []) throws Exception
+    {
+        TrippleDes td= new TrippleDes();
+
+        String target="imparator";
+        String encrypted=td.encrypt(target);
+        String decrypted=td.decrypt(encrypted);
+
+        System.out.println("String To Encrypt: "+ target);
+        System.out.println("Encrypted String:" + encrypted);
+        System.out.println("Decrypted String:" + decrypted);
+
+    }
+
+}
+</code></pre>
+
+<p>Running the above program results with the following output: </p>
+
+<pre><code>String To Encrypt: imparator
+Encrypted String:FdBNaYWfjpWN9eYghMpbRA==
+Decrypted String:imparator
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:18:12:0196, diag_detail_itementered, id=13612902, type=20
+2014-11-12 07:18:12:0281, diag_detail_itemexited, id=13612902, type=20
+2014-11-12 07:18:12:0745, answer_open, VisualItem[tree.nodes,5,id=13612902,type=20,title=,body=<p>Here is a solution using the <strong>javax.crypto</strong> library and the apache commons codec library for encoding and decoding in Base64: </p>
+
+<pre><code>import java.security.spec.KeySpec;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESedeKeySpec;
+import org.apache.commons.codec.binary.Base64;
+
+public class TrippleDes {
+
+    private static final String UNICODE_FORMAT = "UTF8";
+    public static final String DESEDE_ENCRYPTION_SCHEME = "DESede";
+    private KeySpec ks;
+    private SecretKeyFactory skf;
+    private Cipher cipher;
+    byte[] arrayBytes;
+    private String myEncryptionKey;
+    private String myEncryptionScheme;
+    SecretKey key;
+
+    public TrippleDes() throws Exception {
+        myEncryptionKey = "ThisIsSpartaThisIsSparta";
+        myEncryptionScheme = DESEDE_ENCRYPTION_SCHEME;
+        arrayBytes = myEncryptionKey.getBytes(UNICODE_FORMAT);
+        ks = new DESedeKeySpec(arrayBytes);
+        skf = SecretKeyFactory.getInstance(myEncryptionScheme);
+        cipher = Cipher.getInstance(myEncryptionScheme);
+        key = skf.generateSecret(ks);
+    }
+
+
+    public String encrypt(String unencryptedString) {
+        String encryptedString = null;
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] plainText = unencryptedString.getBytes(UNICODE_FORMAT);
+            byte[] encryptedText = cipher.doFinal(plainText);
+            encryptedString = new String(Base64.encodeBase64(encryptedText));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return encryptedString;
+    }
+
+
+    public String decrypt(String encryptedString) {
+        String decryptedText=null;
+        try {
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            byte[] encryptedText = Base64.decodeBase64(encryptedString);
+            byte[] plainText = cipher.doFinal(encryptedText);
+            decryptedText= new String(plainText);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return decryptedText;
+    }
+
+
+    public static void main(String args []) throws Exception
+    {
+        TrippleDes td= new TrippleDes();
+
+        String target="imparator";
+        String encrypted=td.encrypt(target);
+        String decrypted=td.decrypt(encrypted);
+
+        System.out.println("String To Encrypt: "+ target);
+        System.out.println("Encrypted String:" + encrypted);
+        System.out.println("Decrypted String:" + decrypted);
+
+    }
+
+}
+</code></pre>
+
+<p>Running the above program results with the following output: </p>
+
+<pre><code>String To Encrypt: imparator
+Encrypted String:FdBNaYWfjpWN9eYghMpbRA==
+Decrypted String:imparator
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:18:12:0754, answer_open, VisualItem[tree.nodes,5,id=13612902,type=20,title=,body=<p>Here is a solution using the <strong>javax.crypto</strong> library and the apache commons codec library for encoding and decoding in Base64: </p>
+
+<pre><code>import java.security.spec.KeySpec;
+import javax.crypto.Cipher;
+import javax.crypto.SecretKey;
+import javax.crypto.SecretKeyFactory;
+import javax.crypto.spec.DESedeKeySpec;
+import org.apache.commons.codec.binary.Base64;
+
+public class TrippleDes {
+
+    private static final String UNICODE_FORMAT = "UTF8";
+    public static final String DESEDE_ENCRYPTION_SCHEME = "DESede";
+    private KeySpec ks;
+    private SecretKeyFactory skf;
+    private Cipher cipher;
+    byte[] arrayBytes;
+    private String myEncryptionKey;
+    private String myEncryptionScheme;
+    SecretKey key;
+
+    public TrippleDes() throws Exception {
+        myEncryptionKey = "ThisIsSpartaThisIsSparta";
+        myEncryptionScheme = DESEDE_ENCRYPTION_SCHEME;
+        arrayBytes = myEncryptionKey.getBytes(UNICODE_FORMAT);
+        ks = new DESedeKeySpec(arrayBytes);
+        skf = SecretKeyFactory.getInstance(myEncryptionScheme);
+        cipher = Cipher.getInstance(myEncryptionScheme);
+        key = skf.generateSecret(ks);
+    }
+
+
+    public String encrypt(String unencryptedString) {
+        String encryptedString = null;
+        try {
+            cipher.init(Cipher.ENCRYPT_MODE, key);
+            byte[] plainText = unencryptedString.getBytes(UNICODE_FORMAT);
+            byte[] encryptedText = cipher.doFinal(plainText);
+            encryptedString = new String(Base64.encodeBase64(encryptedText));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return encryptedString;
+    }
+
+
+    public String decrypt(String encryptedString) {
+        String decryptedText=null;
+        try {
+            cipher.init(Cipher.DECRYPT_MODE, key);
+            byte[] encryptedText = Base64.decodeBase64(encryptedString);
+            byte[] plainText = cipher.doFinal(encryptedText);
+            decryptedText= new String(plainText);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return decryptedText;
+    }
+
+
+    public static void main(String args []) throws Exception
+    {
+        TrippleDes td= new TrippleDes();
+
+        String target="imparator";
+        String encrypted=td.encrypt(target);
+        String decrypted=td.decrypt(encrypted);
+
+        System.out.println("String To Encrypt: "+ target);
+        System.out.println("Encrypted String:" + encrypted);
+        System.out.println("Decrypted String:" + decrypted);
+
+    }
+
+}
+</code></pre>
+
+<p>Running the above program results with the following output: </p>
+
+<pre><code>String To Encrypt: imparator
+Encrypted String:FdBNaYWfjpWN9eYghMpbRA==
+Decrypted String:imparator
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:18:12:0756, diag_detail_itementered, id=13612902, type=20
+2014-11-12 07:18:12:0795, diag_detail_itemexited, id=13612902, type=20
+2014-11-12 07:18:14:0707, answer_open, VisualItem[tree.nodes,3,id=10164989,type=20,title=,body=<p>I had hard times figuring it out myself and this post helped me to find the right answer for my case. When working with financial messaging as ISO-8583 the 3DES requirements are quite specific, so for my especial case the "DESede/CBC/PKCS5Padding" combinations wasn't solving the problem. After some comparative testing of my results against some 3DES calculators designed for the financial world I found the the value "DESede/ECB/Nopadding" is more suited for the the specific task.</p>
+
+<p>Here is a demo implementation of my TripleDes class (using the Bouncy Castle provider)</p>
+
+<pre><code>
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+
+    /**
+     *
+     * @author Jose Luis Montes de Oca
+     */
+    public class TripleDesCipher {
+       private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/Nopadding";
+       private static String ALGORITHM = "DESede";
+       private static String BOUNCY_CASTLE_PROVIDER = "BC";
+       private Cipher encrypter;
+       private Cipher decrypter;
+
+       public TripleDesCipher(byte[] key) throws NoSuchAlgorithmException, NoSuchProviderException, NoSuchPaddingException,
+             InvalidKeyException {
+          Security.addProvider(new BouncyCastleProvider());
+          SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+          encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION, BOUNCY_CASTLE_PROVIDER);
+          encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+          decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION, BOUNCY_CASTLE_PROVIDER);
+          decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+       }
+
+       public byte[] encode(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+          return encrypter.doFinal(input);
+       }
+
+       public byte[] decode(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+          return decrypter.doFinal(input);
+       }
+    }
+
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:18:14:0714, answer_open, VisualItem[tree.nodes,3,id=10164989,type=20,title=,body=<p>I had hard times figuring it out myself and this post helped me to find the right answer for my case. When working with financial messaging as ISO-8583 the 3DES requirements are quite specific, so for my especial case the "DESede/CBC/PKCS5Padding" combinations wasn't solving the problem. After some comparative testing of my results against some 3DES calculators designed for the financial world I found the the value "DESede/ECB/Nopadding" is more suited for the the specific task.</p>
+
+<p>Here is a demo implementation of my TripleDes class (using the Bouncy Castle provider)</p>
+
+<pre><code>
+
+    import java.security.InvalidKeyException;
+    import java.security.NoSuchAlgorithmException;
+    import java.security.NoSuchProviderException;
+    import java.security.Security;
+    import javax.crypto.BadPaddingException;
+    import javax.crypto.Cipher;
+    import javax.crypto.IllegalBlockSizeException;
+    import javax.crypto.NoSuchPaddingException;
+    import javax.crypto.SecretKey;
+    import javax.crypto.spec.SecretKeySpec;
+    import org.bouncycastle.jce.provider.BouncyCastleProvider;
+
+
+    /**
+     *
+     * @author Jose Luis Montes de Oca
+     */
+    public class TripleDesCipher {
+       private static String TRIPLE_DES_TRANSFORMATION = "DESede/ECB/Nopadding";
+       private static String ALGORITHM = "DESede";
+       private static String BOUNCY_CASTLE_PROVIDER = "BC";
+       private Cipher encrypter;
+       private Cipher decrypter;
+
+       public TripleDesCipher(byte[] key) throws NoSuchAlgorithmException, NoSuchProviderException, NoSuchPaddingException,
+             InvalidKeyException {
+          Security.addProvider(new BouncyCastleProvider());
+          SecretKey keySpec = new SecretKeySpec(key, ALGORITHM);
+          encrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION, BOUNCY_CASTLE_PROVIDER);
+          encrypter.init(Cipher.ENCRYPT_MODE, keySpec);
+          decrypter = Cipher.getInstance(TRIPLE_DES_TRANSFORMATION, BOUNCY_CASTLE_PROVIDER);
+          decrypter.init(Cipher.DECRYPT_MODE, keySpec);
+       }
+
+       public byte[] encode(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+          return encrypter.doFinal(input);
+       }
+
+       public byte[] decode(byte[] input) throws IllegalBlockSizeException, BadPaddingException {
+          return decrypter.doFinal(input);
+       }
+    }
+
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1415791561354L,lastactivitydate=0L,tags=,score=2,rawtext=]
+2014-11-12 07:18:14:0716, diag_detail_itementered, id=10164989, type=20
+2014-11-12 07:18:15:0347, diag_detail_itemexited, id=10164989, type=20
+2014-11-12 07:18:15:0385, diag_detail_itementered, id=0.4148437416468179, type=4
+2014-11-12 07:18:15:0416, diag_detail_itemexited, id=0.4148437416468179, type=4
+2014-11-12 07:18:20:0080, diag_itementered, id=23402, type=1
+2014-11-12 07:18:20:0111, diag_itemexited, id=23402, type=1

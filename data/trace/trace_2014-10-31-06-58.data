@@ -1,0 +1,601 @@
+2014-10-31 06:58:32:0195, setup_loaddata
+2014-10-31 06:58:34:0535, list_mouseentered, 1641682794
+2014-10-31 06:58:34:0575, list_mouseexited
+2014-10-31 06:58:34:0985, diag_itementered, id=25033, type=1
+2014-10-31 06:58:35:0035, diag_itemexited, id=25033, type=1
+2014-10-31 06:58:35:0715, diag_itementered, id=7596, type=1
+2014-10-31 06:58:37:0405, edge_create, Tuple[0,1,0.7626662116526277,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0405, answer_create, 7599
+2014-10-31 06:58:37:0405, edge_create, Tuple[1,2,0.8652607529275823,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0405, answer_create, 7610
+2014-10-31 06:58:37:0415, edge_create, Tuple[1,3,0.11161814756662747,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0415, answer_create, 8335
+2014-10-31 06:58:37:0415, edge_create, Tuple[1,4,0.3926911611988281,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0415, answer_create, 8400
+2014-10-31 06:58:37:0415, edge_create, Tuple[1,5,0.9565666611346539,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0415, answer_create, 8438
+2014-10-31 06:58:37:0415, edge_create, Tuple[1,6,0.9157476995666409,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0415, answer_create, 8594
+2014-10-31 06:58:37:0425, edge_create, Tuple[1,7,0.32236932446746025,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0425, answer_create, 12930
+2014-10-31 06:58:37:0425, edge_create, Tuple[1,8,0.7426031193222863,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0425, answer_create, 13283
+2014-10-31 06:58:37:0425, edge_create, Tuple[1,9,0.3568824835489506,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0425, answer_create, 41544
+2014-10-31 06:58:37:0425, edge_create, Tuple[1,10,0.7579721089696696,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0425, answer_create, 43779
+2014-10-31 06:58:37:0425, edge_create, Tuple[1,11,0.8083302202948967,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0425, answer_create, 66745
+2014-10-31 06:58:37:0425, edge_create, Tuple[1,12,0.2034923067384069,4,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0435, edge_create, Tuple[0,13,0.8792783001992196,1,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0435, edge_create, Tuple[13,14,0.07883363758491979,1,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0435, edge_create, Tuple[13,15,0.040672171551175196,1,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0435, edge_create, Tuple[13,16,0.5821413474845614,1,0.0,1414753111595,1414753111595]
+2014-10-31 06:58:37:0465, discussion_open, 7596
+2014-10-31 06:58:37:0465, diag_itemclicked, id=7596, type=1
+2014-10-31 06:58:38:0415, diag_itemexited, id=7596, type=1
+2014-10-31 06:58:39:0135, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:58:39:0135, diag_detail_itementered, id=7599, type=20
+2014-10-31 06:58:40:0985, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:58:40:0985, diag_detail_itemclicked, id=7599, type=20
+2014-10-31 06:58:41:0925, diag_detail_itemexited, id=7599, type=20
+2014-10-31 06:58:42:0115, diag_detail_itementered, id=0.32236932446746025, type=4
+2014-10-31 06:58:42:0145, diag_detail_itemexited, id=0.32236932446746025, type=4
+2014-10-31 06:58:42:0165, diag_detail_itementered, id=0.9157476995666409, type=4
+2014-10-31 06:58:42:0185, diag_detail_itemexited, id=0.9157476995666409, type=4
+2014-10-31 06:58:42:0335, diag_detail_itementered, id=0.9157476995666409, type=4
+2014-10-31 06:58:42:0355, diag_detail_itemexited, id=0.9157476995666409, type=4
+2014-10-31 06:58:42:0505, diag_detail_itementered, id=0.9157476995666409, type=4
+2014-10-31 06:58:42:0545, diag_detail_itemexited, id=0.9157476995666409, type=4
+2014-10-31 06:58:42:0695, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:58:42:0695, diag_detail_itementered, id=8335, type=20
+2014-10-31 06:58:42:0765, diag_detail_itemexited, id=8335, type=20
+2014-10-31 06:58:43:0055, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:58:43:0055, diag_detail_itementered, id=8335, type=20
+2014-10-31 06:58:43:0876, diag_detail_itemexited, id=8335, type=20
+2014-10-31 06:58:44:0057, answer_open, VisualItem[tree.nodes,5,id=8400,type=20,title=,body=<p>I like break my classes down into packages that are related to each other.</p>
+
+<p>For example:
+<strong>Model</strong> For database related calls</p>
+
+<p><strong>View</strong> Classes that deal with what you see</p>
+
+<p><strong>Control</strong> Core functionality classes</p>
+
+<p><strong>Util</strong> Any misc. classes that are used (typically static functions)</p>
+
+<p>etc.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:58:44:0057, diag_detail_itementered, id=8400, type=20
+2014-10-31 06:58:44:0247, diag_detail_itemexited, id=8400, type=20
+2014-10-31 06:58:44:0967, answer_open, VisualItem[tree.nodes,5,id=8400,type=20,title=,body=<p>I like break my classes down into packages that are related to each other.</p>
+
+<p>For example:
+<strong>Model</strong> For database related calls</p>
+
+<p><strong>View</strong> Classes that deal with what you see</p>
+
+<p><strong>Control</strong> Core functionality classes</p>
+
+<p><strong>Util</strong> Any misc. classes that are used (typically static functions)</p>
+
+<p>etc.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:58:44:0967, diag_detail_itementered, id=8400, type=20
+2014-10-31 06:58:45:0897, answer_open, VisualItem[tree.nodes,5,id=8400,type=20,title=,body=<p>I like break my classes down into packages that are related to each other.</p>
+
+<p>For example:
+<strong>Model</strong> For database related calls</p>
+
+<p><strong>View</strong> Classes that deal with what you see</p>
+
+<p><strong>Control</strong> Core functionality classes</p>
+
+<p><strong>Util</strong> Any misc. classes that are used (typically static functions)</p>
+
+<p>etc.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:58:45:0897, diag_detail_itemclicked, id=8400, type=20
+2014-10-31 06:58:47:0247, diag_detail_itemexited, id=8400, type=20
+2014-10-31 06:58:47:0257, answer_open, VisualItem[tree.nodes,6,id=8438,type=20,title=,body=<p>I think keep it simple and don't over think it. Don't over abstract and layer too much. Just keep it neat, and as it grows, refactoring it is trivial. One of the best features of IDEs is refactoring, so why not make use of it and save you brain power for solving problems that are related to your app, rather then meta issues like code organisation.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:58:47:0257, diag_detail_itementered, id=8438, type=20
+2014-10-31 06:58:47:0307, diag_detail_itemexited, id=8438, type=20
+2014-10-31 06:58:48:0577, diag_detail_itementered, id=58163, type=1
+2014-10-31 06:58:48:0907, diag_detail_itemclicked, id=58163, type=1
+2014-10-31 06:58:49:0887, diag_detail_itemexited, id=58163, type=1
+2014-10-31 06:58:50:0497, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:58:50:0497, diag_detail_itementered, id=7599, type=20
+2014-10-31 06:58:51:0977, diag_detail_itemexited, id=7599, type=20
+2014-10-31 06:58:52:0447, diag_detail_itementered, id=0.8652607529275823, type=4
+2014-10-31 06:58:52:0497, diag_detail_itemexited, id=0.8652607529275823, type=4
+2014-10-31 06:58:52:0497, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:58:52:0497, diag_detail_itementered, id=7599, type=20
+2014-10-31 06:58:52:0567, diag_detail_itemexited, id=7599, type=20
+2014-10-31 06:58:53:0027, answer_open, VisualItem[tree.nodes,3,id=7610,type=20,title=,body=<p>Use packages to group related functionality together.</p>
+
+<p>Usually the top of your package tree is your domain name reversed (<code>com.domain.subdomain</code>) to guarantee uniqueness, and then usually there will be a package for your application. Then subdivide that by related area, so your <code>FileStorageStrategy</code> might go in, say, <code>com.domain.subdomain.myapp.storage</code>, and then there might be specific implementations/subclasses/whatever in <code>com.domain.subdomain.myapp.storage.file</code> and <code>com.domain.subdomain.myapp.storage.database</code>. These names can get pretty long, but <code>import</code> keeps them all at the top of files and IDEs can help to manage that as well.</p>
+
+<p>Exceptions usually go in the same package as the classes that throw them, so if you had, say, <code>FileStorageException</code> it would go in the same package as <code>FileStorageStrategy</code>. Likewise an interface defining constants would be in the same package.</p>
+
+<p>There's not really any standard as such, just use common sense, and if it all gets too messy, refactor!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:58:53:0027, diag_detail_itementered, id=7610, type=20
+2014-10-31 06:58:53:0787, diag_detail_itemexited, id=7610, type=20
+2014-10-31 06:58:54:0267, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:58:54:0267, diag_detail_itementered, id=8335, type=20
+2014-10-31 06:58:54:0987, diag_detail_itemexited, id=8335, type=20
+2014-10-31 06:58:55:0337, answer_open, VisualItem[tree.nodes,6,id=8438,type=20,title=,body=<p>I think keep it simple and don't over think it. Don't over abstract and layer too much. Just keep it neat, and as it grows, refactoring it is trivial. One of the best features of IDEs is refactoring, so why not make use of it and save you brain power for solving problems that are related to your app, rather then meta issues like code organisation.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:58:55:0337, diag_detail_itementered, id=8438, type=20
+2014-10-31 06:58:55:0617, diag_detail_itemexited, id=8438, type=20
+2014-10-31 06:58:56:0157, answer_open, VisualItem[tree.nodes,6,id=8438,type=20,title=,body=<p>I think keep it simple and don't over think it. Don't over abstract and layer too much. Just keep it neat, and as it grows, refactoring it is trivial. One of the best features of IDEs is refactoring, so why not make use of it and save you brain power for solving problems that are related to your app, rather then meta issues like code organisation.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:58:56:0167, diag_detail_itementered, id=8438, type=20
+2014-10-31 06:58:57:0787, diag_detail_itemexited, id=8438, type=20
+2014-10-31 06:58:57:0827, diag_detail_itementered, id=0.3926911611988281, type=4
+2014-10-31 06:58:57:0867, diag_detail_itemexited, id=0.3926911611988281, type=4
+2014-10-31 06:58:57:0867, diag_detail_itementered, id=0.11161814756662747, type=4
+2014-10-31 06:58:57:0867, diag_detail_itemexited, id=0.11161814756662747, type=4
+2014-10-31 06:58:57:0897, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:58:57:0897, diag_detail_itementered, id=7599, type=20
+2014-10-31 06:58:57:0937, diag_detail_itemexited, id=7599, type=20
+2014-10-31 06:58:59:0747, diag_detail_itementered, id=58163, type=1
+2014-10-31 06:59:00:0787, diag_detail_itemexited, id=58163, type=1
+2014-10-31 06:59:01:0167, diag_detail_itementered, id=40242, type=1
+2014-10-31 06:59:02:0067, diag_detail_itemexited, id=40242, type=1
+2014-10-31 06:59:02:0557, diag_detail_itementered, id=15690, type=1
+2014-10-31 06:59:03:0257, diag_detail_itemexited, id=15690, type=1
+2014-10-31 06:59:03:0537, answer_open, VisualItem[tree.nodes,12,id=66745,type=20,title=,body=<p>Where I'm working, we're using Maven 2 and we have a pretty nice archetype for our projects. The goal was to obtain a good separation of concerns, thus we defined a project structure using multiple modules (one for each application 'layer'):
+  - common: common code used by the other layers (e.g., i18n)
+  - entities: the domain entities
+  - repositories: this module contains the daos interfaces and implementations
+  - services-intf: interfaces for the services (e.g, UserService, ...) 
+  - services-impl: implementations of the services (e.g, UserServiceImpl) 
+  - web: everything regarding the web content (e.g., css, jsps, jsf pages, ...)
+  - ws: web services</p>
+
+<p>Each module has its own dependencies (e.g., repositories could have jpa) and some are project wide (thus they belong in the common module). Dependencies between the different project modules clearly separate things (e.g., the web layer depends on the service layer but doesn't know about the repository layer).</p>
+
+<p>Each module has its own base package, for example if the application package is "com.foo.bar", then we have:</p>
+
+<pre><code>com.foo.bar.common
+com.foo.bar.entities
+com.foo.bar.repositories
+com.foo.bar.services
+com.foo.bar.services.impl
+...
+</code></pre>
+
+<p>Each module respects the standard maven project structure:</p>
+
+<pre><code>   src\
+   ..main\java
+     ...\resources
+   ..test\java
+     ...\resources
+</code></pre>
+
+<p>Unit tests for a given layer easily find their place under \src\test... Everything that is domain specific has it's place in the entities module. Now something like a FileStorageStrategy should go into the repositories module, since we don't need to know exactly what the implementation is. In the services layer, we only know the repository interface, we do not care what the specific implementation is (separation of concerns).</p>
+
+<p>There are multiple advantages to this approach:</p>
+
+<ul>
+<li>clear separation of concerns</li>
+<li>each module is packageable as a jar (or a war in the case of the web module) and thus allows for easier code reuse (e.g., we could install the module in the maven repository and reuse it in another project)</li>
+<li>maximum independence of each part of the project</li>
+</ul>
+
+<p>I know this doesn't answer all your questions, but I think this could put you on the right path and could prove useful to others.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=4]
+2014-10-31 06:59:03:0537, diag_detail_itementered, id=66745, type=20
+2014-10-31 06:59:03:0647, diag_detail_itemexited, id=66745, type=20
+2014-10-31 06:59:05:0427, answer_open, VisualItem[tree.nodes,12,id=66745,type=20,title=,body=<p>Where I'm working, we're using Maven 2 and we have a pretty nice archetype for our projects. The goal was to obtain a good separation of concerns, thus we defined a project structure using multiple modules (one for each application 'layer'):
+  - common: common code used by the other layers (e.g., i18n)
+  - entities: the domain entities
+  - repositories: this module contains the daos interfaces and implementations
+  - services-intf: interfaces for the services (e.g, UserService, ...) 
+  - services-impl: implementations of the services (e.g, UserServiceImpl) 
+  - web: everything regarding the web content (e.g., css, jsps, jsf pages, ...)
+  - ws: web services</p>
+
+<p>Each module has its own dependencies (e.g., repositories could have jpa) and some are project wide (thus they belong in the common module). Dependencies between the different project modules clearly separate things (e.g., the web layer depends on the service layer but doesn't know about the repository layer).</p>
+
+<p>Each module has its own base package, for example if the application package is "com.foo.bar", then we have:</p>
+
+<pre><code>com.foo.bar.common
+com.foo.bar.entities
+com.foo.bar.repositories
+com.foo.bar.services
+com.foo.bar.services.impl
+...
+</code></pre>
+
+<p>Each module respects the standard maven project structure:</p>
+
+<pre><code>   src\
+   ..main\java
+     ...\resources
+   ..test\java
+     ...\resources
+</code></pre>
+
+<p>Unit tests for a given layer easily find their place under \src\test... Everything that is domain specific has it's place in the entities module. Now something like a FileStorageStrategy should go into the repositories module, since we don't need to know exactly what the implementation is. In the services layer, we only know the repository interface, we do not care what the specific implementation is (separation of concerns).</p>
+
+<p>There are multiple advantages to this approach:</p>
+
+<ul>
+<li>clear separation of concerns</li>
+<li>each module is packageable as a jar (or a war in the case of the web module) and thus allows for easier code reuse (e.g., we could install the module in the maven repository and reuse it in another project)</li>
+<li>maximum independence of each part of the project</li>
+</ul>
+
+<p>I know this doesn't answer all your questions, but I think this could put you on the right path and could prove useful to others.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=4]
+2014-10-31 06:59:05:0427, diag_detail_itementered, id=66745, type=20
+2014-10-31 06:59:08:0637, diag_detail_itemexited, id=66745, type=20
+2014-10-31 06:59:09:0037, answer_open, VisualItem[tree.nodes,11,id=43779,type=20,title=,body=<p>Short answer: draw your system architecture in terms of modules, drawn side-by-side, with each module sliced vertically into layers (e.g. view, model, persistence). Then use a structure like <em>com.mycompany.myapp.somemodule.somelayer</em>, e.g. <em>com.mycompany.myapp.client.view</em> or <em>com.mycompany.myapp.server.model</em>.</p>
+
+<p>Using the top level of packages for application <em>modules</em>, in the old-fashioned computer-science sense of modular programming, ought to be obvious. However, on most of the projects I have worked on we end up forgetting to do that, and end up with a mess of packages without that top-level structure. This anti-pattern usually shows itself as a package for something like 'listeners' or 'actions' that groups otherwise unrelated classes simply because they happen to implement the same interface.</p>
+
+<p>Within a module, or in a small application, use packages for the application layers. Likely packages include things like the following, depending on the architecture:</p>
+
+<ul>
+<li><em>com.mycompany.myapp.view</em></li>
+<li><em>com.mycompany.myapp.model</em></li>
+<li><em>com.mycompany.myapp.services</em></li>
+<li><em>com.mycompany.myapp.rules</em></li>
+<li><em>com.mycompany.myapp.persistence</em> (or 'dao' for data access layer)</li>
+<li><em>com.mycompany.myapp.util</em> (beware of this being used as if it were 'misc')</li>
+</ul>
+
+<p>Within each of these layers, it is natural to group classes by type if there are a lot. A common anti-pattern here is to unnecessarily introduce too many packages and levels of sub-package so that there are only a few classes in each package.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:09:0037, diag_detail_itementered, id=43779, type=20
+2014-10-31 06:59:13:0045, diag_detail_itemexited, id=43779, type=20
+2014-10-31 06:59:13:0735, answer_open, VisualItem[tree.nodes,10,id=41544,type=20,title=,body=<p>One thing that I found very helpful for unit tests was to have a myApp/src/ and also myApp/test_src/ directories. This way, I can place unit tests in the same packages as the classes they test, and yet I can easily exclude the test cases when I prepare my production installation.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:13:0735, diag_detail_itementered, id=41544, type=20
+2014-10-31 06:59:15:0435, diag_detail_itemexited, id=41544, type=20
+2014-10-31 06:59:15:0835, answer_open, VisualItem[tree.nodes,9,id=13283,type=21,title=,body=<p>I've really come to like Maven's <a href="http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html">Standard Directory Layout</a>.</p>
+
+<p>One of the key ideas for me is to have two source roots - one for production code and one for test code like so:</p>
+
+<pre><code>MyProject/src/main/java/com/acme/Widget.java
+MyProject/src/test/java/com/acme/WidgetTest.ava
+</code></pre>
+
+<p>(here, both src/main/java and src/test/java are source roots).</p>
+
+<p>Advantages:</p>
+
+<ul>
+<li>Your tests have package (or "default") level access to your classes under test.</li>
+<li>You can easily package only your production sources into a JAR by dropping src/test/java as a source root.</li>
+</ul>
+
+<p>One rule of thumb about class placement and packages:</p>
+
+<p>Generally speaking, well structured projects will be free of <a href="http://en.wikipedia.org/wiki/Circular_dependency">circular dependencies</a>. Learn when they are bad (and when they are <a href="http://beust.com/weblog/archives/000208.html">not</a>), and consider a tool like <a href="http://www.google.ca/search?q=JDepend&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">JDepend</a> or <a href="http://www.hello2morrow.com/en/sonarj/sonarj.php">SonarJ</a> that will help you eliminate them.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=11]
+2014-10-31 06:59:15:0835, diag_detail_itementered, id=13283, type=21
+2014-10-31 06:59:17:0050, diag_detail_itemexited, id=13283, type=21
+2014-10-31 06:59:17:0160, diag_detail_itementered, id=0.32236932446746025, type=4
+2014-10-31 06:59:17:0200, diag_detail_itemexited, id=0.32236932446746025, type=4
+2014-10-31 06:59:17:0340, diag_detail_itementered, id=0.3926911611988281, type=4
+2014-10-31 06:59:17:0360, diag_detail_itemexited, id=0.3926911611988281, type=4
+2014-10-31 06:59:17:0360, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:59:17:0360, diag_detail_itementered, id=8335, type=20
+2014-10-31 06:59:17:0410, diag_detail_itemexited, id=8335, type=20
+2014-10-31 06:59:18:0470, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:59:18:0470, diag_detail_itementered, id=8335, type=20
+2014-10-31 06:59:19:0780, diag_detail_itemexited, id=8335, type=20
+2014-10-31 06:59:20:0560, answer_open, VisualItem[tree.nodes,3,id=7610,type=20,title=,body=<p>Use packages to group related functionality together.</p>
+
+<p>Usually the top of your package tree is your domain name reversed (<code>com.domain.subdomain</code>) to guarantee uniqueness, and then usually there will be a package for your application. Then subdivide that by related area, so your <code>FileStorageStrategy</code> might go in, say, <code>com.domain.subdomain.myapp.storage</code>, and then there might be specific implementations/subclasses/whatever in <code>com.domain.subdomain.myapp.storage.file</code> and <code>com.domain.subdomain.myapp.storage.database</code>. These names can get pretty long, but <code>import</code> keeps them all at the top of files and IDEs can help to manage that as well.</p>
+
+<p>Exceptions usually go in the same package as the classes that throw them, so if you had, say, <code>FileStorageException</code> it would go in the same package as <code>FileStorageStrategy</code>. Likewise an interface defining constants would be in the same package.</p>
+
+<p>There's not really any standard as such, just use common sense, and if it all gets too messy, refactor!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:20:0560, diag_detail_itementered, id=7610, type=20
+2014-10-31 06:59:22:0460, diag_detail_itemexited, id=7610, type=20
+2014-10-31 06:59:22:0950, answer_open, VisualItem[tree.nodes,3,id=7610,type=20,title=,body=<p>Use packages to group related functionality together.</p>
+
+<p>Usually the top of your package tree is your domain name reversed (<code>com.domain.subdomain</code>) to guarantee uniqueness, and then usually there will be a package for your application. Then subdivide that by related area, so your <code>FileStorageStrategy</code> might go in, say, <code>com.domain.subdomain.myapp.storage</code>, and then there might be specific implementations/subclasses/whatever in <code>com.domain.subdomain.myapp.storage.file</code> and <code>com.domain.subdomain.myapp.storage.database</code>. These names can get pretty long, but <code>import</code> keeps them all at the top of files and IDEs can help to manage that as well.</p>
+
+<p>Exceptions usually go in the same package as the classes that throw them, so if you had, say, <code>FileStorageException</code> it would go in the same package as <code>FileStorageStrategy</code>. Likewise an interface defining constants would be in the same package.</p>
+
+<p>There's not really any standard as such, just use common sense, and if it all gets too messy, refactor!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:22:0960, diag_detail_itementered, id=7610, type=20
+2014-10-31 06:59:23:0830, answer_open, VisualItem[tree.nodes,3,id=7610,type=20,title=,body=<p>Use packages to group related functionality together.</p>
+
+<p>Usually the top of your package tree is your domain name reversed (<code>com.domain.subdomain</code>) to guarantee uniqueness, and then usually there will be a package for your application. Then subdivide that by related area, so your <code>FileStorageStrategy</code> might go in, say, <code>com.domain.subdomain.myapp.storage</code>, and then there might be specific implementations/subclasses/whatever in <code>com.domain.subdomain.myapp.storage.file</code> and <code>com.domain.subdomain.myapp.storage.database</code>. These names can get pretty long, but <code>import</code> keeps them all at the top of files and IDEs can help to manage that as well.</p>
+
+<p>Exceptions usually go in the same package as the classes that throw them, so if you had, say, <code>FileStorageException</code> it would go in the same package as <code>FileStorageStrategy</code>. Likewise an interface defining constants would be in the same package.</p>
+
+<p>There's not really any standard as such, just use common sense, and if it all gets too messy, refactor!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:23:0830, diag_detail_itemclicked, id=7610, type=20
+2014-10-31 06:59:26:0320, diag_detail_itemexited, id=7610, type=20
+2014-10-31 06:59:26:0330, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:59:26:0330, diag_detail_itementered, id=7599, type=20
+2014-10-31 06:59:26:0470, diag_detail_itemexited, id=7599, type=20
+2014-10-31 06:59:26:0740, diag_detail_itementered, id=0.8652607529275823, type=4
+2014-10-31 06:59:26:0780, diag_detail_itemexited, id=0.8652607529275823, type=4
+2014-10-31 06:59:26:0890, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:59:26:0890, diag_detail_itementered, id=7599, type=20
+2014-10-31 06:59:27:0250, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:59:27:0260, diag_detail_itemclicked, id=7599, type=20
+2014-10-31 06:59:28:0520, diag_detail_itemexited, id=7599, type=20
+2014-10-31 06:59:28:0940, answer_open, VisualItem[tree.nodes,3,id=7610,type=20,title=,body=<p>Use packages to group related functionality together.</p>
+
+<p>Usually the top of your package tree is your domain name reversed (<code>com.domain.subdomain</code>) to guarantee uniqueness, and then usually there will be a package for your application. Then subdivide that by related area, so your <code>FileStorageStrategy</code> might go in, say, <code>com.domain.subdomain.myapp.storage</code>, and then there might be specific implementations/subclasses/whatever in <code>com.domain.subdomain.myapp.storage.file</code> and <code>com.domain.subdomain.myapp.storage.database</code>. These names can get pretty long, but <code>import</code> keeps them all at the top of files and IDEs can help to manage that as well.</p>
+
+<p>Exceptions usually go in the same package as the classes that throw them, so if you had, say, <code>FileStorageException</code> it would go in the same package as <code>FileStorageStrategy</code>. Likewise an interface defining constants would be in the same package.</p>
+
+<p>There's not really any standard as such, just use common sense, and if it all gets too messy, refactor!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:28:0940, diag_detail_itementered, id=7610, type=20
+2014-10-31 06:59:29:0260, answer_open, VisualItem[tree.nodes,3,id=7610,type=20,title=,body=<p>Use packages to group related functionality together.</p>
+
+<p>Usually the top of your package tree is your domain name reversed (<code>com.domain.subdomain</code>) to guarantee uniqueness, and then usually there will be a package for your application. Then subdivide that by related area, so your <code>FileStorageStrategy</code> might go in, say, <code>com.domain.subdomain.myapp.storage</code>, and then there might be specific implementations/subclasses/whatever in <code>com.domain.subdomain.myapp.storage.file</code> and <code>com.domain.subdomain.myapp.storage.database</code>. These names can get pretty long, but <code>import</code> keeps them all at the top of files and IDEs can help to manage that as well.</p>
+
+<p>Exceptions usually go in the same package as the classes that throw them, so if you had, say, <code>FileStorageException</code> it would go in the same package as <code>FileStorageStrategy</code>. Likewise an interface defining constants would be in the same package.</p>
+
+<p>There's not really any standard as such, just use common sense, and if it all gets too messy, refactor!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:29:0260, diag_detail_itemclicked, id=7610, type=20
+2014-10-31 06:59:32:0830, diag_detail_itemexited, id=7610, type=20
+2014-10-31 06:59:33:0060, list_mouseentered, type=detailAnswersList
+2014-10-31 06:59:35:0762, answer_open, VisualItem[tree.nodes,8,id=12930,type=20,title=,body=<p>As you can see, there are a number of answers to your question.</p>
+
+<p>The point is, do it however you want to, whichever way makes sense to you,but stick to the method you choose unless and until you decide on a better way, at which point you need to go back and refactor everything you've already done so it still all fits in the same pattern.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:59:35:0762, list_itemclicked, type=detailAnswersList, item=58163
+2014-10-31 06:59:36:0672, answer_open, VisualItem[tree.nodes,7,id=8594,type=20,title=,body=<p>I'm a huge fan of organized sources, so I always create the following directory structure:</p>
+
+<pre><code>/src - for your packages &amp; classes
+/test - for unit tests
+/docs - for documentation, generated and manually edited
+/lib - 3rd party libraries
+/etc - unrelated stuff
+/bin (or /classes) - compiled classes, output of your compile
+/dist - for distribution packages, hopefully auto generated by a build system
+</code></pre>
+
+<p>In /src I'm using the default Java patterns: Package names starting with your domain (org.yourdomain.yourprojectname) and class names reflecting the OOP aspect you're creating with the class (see the other commenters). Common package names like <em>util</em>, <em>model</em>, <em>view</em>, <em>events</em> are useful, too.</p>
+
+<p>I tend to put constants for a specific topic in an own class, like <em>SessionConstants</em> or <em>ServiceConstants</em> in the same package of the domain classes.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=7]
+2014-10-31 06:59:36:0672, list_itemclicked, type=detailAnswersList, item=58163
+2014-10-31 06:59:37:0562, list_mouseexited, type=detailAnswersList
+2014-10-31 06:59:39:0472, list_mouseentered, type=detailAnswersList
+2014-10-31 06:59:39:0882, answer_open, VisualItem[tree.nodes,10,id=41544,type=20,title=,body=<p>One thing that I found very helpful for unit tests was to have a myApp/src/ and also myApp/test_src/ directories. This way, I can place unit tests in the same packages as the classes they test, and yet I can easily exclude the test cases when I prepare my production installation.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:39:0882, list_itemclicked, type=detailAnswersList, item=58163
+2014-10-31 06:59:40:0762, answer_open, VisualItem[tree.nodes,9,id=13283,type=21,title=,body=<p>I've really come to like Maven's <a href="http://maven.apache.org/guides/introduction/introduction-to-the-standard-directory-layout.html">Standard Directory Layout</a>.</p>
+
+<p>One of the key ideas for me is to have two source roots - one for production code and one for test code like so:</p>
+
+<pre><code>MyProject/src/main/java/com/acme/Widget.java
+MyProject/src/test/java/com/acme/WidgetTest.ava
+</code></pre>
+
+<p>(here, both src/main/java and src/test/java are source roots).</p>
+
+<p>Advantages:</p>
+
+<ul>
+<li>Your tests have package (or "default") level access to your classes under test.</li>
+<li>You can easily package only your production sources into a JAR by dropping src/test/java as a source root.</li>
+</ul>
+
+<p>One rule of thumb about class placement and packages:</p>
+
+<p>Generally speaking, well structured projects will be free of <a href="http://en.wikipedia.org/wiki/Circular_dependency">circular dependencies</a>. Learn when they are bad (and when they are <a href="http://beust.com/weblog/archives/000208.html">not</a>), and consider a tool like <a href="http://www.google.ca/search?q=JDepend&amp;ie=utf-8&amp;oe=utf-8&amp;aq=t&amp;rls=org.mozilla:en-US:official&amp;client=firefox-a">JDepend</a> or <a href="http://www.hello2morrow.com/en/sonarj/sonarj.php">SonarJ</a> that will help you eliminate them.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=11]
+2014-10-31 06:59:40:0762, list_itemclicked, type=detailAnswersList, item=58163
+2014-10-31 06:59:42:0742, list_mouseexited, type=detailAnswersList
+2014-10-31 06:59:43:0092, list_mouseentered, type=detailAnswersList
+2014-10-31 06:59:43:0722, list_mouseexited, type=detailAnswersList
+2014-10-31 06:59:43:0752, list_mouseentered, type=detailAnswersList
+2014-10-31 06:59:44:0832, answer_open, VisualItem[tree.nodes,10,id=41544,type=20,title=,body=<p>One thing that I found very helpful for unit tests was to have a myApp/src/ and also myApp/test_src/ directories. This way, I can place unit tests in the same packages as the classes they test, and yet I can easily exclude the test cases when I prepare my production installation.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:44:0832, list_itemclicked, type=detailAnswersList, item=58163
+2014-10-31 06:59:47:0172, answer_open, VisualItem[tree.nodes,11,id=43779,type=20,title=,body=<p>Short answer: draw your system architecture in terms of modules, drawn side-by-side, with each module sliced vertically into layers (e.g. view, model, persistence). Then use a structure like <em>com.mycompany.myapp.somemodule.somelayer</em>, e.g. <em>com.mycompany.myapp.client.view</em> or <em>com.mycompany.myapp.server.model</em>.</p>
+
+<p>Using the top level of packages for application <em>modules</em>, in the old-fashioned computer-science sense of modular programming, ought to be obvious. However, on most of the projects I have worked on we end up forgetting to do that, and end up with a mess of packages without that top-level structure. This anti-pattern usually shows itself as a package for something like 'listeners' or 'actions' that groups otherwise unrelated classes simply because they happen to implement the same interface.</p>
+
+<p>Within a module, or in a small application, use packages for the application layers. Likely packages include things like the following, depending on the architecture:</p>
+
+<ul>
+<li><em>com.mycompany.myapp.view</em></li>
+<li><em>com.mycompany.myapp.model</em></li>
+<li><em>com.mycompany.myapp.services</em></li>
+<li><em>com.mycompany.myapp.rules</em></li>
+<li><em>com.mycompany.myapp.persistence</em> (or 'dao' for data access layer)</li>
+<li><em>com.mycompany.myapp.util</em> (beware of this being used as if it were 'misc')</li>
+</ul>
+
+<p>Within each of these layers, it is natural to group classes by type if there are a lot. A common anti-pattern here is to unnecessarily introduce too many packages and levels of sub-package so that there are only a few classes in each package.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:47:0172, list_itemclicked, type=detailAnswersList, item=58163
+2014-10-31 06:59:48:0002, list_mouseexited, type=detailAnswersList
+2014-10-31 06:59:48:0762, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:59:48:0762, diag_detail_itementered, id=7599, type=20
+2014-10-31 06:59:50:0482, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 06:59:50:0512, diag_detail_itemclicked, id=7599, type=20
+2014-10-31 06:59:51:0862, diag_detail_itemexited, id=7599, type=20
+2014-10-31 06:59:52:0512, answer_open, VisualItem[tree.nodes,3,id=7610,type=20,title=,body=<p>Use packages to group related functionality together.</p>
+
+<p>Usually the top of your package tree is your domain name reversed (<code>com.domain.subdomain</code>) to guarantee uniqueness, and then usually there will be a package for your application. Then subdivide that by related area, so your <code>FileStorageStrategy</code> might go in, say, <code>com.domain.subdomain.myapp.storage</code>, and then there might be specific implementations/subclasses/whatever in <code>com.domain.subdomain.myapp.storage.file</code> and <code>com.domain.subdomain.myapp.storage.database</code>. These names can get pretty long, but <code>import</code> keeps them all at the top of files and IDEs can help to manage that as well.</p>
+
+<p>Exceptions usually go in the same package as the classes that throw them, so if you had, say, <code>FileStorageException</code> it would go in the same package as <code>FileStorageStrategy</code>. Likewise an interface defining constants would be in the same package.</p>
+
+<p>There's not really any standard as such, just use common sense, and if it all gets too messy, refactor!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:52:0512, diag_detail_itementered, id=7610, type=20
+2014-10-31 06:59:52:0882, answer_open, VisualItem[tree.nodes,3,id=7610,type=20,title=,body=<p>Use packages to group related functionality together.</p>
+
+<p>Usually the top of your package tree is your domain name reversed (<code>com.domain.subdomain</code>) to guarantee uniqueness, and then usually there will be a package for your application. Then subdivide that by related area, so your <code>FileStorageStrategy</code> might go in, say, <code>com.domain.subdomain.myapp.storage</code>, and then there might be specific implementations/subclasses/whatever in <code>com.domain.subdomain.myapp.storage.file</code> and <code>com.domain.subdomain.myapp.storage.database</code>. These names can get pretty long, but <code>import</code> keeps them all at the top of files and IDEs can help to manage that as well.</p>
+
+<p>Exceptions usually go in the same package as the classes that throw them, so if you had, say, <code>FileStorageException</code> it would go in the same package as <code>FileStorageStrategy</code>. Likewise an interface defining constants would be in the same package.</p>
+
+<p>There's not really any standard as such, just use common sense, and if it all gets too messy, refactor!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 06:59:52:0882, diag_detail_itemclicked, id=7610, type=20
+2014-10-31 06:59:53:0882, diag_detail_itemexited, id=7610, type=20
+2014-10-31 06:59:54:0232, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:59:54:0232, diag_detail_itementered, id=8335, type=20
+2014-10-31 06:59:56:0632, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:59:56:0632, diag_detail_itemclicked, id=8335, type=20
+2014-10-31 06:59:57:0862, diag_detail_itemexited, id=8335, type=20
+2014-10-31 06:59:58:0112, answer_open, VisualItem[tree.nodes,5,id=8400,type=20,title=,body=<p>I like break my classes down into packages that are related to each other.</p>
+
+<p>For example:
+<strong>Model</strong> For database related calls</p>
+
+<p><strong>View</strong> Classes that deal with what you see</p>
+
+<p><strong>Control</strong> Core functionality classes</p>
+
+<p><strong>Util</strong> Any misc. classes that are used (typically static functions)</p>
+
+<p>etc.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:59:58:0112, diag_detail_itementered, id=8400, type=20
+2014-10-31 06:59:58:0692, answer_open, VisualItem[tree.nodes,5,id=8400,type=20,title=,body=<p>I like break my classes down into packages that are related to each other.</p>
+
+<p>For example:
+<strong>Model</strong> For database related calls</p>
+
+<p><strong>View</strong> Classes that deal with what you see</p>
+
+<p><strong>Control</strong> Core functionality classes</p>
+
+<p><strong>Util</strong> Any misc. classes that are used (typically static functions)</p>
+
+<p>etc.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 06:59:58:0692, diag_detail_itemclicked, id=8400, type=20
+2014-10-31 07:00:00:0131, diag_detail_itemexited, id=8400, type=20
+2014-10-31 07:00:00:0491, diag_detail_itementered, id=0.11161814756662747, type=4
+2014-10-31 07:00:00:0531, diag_detail_itemexited, id=0.11161814756662747, type=4
+2014-10-31 07:00:00:0531, diag_detail_itementered, id=0.8652607529275823, type=4
+2014-10-31 07:00:00:0561, diag_detail_itemexited, id=0.8652607529275823, type=4
+2014-10-31 07:00:01:0211, diag_detail_itementered, id=58163, type=1
+2014-10-31 07:00:02:0261, diag_detail_itemexited, id=58163, type=1
+2014-10-31 07:00:03:0032, answer_open, VisualItem[tree.nodes,2,id=7599,type=20,title=,body=<p>Class names should always be descriptive and self-explanatory. If you have multiple domains of responsibility for your classes then they should probably be refactored.</p>
+
+<p>Likewise for you packages. They should be grouped by domain of responsibility. Every domain has it's own exceptions.</p>
+
+<p>Generally don't sweat it until you get to a point where it is becoming overwhelming and bloated. Then sit down and don't code, just refactor the classes out, compiling regularly to make sure everything works. Then continue as you did before.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 07:00:03:0032, diag_detail_itementered, id=7599, type=20
+2014-10-31 07:00:04:0333, diag_detail_itemexited, id=7599, type=20
+2014-10-31 07:00:04:0973, answer_open, VisualItem[tree.nodes,3,id=7610,type=20,title=,body=<p>Use packages to group related functionality together.</p>
+
+<p>Usually the top of your package tree is your domain name reversed (<code>com.domain.subdomain</code>) to guarantee uniqueness, and then usually there will be a package for your application. Then subdivide that by related area, so your <code>FileStorageStrategy</code> might go in, say, <code>com.domain.subdomain.myapp.storage</code>, and then there might be specific implementations/subclasses/whatever in <code>com.domain.subdomain.myapp.storage.file</code> and <code>com.domain.subdomain.myapp.storage.database</code>. These names can get pretty long, but <code>import</code> keeps them all at the top of files and IDEs can help to manage that as well.</p>
+
+<p>Exceptions usually go in the same package as the classes that throw them, so if you had, say, <code>FileStorageException</code> it would go in the same package as <code>FileStorageStrategy</code>. Likewise an interface defining constants would be in the same package.</p>
+
+<p>There's not really any standard as such, just use common sense, and if it all gets too messy, refactor!</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=1]
+2014-10-31 07:00:04:0973, diag_detail_itementered, id=7610, type=20
+2014-10-31 07:00:09:0883, diag_detail_itemexited, id=7610, type=20
+2014-10-31 07:00:10:0093, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:00:10:0093, diag_detail_itementered, id=8335, type=20
+2014-10-31 07:00:10:0133, diag_detail_itemexited, id=8335, type=20
+2014-10-31 07:00:10:0553, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:00:10:0553, diag_detail_itementered, id=8335, type=20
+2014-10-31 07:00:11:0713, answer_open, VisualItem[tree.nodes,4,id=8335,type=20,title=,body=<p>One thing I've done in the past - if I'm extending a class I'll try and follow their conventions. For example, when working with the Spring Framework, I'll have my MVC Controller classes in a package called com.mydomain.myapp.web.servlet.mvc
+If I'm not extending something I just go with what is simplest. com.mydomain.domain for Domain Objects (although if you have a ton of domain objects this package could get a bit unwieldy).
+For domain specific constants, I actually put them as public constants in the most related class. For example, if I have a "Member" class and have a maximum member name length constant, I put it in the Member class. Some shops make a separate Constants class but I don't see the value in lumping unrelated numbers and strings into a single class. I've seen some other shops try to solve this problem by creating SEPARATE Constants classes, but that just seems like a waste of time and the result is too confusing. Using this setup, a large project with multiple developers will be duplicating constants all over the place.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753111595L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:00:11:0713, diag_detail_itemclicked, id=8335, type=20
+2014-10-31 07:00:13:0083, diag_detail_itemexited, id=8335, type=20
+2014-10-31 07:00:13:0263, list_mouseentered, type=detailAnswersList
+2014-10-31 07:00:13:0603, list_mouseexited, type=detailAnswersList
+2014-10-31 07:00:13:0733, list_mouseentered, type=detailAnswersList
+2014-10-31 07:00:13:0923, list_mouseexited, type=detailAnswersList
+2014-10-31 07:01:10:0609, list_mouseentered, type=detailAnswersList
+2014-10-31 07:01:10:0999, list_mouseexited, type=detailAnswersList

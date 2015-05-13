@@ -1,0 +1,35 @@
+2014-09-26 07:49:49:0837, setup_loaddata
+2014-09-26 07:49:57:0131, diag_itementered, id=12144, type=1
+2014-09-26 07:49:57:0572, diag_itemexited, id=12144, type=1
+2014-09-26 07:49:58:0454, diag_itementered, id=12144, type=1
+2014-09-26 07:49:58:0963, diag_itemexited, id=12144, type=1
+2014-09-26 07:49:59:0321, diag_itementered, id=2968, type=1
+2014-09-26 07:50:00:0257, diag_itemexited, id=2968, type=1
+2014-09-26 07:50:01:0017, diag_itementered, id=12144, type=1
+2014-09-26 07:50:01:0636, diag_itemexited, id=12144, type=1
+2014-09-26 07:50:02:0257, diag_itementered, id=25765, type=1
+2014-09-26 07:50:02:0763, diag_itemexited, id=25765, type=1
+2014-09-26 07:50:03:0220, diag_itementered, id=123, type=1
+2014-09-26 07:50:04:0043, diag_itemexited, id=123, type=1
+2014-09-26 07:50:04:0960, diag_itementered, id=123, type=1
+2014-09-26 07:50:05:0543, diag_itemexited, id=123, type=1
+2014-09-26 07:50:06:0625, diag_itementered, id=123, type=1
+2014-09-26 07:50:07:0649, diag_itemexited, id=123, type=1
+2014-09-26 07:50:07:0711, diag_itementered, id=25765, type=1
+2014-09-26 07:50:07:0749, diag_itemexited, id=25765, type=1
+2014-09-26 07:50:08:0017, diag_itementered, id=25765, type=1
+2014-09-26 07:50:10:0396, diag_itemexited, id=25765, type=1
+2014-09-26 07:50:10:0443, diag_itementered, id=12144, type=1
+2014-09-26 07:50:10:0479, diag_itemexited, id=12144, type=1
+2014-09-26 07:50:10:0519, diag_itementered, id=19838, type=1
+2014-09-26 07:50:10:0562, diag_itemexited, id=19838, type=1
+2014-09-26 07:50:10:0563, diag_itementered, id=8318, type=1
+2014-09-26 07:50:10:0610, diag_itemexited, id=8318, type=1
+2014-09-26 07:50:10:0905, diag_itementered, id=29516, type=1
+2014-09-26 07:50:10:0966, diag_itemexited, id=29516, type=1
+2014-09-26 07:50:10:0967, diag_itementered, id=3049, type=1
+2014-09-26 07:50:11:0040, diag_itemexited, id=3049, type=1
+2014-09-26 07:50:11:0386, diag_itementered, id=13225, type=1
+2014-09-26 07:50:11:0440, diag_itemexited, id=13225, type=1
+2014-09-26 07:50:11:0441, list_mouseentered, 9913
+2014-09-26 07:50:15:0637, list_mouseexited

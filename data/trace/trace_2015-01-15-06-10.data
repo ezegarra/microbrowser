@@ -1,0 +1,41 @@
+2015-01-15 06:10:58:0328, setup_loaddata_begin
+2015-01-15 06:10:59:0004, setup_loaddata_end
+2015-01-15 06:10:59:0036, setup_createactions_begin
+2015-01-15 06:10:59:0094, setup_createactions_end
+2015-01-15 06:11:01:0802, diag_itemexited, id=1, type=4
+2015-01-15 06:11:01:0803, diag_itementered, id=1, type=0
+2015-01-15 06:11:01:0867, diag_itemexited, id=1, type=0
+2015-01-15 06:11:01:0892, diag_itemexited, id=1, type=4
+2015-01-15 06:11:02:0097, diag_itemexited, id=4, type=4
+2015-01-15 06:11:02:0098, diag_itementered, id=4, type=0
+2015-01-15 06:11:04:0137, diag_itemexited, id=4, type=0
+2015-01-15 06:11:04:0202, diag_itemexited, id=4, type=4
+2015-01-15 06:11:04:0260, diag_itemexited, id=3, type=4
+2015-01-15 06:11:04:0263, diag_itementered, id=3, type=0
+2015-01-15 06:11:04:0423, diag_itemexited, id=3, type=0
+2015-01-15 06:11:04:0493, diag_itemexited, id=3, type=4
+2015-01-15 06:11:07:0228, diag_itemexited, id=3, type=4
+2015-01-15 06:11:07:0230, diag_itementered, id=3, type=0
+2015-01-15 06:11:07:0301, diag_itemexited, id=3, type=0
+2015-01-15 06:11:07:0400, diag_itemexited, id=3, type=4
+2015-01-15 06:11:07:0400, diag_itementered, id=4, type=0
+2015-01-15 06:11:07:0483, diag_itemexited, id=4, type=0
+2015-01-15 06:11:07:0509, diag_itemexited, id=4, type=4
+2015-01-15 06:11:07:0526, diag_itemexited, id=3, type=4
+2015-01-15 06:11:08:0259, diag_itemexited, id=1, type=4
+2015-01-15 06:11:08:0261, diag_itementered, id=1, type=0
+2015-01-15 06:11:08:0607, diag_itemexited, id=1, type=0
+2015-01-15 06:11:08:0651, diag_itemexited, id=1, type=4
+2015-01-15 06:11:08:0935, list_mouseentered, id=1, type=0
+2015-01-15 06:11:08:0937, list_mousemoved, id=1, type=0
+2015-01-15 06:11:08:0959, list_mousemoved, id=1, type=0
+2015-01-15 06:11:08:0964, list_mousemoved, id=1, type=0
+2015-01-15 06:11:08:0988, list_mousemoved, id=1, type=0
+2015-01-15 06:11:09:0002, list_mousemoved, id=1, type=0
+2015-01-15 06:11:09:0013, list_mousemoved, id=1, type=0
+2015-01-15 06:11:09:0022, list_mousemoved, id=1, type=0
+2015-01-15 06:11:09:0047, list_mousemoved, id=1, type=0
+2015-01-15 06:11:09:0057, list_mousemoved, id=1, type=0
+2015-01-15 06:11:09:0070, list_mousemoved, id=1, type=0
+2015-01-15 06:11:09:0081, list_mousemoved, id=1, type=0
+2015-01-15 06:11:09:0106, list_mouseexited

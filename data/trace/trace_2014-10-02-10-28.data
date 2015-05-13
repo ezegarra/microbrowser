@@ -1,0 +1,40 @@
+2014-10-02 10:28:14:0688, setup_loaddata
+2014-10-02 10:28:23:0870, diag_itementered, id=23106, type=1
+2014-10-02 10:28:25:0062, diag_itemexited, id=23106, type=1
+2014-10-02 10:28:25:0630, diag_itementered, id=15899, type=1
+2014-10-02 10:28:26:0750, diag_itemexited, id=15899, type=1
+2014-10-02 10:28:26:0854, diag_itementered, id=15732, type=1
+2014-10-02 10:28:27:0317, diag_itemexited, id=15732, type=1
+2014-10-02 10:28:27:0503, diag_itementered, id=123, type=1
+2014-10-02 10:28:27:0957, diag_itemexited, id=123, type=1
+2014-10-02 10:28:28:0102, diag_itementered, id=19893, type=1
+2014-10-02 10:28:28:0733, diag_itemexited, id=19893, type=1
+2014-10-02 10:28:29:0191, diag_itementered, id=8599, type=1
+2014-10-02 10:28:30:0005, diag_itemexited, id=8599, type=1
+2014-10-02 10:28:30:0086, diag_itementered, id=20778, type=1
+2014-10-02 10:28:30:0152, diag_itemexited, id=20778, type=1
+2014-10-02 10:28:30:0254, diag_itementered, id=13225, type=1
+2014-10-02 10:28:30:0325, diag_itemexited, id=13225, type=1
+2014-10-02 10:28:30:0430, list_mouseentered, 13225
+2014-10-02 10:28:30:0494, list_mouseexited
+2014-10-02 10:28:35:0995, setup_loaddata
+2014-10-02 10:28:53:0648, diag_itementered, id=23106, type=1
+2014-10-02 10:28:54:0493, diag_itemexited, id=23106, type=1
+2014-10-02 10:28:55:0157, diag_itementered, id=15899, type=1
+2014-10-02 10:28:56:0311, diag_itemexited, id=15899, type=1
+2014-10-02 10:28:56:0599, diag_itementered, id=19893, type=1
+2014-10-02 10:28:57:0510, diag_itemexited, id=19893, type=1
+2014-10-02 10:28:57:0852, diag_itementered, id=123, type=1
+2014-10-02 10:28:58:0247, diag_itemexited, id=123, type=1
+2014-10-02 10:28:58:0341, diag_itementered, id=15732, type=1
+2014-10-02 10:28:59:0014, diag_itemexited, id=15732, type=1
+2014-10-02 10:28:59:0168, diag_itementered, id=8599, type=1
+2014-10-02 10:28:59:0249, diag_itemexited, id=8599, type=1
+2014-10-02 10:29:00:0046, diag_itementered, id=15695, type=1
+2014-10-02 10:29:00:0124, diag_itemexited, id=15695, type=1
+2014-10-02 10:29:01:0891, diag_itementered, id=18524, type=1
+2014-10-02 10:29:02:0047, diag_itemexited, id=18524, type=1
+2014-10-02 10:29:02:0111, diag_itementered, id=1641682794, type=0
+2014-10-02 10:29:02:0177, diag_itemexited, id=1641682794, type=0
+2014-10-02 10:29:02:0243, diag_itementered, id=24221, type=1
+2014-10-02 10:29:02:0314, diag_itemexited, id=24221, type=1

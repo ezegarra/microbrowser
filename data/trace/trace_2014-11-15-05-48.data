@@ -1,0 +1,39 @@
+2014-11-15 05:48:10:0822, setup_loaddata
+2014-11-15 05:48:14:0819, list_mouseentered, 3
+2014-11-15 05:48:14:0882, list_mouseexited
+2014-11-15 05:48:14:0992, diag_itementered, id=31693, type=1
+2014-11-15 05:48:15:0052, diag_itemexited, id=31693, type=1
+2014-11-15 05:48:19:0240, setup_loaddata
+2014-11-15 05:48:22:0893, diag_itementered, id=47045, type=1
+2014-11-15 05:48:22:0924, diag_itemexited, id=47045, type=1
+2014-11-15 05:48:23:0034, list_mouseentered, 20227
+2014-11-15 05:48:23:0145, list_mouseexited
+2014-11-15 05:48:57:0813, setup_loaddata
+2014-11-15 05:49:02:0822, list_mouseentered, 2
+2014-11-15 05:49:03:0606, list_mouseexited
+2014-11-15 05:49:04:0311, diag_itementered, id=45865, type=1
+2014-11-15 05:49:04:0390, diag_itemexited, id=45865, type=1
+2014-11-15 05:49:04:0421, diag_itementered, id=20227, type=1
+2014-11-15 05:49:04:0468, diag_itemexited, id=20227, type=1
+2014-11-15 05:49:07:0477, setup_loaddata
+2014-11-15 05:49:14:0728, setup_loaddata
+2014-11-15 05:49:18:0110, diag_itementered, id=2, type=0
+2014-11-15 05:49:18:0172, diag_itemexited, id=2, type=0
+2014-11-15 05:49:18:0376, list_mouseentered, 2
+2014-11-15 05:49:18:0905, list_mouseexited
+2014-11-15 05:49:34:0145, list_mouseentered, 4
+2014-11-15 05:49:34:0442, list_mouseexited
+2014-11-15 05:49:43:0235, list_mouseentered, 3049
+2014-11-15 05:50:05:0638, edge_create, Tuple[0,1,0.6115667713486445,1,0.0,1416048536721,1416048536721]
+2014-11-15 05:50:05:0638, edge_create, Tuple[1,2,0.9700335875237084,1,0.0,1416048536721,1416048536721]
+2014-11-15 05:50:05:0671, edge_create, Tuple[1,3,0.7457328744551894,1,0.0,1416048536721,1416048536721]
+2014-11-15 05:50:05:0843, discussion_open, 24723
+2014-11-15 05:50:05:0859, list_mouseexited
+2014-11-15 05:50:07:0529, list_mouseentered, type=detailAnswersList
+2014-11-15 05:50:07:0623, list_mouseexited, type=detailAnswersList
+2014-11-15 05:50:07:0702, list_mouseentered, type=detailAnswersList
+2014-11-15 05:50:07:0985, list_mouseexited, type=detailAnswersList
+2014-11-15 05:50:08:0783, list_mouseentered, type=detailRelatedList, item=13225
+2014-11-15 05:50:12:0422, list_mouseexited, type=detailRelatedList
+2014-11-15 05:51:08:0459, list_mouseentered, 41107
+2014-11-15 05:51:08:0583, list_mouseexited

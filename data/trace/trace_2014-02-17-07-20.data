@@ -1,0 +1,38 @@
+2014-02-17 07:20:43:0565, setup_loaddata
+2014-02-17 07:20:43:0803, setup_resizewin
+2014-02-17 07:20:47:0461, diag_itementered, id=6612, type=1
+2014-02-17 07:20:49:0843, diag_itemexited, id=6612, type=1
+2014-02-17 07:20:50:0132, diag_itementered, id=11930, type=1
+2014-02-17 07:20:50:0832, diag_itemexited, id=11930, type=1
+2014-02-17 07:20:50:0871, diag_itementered, id=10506, type=1
+2014-02-17 07:20:51:0556, diag_itemexited, id=10506, type=1
+2014-02-17 07:20:51:0692, diag_itementered, id=18524, type=1
+2014-02-17 07:20:52:0355, diag_itemexited, id=18524, type=1
+2014-02-17 07:20:52:0418, diag_itementered, id=4922, type=1
+2014-02-17 07:20:52:0470, diag_itemexited, id=4922, type=1
+2014-02-17 07:20:52:0503, diag_itementered, id=20127, type=1
+2014-02-17 07:20:52:0563, diag_itemexited, id=20127, type=1
+2014-02-17 07:20:52:0565, diag_itementered, id=15496, type=1
+2014-02-17 07:20:53:0347, diag_itemexited, id=15496, type=1
+2014-02-17 07:20:53:0456, diag_itementered, id=382, type=1
+2014-02-17 07:20:53:0511, diag_itemexited, id=382, type=1
+2014-02-17 07:20:53:0999, diag_itementered, id=382, type=1
+2014-02-17 07:20:54:0667, diag_itemexited, id=382, type=1
+2014-02-17 07:20:54:0711, diag_itementered, id=15851, type=1
+2014-02-17 07:20:55:0349, diag_itemexited, id=15851, type=1
+2014-02-17 07:20:55:0460, diag_itementered, id=3881, type=1
+2014-02-17 07:20:56:0281, diag_itemexited, id=3881, type=1
+2014-02-17 07:20:56:0367, diag_itementered, id=18538, type=1
+2014-02-17 07:20:57:0220, diag_itemexited, id=18538, type=1
+2014-02-17 07:20:57:0257, diag_itementered, id=18524, type=1
+2014-02-17 07:20:57:0293, diag_itemexited, id=18524, type=1
+2014-02-17 07:20:57:0681, diag_itementered, id=6612, type=1
+2014-02-17 07:20:58:0142, diag_itemexited, id=6612, type=1
+2014-02-17 07:20:58:0429, diag_itementered, id=15899, type=1
+2014-02-17 07:20:58:0477, diag_itemexited, id=15899, type=1
+2014-02-17 07:20:58:0506, list_mouseentered, 15496
+2014-02-17 07:20:58:0628, list_mouseexited
+2014-02-17 07:20:58:0882, diag_itementered, id=19893, type=1
+2014-02-17 07:20:59:0124, diag_itemexited, id=19893, type=1
+2014-02-17 07:20:59:0165, list_mouseentered, 18524
+2014-02-17 07:20:59:0220, list_mouseexited

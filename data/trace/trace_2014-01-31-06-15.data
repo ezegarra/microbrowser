@@ -1,0 +1,43 @@
+2014-01-31 06:15:17:0733, setup_loaddata
+2014-01-31 06:15:18:0077, setup_resizewin
+2014-01-31 06:15:36:0330, setup_loaddata
+2014-01-31 06:15:36:0546, setup_resizewin
+2014-01-31 06:15:37:0948, list_mouseentered, 126
+2014-01-31 06:15:38:0010, list_mouseexited, 
+2014-01-31 06:15:46:0191, setup_loaddata
+2014-01-31 06:15:46:0519, setup_resizewin
+2014-01-31 06:15:48:0580, list_mouseentered, 123
+2014-01-31 06:15:48:0636, list_mouseexited, 
+2014-01-31 06:39:00:0645, diag_itementered, id=8569, type=1
+2014-01-31 06:39:00:0652, diag_itemexited, id=8569, type=1
+2014-01-31 06:39:00:0654, diag_itementered, id=15690, type=1
+2014-01-31 06:39:00:0686, diag_itemexited, id=15690, type=1
+2014-01-31 06:39:08:0352, list_mouseentered, 123
+2014-01-31 06:39:08:0355, list_mouseexited, 
+2014-01-31 06:39:08:0599, list_mouseentered, 123
+2014-01-31 06:39:08:0833, list_mouseexited, 
+2014-01-31 06:39:09:0878, list_mouseentered, 123
+2014-01-31 06:39:09:0995, list_mouseexited, 
+2014-01-31 06:39:11:0694, search_update, 4
+2014-01-31 06:39:11:0709, search_update, 4r
+2014-01-31 06:39:12:0389, search_update, 4rr
+2014-01-31 06:39:12:0773, search_update, 4rrr
+2014-01-31 06:39:13:0528, search_update, 4rr
+2014-01-31 06:39:13:0812, search_update, 4r
+2014-01-31 06:39:14:0156, search_update, 4
+2014-01-31 06:39:14:0781, search_update, 
+2014-01-31 06:39:15:0447, search_update, r
+2014-01-31 06:39:15:0980, search_update, 
+2014-01-31 06:39:16:0508, search_update, r
+2014-01-31 06:39:16:0921, search_update, 
+2014-01-31 06:39:17:0408, search_update, r
+2014-01-31 06:39:17:0788, search_update, 
+2014-01-31 06:39:20:0239, search_update, r
+2014-01-31 06:39:21:0406, search_update, 
+2014-01-31 06:39:21:0977, search_update, r
+2014-01-31 06:39:22:0385, search_update, 
+2014-01-31 06:39:22:0803, search_update, r
+2014-01-31 06:39:23:0202, search_update, 
+2014-01-31 06:39:23:0633, search_update, r
+2014-01-31 06:39:23:0897, search_update, 
+2014-01-31 06:39:24:0721, search_update, r

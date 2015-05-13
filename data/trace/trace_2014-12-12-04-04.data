@@ -1,0 +1,363 @@
+2014-12-12 04:04:21:0488, setup_loaddata_begin
+2014-12-12 04:04:23:0236, setup_loaddata_end
+2014-12-12 04:04:23:0266, setup_createactions_begin
+2014-12-12 04:04:23:0406, setup_createactions_end
+2014-12-12 04:04:26:0157, diag_itementered, id=61615, type=1
+2014-12-12 04:04:26:0347, diag_itemexited, id=61615, type=1
+2014-12-12 04:04:26:0768, diag_itementered, id=61615, type=1
+2014-12-12 04:04:27:0923, edge_create, Tuple[0,1,0.5615291206835453,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0923, answer_create, 61617
+2014-12-12 04:04:27:0923, edge_create, Tuple[1,2,0.8228136031886849,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0923, answer_create, 61619
+2014-12-12 04:04:27:0923, edge_create, Tuple[1,3,0.17190459223961352,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0923, answer_create, 61620
+2014-12-12 04:04:27:0923, edge_create, Tuple[1,4,0.26929658670896417,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0923, answer_create, 61624
+2014-12-12 04:04:27:0923, edge_create, Tuple[1,5,0.646841854978709,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0933, answer_create, 61630
+2014-12-12 04:04:27:0933, edge_create, Tuple[1,6,0.0790724185616698,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0933, answer_create, 61641
+2014-12-12 04:04:27:0933, edge_create, Tuple[1,7,0.9123261716613681,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0933, answer_create, 69791
+2014-12-12 04:04:27:0933, edge_create, Tuple[1,8,0.0866160269109364,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0933, answer_create, 1413778
+2014-12-12 04:04:27:0933, edge_create, Tuple[1,9,0.39814681674886854,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0933, answer_create, 3185293
+2014-12-12 04:04:27:0933, edge_create, Tuple[1,10,0.194404404106296,4,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0933, edge_create, Tuple[0,11,0.8526348863187485,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0933, edge_create, Tuple[11,12,0.43581998710406133,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0943, edge_create, Tuple[11,13,0.6268613045653387,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0943, edge_create, Tuple[11,14,0.24404276550713866,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0943, edge_create, Tuple[11,15,0.7620474560625513,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0953, edge_create, Tuple[11,16,0.8757891756986552,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0953, edge_create, Tuple[11,17,0.0880893490063136,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0953, edge_create, Tuple[11,18,0.5467012972034578,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0963, edge_create, Tuple[11,19,0.7131586974969687,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0963, edge_create, Tuple[11,20,0.3802060968937394,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0963, edge_create, Tuple[11,21,0.755294958116308,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0973, edge_create, Tuple[11,22,0.3562943775942662,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0973, edge_create, Tuple[11,23,0.7033445489289852,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0973, edge_create, Tuple[11,24,0.06407329671813411,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0983, edge_create, Tuple[11,25,0.17876230134281723,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0983, edge_create, Tuple[11,26,0.8459171176140035,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0983, edge_create, Tuple[11,27,0.14951811423312777,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0993, edge_create, Tuple[11,28,0.39598837977542567,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0993, edge_create, Tuple[11,29,0.3861254311708314,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0993, edge_create, Tuple[11,30,0.7068702762043432,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:27:0993, edge_create, Tuple[11,31,0.4767281300600297,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0003, edge_create, Tuple[11,32,0.5006986387103646,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0003, edge_create, Tuple[11,33,0.3779763960972474,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0013, edge_create, Tuple[11,34,0.6318030620823517,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0013, edge_create, Tuple[11,35,0.8814411403889555,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0013, edge_create, Tuple[11,36,0.9933720626856117,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0023, edge_create, Tuple[11,37,0.6475373172729234,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0023, edge_create, Tuple[11,38,0.9285866750287227,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0023, edge_create, Tuple[11,39,0.4919496726064856,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0023, edge_create, Tuple[11,40,0.1551855481425728,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0033, edge_create, Tuple[11,41,0.3106089605727156,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0033, edge_create, Tuple[11,42,0.5203200324074994,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0033, edge_create, Tuple[11,43,0.5712009958532089,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0043, edge_create, Tuple[11,44,0.15924499699280603,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0043, edge_create, Tuple[11,45,0.3704839565102269,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0043, edge_create, Tuple[11,46,0.6269085000303689,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0043, edge_create, Tuple[11,47,0.11144190820732991,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0053, edge_create, Tuple[11,48,0.48651671212959857,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0053, edge_create, Tuple[11,49,0.36224044015429224,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0063, edge_create, Tuple[11,50,0.4949451255792997,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0063, edge_create, Tuple[11,51,0.15542700736828974,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0063, edge_create, Tuple[11,52,0.6333625843677021,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0073, edge_create, Tuple[11,53,0.12180768733116631,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0073, edge_create, Tuple[11,54,0.6451634520252503,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0073, edge_create, Tuple[11,55,0.44553927662665893,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0083, edge_create, Tuple[11,56,0.7054365997927444,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0083, edge_create, Tuple[11,57,0.7074222325375503,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0083, edge_create, Tuple[11,58,0.24051959028159797,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0093, edge_create, Tuple[11,59,0.5500235028318147,1,0.0,1418418262038,1418418262038]
+2014-12-12 04:04:28:0103, discussion_open, 61615
+2014-12-12 04:04:28:0103, diag_itemclicked, id=61615, type=1
+2014-12-12 04:04:28:0955, diag_itemexited, id=61615, type=1
+2014-12-12 04:04:29:0165, diag_detail_itementered, id=0.6451634520252503, type=1
+2014-12-12 04:04:29:0195, diag_detail_itemexited, id=0.6451634520252503, type=1
+2014-12-12 04:04:29:0575, diag_detail_itementered, id=0.7074222325375503, type=1
+2014-12-12 04:04:29:0615, diag_detail_itemexited, id=0.7074222325375503, type=1
+2014-12-12 04:04:29:0845, diag_detail_itementered, id=0.24051959028159797, type=1
+2014-12-12 04:04:29:0875, diag_detail_itemexited, id=0.24051959028159797, type=1
+2014-12-12 04:04:30:0195, diag_detail_itementered, id=0.8228136031886849, type=4
+2014-12-12 04:04:30:0215, diag_detail_itemexited, id=0.8228136031886849, type=4
+2014-12-12 04:04:30:0305, diag_detail_itementered, id=0.17190459223961352, type=4
+2014-12-12 04:04:30:0335, diag_detail_itemexited, id=0.17190459223961352, type=4
+2014-12-12 04:04:30:0415, answer_open, VisualItem[tree.nodes,4,id=61620,type=20,title=,body=<p>It depends:</p>
+
+<ul>
+<li>Does your team conform to any existing standards that require your using ASCII?</li>
+<li>Is your code ever going to be feasibly reused or read by someone who doesn't speak your native language?</li>
+<li>Do you envision a scenario where you'll need to ask for help online and will therefore not be able to copy-paste your code sample in as-is?</li>
+<li>Are you certain your entire suite of tools support code encoding?</li>
+</ul>
+
+<p>If you answered 'yes' to any of the above, stay ASCII only.  If not, go forward at your own risk.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-12 04:04:30:0425, answer_open, VisualItem[tree.nodes,4,id=61620,type=20,title=,body=<p>It depends:</p>
+
+<ul>
+<li>Does your team conform to any existing standards that require your using ASCII?</li>
+<li>Is your code ever going to be feasibly reused or read by someone who doesn't speak your native language?</li>
+<li>Do you envision a scenario where you'll need to ask for help online and will therefore not be able to copy-paste your code sample in as-is?</li>
+<li>Are you certain your entire suite of tools support code encoding?</li>
+</ul>
+
+<p>If you answered 'yes' to any of the above, stay ASCII only.  If not, go forward at your own risk.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-12 04:04:30:0425, diag_detail_itementered, id=61620, type=20
+2014-12-12 04:04:30:0507, diag_detail_itemexited, id=61620, type=20
+2014-12-12 04:04:30:0567, answer_open, VisualItem[tree.nodes,5,id=61624,type=21,title=,body=<p>I would stick to english, simply because you usually never know who is working on that code, and because some third-party tools used in the build/testing/bugtracking progress may have problems. Typing äöüß on a Non-German Keyboard is simply a PITA, and I simply believe that anyone involved in software development should speak english, but maybe that's just my arrogance as a non-native-english speaker.</p>
+
+<p>What you call "American arrogance" is not whether or not your program uses international variable names, it's when your program thinks "Währung" and "Wahrung" are the same words.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=13,searchfield=]
+2014-12-12 04:04:30:0567, answer_open, VisualItem[tree.nodes,5,id=61624,type=21,title=,body=<p>I would stick to english, simply because you usually never know who is working on that code, and because some third-party tools used in the build/testing/bugtracking progress may have problems. Typing äöüß on a Non-German Keyboard is simply a PITA, and I simply believe that anyone involved in software development should speak english, but maybe that's just my arrogance as a non-native-english speaker.</p>
+
+<p>What you call "American arrogance" is not whether or not your program uses international variable names, it's when your program thinks "Währung" and "Wahrung" are the same words.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=13,searchfield=]
+2014-12-12 04:04:30:0567, diag_detail_itementered, id=61624, type=21
+2014-12-12 04:04:30:0922, diag_detail_itemexited, id=61624, type=21
+2014-12-12 04:04:36:0820, answer_open, VisualItem[tree.nodes,2,id=61617,type=20,title=,body=<p>I'd say it entirely depends on who's working on the codebase.</p>
+
+<p>If you have a small group of developers who all share a common language and you don't ever plan needing anyone who doesn't speak the language to work on the code then go ahead and use whatever characters you want.</p>
+
+<p>If you need to have people of varying cultures and languages working on the code then it's probably best to stick with English since it's the common denominator for just about everyone in the world.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=7,searchfield=]
+2014-12-12 04:04:36:0830, answer_open, VisualItem[tree.nodes,2,id=61617,type=20,title=,body=<p>I'd say it entirely depends on who's working on the codebase.</p>
+
+<p>If you have a small group of developers who all share a common language and you don't ever plan needing anyone who doesn't speak the language to work on the code then go ahead and use whatever characters you want.</p>
+
+<p>If you need to have people of varying cultures and languages working on the code then it's probably best to stick with English since it's the common denominator for just about everyone in the world.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=7,searchfield=]
+2014-12-12 04:04:36:0830, diag_detail_itementered, id=61617, type=20
+2014-12-12 04:04:36:0910, diag_detail_itemexited, id=61617, type=20
+2014-12-12 04:04:37:0280, diag_detail_itementered, id=0.8228136031886849, type=4
+2014-12-12 04:04:37:0330, diag_detail_itemexited, id=0.8228136031886849, type=4
+2014-12-12 04:04:37:0592, diag_detail_itementered, id=0.6268613045653387, type=1
+2014-12-12 04:04:37:0622, diag_detail_itemexited, id=0.6268613045653387, type=1
+2014-12-12 04:04:37:0652, diag_detail_itementered, id=7596, type=1
+2014-12-12 04:04:37:0702, diag_detail_itemexited, id=7596, type=1
+2014-12-12 04:04:41:0445, answer_open, VisualItem[tree.nodes,5,id=61624,type=21,title=,body=<p>I would stick to english, simply because you usually never know who is working on that code, and because some third-party tools used in the build/testing/bugtracking progress may have problems. Typing äöüß on a Non-German Keyboard is simply a PITA, and I simply believe that anyone involved in software development should speak english, but maybe that's just my arrogance as a non-native-english speaker.</p>
+
+<p>What you call "American arrogance" is not whether or not your program uses international variable names, it's when your program thinks "Währung" and "Wahrung" are the same words.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=13,searchfield=]
+2014-12-12 04:04:41:0445, answer_open, VisualItem[tree.nodes,5,id=61624,type=21,title=,body=<p>I would stick to english, simply because you usually never know who is working on that code, and because some third-party tools used in the build/testing/bugtracking progress may have problems. Typing äöüß on a Non-German Keyboard is simply a PITA, and I simply believe that anyone involved in software development should speak english, but maybe that's just my arrogance as a non-native-english speaker.</p>
+
+<p>What you call "American arrogance" is not whether or not your program uses international variable names, it's when your program thinks "Währung" and "Wahrung" are the same words.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=13,searchfield=]
+2014-12-12 04:04:41:0445, diag_detail_itementered, id=61624, type=21
+2014-12-12 04:04:43:0185, diag_detail_itemclicked, id=61624, type=21
+2014-12-12 04:04:44:0227, diag_detail_itemexited, id=61624, type=21
+2014-12-12 04:04:44:0307, diag_detail_itementered, id=0.0880893490063136, type=1
+2014-12-12 04:04:44:0337, diag_detail_itemexited, id=0.0880893490063136, type=1
+2014-12-12 04:04:44:0477, diag_detail_itementered, id=0.755294958116308, type=1
+2014-12-12 04:04:44:0497, diag_detail_itemexited, id=0.755294958116308, type=1
+2014-12-12 04:04:46:0770, diag_detail_itementered, id=60302, type=1
+2014-12-12 04:04:46:0790, diag_detail_itemexited, id=60302, type=1
+2014-12-12 04:04:46:0790, diag_detail_itementered, id=0.3802060968937394, type=1
+2014-12-12 04:04:46:0810, diag_detail_itemexited, id=0.3802060968937394, type=1
+2014-12-12 04:04:46:0840, diag_detail_itementered, id=0.0880893490063136, type=1
+2014-12-12 04:04:46:0860, diag_detail_itemexited, id=0.0880893490063136, type=1
+2014-12-12 04:04:46:0950, diag_detail_itementered, id=0.43581998710406133, type=1
+2014-12-12 04:04:46:0990, diag_detail_itemexited, id=0.43581998710406133, type=1
+2014-12-12 04:04:47:0480, answer_open, VisualItem[tree.nodes,10,id=3185293,type=20,title=,body=<p>I would stick to ASCII characters because if anyone in your development team is using an SDK that only supports ASCII or you wanted to make your code open source, alot of problems could arise. Personally, I would not do it even if you are not planning on bringing anyone who doesn't speak the language in on the project, because you are running a business and it seems to me that one running a business would want his business to expand, which in this day and age means transcending national borders. My opinion is that English is the language of the realm, and even if you name your variables in a different language, there is little to no point to use any non-ASCII characters in your programming. Leave it up to the language to deal with it if you are handling data that is UTF8: my iPhone program (which involves tons of user data going in between the phone and server) has full UTF8 support, but has no UTF8 in the source code. It just seems to open such a large can of worms for almost no benefit.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-12 04:04:47:0480, answer_open, VisualItem[tree.nodes,10,id=3185293,type=20,title=,body=<p>I would stick to ASCII characters because if anyone in your development team is using an SDK that only supports ASCII or you wanted to make your code open source, alot of problems could arise. Personally, I would not do it even if you are not planning on bringing anyone who doesn't speak the language in on the project, because you are running a business and it seems to me that one running a business would want his business to expand, which in this day and age means transcending national borders. My opinion is that English is the language of the realm, and even if you name your variables in a different language, there is little to no point to use any non-ASCII characters in your programming. Leave it up to the language to deal with it if you are handling data that is UTF8: my iPhone program (which involves tons of user data going in between the phone and server) has full UTF8 support, but has no UTF8 in the source code. It just seems to open such a large can of worms for almost no benefit.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418418262038L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-12 04:04:47:0480, diag_detail_itementered, id=3185293, type=20
+2014-12-12 04:04:47:0820, diag_detail_itemexited, id=3185293, type=20
+2014-12-12 04:04:47:0850, diag_detail_itementered, id=0.194404404106296, type=4
+2014-12-12 04:04:47:0880, diag_detail_itemexited, id=0.194404404106296, type=4
+2014-12-12 04:04:48:0010, diag_detail_itementered, id=0.9123261716613681, type=4
+2014-12-12 04:04:48:0050, diag_detail_itemexited, id=0.9123261716613681, type=4
+2014-12-12 04:04:48:0050, diag_detail_itementered, id=1141050120, type=3
+2014-12-12 04:04:48:0160, diag_detail_itemexited, id=1141050120, type=3
+2014-12-12 04:04:48:0450, diag_detail_itementered, id=61615, type=1
+2014-12-12 04:04:48:0770, diag_detail_itemclicked, id=61615, type=1
+2014-12-12 04:04:49:0190, diag_detail_itemexited, id=61615, type=1
+2014-12-12 04:04:49:0440, diag_detail_itementered, id=0.8526348863187485, type=1
+2014-12-12 04:04:49:0470, diag_detail_itemexited, id=0.8526348863187485, type=1
+2014-12-12 04:04:49:0530, diag_detail_itementered, id=0.5500235028318147, type=1
+2014-12-12 04:04:49:0550, diag_detail_itemexited, id=0.5500235028318147, type=1
+2014-12-12 04:04:49:0550, diag_detail_itementered, id=0.7074222325375503, type=1
+2014-12-12 04:04:49:0570, diag_detail_itemexited, id=0.7074222325375503, type=1
+2014-12-12 04:04:49:0660, diag_detail_itementered, id=0.15542700736828974, type=1
+2014-12-12 04:04:49:0690, diag_detail_itemexited, id=0.15542700736828974, type=1
+2014-12-12 04:04:49:0772, diag_detail_itementered, id=0.11144190820732991, type=1
+2014-12-12 04:04:49:0802, diag_detail_itemexited, id=0.11144190820732991, type=1
+2014-12-12 04:04:49:0802, diag_detail_itementered, id=0.6269085000303689, type=1
+2014-12-12 04:04:49:0812, diag_detail_itemexited, id=0.6269085000303689, type=1
+2014-12-12 04:04:49:0822, diag_detail_itementered, id=0.3704839565102269, type=1
+2014-12-12 04:04:49:0842, diag_detail_itemexited, id=0.3704839565102269, type=1
+2014-12-12 04:04:49:0842, diag_detail_itementered, id=0.15924499699280603, type=1
+2014-12-12 04:04:49:0872, diag_detail_itemexited, id=0.15924499699280603, type=1
+2014-12-12 04:04:49:0942, diag_detail_itementered, id=0.1551855481425728, type=1
+2014-12-12 04:04:49:0962, diag_detail_itemexited, id=0.1551855481425728, type=1
+2014-12-12 04:04:49:0982, diag_detail_itementered, id=0.4919496726064856, type=1
+2014-12-12 04:04:50:0002, diag_detail_itemexited, id=0.4919496726064856, type=1
+2014-12-12 04:04:50:0022, diag_detail_itementered, id=0.9285866750287227, type=1
+2014-12-12 04:04:50:0042, diag_detail_itemexited, id=0.9285866750287227, type=1
+2014-12-12 04:04:50:0042, diag_detail_itementered, id=0.6475373172729234, type=1
+2014-12-12 04:04:50:0062, diag_detail_itemexited, id=0.6475373172729234, type=1
+2014-12-12 04:04:50:0062, diag_detail_itementered, id=0.8814411403889555, type=1
+2014-12-12 04:04:50:0092, diag_detail_itemexited, id=0.8814411403889555, type=1
+2014-12-12 04:04:50:0092, diag_detail_itementered, id=-1774174061, type=3
+2014-12-12 04:04:50:0142, diag_detail_itemexited, id=-1774174061, type=3
+2014-12-12 04:04:50:0142, diag_detail_itementered, id=0.3861254311708314, type=1
+2014-12-12 04:04:50:0172, diag_detail_itemexited, id=0.3861254311708314, type=1
+2014-12-12 04:04:50:0172, diag_detail_itementered, id=0.39598837977542567, type=1
+2014-12-12 04:04:50:0192, diag_detail_itemexited, id=0.39598837977542567, type=1
+2014-12-12 04:04:50:0192, diag_detail_itementered, id=0.8459171176140035, type=1
+2014-12-12 04:04:50:0212, diag_detail_itemexited, id=0.8459171176140035, type=1
+2014-12-12 04:04:50:0212, diag_detail_itementered, id=0.17876230134281723, type=1
+2014-12-12 04:04:50:0232, diag_detail_itemexited, id=0.17876230134281723, type=1
+2014-12-12 04:04:50:0232, diag_detail_itementered, id=0.06407329671813411, type=1
+2014-12-12 04:04:50:0252, diag_detail_itemexited, id=0.06407329671813411, type=1
+2014-12-12 04:04:50:0343, diag_detail_itementered, id=0.0880893490063136, type=1
+2014-12-12 04:04:50:0359, diag_detail_itemexited, id=0.0880893490063136, type=1
+2014-12-12 04:04:50:0379, diag_detail_itementered, id=0.8757891756986552, type=1
+2014-12-12 04:04:50:0399, diag_detail_itemexited, id=0.8757891756986552, type=1
+2014-12-12 04:04:50:0429, diag_detail_itementered, id=0.7620474560625513, type=1
+2014-12-12 04:04:50:0439, diag_detail_itemexited, id=0.7620474560625513, type=1
+2014-12-12 04:04:50:0529, diag_detail_itementered, id=0.6268613045653387, type=1
+2014-12-12 04:04:50:0569, diag_detail_itemexited, id=0.6268613045653387, type=1
+2014-12-12 04:04:51:0051, diag_detail_itementered, id=61615, type=1
+2014-12-12 04:04:51:0211, diag_detail_itemexited, id=61615, type=1
+2014-12-12 04:04:52:0185, diag_detail_itementered, id=0.5500235028318147, type=1
+2014-12-12 04:04:52:0255, diag_detail_itemexited, id=0.5500235028318147, type=1
+2014-12-12 04:04:52:0385, diag_detail_itementered, id=0.24051959028159797, type=1
+2014-12-12 04:04:52:0405, diag_detail_itemexited, id=0.24051959028159797, type=1
+2014-12-12 04:04:52:0425, diag_detail_itementered, id=0.7074222325375503, type=1
+2014-12-12 04:04:52:0455, diag_detail_itemexited, id=0.7074222325375503, type=1
+2014-12-12 04:04:52:0575, diag_detail_itementered, id=0.12180768733116631, type=1
+2014-12-12 04:04:52:0615, diag_detail_itemexited, id=0.12180768733116631, type=1
+2014-12-12 04:04:52:0635, diag_detail_itementered, id=0.15542700736828974, type=1
+2014-12-12 04:04:52:0655, diag_detail_itemexited, id=0.15542700736828974, type=1
+2014-12-12 04:04:52:0937, diag_detail_itementered, id=0.5203200324074994, type=1
+2014-12-12 04:04:52:0957, diag_detail_itemexited, id=0.5203200324074994, type=1
+2014-12-12 04:04:52:0977, diag_detail_itementered, id=0.1551855481425728, type=1
+2014-12-12 04:04:53:0007, diag_detail_itemexited, id=0.1551855481425728, type=1
+2014-12-12 04:04:53:0007, diag_detail_itementered, id=0.4919496726064856, type=1
+2014-12-12 04:04:53:0027, diag_detail_itemexited, id=0.4919496726064856, type=1
+2014-12-12 04:04:53:0047, diag_detail_itementered, id=0.6318030620823517, type=1
+2014-12-12 04:04:53:0057, diag_detail_itemexited, id=0.6318030620823517, type=1
+2014-12-12 04:04:53:0067, diag_detail_itementered, id=-1774174061, type=3
+2014-12-12 04:04:53:0087, diag_detail_itemexited, id=-1774174061, type=3
+2014-12-12 04:04:53:0127, diag_detail_itementered, id=0.8459171176140035, type=1
+2014-12-12 04:04:53:0147, diag_detail_itemexited, id=0.8459171176140035, type=1
+2014-12-12 04:04:53:0157, diag_detail_itementered, id=0.17876230134281723, type=1
+2014-12-12 04:04:53:0167, diag_detail_itemexited, id=0.17876230134281723, type=1
+2014-12-12 04:04:53:0167, diag_detail_itementered, id=0.06407329671813411, type=1
+2014-12-12 04:04:53:0187, diag_detail_itemexited, id=0.06407329671813411, type=1
+2014-12-12 04:04:53:0257, diag_detail_itementered, id=0.755294958116308, type=1
+2014-12-12 04:04:53:0267, diag_detail_itemexited, id=0.755294958116308, type=1
+2014-12-12 04:04:53:0277, diag_detail_itementered, id=0.3802060968937394, type=1
+2014-12-12 04:04:53:0297, diag_detail_itemexited, id=0.3802060968937394, type=1
+2014-12-12 04:04:54:0020, diag_detail_itementered, id=0.0880893490063136, type=1
+2014-12-12 04:04:54:0240, diag_detail_itemexited, id=0.0880893490063136, type=1
+2014-12-12 04:05:04:0266, diag_detail_itementered, id=0.0880893490063136, type=1
+2014-12-12 04:05:04:0306, diag_detail_itemexited, id=0.0880893490063136, type=1
+2014-12-12 04:05:04:0376, diag_detail_itementered, id=0.0880893490063136, type=1
+2014-12-12 04:05:04:0397, diag_detail_itemexited, id=0.0880893490063136, type=1
+2014-12-12 04:05:04:0427, diag_detail_itementered, id=0.8757891756986552, type=1
+2014-12-12 04:05:04:0437, diag_detail_itemexited, id=0.8757891756986552, type=1
+2014-12-12 04:05:04:0487, diag_detail_itementered, id=0.6268613045653387, type=1
+2014-12-12 04:05:04:0527, diag_detail_itemexited, id=0.6268613045653387, type=1
+2014-12-12 04:05:04:0587, diag_detail_itementered, id=61615, type=1
+2014-12-12 04:05:04:0877, diag_detail_itemexited, id=61615, type=1
+2014-12-12 04:05:05:0197, diag_detail_itementered, id=61615, type=1
+2014-12-12 04:05:05:0517, diag_detail_itemexited, id=61615, type=1
+2014-12-12 04:05:05:0837, diag_detail_itementered, id=0.8526348863187485, type=1
+2014-12-12 04:05:06:0057, diag_detail_itemexited, id=0.8526348863187485, type=1
+2014-12-12 04:05:06:0217, diag_detail_itementered, id=0.5500235028318147, type=1
+2014-12-12 04:05:06:0257, diag_detail_itemexited, id=0.5500235028318147, type=1
+2014-12-12 04:05:06:0827, diag_detail_itementered, id=0.5500235028318147, type=1
+2014-12-12 04:05:06:0867, diag_detail_itemexited, id=0.5500235028318147, type=1
+2014-12-12 04:05:08:0409, diag_detail_itementered, id=0.5500235028318147, type=1
+2014-12-12 04:05:08:0429, diag_detail_itemexited, id=0.5500235028318147, type=1
+2014-12-12 04:05:08:0449, diag_detail_itementered, id=0.24051959028159797, type=1
+2014-12-12 04:05:08:0469, diag_detail_itemexited, id=0.24051959028159797, type=1
+2014-12-12 04:05:08:0599, diag_detail_itementered, id=0.7074222325375503, type=1
+2014-12-12 04:05:08:0629, diag_detail_itemexited, id=0.7074222325375503, type=1
+2014-12-12 04:05:08:0649, diag_detail_itementered, id=0.6451634520252503, type=1
+2014-12-12 04:05:08:0679, diag_detail_itemexited, id=0.6451634520252503, type=1
+2014-12-12 04:05:08:0679, diag_detail_itementered, id=0.6333625843677021, type=1
+2014-12-12 04:05:08:0699, diag_detail_itemexited, id=0.6333625843677021, type=1
+2014-12-12 04:05:08:0779, diag_detail_itementered, id=0.3704839565102269, type=1
+2014-12-12 04:05:08:0809, diag_detail_itemexited, id=0.3704839565102269, type=1
+2014-12-12 04:05:08:0809, diag_detail_itementered, id=0.15924499699280603, type=1
+2014-12-12 04:05:08:0829, diag_detail_itemexited, id=0.15924499699280603, type=1
+2014-12-12 04:05:08:0829, diag_detail_itementered, id=0.5712009958532089, type=1
+2014-12-12 04:05:08:0839, diag_detail_itemexited, id=0.5712009958532089, type=1
+2014-12-12 04:05:08:0991, diag_detail_itementered, id=0.3779763960972474, type=1
+2014-12-12 04:05:09:0021, diag_detail_itemexited, id=0.3779763960972474, type=1
+2014-12-12 04:05:09:0041, diag_detail_itementered, id=0.7068702762043432, type=1
+2014-12-12 04:05:09:0071, diag_detail_itemexited, id=0.7068702762043432, type=1
+2014-12-12 04:05:09:0071, diag_detail_itementered, id=0.3861254311708314, type=1
+2014-12-12 04:05:09:0081, diag_detail_itemexited, id=0.3861254311708314, type=1
+2014-12-12 04:05:09:0121, diag_detail_itementered, id=0.14951811423312777, type=1
+2014-12-12 04:05:09:0141, diag_detail_itemexited, id=0.14951811423312777, type=1
+2014-12-12 04:05:09:0311, diag_detail_itementered, id=0.3802060968937394, type=1
+2014-12-12 04:05:09:0331, diag_detail_itemexited, id=0.3802060968937394, type=1
+2014-12-12 04:05:09:0331, diag_detail_itementered, id=0.7131586974969687, type=1
+2014-12-12 04:05:09:0351, diag_detail_itemexited, id=0.7131586974969687, type=1
+2014-12-12 04:05:09:0351, diag_detail_itementered, id=0.0880893490063136, type=1
+2014-12-12 04:05:09:0381, diag_detail_itemexited, id=0.0880893490063136, type=1
+2014-12-12 04:05:10:0031, diag_detail_itementered, id=0.5615291206835453, type=4
+2014-12-12 04:05:10:0071, diag_detail_itemexited, id=0.5615291206835453, type=4
+2014-12-12 04:05:12:0433, diag_detail_itementered, id=0.5500235028318147, type=1
+2014-12-12 04:05:12:0453, diag_detail_itemexited, id=0.5500235028318147, type=1
+2014-12-12 04:05:12:0453, diag_detail_itementered, id=-1774174061, type=3
+2014-12-12 04:05:12:0473, diag_detail_itemexited, id=-1774174061, type=3
+2014-12-12 04:05:18:0008, list_mouseentered, id=54909, type=1
+2014-12-12 04:05:18:0008, list_mousemoved, id=54909, type=1
+2014-12-12 04:05:18:0028, list_mousemoved, id=54909, type=1
+2014-12-12 04:05:18:0048, list_mousemoved, id=54909, type=1
+2014-12-12 04:05:18:0058, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0078, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0088, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0108, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0118, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0138, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0148, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0168, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0178, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0198, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0218, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0228, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0248, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0348, list_mouseexited
+2014-12-12 04:05:18:0878, list_mouseentered, id=21817, type=1
+2014-12-12 04:05:18:0878, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0908, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0928, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0938, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0948, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0978, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0988, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:18:0998, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0020, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0030, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0050, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0060, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0080, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0100, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0110, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0120, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0150, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0160, list_mousemoved, id=21817, type=1
+2014-12-12 04:05:19:0170, list_mouseexited
+2014-12-12 04:10:48:0693, diag_itementered, id=19766, type=1
+2014-12-12 04:10:48:0723, diag_itemexited, id=19766, type=1
+2014-12-12 04:10:48:0783, diag_itementered, id=50064, type=1
+2014-12-12 04:10:48:0813, diag_itemexited, id=50064, type=1
+2014-12-12 04:10:48:0813, diag_itementered, id=49379, type=1
+2014-12-12 04:10:48:0843, diag_itemexited, id=49379, type=1
+2014-12-12 04:31:52:0784, list_mouseentered, id=49379, type=1
+2014-12-12 04:31:52:0784, list_mousemoved, id=49379, type=1
+2014-12-12 04:31:52:0804, list_mousemoved, id=49379, type=1
+2014-12-12 04:31:52:0824, list_mousemoved, id=49379, type=1
+2014-12-12 04:31:52:0834, list_mouseexited

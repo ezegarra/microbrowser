@@ -1,0 +1,189 @@
+2015-01-15 07:19:08:0482, setup_loaddata_begin
+2015-01-15 07:19:12:0405, setup_loaddata_end
+2015-01-15 07:19:12:0440, setup_createactions_begin
+2015-01-15 07:19:12:0632, setup_createactions_end
+2015-01-15 07:19:18:0706, list_mouseentered, id=24723, type=1
+2015-01-15 07:19:18:0707, list_mousemoved, id=24723, type=1
+2015-01-15 07:19:18:0931, list_mousemoved, id=3049, type=1
+2015-01-15 07:19:19:0098, list_mousemoved, id=3049, type=1
+2015-01-15 07:19:19:0306, list_mouseexited
+2015-01-15 07:19:25:0322, list_mouseentered, id=24723, type=1
+2015-01-15 07:19:25:0323, list_mousemoved, id=24723, type=1
+2015-01-15 07:19:25:0631, list_mouseexited
+2015-01-15 07:19:28:0612, diag_itementered, id=41107, type=1
+2015-01-15 07:19:28:0628, diag_itemexited, id=41107, type=1
+2015-01-15 07:19:37:0759, search_update, junit testng
+2015-01-15 07:19:39:0575, list_mouseentered, id=34571, type=1
+2015-01-15 07:19:39:0575, list_mousemoved, id=34571, type=1
+2015-01-15 07:19:39:0896, list_mousemoved, id=6658, type=1
+2015-01-15 07:19:40:0006, list_mousemoved, id=6658, type=1
+2015-01-15 07:19:40:0303, list_mousemoved, id=6658, type=1
+2015-01-15 07:19:40:0347, list_mousemoved, id=6658, type=1
+2015-01-15 07:19:40:0382, list_mousemoved, id=6658, type=1
+2015-01-15 07:19:40:0545, list_mousemoved, id=6658, type=1
+2015-01-15 07:19:40:0796, list_mouseexited
+2015-01-15 07:19:42:0086, diag_itementered, id=6658, type=1
+2015-01-15 07:19:45:0179, edge_create, Tuple[0,1,0.6187541267574569,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0179, answer_create, 6659
+2015-01-15 07:19:45:0189, edge_create, Tuple[1,2,0.15080365896471337,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0189, answer_create, 6671
+2015-01-15 07:19:45:0189, edge_create, Tuple[1,3,0.32562289318589477,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0189, answer_create, 6713
+2015-01-15 07:19:45:0189, edge_create, Tuple[1,4,0.2684485326268514,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0189, answer_create, 14412
+2015-01-15 07:19:45:0189, edge_create, Tuple[1,5,0.9995249163784954,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0189, answer_create, 46727
+2015-01-15 07:19:45:0189, edge_create, Tuple[1,6,0.8607767741488601,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0189, answer_create, 430893
+2015-01-15 07:19:45:0199, edge_create, Tuple[1,7,0.887797197511838,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0199, answer_create, 1232919
+2015-01-15 07:19:45:0199, edge_create, Tuple[1,8,0.044919887361576594,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0199, answer_create, 3522444
+2015-01-15 07:19:45:0199, edge_create, Tuple[1,9,0.23832526215249583,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0199, answer_create, 14729899
+2015-01-15 07:19:45:0199, edge_create, Tuple[1,10,0.5993088293658339,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0199, answer_create, 17062476
+2015-01-15 07:19:45:0199, edge_create, Tuple[1,11,0.5558626322210714,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0199, edge_create, Tuple[0,12,0.15493336160779414,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0199, edge_create, Tuple[12,13,0.7673361103040308,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0214, edge_create, Tuple[12,14,0.9270545795629874,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0217, edge_create, Tuple[12,15,0.5383891505498581,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0219, edge_create, Tuple[12,16,0.09051822862136416,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0225, edge_create, Tuple[12,17,0.12990431938349245,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0227, edge_create, Tuple[12,18,0.2928421835621703,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0230, edge_create, Tuple[12,19,0.26631807015399434,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0232, edge_create, Tuple[12,20,0.18789647408544186,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0235, edge_create, Tuple[12,21,0.22692526750370579,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0238, edge_create, Tuple[12,22,0.3305482461118565,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0241, edge_create, Tuple[12,23,0.752416485202671,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0244, edge_create, Tuple[12,24,0.26102057432662795,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0247, edge_create, Tuple[12,25,0.8825774458353804,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0250, edge_create, Tuple[12,26,0.22945248613612923,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0253, edge_create, Tuple[12,27,0.7740052454314821,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0253, edge_create, Tuple[12,28,0.2594119126202057,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:19:45:0273, discussion_open, 6658
+2015-01-15 07:19:45:0273, diag_itemclicked, id=6658, type=1
+2015-01-15 07:19:46:0513, diag_itemexited, id=6658, type=1
+2015-01-15 07:19:46:0983, answer_open, VisualItem[tree.nodes,3,id=6671,type=21,title=,body=<p>I've used both, but I have to agree with Justin Standard that you shouldn't really consider rewriting your existing tests to any new format.  Regardless of the decision, it is pretty trivial to run both.  TestNG strives to be much more configurable than JUnit, but in the end they both work equally well.</p>
+
+<p>TestNG has a neat feature where you can mark tests as a particular group, and then easily run all tests of a specific group, or exclude tests of a particular group.  Thus you can mark tests that run slowly as in the "slow" group and then ignore them when you want quick results.  A suggestion from their documentation is to mark some subset as "checkin" tests which should be run whenever you check new files in.  I never saw such a feature in JUnit, but then again, if you don't have it, you don't REALLY miss it.</p>
+
+<p>For all its claims of high configuration, I did run into a corner case the a couple weeks ago where I couldn't do what I wanted to do... I wish I could remember what it is, but I wanted to bring it up so you know that it's not perfect.</p>
+
+<p>The biggest advantage TestNG has is annotations... which JUnit added in version 4 anyways.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421324349031L,lastactivitydate=0L,tags=,score=36,searchfield=]
+2015-01-15 07:19:46:0986, answer_open, VisualItem[tree.nodes,3,id=6671,type=21,title=,body=<p>I've used both, but I have to agree with Justin Standard that you shouldn't really consider rewriting your existing tests to any new format.  Regardless of the decision, it is pretty trivial to run both.  TestNG strives to be much more configurable than JUnit, but in the end they both work equally well.</p>
+
+<p>TestNG has a neat feature where you can mark tests as a particular group, and then easily run all tests of a specific group, or exclude tests of a particular group.  Thus you can mark tests that run slowly as in the "slow" group and then ignore them when you want quick results.  A suggestion from their documentation is to mark some subset as "checkin" tests which should be run whenever you check new files in.  I never saw such a feature in JUnit, but then again, if you don't have it, you don't REALLY miss it.</p>
+
+<p>For all its claims of high configuration, I did run into a corner case the a couple weeks ago where I couldn't do what I wanted to do... I wish I could remember what it is, but I wanted to bring it up so you know that it's not perfect.</p>
+
+<p>The biggest advantage TestNG has is annotations... which JUnit added in version 4 anyways.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421324349031L,lastactivitydate=0L,tags=,score=36,searchfield=]
+2015-01-15 07:19:46:0987, diag_detail_itementered, id=6671, type=21
+2015-01-15 07:19:47:0324, diag_detail_itemclicked, id=6671, type=21
+2015-01-15 07:19:48:0690, diag_detail_itemexited, id=6671, type=21
+2015-01-15 07:19:49:0039, answer_open, VisualItem[tree.nodes,3,id=6671,type=21,title=,body=<p>I've used both, but I have to agree with Justin Standard that you shouldn't really consider rewriting your existing tests to any new format.  Regardless of the decision, it is pretty trivial to run both.  TestNG strives to be much more configurable than JUnit, but in the end they both work equally well.</p>
+
+<p>TestNG has a neat feature where you can mark tests as a particular group, and then easily run all tests of a specific group, or exclude tests of a particular group.  Thus you can mark tests that run slowly as in the "slow" group and then ignore them when you want quick results.  A suggestion from their documentation is to mark some subset as "checkin" tests which should be run whenever you check new files in.  I never saw such a feature in JUnit, but then again, if you don't have it, you don't REALLY miss it.</p>
+
+<p>For all its claims of high configuration, I did run into a corner case the a couple weeks ago where I couldn't do what I wanted to do... I wish I could remember what it is, but I wanted to bring it up so you know that it's not perfect.</p>
+
+<p>The biggest advantage TestNG has is annotations... which JUnit added in version 4 anyways.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421324349031L,lastactivitydate=0L,tags=,score=36,searchfield=]
+2015-01-15 07:19:49:0042, answer_open, VisualItem[tree.nodes,3,id=6671,type=21,title=,body=<p>I've used both, but I have to agree with Justin Standard that you shouldn't really consider rewriting your existing tests to any new format.  Regardless of the decision, it is pretty trivial to run both.  TestNG strives to be much more configurable than JUnit, but in the end they both work equally well.</p>
+
+<p>TestNG has a neat feature where you can mark tests as a particular group, and then easily run all tests of a specific group, or exclude tests of a particular group.  Thus you can mark tests that run slowly as in the "slow" group and then ignore them when you want quick results.  A suggestion from their documentation is to mark some subset as "checkin" tests which should be run whenever you check new files in.  I never saw such a feature in JUnit, but then again, if you don't have it, you don't REALLY miss it.</p>
+
+<p>For all its claims of high configuration, I did run into a corner case the a couple weeks ago where I couldn't do what I wanted to do... I wish I could remember what it is, but I wanted to bring it up so you know that it's not perfect.</p>
+
+<p>The biggest advantage TestNG has is annotations... which JUnit added in version 4 anyways.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421324349031L,lastactivitydate=0L,tags=,score=36,searchfield=]
+2015-01-15 07:19:49:0043, diag_detail_itementered, id=6671, type=21
+2015-01-15 07:19:54:0588, diag_detail_itemexited, id=6671, type=21
+2015-01-15 07:19:56:0908, list_mouseentered, type=detailAnswersList
+2015-01-15 07:19:57:0377, list_mouseexited, type=detailAnswersList
+2015-01-15 07:20:14:0899, edge_create, Tuple[267,503,0.17109017477720911,2,1.0,1418075694546,1418075694546]
+2015-01-15 07:20:15:0451, pattern_change_open
+2015-01-15 07:20:17:0031, edge_create, Tuple[0,1,0.2576924480228391,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0032, answer_create, 6659
+2015-01-15 07:20:17:0033, edge_create, Tuple[1,2,0.06722377602753993,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0034, answer_create, 6671
+2015-01-15 07:20:17:0035, edge_create, Tuple[1,3,0.6710333026660186,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0036, answer_create, 6713
+2015-01-15 07:20:17:0037, edge_create, Tuple[1,4,0.2597018834635818,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0038, answer_create, 14412
+2015-01-15 07:20:17:0039, edge_create, Tuple[1,5,0.9334776121986034,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0039, answer_create, 46727
+2015-01-15 07:20:17:0039, edge_create, Tuple[1,6,0.8001957718759454,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0039, answer_create, 430893
+2015-01-15 07:20:17:0039, edge_create, Tuple[1,7,0.1965935727784227,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0039, answer_create, 1232919
+2015-01-15 07:20:17:0039, edge_create, Tuple[1,8,0.6176928935634491,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0039, answer_create, 3522444
+2015-01-15 07:20:17:0039, edge_create, Tuple[1,9,0.785011504720483,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0039, answer_create, 14729899
+2015-01-15 07:20:17:0039, edge_create, Tuple[1,10,0.952812163556281,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0039, answer_create, 17062476
+2015-01-15 07:20:17:0049, edge_create, Tuple[1,11,0.5585957682301457,4,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0049, edge_create, Tuple[0,12,0.3173533446578307,2,1.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0049, pattern_create, 4
+2015-01-15 07:20:17:0049, edge_create, Tuple[12,13,0.11760913360929515,2,1.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0049, edge_create, Tuple[0,14,0.8724488446162367,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0049, edge_create, Tuple[14,15,0.17660480224153974,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0049, edge_create, Tuple[14,16,0.8099735375410914,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0059, edge_create, Tuple[14,17,0.7152866928667584,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0059, edge_create, Tuple[14,18,0.1977884072179047,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0069, edge_create, Tuple[14,19,0.8396246726625614,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0069, edge_create, Tuple[14,20,0.998420181043365,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0079, edge_create, Tuple[14,21,0.9441389022965915,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0079, edge_create, Tuple[14,22,0.5470166025763649,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0079, edge_create, Tuple[14,23,0.43713894619908145,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0079, edge_create, Tuple[14,24,0.6475891187205817,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0089, edge_create, Tuple[14,25,0.29610887226599203,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0092, edge_create, Tuple[14,26,0.8520157962189612,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0094, edge_create, Tuple[14,27,0.27228265970978194,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0097, edge_create, Tuple[14,28,0.17500101274303836,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0100, edge_create, Tuple[14,29,0.01429425396271633,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0102, edge_create, Tuple[14,30,0.9867794302952734,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:17:0110, discussion_open, 6658
+2015-01-15 07:20:17:0112, setup_loaddata_begin
+2015-01-15 07:20:18:0521, setup_loaddata_end
+2015-01-15 07:20:18:0523, setup_createactions_begin
+2015-01-15 07:20:18:0570, setup_createactions_end
+2015-01-15 07:20:24:0860, diag_detail_itementered, id=0.29610887226599203, type=1
+2015-01-15 07:20:25:0258, diag_detail_itemexited, id=0.29610887226599203, type=1
+2015-01-15 07:20:31:0841, list_pattern_mouseentered, id=1, type=0
+2015-01-15 07:20:31:0842, list_pattern_mousemoved, id=1, type=0
+2015-01-15 07:20:32:0138, list_pattern_mousemoved, id=2, type=0
+2015-01-15 07:20:32:0179, list_pattern_mousemoved, id=2, type=0
+2015-01-15 07:20:32:0343, list_pattern_mousemoved, id=2, type=0
+2015-01-15 07:20:32:0541, list_pattern_mousemoved, id=2, type=0
+2015-01-15 07:20:32:0930, list_pattern_mousemoved, id=3, type=0
+2015-01-15 07:20:33:0085, list_pattern_mousemoved, id=3, type=0
+2015-01-15 07:20:33:0596, list_pattern_mousemoved, id=3, type=0
+2015-01-15 07:20:33:0728, list_pattern_mousemoved, id=3, type=0
+2015-01-15 07:20:34:0056, list_pattern_mousemoved, id=4, type=0
+2015-01-15 07:20:34:0337, list_pattern_mousemoved, id=4, type=0
+2015-01-15 07:20:34:0403, list_pattern_mousemoved, id=4, type=0
+2015-01-15 07:20:35:0969, list_pattern_itemclicked, id=4, type=0
+2015-01-15 07:20:36:0681, edge_create, Tuple[0,1,0.27692611079226204,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:36:0681, edge_create, Tuple[1,2,0.08662273115822161,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:36:0681, edge_create, Tuple[1,3,0.8655938894793296,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:36:0691, edge_create, Tuple[1,4,0.04542893728361996,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:36:0691, edge_create, Tuple[1,5,0.3359540582659022,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:36:0701, edge_create, Tuple[1,6,0.2325633068691908,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:36:0701, edge_create, Tuple[1,7,0.9821742042102876,1,0.0,1421324349031,1421324349031]
+2015-01-15 07:20:36:0701, edge_create, Tuple[0,8,0.7069673956562722,2,1.0,1421324349031,1421324349031]
+2015-01-15 07:20:36:0701, pattern_create, 3
+2015-01-15 07:20:36:0701, edge_create, Tuple[8,9,0.723076167720258,2,1.0,1421324349031,1421324349031]
+2015-01-15 07:20:36:0711, pattern_open, 4
+2015-01-15 07:20:39:0250, list_pattern_mouseexited
+2015-01-15 07:20:41:0069, diag_detail_itementered, id=4, type=0
+2015-01-15 07:20:42:0037, diag_detail_itemexited, id=4, type=0
+2015-01-15 07:20:42:0408, diag_detail_itementered, id=40471, type=1
+2015-01-15 07:20:42:0443, diag_detail_itemexited, id=40471, type=1
+2015-01-15 07:20:42:0950, diag_detail_itementered, id=40471, type=1
+2015-01-15 07:20:43:0827, diag_detail_itemexited, id=40471, type=1
+2015-01-15 07:20:44:0373, diag_detail_itementered, id=36347, type=1
+2015-01-15 07:20:45:0167, diag_detail_itemexited, id=36347, type=1
+2015-01-15 07:20:45:0557, list_mouseentered, type=detailRelatedList, item=6658
+2015-01-15 07:20:49:0622, list_mouseexited, type=detailRelatedList
+2015-01-15 10:23:29:0880, list_mouseentered, type=detailRelatedList, item=31693
+2015-01-15 10:23:30:0770, list_mouseexited, type=detailRelatedList

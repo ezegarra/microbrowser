@@ -1,0 +1,37 @@
+2014-02-19 07:08:06:0528, setup_loaddata
+2014-02-19 07:08:09:0712, setup_resizewin
+2014-02-19 07:08:26:0950, list_mouseentered, 564
+2014-02-19 07:08:27:0636, list_mouseexited
+2014-02-19 07:08:27:0730, diag_itementered, id=15649, type=1
+2014-02-19 07:08:27:0761, diag_itemexited, id=15649, type=1
+2014-02-19 07:08:27:0792, diag_itementered, id=5527, type=1
+2014-02-19 07:08:27:0823, diag_itemexited, id=5527, type=1
+2014-02-19 07:08:27:0855, diag_itementered, id=15496, type=1
+2014-02-19 07:08:28:0369, diag_itemexited, id=15496, type=1
+2014-02-19 07:08:28:0635, diag_itementered, id=11341, type=1
+2014-02-19 07:08:28:0728, diag_itemexited, id=11341, type=1
+2014-02-19 07:08:28:0993, diag_itementered, id=15481, type=1
+2014-02-19 07:08:29:0025, diag_itemexited, id=15481, type=1
+2014-02-19 07:08:29:0056, diag_itementered, id=15649, type=1
+2014-02-19 07:08:29:0087, diag_itemexited, id=15649, type=1
+2014-02-19 07:08:29:0290, list_mouseentered, 15496
+2014-02-19 07:08:31:0084, list_mouseexited
+2014-02-19 07:08:34:0173, list_mouseentered, 123
+2014-02-19 07:08:38:0837, list_mouseexited
+2014-02-20 05:31:41:0350, diag_itementered, id=18524, type=1
+2014-02-20 05:31:41:0370, diag_itemexited, id=18524, type=1
+2014-02-20 05:31:41:0400, diag_itementered, id=20127, type=1
+2014-02-20 05:31:41:0420, diag_itemexited, id=20127, type=1
+2014-02-20 06:20:54:0461, diag_itementered, id=11561, type=1
+2014-02-20 06:20:55:0669, diag_itemexited, id=11561, type=1
+2014-02-20 06:20:57:0273, diag_itementered, id=11561, type=1
+2014-02-20 06:20:58:0609, diag_itemclicked, id=11561, type=1
+2014-02-20 06:20:58:0649, diag_itemexited, id=11561, type=1
+2014-02-20 06:21:01:0414, list_mouseentered, 11930
+2014-02-20 06:21:02:0040, list_mouseexited
+2014-02-20 06:21:11:0279, list_mouseentered, 11561
+2014-02-20 06:21:11:0347, list_mouseexited
+2014-02-20 06:21:11:0443, list_mouseentered, 11561
+2014-02-20 06:21:11:0850, list_mouseexited
+2014-02-20 06:21:12:0290, list_mouseentered, 11561
+2014-02-20 06:21:12:0499, list_mouseexited

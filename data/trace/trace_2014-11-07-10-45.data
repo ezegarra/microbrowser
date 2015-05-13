@@ -1,0 +1,39 @@
+2014-11-07 10:45:06:0086, setup_loaddata
+2014-11-07 10:45:12:0697, list_mouseentered, 2109443059
+2014-11-07 10:45:12:0744, list_mouseexited
+2014-11-07 10:45:54:0431, setup_loaddata
+2014-11-07 10:46:30:0068, list_mouseentered, 24723
+2014-11-07 10:46:30:0208, list_mouseexited
+2014-11-07 10:46:30:0380, diag_itementered, id=47605, type=1
+2014-11-07 10:46:30:0426, diag_itemexited, id=47605, type=1
+2014-11-07 10:47:32:0487, diag_itementered, id=1796611198, type=0
+2014-11-07 10:47:32:0549, diag_itemexited, id=1796611198, type=0
+2014-11-07 10:47:32:0549, diag_itementered, id=2109443059, type=0
+2014-11-07 10:47:32:0596, diag_itemexited, id=2109443059, type=0
+2014-11-07 10:47:32:0596, diag_itementered, id=-771804441, type=0
+2014-11-07 10:47:32:0814, diag_itemexited, id=-771804441, type=0
+2014-11-07 10:47:32:0939, diag_itementered, id=2109443059, type=0
+2014-11-07 10:47:33:0313, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0329, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0360, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0391, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0407, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0438, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0454, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0485, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0516, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0532, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0563, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0579, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0610, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0625, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0657, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0688, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0703, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0735, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0750, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0781, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:33:0828, diag_itemdragged, id=2109443059, type=0
+2014-11-07 10:47:34:0764, edge_create, Tuple[0,1,0.12650705846490296,1,0.0,1415375149429,1415375149429]
+2014-11-07 10:47:34:0764, edge_create, Tuple[1,2,0.22610302135063098,1,0.0,1415375149429,1415375149429]
+2014-11-07 10:47:37:0221, diag_itemexited, id=2109443059, type=0

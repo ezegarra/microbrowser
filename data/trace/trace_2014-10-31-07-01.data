@@ -1,0 +1,368 @@
+2014-10-31 07:01:15:0204, setup_loaddata
+2014-10-31 07:01:16:0734, list_mouseentered, 2109443059
+2014-10-31 07:01:16:0794, list_mouseexited
+2014-10-31 07:01:17:0764, diag_itementered, id=7291, type=1
+2014-10-31 07:01:17:0814, diag_itemexited, id=7291, type=1
+2014-10-31 07:01:17:0884, diag_itementered, id=34571, type=1
+2014-10-31 07:01:18:0144, diag_itemexited, id=34571, type=1
+2014-10-31 07:01:18:0434, diag_itementered, id=22697, type=1
+2014-10-31 07:01:19:0824, edge_create, Tuple[0,1,0.549845622521251,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0824, answer_create, 23048
+2014-10-31 07:01:19:0824, edge_create, Tuple[1,2,0.5811652745471838,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0824, answer_create, 23295
+2014-10-31 07:01:19:0824, edge_create, Tuple[1,3,0.9195193015737547,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0824, answer_create, 27786
+2014-10-31 07:01:19:0834, edge_create, Tuple[1,4,0.62169446589277,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0834, answer_create, 28015
+2014-10-31 07:01:19:0834, edge_create, Tuple[1,5,0.4526769775843916,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0834, answer_create, 37028
+2014-10-31 07:01:19:0834, edge_create, Tuple[1,6,0.49454195998093964,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0834, answer_create, 92998
+2014-10-31 07:01:19:0834, edge_create, Tuple[1,7,0.030205614542998416,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0834, answer_create, 93675
+2014-10-31 07:01:19:0844, edge_create, Tuple[1,8,0.8828003123092676,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0844, answer_create, 382692
+2014-10-31 07:01:19:0844, edge_create, Tuple[1,9,0.15240087719277073,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0844, answer_create, 488978
+2014-10-31 07:01:19:0844, edge_create, Tuple[1,10,0.6130347756984391,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0844, answer_create, 489089
+2014-10-31 07:01:19:0844, edge_create, Tuple[1,11,0.13966642727559553,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0844, answer_create, 508379
+2014-10-31 07:01:19:0844, edge_create, Tuple[1,12,0.8842528670050718,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0844, answer_create, 895584
+2014-10-31 07:01:19:0844, edge_create, Tuple[1,13,0.6858419216343417,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0844, answer_create, 1024869
+2014-10-31 07:01:19:0844, edge_create, Tuple[1,14,0.5958524421018043,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0844, answer_create, 2032739
+2014-10-31 07:01:19:0844, edge_create, Tuple[1,15,0.28307495545359607,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0844, answer_create, 6393609
+2014-10-31 07:01:19:0844, edge_create, Tuple[1,16,0.18412862055009793,4,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0854, edge_create, Tuple[0,17,0.5501872292180523,1,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0854, edge_create, Tuple[17,18,0.6147172122569904,1,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0854, edge_create, Tuple[17,19,0.22491318290282236,1,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0854, edge_create, Tuple[17,20,0.4386701595930751,1,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0854, edge_create, Tuple[17,21,0.3298741387989531,1,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0854, edge_create, Tuple[17,22,0.19742674320472586,1,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0864, edge_create, Tuple[17,23,0.23898218162694107,1,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0864, edge_create, Tuple[17,24,0.3171109207994339,1,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0864, edge_create, Tuple[17,25,0.39205981094621034,1,0.0,1414753274529,1414753274529]
+2014-10-31 07:01:19:0884, discussion_open, 22697
+2014-10-31 07:01:19:0884, diag_itemclicked, id=22697, type=1
+2014-10-31 07:01:20:0894, diag_itemexited, id=22697, type=1
+2014-10-31 07:01:21:0334, answer_open, VisualItem[tree.nodes,2,id=23048,type=21,title=,body=<p>I've had good success using <a href="http://code.google.com/p/mockito/">Mockito</a>.</p>
+
+<p>When I tried learning about JMock and EasyMock, I found the learning curve to be a bit steep (though maybe that's just me).</p>
+
+<p>I like Mockito because of its simple and clean syntax that I was able to grasp pretty quickly. The minimal syntax is designed to support the common cases very well, although the few times I needed to do something more complicated I found what I wanted was supported and easy to grasp.</p>
+
+<p>Here's an (abridged) example from the Mockito homepage:</p>
+
+<pre><code>import static org.mockito.Mockito.*;
+
+List mockedList = mock(List.class);
+mockedList.clear();
+verify(mockedList).clear();
+</code></pre>
+
+<p>It doesn't get much simpler than that.</p>
+
+<p>The only major downside I can think of is that it won't mock static methods.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=185]
+2014-10-31 07:01:21:0344, answer_open, VisualItem[tree.nodes,2,id=23048,type=21,title=,body=<p>I've had good success using <a href="http://code.google.com/p/mockito/">Mockito</a>.</p>
+
+<p>When I tried learning about JMock and EasyMock, I found the learning curve to be a bit steep (though maybe that's just me).</p>
+
+<p>I like Mockito because of its simple and clean syntax that I was able to grasp pretty quickly. The minimal syntax is designed to support the common cases very well, although the few times I needed to do something more complicated I found what I wanted was supported and easy to grasp.</p>
+
+<p>Here's an (abridged) example from the Mockito homepage:</p>
+
+<pre><code>import static org.mockito.Mockito.*;
+
+List mockedList = mock(List.class);
+mockedList.clear();
+verify(mockedList).clear();
+</code></pre>
+
+<p>It doesn't get much simpler than that.</p>
+
+<p>The only major downside I can think of is that it won't mock static methods.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=185]
+2014-10-31 07:01:21:0344, diag_detail_itementered, id=23048, type=21
+2014-10-31 07:01:22:0444, diag_detail_itemexited, id=23048, type=21
+2014-10-31 07:01:23:0054, answer_open, VisualItem[tree.nodes,3,id=23295,type=20,title=,body=<p>We are heavily using <a href="http://easymock.org">EasyMock</a> and EasyMock Class Extension at work and are pretty happy with it. It basically gives you everything you need. Take a look at the documentation, there's a very nice example which shows you all the features of EasyMock.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=11]
+2014-10-31 07:01:23:0054, answer_open, VisualItem[tree.nodes,3,id=23295,type=20,title=,body=<p>We are heavily using <a href="http://easymock.org">EasyMock</a> and EasyMock Class Extension at work and are pretty happy with it. It basically gives you everything you need. Take a look at the documentation, there's a very nice example which shows you all the features of EasyMock.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=11]
+2014-10-31 07:01:23:0054, diag_detail_itementered, id=23295, type=20
+2014-10-31 07:01:23:0764, diag_detail_itemexited, id=23295, type=20
+2014-10-31 07:01:24:0074, diag_detail_itementered, id=0.62169446589277, type=4
+2014-10-31 07:01:24:0124, diag_detail_itemexited, id=0.62169446589277, type=4
+2014-10-31 07:01:25:0604, answer_open, VisualItem[tree.nodes,4,id=27786,type=20,title=,body=<p>I started using mocks through JMock, but eventually transitioned to use EasyMock. EasyMock was just that, --easier-- and provided a syntax that felt more natural. I haven't switched since.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 07:01:25:0614, answer_open, VisualItem[tree.nodes,4,id=27786,type=20,title=,body=<p>I started using mocks through JMock, but eventually transitioned to use EasyMock. EasyMock was just that, --easier-- and provided a syntax that felt more natural. I haven't switched since.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=2]
+2014-10-31 07:01:25:0614, diag_detail_itementered, id=27786, type=20
+2014-10-31 07:01:26:0916, diag_detail_itemexited, id=27786, type=20
+2014-10-31 07:01:27:0276, answer_open, VisualItem[tree.nodes,5,id=28015,type=20,title=,body=<p>Mockito also provides the option of stubbing methods, matching arguments (like anyInt() and anyString()), verifying the number of invocations (times(3), atLeastOnce(), never()), <a href="http://mockito.googlecode.com/svn/branches/1.5/javadoc/org/mockito/Mockito.html" rel="nofollow">and more</a>.</p>
+
+<p>I've also found that Mockito is <a href="http://stackoverflow.com/questions/22697/whats-the-best-mock-framework-for-java#23048" rel="nofollow">simple and clean</a>.</p>
+
+<p>One thing I don't like about Mockito is that you <a href="http://code.google.com/p/mockito/wiki/FAQ" rel="nofollow">can't stub static methods</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=3]
+2014-10-31 07:01:27:0286, answer_open, VisualItem[tree.nodes,5,id=28015,type=20,title=,body=<p>Mockito also provides the option of stubbing methods, matching arguments (like anyInt() and anyString()), verifying the number of invocations (times(3), atLeastOnce(), never()), <a href="http://mockito.googlecode.com/svn/branches/1.5/javadoc/org/mockito/Mockito.html" rel="nofollow">and more</a>.</p>
+
+<p>I've also found that Mockito is <a href="http://stackoverflow.com/questions/22697/whats-the-best-mock-framework-for-java#23048" rel="nofollow">simple and clean</a>.</p>
+
+<p>One thing I don't like about Mockito is that you <a href="http://code.google.com/p/mockito/wiki/FAQ" rel="nofollow">can't stub static methods</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=3]
+2014-10-31 07:01:27:0286, diag_detail_itementered, id=28015, type=20
+2014-10-31 07:01:28:0266, diag_detail_itemexited, id=28015, type=20
+2014-10-31 07:01:28:0786, answer_open, VisualItem[tree.nodes,6,id=37028,type=20,title=,body=<p>Yes, Mockito is a great framework. I use it together with <a href="http://code.google.com/p/hamcrest/">hamcrest</a> and <a href="http://code.google.com/p/google-guice/">Google guice</a> to setup my tests.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=6]
+2014-10-31 07:01:28:0796, answer_open, VisualItem[tree.nodes,6,id=37028,type=20,title=,body=<p>Yes, Mockito is a great framework. I use it together with <a href="http://code.google.com/p/hamcrest/">hamcrest</a> and <a href="http://code.google.com/p/google-guice/">Google guice</a> to setup my tests.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=6]
+2014-10-31 07:01:28:0796, diag_detail_itementered, id=37028, type=20
+2014-10-31 07:01:28:0986, diag_detail_itemexited, id=37028, type=20
+2014-10-31 07:01:30:0256, answer_open, VisualItem[tree.nodes,7,id=92998,type=20,title=,body=<p>You could also have a look at testing using Groovy. In Groovy you can easily mock Java interfaces using the 'as' operator:</p>
+
+<pre><code>def request = [isUserInRole: { roleName -&gt; roleName == "testRole"}] as HttpServletRequest 
+</code></pre>
+
+<p>Apart from this basic functionality Groovy offers a lot more on the mocking front, including the powerful <code>MockFor</code> and <code>StubFor</code> classes.</p>
+
+<p><a href="http://docs.codehaus.org/display/GROOVY/Groovy+Mocks" rel="nofollow">http://docs.codehaus.org/display/GROOVY/Groovy+Mocks</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=12]
+2014-10-31 07:01:30:0266, answer_open, VisualItem[tree.nodes,7,id=92998,type=20,title=,body=<p>You could also have a look at testing using Groovy. In Groovy you can easily mock Java interfaces using the 'as' operator:</p>
+
+<pre><code>def request = [isUserInRole: { roleName -&gt; roleName == "testRole"}] as HttpServletRequest 
+</code></pre>
+
+<p>Apart from this basic functionality Groovy offers a lot more on the mocking front, including the powerful <code>MockFor</code> and <code>StubFor</code> classes.</p>
+
+<p><a href="http://docs.codehaus.org/display/GROOVY/Groovy+Mocks" rel="nofollow">http://docs.codehaus.org/display/GROOVY/Groovy+Mocks</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=12]
+2014-10-31 07:01:30:0266, diag_detail_itementered, id=92998, type=20
+2014-10-31 07:01:30:0756, diag_detail_itemexited, id=92998, type=20
+2014-10-31 07:01:31:0176, answer_open, VisualItem[tree.nodes,8,id=93675,type=20,title=,body=<p>I've been having success with jmockit (<a href="http://jmockit.dev.java.net">http://jmockit.dev.java.net</a>)</p>
+
+<p>It's pretty new, and so it's a bit raw and underdocumented.  It uses asm (<a href="http://asm.objectweb.org/index.html">http://asm.objectweb.org/index.html</a>) to dynamically redefine the class bytecode, so it can mock out all methods including static, private, constructors, and static initializers.  For example:</p>
+
+<pre><code>import mockit.Mockit;
+
+...
+Mockit.redefineMethods(MyClassWithStaticInit.class,
+                       MyReplacementClass.class);
+...
+class MyReplacementClass {
+  public void $init() {...} // replace default constructor
+  public static void $clinit{...} // replace static initializer
+  public static void myStatic{...} // replace static method
+  // etc...
+}
+</code></pre>
+
+<p>It has an Expectations interface allowing record/playback scenarios as well:</p>
+
+<pre><code>import mockit.Expectations;
+import org.testng.annotations.Test;
+
+public class ExpecationsTest {
+  private MyClass obj;
+
+  @Test
+  public void testFoo() {
+    new Expectations(true) {
+      MyClass c;
+      {
+        obj = c;
+        invokeReturning(c.getFoo("foo", false), "bas");
+      }
+    };
+
+    assert "bas".equals(obj.getFoo("foo", false));
+
+    Expectations.assertSatisfied();
+  }
+
+  public static class MyClass {
+    public String getFoo(String str, boolean bool) {
+      if (bool) {
+        return "foo";
+      } else {
+        return "bar";
+      }
+    }
+  }
+}
+</code></pre>
+
+<p>The downside is that it requires java 5/6.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=13]
+2014-10-31 07:01:31:0196, answer_open, VisualItem[tree.nodes,8,id=93675,type=20,title=,body=<p>I've been having success with jmockit (<a href="http://jmockit.dev.java.net">http://jmockit.dev.java.net</a>)</p>
+
+<p>It's pretty new, and so it's a bit raw and underdocumented.  It uses asm (<a href="http://asm.objectweb.org/index.html">http://asm.objectweb.org/index.html</a>) to dynamically redefine the class bytecode, so it can mock out all methods including static, private, constructors, and static initializers.  For example:</p>
+
+<pre><code>import mockit.Mockit;
+
+...
+Mockit.redefineMethods(MyClassWithStaticInit.class,
+                       MyReplacementClass.class);
+...
+class MyReplacementClass {
+  public void $init() {...} // replace default constructor
+  public static void $clinit{...} // replace static initializer
+  public static void myStatic{...} // replace static method
+  // etc...
+}
+</code></pre>
+
+<p>It has an Expectations interface allowing record/playback scenarios as well:</p>
+
+<pre><code>import mockit.Expectations;
+import org.testng.annotations.Test;
+
+public class ExpecationsTest {
+  private MyClass obj;
+
+  @Test
+  public void testFoo() {
+    new Expectations(true) {
+      MyClass c;
+      {
+        obj = c;
+        invokeReturning(c.getFoo("foo", false), "bas");
+      }
+    };
+
+    assert "bas".equals(obj.getFoo("foo", false));
+
+    Expectations.assertSatisfied();
+  }
+
+  public static class MyClass {
+    public String getFoo(String str, boolean bool) {
+      if (bool) {
+        return "foo";
+      } else {
+        return "bar";
+      }
+    }
+  }
+}
+</code></pre>
+
+<p>The downside is that it requires java 5/6.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=13]
+2014-10-31 07:01:31:0196, diag_detail_itementered, id=93675, type=20
+2014-10-31 07:01:31:0866, diag_detail_itemexited, id=93675, type=20
+2014-10-31 07:01:32:0296, answer_open, VisualItem[tree.nodes,9,id=382692,type=20,title=,body=<p>I like JMock because you are able to set up expectations. This is totally different from checking if a method was called found in some mock libraries. Using JMock you can write very sophisticated expectations. See the jmock <a href="http://www.jmock.org/cheat-sheet.html" rel="nofollow">cheat-sheat</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=4]
+2014-10-31 07:01:32:0296, answer_open, VisualItem[tree.nodes,9,id=382692,type=20,title=,body=<p>I like JMock because you are able to set up expectations. This is totally different from checking if a method was called found in some mock libraries. Using JMock you can write very sophisticated expectations. See the jmock <a href="http://www.jmock.org/cheat-sheet.html" rel="nofollow">cheat-sheat</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=4]
+2014-10-31 07:01:32:0316, diag_detail_itementered, id=382692, type=20
+2014-10-31 07:01:32:0466, diag_detail_itemexited, id=382692, type=20
+2014-10-31 07:01:33:0596, answer_open, VisualItem[tree.nodes,10,id=488978,type=20,title=,body=<p>I am the creator of PowerMock so obviously I must recommend that! :-)</p>
+
+<p><a href="http://powermock.org">PowerMock</a> extends both EasyMock and Mockito with the ability to <a href="http://code.google.com/p/powermock/wiki/MockStatic">mock static methods</a>, final and even private methods. The EasyMock support is complete, but the Mockito plugin needs some more work. We are planning to add JMock support as well. </p>
+
+<p>PowerMock is not intended to replace other frameworks, rather it can be used in the tricky situations when other frameworks does't allow mocking. PowerMock also contains other useful features such as <a href="http://code.google.com/p/powermock/wiki/SuppressUnwantedBehavior">suppressing static initializers</a> and constructors.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=61]
+2014-10-31 07:01:33:0596, answer_open, VisualItem[tree.nodes,10,id=488978,type=20,title=,body=<p>I am the creator of PowerMock so obviously I must recommend that! :-)</p>
+
+<p><a href="http://powermock.org">PowerMock</a> extends both EasyMock and Mockito with the ability to <a href="http://code.google.com/p/powermock/wiki/MockStatic">mock static methods</a>, final and even private methods. The EasyMock support is complete, but the Mockito plugin needs some more work. We are planning to add JMock support as well. </p>
+
+<p>PowerMock is not intended to replace other frameworks, rather it can be used in the tricky situations when other frameworks does't allow mocking. PowerMock also contains other useful features such as <a href="http://code.google.com/p/powermock/wiki/SuppressUnwantedBehavior">suppressing static initializers</a> and constructors.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=61]
+2014-10-31 07:01:33:0606, diag_detail_itementered, id=488978, type=20
+2014-10-31 07:01:34:0496, diag_detail_itemexited, id=488978, type=20
+2014-10-31 07:01:34:0566, diag_detail_itementered, id=0.15240087719277073, type=4
+2014-10-31 07:01:34:0626, diag_detail_itemexited, id=0.15240087719277073, type=4
+2014-10-31 07:01:37:0046, answer_open, VisualItem[tree.nodes,2,id=23048,type=21,title=,body=<p>I've had good success using <a href="http://code.google.com/p/mockito/">Mockito</a>.</p>
+
+<p>When I tried learning about JMock and EasyMock, I found the learning curve to be a bit steep (though maybe that's just me).</p>
+
+<p>I like Mockito because of its simple and clean syntax that I was able to grasp pretty quickly. The minimal syntax is designed to support the common cases very well, although the few times I needed to do something more complicated I found what I wanted was supported and easy to grasp.</p>
+
+<p>Here's an (abridged) example from the Mockito homepage:</p>
+
+<pre><code>import static org.mockito.Mockito.*;
+
+List mockedList = mock(List.class);
+mockedList.clear();
+verify(mockedList).clear();
+</code></pre>
+
+<p>It doesn't get much simpler than that.</p>
+
+<p>The only major downside I can think of is that it won't mock static methods.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=185]
+2014-10-31 07:01:37:0056, answer_open, VisualItem[tree.nodes,2,id=23048,type=21,title=,body=<p>I've had good success using <a href="http://code.google.com/p/mockito/">Mockito</a>.</p>
+
+<p>When I tried learning about JMock and EasyMock, I found the learning curve to be a bit steep (though maybe that's just me).</p>
+
+<p>I like Mockito because of its simple and clean syntax that I was able to grasp pretty quickly. The minimal syntax is designed to support the common cases very well, although the few times I needed to do something more complicated I found what I wanted was supported and easy to grasp.</p>
+
+<p>Here's an (abridged) example from the Mockito homepage:</p>
+
+<pre><code>import static org.mockito.Mockito.*;
+
+List mockedList = mock(List.class);
+mockedList.clear();
+verify(mockedList).clear();
+</code></pre>
+
+<p>It doesn't get much simpler than that.</p>
+
+<p>The only major downside I can think of is that it won't mock static methods.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=185]
+2014-10-31 07:01:37:0056, diag_detail_itementered, id=23048, type=21
+2014-10-31 07:01:37:0616, diag_detail_itemexited, id=23048, type=21
+2014-10-31 07:01:38:0586, diag_detail_itementered, id=61150, type=1
+2014-10-31 07:01:39:0156, diag_detail_itemexited, id=61150, type=1
+2014-10-31 07:01:40:0414, diag_detail_itementered, id=56954, type=1
+2014-10-31 07:01:41:0284, diag_detail_itemexited, id=56954, type=1
+2014-10-31 07:01:41:0864, diag_detail_itementered, id=47524, type=1
+2014-10-31 07:01:42:0324, diag_detail_itemexited, id=47524, type=1
+2014-10-31 07:01:43:0294, diag_detail_itementered, id=39329, type=1
+2014-10-31 07:01:44:0104, diag_detail_itemexited, id=39329, type=1
+2014-10-31 07:01:44:0384, diag_detail_itementered, id=42102, type=1
+2014-10-31 07:01:45:0484, diag_detail_itemexited, id=42102, type=1
+2014-10-31 07:01:46:0154, diag_detail_itementered, id=42102, type=1
+2014-10-31 07:01:46:0924, diag_detail_itemexited, id=42102, type=1
+2014-10-31 07:01:47:0054, diag_detail_itementered, id=0.19742674320472586, type=1
+2014-10-31 07:01:47:0104, diag_detail_itemexited, id=0.19742674320472586, type=1
+2014-10-31 07:01:47:0124, diag_detail_itementered, id=0.23898218162694107, type=1
+2014-10-31 07:01:47:0154, diag_detail_itemexited, id=0.23898218162694107, type=1
+2014-10-31 07:01:47:0204, diag_detail_itementered, id=0.3171109207994339, type=1
+2014-10-31 07:01:47:0224, diag_detail_itemexited, id=0.3171109207994339, type=1
+2014-10-31 07:01:47:0304, diag_detail_itementered, id=0.39205981094621034, type=1
+2014-10-31 07:01:47:0324, diag_detail_itemexited, id=0.39205981094621034, type=1
+2014-10-31 07:01:47:0704, answer_open, VisualItem[tree.nodes,2,id=23048,type=21,title=,body=<p>I've had good success using <a href="http://code.google.com/p/mockito/">Mockito</a>.</p>
+
+<p>When I tried learning about JMock and EasyMock, I found the learning curve to be a bit steep (though maybe that's just me).</p>
+
+<p>I like Mockito because of its simple and clean syntax that I was able to grasp pretty quickly. The minimal syntax is designed to support the common cases very well, although the few times I needed to do something more complicated I found what I wanted was supported and easy to grasp.</p>
+
+<p>Here's an (abridged) example from the Mockito homepage:</p>
+
+<pre><code>import static org.mockito.Mockito.*;
+
+List mockedList = mock(List.class);
+mockedList.clear();
+verify(mockedList).clear();
+</code></pre>
+
+<p>It doesn't get much simpler than that.</p>
+
+<p>The only major downside I can think of is that it won't mock static methods.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=185]
+2014-10-31 07:01:47:0704, diag_detail_itementered, id=23048, type=21
+2014-10-31 07:01:48:0254, diag_detail_itemexited, id=23048, type=21
+2014-10-31 07:01:49:0374, answer_open, VisualItem[tree.nodes,3,id=23295,type=20,title=,body=<p>We are heavily using <a href="http://easymock.org">EasyMock</a> and EasyMock Class Extension at work and are pretty happy with it. It basically gives you everything you need. Take a look at the documentation, there's a very nice example which shows you all the features of EasyMock.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=11]
+2014-10-31 07:01:49:0374, answer_open, VisualItem[tree.nodes,3,id=23295,type=20,title=,body=<p>We are heavily using <a href="http://easymock.org">EasyMock</a> and EasyMock Class Extension at work and are pretty happy with it. It basically gives you everything you need. Take a look at the documentation, there's a very nice example which shows you all the features of EasyMock.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753274529L,lastactivitydate=0L,tags=,score=11]
+2014-10-31 07:01:49:0374, diag_detail_itementered, id=23295, type=20
+2014-10-31 07:01:49:0904, diag_detail_itemexited, id=23295, type=20
+2014-10-31 07:01:51:0214, list_mouseentered, type=detailAnswersList
+2014-10-31 07:01:51:0294, list_mouseexited, type=detailAnswersList

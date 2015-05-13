@@ -1,0 +1,36 @@
+2014-02-22 09:58:23:0517, setup_loaddata
+2014-02-22 09:58:23:0689, setup_resizewin
+2014-02-22 09:58:25:0374, diag_itementered, id=15851, type=1
+2014-02-22 09:58:25:0982, diag_itemexited, id=15851, type=1
+2014-02-22 09:58:26:0622, diag_itementered, id=6639, type=1
+2014-02-22 09:58:26:0684, diag_itemexited, id=6639, type=1
+2014-02-22 09:58:26:0700, diag_itementered, id=15496, type=1
+2014-02-22 09:58:29:0002, diag_itemclicked, id=15496, type=1
+2014-02-22 09:58:29:0111, diag_itemexited, id=15496, type=1
+2014-02-22 09:58:31:0997, list_mouseentered, 13751
+2014-02-22 09:58:32:0215, list_mouseexited
+2014-02-22 09:58:32:0621, list_mouseentered, 13225
+2014-02-22 09:58:32:0730, list_mouseexited
+2014-02-22 09:58:33:0401, list_mouseentered, 13225
+2014-02-22 09:58:33:0572, list_mouseexited
+2014-02-22 09:58:43:0409, setup_loaddata
+2014-02-22 09:58:43:0643, setup_resizewin
+2014-02-22 09:58:45:0094, diag_itementered, id=7661, type=1
+2014-02-22 09:58:45:0141, diag_itemexited, id=7661, type=1
+2014-02-22 09:58:45:0188, diag_itementered, id=15496, type=1
+2014-02-22 09:58:48:0372, diag_itemclicked, id=15496, type=1
+2014-02-22 09:58:48:0544, diag_itemexited, id=15496, type=1
+2014-02-22 09:59:10:0711, list_mouseentered, 14397
+2014-02-22 09:59:10:0774, list_mouseexited
+2014-02-22 09:59:17:0950, list_mouseentered, 13225
+2014-02-22 09:59:18:0699, list_mouseexited
+2014-02-22 09:59:20:0321, list_mouseentered, 564
+2014-02-22 09:59:21:0305, discussion_open, 2092
+2014-02-22 09:59:23:0069, list_mouseexited
+2014-02-22 09:59:23:0568, list_mouseentered, 564
+2014-02-22 09:59:25:0362, list_mouseexited
+2014-02-22 09:59:26:0563, list_mouseentered, 123
+2014-02-22 09:59:27:0626, discussion_open, 126
+2014-02-22 09:59:27:0688, list_mouseexited
+2014-02-22 09:59:35:0519, list_mouseentered, 123
+2014-02-22 09:59:35:0691, list_mouseexited

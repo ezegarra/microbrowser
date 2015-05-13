@@ -1,0 +1,22 @@
+2013-11-12 06:06:57:0755, setup_loaddata
+2013-11-12 06:06:57:0927, setup_resizewin
+2013-11-12 06:07:04:0479, leaderboard_open
+2013-11-12 06:07:04:0479, leaderboard_close
+2013-11-12 06:07:06:0382, leaderboard_open
+2013-11-12 06:07:06:0382, leaderboard_close
+2013-11-12 06:07:08:0036, question_create_open
+2013-11-12 06:07:08:0036, question_create_close
+2013-11-12 06:07:09:0689, pattern_create_open
+2013-11-12 06:07:09:0705, pattern_create_close
+2013-11-12 06:07:10:0298, diag_itementered, id=18524, type=1
+2013-11-12 06:07:10:0330, diag_itemexited, id=18524, type=1
+2013-11-12 06:07:10:0346, diag_itementered, id=6612, type=1
+2013-11-12 06:07:10:0377, diag_itemexited, id=6612, type=1
+2013-11-12 06:07:10:0377, diag_itementered, id=48249, type=1
+2013-11-12 06:07:10:0751, diag_itemexited, id=48249, type=1
+2013-11-12 06:07:10:0751, diag_itementered, id=46160, type=1
+2013-11-12 06:07:11:0672, diag_itemexited, id=46160, type=1
+2013-11-12 06:07:11:0859, diag_itementered, id=46160, type=1
+2013-11-12 06:07:11:0874, diag_itemexited, id=46160, type=1
+2013-11-12 06:07:11:0969, list_mouseentered, 54886
+2013-11-12 06:07:12:0016, list_mouseexited, 

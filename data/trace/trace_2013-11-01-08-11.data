@@ -1,0 +1,9 @@
+2013-11-01 08:11:48:0938, setup_loaddata
+2013-11-01 08:11:49:0163, setup_resizewin
+2013-11-01 08:11:49:0862, diag_itementered, id=54295, type=1
+2013-11-01 08:11:49:0950, diag_itemexited, id=54295, type=1
+2013-11-01 08:11:51:0017, diag_itementered, id=54295, type=1
+2013-11-01 08:11:52:0109, diag_itemclicked, id=54295, type=1
+2013-11-01 08:11:52:0217, diag_itemexited, id=54295, type=1
+2013-11-01 08:12:02:0812, pattern_change_cancel
+2013-11-01 08:12:02:0813, pattern_change_open

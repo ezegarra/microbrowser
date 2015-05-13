@@ -1,0 +1,521 @@
+2014-12-04 11:40:07:0149, setup_loaddata_begin
+2014-12-04 11:40:09:0756, setup_loaddata_end
+2014-12-04 11:40:09:0819, setup_createactions_begin
+2014-12-04 11:40:10:0193, setup_createactions_end
+2014-12-04 11:40:22:0205, diag_itementered, id=51438, type=1
+2014-12-04 11:40:22:0299, diag_itemexited, id=51438, type=1
+2014-12-04 11:40:29:0225, diag_itementered, id=40663, type=1
+2014-12-04 11:40:29:0319, diag_itemexited, id=40663, type=1
+2014-12-04 11:40:29:0412, diag_itemexited, id=1, type=4
+2014-12-04 11:40:29:0490, diag_itementered, id=12877, type=1
+2014-12-04 11:40:29:0584, diag_itemexited, id=12877, type=1
+2014-12-04 11:40:30:0083, diag_itementered, id=33956, type=1
+2014-12-04 11:40:30:0177, diag_itemexited, id=33956, type=1
+2014-12-04 11:40:30:0598, diag_itementered, id=12877, type=1
+2014-12-04 11:40:30:0739, diag_itemexited, id=12877, type=1
+2014-12-04 11:40:31:0191, diag_itementered, id=3881, type=1
+2014-12-04 11:40:31:0409, diag_itemexited, id=3881, type=1
+2014-12-04 11:40:31:0534, diag_itementered, id=34571, type=1
+2014-12-04 11:40:31:0612, diag_itemexited, id=34571, type=1
+2014-12-04 11:40:31:0768, diag_itemexited, id=1, type=4
+2014-12-04 11:40:31:0815, diag_itementered, id=34571, type=1
+2014-12-04 11:40:32:0127, diag_itemexited, id=34571, type=1
+2014-12-04 11:40:32:0455, diag_itementered, id=34571, type=1
+2014-12-04 11:40:32:0907, diag_itemexited, id=34571, type=1
+2014-12-04 11:40:33:0094, diag_itementered, id=24551, type=1
+2014-12-04 11:40:33:0422, diag_itemexited, id=24551, type=1
+2014-12-04 11:40:33:0609, diag_itemexited, id=3, type=4
+2014-12-04 11:40:33:0609, diag_itementered, id=46898, type=1
+2014-12-04 11:40:33:0765, diag_itemexited, id=46898, type=1
+2014-12-04 11:40:33:0874, diag_itemexited, id=3, type=4
+2014-12-04 11:40:33:0874, diag_itementered, id=65475, type=1
+2014-12-04 11:40:34:0015, diag_itemexited, id=65475, type=1
+2014-12-04 11:40:34:0171, diag_itemexited, id=3, type=4
+2014-12-04 11:40:34:0171, diag_itementered, id=46898, type=1
+2014-12-04 11:40:34:0763, diag_itemexited, id=46898, type=1
+2014-12-04 11:40:35:0044, diag_itemexited, id=3, type=4
+2014-12-04 11:40:35:0044, diag_itementered, id=47605, type=1
+2014-12-04 11:40:35:0497, diag_itemexited, id=47605, type=1
+2014-12-04 11:40:36:0277, diag_itemexited, id=3, type=4
+2014-12-04 11:40:37:0353, diag_itemexited, id=3, type=4
+2014-12-04 11:40:37:0369, diag_itementered, id=46898, type=1
+2014-12-04 11:40:37:0462, diag_itemexited, id=46898, type=1
+2014-12-04 11:40:38:0523, diag_itemexited, id=3, type=4
+2014-12-04 11:40:39:0896, diag_itemexited, id=4, type=4
+2014-12-04 11:40:39:0927, diag_itementered, id=2, type=0
+2014-12-04 11:40:39:0989, diag_itemexited, id=2, type=0
+2014-12-04 11:40:40:0083, diag_itemexited, id=2, type=4
+2014-12-04 11:40:40:0130, diag_itementered, id=51276, type=1
+2014-12-04 11:40:40:0208, diag_itemexited, id=51276, type=1
+2014-12-04 11:40:40:0364, diag_itementered, id=51276, type=1
+2014-12-04 11:40:44:0857, diag_itemexited, id=51276, type=1
+2014-12-04 11:40:47:0041, diag_itementered, id=44005, type=1
+2014-12-04 11:40:47:0119, diag_itemexited, id=44005, type=1
+2014-12-04 11:40:47:0119, diag_itementered, id=41107, type=1
+2014-12-04 11:40:47:0181, diag_itemexited, id=41107, type=1
+2014-12-04 11:40:47:0290, diag_itemexited, id=3, type=4
+2014-12-04 11:40:47:0290, diag_itementered, id=3, type=0
+2014-12-04 11:40:48:0538, diag_itemexited, id=3, type=0
+2014-12-04 11:40:48:0632, diag_itemexited, id=4, type=4
+2014-12-04 11:40:48:0632, diag_itementered, id=564, type=1
+2014-12-04 11:40:48:0819, diag_itemexited, id=564, type=1
+2014-12-04 11:40:49:0053, diag_itemexited, id=-1404308192, type=4
+2014-12-04 11:40:49:0053, diag_itementered, id=-1404308192, type=0
+2014-12-04 11:40:50:0239, diag_itemexited, id=-1404308192, type=0
+2014-12-04 11:40:50:0239, diag_itementered, id=564, type=1
+2014-12-04 11:40:50:0317, diag_itemexited, id=564, type=1
+2014-12-04 11:40:50:0395, diag_itemexited, id=4, type=4
+2014-12-04 11:40:50:0395, diag_itementered, id=3, type=0
+2014-12-04 11:40:52:0706, edge_create, Tuple[0,1,0.5166470565741225,2,1.0,1417711207835,1417711207835]
+2014-12-04 11:40:52:0706, pattern_create, 4
+2014-12-04 11:40:52:0706, edge_create, Tuple[1,2,0.6921115668529091,2,1.0,1417711207835,1417711207835]
+2014-12-04 11:40:52:0706, edge_create, Tuple[0,3,0.2138958125449716,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:40:52:0706, edge_create, Tuple[3,4,0.32846714935253696,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:40:52:0721, edge_create, Tuple[3,5,0.8593978052660433,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:40:52:0721, edge_create, Tuple[3,6,0.22438502482438882,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:40:52:0737, edge_create, Tuple[3,7,0.937855439805943,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:40:52:0862, pattern_open, 3
+2014-12-04 11:40:52:0862, diag_itemclicked, id=3, type=0
+2014-12-04 11:40:53:0688, diag_itemexited, id=3, type=0
+2014-12-04 11:40:54:0422, diag_detail_itementered, id=-1437453552, type=3
+2014-12-04 11:40:54:0500, diag_detail_itemexited, id=-1437453552, type=3
+2014-12-04 11:40:54:0936, diag_detail_itementered, id=46898, type=1
+2014-12-04 11:40:56:0762, diag_detail_itemexited, id=46898, type=1
+2014-12-04 11:40:57:0276, diag_detail_itementered, id=47605, type=1
+2014-12-04 11:40:58:0259, diag_detail_itemexited, id=47605, type=1
+2014-12-04 11:40:58:0634, diag_detail_itementered, id=0.2138958125449716, type=1
+2014-12-04 11:40:58:0665, diag_detail_itemexited, id=0.2138958125449716, type=1
+2014-12-04 11:40:58:0665, diag_detail_itementered, id=3, type=0
+2014-12-04 11:40:58:0712, diag_detail_itemexited, id=3, type=0
+2014-12-04 11:40:58:0914, diag_detail_itementered, id=3, type=0
+2014-12-04 11:41:03:0610, diag_detail_itemexited, id=3, type=0
+2014-12-04 11:41:03:0797, diag_detail_itementered, id=3, type=0
+2014-12-04 11:41:08:0290, diag_detail_itemexited, id=3, type=0
+2014-12-04 11:41:08:0384, diag_detail_itementered, id=1795665389, type=3
+2014-12-04 11:41:08:0415, diag_detail_itemexited, id=1795665389, type=3
+2014-12-04 11:41:08:0524, diag_detail_itementered, id=1795665389, type=3
+2014-12-04 11:41:08:0555, diag_detail_itemexited, id=1795665389, type=3
+2014-12-04 11:41:08:0571, diag_detail_itementered, id=0.5166470565741225, type=2
+2014-12-04 11:41:08:0602, diag_detail_itemexited, id=0.5166470565741225, type=2
+2014-12-04 11:41:08:0727, diag_detail_itementered, id=1795665389, type=3
+2014-12-04 11:41:09:0055, diag_detail_itemexited, id=1795665389, type=3
+2014-12-04 11:41:09:0429, diag_detail_itementered, id=4, type=0
+2014-12-04 11:41:10:0318, diag_detail_itemexited, id=4, type=0
+2014-12-04 11:41:10:0708, diag_detail_itementered, id=0.5166470565741225, type=2
+2014-12-04 11:41:10:0739, diag_detail_itemexited, id=0.5166470565741225, type=2
+2014-12-04 11:41:11:0348, diag_detail_itementered, id=3, type=0
+2014-12-04 11:41:11:0457, diag_detail_itemclicked, id=3, type=0
+2014-12-04 11:41:11:0707, edge_create, Tuple[0,1,0.8110907194149743,2,1.0,1417711207835,1417711207835]
+2014-12-04 11:41:11:0707, pattern_create, 4
+2014-12-04 11:41:11:0707, edge_create, Tuple[1,2,0.5507961398453165,2,1.0,1417711207835,1417711207835]
+2014-12-04 11:41:11:0707, edge_create, Tuple[0,3,0.8164053769031119,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:11:0707, edge_create, Tuple[3,4,0.4927495226563401,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:11:0707, edge_create, Tuple[3,5,0.3844239012250589,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:11:0722, edge_create, Tuple[3,6,0.472560772899667,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:11:0722, edge_create, Tuple[3,7,0.2015781757041578,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:11:0753, pattern_open, 3
+2014-12-04 11:41:11:0753, diag_detail_itemclicked, id=3, type=0
+2014-12-04 11:41:12:0939, diag_detail_itementered, id=0.4927495226563401, type=1
+2014-12-04 11:41:13:0064, diag_detail_itemexited, id=0.4927495226563401, type=1
+2014-12-04 11:41:13:0079, diag_detail_itementered, id=43344, type=1
+2014-12-04 11:41:14:0125, diag_detail_itemclicked, id=43344, type=1
+2014-12-04 11:41:25:0060, diag_detail_itemexited, id=43344, type=1
+2014-12-04 11:41:25:0060, diag_detail_itementered, id=0.4927495226563401, type=1
+2014-12-04 11:41:25:0092, diag_detail_itemexited, id=0.4927495226563401, type=1
+2014-12-04 11:41:25:0107, diag_detail_itementered, id=0.4927495226563401, type=1
+2014-12-04 11:41:25:0170, diag_detail_itemexited, id=0.4927495226563401, type=1
+2014-12-04 11:41:25:0185, diag_detail_itementered, id=0.4927495226563401, type=1
+2014-12-04 11:41:26:0137, diag_detail_itemexited, id=0.4927495226563401, type=1
+2014-12-04 11:41:29:0335, list_mouseentered, id=12088, type=1
+2014-12-04 11:41:29:0335, list_mousemoved, id=12088, type=1
+2014-12-04 11:41:29:0382, list_mouseexited
+2014-12-04 11:41:34:0436, search_update, write answer
+2014-12-04 11:41:37:0915, list_mouseentered, id=62289, type=1
+2014-12-04 11:41:37:0915, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:37:0930, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:37:0930, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:37:0946, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:37:0962, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:37:0977, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:37:0993, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:38:0008, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:38:0024, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:38:0040, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0055, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0071, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0086, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0102, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0118, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0133, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0149, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0164, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0164, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0180, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:38:0835, list_pattern_itemclicked, id=43157, type=1
+2014-12-04 11:41:38:0882, edge_create, Tuple[0,1,0.3199118179974034,4,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0882, answer_create, 43163
+2014-12-04 11:41:38:0882, edge_create, Tuple[1,2,0.9207430755089004,4,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0882, answer_create, 43164
+2014-12-04 11:41:38:0882, edge_create, Tuple[1,3,0.9447845016758112,4,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0882, answer_create, 43168
+2014-12-04 11:41:38:0882, edge_create, Tuple[1,4,0.39399528460167343,4,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0882, answer_create, 43478
+2014-12-04 11:41:38:0898, edge_create, Tuple[1,5,0.325156081889059,4,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0898, answer_create, 51753
+2014-12-04 11:41:38:0898, edge_create, Tuple[1,6,0.8638138980558895,4,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0898, answer_create, 115153
+2014-12-04 11:41:38:0898, edge_create, Tuple[1,7,0.21086541117316593,4,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0898, answer_create, 540772
+2014-12-04 11:41:38:0898, edge_create, Tuple[1,8,0.967425975687714,4,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0898, answer_create, 13814318
+2014-12-04 11:41:38:0898, edge_create, Tuple[1,9,0.8276453766713946,4,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0898, edge_create, Tuple[0,10,0.9032821037470988,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0898, edge_create, Tuple[10,11,0.1262315034872893,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0915, edge_create, Tuple[10,12,0.4440540600223395,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0915, edge_create, Tuple[10,13,0.9817963649886139,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0931, edge_create, Tuple[10,14,0.2869625283419208,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0931, edge_create, Tuple[10,15,0.8464216085679696,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0946, edge_create, Tuple[10,16,0.9676740680127695,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0946, edge_create, Tuple[10,17,0.2827224435198802,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0962, edge_create, Tuple[10,18,0.7645875884203504,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0962, edge_create, Tuple[10,19,0.3540307185764765,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0978, edge_create, Tuple[10,20,0.5503175777963598,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0978, edge_create, Tuple[10,21,0.2627906369222067,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0993, edge_create, Tuple[10,22,0.8489584374621897,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:38:0993, edge_create, Tuple[10,23,0.864222892389683,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0009, edge_create, Tuple[10,24,0.7017883223871165,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0009, edge_create, Tuple[10,25,0.640186385462391,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0024, edge_create, Tuple[10,26,0.6790755102871279,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0040, edge_create, Tuple[10,27,0.5049605819821983,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0040, edge_create, Tuple[10,28,0.17834267555503303,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0056, edge_create, Tuple[10,29,0.9899519499876953,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0056, edge_create, Tuple[10,30,0.2747074520686369,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0071, edge_create, Tuple[10,31,0.18079441652610517,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0071, edge_create, Tuple[10,32,0.9197599705987768,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0087, edge_create, Tuple[10,33,0.47378340159046095,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0087, edge_create, Tuple[10,34,0.38299060293366194,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0102, edge_create, Tuple[10,35,0.19800248580807323,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0102, edge_create, Tuple[10,36,0.9833046516300563,1,0.0,1417711207835,1417711207835]
+2014-12-04 11:41:39:0134, discussion_open, 43157
+2014-12-04 11:41:39:0539, list_mouseexited
+2014-12-04 11:41:39:0539, list_mouseentered, type=detailAnswersList
+2014-12-04 11:41:40:0506, list_mouseexited, type=detailAnswersList
+2014-12-04 11:41:41:0068, diag_detail_itementered, id=0.9447845016758112, type=4
+2014-12-04 11:41:41:0115, diag_detail_itemexited, id=0.9447845016758112, type=4
+2014-12-04 11:41:41:0115, diag_detail_itementered, id=0.39399528460167343, type=4
+2014-12-04 11:41:41:0162, diag_detail_itemexited, id=0.39399528460167343, type=4
+2014-12-04 11:41:41:0255, diag_detail_itementered, id=0.325156081889059, type=4
+2014-12-04 11:41:41:0287, diag_detail_itemexited, id=0.325156081889059, type=4
+2014-12-04 11:41:41:0583, answer_open, VisualItem[tree.nodes,6,id=51753,type=21,title=,body=<p>As WMR mentioned, IOUtils from apache has a method called copy which does exactly what you're looking for.</p>
+
+<p>So, you have:</p>
+
+<pre>IOUtils.<a href="http://commons.apache.org/proper/commons-io/apidocs/org/apache/commons/io/IOUtils.html#copy%28java.io.InputStream,%20java.io.OutputStream%29">copy</a>(in,out);</pre>
+
+<p>...in your code.</p>
+
+<p>Is there a reason you're avoiding IOUtils? </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=89,searchfield=]
+2014-12-04 11:41:41:0583, answer_open, VisualItem[tree.nodes,6,id=51753,type=21,title=,body=<p>As WMR mentioned, IOUtils from apache has a method called copy which does exactly what you're looking for.</p>
+
+<p>So, you have:</p>
+
+<pre>IOUtils.<a href="http://commons.apache.org/proper/commons-io/apidocs/org/apache/commons/io/IOUtils.html#copy%28java.io.InputStream,%20java.io.OutputStream%29">copy</a>(in,out);</pre>
+
+<p>...in your code.</p>
+
+<p>Is there a reason you're avoiding IOUtils? </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=89,searchfield=]
+2014-12-04 11:41:41:0583, diag_detail_itementered, id=51753, type=21
+2014-12-04 11:41:42:0363, diag_detail_itemexited, id=51753, type=21
+2014-12-04 11:41:42:0550, answer_open, VisualItem[tree.nodes,5,id=43478,type=20,title=,body=<p>There's no way to do this a lot easier with JDK methods, but as Apocalisp has already noted, you're not the only one with this idea: You could use <a href="http://commons.apache.org/io/api-release/org/apache/commons/io/IOUtils.html">IOUtils</a> from <a href="http://commons.apache.org/io/">Jakarta Commons IO</a>, it also has a lot of other useful things, that IMO should actually be part of the JDK...</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-04 11:41:42:0550, answer_open, VisualItem[tree.nodes,5,id=43478,type=20,title=,body=<p>There's no way to do this a lot easier with JDK methods, but as Apocalisp has already noted, you're not the only one with this idea: You could use <a href="http://commons.apache.org/io/api-release/org/apache/commons/io/IOUtils.html">IOUtils</a> from <a href="http://commons.apache.org/io/">Jakarta Commons IO</a>, it also has a lot of other useful things, that IMO should actually be part of the JDK...</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-04 11:41:42:0550, diag_detail_itementered, id=43478, type=20
+2014-12-04 11:41:42:0691, diag_detail_itemexited, id=43478, type=20
+2014-12-04 11:41:42:0971, answer_open, VisualItem[tree.nodes,5,id=43478,type=20,title=,body=<p>There's no way to do this a lot easier with JDK methods, but as Apocalisp has already noted, you're not the only one with this idea: You could use <a href="http://commons.apache.org/io/api-release/org/apache/commons/io/IOUtils.html">IOUtils</a> from <a href="http://commons.apache.org/io/">Jakarta Commons IO</a>, it also has a lot of other useful things, that IMO should actually be part of the JDK...</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-04 11:41:42:0971, answer_open, VisualItem[tree.nodes,5,id=43478,type=20,title=,body=<p>There's no way to do this a lot easier with JDK methods, but as Apocalisp has already noted, you're not the only one with this idea: You could use <a href="http://commons.apache.org/io/api-release/org/apache/commons/io/IOUtils.html">IOUtils</a> from <a href="http://commons.apache.org/io/">Jakarta Commons IO</a>, it also has a lot of other useful things, that IMO should actually be part of the JDK...</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-04 11:41:42:0971, diag_detail_itementered, id=43478, type=20
+2014-12-04 11:41:43:0689, diag_detail_itemexited, id=43478, type=20
+2014-12-04 11:41:43:0829, answer_open, VisualItem[tree.nodes,4,id=43168,type=20,title=,body=<p>PipedInputStream and PipedOutputStream may be of some use, as you can connect one to the other.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-04 11:41:43:0829, answer_open, VisualItem[tree.nodes,4,id=43168,type=20,title=,body=<p>PipedInputStream and PipedOutputStream may be of some use, as you can connect one to the other.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-04 11:41:43:0829, diag_detail_itementered, id=43168, type=20
+2014-12-04 11:41:44:0329, diag_detail_itemexited, id=43168, type=20
+2014-12-04 11:41:44:0531, answer_open, VisualItem[tree.nodes,3,id=43164,type=20,title=,body=<p>It's a bit surprising that the libraries don't come with something like:</p>
+
+<pre><code>pipe(in, out);
+</code></pre>
+
+<p><a href="http://jakarta.apache.org/taglibs/doc/io-doc/javadoc/org/apache/taglibs/io/PipeHelper.html" rel="nofollow">Seems you're not the only one with that idea.</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:41:44:0531, answer_open, VisualItem[tree.nodes,3,id=43164,type=20,title=,body=<p>It's a bit surprising that the libraries don't come with something like:</p>
+
+<pre><code>pipe(in, out);
+</code></pre>
+
+<p><a href="http://jakarta.apache.org/taglibs/doc/io-doc/javadoc/org/apache/taglibs/io/PipeHelper.html" rel="nofollow">Seems you're not the only one with that idea.</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=8,searchfield=]
+2014-12-04 11:41:44:0531, diag_detail_itementered, id=43164, type=20
+2014-12-04 11:41:45:0093, diag_detail_itemexited, id=43164, type=20
+2014-12-04 11:41:45:0374, answer_open, VisualItem[tree.nodes,2,id=43163,type=20,title=,body=<p>I think this will work, but make sure to test it... minor "improvement", but it might be a bit of a cost at readability.</p>
+
+<pre><code>byte[] buffer = new byte[1024];
+int len;
+while ((len = in.read(buffer)) != -1) {
+    out.write(buffer, 0, len);
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=18,searchfield=]
+2014-12-04 11:41:45:0374, answer_open, VisualItem[tree.nodes,2,id=43163,type=20,title=,body=<p>I think this will work, but make sure to test it... minor "improvement", but it might be a bit of a cost at readability.</p>
+
+<pre><code>byte[] buffer = new byte[1024];
+int len;
+while ((len = in.read(buffer)) != -1) {
+    out.write(buffer, 0, len);
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=18,searchfield=]
+2014-12-04 11:41:45:0374, diag_detail_itementered, id=43163, type=20
+2014-12-04 11:41:46:0325, diag_detail_itemexited, id=43163, type=20
+2014-12-04 11:41:47:0589, answer_open, VisualItem[tree.nodes,7,id=115153,type=20,title=,body=<p>The new NIO package (in the JDK) abstracts this a bit with the new transferFrom and transferTo methods. The following snippet uses Files but you could adapt it to use streams and name it "copyStream".</p>
+
+<pre><code>public static void copyFile(File sourceFile, File destFile) throws IOException {
+ FileChannel source = null;
+ FileChannel destination = null;
+ try {
+  source = new FileInputStream(sourceFile).getChannel();
+  destination = new FileOutputStream(destFile).getChannel();
+  destination.transferFrom(source, 0, source.size());
+ }
+ finally {
+  if(source != null) {
+   source.close();
+  }
+  if(destination != null) {
+   destination.close();
+  }
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-04 11:41:47:0589, answer_open, VisualItem[tree.nodes,7,id=115153,type=20,title=,body=<p>The new NIO package (in the JDK) abstracts this a bit with the new transferFrom and transferTo methods. The following snippet uses Files but you could adapt it to use streams and name it "copyStream".</p>
+
+<pre><code>public static void copyFile(File sourceFile, File destFile) throws IOException {
+ FileChannel source = null;
+ FileChannel destination = null;
+ try {
+  source = new FileInputStream(sourceFile).getChannel();
+  destination = new FileOutputStream(destFile).getChannel();
+  destination.transferFrom(source, 0, source.size());
+ }
+ finally {
+  if(source != null) {
+   source.close();
+  }
+  if(destination != null) {
+   destination.close();
+  }
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-04 11:41:47:0605, diag_detail_itementered, id=115153, type=20
+2014-12-04 11:41:47:0683, diag_detail_itemexited, id=115153, type=20
+2014-12-04 11:41:47:0776, answer_open, VisualItem[tree.nodes,7,id=115153,type=20,title=,body=<p>The new NIO package (in the JDK) abstracts this a bit with the new transferFrom and transferTo methods. The following snippet uses Files but you could adapt it to use streams and name it "copyStream".</p>
+
+<pre><code>public static void copyFile(File sourceFile, File destFile) throws IOException {
+ FileChannel source = null;
+ FileChannel destination = null;
+ try {
+  source = new FileInputStream(sourceFile).getChannel();
+  destination = new FileOutputStream(destFile).getChannel();
+  destination.transferFrom(source, 0, source.size());
+ }
+ finally {
+  if(source != null) {
+   source.close();
+  }
+  if(destination != null) {
+   destination.close();
+  }
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-04 11:41:47:0776, answer_open, VisualItem[tree.nodes,7,id=115153,type=20,title=,body=<p>The new NIO package (in the JDK) abstracts this a bit with the new transferFrom and transferTo methods. The following snippet uses Files but you could adapt it to use streams and name it "copyStream".</p>
+
+<pre><code>public static void copyFile(File sourceFile, File destFile) throws IOException {
+ FileChannel source = null;
+ FileChannel destination = null;
+ try {
+  source = new FileInputStream(sourceFile).getChannel();
+  destination = new FileOutputStream(destFile).getChannel();
+  destination.transferFrom(source, 0, source.size());
+ }
+ finally {
+  if(source != null) {
+   source.close();
+  }
+  if(destination != null) {
+   destination.close();
+  }
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-04 11:41:47:0776, diag_detail_itementered, id=115153, type=20
+2014-12-04 11:41:47:0854, diag_detail_itemexited, id=115153, type=20
+2014-12-04 11:41:48:0478, answer_open, VisualItem[tree.nodes,7,id=115153,type=20,title=,body=<p>The new NIO package (in the JDK) abstracts this a bit with the new transferFrom and transferTo methods. The following snippet uses Files but you could adapt it to use streams and name it "copyStream".</p>
+
+<pre><code>public static void copyFile(File sourceFile, File destFile) throws IOException {
+ FileChannel source = null;
+ FileChannel destination = null;
+ try {
+  source = new FileInputStream(sourceFile).getChannel();
+  destination = new FileOutputStream(destFile).getChannel();
+  destination.transferFrom(source, 0, source.size());
+ }
+ finally {
+  if(source != null) {
+   source.close();
+  }
+  if(destination != null) {
+   destination.close();
+  }
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-04 11:41:48:0478, answer_open, VisualItem[tree.nodes,7,id=115153,type=20,title=,body=<p>The new NIO package (in the JDK) abstracts this a bit with the new transferFrom and transferTo methods. The following snippet uses Files but you could adapt it to use streams and name it "copyStream".</p>
+
+<pre><code>public static void copyFile(File sourceFile, File destFile) throws IOException {
+ FileChannel source = null;
+ FileChannel destination = null;
+ try {
+  source = new FileInputStream(sourceFile).getChannel();
+  destination = new FileOutputStream(destFile).getChannel();
+  destination.transferFrom(source, 0, source.size());
+ }
+ finally {
+  if(source != null) {
+   source.close();
+  }
+  if(destination != null) {
+   destination.close();
+  }
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-04 11:41:48:0478, diag_detail_itementered, id=115153, type=20
+2014-12-04 11:41:48:0541, diag_detail_itemexited, id=115153, type=20
+2014-12-04 11:41:48:0619, answer_open, VisualItem[tree.nodes,8,id=540772,type=20,title=,body=<p>PipedInputStream and PipedOutputStream should only be used when you have multiple threads, as <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/io/PipedInputStream.html" rel="nofollow">noted by the javadoc</a>.</p>
+
+<p>Also note that input streams and output streams do not wrap any thread interruptions with IOExceptions... So you should consider incorporating an interruption policy to your code:</p>
+
+<pre><code>byte[] buffer = new byte[1024];
+int len = in.read(buffer);
+while (len != -1) {
+    out.write(buffer, 0, len);
+    len = in.read(buffer);
+    if (Thread.interrupted()) {
+        throw new InterruptedException();
+    }
+}
+</code></pre>
+
+<p>This would be an useful addition if you expect to use this API for copying large volumes of data, or data from streams that get stuck for an intolerably long time.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=4,searchfield=]
+2014-12-04 11:41:48:0619, answer_open, VisualItem[tree.nodes,8,id=540772,type=20,title=,body=<p>PipedInputStream and PipedOutputStream should only be used when you have multiple threads, as <a href="http://java.sun.com/j2se/1.4.2/docs/api/java/io/PipedInputStream.html" rel="nofollow">noted by the javadoc</a>.</p>
+
+<p>Also note that input streams and output streams do not wrap any thread interruptions with IOExceptions... So you should consider incorporating an interruption policy to your code:</p>
+
+<pre><code>byte[] buffer = new byte[1024];
+int len = in.read(buffer);
+while (len != -1) {
+    out.write(buffer, 0, len);
+    len = in.read(buffer);
+    if (Thread.interrupted()) {
+        throw new InterruptedException();
+    }
+}
+</code></pre>
+
+<p>This would be an useful addition if you expect to use this API for copying large volumes of data, or data from streams that get stuck for an intolerably long time.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=4,searchfield=]
+2014-12-04 11:41:48:0619, diag_detail_itementered, id=540772, type=20
+2014-12-04 11:41:49:0071, diag_detail_itemexited, id=540772, type=20
+2014-12-04 11:41:49:0227, answer_open, VisualItem[tree.nodes,9,id=13814318,type=20,title=,body=<p>Another possible candidate are the Guava I/O utilities:</p>
+
+<p><a href="http://code.google.com/p/guava-libraries/wiki/IOExplained" rel="nofollow">http://code.google.com/p/guava-libraries/wiki/IOExplained</a></p>
+
+<p>I thought I'd use these since Guava is already immensely useful in my project, rather than adding yet another library for one function.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:41:49:0227, answer_open, VisualItem[tree.nodes,9,id=13814318,type=20,title=,body=<p>Another possible candidate are the Guava I/O utilities:</p>
+
+<p><a href="http://code.google.com/p/guava-libraries/wiki/IOExplained" rel="nofollow">http://code.google.com/p/guava-libraries/wiki/IOExplained</a></p>
+
+<p>I thought I'd use these since Guava is already immensely useful in my project, rather than adding yet another library for one function.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711207835L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:41:49:0243, diag_detail_itementered, id=13814318, type=20
+2014-12-04 11:41:49:0633, diag_detail_itemexited, id=13814318, type=20
+2014-12-04 11:41:49:0695, diag_detail_itementered, id=59936, type=1
+2014-12-04 11:41:50:0397, diag_detail_itemexited, id=59936, type=1
+2014-12-04 11:41:50:0959, diag_detail_itementered, id=8219, type=1
+2014-12-04 11:41:51:0536, diag_detail_itemexited, id=8219, type=1
+2014-12-04 11:41:52:0051, diag_detail_itementered, id=13863, type=1
+2014-12-04 11:41:52:0222, diag_detail_itemexited, id=13863, type=1
+2014-12-04 11:41:52:0503, diag_detail_itementered, id=13863, type=1
+2014-12-04 11:41:52:0550, diag_detail_itemexited, id=13863, type=1
+2014-12-04 11:41:53:0470, diag_detail_itementered, id=43157, type=1
+2014-12-04 11:41:54:0047, diag_detail_itemexited, id=43157, type=1
+2014-12-04 11:41:54:0250, diag_detail_itementered, id=0.9032821037470988, type=1
+2014-12-04 11:41:54:0281, diag_detail_itemexited, id=0.9032821037470988, type=1
+2014-12-04 11:41:54:0297, diag_detail_itementered, id=1878092255, type=3
+2014-12-04 11:41:54:0749, diag_detail_itemclicked, id=1878092255, type=3
+2014-12-04 11:41:54:0921, diag_detail_itemclicked, id=1878092255, type=3
+2014-12-04 11:41:55:0483, diag_detail_itemexited, id=1878092255, type=3
+2014-12-04 11:41:55:0982, diag_detail_itementered, id=1878092255, type=3
+2014-12-04 11:41:56:0263, diag_detail_itemexited, id=1878092255, type=3
+2014-12-04 11:41:56:0278, diag_detail_itementered, id=0.864222892389683, type=1
+2014-12-04 11:41:56:0325, diag_detail_itemexited, id=0.864222892389683, type=1
+2014-12-04 11:41:56:0341, diag_detail_itementered, id=0.864222892389683, type=1
+2014-12-04 11:41:56:0372, diag_detail_itemexited, id=0.864222892389683, type=1
+2014-12-04 11:41:58:0665, list_mouseentered, id=62289, type=1
+2014-12-04 11:41:58:0665, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:58:0681, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:58:0696, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:58:0712, list_mousemoved, id=62289, type=1
+2014-12-04 11:41:58:0728, list_mousemoved, id=43157, type=1
+2014-12-04 11:41:58:0759, list_mouseexited
+2014-12-04 11:42:02:0035, diag_itementered, id=62289, type=1
+2014-12-04 11:42:02:0050, diag_itemexited, id=62289, type=1
+2014-12-04 11:42:02:0160, diag_itementered, id=62289, type=1
+2014-12-04 11:42:03:0298, diag_itemexited, id=62289, type=1
+2014-12-04 11:42:04:0312, list_mouseentered, id=62289, type=1
+2014-12-04 11:42:04:0312, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0328, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0344, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0359, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0375, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0390, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0422, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0500, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0515, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0531, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0546, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0562, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0578, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0593, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0609, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0624, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0640, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0656, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0671, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0687, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0702, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0718, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0734, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0749, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0765, list_mousemoved, id=62289, type=1
+2014-12-04 11:42:04:0780, list_mouseexited
+2014-12-04 11:42:06:0684, search_update, 

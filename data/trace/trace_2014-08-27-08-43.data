@@ -1,0 +1,520 @@
+2014-08-27 08:43:05:0555, edge_create, Tuple[0,1,0.5522367336899443,3,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0982, question_create, 123
+2014-08-27 08:43:05:0982, edge_create, Tuple[1,2,0.05566928683387029,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0983, question_create, 126
+2014-08-27 08:43:05:0983, edge_create, Tuple[1,3,0.33150743834395546,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0984, question_create, 382
+2014-08-27 08:43:05:0984, edge_create, Tuple[1,4,0.21109463198049117,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0985, question_create, 564
+2014-08-27 08:43:05:0986, edge_create, Tuple[1,5,0.8880369178182085,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0986, question_create, 2092
+2014-08-27 08:43:05:0986, edge_create, Tuple[1,6,0.31830976637970765,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0987, question_create, 2158
+2014-08-27 08:43:05:0987, edge_create, Tuple[1,7,0.9098862801732542,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0987, question_create, 2931
+2014-08-27 08:43:05:0988, edge_create, Tuple[1,8,0.2730045889484165,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0988, question_create, 2968
+2014-08-27 08:43:05:0988, edge_create, Tuple[1,9,0.33711925546342225,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0989, question_create, 3049
+2014-08-27 08:43:05:0989, edge_create, Tuple[1,10,0.564854135445368,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0990, question_create, 3881
+2014-08-27 08:43:05:0990, edge_create, Tuple[1,11,0.2740110850310883,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0990, question_create, 4080
+2014-08-27 08:43:05:0991, edge_create, Tuple[1,12,0.5860611690050735,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0992, question_create, 4149
+2014-08-27 08:43:05:0992, edge_create, Tuple[1,13,0.7607257794503256,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0993, question_create, 4242
+2014-08-27 08:43:05:0993, edge_create, Tuple[1,14,0.26618138382064527,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0993, question_create, 4630
+2014-08-27 08:43:05:0994, edge_create, Tuple[1,15,0.6822839963309382,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0994, question_create, 4922
+2014-08-27 08:43:05:0994, edge_create, Tuple[1,16,0.9308147546905909,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0995, question_create, 5078
+2014-08-27 08:43:05:0995, edge_create, Tuple[1,17,0.3741732170066845,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0995, question_create, 5222
+2014-08-27 08:43:05:0996, edge_create, Tuple[1,18,0.5551262699375275,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0996, question_create, 5328
+2014-08-27 08:43:05:0996, edge_create, Tuple[1,19,0.042395970617415735,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0997, question_create, 5514
+2014-08-27 08:43:05:0997, edge_create, Tuple[1,20,0.8390230428423898,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0998, question_create, 5527
+2014-08-27 08:43:05:0998, edge_create, Tuple[1,21,0.9911530529982284,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0998, question_create, 5855
+2014-08-27 08:43:05:0999, edge_create, Tuple[1,22,0.47326193822343887,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:05:0999, question_create, 6222
+2014-08-27 08:43:05:0999, edge_create, Tuple[1,23,0.27437873081811825,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0000, question_create, 6392
+2014-08-27 08:43:06:0000, edge_create, Tuple[1,24,0.3145209197375127,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0001, question_create, 6612
+2014-08-27 08:43:06:0001, edge_create, Tuple[1,25,0.8292733817363729,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0002, question_create, 6639
+2014-08-27 08:43:06:0002, edge_create, Tuple[1,26,0.9278884951428883,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0003, question_create, 6658
+2014-08-27 08:43:06:0003, edge_create, Tuple[1,27,0.3727313673712572,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0003, question_create, 6682
+2014-08-27 08:43:06:0004, edge_create, Tuple[1,28,0.5882860563702684,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0004, question_create, 6765
+2014-08-27 08:43:06:0004, edge_create, Tuple[1,29,0.44767446857090476,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0005, question_create, 6816
+2014-08-27 08:43:06:0005, edge_create, Tuple[1,30,0.6246390155285769,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0006, question_create, 7269
+2014-08-27 08:43:06:0006, edge_create, Tuple[1,31,0.4889414552081909,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0007, question_create, 7291
+2014-08-27 08:43:06:0007, edge_create, Tuple[1,32,0.2243814701770651,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0008, question_create, 7539
+2014-08-27 08:43:06:0008, edge_create, Tuple[1,33,0.7713378923549173,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0009, question_create, 7596
+2014-08-27 08:43:06:0009, edge_create, Tuple[1,34,0.03896588613383567,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0010, question_create, 7661
+2014-08-27 08:43:06:0010, edge_create, Tuple[1,35,0.6301338781382839,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0011, question_create, 7681
+2014-08-27 08:43:06:0011, edge_create, Tuple[1,36,0.20693241005236962,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0012, question_create, 7720
+2014-08-27 08:43:06:0012, edge_create, Tuple[1,37,0.571748839233854,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0013, question_create, 7779
+2014-08-27 08:43:06:0013, edge_create, Tuple[1,38,0.5688720768665384,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0014, question_create, 8219
+2014-08-27 08:43:06:0015, edge_create, Tuple[1,39,0.3752455134825633,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0015, question_create, 8318
+2014-08-27 08:43:06:0016, edge_create, Tuple[1,40,0.7330213025810046,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0016, question_create, 8569
+2014-08-27 08:43:06:0016, edge_create, Tuple[1,41,0.21986034679152844,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0017, question_create, 8599
+2014-08-27 08:43:06:0017, edge_create, Tuple[1,42,0.3716032211404525,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0017, question_create, 8968
+2014-08-27 08:43:06:0018, edge_create, Tuple[1,43,0.34703735488509513,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0018, question_create, 9044
+2014-08-27 08:43:06:0018, edge_create, Tuple[1,44,0.3123619239028568,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0019, question_create, 9361
+2014-08-27 08:43:06:0019, edge_create, Tuple[1,45,0.00484636993001919,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0020, question_create, 9913
+2014-08-27 08:43:06:0020, edge_create, Tuple[1,46,0.028618268679973857,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0020, question_create, 10042
+2014-08-27 08:43:06:0020, edge_create, Tuple[1,47,0.046419745468735396,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0021, question_create, 10506
+2014-08-27 08:43:06:0021, edge_create, Tuple[1,48,0.43183936388731603,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0022, question_create, 10586
+2014-08-27 08:43:06:0022, edge_create, Tuple[1,49,0.8209210024437589,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0022, question_create, 10980
+2014-08-27 08:43:06:0023, edge_create, Tuple[1,50,0.10600791875823445,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0023, question_create, 11088
+2014-08-27 08:43:06:0023, edge_create, Tuple[1,51,0.054981007883292965,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0024, question_create, 11338
+2014-08-27 08:43:06:0024, edge_create, Tuple[1,52,0.4814799890585013,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0025, question_create, 11341
+2014-08-27 08:43:06:0025, edge_create, Tuple[1,53,0.5645390491819446,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0025, question_create, 11561
+2014-08-27 08:43:06:0026, edge_create, Tuple[1,54,0.8816314813703336,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0026, question_create, 11930
+2014-08-27 08:43:06:0026, edge_create, Tuple[1,55,0.54227297006939,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0027, question_create, 12088
+2014-08-27 08:43:06:0027, edge_create, Tuple[1,56,0.8581412858510834,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0027, question_create, 12144
+2014-08-27 08:43:06:0028, edge_create, Tuple[1,57,0.155582932930594,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0028, question_create, 12870
+2014-08-27 08:43:06:0028, edge_create, Tuple[1,58,0.9955945313649953,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0029, question_create, 12877
+2014-08-27 08:43:06:0029, edge_create, Tuple[1,59,0.4763217653696269,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0029, question_create, 12927
+2014-08-27 08:43:06:0030, edge_create, Tuple[1,60,0.16418879727248348,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0030, question_create, 13225
+2014-08-27 08:43:06:0031, edge_create, Tuple[1,61,0.698679508442311,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0031, question_create, 13751
+2014-08-27 08:43:06:0031, edge_create, Tuple[1,62,0.54729134355027,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0032, question_create, 13863
+2014-08-27 08:43:06:0032, edge_create, Tuple[1,63,0.9289958527278058,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0032, question_create, 14397
+2014-08-27 08:43:06:0033, edge_create, Tuple[1,64,0.2006532693600116,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0033, question_create, 14617
+2014-08-27 08:43:06:0033, edge_create, Tuple[1,65,0.9345800083746058,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0034, question_create, 14801
+2014-08-27 08:43:06:0034, edge_create, Tuple[1,66,0.21008725272293527,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0035, question_create, 15305
+2014-08-27 08:43:06:0036, edge_create, Tuple[1,67,0.3922772750686154,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0036, question_create, 15481
+2014-08-27 08:43:06:0036, edge_create, Tuple[1,68,0.01783808744505544,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0037, question_create, 15496
+2014-08-27 08:43:06:0037, edge_create, Tuple[1,69,0.796574499266707,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0037, question_create, 15528
+2014-08-27 08:43:06:0038, edge_create, Tuple[1,70,0.2638182764643018,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0038, question_create, 15649
+2014-08-27 08:43:06:0038, edge_create, Tuple[1,71,0.07714658763154914,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0042, pattern_create, 2109443059
+2014-08-27 08:43:06:0043, edge_create, Tuple[0,72,0.6310736607580889,3,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0055, question_create, 43344
+2014-08-27 08:43:06:0055, edge_create, Tuple[72,73,0.5832024712700671,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0056, question_create, 6612
+2014-08-27 08:43:06:0056, edge_create, Tuple[72,74,0.05563642462997831,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0056, question_create, 7291
+2014-08-27 08:43:06:0057, edge_create, Tuple[72,75,0.7537055701603155,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0057, pattern_create, 1641682794
+2014-08-27 08:43:06:0057, edge_create, Tuple[0,76,0.13529157752571963,3,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0064, question_create, 123
+2014-08-27 08:43:06:0064, edge_create, Tuple[76,77,0.9860590975043092,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0065, question_create, 29324
+2014-08-27 08:43:06:0065, edge_create, Tuple[76,78,0.2913307219643635,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0066, question_create, 19347
+2014-08-27 08:43:06:0066, edge_create, Tuple[76,79,0.8093261881317605,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0066, pattern_create, -771804441
+2014-08-27 08:43:06:0067, edge_create, Tuple[0,80,0.859318442528749,3,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0072, question_create, 41107
+2014-08-27 08:43:06:0073, edge_create, Tuple[80,81,0.9702864797656597,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0073, question_create, 11930
+2014-08-27 08:43:06:0074, edge_create, Tuple[80,82,0.732105746465509,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0074, question_create, 37628
+2014-08-27 08:43:06:0074, edge_create, Tuple[80,83,0.8510279773441607,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0075, pattern_create, 1796611198
+2014-08-27 08:43:06:0075, edge_create, Tuple[0,84,0.8892654326607975,3,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0081, question_create, 40471
+2014-08-27 08:43:06:0082, edge_create, Tuple[84,85,0.29537819446226066,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0082, question_create, 24596
+2014-08-27 08:43:06:0083, edge_create, Tuple[84,86,0.3259009740765335,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0083, question_create, 6658
+2014-08-27 08:43:06:0083, edge_create, Tuple[84,87,0.358950464080504,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0084, question_create, 21934
+2014-08-27 08:43:06:0084, edge_create, Tuple[84,88,0.7601165663909627,2,1.0,1409186585550,1409186585550]
+2014-08-27 08:43:06:0296, setup_loaddata
+2014-08-27 08:43:07:0998, diag_itementered, id=4242, type=1
+2014-08-27 08:43:08:0049, diag_itemexited, id=4242, type=1
+2014-08-27 08:43:08:0050, diag_itementered, id=4149, type=1
+2014-08-27 08:43:10:0430, edge_create, Tuple[0,1,0.2852140088168621,4,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0430, answer_create, 4188
+2014-08-27 08:43:10:0431, edge_create, Tuple[1,2,0.5376857478115203,4,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0432, answer_create, 4206
+2014-08-27 08:43:10:0432, edge_create, Tuple[1,3,0.6097012225263146,4,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0433, answer_create, 4498
+2014-08-27 08:43:10:0433, edge_create, Tuple[1,4,0.365594796360011,4,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0433, answer_create, 38133
+2014-08-27 08:43:10:0434, edge_create, Tuple[1,5,0.30878143639348454,4,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0434, answer_create, 154588
+2014-08-27 08:43:10:0435, edge_create, Tuple[1,6,0.6597658989089135,4,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0435, answer_create, 10803105
+2014-08-27 08:43:10:0435, edge_create, Tuple[1,7,0.3315239207699501,4,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0437, edge_create, Tuple[0,8,0.16861195465664658,1,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0438, edge_create, Tuple[8,9,0.3168292202663304,1,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0439, edge_create, Tuple[8,10,0.18099056327043106,1,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0441, edge_create, Tuple[8,11,0.32764515531926663,1,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0444, edge_create, Tuple[8,12,0.6080850261285934,1,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0445, edge_create, Tuple[8,13,0.6947374793597278,1,0.0,1409186585550,1409186585550]
+2014-08-27 08:43:10:0458, discussion_open, 4149
+2014-08-27 08:43:10:0458, diag_itemclicked, id=4149, type=1
+2014-08-27 08:43:10:0461, diag_itemexited, id=4149, type=1
+2014-08-27 08:43:11:0488, diag_itementered, id=0.3168292202663304, type=1
+2014-08-27 08:43:11:0493, diag_itemexited, id=0.3168292202663304, type=1
+2014-08-27 08:43:11:0956, diag_itementered, id=10803105, type=20
+2014-08-27 08:43:12:0928, answer_open, VisualItem[tree.nodes,7,id=10803105,type=20,title=,body=<p>Look into using the <a href="http://commons.apache.org/io/apidocs/org/apache/commons/io/input/Tailer.html" rel="nofollow">Tailer</a> from Apache Commons IO. It handles most of the edge cases.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=4]
+2014-08-27 08:43:13:0657, diag_itemexited, id=10803105, type=20
+2014-08-27 08:43:14:0156, diag_itementered, id=38133, type=20
+2014-08-27 08:43:14:0197, diag_itemexited, id=38133, type=20
+2014-08-27 08:43:14:0383, diag_itementered, id=0.30878143639348454, type=4
+2014-08-27 08:43:14:0400, diag_itemexited, id=0.30878143639348454, type=4
+2014-08-27 08:43:14:0750, diag_itementered, id=154588, type=21
+2014-08-27 08:43:15:0089, answer_open, VisualItem[tree.nodes,6,id=154588,type=21,title=,body=<p>Could not get the example to work using FileChannel.read(ByteBuffer) because it isn't a blocking read. Did however get the code below to work:</p>
+
+<pre><code>boolean running = true;
+BufferedInputStream reader = new BufferedInputStream( 
+    new FileInputStream( "out.txt" ) );
+
+public void run() {
+    while( running ) {
+        if( reader.available() &gt; 0 ) {
+            System.out.print( (char)reader.read() );
+        }
+        else {
+            try {
+                sleep( 500 );
+            }
+            catch( InterruptedException ex )
+            {
+                running = false;
+            }
+        }
+    }
+}
+</code></pre>
+
+<p>Of course the same thing would work as a timer instead of a Thread, but I leave that up to the programmer. I'm still looking for a better way, but this works for me for now.</p>
+
+<p>Oh, and I'll caveat this with: I'm using 1.4.2. Yes I know I'm in the stone ages still.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=5]
+2014-08-27 08:43:15:0678, diag_itemexited, id=154588, type=21
+2014-08-27 08:43:15:0830, diag_itementered, id=0.30878143639348454, type=4
+2014-08-27 08:43:15:0838, diag_itemexited, id=0.30878143639348454, type=4
+2014-08-27 08:43:15:0965, diag_itementered, id=0.365594796360011, type=4
+2014-08-27 08:43:15:0989, diag_itemexited, id=0.365594796360011, type=4
+2014-08-27 08:43:16:0221, diag_itementered, id=4188, type=20
+2014-08-27 08:43:16:0580, answer_open, VisualItem[tree.nodes,2,id=4188,type=20,title=,body=<p>Not Java per-se, but you may run into issues where you have written something to a file, but it hasn't been actually written yet - it might be in a cache somewhere, and reading from the same file may not actually give you the new information.</p>
+
+<p>Short version - use flush() or whatever the relevant system call is to ensure that your data is actually written to the file.</p>
+
+<p>Note I am not talking about the OS level disk cache - if your data gets into here, it should appear in a read() after this point.  It may be that the language itself caches writes, waiting until a buffer fills up or file is flushed/closed.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 08:43:17:0494, diag_itemexited, id=4188, type=20
+2014-08-27 08:43:17:0814, diag_itementered, id=0.6097012225263146, type=4
+2014-08-27 08:43:17:0829, diag_itemexited, id=0.6097012225263146, type=4
+2014-08-27 08:43:17:0957, diag_itementered, id=4206, type=20
+2014-08-27 08:43:18:0234, answer_open, VisualItem[tree.nodes,3,id=4206,type=20,title=,body=<p>I've never tried it, but you should write a test case to see if reading from a stream after you have hit the end will work, regardless of if there is more data written to the file.</p>
+
+<p>Is there a reason you can't use a piped input/output stream?  Is the data being written and read from the same application (if so, you have the data, why do you need to read from the file)?</p>
+
+<p>Otherwise, maybe read till end of file, then monitor for changes and seek to where you left off and continue... though watch out for race conditions.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:43:19:0487, diag_itemexited, id=4206, type=20
+2014-08-27 08:43:19:0822, diag_itementered, id=4498, type=20
+2014-08-27 08:43:20:0100, answer_open, VisualItem[tree.nodes,4,id=4498,type=20,title=,body=<p>The answer seems to be "no" ... and "yes". There seems to be no real way to know if a file is open for writing by another application. So, reading from such a file will just progress until content is exhausted. I took Mike's advice and wrote some test code:</p>
+
+<p>Writer.java writes a string to file and then waits for the user to hit enter before writing another line to file. The idea being that it could be started up, then a reader can be started to see how it copes with the "partial" file. The reader I wrote is in Reader.java.</p>
+
+<p><strong>Writer.java</strong></p>
+
+<pre><code>public class Writer extends Object<br>{<br>    Writer () {<br><br>    }<br><br>    public static String[] strings = <br>        {<br>            "Hello World", <br>            "Goodbye World"<br>        };<br><br>    public static void main(String[] args) <br>        throws java.io.IOException {<br><br>        java.io.PrintWriter pw =<br>            new java.io.PrintWriter(new java.io.FileOutputStream("out.txt"), true);<br><br>        for(String s : strings) {<br>            pw.println(s);<br>            System.in.read();<br>        }<br><br>        pw.close();<br>    }<br>}<br></code></pre>
+
+<p><strong>Reader.java</strong></p>
+
+<pre><code>public class Reader extends Object<br>{<br>    Reader () {<br><br>    }<br><br>    public static void main(String[] args) <br>        throws Exception {<br><br>        java.io.FileInputStream in = new java.io.FileInputStream("out.txt");<br><br>        java.nio.channels.FileChannel fc = in.getChannel();<br>        java.nio.ByteBuffer bb = java.nio.ByteBuffer.allocate(10);<br><br>        while(fc.read(bb) &gt;= 0) {<br>            bb.flip();<br>            while(bb.hasRemaining()) {<br>                System.out.println((char)bb.get());<br>            }<br>            bb.clear();<br>        }<br><br>        System.exit(0);<br>    }<br>}<br></code></pre>
+
+<p>No guarantees that this code is best practice.</p>
+
+<p>This leaves the option suggested by Mike of periodically checking if there is new data to be read from the file. This then requires user intervention to close the file reader when it is determined that the reading is completed. Or, the reader needs to be made aware the content of the file and be able to determine and end of write condition. If the content were XML, the end of document could be used to signal this.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 08:43:20:0728, diag_itemexited, id=4498, type=20
+2014-08-27 08:43:20:0960, diag_itementered, id=0.30878143639348454, type=4
+2014-08-27 08:43:20:0968, diag_itemexited, id=0.30878143639348454, type=4
+2014-08-27 08:43:21:0469, diag_itementered, id=154588, type=21
+2014-08-27 08:43:21:0921, answer_open, VisualItem[tree.nodes,6,id=154588,type=21,title=,body=<p>Could not get the example to work using FileChannel.read(ByteBuffer) because it isn't a blocking read. Did however get the code below to work:</p>
+
+<pre><code>boolean running = true;
+BufferedInputStream reader = new BufferedInputStream( 
+    new FileInputStream( "out.txt" ) );
+
+public void run() {
+    while( running ) {
+        if( reader.available() &gt; 0 ) {
+            System.out.print( (char)reader.read() );
+        }
+        else {
+            try {
+                sleep( 500 );
+            }
+            catch( InterruptedException ex )
+            {
+                running = false;
+            }
+        }
+    }
+}
+</code></pre>
+
+<p>Of course the same thing would work as a timer instead of a Thread, but I leave that up to the programmer. I'm still looking for a better way, but this works for me for now.</p>
+
+<p>Oh, and I'll caveat this with: I'm using 1.4.2. Yes I know I'm in the stone ages still.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=5]
+2014-08-27 08:43:23:0052, diag_itemexited, id=154588, type=21
+2014-08-27 08:43:23:0053, diag_itementered, id=10803105, type=20
+2014-08-27 08:43:23:0078, diag_itemexited, id=10803105, type=20
+2014-08-27 08:43:23:0141, diag_itementered, id=0.3315239207699501, type=4
+2014-08-27 08:43:23:0342, diag_itemexited, id=0.3315239207699501, type=4
+2014-08-27 08:43:23:0511, diag_itementered, id=10803105, type=20
+2014-08-27 08:43:23:0906, answer_open, VisualItem[tree.nodes,7,id=10803105,type=20,title=,body=<p>Look into using the <a href="http://commons.apache.org/io/apidocs/org/apache/commons/io/input/Tailer.html" rel="nofollow">Tailer</a> from Apache Commons IO. It handles most of the edge cases.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=4]
+2014-08-27 08:43:24:0470, diag_itemexited, id=10803105, type=20
+2014-08-27 08:43:25:0045, diag_itementered, id=0.2852140088168621, type=4
+2014-08-27 08:43:25:0062, diag_itemexited, id=0.2852140088168621, type=4
+2014-08-27 08:43:25:0264, diag_itementered, id=0.2852140088168621, type=4
+2014-08-27 08:43:25:0304, diag_itemexited, id=0.2852140088168621, type=4
+2014-08-27 08:43:25:0359, diag_itementered, id=-507202782, type=3
+2014-08-27 08:43:26:0521, diag_itemexited, id=-507202782, type=3
+2014-08-27 08:43:26:0959, diag_itementered, id=0.5376857478115203, type=4
+2014-08-27 08:43:26:0991, diag_itemexited, id=0.5376857478115203, type=4
+2014-08-27 08:43:26:0992, diag_itementered, id=4188, type=20
+2014-08-27 08:43:27:0293, answer_open, VisualItem[tree.nodes,2,id=4188,type=20,title=,body=<p>Not Java per-se, but you may run into issues where you have written something to a file, but it hasn't been actually written yet - it might be in a cache somewhere, and reading from the same file may not actually give you the new information.</p>
+
+<p>Short version - use flush() or whatever the relevant system call is to ensure that your data is actually written to the file.</p>
+
+<p>Note I am not talking about the OS level disk cache - if your data gets into here, it should appear in a read() after this point.  It may be that the language itself caches writes, waiting until a buffer fills up or file is flushed/closed.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 08:43:28:0098, diag_itemexited, id=4188, type=20
+2014-08-27 08:43:28:0136, diag_itementered, id=0.6097012225263146, type=4
+2014-08-27 08:43:28:0151, diag_itemexited, id=0.6097012225263146, type=4
+2014-08-27 08:43:28:0209, diag_itementered, id=0.6097012225263146, type=4
+2014-08-27 08:43:28:0215, diag_itemexited, id=0.6097012225263146, type=4
+2014-08-27 08:43:28:0473, diag_itementered, id=0.2852140088168621, type=4
+2014-08-27 08:43:28:0500, diag_itemexited, id=0.2852140088168621, type=4
+2014-08-27 08:43:28:0506, diag_itementered, id=4149, type=1
+2014-08-27 08:43:30:0049, diag_itemexited, id=4149, type=1
+2014-08-27 08:43:30:0052, diag_itementered, id=0.3168292202663304, type=1
+2014-08-27 08:43:30:0075, diag_itemexited, id=0.3168292202663304, type=1
+2014-08-27 08:43:31:0592, diag_itementered, id=0.16861195465664658, type=1
+2014-08-27 08:43:31:0600, diag_itemexited, id=0.16861195465664658, type=1
+2014-08-27 08:43:33:0450, diag_itementered, id=0.6097012225263146, type=4
+2014-08-27 08:43:33:0475, diag_itemexited, id=0.6097012225263146, type=4
+2014-08-27 08:43:34:0685, answer_open, VisualItem[tree.nodes,3,id=4206,type=20,title=,body=<p>I've never tried it, but you should write a test case to see if reading from a stream after you have hit the end will work, regardless of if there is more data written to the file.</p>
+
+<p>Is there a reason you can't use a piped input/output stream?  Is the data being written and read from the same application (if so, you have the data, why do you need to read from the file)?</p>
+
+<p>Otherwise, maybe read till end of file, then monitor for changes and seek to where you left off and continue... though watch out for race conditions.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:43:35:0797, answer_open, VisualItem[tree.nodes,4,id=4498,type=20,title=,body=<p>The answer seems to be "no" ... and "yes". There seems to be no real way to know if a file is open for writing by another application. So, reading from such a file will just progress until content is exhausted. I took Mike's advice and wrote some test code:</p>
+
+<p>Writer.java writes a string to file and then waits for the user to hit enter before writing another line to file. The idea being that it could be started up, then a reader can be started to see how it copes with the "partial" file. The reader I wrote is in Reader.java.</p>
+
+<p><strong>Writer.java</strong></p>
+
+<pre><code>public class Writer extends Object<br>{<br>    Writer () {<br><br>    }<br><br>    public static String[] strings = <br>        {<br>            "Hello World", <br>            "Goodbye World"<br>        };<br><br>    public static void main(String[] args) <br>        throws java.io.IOException {<br><br>        java.io.PrintWriter pw =<br>            new java.io.PrintWriter(new java.io.FileOutputStream("out.txt"), true);<br><br>        for(String s : strings) {<br>            pw.println(s);<br>            System.in.read();<br>        }<br><br>        pw.close();<br>    }<br>}<br></code></pre>
+
+<p><strong>Reader.java</strong></p>
+
+<pre><code>public class Reader extends Object<br>{<br>    Reader () {<br><br>    }<br><br>    public static void main(String[] args) <br>        throws Exception {<br><br>        java.io.FileInputStream in = new java.io.FileInputStream("out.txt");<br><br>        java.nio.channels.FileChannel fc = in.getChannel();<br>        java.nio.ByteBuffer bb = java.nio.ByteBuffer.allocate(10);<br><br>        while(fc.read(bb) &gt;= 0) {<br>            bb.flip();<br>            while(bb.hasRemaining()) {<br>                System.out.println((char)bb.get());<br>            }<br>            bb.clear();<br>        }<br><br>        System.exit(0);<br>    }<br>}<br></code></pre>
+
+<p>No guarantees that this code is best practice.</p>
+
+<p>This leaves the option suggested by Mike of periodically checking if there is new data to be read from the file. This then requires user intervention to close the file reader when it is determined that the reading is completed. Or, the reader needs to be made aware the content of the file and be able to determine and end of write condition. If the content were XML, the end of document could be used to signal this.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 08:43:36:0871, answer_open, VisualItem[tree.nodes,6,id=154588,type=21,title=,body=<p>Could not get the example to work using FileChannel.read(ByteBuffer) because it isn't a blocking read. Did however get the code below to work:</p>
+
+<pre><code>boolean running = true;
+BufferedInputStream reader = new BufferedInputStream( 
+    new FileInputStream( "out.txt" ) );
+
+public void run() {
+    while( running ) {
+        if( reader.available() &gt; 0 ) {
+            System.out.print( (char)reader.read() );
+        }
+        else {
+            try {
+                sleep( 500 );
+            }
+            catch( InterruptedException ex )
+            {
+                running = false;
+            }
+        }
+    }
+}
+</code></pre>
+
+<p>Of course the same thing would work as a timer instead of a Thread, but I leave that up to the programmer. I'm still looking for a better way, but this works for me for now.</p>
+
+<p>Oh, and I'll caveat this with: I'm using 1.4.2. Yes I know I'm in the stone ages still.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=5]
+2014-08-27 08:43:38:0124, answer_open, VisualItem[tree.nodes,7,id=10803105,type=20,title=,body=<p>Look into using the <a href="http://commons.apache.org/io/apidocs/org/apache/commons/io/input/Tailer.html" rel="nofollow">Tailer</a> from Apache Commons IO. It handles most of the edge cases.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=4]
+2014-08-27 08:43:39:0240, diag_itementered, id=154588, type=21
+2014-08-27 08:43:39:0563, answer_open, VisualItem[tree.nodes,6,id=154588,type=21,title=,body=<p>Could not get the example to work using FileChannel.read(ByteBuffer) because it isn't a blocking read. Did however get the code below to work:</p>
+
+<pre><code>boolean running = true;
+BufferedInputStream reader = new BufferedInputStream( 
+    new FileInputStream( "out.txt" ) );
+
+public void run() {
+    while( running ) {
+        if( reader.available() &gt; 0 ) {
+            System.out.print( (char)reader.read() );
+        }
+        else {
+            try {
+                sleep( 500 );
+            }
+            catch( InterruptedException ex )
+            {
+                running = false;
+            }
+        }
+    }
+}
+</code></pre>
+
+<p>Of course the same thing would work as a timer instead of a Thread, but I leave that up to the programmer. I'm still looking for a better way, but this works for me for now.</p>
+
+<p>Oh, and I'll caveat this with: I'm using 1.4.2. Yes I know I'm in the stone ages still.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=5]
+2014-08-27 08:43:40:0530, diag_itemexited, id=154588, type=21
+2014-08-27 08:43:45:0865, answer_open, VisualItem[tree.nodes,3,id=4206,type=20,title=,body=<p>I've never tried it, but you should write a test case to see if reading from a stream after you have hit the end will work, regardless of if there is more data written to the file.</p>
+
+<p>Is there a reason you can't use a piped input/output stream?  Is the data being written and read from the same application (if so, you have the data, why do you need to read from the file)?</p>
+
+<p>Otherwise, maybe read till end of file, then monitor for changes and seek to where you left off and continue... though watch out for race conditions.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:43:46:0491, answer_open, VisualItem[tree.nodes,2,id=4188,type=20,title=,body=<p>Not Java per-se, but you may run into issues where you have written something to a file, but it hasn't been actually written yet - it might be in a cache somewhere, and reading from the same file may not actually give you the new information.</p>
+
+<p>Short version - use flush() or whatever the relevant system call is to ensure that your data is actually written to the file.</p>
+
+<p>Note I am not talking about the OS level disk cache - if your data gets into here, it should appear in a read() after this point.  It may be that the language itself caches writes, waiting until a buffer fills up or file is flushed/closed.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 08:43:47:0018, answer_open, VisualItem[tree.nodes,3,id=4206,type=20,title=,body=<p>I've never tried it, but you should write a test case to see if reading from a stream after you have hit the end will work, regardless of if there is more data written to the file.</p>
+
+<p>Is there a reason you can't use a piped input/output stream?  Is the data being written and read from the same application (if so, you have the data, why do you need to read from the file)?</p>
+
+<p>Otherwise, maybe read till end of file, then monitor for changes and seek to where you left off and continue... though watch out for race conditions.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:43:47:0546, diag_itementered, id=0.6097012225263146, type=4
+2014-08-27 08:43:47:0554, diag_itemexited, id=0.6097012225263146, type=4
+2014-08-27 08:43:47:0690, diag_itementered, id=0.30878143639348454, type=4
+2014-08-27 08:43:47:0698, diag_itemexited, id=0.30878143639348454, type=4
+2014-08-27 08:43:47:0759, diag_itementered, id=0.6597658989089135, type=4
+2014-08-27 08:43:47:0772, diag_itemexited, id=0.6597658989089135, type=4
+2014-08-27 08:43:47:0931, diag_itementered, id=154588, type=21
+2014-08-27 08:43:48:0153, answer_open, VisualItem[tree.nodes,6,id=154588,type=21,title=,body=<p>Could not get the example to work using FileChannel.read(ByteBuffer) because it isn't a blocking read. Did however get the code below to work:</p>
+
+<pre><code>boolean running = true;
+BufferedInputStream reader = new BufferedInputStream( 
+    new FileInputStream( "out.txt" ) );
+
+public void run() {
+    while( running ) {
+        if( reader.available() &gt; 0 ) {
+            System.out.print( (char)reader.read() );
+        }
+        else {
+            try {
+                sleep( 500 );
+            }
+            catch( InterruptedException ex )
+            {
+                running = false;
+            }
+        }
+    }
+}
+</code></pre>
+
+<p>Of course the same thing would work as a timer instead of a Thread, but I leave that up to the programmer. I'm still looking for a better way, but this works for me for now.</p>
+
+<p>Oh, and I'll caveat this with: I'm using 1.4.2. Yes I know I'm in the stone ages still.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=5]
+2014-08-27 08:43:48:0347, diag_itemexited, id=154588, type=21
+2014-08-27 08:43:49:0059, diag_itementered, id=10803105, type=20
+2014-08-27 08:43:49:0366, answer_open, VisualItem[tree.nodes,7,id=10803105,type=20,title=,body=<p>Look into using the <a href="http://commons.apache.org/io/apidocs/org/apache/commons/io/input/Tailer.html" rel="nofollow">Tailer</a> from Apache Commons IO. It handles most of the edge cases.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=4]
+2014-08-27 08:43:49:0570, diag_itemexited, id=10803105, type=20
+2014-08-27 08:43:49:0689, diag_itementered, id=154588, type=21
+2014-08-27 08:43:49:0697, diag_itemexited, id=154588, type=21
+2014-08-27 08:43:49:0714, diag_itementered, id=0.6597658989089135, type=4
+2014-08-27 08:43:49:0721, diag_itemexited, id=0.6597658989089135, type=4
+2014-08-27 08:43:49:0788, diag_itementered, id=0.365594796360011, type=4
+2014-08-27 08:43:49:0796, diag_itemexited, id=0.365594796360011, type=4
+2014-08-27 08:43:49:0797, diag_itementered, id=-507202782, type=3
+2014-08-27 08:43:49:0843, diag_itemexited, id=-507202782, type=3
+2014-08-27 08:43:50:0547, diag_itementered, id=4188, type=20
+2014-08-27 08:43:50:0829, answer_open, VisualItem[tree.nodes,2,id=4188,type=20,title=,body=<p>Not Java per-se, but you may run into issues where you have written something to a file, but it hasn't been actually written yet - it might be in a cache somewhere, and reading from the same file may not actually give you the new information.</p>
+
+<p>Short version - use flush() or whatever the relevant system call is to ensure that your data is actually written to the file.</p>
+
+<p>Note I am not talking about the OS level disk cache - if your data gets into here, it should appear in a read() after this point.  It may be that the language itself caches writes, waiting until a buffer fills up or file is flushed/closed.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 08:43:51:0132, diag_itemexited, id=4188, type=20
+2014-08-27 08:43:51:0138, diag_itementered, id=4188, type=20
+2014-08-27 08:43:51:0171, diag_itemexited, id=4188, type=20
+2014-08-27 08:43:51:0370, diag_itementered, id=0.365594796360011, type=4
+2014-08-27 08:43:51:0379, diag_itemexited, id=0.365594796360011, type=4
+2014-08-27 08:43:51:0952, diag_itementered, id=0.365594796360011, type=4
+2014-08-27 08:43:52:0253, diag_itemexited, id=0.365594796360011, type=4
+2014-08-27 08:43:52:0263, diag_itementered, id=4498, type=20
+2014-08-27 08:43:52:0556, answer_open, VisualItem[tree.nodes,4,id=4498,type=20,title=,body=<p>The answer seems to be "no" ... and "yes". There seems to be no real way to know if a file is open for writing by another application. So, reading from such a file will just progress until content is exhausted. I took Mike's advice and wrote some test code:</p>
+
+<p>Writer.java writes a string to file and then waits for the user to hit enter before writing another line to file. The idea being that it could be started up, then a reader can be started to see how it copes with the "partial" file. The reader I wrote is in Reader.java.</p>
+
+<p><strong>Writer.java</strong></p>
+
+<pre><code>public class Writer extends Object<br>{<br>    Writer () {<br><br>    }<br><br>    public static String[] strings = <br>        {<br>            "Hello World", <br>            "Goodbye World"<br>        };<br><br>    public static void main(String[] args) <br>        throws java.io.IOException {<br><br>        java.io.PrintWriter pw =<br>            new java.io.PrintWriter(new java.io.FileOutputStream("out.txt"), true);<br><br>        for(String s : strings) {<br>            pw.println(s);<br>            System.in.read();<br>        }<br><br>        pw.close();<br>    }<br>}<br></code></pre>
+
+<p><strong>Reader.java</strong></p>
+
+<pre><code>public class Reader extends Object<br>{<br>    Reader () {<br><br>    }<br><br>    public static void main(String[] args) <br>        throws Exception {<br><br>        java.io.FileInputStream in = new java.io.FileInputStream("out.txt");<br><br>        java.nio.channels.FileChannel fc = in.getChannel();<br>        java.nio.ByteBuffer bb = java.nio.ByteBuffer.allocate(10);<br><br>        while(fc.read(bb) &gt;= 0) {<br>            bb.flip();<br>            while(bb.hasRemaining()) {<br>                System.out.println((char)bb.get());<br>            }<br>            bb.clear();<br>        }<br><br>        System.exit(0);<br>    }<br>}<br></code></pre>
+
+<p>No guarantees that this code is best practice.</p>
+
+<p>This leaves the option suggested by Mike of periodically checking if there is new data to be read from the file. This then requires user intervention to close the file reader when it is determined that the reading is completed. Or, the reader needs to be made aware the content of the file and be able to determine and end of write condition. If the content were XML, the end of document could be used to signal this.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186585550L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 08:43:52:0737, diag_itemexited, id=4498, type=20

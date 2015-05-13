@@ -1,0 +1,1340 @@
+2014-12-09 06:29:04:0519, setup_loaddata_begin
+2014-12-09 06:29:07:0360, setup_loaddata_end
+2014-12-09 06:29:07:0454, setup_createactions_begin
+2014-12-09 06:29:07:0766, setup_createactions_end
+2014-12-09 06:29:27:0937, diag_itementered, id=60764, type=1
+2014-12-09 06:29:27:0984, diag_itemexited, id=60764, type=1
+2014-12-09 06:29:27:0984, diag_itementered, id=51390, type=1
+2014-12-09 06:29:28:0046, diag_itemexited, id=51390, type=1
+2014-12-09 06:29:28:0186, diag_itemexited, id=4, type=4
+2014-12-09 06:29:28:0264, diag_itemexited, id=3, type=4
+2014-12-09 06:29:28:0264, diag_itementered, id=3, type=0
+2014-12-09 06:29:29:0622, diag_itemexited, id=3, type=0
+2014-12-09 06:29:29:0622, diag_itementered, id=31693, type=1
+2014-12-09 06:29:29:0715, diag_itemexited, id=31693, type=1
+2014-12-09 06:29:29:0793, list_mouseentered, id=36701, type=1
+2014-12-09 06:29:29:0793, list_mousemoved, id=36701, type=1
+2014-12-09 06:29:29:0825, list_mousemoved, id=36701, type=1
+2014-12-09 06:29:29:0840, list_mousemoved, id=36701, type=1
+2014-12-09 06:29:29:0871, list_mousemoved, id=36701, type=1
+2014-12-09 06:29:29:0887, list_mousemoved, id=31693, type=1
+2014-12-09 06:29:29:0918, list_mousemoved, id=31693, type=1
+2014-12-09 06:29:29:0949, list_mousemoved, id=31693, type=1
+2014-12-09 06:29:29:0981, list_mousemoved, id=31693, type=1
+2014-12-09 06:29:30:0012, list_mousemoved, id=31693, type=1
+2014-12-09 06:29:30:0027, list_mousemoved, id=31693, type=1
+2014-12-09 06:29:30:0027, list_mousemoved, id=31693, type=1
+2014-12-09 06:29:30:0059, list_mouseexited
+2014-12-09 06:29:31:0026, list_pattern_mouseentered, id=1, type=0
+2014-12-09 06:29:31:0026, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:29:31:0057, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:29:31:0073, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:29:31:0088, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:29:31:0119, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:29:31:0135, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:29:31:0151, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:29:31:0166, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:29:31:0182, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:29:31:0213, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:29:31:0244, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:29:31:0260, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:29:31:0260, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:29:31:0307, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0322, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0353, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0369, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0400, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0400, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0431, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0463, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0463, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0478, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0525, list_pattern_mousemoved, id=4, type=0
+2014-12-09 06:29:31:0525, list_pattern_mousemoved, id=4, type=0
+2014-12-09 06:29:31:0572, list_pattern_mousemoved, id=4, type=0
+2014-12-09 06:29:31:0650, list_pattern_mousemoved, id=4, type=0
+2014-12-09 06:29:31:0665, list_pattern_mousemoved, id=4, type=0
+2014-12-09 06:29:31:0681, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0712, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0743, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0759, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0790, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:31:0821, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:29:32:0477, list_pattern_itemclicked, id=3, type=0
+2014-12-09 06:29:32:0945, edge_create, Tuple[0,1,0.040545807976994475,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:32:0960, edge_create, Tuple[1,2,0.6915490592679031,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:32:0960, edge_create, Tuple[1,3,0.7654871820270294,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:32:0976, edge_create, Tuple[1,4,0.8381842216919454,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:32:0976, edge_create, Tuple[1,5,0.7273633861813774,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:32:0991, edge_create, Tuple[0,6,0.23095843141972372,2,1.0,1418167745237,1418167745237]
+2014-12-09 06:29:32:0991, pattern_create, 4
+2014-12-09 06:29:32:0991, edge_create, Tuple[6,7,0.03529983793726765,2,1.0,1418167745237,1418167745237]
+2014-12-09 06:29:33:0023, pattern_open, 3
+2014-12-09 06:29:33:0569, list_pattern_mouseexited
+2014-12-09 06:29:33:0569, list_mouseentered, type=detailAnswersList
+2014-12-09 06:29:33:0896, list_mouseexited, type=detailAnswersList
+2014-12-09 06:29:34:0629, diag_detail_itementered, id=0.6915490592679031, type=1
+2014-12-09 06:29:34:0661, diag_detail_itemexited, id=0.6915490592679031, type=1
+2014-12-09 06:29:35:0628, diag_detail_itementered, id=43344, type=1
+2014-12-09 06:29:38:0810, diag_detail_itemclicked, id=43344, type=1
+2014-12-09 06:29:39:0029, edge_create, Tuple[0,1,0.27107004421876957,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0029, answer_create, 43351
+2014-12-09 06:29:39:0044, edge_create, Tuple[1,2,0.8945469724877948,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0044, answer_create, 43744
+2014-12-09 06:29:39:0060, edge_create, Tuple[1,3,0.917064040509677,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0060, answer_create, 43355
+2014-12-09 06:29:39:0060, edge_create, Tuple[1,4,0.6128955449819603,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0060, answer_create, 43433
+2014-12-09 06:29:39:0060, edge_create, Tuple[1,5,0.5843038515407589,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0060, answer_create, 43359
+2014-12-09 06:29:39:0060, edge_create, Tuple[1,6,0.9802268307526241,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0060, answer_create, 43416
+2014-12-09 06:29:39:0060, edge_create, Tuple[1,7,0.7929297186175428,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0060, answer_create, 43429
+2014-12-09 06:29:39:0060, edge_create, Tuple[1,8,0.45842555081940795,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0060, answer_create, 2078701
+2014-12-09 06:29:39:0060, edge_create, Tuple[1,9,0.2755579864576021,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0060, answer_create, 2316029
+2014-12-09 06:29:39:0060, edge_create, Tuple[1,10,0.17451967384590494,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0075, answer_create, 2997624
+2014-12-09 06:29:39:0076, edge_create, Tuple[1,11,0.029538978624940815,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0077, answer_create, 6057639
+2014-12-09 06:29:39:0077, edge_create, Tuple[1,12,0.25633397807449987,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0077, answer_create, 11290820
+2014-12-09 06:29:39:0077, edge_create, Tuple[1,13,0.010692243987016736,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0077, answer_create, 12503557
+2014-12-09 06:29:39:0077, edge_create, Tuple[1,14,0.29906103914698035,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0077, edge_create, Tuple[0,15,0.06705305195287614,2,1.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0077, pattern_create, 3
+2014-12-09 06:29:39:0077, edge_create, Tuple[15,16,0.5555107956951492,2,1.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0077, edge_create, Tuple[0,17,0.31889488622664786,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0077, edge_create, Tuple[17,18,0.045555048476337845,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0093, edge_create, Tuple[17,19,0.5373656364150818,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0093, edge_create, Tuple[17,20,0.06523028213935433,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0109, edge_create, Tuple[17,21,0.45634278933054817,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0109, edge_create, Tuple[17,22,0.3175126341188187,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0124, edge_create, Tuple[17,23,0.18404935806364686,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0124, edge_create, Tuple[17,24,0.9999720516596549,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0140, edge_create, Tuple[17,25,0.5416826751082319,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0140, edge_create, Tuple[17,26,0.9750135549113785,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0155, edge_create, Tuple[17,27,0.8405154474686924,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0155, edge_create, Tuple[17,28,0.5625105225749508,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0171, edge_create, Tuple[17,29,0.1769866670048157,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0187, edge_create, Tuple[17,30,0.3692413351559415,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0202, edge_create, Tuple[17,31,0.15318477877904757,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0202, edge_create, Tuple[17,32,0.8821979969336172,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0218, edge_create, Tuple[17,33,0.1594379887500348,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0218, edge_create, Tuple[17,34,0.6717044986419395,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0233, edge_create, Tuple[17,35,0.14369496583624553,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0233, edge_create, Tuple[17,36,0.984155132085984,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0249, edge_create, Tuple[17,37,0.5618525598653876,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0249, edge_create, Tuple[17,38,0.152471633684386,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0265, edge_create, Tuple[17,39,0.8926444151411284,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0265, edge_create, Tuple[17,40,0.6551225131541786,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0280, edge_create, Tuple[17,41,0.4142457045730631,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0280, edge_create, Tuple[17,42,0.24241149556928898,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0296, edge_create, Tuple[17,43,0.5971016950251631,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0296, edge_create, Tuple[17,44,0.39301504766104967,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0311, edge_create, Tuple[17,45,0.45400296729560763,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0311, edge_create, Tuple[17,46,0.4263438712533707,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0327, edge_create, Tuple[17,47,0.005083985899446364,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0327, edge_create, Tuple[17,48,0.9797608292558521,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:29:39:0343, discussion_open, 43344
+2014-12-09 06:29:39:0343, diag_detail_itemclicked, id=43344, type=1
+2014-12-09 06:29:41:0355, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-09 06:29:41:0355, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-09 06:29:41:0355, diag_detail_itementered, id=43351, type=21
+2014-12-09 06:30:04:0038, diag_detail_itemexited, id=43351, type=21
+2014-12-09 06:30:04:0662, answer_open, VisualItem[tree.nodes,3,id=43744,type=20,title=,body=<p>Structure 101 is a great tool. Costs money though...
+<a href="http://en.wikipedia.org/wiki/Structure101" rel="nofollow">Link to Wiki describing it</a>, for some reason the vendor site is down ATM</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-09 06:30:04:0662, answer_open, VisualItem[tree.nodes,3,id=43744,type=20,title=,body=<p>Structure 101 is a great tool. Costs money though...
+<a href="http://en.wikipedia.org/wiki/Structure101" rel="nofollow">Link to Wiki describing it</a>, for some reason the vendor site is down ATM</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-09 06:30:04:0662, diag_detail_itementered, id=43744, type=20
+2014-12-09 06:30:08:0843, diag_detail_itemexited, id=43744, type=20
+2014-12-09 06:30:08:0874, diag_detail_itementered, id=0.8945469724877948, type=4
+2014-12-09 06:30:08:0936, diag_detail_itemexited, id=0.8945469724877948, type=4
+2014-12-09 06:30:09:0295, diag_detail_itementered, id=0.4142457045730631, type=1
+2014-12-09 06:30:09:0326, diag_detail_itemexited, id=0.4142457045730631, type=1
+2014-12-09 06:30:09:0342, diag_detail_itementered, id=0.5618525598653876, type=1
+2014-12-09 06:30:09:0373, diag_detail_itemexited, id=0.5618525598653876, type=1
+2014-12-09 06:30:09:0420, diag_detail_itementered, id=59806, type=1
+2014-12-09 06:30:09:0451, diag_detail_itemexited, id=59806, type=1
+2014-12-09 06:30:10:0839, diag_itementered, id=20227, type=1
+2014-12-09 06:30:10:0902, diag_itemexited, id=20227, type=1
+2014-12-09 06:30:11:0120, list_pattern_mouseentered, id=1, type=0
+2014-12-09 06:30:11:0120, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:30:11:0167, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:30:11:0183, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:30:11:0214, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:30:11:0214, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:30:11:0354, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:30:11:0370, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:30:11:0401, list_pattern_mousemoved, id=1, type=0
+2014-12-09 06:30:11:0417, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0432, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0448, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0463, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0495, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0510, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0541, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0557, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0573, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0619, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0760, list_pattern_mousemoved, id=2, type=0
+2014-12-09 06:30:11:0791, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:30:11:0791, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:30:11:0822, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:30:11:0853, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:30:11:0853, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:30:11:0900, list_pattern_mousemoved, id=3, type=0
+2014-12-09 06:30:14:0755, list_pattern_itemclicked, id=3, type=0
+2014-12-09 06:30:14:0786, edge_create, Tuple[0,1,0.9288170926149488,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:14:0786, edge_create, Tuple[1,2,0.7571706435605278,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:14:0786, edge_create, Tuple[1,3,0.7624359151696106,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:14:0802, edge_create, Tuple[1,4,0.6007946037912839,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:14:0802, edge_create, Tuple[1,5,0.23440347079730872,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:14:0817, edge_create, Tuple[0,6,0.055470828964729324,2,1.0,1418167745237,1418167745237]
+2014-12-09 06:30:14:0817, pattern_create, 4
+2014-12-09 06:30:14:0817, edge_create, Tuple[6,7,0.5210161313322623,2,1.0,1418167745237,1418167745237]
+2014-12-09 06:30:14:0833, pattern_open, 3
+2014-12-09 06:30:15:0660, list_pattern_mouseexited
+2014-12-09 06:30:15:0660, list_mouseentered, type=detailAnswersList
+2014-12-09 06:30:15:0707, list_mouseexited, type=detailAnswersList
+2014-12-09 06:30:16:0611, diag_detail_itementered, id=47605, type=1
+2014-12-09 06:30:18:0983, diag_detail_itemclicked, id=47605, type=1
+2014-12-09 06:30:19:0201, edge_create, Tuple[0,1,0.8496154468536222,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0201, answer_create, 47694
+2014-12-09 06:30:19:0201, edge_create, Tuple[1,2,0.24810919580939272,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0201, answer_create, 47716
+2014-12-09 06:30:19:0201, edge_create, Tuple[1,3,0.6647072067610003,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0201, answer_create, 47624
+2014-12-09 06:30:19:0201, edge_create, Tuple[1,4,0.7518254273556627,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0201, answer_create, 47626
+2014-12-09 06:30:19:0217, edge_create, Tuple[1,5,0.4021069837892305,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0217, answer_create, 47628
+2014-12-09 06:30:19:0217, edge_create, Tuple[1,6,0.579881175349253,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0217, answer_create, 47615
+2014-12-09 06:30:19:0217, edge_create, Tuple[1,7,0.96910623815969,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0217, answer_create, 47758
+2014-12-09 06:30:19:0217, edge_create, Tuple[1,8,0.08268747112429153,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0217, answer_create, 50060
+2014-12-09 06:30:19:0217, edge_create, Tuple[1,9,0.6228578073122837,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0217, answer_create, 3757316
+2014-12-09 06:30:19:0217, edge_create, Tuple[1,10,0.6036614189779174,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0217, edge_create, Tuple[0,11,0.7494373362978531,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0217, edge_create, Tuple[11,12,0.6373188712090777,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0234, edge_create, Tuple[11,13,0.8745087202458568,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0234, edge_create, Tuple[11,14,0.05512847903546603,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0250, edge_create, Tuple[11,15,0.8513311492639943,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0250, edge_create, Tuple[11,16,0.2911024989539853,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0265, edge_create, Tuple[11,17,0.8411922306554872,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0265, edge_create, Tuple[11,18,0.18580563736093647,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0281, edge_create, Tuple[11,19,0.5714409226005727,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0281, edge_create, Tuple[0,20,0.9786043633629726,2,1.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0281, pattern_create, 3
+2014-12-09 06:30:19:0281, edge_create, Tuple[20,21,0.7484195307726775,2,1.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0297, edge_create, Tuple[11,22,0.9489086102929868,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0297, edge_create, Tuple[11,23,0.6286649040803414,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0312, edge_create, Tuple[11,24,0.18885077269763595,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0312, edge_create, Tuple[11,25,0.964308153553778,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0328, edge_create, Tuple[11,26,0.4589060647346317,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:30:19:0343, discussion_open, 47605
+2014-12-09 06:30:19:0359, diag_detail_itemclicked, id=47605, type=1
+2014-12-09 06:30:19:0921, diag_detail_itementered, id=41107, type=1
+2014-12-09 06:30:19:0967, diag_detail_itemexited, id=41107, type=1
+2014-12-09 06:30:20:0045, diag_detail_itementered, id=0.8745087202458568, type=1
+2014-12-09 06:30:20:0077, diag_detail_itemexited, id=0.8745087202458568, type=1
+2014-12-09 06:30:20:0139, diag_detail_itementered, id=0.6373188712090777, type=1
+2014-12-09 06:30:20:0170, diag_detail_itemexited, id=0.6373188712090777, type=1
+2014-12-09 06:30:20:0420, diag_detail_itementered, id=0.6036614189779174, type=4
+2014-12-09 06:30:20:0451, diag_detail_itemexited, id=0.6036614189779174, type=4
+2014-12-09 06:30:20:0467, diag_detail_itementered, id=0.6228578073122837, type=4
+2014-12-09 06:30:20:0498, diag_detail_itemexited, id=0.6228578073122837, type=4
+2014-12-09 06:30:20:0545, diag_detail_itementered, id=0.08268747112429153, type=4
+2014-12-09 06:30:20:0591, diag_detail_itemexited, id=0.08268747112429153, type=4
+2014-12-09 06:30:20:0591, diag_detail_itementered, id=0.96910623815969, type=4
+2014-12-09 06:30:20:0638, diag_detail_itemexited, id=0.96910623815969, type=4
+2014-12-09 06:30:20:0763, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:20:0779, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:20:0779, diag_detail_itementered, id=47628, type=21
+2014-12-09 06:30:20:0872, diag_detail_itemexited, id=47628, type=21
+2014-12-09 06:30:22:0089, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:22:0089, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:22:0089, diag_detail_itementered, id=47628, type=21
+2014-12-09 06:30:29:0047, diag_detail_itemexited, id=47628, type=21
+2014-12-09 06:30:29:0062, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:29:0078, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:29:0078, diag_detail_itementered, id=47628, type=21
+2014-12-09 06:30:34:0210, diag_detail_itemexited, id=47628, type=21
+2014-12-09 06:30:35:0302, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:35:0302, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:35:0302, diag_detail_itementered, id=47628, type=21
+2014-12-09 06:30:35:0396, diag_detail_itemexited, id=47628, type=21
+2014-12-09 06:30:37:0377, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:37:0377, answer_open, VisualItem[tree.nodes,6,id=47628,type=21,title=,body=<p>No, not quite.</p>
+
+<p>Firstly, there's a slight difference in semantics. If a is null, then the latter NPEs but the former will treat the original value of a as if it were "null".</p>
+
+<p>To look under the hood, write a simple class with a += b;</p>
+
+<pre><code>public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+</code></pre>
+
+<p>Now disassemble with javap -c (included in the Sun JDK). You should see a listing including:</p>
+
+<pre><code>java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."&lt;init&gt;":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+</code></pre>
+
+<p>So, a += b is the equivalent of</p>
+
+<pre><code>a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+</code></pre>
+
+<p>The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance.</p>
+
+<p>The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=92,searchfield=]
+2014-12-09 06:30:37:0377, diag_detail_itementered, id=47628, type=21
+2014-12-09 06:30:37:0424, diag_detail_itemexited, id=47628, type=21
+2014-12-09 06:30:38:0298, diag_detail_itementered, id=0.96910623815969, type=4
+2014-12-09 06:30:38:0344, diag_detail_itemexited, id=0.96910623815969, type=4
+2014-12-09 06:30:40:0872, diag_detail_itementered, id=0.96910623815969, type=4
+2014-12-09 06:30:40:0903, diag_detail_itemexited, id=0.96910623815969, type=4
+2014-12-09 06:30:40:0919, diag_detail_itementered, id=0.96910623815969, type=4
+2014-12-09 06:30:40:0950, diag_detail_itemexited, id=0.96910623815969, type=4
+2014-12-09 06:30:40:0950, diag_detail_itementered, id=-258939320, type=3
+2014-12-09 06:30:40:0981, diag_detail_itemexited, id=-258939320, type=3
+2014-12-09 06:30:41:0059, diag_detail_itementered, id=0.8496154468536222, type=4
+2014-12-09 06:30:41:0090, diag_detail_itemexited, id=0.8496154468536222, type=4
+2014-12-09 06:30:41:0449, diag_detail_itementered, id=47605, type=1
+2014-12-09 06:30:41:0480, diag_detail_itemexited, id=47605, type=1
+2014-12-09 06:30:41:0839, diag_detail_itementered, id=0.9786043633629726, type=2
+2014-12-09 06:30:41:0870, diag_detail_itemexited, id=0.9786043633629726, type=2
+2014-12-09 06:30:41:0870, diag_detail_itementered, id=47605, type=1
+2014-12-09 06:30:41:0901, diag_detail_itemexited, id=47605, type=1
+2014-12-09 06:30:42:0135, diag_detail_itementered, id=47605, type=1
+2014-12-09 06:30:50:0325, diag_detail_itemexited, id=47605, type=1
+2014-12-09 06:30:50:0341, diag_detail_itementered, id=0.9786043633629726, type=2
+2014-12-09 06:30:50:0372, diag_detail_itemexited, id=0.9786043633629726, type=2
+2014-12-09 06:30:50:0591, diag_detail_itementered, id=0.9786043633629726, type=2
+2014-12-09 06:30:50:0622, diag_detail_itemexited, id=0.9786043633629726, type=2
+2014-12-09 06:30:50:0622, diag_detail_itementered, id=47605, type=1
+2014-12-09 06:30:50:0856, diag_detail_itemexited, id=47605, type=1
+2014-12-09 06:30:51:0168, diag_detail_itementered, id=47605, type=1
+2014-12-09 06:30:58:0952, diag_detail_itemexited, id=47605, type=1
+2014-12-09 06:30:59:0077, diag_detail_itementered, id=0.6373188712090777, type=1
+2014-12-09 06:30:59:0108, diag_detail_itemexited, id=0.6373188712090777, type=1
+2014-12-09 06:31:01:0074, diag_itemexited, id=1, type=4
+2014-12-09 06:31:01:0074, diag_itementered, id=27065, type=1
+2014-12-09 06:31:01:0152, diag_itemexited, id=27065, type=1
+2014-12-09 06:31:01:0885, diag_itemexited, id=1, type=4
+2014-12-09 06:31:01:0901, diag_itementered, id=1, type=0
+2014-12-09 06:31:01:0963, diag_itemexited, id=1, type=0
+2014-12-09 06:31:02:0010, diag_itemexited, id=1, type=4
+2014-12-09 06:31:02:0244, diag_itemexited, id=4, type=4
+2014-12-09 06:31:02:0244, diag_itementered, id=4, type=0
+2014-12-09 06:31:03:0102, diag_itemexited, id=4, type=0
+2014-12-09 06:31:03:0118, diag_itementered, id=41107, type=1
+2014-12-09 06:31:03:0742, diag_itemexited, id=41107, type=1
+2014-12-09 06:31:03:0788, diag_itemexited, id=2, type=4
+2014-12-09 06:31:03:0788, diag_itementered, id=2, type=0
+2014-12-09 06:31:04:0522, diag_itemexited, id=2, type=0
+2014-12-09 06:31:04:0912, diag_itemexited, id=2, type=4
+2014-12-09 06:31:04:0912, diag_itementered, id=65035, type=1
+2014-12-09 06:31:04:0974, diag_itemexited, id=65035, type=1
+2014-12-09 06:31:05:0005, diag_itementered, id=65035, type=1
+2014-12-09 06:31:05:0036, diag_itemexited, id=65035, type=1
+2014-12-09 06:31:05:0068, diag_itementered, id=65035, type=1
+2014-12-09 06:31:06:0316, diag_itemexited, id=65035, type=1
+2014-12-09 06:31:06:0565, diag_itementered, id=65035, type=1
+2014-12-09 06:31:06:0659, diag_itemexited, id=65035, type=1
+2014-12-09 06:31:06:0690, diag_itementered, id=65035, type=1
+2014-12-09 06:31:06:0737, diag_itemexited, id=65035, type=1
+2014-12-09 06:31:07:0189, diag_itementered, id=65035, type=1
+2014-12-09 06:31:07:0220, diag_itemexited, id=65035, type=1
+2014-12-09 06:31:07:0252, diag_itementered, id=65035, type=1
+2014-12-09 06:31:07:0252, diag_itemexited, id=65035, type=1
+2014-12-09 06:31:07:0688, diag_itemexited, id=2, type=4
+2014-12-09 06:31:07:0688, diag_itementered, id=22115, type=1
+2014-12-09 06:31:10:0340, diag_itemexited, id=22115, type=1
+2014-12-09 06:31:11:0261, diag_itemexited, id=2, type=4
+2014-12-09 06:31:11:0261, diag_itementered, id=41107, type=1
+2014-12-09 06:31:14:0662, edge_create, Tuple[0,1,0.580811931609359,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0662, answer_create, 41156
+2014-12-09 06:31:14:0662, edge_create, Tuple[1,2,0.566609328979473,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0662, answer_create, 41762
+2014-12-09 06:31:14:0677, edge_create, Tuple[1,3,0.1008336149884611,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0677, answer_create, 41177
+2014-12-09 06:31:14:0677, edge_create, Tuple[1,4,0.01461895862133089,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0677, answer_create, 41772
+2014-12-09 06:31:14:0677, edge_create, Tuple[1,5,0.0715063578565055,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0677, answer_create, 43496
+2014-12-09 06:31:14:0677, edge_create, Tuple[1,6,0.10139359466198994,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0677, answer_create, 157202
+2014-12-09 06:31:14:0677, edge_create, Tuple[1,7,0.39882690597245163,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0677, answer_create, 1016930
+2014-12-09 06:31:14:0677, edge_create, Tuple[1,8,0.3047852142923825,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0677, answer_create, 1439556
+2014-12-09 06:31:14:0677, edge_create, Tuple[1,9,0.3477923722512335,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0677, answer_create, 2178588
+2014-12-09 06:31:14:0677, edge_create, Tuple[1,10,0.7306380280734697,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0677, answer_create, 6530353
+2014-12-09 06:31:14:0677, edge_create, Tuple[1,11,0.8767285722376041,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0677, answer_create, 10177396
+2014-12-09 06:31:14:0693, edge_create, Tuple[1,12,0.025368690257252635,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0694, answer_create, 10189194
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,13,0.07581222307798541,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 7816591
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,14,0.3094663650811834,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 7367588
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,15,0.4506496423143789,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 10361524
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,16,0.0294921848866595,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 11577455
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,17,0.600096359213446,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 11629612
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,18,0.8067028946817159,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 12576779
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,19,0.9920785502873899,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 12792917
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,20,0.3037266523053602,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 12891357
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,21,0.44141824836875776,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 13072330
+2014-12-09 06:31:14:0695, edge_create, Tuple[1,22,0.27525301935651847,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0695, answer_create, 13171599
+2014-12-09 06:31:14:0710, edge_create, Tuple[1,23,0.07961204824043777,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0710, answer_create, 13365516
+2014-12-09 06:31:14:0710, edge_create, Tuple[1,24,0.5185693450398078,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0710, answer_create, 13678355
+2014-12-09 06:31:14:0710, edge_create, Tuple[1,25,0.008830083117950749,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0710, answer_create, 13686133
+2014-12-09 06:31:14:0710, edge_create, Tuple[1,26,0.6147059447562392,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0710, answer_create, 14021567
+2014-12-09 06:31:14:0710, edge_create, Tuple[1,27,0.02237750881973377,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0710, answer_create, 14241303
+2014-12-09 06:31:14:0710, edge_create, Tuple[1,28,0.6362960642787531,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0710, answer_create, 14433887
+2014-12-09 06:31:14:0710, edge_create, Tuple[1,29,0.21340982877751102,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0710, answer_create, 17672925
+2014-12-09 06:31:14:0710, edge_create, Tuple[1,30,0.3949885013068979,4,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0710, edge_create, Tuple[0,31,0.5853527742788283,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0710, edge_create, Tuple[31,32,0.07597389318878911,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0726, edge_create, Tuple[31,33,0.9144145470072906,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0726, edge_create, Tuple[31,34,0.04212654218865286,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0742, edge_create, Tuple[31,35,0.7305790217001152,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0757, edge_create, Tuple[31,36,0.23327200799081438,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0757, edge_create, Tuple[31,37,0.9029481706148652,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0773, edge_create, Tuple[31,38,0.5006458542717903,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0773, edge_create, Tuple[31,39,0.6033011354495227,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0788, edge_create, Tuple[31,40,0.7318105081333408,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0788, edge_create, Tuple[31,41,0.43391679928927107,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0804, edge_create, Tuple[31,42,0.08187189060305078,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0804, edge_create, Tuple[31,43,0.9383587775107841,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0820, edge_create, Tuple[31,44,0.6431380731912953,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0820, edge_create, Tuple[31,45,0.15395819733702043,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0835, edge_create, Tuple[31,46,0.5833640089944122,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0835, edge_create, Tuple[31,47,0.039691065268030234,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0851, edge_create, Tuple[31,48,0.05403111366720459,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0851, edge_create, Tuple[31,49,0.6411961122688304,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0867, edge_create, Tuple[31,50,0.9219460709374948,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0867, edge_create, Tuple[31,51,0.49460620978151837,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0882, edge_create, Tuple[31,52,0.7826585647685996,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0882, edge_create, Tuple[31,53,0.6720846549174679,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0898, edge_create, Tuple[31,54,0.4612724850485517,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0898, edge_create, Tuple[31,55,0.824506900607631,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0913, edge_create, Tuple[31,56,0.7492583513414924,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0913, edge_create, Tuple[31,57,0.7612714101091947,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0929, edge_create, Tuple[31,58,0.9345945661464826,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0929, edge_create, Tuple[31,59,0.3450512301405083,1,0.0,1418167745237,1418167745237]
+2014-12-09 06:31:14:0944, discussion_open, 41107
+2014-12-09 06:31:14:0944, diag_itemclicked, id=41107, type=1
+2014-12-09 06:31:15:0787, diag_itemexited, id=41107, type=1
+2014-12-09 06:31:16:0551, answer_open, VisualItem[tree.nodes,15,id=7367588,type=20,title=,body=<p>You mention "simple", but just in case anyone else is looking for something that meets more stringent security requirements, you might want to take a look at <a href="http://jpwgen.berlios.de/" rel="nofollow">jpwgen</a>.  jpwgen is modeled after <a href="http://sourceforge.net/projects/pwgen/" rel="nofollow">pwgen</a> in Unix, and is very configurable.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-09 06:31:16:0551, answer_open, VisualItem[tree.nodes,15,id=7367588,type=20,title=,body=<p>You mention "simple", but just in case anyone else is looking for something that meets more stringent security requirements, you might want to take a look at <a href="http://jpwgen.berlios.de/" rel="nofollow">jpwgen</a>.  jpwgen is modeled after <a href="http://sourceforge.net/projects/pwgen/" rel="nofollow">pwgen</a> in Unix, and is very configurable.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-09 06:31:16:0614, diag_detail_itementered, id=7367588, type=20
+2014-12-09 06:31:16:0676, diag_detail_itemexited, id=7367588, type=20
+2014-12-09 06:31:16:0723, diag_detail_itementered, id=0.0294921848866595, type=4
+2014-12-09 06:31:16:0770, diag_detail_itemexited, id=0.0294921848866595, type=4
+2014-12-09 06:31:16:0832, diag_detail_itementered, id=0.8067028946817159, type=4
+2014-12-09 06:31:16:0848, diag_detail_itemexited, id=0.8067028946817159, type=4
+2014-12-09 06:31:16:0848, diag_detail_itementered, id=240601889, type=3
+2014-12-09 06:31:16:0941, diag_detail_itemexited, id=240601889, type=3
+2014-12-09 06:31:17:0378, diag_detail_itementered, id=0.580811931609359, type=4
+2014-12-09 06:31:17:0409, diag_detail_itemexited, id=0.580811931609359, type=4
+2014-12-09 06:31:17:0597, diag_detail_itementered, id=0.580811931609359, type=4
+2014-12-09 06:31:17:0628, diag_detail_itemexited, id=0.580811931609359, type=4
+2014-12-09 06:31:18:0595, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2014-12-09 06:31:18:0595, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2014-12-09 06:31:18:0595, diag_detail_itementered, id=41156, type=21
+2014-12-09 06:31:18:0689, diag_detail_itemexited, id=41156, type=21
+2014-12-09 06:31:22:0713, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2014-12-09 06:31:22:0713, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2014-12-09 06:31:22:0713, diag_detail_itementered, id=41156, type=21
+2014-12-09 06:31:22:0838, diag_detail_itemexited, id=41156, type=21
+2014-12-09 06:31:24:0539, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2014-12-09 06:31:24:0554, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2014-12-09 06:31:24:0554, diag_detail_itementered, id=41156, type=21
+2014-12-09 06:31:25:0194, diag_detail_itemexited, id=41156, type=21
+2014-12-09 06:31:26:0395, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2014-12-09 06:31:26:0395, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418167745237L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2014-12-09 06:31:26:0395, diag_detail_itementered, id=41156, type=21
+2014-12-09 06:31:26:0504, diag_detail_itemexited, id=41156, type=21
+2014-12-09 06:31:28:0127, diag_detail_itementered, id=41107, type=1
+2014-12-09 06:33:05:0097, diag_detail_itemexited, id=41107, type=1

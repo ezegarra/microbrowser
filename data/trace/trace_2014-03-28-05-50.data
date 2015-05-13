@@ -1,0 +1,18 @@
+2014-03-28 05:50:54:0989, setup_loaddata
+2014-03-28 05:51:02:0899, diag_itementered, id=5328, type=1
+2014-03-28 05:51:02:0945, diag_itemexited, id=5328, type=1
+2014-03-28 05:51:03:0569, diag_itementered, id=6612, type=1
+2014-03-28 05:51:05:0364, edge_create, Tuple[0,1,0.3279435692336805,1,0.0,1396000254145,1396000254145]
+2014-03-28 05:51:05:0364, edge_create, Tuple[1,2,0.7524418439481148,1,0.0,1396000254145,1396000254145]
+2014-03-28 05:51:05:0444, diag_itemclicked, id=6612, type=1
+2014-03-28 05:51:13:0728, diag_itemexited, id=6612, type=1
+2014-03-28 05:51:18:0269, pattern_change_cancel
+2014-03-28 05:51:18:0269, pattern_change_open
+2014-03-28 05:51:32:0355, diag_itementered, id=3881, type=1
+2014-03-28 05:51:32:0449, diag_itemexited, id=3881, type=1
+2014-03-28 05:51:32:0558, diag_itementered, id=7661, type=1
+2014-03-28 05:51:32:0605, diag_itemexited, id=7661, type=1
+2014-03-28 05:51:32:0652, diag_itementered, id=5222, type=1
+2014-03-28 05:51:32:0699, diag_itemexited, id=5222, type=1
+2014-03-28 05:51:32:0777, diag_itementered, id=8318, type=1
+2014-03-28 05:51:32:0839, diag_itemexited, id=8318, type=1

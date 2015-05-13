@@ -1,0 +1,416 @@
+2014-08-27 08:38:42:0976, edge_create, Tuple[0,1,0.6737522198841638,3,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0431, question_create, 123
+2014-08-27 08:38:43:0452, edge_create, Tuple[1,2,0.8706801454607048,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0452, question_create, 126
+2014-08-27 08:38:43:0453, edge_create, Tuple[1,3,0.4463987569787913,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0453, question_create, 382
+2014-08-27 08:38:43:0454, edge_create, Tuple[1,4,0.9601719434690485,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0454, question_create, 564
+2014-08-27 08:38:43:0456, edge_create, Tuple[1,5,0.9167821036784675,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0456, question_create, 2092
+2014-08-27 08:38:43:0457, edge_create, Tuple[1,6,0.7957371812583932,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0457, question_create, 2158
+2014-08-27 08:38:43:0458, edge_create, Tuple[1,7,0.25527610334664774,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0458, question_create, 2931
+2014-08-27 08:38:43:0458, edge_create, Tuple[1,8,0.19864356527608595,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0459, question_create, 2968
+2014-08-27 08:38:43:0459, edge_create, Tuple[1,9,0.15339937537525916,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0459, question_create, 3049
+2014-08-27 08:38:43:0460, edge_create, Tuple[1,10,0.9358245003686436,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0460, question_create, 3881
+2014-08-27 08:38:43:0461, edge_create, Tuple[1,11,0.9239933434625892,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0461, question_create, 4080
+2014-08-27 08:38:43:0461, edge_create, Tuple[1,12,0.8725705963944561,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0462, question_create, 4149
+2014-08-27 08:38:43:0464, edge_create, Tuple[1,13,0.08617746879913901,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0465, question_create, 4242
+2014-08-27 08:38:43:0465, edge_create, Tuple[1,14,0.3993281173702492,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0468, question_create, 4630
+2014-08-27 08:38:43:0469, edge_create, Tuple[1,15,0.539194055511416,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0469, question_create, 4922
+2014-08-27 08:38:43:0469, edge_create, Tuple[1,16,0.09338587613903715,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0470, question_create, 5078
+2014-08-27 08:38:43:0470, edge_create, Tuple[1,17,0.30740267261025356,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0471, question_create, 5222
+2014-08-27 08:38:43:0471, edge_create, Tuple[1,18,0.8383204561374346,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0471, question_create, 5328
+2014-08-27 08:38:43:0472, edge_create, Tuple[1,19,0.30527169828809075,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0472, question_create, 5514
+2014-08-27 08:38:43:0473, edge_create, Tuple[1,20,0.07860264399197103,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0473, question_create, 5527
+2014-08-27 08:38:43:0473, edge_create, Tuple[1,21,0.9006542576142949,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0474, question_create, 5855
+2014-08-27 08:38:43:0474, edge_create, Tuple[1,22,0.8472208584545114,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0474, question_create, 6222
+2014-08-27 08:38:43:0475, edge_create, Tuple[1,23,0.6619719141903952,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0475, question_create, 6392
+2014-08-27 08:38:43:0475, edge_create, Tuple[1,24,0.7496522186533275,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0476, question_create, 6612
+2014-08-27 08:38:43:0476, edge_create, Tuple[1,25,0.3658185515002741,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0477, question_create, 6639
+2014-08-27 08:38:43:0477, edge_create, Tuple[1,26,0.3127356700153593,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0477, question_create, 6658
+2014-08-27 08:38:43:0478, edge_create, Tuple[1,27,0.5622361710284901,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0478, question_create, 6682
+2014-08-27 08:38:43:0478, edge_create, Tuple[1,28,0.37232516815120886,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0479, question_create, 6765
+2014-08-27 08:38:43:0479, edge_create, Tuple[1,29,0.08241111262589151,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0480, question_create, 6816
+2014-08-27 08:38:43:0480, edge_create, Tuple[1,30,0.35500103562370533,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0480, question_create, 7269
+2014-08-27 08:38:43:0481, edge_create, Tuple[1,31,0.30533624918646485,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0481, question_create, 7291
+2014-08-27 08:38:43:0482, edge_create, Tuple[1,32,0.04819628475507276,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0483, question_create, 7539
+2014-08-27 08:38:43:0483, edge_create, Tuple[1,33,0.6442454610496026,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0483, question_create, 7596
+2014-08-27 08:38:43:0484, edge_create, Tuple[1,34,0.4070781632919368,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0484, question_create, 7661
+2014-08-27 08:38:43:0484, edge_create, Tuple[1,35,0.07913935326458055,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0485, question_create, 7681
+2014-08-27 08:38:43:0485, edge_create, Tuple[1,36,0.03826451585778057,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0486, question_create, 7720
+2014-08-27 08:38:43:0486, edge_create, Tuple[1,37,0.047900519243159634,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0486, question_create, 7779
+2014-08-27 08:38:43:0487, edge_create, Tuple[1,38,0.6684271491230145,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0487, question_create, 8219
+2014-08-27 08:38:43:0487, edge_create, Tuple[1,39,0.15538150689116825,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0488, question_create, 8318
+2014-08-27 08:38:43:0488, edge_create, Tuple[1,40,0.354141831046916,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0489, question_create, 8569
+2014-08-27 08:38:43:0489, edge_create, Tuple[1,41,0.8981035316281009,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0489, question_create, 8599
+2014-08-27 08:38:43:0490, edge_create, Tuple[1,42,0.6377121321019078,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0490, question_create, 8968
+2014-08-27 08:38:43:0490, edge_create, Tuple[1,43,0.5031166376521472,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0491, question_create, 9044
+2014-08-27 08:38:43:0491, edge_create, Tuple[1,44,0.7874752069143255,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0491, question_create, 9361
+2014-08-27 08:38:43:0492, edge_create, Tuple[1,45,0.5050587298052739,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0493, question_create, 9913
+2014-08-27 08:38:43:0493, edge_create, Tuple[1,46,0.6812674361093862,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0494, question_create, 10042
+2014-08-27 08:38:43:0494, edge_create, Tuple[1,47,0.43804776834067494,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0494, question_create, 10506
+2014-08-27 08:38:43:0495, edge_create, Tuple[1,48,0.564888506445909,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0495, question_create, 10586
+2014-08-27 08:38:43:0496, edge_create, Tuple[1,49,0.9919164305471145,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0496, question_create, 10980
+2014-08-27 08:38:43:0496, edge_create, Tuple[1,50,0.6257800399916696,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0497, question_create, 11088
+2014-08-27 08:38:43:0497, edge_create, Tuple[1,51,0.8092354480143511,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0497, question_create, 11338
+2014-08-27 08:38:43:0498, edge_create, Tuple[1,52,0.11358193617328105,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0498, question_create, 11341
+2014-08-27 08:38:43:0499, edge_create, Tuple[1,53,0.3049912700946872,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0499, question_create, 11561
+2014-08-27 08:38:43:0499, edge_create, Tuple[1,54,0.177221414025166,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0500, question_create, 11930
+2014-08-27 08:38:43:0500, edge_create, Tuple[1,55,0.13971800984281046,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0500, question_create, 12088
+2014-08-27 08:38:43:0501, edge_create, Tuple[1,56,0.001828842677971232,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0501, question_create, 12144
+2014-08-27 08:38:43:0502, edge_create, Tuple[1,57,0.32500208476055015,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0502, question_create, 12870
+2014-08-27 08:38:43:0502, edge_create, Tuple[1,58,0.5627874045893253,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0503, question_create, 12877
+2014-08-27 08:38:43:0503, edge_create, Tuple[1,59,0.08386710623109783,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0504, question_create, 12927
+2014-08-27 08:38:43:0504, edge_create, Tuple[1,60,0.9789606104420078,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0505, question_create, 13225
+2014-08-27 08:38:43:0505, edge_create, Tuple[1,61,0.11452037874934395,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0506, question_create, 13751
+2014-08-27 08:38:43:0506, edge_create, Tuple[1,62,0.16858191027304736,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0507, question_create, 13863
+2014-08-27 08:38:43:0507, edge_create, Tuple[1,63,0.5418411392835988,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0507, question_create, 14397
+2014-08-27 08:38:43:0508, edge_create, Tuple[1,64,0.1810325508078675,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0508, question_create, 14617
+2014-08-27 08:38:43:0508, edge_create, Tuple[1,65,0.7049781982788921,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0509, question_create, 14801
+2014-08-27 08:38:43:0509, edge_create, Tuple[1,66,0.10300644112506563,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0509, question_create, 15305
+2014-08-27 08:38:43:0510, edge_create, Tuple[1,67,0.7802878865679573,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0511, question_create, 15481
+2014-08-27 08:38:43:0511, edge_create, Tuple[1,68,0.9912148109810186,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0511, question_create, 15496
+2014-08-27 08:38:43:0512, edge_create, Tuple[1,69,0.7260002568701193,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0512, question_create, 15528
+2014-08-27 08:38:43:0513, edge_create, Tuple[1,70,0.5542943015952431,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0513, question_create, 15649
+2014-08-27 08:38:43:0513, edge_create, Tuple[1,71,0.9484874574760755,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0516, pattern_create, 2109443059
+2014-08-27 08:38:43:0517, edge_create, Tuple[0,72,0.7480541664108109,3,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0538, question_create, 43344
+2014-08-27 08:38:43:0539, edge_create, Tuple[72,73,0.6104891363591476,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0539, question_create, 6612
+2014-08-27 08:38:43:0540, edge_create, Tuple[72,74,0.5303546994715669,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0540, question_create, 7291
+2014-08-27 08:38:43:0541, edge_create, Tuple[72,75,0.45041500714979166,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0541, pattern_create, 1641682794
+2014-08-27 08:38:43:0542, edge_create, Tuple[0,76,0.4801039272297374,3,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0555, question_create, 123
+2014-08-27 08:38:43:0555, edge_create, Tuple[76,77,0.07080693271711513,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0556, question_create, 29324
+2014-08-27 08:38:43:0556, edge_create, Tuple[76,78,0.07006870680843313,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0556, question_create, 19347
+2014-08-27 08:38:43:0557, edge_create, Tuple[76,79,0.7357421098546597,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0557, pattern_create, -771804441
+2014-08-27 08:38:43:0558, edge_create, Tuple[0,80,0.11202079007166021,3,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0569, question_create, 41107
+2014-08-27 08:38:43:0570, edge_create, Tuple[80,81,0.03456002210209963,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0570, question_create, 11930
+2014-08-27 08:38:43:0571, edge_create, Tuple[80,82,0.2974051778260868,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0571, question_create, 37628
+2014-08-27 08:38:43:0572, edge_create, Tuple[80,83,0.2065845339047514,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0572, pattern_create, 1796611198
+2014-08-27 08:38:43:0572, edge_create, Tuple[0,84,0.1350792558229844,3,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0582, question_create, 40471
+2014-08-27 08:38:43:0582, edge_create, Tuple[84,85,0.2529084474278085,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0583, question_create, 24596
+2014-08-27 08:38:43:0583, edge_create, Tuple[84,86,0.7532019680561072,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0583, question_create, 6658
+2014-08-27 08:38:43:0584, edge_create, Tuple[84,87,0.10184355785745336,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0584, question_create, 21934
+2014-08-27 08:38:43:0585, edge_create, Tuple[84,88,0.5641554964312377,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:43:0792, setup_loaddata
+2014-08-27 08:38:45:0374, diag_itementered, id=29324, type=1
+2014-08-27 08:38:45:0419, diag_itemexited, id=29324, type=1
+2014-08-27 08:38:45:0953, diag_itementered, id=19347, type=1
+2014-08-27 08:38:46:0014, diag_itemexited, id=19347, type=1
+2014-08-27 08:38:46:0015, diag_itementered, id=29324, type=1
+2014-08-27 08:38:47:0383, edge_create, Tuple[0,1,0.3499847739820473,4,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0384, answer_create, 29334
+2014-08-27 08:38:47:0384, edge_create, Tuple[1,2,0.2841838485382666,4,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0385, answer_create, 29336
+2014-08-27 08:38:47:0385, edge_create, Tuple[1,3,0.41727664120999153,4,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0386, answer_create, 29342
+2014-08-27 08:38:47:0386, edge_create, Tuple[1,4,0.1135841540704251,4,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0386, answer_create, 29356
+2014-08-27 08:38:47:0387, edge_create, Tuple[1,5,0.16892203999081112,4,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0387, answer_create, 30413
+2014-08-27 08:38:47:0388, edge_create, Tuple[1,6,0.39476506737231043,4,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0388, answer_create, 31797
+2014-08-27 08:38:47:0388, edge_create, Tuple[1,7,0.14697256824452998,4,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0389, answer_create, 13080134
+2014-08-27 08:38:47:0389, edge_create, Tuple[1,8,0.9158933894337381,4,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0394, edge_create, Tuple[0,9,0.8881539075886717,1,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0394, edge_create, Tuple[9,10,0.37441135487680366,1,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0396, edge_create, Tuple[9,11,0.39069516731186704,1,0.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0397, edge_create, Tuple[0,12,0.78027469842437,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0397, pattern_create, -2047293571
+2014-08-27 08:38:47:0398, edge_create, Tuple[12,13,0.531064313079717,2,1.0,1409186322969,1409186322969]
+2014-08-27 08:38:47:0410, discussion_open, 29324
+2014-08-27 08:38:47:0410, diag_itemclicked, id=29324, type=1
+2014-08-27 08:38:47:0413, diag_itemexited, id=29324, type=1
+2014-08-27 08:38:49:0059, diag_itementered, id=29334, type=20
+2014-08-27 08:38:49:0073, diag_itemexited, id=29334, type=20
+2014-08-27 08:38:49:0322, diag_itementered, id=29334, type=20
+2014-08-27 08:38:50:0795, diag_itemexited, id=29334, type=20
+2014-08-27 08:38:51:0828, answer_open, VisualItem[tree.nodes,4,id=29342,type=20,title=,body=<p>What <a href="http://stackoverflow.com/questions/29324/how-do-i-create-a-hash-table-in-java#29336" rel="nofollow">Edmund</a> said.</p>
+
+<p>As for not calling .add all the time, no, not idiomatically. There would be various hacks (storing it in an array and then looping) that you could do if you really wanted to, but I wouldn't recommend it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 08:38:53:0213, answer_open, VisualItem[tree.nodes,5,id=29356,type=20,title=,body=<p>Also don't forget that both Map and Hashtable are generic in Java 5 and up (as in any other class in the <a href="http://java.sun.com/javase/6/docs/technotes/guides/collections/index.html">Collections framework</a>).</p>
+
+<pre><code>Map&lt;String, Integer&gt; numbers = new HashMap&lt;String, Integer&gt;();
+numbers.put("one", 1);
+numbers.put("two", 2);
+numbers.put("three", 3);
+
+Integer one = numbers.get("one");
+Assert.assertEquals(1, one);
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=6]
+2014-08-27 08:38:54:0500, answer_open, VisualItem[tree.nodes,6,id=30413,type=20,title=,body=<blockquote>
+  <p>And is there a way to populate the table with a list of key->value pairs without individually calling an add method on the object for each pair?</p>
+</blockquote>
+
+<p>One problem with your question is that you don't mention what what form your data is in to begin with. If your list of pairs happened to be a list of Map.Entry objects it would be pretty easy.</p>
+
+<p>Just to throw this out, there is a (much maligned) class named java.util.Properties that is an extension of Hashtable. It expects only String keys and values and lets you load and store the data using files or streams. The format of the file it reads and writes is as follows:</p>
+
+<pre><code>key1=value1
+key2=value2
+</code></pre>
+
+<p>I don't know if this is what you're looking for, but there are situations where this can be useful. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:38:55:0771, answer_open, VisualItem[tree.nodes,3,id=29336,type=21,title=,body=<pre><code>Map map = new HashMap();
+Hashtable ht = new Hashtable();
+</code></pre>
+
+<p>Both classes can be found from the java.util package. The difference between the 2 is explained in the following <a href="http://www.jguru.com/faq/view.jsp?EID=430247">jGuru FAQ entry</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=12]
+2014-08-27 08:38:56:0815, answer_open, VisualItem[tree.nodes,2,id=29334,type=20,title=,body=<p>import java.util.*;</p>
+
+<p>Map map = new HashMap();</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 08:38:57:0941, answer_open, VisualItem[tree.nodes,6,id=30413,type=20,title=,body=<blockquote>
+  <p>And is there a way to populate the table with a list of key->value pairs without individually calling an add method on the object for each pair?</p>
+</blockquote>
+
+<p>One problem with your question is that you don't mention what what form your data is in to begin with. If your list of pairs happened to be a list of Map.Entry objects it would be pretty easy.</p>
+
+<p>Just to throw this out, there is a (much maligned) class named java.util.Properties that is an extension of Hashtable. It expects only String keys and values and lets you load and store the data using files or streams. The format of the file it reads and writes is as follows:</p>
+
+<pre><code>key1=value1
+key2=value2
+</code></pre>
+
+<p>I don't know if this is what you're looking for, but there are situations where this can be useful. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:38:58:0914, answer_open, VisualItem[tree.nodes,8,id=13080134,type=20,title=,body=<p>It is important to note that Java's hash function is less than optimal. If you want less collisions and almost complete elimination of re-hashing at ~50% capacity, I'd use a Buz Hash algorithm <a href="http://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200101/homework10/hashfuncs.html" rel="nofollow">Buz Hash</a></p>
+
+<p>The reason Java's hashing algorithm is weak is most evident in how it hashes Strings.</p>
+
+<p>"a".hash() give you the ascii representation of "a" - 97, so "b" would be 98. The whole point of hashing is to assign an arbitrary and "as random as possible" number.</p>
+
+<p>If you need a quick and dirty hash table, by all means, use java.util.  If you are looking for something robust that is more scalable, I'd look into implementing your own.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:38:59:0869, answer_open, VisualItem[tree.nodes,7,id=31797,type=20,title=,body=<p>You can use double-braces to set up the data. You still call add, or put, but it's less ugly:</p>
+
+<pre><code>private static final Hashtable&lt;String,Integer&gt; MYHASH = new Hashtable&lt;String,Integer&gt;() {{
+    put("foo",      1);
+    put("bar",      256);
+    put("data",     3);
+    put("moredata", 27);
+    put("hello",    32);
+    put("world",    65536);
+ }};
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=11]
+2014-08-27 08:39:00:0588, answer_open, VisualItem[tree.nodes,6,id=30413,type=20,title=,body=<blockquote>
+  <p>And is there a way to populate the table with a list of key->value pairs without individually calling an add method on the object for each pair?</p>
+</blockquote>
+
+<p>One problem with your question is that you don't mention what what form your data is in to begin with. If your list of pairs happened to be a list of Map.Entry objects it would be pretty easy.</p>
+
+<p>Just to throw this out, there is a (much maligned) class named java.util.Properties that is an extension of Hashtable. It expects only String keys and values and lets you load and store the data using files or streams. The format of the file it reads and writes is as follows:</p>
+
+<pre><code>key1=value1
+key2=value2
+</code></pre>
+
+<p>I don't know if this is what you're looking for, but there are situations where this can be useful. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:39:01:0229, answer_open, VisualItem[tree.nodes,5,id=29356,type=20,title=,body=<p>Also don't forget that both Map and Hashtable are generic in Java 5 and up (as in any other class in the <a href="http://java.sun.com/javase/6/docs/technotes/guides/collections/index.html">Collections framework</a>).</p>
+
+<pre><code>Map&lt;String, Integer&gt; numbers = new HashMap&lt;String, Integer&gt;();
+numbers.put("one", 1);
+numbers.put("two", 2);
+numbers.put("three", 3);
+
+Integer one = numbers.get("one");
+Assert.assertEquals(1, one);
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=6]
+2014-08-27 08:39:01:0852, answer_open, VisualItem[tree.nodes,4,id=29342,type=20,title=,body=<p>What <a href="http://stackoverflow.com/questions/29324/how-do-i-create-a-hash-table-in-java#29336" rel="nofollow">Edmund</a> said.</p>
+
+<p>As for not calling .add all the time, no, not idiomatically. There would be various hacks (storing it in an array and then looping) that you could do if you really wanted to, but I wouldn't recommend it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 08:39:02:0498, answer_open, VisualItem[tree.nodes,3,id=29336,type=21,title=,body=<pre><code>Map map = new HashMap();
+Hashtable ht = new Hashtable();
+</code></pre>
+
+<p>Both classes can be found from the java.util package. The difference between the 2 is explained in the following <a href="http://www.jguru.com/faq/view.jsp?EID=430247">jGuru FAQ entry</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=12]
+2014-08-27 08:39:03:0188, answer_open, VisualItem[tree.nodes,2,id=29334,type=20,title=,body=<p>import java.util.*;</p>
+
+<p>Map map = new HashMap();</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 08:39:04:0522, answer_open, VisualItem[tree.nodes,6,id=30413,type=20,title=,body=<blockquote>
+  <p>And is there a way to populate the table with a list of key->value pairs without individually calling an add method on the object for each pair?</p>
+</blockquote>
+
+<p>One problem with your question is that you don't mention what what form your data is in to begin with. If your list of pairs happened to be a list of Map.Entry objects it would be pretty easy.</p>
+
+<p>Just to throw this out, there is a (much maligned) class named java.util.Properties that is an extension of Hashtable. It expects only String keys and values and lets you load and store the data using files or streams. The format of the file it reads and writes is as follows:</p>
+
+<pre><code>key1=value1
+key2=value2
+</code></pre>
+
+<p>I don't know if this is what you're looking for, but there are situations where this can be useful. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:39:05:0446, answer_open, VisualItem[tree.nodes,7,id=31797,type=20,title=,body=<p>You can use double-braces to set up the data. You still call add, or put, but it's less ugly:</p>
+
+<pre><code>private static final Hashtable&lt;String,Integer&gt; MYHASH = new Hashtable&lt;String,Integer&gt;() {{
+    put("foo",      1);
+    put("bar",      256);
+    put("data",     3);
+    put("moredata", 27);
+    put("hello",    32);
+    put("world",    65536);
+ }};
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=11]
+2014-08-27 08:39:06:0078, answer_open, VisualItem[tree.nodes,8,id=13080134,type=20,title=,body=<p>It is important to note that Java's hash function is less than optimal. If you want less collisions and almost complete elimination of re-hashing at ~50% capacity, I'd use a Buz Hash algorithm <a href="http://www.cs.hmc.edu/~geoff/classes/hmc.cs070.200101/homework10/hashfuncs.html" rel="nofollow">Buz Hash</a></p>
+
+<p>The reason Java's hashing algorithm is weak is most evident in how it hashes Strings.</p>
+
+<p>"a".hash() give you the ascii representation of "a" - 97, so "b" would be 98. The whole point of hashing is to assign an arbitrary and "as random as possible" number.</p>
+
+<p>If you need a quick and dirty hash table, by all means, use java.util.  If you are looking for something robust that is more scalable, I'd look into implementing your own.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:39:07:0228, answer_open, VisualItem[tree.nodes,3,id=29336,type=21,title=,body=<pre><code>Map map = new HashMap();
+Hashtable ht = new Hashtable();
+</code></pre>
+
+<p>Both classes can be found from the java.util package. The difference between the 2 is explained in the following <a href="http://www.jguru.com/faq/view.jsp?EID=430247">jGuru FAQ entry</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=12]
+2014-08-27 08:39:07:0669, answer_open, VisualItem[tree.nodes,2,id=29334,type=20,title=,body=<p>import java.util.*;</p>
+
+<p>Map map = new HashMap();</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 08:39:11:0725, answer_open, VisualItem[tree.nodes,6,id=30413,type=20,title=,body=<blockquote>
+  <p>And is there a way to populate the table with a list of key->value pairs without individually calling an add method on the object for each pair?</p>
+</blockquote>
+
+<p>One problem with your question is that you don't mention what what form your data is in to begin with. If your list of pairs happened to be a list of Map.Entry objects it would be pretty easy.</p>
+
+<p>Just to throw this out, there is a (much maligned) class named java.util.Properties that is an extension of Hashtable. It expects only String keys and values and lets you load and store the data using files or streams. The format of the file it reads and writes is as follows:</p>
+
+<pre><code>key1=value1
+key2=value2
+</code></pre>
+
+<p>I don't know if this is what you're looking for, but there are situations where this can be useful. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=0]
+2014-08-27 08:39:12:0145, answer_open, VisualItem[tree.nodes,5,id=29356,type=20,title=,body=<p>Also don't forget that both Map and Hashtable are generic in Java 5 and up (as in any other class in the <a href="http://java.sun.com/javase/6/docs/technotes/guides/collections/index.html">Collections framework</a>).</p>
+
+<pre><code>Map&lt;String, Integer&gt; numbers = new HashMap&lt;String, Integer&gt;();
+numbers.put("one", 1);
+numbers.put("two", 2);
+numbers.put("three", 3);
+
+Integer one = numbers.get("one");
+Assert.assertEquals(1, one);
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=6]
+2014-08-27 08:39:12:0516, answer_open, VisualItem[tree.nodes,4,id=29342,type=20,title=,body=<p>What <a href="http://stackoverflow.com/questions/29324/how-do-i-create-a-hash-table-in-java#29336" rel="nofollow">Edmund</a> said.</p>
+
+<p>As for not calling .add all the time, no, not idiomatically. There would be various hacks (storing it in an array and then looping) that you could do if you really wanted to, but I wouldn't recommend it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 08:39:12:0900, answer_open, VisualItem[tree.nodes,3,id=29336,type=21,title=,body=<pre><code>Map map = new HashMap();
+Hashtable ht = new Hashtable();
+</code></pre>
+
+<p>Both classes can be found from the java.util package. The difference between the 2 is explained in the following <a href="http://www.jguru.com/faq/view.jsp?EID=430247">jGuru FAQ entry</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=12]
+2014-08-27 08:39:14:0225, answer_open, VisualItem[tree.nodes,7,id=31797,type=20,title=,body=<p>You can use double-braces to set up the data. You still call add, or put, but it's less ugly:</p>
+
+<pre><code>private static final Hashtable&lt;String,Integer&gt; MYHASH = new Hashtable&lt;String,Integer&gt;() {{
+    put("foo",      1);
+    put("bar",      256);
+    put("data",     3);
+    put("moredata", 27);
+    put("hello",    32);
+    put("world",    65536);
+ }};
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409186322969L,lastactivitydate=0L,tags=,score=11]
+2014-08-27 08:39:15:0613, diag_itementered, id=29336, type=21
+2014-08-27 08:39:16:0349, diag_itemexited, id=29336, type=21
+2014-08-27 08:39:19:0067, diag_itementered, id=29342, type=20
+2014-08-27 08:39:20:0082, diag_itemexited, id=29342, type=20

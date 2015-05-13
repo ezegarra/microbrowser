@@ -1,0 +1,19 @@
+2014-02-02 06:36:15:0730, setup_loaddata
+2014-02-02 06:36:15:0881, setup_resizewin
+2014-02-02 06:36:41:0705, pattern_create_close
+2014-02-02 06:36:46:0544, pattern_create, 993861599
+2014-02-02 06:36:46:0703, pattern_create_open
+2014-02-02 06:36:46:0712, pattern_create_close
+2014-02-02 06:36:58:0301, setup_loaddata
+2014-02-02 06:36:58:0443, setup_resizewin
+2014-02-02 06:37:03:0751, diag_itementered, id=48203, type=1
+2014-02-02 06:37:04:0216, diag_itemexited, id=48203, type=1
+2014-02-02 06:37:04:0578, diag_itementered, id=10980, type=1
+2014-02-02 06:37:06:0029, diag_itemclicked, id=10980, type=1
+2014-02-02 06:37:06:0112, diag_itemexited, id=10980, type=1
+2014-02-02 06:37:08:0856, edge_create, Tuple[48,500,?,2,0.0]
+2014-02-02 06:37:09:0039, pattern_change_open
+2014-02-02 06:37:10:0720, list_mouseentered, 123
+2014-02-02 06:37:10:0835, list_mouseexited, 
+2014-02-02 06:37:13:0347, diag_itementered, id=10980, type=1
+2014-02-02 06:37:13:0357, diag_itemexited, id=10980, type=1

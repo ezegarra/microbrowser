@@ -1,0 +1,1211 @@
+2014-12-11 05:58:34:0740, setup_loaddata_begin
+2014-12-11 05:58:37:0066, setup_loaddata_end
+2014-12-11 05:58:37:0113, setup_createactions_begin
+2014-12-11 05:58:37:0285, setup_createactions_end
+2014-12-11 05:59:21:0261, diag_itementered, id=36701, type=1
+2014-12-11 05:59:21:0339, diag_itemexited, id=36701, type=1
+2014-12-11 06:00:02:0852, diag_itementered, id=36701, type=1
+2014-12-11 06:00:03:0226, diag_itemexited, id=36701, type=1
+2014-12-11 06:00:18:0327, diag_itementered, id=36701, type=1
+2014-12-11 06:00:18:0389, diag_itemexited, id=36701, type=1
+2014-12-11 06:00:29:0341, diag_itementered, id=60764, type=1
+2014-12-11 06:00:29:0372, diag_itemexited, id=60764, type=1
+2014-12-11 06:00:29:0372, diag_itementered, id=55709, type=1
+2014-12-11 06:00:29:0434, diag_itemexited, id=55709, type=1
+2014-12-11 06:00:39:0153, list_mouseentered, id=13751, type=1
+2014-12-11 06:00:39:0169, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0200, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0231, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0262, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0278, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0309, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0325, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0356, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0372, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0403, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0652, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0684, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0684, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0715, list_mousemoved, id=13751, type=1
+2014-12-11 06:00:39:0746, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:39:0777, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:39:0793, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:39:0824, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:39:0918, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:39:0949, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:39:0949, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:39:0964, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0011, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0042, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0058, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0089, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0167, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0760, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0791, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0791, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0838, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0854, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0885, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0900, list_mousemoved, id=55709, type=1
+2014-12-11 06:00:40:0932, list_mouseexited
+2014-12-11 06:00:41:0946, diag_itementered, id=48249, type=1
+2014-12-11 06:00:41:0992, diag_itemexited, id=48249, type=1
+2014-12-11 06:00:42:0507, diag_itemexited, id=1, type=4
+2014-12-11 06:00:42:0570, diag_itementered, id=41894, type=1
+2014-12-11 06:00:42:0616, diag_itemexited, id=41894, type=1
+2014-12-11 06:00:42:0710, diag_itementered, id=15899, type=1
+2014-12-11 06:00:42:0772, diag_itemexited, id=15899, type=1
+2014-12-11 06:00:43:0178, diag_itementered, id=25552, type=1
+2014-12-11 06:00:43:0365, diag_itemexited, id=25552, type=1
+2014-12-11 06:00:44:0520, list_mouseentered, id=51574, type=1
+2014-12-11 06:00:44:0520, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:44:0582, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:44:0613, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:44:0613, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:44:0644, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0300, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0331, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0362, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0378, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0393, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0440, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0456, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0487, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0502, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0534, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:45:0549, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0307, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0338, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0338, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0385, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0401, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0432, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0604, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0635, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0650, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0682, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0697, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0713, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0744, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0760, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0775, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0806, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:50:0838, list_mouseexited
+2014-12-11 06:00:54:0582, list_mouseentered, id=51574, type=1
+2014-12-11 06:00:54:0582, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:54:0629, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:54:0644, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:54:0660, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:54:0691, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:54:0707, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:54:0738, list_mousemoved, id=51574, type=1
+2014-12-11 06:00:54:0753, list_mousemoved, id=41894, type=1
+2014-12-11 06:00:54:0785, list_mousemoved, id=41894, type=1
+2014-12-11 06:00:54:0785, list_mousemoved, id=41894, type=1
+2014-12-11 06:00:54:0831, list_mousemoved, id=41894, type=1
+2014-12-11 06:00:54:0863, list_mousemoved, id=55440, type=1
+2014-12-11 06:00:54:0878, list_mousemoved, id=55440, type=1
+2014-12-11 06:00:54:0909, list_mouseexited
+2014-12-11 06:00:55:0346, diag_itementered, id=57484, type=1
+2014-12-11 06:00:55:0393, diag_itemexited, id=57484, type=1
+2014-12-11 06:00:58:0747, diag_itementered, id=15695, type=1
+2014-12-11 06:00:58:0778, diag_itemexited, id=15695, type=1
+2014-12-11 06:00:58:0934, diag_itementered, id=15695, type=1
+2014-12-11 06:00:58:0997, diag_itemexited, id=15695, type=1
+2014-12-11 06:01:00:0276, diag_itementered, id=49379, type=1
+2014-12-11 06:01:00:0432, diag_itemexited, id=49379, type=1
+2014-12-11 06:01:00:0603, diag_itementered, id=50064, type=1
+2014-12-11 06:01:00:0666, diag_itemexited, id=50064, type=1
+2014-12-11 06:01:01:0103, diag_itementered, id=25552, type=1
+2014-12-11 06:01:01:0165, diag_itemexited, id=25552, type=1
+2014-12-11 06:01:08:0637, diag_itementered, id=25192, type=1
+2014-12-11 06:01:08:0809, diag_itemexited, id=25192, type=1
+2014-12-11 06:01:09:0964, diag_itemexited, id=1, type=4
+2014-12-11 06:01:09:0964, diag_itementered, id=1, type=0
+2014-12-11 06:01:10:0556, diag_itemexited, id=1, type=0
+2014-12-11 06:01:10:0666, diag_itemexited, id=1, type=4
+2014-12-11 06:01:10:0806, diag_itemexited, id=2, type=4
+2014-12-11 06:01:10:0806, diag_itementered, id=23445, type=1
+2014-12-11 06:01:10:0868, diag_itemexited, id=23445, type=1
+2014-12-11 06:01:11:0024, diag_itemexited, id=2, type=4
+2014-12-11 06:01:11:0024, diag_itementered, id=2, type=0
+2014-12-11 06:01:11:0368, diag_itemexited, id=2, type=0
+2014-12-11 06:01:11:0446, diag_itemexited, id=2, type=4
+2014-12-11 06:01:11:0742, list_mouseentered, id=33901, type=1
+2014-12-11 06:01:11:0742, list_mousemoved, id=33901, type=1
+2014-12-11 06:01:11:0773, list_mousemoved, id=33901, type=1
+2014-12-11 06:01:11:0804, list_mouseexited
+2014-12-11 06:01:13:0848, list_pattern_mouseentered, id=1, type=0
+2014-12-11 06:01:13:0848, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:13:0895, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:13:0910, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:13:0910, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:13:0957, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:13:0973, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0004, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0020, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0066, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0098, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0113, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0129, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0160, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0176, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0207, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0441, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0456, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:14:0488, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:14:0503, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:14:0534, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:14:0550, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:14:0566, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:53:0691, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:53:0722, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:53:0738, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:53:0784, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:53:0816, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:53:0847, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:01:53:0862, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:53:0878, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:53:0894, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:53:0925, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:53:0956, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:53:0972, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:53:0987, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0018, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0018, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0050, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0674, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0689, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0705, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0736, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0736, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0783, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0798, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:01:54:0814, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:54:0845, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:54:0861, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:54:0892, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:54:0908, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:55:0438, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:55:0454, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:55:0485, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:55:0500, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:55:0500, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:55:0547, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:55:0563, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:55:0594, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:55:0610, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:55:0641, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:56:0795, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:56:0811, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:56:0826, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:56:0858, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:56:0858, list_pattern_mousemoved, id=4, type=0
+2014-12-11 06:01:56:0889, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:56:0920, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:56:0936, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:56:0951, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:56:0982, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0014, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0076, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0107, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0123, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0138, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0170, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0185, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0216, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0232, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:57:0263, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:01:58:0605, list_pattern_itemclicked, id=3, type=0
+2014-12-11 06:01:59:0088, edge_create, Tuple[0,1,0.5509620372739686,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:01:59:0088, edge_create, Tuple[1,2,0.8336640476136356,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:01:59:0104, edge_create, Tuple[1,3,0.41468500163615674,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:01:59:0104, edge_create, Tuple[1,4,0.0060832278843351295,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:01:59:0120, edge_create, Tuple[1,5,0.1011946657267827,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:01:59:0120, edge_create, Tuple[0,6,0.40229610866393173,2,1.0,1418338715255,1418338715255]
+2014-12-11 06:01:59:0120, pattern_create, 4
+2014-12-11 06:01:59:0120, edge_create, Tuple[6,7,0.3210920312835567,2,1.0,1418338715255,1418338715255]
+2014-12-11 06:01:59:0151, pattern_open, 3
+2014-12-11 06:02:02:0302, list_pattern_mouseexited
+2014-12-11 06:02:02:0302, list_mouseentered, type=detailAnswersList
+2014-12-11 06:02:02:0583, list_mouseexited, type=detailAnswersList
+2014-12-11 06:02:02:0957, diag_detail_itementered, id=50532, type=1
+2014-12-11 06:02:02:0989, diag_detail_itemexited, id=50532, type=1
+2014-12-11 06:03:06:0216, diag_detail_itementered, id=0.8336640476136356, type=1
+2014-12-11 06:03:06:0232, diag_detail_itemexited, id=0.8336640476136356, type=1
+2014-12-11 06:03:06:0684, diag_detail_itementered, id=0.8336640476136356, type=1
+2014-12-11 06:03:06:0700, diag_detail_itemexited, id=0.8336640476136356, type=1
+2014-12-11 06:03:06:0824, diag_detail_itementered, id=-183106766, type=3
+2014-12-11 06:03:07:0480, diag_detail_itemexited, id=-183106766, type=3
+2014-12-11 06:03:25:0326, diag_detail_itementered, id=0.8336640476136356, type=1
+2014-12-11 06:03:25:0342, diag_detail_itemexited, id=0.8336640476136356, type=1
+2014-12-11 06:03:25:0966, diag_detail_itementered, id=43344, type=1
+2014-12-11 06:03:26:0075, diag_detail_itemexited, id=43344, type=1
+2014-12-11 06:03:28:0758, diag_detail_itementered, id=0.8336640476136356, type=1
+2014-12-11 06:03:28:0852, diag_detail_itemexited, id=0.8336640476136356, type=1
+2014-12-11 06:03:29:0476, diag_detail_itementered, id=43344, type=1
+2014-12-11 06:03:30:0349, diag_detail_itemclicked, id=43344, type=1
+2014-12-11 06:03:30:0599, edge_create, Tuple[0,1,0.5358929634909768,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0599, answer_create, 43351
+2014-12-11 06:03:30:0615, edge_create, Tuple[1,2,0.4845933246456149,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0615, answer_create, 43744
+2014-12-11 06:03:30:0615, edge_create, Tuple[1,3,0.08112871388600362,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0615, answer_create, 43355
+2014-12-11 06:03:30:0615, edge_create, Tuple[1,4,0.13146996656172694,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0615, answer_create, 43433
+2014-12-11 06:03:30:0615, edge_create, Tuple[1,5,0.04344835063135666,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0615, answer_create, 43359
+2014-12-11 06:03:30:0615, edge_create, Tuple[1,6,0.37173934773583395,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0615, answer_create, 43416
+2014-12-11 06:03:30:0630, edge_create, Tuple[1,7,0.17524114375955113,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0630, answer_create, 43429
+2014-12-11 06:03:30:0630, edge_create, Tuple[1,8,0.2044928246126374,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0630, answer_create, 2078701
+2014-12-11 06:03:30:0630, edge_create, Tuple[1,9,0.720787111682663,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0630, answer_create, 2316029
+2014-12-11 06:03:30:0630, edge_create, Tuple[1,10,0.977941689726485,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0630, answer_create, 2997624
+2014-12-11 06:03:30:0630, edge_create, Tuple[1,11,0.10082190148158099,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0630, answer_create, 6057639
+2014-12-11 06:03:30:0630, edge_create, Tuple[1,12,0.2764708021277452,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0630, answer_create, 11290820
+2014-12-11 06:03:30:0630, edge_create, Tuple[1,13,0.6663458727033781,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0630, answer_create, 12503557
+2014-12-11 06:03:30:0630, edge_create, Tuple[1,14,0.18681423584267942,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0630, edge_create, Tuple[0,15,0.40640282538135,2,1.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0630, pattern_create, 3
+2014-12-11 06:03:30:0646, edge_create, Tuple[15,16,0.2376343254081672,2,1.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0647, edge_create, Tuple[0,17,0.36934474968008857,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0648, edge_create, Tuple[17,18,0.6226457486899407,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0648, edge_create, Tuple[17,19,0.32599254874173134,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0663, edge_create, Tuple[17,20,0.42045824590719616,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0663, edge_create, Tuple[17,21,0.7811402886156231,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0679, edge_create, Tuple[17,22,0.9936140152999987,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0695, edge_create, Tuple[17,23,0.13269475905704176,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0710, edge_create, Tuple[17,24,0.17959759741223236,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0710, edge_create, Tuple[17,25,0.5316829079663764,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0726, edge_create, Tuple[17,26,0.13824831093675116,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0726, edge_create, Tuple[17,27,0.6483102195215019,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0741, edge_create, Tuple[17,28,0.1689831577423211,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0741, edge_create, Tuple[17,29,0.07675370130534442,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0757, edge_create, Tuple[17,30,0.5991448333312991,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0757, edge_create, Tuple[17,31,0.8825861722990644,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0773, edge_create, Tuple[17,32,0.12885155905937606,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0773, edge_create, Tuple[17,33,0.8204449334688954,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0788, edge_create, Tuple[17,34,0.2207920214975797,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0804, edge_create, Tuple[17,35,0.9251902957989945,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0804, edge_create, Tuple[17,36,0.1839608666158119,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0819, edge_create, Tuple[17,37,0.5473871359095465,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0819, edge_create, Tuple[17,38,0.22246393026265632,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0835, edge_create, Tuple[17,39,0.8941508931325689,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0835, edge_create, Tuple[17,40,0.6239696923897382,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0851, edge_create, Tuple[17,41,0.8205152838726767,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0851, edge_create, Tuple[17,42,0.4324915901454751,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0866, edge_create, Tuple[17,43,0.9564184941024602,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0866, edge_create, Tuple[17,44,0.8879340457366424,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0882, edge_create, Tuple[17,45,0.3527051821911906,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0882, edge_create, Tuple[17,46,0.8868236332640144,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0897, edge_create, Tuple[17,47,0.1793688979600928,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0897, edge_create, Tuple[17,48,0.00710290194250085,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:03:30:0913, discussion_open, 43344
+2014-12-11 06:03:30:0913, diag_detail_itemclicked, id=43344, type=1
+2014-12-11 06:03:32:0473, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-11 06:03:32:0473, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-11 06:03:32:0473, diag_detail_itementered, id=43351, type=21
+2014-12-11 06:03:32:0629, diag_detail_itemexited, id=43351, type=21
+2014-12-11 06:03:33:0924, diag_detail_itementered, id=0.00710290194250085, type=1
+2014-12-11 06:03:33:0971, diag_detail_itemexited, id=0.00710290194250085, type=1
+2014-12-11 06:03:34:0142, diag_detail_itementered, id=0.00710290194250085, type=1
+2014-12-11 06:03:34:0174, diag_detail_itemexited, id=0.00710290194250085, type=1
+2014-12-11 06:03:34:0486, diag_detail_itementered, id=0.00710290194250085, type=1
+2014-12-11 06:03:34:0579, diag_detail_itemexited, id=0.00710290194250085, type=1
+2014-12-11 06:03:34:0720, diag_detail_itementered, id=0.1793688979600928, type=1
+2014-12-11 06:03:34:0751, diag_detail_itemexited, id=0.1793688979600928, type=1
+2014-12-11 06:03:34:0813, diag_detail_itementered, id=0.3527051821911906, type=1
+2014-12-11 06:03:34:0844, diag_detail_itemexited, id=0.3527051821911906, type=1
+2014-12-11 06:03:34:0922, diag_detail_itementered, id=0.3527051821911906, type=1
+2014-12-11 06:03:34:0954, diag_detail_itemexited, id=0.3527051821911906, type=1
+2014-12-11 06:03:35:0063, diag_detail_itementered, id=0.8868236332640144, type=1
+2014-12-11 06:03:35:0156, diag_detail_itemexited, id=0.8868236332640144, type=1
+2014-12-11 06:03:35:0156, diag_detail_itementered, id=-1954111998, type=3
+2014-12-11 06:03:36:0046, diag_detail_itemexited, id=-1954111998, type=3
+2014-12-11 06:03:36:0108, diag_detail_itementered, id=0.36934474968008857, type=1
+2014-12-11 06:03:36:0139, diag_detail_itemexited, id=0.36934474968008857, type=1
+2014-12-11 06:03:36:0264, diag_detail_itementered, id=43344, type=1
+2014-12-11 06:03:36:0311, diag_detail_itemexited, id=43344, type=1
+2014-12-11 06:03:36:0467, diag_detail_itementered, id=0.40640282538135, type=2
+2014-12-11 06:03:36:0498, diag_detail_itemexited, id=0.40640282538135, type=2
+2014-12-11 06:03:36:0514, diag_detail_itementered, id=0.40640282538135, type=2
+2014-12-11 06:03:36:0545, diag_detail_itemexited, id=0.40640282538135, type=2
+2014-12-11 06:03:36:0560, diag_detail_itementered, id=0.40640282538135, type=2
+2014-12-11 06:03:36:0592, diag_detail_itemexited, id=0.40640282538135, type=2
+2014-12-11 06:03:36:0592, diag_detail_itementered, id=43344, type=1
+2014-12-11 06:03:36:0716, diag_detail_itemexited, id=43344, type=1
+2014-12-11 06:03:36:0935, diag_detail_itementered, id=0.5358929634909768, type=4
+2014-12-11 06:03:36:0950, diag_detail_itemexited, id=0.5358929634909768, type=4
+2014-12-11 06:03:37:0091, diag_detail_itementered, id=60832284, type=3
+2014-12-11 06:03:37:0855, diag_detail_itemexited, id=60832284, type=3
+2014-12-11 06:03:37:0855, diag_detail_itementered, id=0.04344835063135666, type=4
+2014-12-11 06:03:37:0902, diag_detail_itemexited, id=0.04344835063135666, type=4
+2014-12-11 06:03:37:0902, diag_detail_itementered, id=0.13146996656172694, type=4
+2014-12-11 06:03:37:0918, diag_detail_itemexited, id=0.13146996656172694, type=4
+2014-12-11 06:03:37:0964, diag_detail_itementered, id=0.4845933246456149, type=4
+2014-12-11 06:03:37:0996, diag_detail_itemexited, id=0.4845933246456149, type=4
+2014-12-11 06:03:38:0214, diag_detail_itementered, id=0.4845933246456149, type=4
+2014-12-11 06:03:38:0245, diag_detail_itemexited, id=0.4845933246456149, type=4
+2014-12-11 06:03:38:0245, diag_detail_itementered, id=0.08112871388600362, type=4
+2014-12-11 06:03:38:0276, diag_detail_itemexited, id=0.08112871388600362, type=4
+2014-12-11 06:03:38:0323, diag_detail_itementered, id=0.37173934773583395, type=4
+2014-12-11 06:03:38:0354, diag_detail_itemexited, id=0.37173934773583395, type=4
+2014-12-11 06:03:38:0354, diag_detail_itementered, id=0.17524114375955113, type=4
+2014-12-11 06:03:38:0386, diag_detail_itemexited, id=0.17524114375955113, type=4
+2014-12-11 06:03:38:0401, diag_detail_itementered, id=0.2044928246126374, type=4
+2014-12-11 06:03:38:0432, diag_detail_itemexited, id=0.2044928246126374, type=4
+2014-12-11 06:03:38:0448, diag_detail_itementered, id=0.720787111682663, type=4
+2014-12-11 06:03:38:0479, diag_detail_itemexited, id=0.720787111682663, type=4
+2014-12-11 06:03:38:0510, diag_detail_itementered, id=0.10082190148158099, type=4
+2014-12-11 06:03:38:0542, diag_detail_itemexited, id=0.10082190148158099, type=4
+2014-12-11 06:03:39:0088, diag_detail_itementered, id=0.10082190148158099, type=4
+2014-12-11 06:03:39:0119, diag_detail_itemexited, id=0.10082190148158099, type=4
+2014-12-11 06:03:39:0150, diag_detail_itementered, id=0.977941689726485, type=4
+2014-12-11 06:03:39:0181, diag_detail_itemexited, id=0.977941689726485, type=4
+2014-12-11 06:03:39:0244, diag_detail_itementered, id=0.720787111682663, type=4
+2014-12-11 06:03:39:0275, diag_detail_itemexited, id=0.720787111682663, type=4
+2014-12-11 06:03:39:0353, diag_detail_itementered, id=0.2044928246126374, type=4
+2014-12-11 06:03:39:0384, diag_detail_itemexited, id=0.2044928246126374, type=4
+2014-12-11 06:03:39:0493, diag_detail_itementered, id=0.17524114375955113, type=4
+2014-12-11 06:03:39:0524, diag_detail_itemexited, id=0.17524114375955113, type=4
+2014-12-11 06:03:40:0117, diag_detail_itementered, id=0.37173934773583395, type=4
+2014-12-11 06:03:40:0148, diag_detail_itemexited, id=0.37173934773583395, type=4
+2014-12-11 06:03:40:0944, diag_detail_itementered, id=0.04344835063135666, type=4
+2014-12-11 06:03:41:0022, diag_detail_itemexited, id=0.04344835063135666, type=4
+2014-12-11 06:03:42:0114, diag_detail_itementered, id=0.13146996656172694, type=4
+2014-12-11 06:03:42:0130, diag_detail_itemexited, id=0.13146996656172694, type=4
+2014-12-11 06:03:42:0161, diag_detail_itementered, id=0.08112871388600362, type=4
+2014-12-11 06:03:42:0192, diag_detail_itemexited, id=0.08112871388600362, type=4
+2014-12-11 06:03:42:0208, diag_detail_itementered, id=0.4845933246456149, type=4
+2014-12-11 06:03:42:0239, diag_detail_itemexited, id=0.4845933246456149, type=4
+2014-12-11 06:03:43:0268, diag_detail_itementered, id=0.36934474968008857, type=1
+2014-12-11 06:03:43:0300, diag_detail_itemexited, id=0.36934474968008857, type=1
+2014-12-11 06:03:43:0565, diag_detail_itementered, id=0.40640282538135, type=2
+2014-12-11 06:03:43:0596, diag_detail_itemexited, id=0.40640282538135, type=2
+2014-12-11 06:03:43:0986, diag_detail_itementered, id=43344, type=1
+2014-12-11 06:03:44:0626, diag_detail_itemexited, id=43344, type=1
+2014-12-11 06:03:45:0062, diag_detail_itementered, id=60832284, type=3
+2014-12-11 06:03:45:0250, diag_detail_itemexited, id=60832284, type=3
+2014-12-11 06:03:45:0296, diag_detail_itementered, id=0.4845933246456149, type=4
+2014-12-11 06:03:45:0328, diag_detail_itemexited, id=0.4845933246456149, type=4
+2014-12-11 06:03:45:0374, diag_detail_itementered, id=0.08112871388600362, type=4
+2014-12-11 06:03:45:0421, diag_detail_itemexited, id=0.08112871388600362, type=4
+2014-12-11 06:03:45:0437, diag_detail_itementered, id=0.08112871388600362, type=4
+2014-12-11 06:03:45:0468, diag_detail_itemexited, id=0.08112871388600362, type=4
+2014-12-11 06:03:45:0484, diag_detail_itementered, id=0.08112871388600362, type=4
+2014-12-11 06:03:45:0515, diag_detail_itemexited, id=0.08112871388600362, type=4
+2014-12-11 06:03:45:0562, diag_detail_itementered, id=0.08112871388600362, type=4
+2014-12-11 06:03:45:0593, diag_detail_itemexited, id=0.08112871388600362, type=4
+2014-12-11 06:03:45:0874, diag_detail_itementered, id=0.4845933246456149, type=4
+2014-12-11 06:03:46:0170, diag_detail_itemexited, id=0.4845933246456149, type=4
+2014-12-11 06:03:46:0279, diag_detail_itementered, id=0.08112871388600362, type=4
+2014-12-11 06:03:46:0310, diag_detail_itemexited, id=0.08112871388600362, type=4
+2014-12-11 06:03:46:0404, diag_detail_itementered, id=0.13146996656172694, type=4
+2014-12-11 06:03:46:0435, diag_detail_itemexited, id=0.13146996656172694, type=4
+2014-12-11 06:03:46:0482, diag_detail_itementered, id=0.04344835063135666, type=4
+2014-12-11 06:03:46:0513, diag_detail_itemexited, id=0.04344835063135666, type=4
+2014-12-11 06:03:46:0544, diag_detail_itementered, id=0.37173934773583395, type=4
+2014-12-11 06:03:46:0576, diag_detail_itemexited, id=0.37173934773583395, type=4
+2014-12-11 06:03:46:0591, diag_detail_itementered, id=0.17524114375955113, type=4
+2014-12-11 06:03:46:0622, diag_detail_itemexited, id=0.17524114375955113, type=4
+2014-12-11 06:03:46:0716, answer_open, VisualItem[tree.nodes,8,id=43429,type=20,title=,body=<p><a href="http://www.borland.com" rel="nofollow">Borland</a> produce by far best tool for this sort of thing - <a href="http://www.borland.com/us/products/together/" rel="nofollow">Together</a>.  It gives you a full model driven approach to development, so that might be overkill for what you require.  It is commerically licensed, but they provide a community edition for non commerical work.  </p>
+
+<p>There are eclipse plugins that can do UML reverse engineering - <a href="http://eclipse-plugins.2y.net/eclipse/plugins.jsp?category=UML&amp;sort=hits24h" rel="nofollow">here is a long list</a>.  I have tried some of the free ones, and quite liked <a href="http://www.mvmsoft.de/content/plugins/slime/index.htm" rel="nofollow">slime</a> and <a href="http://argouml.tigris.org/" rel="nofollow">argo</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:03:46:0716, answer_open, VisualItem[tree.nodes,8,id=43429,type=20,title=,body=<p><a href="http://www.borland.com" rel="nofollow">Borland</a> produce by far best tool for this sort of thing - <a href="http://www.borland.com/us/products/together/" rel="nofollow">Together</a>.  It gives you a full model driven approach to development, so that might be overkill for what you require.  It is commerically licensed, but they provide a community edition for non commerical work.  </p>
+
+<p>There are eclipse plugins that can do UML reverse engineering - <a href="http://eclipse-plugins.2y.net/eclipse/plugins.jsp?category=UML&amp;sort=hits24h" rel="nofollow">here is a long list</a>.  I have tried some of the free ones, and quite liked <a href="http://www.mvmsoft.de/content/plugins/slime/index.htm" rel="nofollow">slime</a> and <a href="http://argouml.tigris.org/" rel="nofollow">argo</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:03:46:0716, diag_detail_itementered, id=43429, type=20
+2014-12-11 06:03:48:0260, diag_detail_itemexited, id=43429, type=20
+2014-12-11 06:03:50:0304, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-11 06:03:50:0304, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-11 06:03:50:0304, diag_detail_itementered, id=43351, type=21
+2014-12-11 06:03:51:0381, diag_detail_itemexited, id=43351, type=21
+2014-12-11 06:03:52:0332, answer_open, VisualItem[tree.nodes,4,id=43355,type=20,title=,body=<blockquote>
+  <p>visual representation of the relationship between classes,</p>
+</blockquote>
+
+<p>NetBeans can draw you UML diagram from classes, and I guess any decent UML tool could also.</p>
+
+<blockquote>
+  <p>method calls etc.</p>
+</blockquote>
+
+<p>UML also have types of diagrams used for this, I've never tried to get it out of a source, but presumably, some of the UML programs could do it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:03:52:0332, answer_open, VisualItem[tree.nodes,4,id=43355,type=20,title=,body=<blockquote>
+  <p>visual representation of the relationship between classes,</p>
+</blockquote>
+
+<p>NetBeans can draw you UML diagram from classes, and I guess any decent UML tool could also.</p>
+
+<blockquote>
+  <p>method calls etc.</p>
+</blockquote>
+
+<p>UML also have types of diagrams used for this, I've never tried to get it out of a source, but presumably, some of the UML programs could do it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:03:52:0332, diag_detail_itementered, id=43355, type=20
+2014-12-11 06:03:52:0504, diag_detail_itemexited, id=43355, type=20
+2014-12-11 06:03:52:0551, answer_open, VisualItem[tree.nodes,3,id=43744,type=20,title=,body=<p>Structure 101 is a great tool. Costs money though...
+<a href="http://en.wikipedia.org/wiki/Structure101" rel="nofollow">Link to Wiki describing it</a>, for some reason the vendor site is down ATM</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:03:52:0551, answer_open, VisualItem[tree.nodes,3,id=43744,type=20,title=,body=<p>Structure 101 is a great tool. Costs money though...
+<a href="http://en.wikipedia.org/wiki/Structure101" rel="nofollow">Link to Wiki describing it</a>, for some reason the vendor site is down ATM</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:03:52:0551, diag_detail_itementered, id=43744, type=20
+2014-12-11 06:03:52:0847, diag_detail_itemexited, id=43744, type=20
+2014-12-11 06:03:53:0050, answer_open, VisualItem[tree.nodes,10,id=2316029,type=20,title=,body=<p>I would advise <a href="http://www.yworks.com/en/products_ydoc.html" rel="nofollow">yDoc</a>. It uses Javadoc with a custom doclet, and generates really nice UML diagrams. However, it costs money although a trial version is available if you ask :)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:03:53:0050, answer_open, VisualItem[tree.nodes,10,id=2316029,type=20,title=,body=<p>I would advise <a href="http://www.yworks.com/en/products_ydoc.html" rel="nofollow">yDoc</a>. It uses Javadoc with a custom doclet, and generates really nice UML diagrams. However, it costs money although a trial version is available if you ask :)</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:03:53:0315, diag_detail_itementered, id=2316029, type=20
+2014-12-11 06:03:53:0487, diag_detail_itemexited, id=2316029, type=20
+2014-12-11 06:03:53:0705, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-11 06:03:53:0705, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-11 06:03:53:0705, diag_detail_itementered, id=43351, type=21
+2014-12-11 06:03:54:0142, diag_detail_itemexited, id=43351, type=21
+2014-12-11 06:04:00:0943, answer_open, VisualItem[tree.nodes,8,id=43429,type=20,title=,body=<p><a href="http://www.borland.com" rel="nofollow">Borland</a> produce by far best tool for this sort of thing - <a href="http://www.borland.com/us/products/together/" rel="nofollow">Together</a>.  It gives you a full model driven approach to development, so that might be overkill for what you require.  It is commerically licensed, but they provide a community edition for non commerical work.  </p>
+
+<p>There are eclipse plugins that can do UML reverse engineering - <a href="http://eclipse-plugins.2y.net/eclipse/plugins.jsp?category=UML&amp;sort=hits24h" rel="nofollow">here is a long list</a>.  I have tried some of the free ones, and quite liked <a href="http://www.mvmsoft.de/content/plugins/slime/index.htm" rel="nofollow">slime</a> and <a href="http://argouml.tigris.org/" rel="nofollow">argo</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:04:00:0943, answer_open, VisualItem[tree.nodes,8,id=43429,type=20,title=,body=<p><a href="http://www.borland.com" rel="nofollow">Borland</a> produce by far best tool for this sort of thing - <a href="http://www.borland.com/us/products/together/" rel="nofollow">Together</a>.  It gives you a full model driven approach to development, so that might be overkill for what you require.  It is commerically licensed, but they provide a community edition for non commerical work.  </p>
+
+<p>There are eclipse plugins that can do UML reverse engineering - <a href="http://eclipse-plugins.2y.net/eclipse/plugins.jsp?category=UML&amp;sort=hits24h" rel="nofollow">here is a long list</a>.  I have tried some of the free ones, and quite liked <a href="http://www.mvmsoft.de/content/plugins/slime/index.htm" rel="nofollow">slime</a> and <a href="http://argouml.tigris.org/" rel="nofollow">argo</a>.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:04:00:0943, diag_detail_itementered, id=43429, type=20
+2014-12-11 06:04:01:0099, diag_detail_itemexited, id=43429, type=20
+2014-12-11 06:04:01:0115, answer_open, VisualItem[tree.nodes,9,id=2078701,type=20,title=,body=<p><a href="http://www.whitemagicsoftware.com/software/java/hierarchy/" rel="nofollow">Hierarchy</a> graphs class inheritance relationships as follows:</p>
+
+<p><a href="http://www.whitemagicsoftware.com/software/java/hierarchy/" rel="nofollow"><img src="http://i.stack.imgur.com/KYqNk.png" /></a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-11 06:04:01:0115, answer_open, VisualItem[tree.nodes,9,id=2078701,type=20,title=,body=<p><a href="http://www.whitemagicsoftware.com/software/java/hierarchy/" rel="nofollow">Hierarchy</a> graphs class inheritance relationships as follows:</p>
+
+<p><a href="http://www.whitemagicsoftware.com/software/java/hierarchy/" rel="nofollow"><img src="http://i.stack.imgur.com/KYqNk.png" /></a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=2,searchfield=]
+2014-12-11 06:04:01:0318, diag_detail_itementered, id=2078701, type=20
+2014-12-11 06:04:01:0489, diag_detail_itemexited, id=2078701, type=20
+2014-12-11 06:04:01:0692, diag_detail_itementered, id=0.6663458727033781, type=4
+2014-12-11 06:04:01:0739, diag_detail_itemexited, id=0.6663458727033781, type=4
+2014-12-11 06:04:01:0848, diag_detail_itementered, id=0.2764708021277452, type=4
+2014-12-11 06:04:01:0879, diag_detail_itemexited, id=0.2764708021277452, type=4
+2014-12-11 06:04:02:0035, diag_detail_itementered, id=0.37173934773583395, type=4
+2014-12-11 06:04:02:0067, diag_detail_itemexited, id=0.37173934773583395, type=4
+2014-12-11 06:04:02:0394, diag_detail_itementered, id=0.04344835063135666, type=4
+2014-12-11 06:04:02:0425, diag_detail_itemexited, id=0.04344835063135666, type=4
+2014-12-11 06:04:02:0628, answer_open, VisualItem[tree.nodes,4,id=43355,type=20,title=,body=<blockquote>
+  <p>visual representation of the relationship between classes,</p>
+</blockquote>
+
+<p>NetBeans can draw you UML diagram from classes, and I guess any decent UML tool could also.</p>
+
+<blockquote>
+  <p>method calls etc.</p>
+</blockquote>
+
+<p>UML also have types of diagrams used for this, I've never tried to get it out of a source, but presumably, some of the UML programs could do it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:04:02:0628, answer_open, VisualItem[tree.nodes,4,id=43355,type=20,title=,body=<blockquote>
+  <p>visual representation of the relationship between classes,</p>
+</blockquote>
+
+<p>NetBeans can draw you UML diagram from classes, and I guess any decent UML tool could also.</p>
+
+<blockquote>
+  <p>method calls etc.</p>
+</blockquote>
+
+<p>UML also have types of diagrams used for this, I've never tried to get it out of a source, but presumably, some of the UML programs could do it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:04:02:0628, diag_detail_itementered, id=43355, type=20
+2014-12-11 06:04:02:0878, diag_detail_itemexited, id=43355, type=20
+2014-12-11 06:04:03:0174, answer_open, VisualItem[tree.nodes,4,id=43355,type=20,title=,body=<blockquote>
+  <p>visual representation of the relationship between classes,</p>
+</blockquote>
+
+<p>NetBeans can draw you UML diagram from classes, and I guess any decent UML tool could also.</p>
+
+<blockquote>
+  <p>method calls etc.</p>
+</blockquote>
+
+<p>UML also have types of diagrams used for this, I've never tried to get it out of a source, but presumably, some of the UML programs could do it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:04:03:0174, answer_open, VisualItem[tree.nodes,4,id=43355,type=20,title=,body=<blockquote>
+  <p>visual representation of the relationship between classes,</p>
+</blockquote>
+
+<p>NetBeans can draw you UML diagram from classes, and I guess any decent UML tool could also.</p>
+
+<blockquote>
+  <p>method calls etc.</p>
+</blockquote>
+
+<p>UML also have types of diagrams used for this, I've never tried to get it out of a source, but presumably, some of the UML programs could do it.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:04:03:0174, diag_detail_itementered, id=43355, type=20
+2014-12-11 06:04:03:0330, diag_detail_itemexited, id=43355, type=20
+2014-12-11 06:04:03:0939, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-11 06:04:03:0939, answer_open, VisualItem[tree.nodes,2,id=43351,type=21,title=,body=<p>If you use the <a href="http://www.netbeans.org/" rel="nofollow">Netbeans</a> IDE it does have tools to reverse engineer your source code into UML class diagrams. After loading your source code into the IDE. You can create a new UML->Reverse Engineered java-platform model.</p>
+
+<p>Check out <a href="http://wiki.netbeans.org/NetbeansUML" rel="nofollow">This Netbeans Wiki page</a> for more details.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=9,searchfield=]
+2014-12-11 06:04:03:0954, diag_detail_itementered, id=43351, type=21
+2014-12-11 06:04:04:0781, diag_detail_itemexited, id=43351, type=21
+2014-12-11 06:04:07:0152, list_mouseentered, type=detailAnswersList
+2014-12-11 06:04:07:0355, list_mouseexited, type=detailAnswersList
+2014-12-11 06:04:08:0946, answer_open, VisualItem[tree.nodes,3,id=43744,type=20,title=,body=<p>Structure 101 is a great tool. Costs money though...
+<a href="http://en.wikipedia.org/wiki/Structure101" rel="nofollow">Link to Wiki describing it</a>, for some reason the vendor site is down ATM</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:04:08:0946, answer_open, VisualItem[tree.nodes,3,id=43744,type=20,title=,body=<p>Structure 101 is a great tool. Costs money though...
+<a href="http://en.wikipedia.org/wiki/Structure101" rel="nofollow">Link to Wiki describing it</a>, for some reason the vendor site is down ATM</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=1,searchfield=]
+2014-12-11 06:04:08:0962, diag_detail_itementered, id=43744, type=20
+2014-12-11 06:04:09:0243, diag_detail_itemexited, id=43744, type=20
+2014-12-11 06:04:09:0399, diag_detail_itementered, id=0.8205152838726767, type=1
+2014-12-11 06:04:09:0446, diag_detail_itemexited, id=0.8205152838726767, type=1
+2014-12-11 06:04:09:0446, diag_detail_itementered, id=0.9564184941024602, type=1
+2014-12-11 06:04:09:0477, diag_detail_itemexited, id=0.9564184941024602, type=1
+2014-12-11 06:04:09:0508, diag_detail_itementered, id=43344, type=1
+2014-12-11 06:04:09:0539, diag_detail_itemexited, id=43344, type=1
+2014-12-11 06:04:09:0539, diag_detail_itementered, id=-1656958028, type=3
+2014-12-11 06:04:09:0570, diag_detail_itemexited, id=-1656958028, type=3
+2014-12-11 06:04:09:0586, answer_open, VisualItem[tree.nodes,14,id=12503557,type=20,title=,body=<p>Afaik this feature is part of the featureset of the <a href="http://www.jetbrains.com/idea/" rel="nofollow">Jetbrains Intellij IDEA</a> IDE.</p>
+
+<p>Here's the <a href="http://www.jetbrains.com/idea/features/uml_class_diagram.html" rel="nofollow">feature description</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-11 06:04:09:0586, answer_open, VisualItem[tree.nodes,14,id=12503557,type=20,title=,body=<p>Afaik this feature is part of the featureset of the <a href="http://www.jetbrains.com/idea/" rel="nofollow">Jetbrains Intellij IDEA</a> IDE.</p>
+
+<p>Here's the <a href="http://www.jetbrains.com/idea/features/uml_class_diagram.html" rel="nofollow">feature description</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-11 06:04:09:0586, diag_detail_itementered, id=12503557, type=20
+2014-12-11 06:04:09:0742, diag_detail_itemexited, id=12503557, type=20
+2014-12-11 06:04:16:0793, list_mouseentered, type=detailAnswersList
+2014-12-11 06:04:16:0809, list_mouseexited, type=detailAnswersList
+2014-12-11 06:04:17:0043, diag_detail_itementered, id=0.2376343254081672, type=2
+2014-12-11 06:04:17:0074, diag_detail_itemexited, id=0.2376343254081672, type=2
+2014-12-11 06:04:17:0292, diag_detail_itementered, id=0.42045824590719616, type=1
+2014-12-11 06:04:17:0324, diag_detail_itemexited, id=0.42045824590719616, type=1
+2014-12-11 06:04:17:0901, diag_detail_itementered, id=-1656958028, type=3
+2014-12-11 06:04:17:0932, diag_detail_itemexited, id=-1656958028, type=3
+2014-12-11 06:04:18:0416, diag_detail_itementered, id=3, type=0
+2014-12-11 06:04:18:0462, diag_detail_itemexited, id=3, type=0
+2014-12-11 06:04:25:0685, pattern_change_cancel
+2014-12-11 06:04:25:0685, pattern_change_open
+2014-12-11 06:04:25:0685, list_mouseentered, type=detailRelatedList, item=44912
+2014-12-11 06:04:25:0717, edge_create, Tuple[0,1,0.7444006115822276,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0717, answer_create, 43351
+2014-12-11 06:04:25:0717, edge_create, Tuple[1,2,0.7926390204908577,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0717, answer_create, 43744
+2014-12-11 06:04:25:0717, edge_create, Tuple[1,3,0.2464808438217836,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0717, answer_create, 43355
+2014-12-11 06:04:25:0717, edge_create, Tuple[1,4,0.07366984831622381,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0717, answer_create, 43433
+2014-12-11 06:04:25:0717, edge_create, Tuple[1,5,0.39439033930516165,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0717, answer_create, 43359
+2014-12-11 06:04:25:0717, edge_create, Tuple[1,6,0.9368767164310455,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0732, answer_create, 43416
+2014-12-11 06:04:25:0732, edge_create, Tuple[1,7,0.8760864569335215,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0732, answer_create, 43429
+2014-12-11 06:04:25:0732, edge_create, Tuple[1,8,0.39786504027893255,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0732, answer_create, 2078701
+2014-12-11 06:04:25:0732, edge_create, Tuple[1,9,0.837183848161794,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0732, answer_create, 2316029
+2014-12-11 06:04:25:0732, edge_create, Tuple[1,10,0.9798979580335547,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0732, answer_create, 2997624
+2014-12-11 06:04:25:0732, edge_create, Tuple[1,11,0.11900570132999089,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0732, answer_create, 6057639
+2014-12-11 06:04:25:0748, edge_create, Tuple[1,12,0.8917478150962439,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0749, answer_create, 11290820
+2014-12-11 06:04:25:0750, edge_create, Tuple[1,13,0.23797312739618082,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0750, answer_create, 12503557
+2014-12-11 06:04:25:0750, edge_create, Tuple[1,14,0.7160989425709668,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0750, edge_create, Tuple[0,15,0.579041296159424,2,1.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0750, pattern_create, 3
+2014-12-11 06:04:25:0750, edge_create, Tuple[15,16,0.8752873224863943,2,1.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0750, edge_create, Tuple[0,17,0.2849570948385819,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0750, edge_create, Tuple[17,18,0.3061433841798592,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0750, edge_create, Tuple[17,19,0.9997234983971937,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0765, edge_create, Tuple[17,20,0.9387948299962601,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0765, edge_create, Tuple[17,21,0.25884446637981506,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0781, edge_create, Tuple[17,22,0.6895850081123505,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0797, edge_create, Tuple[17,23,0.5913588719635928,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0797, edge_create, Tuple[17,24,0.7154978408387958,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0812, edge_create, Tuple[17,25,0.6306397989309881,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0812, edge_create, Tuple[17,26,0.8720031253764553,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0828, edge_create, Tuple[17,27,0.9343511639010519,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0828, edge_create, Tuple[17,28,0.4190232251604724,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0843, edge_create, Tuple[17,29,0.14135628954121882,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0843, edge_create, Tuple[17,30,0.5473744888132881,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0859, edge_create, Tuple[17,31,0.2879261541891305,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0859, edge_create, Tuple[17,32,0.7827823200084769,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0875, edge_create, Tuple[17,33,0.9510885656787369,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0890, edge_create, Tuple[17,34,0.564257203203509,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0890, edge_create, Tuple[17,35,0.657806850260942,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0906, edge_create, Tuple[17,36,0.6017283937281342,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0906, edge_create, Tuple[17,37,0.10991692955566112,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0921, edge_create, Tuple[17,38,0.07346368731298103,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0921, edge_create, Tuple[17,39,0.032049051006816875,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0937, edge_create, Tuple[17,40,0.421682599676488,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0937, edge_create, Tuple[17,41,0.29940457124690933,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0953, edge_create, Tuple[17,42,0.8052511444014778,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0953, edge_create, Tuple[17,43,0.7811616130272706,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0968, edge_create, Tuple[17,44,0.047402033958767964,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0968, edge_create, Tuple[17,45,0.5209872520160564,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0984, edge_create, Tuple[17,46,0.8156597492331168,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0984, edge_create, Tuple[17,47,0.3367998200580361,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:25:0999, edge_create, Tuple[17,48,0.44778888807869344,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:04:26:0015, discussion_open, 43344
+2014-12-11 06:04:26:0015, setup_loaddata_begin
+2014-12-11 06:04:27:0762, setup_loaddata_end
+2014-12-11 06:04:27:0762, setup_createactions_begin
+2014-12-11 06:04:27:0809, setup_createactions_end
+2014-12-11 06:04:29:0509, diag_itementered, id=35842, type=1
+2014-12-11 06:04:29:0728, diag_itemexited, id=35842, type=1
+2014-12-11 06:05:11:0645, diag_itementered, id=35842, type=1
+2014-12-11 06:05:11:0692, diag_itemexited, id=35842, type=1
+2014-12-11 06:05:11:0770, diag_itementered, id=51276, type=1
+2014-12-11 06:05:11:0833, diag_itemexited, id=51276, type=1
+2014-12-11 06:05:11:0879, diag_itementered, id=37026, type=1
+2014-12-11 06:05:11:0957, diag_itemexited, id=37026, type=1
+2014-12-11 06:05:11:0989, diag_itemexited, id=4, type=4
+2014-12-11 06:05:12:0566, diag_itemexited, id=1, type=4
+2014-12-11 06:05:12:0597, diag_itementered, id=1, type=0
+2014-12-11 06:05:12:0706, diag_itemexited, id=1, type=0
+2014-12-11 06:05:12:0784, diag_itemexited, id=1, type=4
+2014-12-11 06:05:13:0237, diag_itemexited, id=1, type=4
+2014-12-11 06:05:14:0453, list_mouseentered, id=33901, type=1
+2014-12-11 06:05:14:0453, list_mousemoved, id=33901, type=1
+2014-12-11 06:05:14:0500, list_mouseexited
+2014-12-11 06:05:16:0731, list_pattern_mouseentered, id=1, type=0
+2014-12-11 06:05:16:0731, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:16:0762, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:16:0793, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:16:0809, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:16:0825, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:16:0856, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:16:0856, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:16:0887, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0511, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0542, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0558, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0574, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0605, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0605, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0636, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0667, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0683, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0698, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0730, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0745, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0761, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0792, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0808, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0823, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0839, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0870, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:05:17:0886, list_pattern_mouseexited
+2014-12-11 06:05:25:0046, list_pattern_mouseentered, id=3, type=0
+2014-12-11 06:05:25:0046, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0093, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0108, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0108, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0155, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0155, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0186, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0202, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0233, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0249, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0280, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0296, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0311, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0327, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0358, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0374, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0389, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0420, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0436, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:25:0452, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0466, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0481, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0497, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0528, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0544, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0559, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0575, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0575, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0715, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0731, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0762, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0762, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0793, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0809, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0824, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0824, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0856, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0902, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0918, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0949, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0965, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0996, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:26:0996, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0027, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0027, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0074, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0090, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0105, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0136, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0136, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0168, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0183, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0214, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0230, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0246, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0277, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0277, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:27:0324, list_pattern_mouseexited
+2014-12-11 06:05:27:0495, diag_itementered, id=25552, type=1
+2014-12-11 06:05:27:0823, diag_itemexited, id=25552, type=1
+2014-12-11 06:05:27:0979, list_pattern_mouseentered, id=3, type=0
+2014-12-11 06:05:27:0979, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0026, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0026, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0057, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0072, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0088, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0135, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0150, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0166, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0197, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0244, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0260, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0275, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:05:28:0306, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0322, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0353, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0369, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0400, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0416, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0416, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0946, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0977, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:28:0993, list_pattern_mouseexited
+2014-12-11 06:05:29:0352, list_pattern_mouseentered, id=3, type=0
+2014-12-11 06:05:29:0352, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0398, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0414, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0445, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0461, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0461, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0492, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0508, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0523, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0539, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0570, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0601, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0710, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0742, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0757, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0773, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0804, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0804, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0835, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0866, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0882, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0898, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0929, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0929, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:29:0960, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0069, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0085, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0116, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0132, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0163, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0178, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0210, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0334, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0397, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0444, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:05:30:0834, list_pattern_itemclicked, id=3, type=0
+2014-12-11 06:05:30:0865, edge_create, Tuple[0,1,0.666864352998096,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:05:30:0865, edge_create, Tuple[1,2,0.4703415719160261,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:05:30:0880, edge_create, Tuple[1,3,0.38242292951273427,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:05:30:0880, edge_create, Tuple[1,4,0.2802709039325655,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:05:30:0896, edge_create, Tuple[1,5,0.3722755726432315,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:05:30:0896, edge_create, Tuple[0,6,0.4066617477828023,2,1.0,1418338715255,1418338715255]
+2014-12-11 06:05:30:0896, pattern_create, 4
+2014-12-11 06:05:30:0896, edge_create, Tuple[6,7,0.9665046447559172,2,1.0,1418338715255,1418338715255]
+2014-12-11 06:05:30:0912, pattern_open, 3
+2014-12-11 06:05:31:0099, list_pattern_mouseexited
+2014-12-11 06:05:31:0099, list_mouseentered, type=detailAnswersList
+2014-12-11 06:05:31:0442, list_mouseexited, type=detailAnswersList
+2014-12-11 06:05:33:0423, diag_detail_itementered, id=-1614703942, type=3
+2014-12-11 06:05:34:0593, diag_detail_itemexited, id=-1614703942, type=3
+2014-12-11 06:05:35:0139, diag_detail_itementered, id=-1614703942, type=3
+2014-12-11 06:05:35:0155, diag_detail_itemexited, id=-1614703942, type=3
+2014-12-11 06:05:35:0171, diag_detail_itementered, id=0.2802709039325655, type=1
+2014-12-11 06:05:35:0186, diag_detail_itemexited, id=0.2802709039325655, type=1
+2014-12-11 06:05:35:0373, diag_detail_itementered, id=0.2802709039325655, type=1
+2014-12-11 06:05:35:0389, diag_detail_itemexited, id=0.2802709039325655, type=1
+2014-12-11 06:05:35:0451, diag_detail_itementered, id=-1614703942, type=3
+2014-12-11 06:05:35:0467, diag_detail_itemexited, id=-1614703942, type=3
+2014-12-11 06:05:35:0748, diag_detail_itementered, id=0.666864352998096, type=1
+2014-12-11 06:05:35:0779, diag_detail_itemexited, id=0.666864352998096, type=1
+2014-12-11 06:05:35:0810, diag_detail_itementered, id=3, type=0
+2014-12-11 06:05:35:0841, diag_detail_itemexited, id=3, type=0
+2014-12-11 06:05:35:0997, diag_detail_itementered, id=3, type=0
+2014-12-11 06:05:37:0464, diag_detail_itemexited, id=3, type=0
+2014-12-11 06:05:37:0511, diag_detail_itementered, id=0.666864352998096, type=1
+2014-12-11 06:05:37:0542, diag_detail_itemexited, id=0.666864352998096, type=1
+2014-12-11 06:05:37:0557, diag_detail_itementered, id=0.666864352998096, type=1
+2014-12-11 06:05:37:0604, diag_detail_itemexited, id=0.666864352998096, type=1
+2014-12-11 06:05:37:0620, diag_detail_itementered, id=0.666864352998096, type=1
+2014-12-11 06:05:37:0885, diag_detail_itemexited, id=0.666864352998096, type=1
+2014-12-11 06:05:37:0932, diag_detail_itementered, id=-1614703942, type=3
+2014-12-11 06:05:38:0337, diag_detail_itemexited, id=-1614703942, type=3
+2014-12-11 06:05:38:0447, diag_detail_itementered, id=3, type=0
+2014-12-11 06:05:38:0462, diag_detail_itemexited, id=3, type=0
+2014-12-11 06:05:38:0509, diag_detail_itementered, id=0.4066617477828023, type=2
+2014-12-11 06:05:38:0525, diag_detail_itemexited, id=0.4066617477828023, type=2
+2014-12-11 06:05:38:0665, diag_detail_itementered, id=0.4066617477828023, type=2
+2014-12-11 06:05:38:0696, diag_detail_itemexited, id=0.4066617477828023, type=2
+2014-12-11 06:05:39:0008, diag_detail_itementered, id=0.4066617477828023, type=2
+2014-12-11 06:05:39:0071, diag_detail_itemexited, id=0.4066617477828023, type=2
+2014-12-11 06:05:39:0071, diag_detail_itementered, id=0.4066617477828023, type=2
+2014-12-11 06:05:39:0102, diag_detail_itemexited, id=0.4066617477828023, type=2
+2014-12-11 06:05:39:0133, diag_detail_itementered, id=340214019, type=3
+2014-12-11 06:05:39:0929, diag_detail_itemexited, id=340214019, type=3
+2014-12-11 06:05:39:0975, diag_detail_itementered, id=0.9665046447559172, type=2
+2014-12-11 06:05:40:0038, diag_detail_itemexited, id=0.9665046447559172, type=2
+2014-12-11 06:05:40:0241, diag_detail_itementered, id=0.9665046447559172, type=2
+2014-12-11 06:05:40:0272, diag_detail_itemexited, id=0.9665046447559172, type=2
+2014-12-11 06:05:40:0319, diag_detail_itementered, id=4, type=0
+2014-12-11 06:05:40:0365, diag_detail_itemexited, id=4, type=0
+2014-12-11 06:05:40:0787, diag_detail_itementered, id=4, type=0
+2014-12-11 06:05:41:0629, diag_detail_itemexited, id=4, type=0
+2014-12-11 06:05:42:0253, diag_detail_itementered, id=3, type=0
+2014-12-11 06:05:44:0733, diag_detail_itemexited, id=3, type=0
+2014-12-11 06:05:45:0576, diag_detail_itementered, id=43344, type=1
+2014-12-11 06:05:49:0367, diag_detail_itemexited, id=43344, type=1
+2014-12-11 06:05:50:0490, diag_detail_itementered, id=50532, type=1
+2014-12-11 06:05:51:0441, diag_detail_itemexited, id=50532, type=1
+2014-12-11 06:05:51:0878, diag_detail_itementered, id=46898, type=1
+2014-12-11 06:05:52:0861, diag_detail_itemexited, id=46898, type=1
+2014-12-11 06:05:53:0142, diag_detail_itementered, id=0.3722755726432315, type=1
+2014-12-11 06:05:53:0173, diag_detail_itemexited, id=0.3722755726432315, type=1
+2014-12-11 06:05:53:0173, diag_detail_itementered, id=47605, type=1
+2014-12-11 06:05:53:0189, diag_detail_itemexited, id=47605, type=1
+2014-12-11 06:05:53:0438, diag_detail_itementered, id=47605, type=1
+2014-12-11 06:05:55:0154, diag_detail_itemexited, id=47605, type=1
+2014-12-11 06:05:55:0295, diag_detail_itementered, id=3, type=0
+2014-12-11 06:05:55:0326, diag_detail_itemexited, id=3, type=0
+2014-12-11 06:05:55:0591, diag_detail_itementered, id=3, type=0
+2014-12-11 06:05:55:0872, diag_detail_itemexited, id=3, type=0
+2014-12-11 06:05:56:0324, diag_detail_itementered, id=43344, type=1
+2014-12-11 06:05:56:0371, diag_detail_itemexited, id=43344, type=1
+2014-12-11 06:05:56:0527, diag_detail_itementered, id=43344, type=1
+2014-12-11 06:05:57:0744, diag_detail_itemexited, id=43344, type=1
+2014-12-11 06:05:57:0900, diag_detail_itementered, id=0.9665046447559172, type=2
+2014-12-11 06:05:57:0916, diag_detail_itemexited, id=0.9665046447559172, type=2
+2014-12-11 06:05:57:0994, diag_detail_itementered, id=4, type=0
+2014-12-11 06:05:58:0836, diag_detail_itemexited, id=4, type=0
+2014-12-11 06:05:59:0117, list_mouseentered, type=detailRelatedList, item=43344
+2014-12-11 06:05:59:0366, list_mouseexited, type=detailRelatedList
+2014-12-11 06:06:01:0036, diag_itementered, id=62289, type=1
+2014-12-11 06:06:01:0082, diag_itemexited, id=62289, type=1
+2014-12-11 06:06:01:0145, diag_itementered, id=15695, type=1
+2014-12-11 06:06:01:0192, diag_itemexited, id=15695, type=1
+2014-12-11 06:06:01:0566, diag_itemexited, id=1, type=4
+2014-12-11 06:06:01:0847, diag_itementered, id=15695, type=1
+2014-12-11 06:06:02:0237, diag_itemexited, id=15695, type=1
+2014-12-11 06:06:02:0939, diag_itemexited, id=1, type=4
+2014-12-11 06:06:02:0939, diag_itementered, id=1, type=0
+2014-12-11 06:06:06:0184, diag_itemexited, id=1, type=0
+2014-12-11 06:06:06:0511, diag_itemexited, id=1, type=4
+2014-12-11 06:06:06:0620, diag_itemexited, id=3, type=4
+2014-12-11 06:06:06:0620, diag_itementered, id=40471, type=1
+2014-12-11 06:06:06:0683, diag_itemexited, id=40471, type=1
+2014-12-11 06:06:06:0901, diag_itementered, id=22115, type=1
+2014-12-11 06:06:06:0917, diag_itemexited, id=22115, type=1
+2014-12-11 06:06:06:0979, diag_itemexited, id=4, type=4
+2014-12-11 06:06:06:0979, diag_itementered, id=40471, type=1
+2014-12-11 06:06:07:0026, diag_itemexited, id=40471, type=1
+2014-12-11 06:06:07:0213, diag_itemexited, id=2, type=4
+2014-12-11 06:06:07:0291, diag_itementered, id=11930, type=1
+2014-12-11 06:06:08:0227, diag_itemexited, id=11930, type=1
+2014-12-11 06:06:08:0477, diag_itementered, id=3049, type=1
+2014-12-11 06:06:08:0976, diag_itemexited, id=3049, type=1
+2014-12-11 06:06:09:0163, diag_itementered, id=65310, type=1
+2014-12-11 06:06:09:0740, diag_itemexited, id=65310, type=1
+2014-12-11 06:06:09:0928, diag_itementered, id=34571, type=1
+2014-12-11 06:06:09:0974, diag_itemexited, id=34571, type=1
+2014-12-11 06:06:10:0645, diag_itementered, id=60764, type=1
+2014-12-11 06:06:11:0020, diag_itemexited, id=60764, type=1
+2014-12-11 06:06:11:0410, diag_itementered, id=11341, type=1
+2014-12-11 06:06:12:0174, diag_itemexited, id=11341, type=1
+2014-12-11 06:06:12:0517, list_pattern_mouseentered, id=3, type=0
+2014-12-11 06:06:12:0517, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:06:12:0564, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:06:12:0564, list_pattern_mousemoved, id=3, type=0
+2014-12-11 06:06:12:0595, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:06:12:0627, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:06:12:0642, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:06:12:0642, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:06:12:0689, list_pattern_mousemoved, id=2, type=0
+2014-12-11 06:06:12:0705, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:06:12:0736, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:06:12:0751, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:06:12:0767, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:06:12:0798, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:06:12:0798, list_pattern_mousemoved, id=1, type=0
+2014-12-11 06:06:12:0845, list_pattern_mouseexited
+2014-12-11 06:06:16:0776, search_update, unix
+2014-12-11 06:06:17:0634, list_mouseentered, id=3049, type=1
+2014-12-11 06:06:17:0634, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:17:0665, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:17:0681, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:17:0697, list_mouseexited
+2014-12-11 06:06:20:0052, diag_itementered, id=3049, type=1
+2014-12-11 06:06:23:0562, diag_itemexited, id=3049, type=1
+2014-12-11 06:06:23:0937, list_mouseentered, id=3049, type=1
+2014-12-11 06:06:23:0937, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:23:0968, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:23:0983, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:23:0999, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:23:0999, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0015, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0030, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0046, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0046, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0077, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0093, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0108, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0108, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0124, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0139, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0139, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0155, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0171, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0186, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0202, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0217, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0233, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0249, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0249, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0280, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0295, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0295, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0311, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0327, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0342, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0358, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0373, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0389, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0405, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0420, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0607, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0623, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0639, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0654, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0670, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0685, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0701, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0717, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0732, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0748, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0763, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0779, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0795, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0810, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0826, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0841, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0857, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0873, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0888, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0888, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0904, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0919, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0935, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0951, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0966, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0982, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:24:0997, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0013, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0029, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0060, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0075, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0091, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0107, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0122, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0138, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0153, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0169, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0185, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0200, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0216, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0231, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0247, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0263, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0278, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0294, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0450, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0465, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0481, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0497, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0512, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0528, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0559, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0590, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0606, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0621, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0637, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0653, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0668, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0684, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0699, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0715, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0731, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0746, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0746, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0762, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0777, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0793, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0809, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0824, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0840, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0855, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0902, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0949, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0965, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0980, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:25:0996, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0011, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0027, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0043, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0058, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0074, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0089, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0105, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0152, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0167, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0183, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:26:0199, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:29:0272, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:29:0288, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:29:0288, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:29:0319, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:29:0334, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:29:0334, list_mousemoved, id=3049, type=1
+2014-12-11 06:06:29:0350, list_mouseexited
+2014-12-11 06:06:29:0802, diag_itementered, id=3049, type=1
+2014-12-11 06:06:30:0614, edge_create, Tuple[0,1,0.05342977662588855,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0614, answer_create, 3054
+2014-12-11 06:06:30:0614, edge_create, Tuple[1,2,0.7382776504174294,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0614, answer_create, 3060
+2014-12-11 06:06:30:0629, edge_create, Tuple[1,3,0.05630536211912651,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0629, answer_create, 3090
+2014-12-11 06:06:30:0629, edge_create, Tuple[1,4,0.5276327282238704,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0629, answer_create, 6352
+2014-12-11 06:06:30:0629, edge_create, Tuple[1,5,0.8863728296186614,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0629, answer_create, 9725
+2014-12-11 06:06:30:0629, edge_create, Tuple[1,6,0.47350754189199296,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0629, answer_create, 24078
+2014-12-11 06:06:30:0629, edge_create, Tuple[1,7,0.9661714756740287,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0629, answer_create, 41526
+2014-12-11 06:06:30:0629, edge_create, Tuple[1,8,0.11598742335672974,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0629, answer_create, 65870
+2014-12-11 06:06:30:0629, edge_create, Tuple[1,9,0.9636451617530678,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0629, answer_create, 118609
+2014-12-11 06:06:30:0629, edge_create, Tuple[1,10,0.05931053836411182,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0629, answer_create, 15475192
+2014-12-11 06:06:30:0629, edge_create, Tuple[1,11,0.8473959592051838,4,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0645, edge_create, Tuple[0,12,0.6035606812586325,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0645, edge_create, Tuple[12,13,0.3383240839002999,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0645, edge_create, Tuple[12,14,0.3398658127817533,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0660, edge_create, Tuple[12,15,0.4475502116898954,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0660, edge_create, Tuple[12,16,0.7815912037907793,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0678, edge_create, Tuple[12,17,0.7838669025142186,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0678, edge_create, Tuple[12,18,0.38438495221069324,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0694, edge_create, Tuple[12,19,0.4968309595740391,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0694, edge_create, Tuple[12,20,0.6435397244014276,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0709, edge_create, Tuple[12,21,0.11059007994047798,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0709, edge_create, Tuple[12,22,0.5911400651894083,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0725, edge_create, Tuple[12,23,0.13085909908081583,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0740, edge_create, Tuple[12,24,0.8316622487722988,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0740, edge_create, Tuple[12,25,0.470979645580052,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0756, edge_create, Tuple[12,26,0.02749311559640899,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0756, edge_create, Tuple[12,27,0.25618278289619023,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0772, edge_create, Tuple[12,28,0.39027836007577765,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0772, edge_create, Tuple[12,29,0.007135261175282515,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0787, edge_create, Tuple[12,30,0.5557614083971381,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0787, edge_create, Tuple[12,31,0.16930631500271032,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0803, edge_create, Tuple[12,32,0.16512041185352155,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0912, edge_create, Tuple[12,33,0.30400137741734623,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0928, edge_create, Tuple[12,34,0.38166857237252305,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0928, edge_create, Tuple[12,35,0.3660427524142118,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0943, edge_create, Tuple[12,36,0.41568884125034256,1,0.0,1418338715255,1418338715255]
+2014-12-11 06:06:30:0959, discussion_open, 3049
+2014-12-11 06:06:30:0959, diag_itemclicked, id=3049, type=1
+2014-12-11 06:06:31:0536, diag_itemexited, id=3049, type=1
+2014-12-11 06:06:31:0614, diag_detail_itementered, id=0.3398658127817533, type=1
+2014-12-11 06:06:31:0661, diag_detail_itemexited, id=0.3398658127817533, type=1
+2014-12-11 06:06:31:0723, diag_detail_itementered, id=0.3383240839002999, type=1
+2014-12-11 06:06:31:0754, diag_detail_itemexited, id=0.3383240839002999, type=1
+2014-12-11 06:06:40:0132, diag_detail_itementered, id=3049, type=1
+2014-12-11 06:06:40:0163, diag_detail_itemexited, id=3049, type=1
+2014-12-11 06:06:40:0272, diag_detail_itementered, id=3049, type=1
+2014-12-11 06:06:50:0319, diag_detail_itemexited, id=3049, type=1
+2014-12-11 06:06:50:0553, answer_open, VisualItem[tree.nodes,11,id=15475192,type=20,title=,body=<p>I have been using purejavacomm:
+<a href="http://www.sparetimelabs.com/purejavacomm/index.html" rel="nofollow">It is an implementation of javax.comm written in pure java + JNA</a></p>
+
+<p>Unlike rxtx, you don't need to install a dll. It is written in pure Java + JNA, which solved the problem of portability between Windows and Linux for me. It should be easy to port to other OS-es that JNA supports, such as Solaris and FreeBSD, but I haven't tried it. </p>
+
+<p>You might expect a pure java library to lag behind a native implementation such as rxtx in performance, but with modern CPU's, the bottleneck is very likely to be the bitrate of your serial port, not CPU cycles. Also, it's much easier to debug than a mixed Java/Native library or pure compiled native code. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-11 06:06:50:0553, answer_open, VisualItem[tree.nodes,11,id=15475192,type=20,title=,body=<p>I have been using purejavacomm:
+<a href="http://www.sparetimelabs.com/purejavacomm/index.html" rel="nofollow">It is an implementation of javax.comm written in pure java + JNA</a></p>
+
+<p>Unlike rxtx, you don't need to install a dll. It is written in pure Java + JNA, which solved the problem of portability between Windows and Linux for me. It should be easy to port to other OS-es that JNA supports, such as Solaris and FreeBSD, but I haven't tried it. </p>
+
+<p>You might expect a pure java library to lag behind a native implementation such as rxtx in performance, but with modern CPU's, the bottleneck is very likely to be the bitrate of your serial port, not CPU cycles. Also, it's much easier to debug than a mixed Java/Native library or pure compiled native code. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1418338715255L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-11 06:06:50:0553, diag_detail_itementered, id=15475192, type=20
+2014-12-11 06:06:50:0599, diag_detail_itemexited, id=15475192, type=20
+2014-12-11 06:07:04:0671, diag_detail_itementered, id=0.11598742335672974, type=4
+2014-12-11 06:07:04:0702, diag_detail_itemexited, id=0.11598742335672974, type=4
+2014-12-11 06:07:04:0920, diag_detail_itementered, id=0.38438495221069324, type=1
+2014-12-11 06:07:04:0952, diag_detail_itemexited, id=0.38438495221069324, type=1
+2014-12-11 06:07:05:0014, diag_detail_itementered, id=0.5911400651894083, type=1
+2014-12-11 06:07:05:0045, diag_detail_itemexited, id=0.5911400651894083, type=1
+2014-12-11 06:07:05:0092, diag_detail_itementered, id=54952, type=1
+2014-12-11 06:07:05:0108, diag_detail_itemexited, id=54952, type=1
+2014-12-11 06:07:08:0945, search_update, 

@@ -1,0 +1,214 @@
+2014-10-31 07:03:19:0510, setup_loaddata
+2014-10-31 07:03:21:0526, list_mouseentered, 1641682794
+2014-10-31 07:03:21:0586, list_mouseexited
+2014-10-31 07:03:22:0056, diag_itementered, id=6612, type=1
+2014-10-31 07:03:22:0096, diag_itemexited, id=6612, type=1
+2014-10-31 07:03:22:0276, diag_itementered, id=34413, type=1
+2014-10-31 07:03:22:0436, diag_itemexited, id=34413, type=1
+2014-10-31 07:03:22:0796, diag_itementered, id=34413, type=1
+2014-10-31 07:03:22:0866, diag_itemexited, id=34413, type=1
+2014-10-31 07:03:23:0046, diag_itementered, id=34413, type=1
+2014-10-31 07:03:24:0366, edge_create, Tuple[0,1,0.6550342039964187,4,0.0,1414753398950,1414753398950]
+2014-10-31 07:03:24:0366, answer_create, 34414
+2014-10-31 07:03:24:0366, edge_create, Tuple[1,2,0.26388984335112786,4,0.0,1414753398950,1414753398950]
+2014-10-31 07:03:24:0376, answer_create, 5756989
+2014-10-31 07:03:24:0376, edge_create, Tuple[1,3,0.08908329691484496,4,0.0,1414753398950,1414753398950]
+2014-10-31 07:03:24:0376, answer_create, 7008881
+2014-10-31 07:03:24:0376, edge_create, Tuple[1,4,0.8666581221992066,4,0.0,1414753398950,1414753398950]
+2014-10-31 07:03:24:0376, answer_create, 34445
+2014-10-31 07:03:24:0376, edge_create, Tuple[1,5,0.22497360774012354,4,0.0,1414753398950,1414753398950]
+2014-10-31 07:03:24:0376, answer_create, 34444
+2014-10-31 07:03:24:0376, edge_create, Tuple[1,6,0.2047404712935933,4,0.0,1414753398950,1414753398950]
+2014-10-31 07:03:24:0376, answer_create, 34419
+2014-10-31 07:03:24:0376, edge_create, Tuple[1,7,0.14136446675414682,4,0.0,1414753398950,1414753398950]
+2014-10-31 07:03:24:0396, discussion_open, 34413
+2014-10-31 07:03:24:0396, diag_itemclicked, id=34413, type=1
+2014-10-31 07:03:26:0986, diag_itemexited, id=34413, type=1
+2014-10-31 07:03:27:0576, diag_detail_itementered, id=0.26388984335112786, type=4
+2014-10-31 07:03:27:0606, diag_detail_itemexited, id=0.26388984335112786, type=4
+2014-10-31 07:03:27:0716, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:27:0716, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:27:0716, diag_detail_itementered, id=34414, type=20
+2014-10-31 07:03:30:0456, answer_open, VisualItem[tree.nodes,7,id=34419,type=21,title=,body=<p>This is caused when there is a class file that your code depends on and it is present at compile time but not found at runtime. Look for differences in your build time and runtime  classpaths. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=19]
+2014-10-31 07:03:30:0456, answer_open, VisualItem[tree.nodes,7,id=34419,type=21,title=,body=<p>This is caused when there is a class file that your code depends on and it is present at compile time but not found at runtime. Look for differences in your build time and runtime  classpaths. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=19]
+2014-10-31 07:03:30:0456, diag_detail_itementered, id=34419, type=21
+2014-10-31 07:03:32:0246, diag_detail_itementered, id=0.14136446675414682, type=4
+2014-10-31 07:03:32:0256, diag_detail_itemexited, id=0.14136446675414682, type=4
+2014-10-31 07:03:33:0346, diag_detail_itementered, id=0.14136446675414682, type=4
+2014-10-31 07:03:33:0366, diag_detail_itemexited, id=0.14136446675414682, type=4
+2014-10-31 07:03:33:0756, answer_open, VisualItem[tree.nodes,7,id=34419,type=21,title=,body=<p>This is caused when there is a class file that your code depends on and it is present at compile time but not found at runtime. Look for differences in your build time and runtime  classpaths. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=19]
+2014-10-31 07:03:33:0766, answer_open, VisualItem[tree.nodes,7,id=34419,type=21,title=,body=<p>This is caused when there is a class file that your code depends on and it is present at compile time but not found at runtime. Look for differences in your build time and runtime  classpaths. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=19]
+2014-10-31 07:03:33:0766, diag_detail_itementered, id=34419, type=21
+2014-10-31 07:03:35:0316, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:35:0316, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:35:0316, diag_detail_itementered, id=34414, type=20
+2014-10-31 07:03:37:0467, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:03:37:0477, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:03:37:0477, diag_detail_itementered, id=5756989, type=20
+2014-10-31 07:03:38:0867, diag_detail_itementered, id=0.26388984335112786, type=4
+2014-10-31 07:03:38:0897, diag_detail_itemexited, id=0.26388984335112786, type=4
+2014-10-31 07:03:38:0897, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:38:0897, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:38:0897, diag_detail_itementered, id=34414, type=20
+2014-10-31 07:03:40:0707, answer_open, VisualItem[tree.nodes,7,id=34419,type=21,title=,body=<p>This is caused when there is a class file that your code depends on and it is present at compile time but not found at runtime. Look for differences in your build time and runtime  classpaths. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=19]
+2014-10-31 07:03:40:0707, answer_open, VisualItem[tree.nodes,7,id=34419,type=21,title=,body=<p>This is caused when there is a class file that your code depends on and it is present at compile time but not found at runtime. Look for differences in your build time and runtime  classpaths. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=19]
+2014-10-31 07:03:40:0707, diag_detail_itementered, id=34419, type=21
+2014-10-31 07:03:42:0127, answer_open, VisualItem[tree.nodes,6,id=34444,type=20,title=,body=<p>I have found that sometimes I get a NoClassDefFound error when code is compiled with an incompatible version of the class found at runtime.  The specific instance I recall is with the apache axis library.  There were actually 2 versions on my runtime classpath and it was picking up the out of date and incompatible version and not the correct one, causing a NoClassDefFound error.  This was in a command line app where I was using a command similar to this.  </p>
+
+<pre><code>set classpath=%classpath%;axis.jar
+</code></pre>
+
+<p>I was able to get it to pick up the proper version by using:</p>
+
+<pre><code>set classpath=axis.jar;%classpath%;
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=6]
+2014-10-31 07:03:42:0137, answer_open, VisualItem[tree.nodes,6,id=34444,type=20,title=,body=<p>I have found that sometimes I get a NoClassDefFound error when code is compiled with an incompatible version of the class found at runtime.  The specific instance I recall is with the apache axis library.  There were actually 2 versions on my runtime classpath and it was picking up the out of date and incompatible version and not the correct one, causing a NoClassDefFound error.  This was in a command line app where I was using a command similar to this.  </p>
+
+<pre><code>set classpath=%classpath%;axis.jar
+</code></pre>
+
+<p>I was able to get it to pick up the proper version by using:</p>
+
+<pre><code>set classpath=axis.jar;%classpath%;
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=6]
+2014-10-31 07:03:42:0137, diag_detail_itementered, id=34444, type=20
+2014-10-31 07:03:43:0767, answer_open, VisualItem[tree.nodes,5,id=34445,type=20,title=,body=<p>I believe it can also happen if you don't run your java program with the correct syntax. For instance, you have to call your class from the root bin folder with the full package name (ie. my.package.myClass). </p>
+
+<p>I'd be more specific if I could but I'm not much of a java guy. I just remember messing this up a few times.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:43:0777, answer_open, VisualItem[tree.nodes,5,id=34445,type=20,title=,body=<p>I believe it can also happen if you don't run your java program with the correct syntax. For instance, you have to call your class from the root bin folder with the full package name (ie. my.package.myClass). </p>
+
+<p>I'd be more specific if I could but I'm not much of a java guy. I just remember messing this up a few times.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:43:0777, diag_detail_itementered, id=34445, type=20
+2014-10-31 07:03:45:0287, answer_open, VisualItem[tree.nodes,4,id=7008881,type=20,title=,body=<p>while running a java application, the JVM looks for the class file inside the classpath variable. If it doesn't find that in that classpath, then it fires the NOClassDefFound Error.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:45:0287, answer_open, VisualItem[tree.nodes,4,id=7008881,type=20,title=,body=<p>while running a java application, the JVM looks for the class file inside the classpath variable. If it doesn't find that in that classpath, then it fires the NOClassDefFound Error.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:45:0287, diag_detail_itementered, id=7008881, type=20
+2014-10-31 07:03:47:0021, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:03:47:0031, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:03:47:0031, diag_detail_itementered, id=5756989, type=20
+2014-10-31 07:03:49:0841, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:03:49:0851, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:03:49:0851, diag_detail_itementered, id=5756989, type=20
+2014-10-31 07:03:51:0011, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:51:0011, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:51:0011, diag_detail_itementered, id=34414, type=20
+2014-10-31 07:03:52:0451, answer_open, VisualItem[tree.nodes,7,id=34419,type=21,title=,body=<p>This is caused when there is a class file that your code depends on and it is present at compile time but not found at runtime. Look for differences in your build time and runtime  classpaths. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=19]
+2014-10-31 07:03:52:0451, answer_open, VisualItem[tree.nodes,7,id=34419,type=21,title=,body=<p>This is caused when there is a class file that your code depends on and it is present at compile time but not found at runtime. Look for differences in your build time and runtime  classpaths. </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=19]
+2014-10-31 07:03:52:0451, diag_detail_itementered, id=34419, type=21
+2014-10-31 07:03:53:0761, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:53:0771, answer_open, VisualItem[tree.nodes,2,id=34414,type=20,title=,body=<p>This is almost always caused by an incorrect Classpath setting.  Make sure the Jar file containing the class Java is complaining about is in the Classpath.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=0]
+2014-10-31 07:03:53:0771, diag_detail_itementered, id=34414, type=20
+2014-10-31 07:03:55:0631, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:03:55:0631, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:03:55:0631, diag_detail_itementered, id=5756989, type=20
+2014-10-31 07:03:57:0591, diag_detail_itementered, id=0.08908329691484496, type=4
+2014-10-31 07:03:57:0621, diag_detail_itemexited, id=0.08908329691484496, type=4
+2014-10-31 07:03:58:0291, list_mouseexited, type=detailRelatedList
+2014-10-31 07:04:14:0507, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:04:14:0507, answer_open, VisualItem[tree.nodes,3,id=5756989,type=20,title=,body=<p>While it's possible that this is due to a classpath mismatch between compile-time and run-time, it's not necessarily true.</p>
+
+<p>It is important to keep two or three different exceptions strait in our head in this case:</p>
+
+<ol>
+<li><p><strong><code>java.lang.ClassNotFoundException</code></strong>  This exception indicates that the class was not found on the classpath.  This indicates that we were trying to load the class definition, and the class did not exist on the classpath.</p></li>
+<li><p><strong><code>java.lang.NoClassDefFoundError</code></strong>  This exception indicates that the JVM looked in its internal class definition data structure for the definition of a class and did not find it.  This is different than saying that it could not be loaded from the classpath.  Usually this indicates that we previously attempted to load a class from the classpath, but it failed for some reason - now we're trying again, but we're not even going to try to load it, because we failed loading it earlier.  The earlier failure could be a ClassNotFoundException or an ExceptionInInitializerError (indicating a failure in the static initialization block) or any number of other problems.  The point is, a NoClassDefFoundError is not necessarily a classpath problem.</p></li>
+</ol>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1414753398950L,lastactivitydate=0L,tags=,score=35]
+2014-10-31 07:04:14:0507, diag_detail_itementered, id=5756989, type=20
+2014-10-31 07:04:15:0237, list_mouseentered, type=detailAnswersList
+2014-10-31 07:04:15:0477, list_mouseexited, type=detailAnswersList

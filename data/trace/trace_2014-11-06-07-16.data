@@ -1,0 +1,84 @@
+2014-11-06 07:16:13:0079, setup_loaddata
+2014-11-06 07:16:15:0294, list_mouseentered, 2109443059
+2014-11-06 07:16:15:0341, list_mouseexited
+2014-11-06 07:16:15:0606, diag_itementered, id=564, type=1
+2014-11-06 07:16:15:0653, diag_itemexited, id=564, type=1
+2014-11-06 07:16:15:0700, diag_itementered, id=19893, type=1
+2014-11-06 07:16:15:0794, diag_itemexited, id=19893, type=1
+2014-11-06 07:16:15:0825, diag_itementered, id=40480, type=1
+2014-11-06 07:16:17:0463, edge_create, Tuple[0,1,0.31190815346021294,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0463, edge_create, Tuple[1,2,0.4837380758811284,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,3,0.6988188239422168,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,4,0.08213509789967188,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,5,0.26186455402955355,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,6,0.05497747422590804,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,7,0.9324312510126634,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,8,0.13896811314070723,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,9,0.7207444068588039,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,10,0.6388502215407786,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,11,0.5372511780131815,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,12,0.8154242543734411,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0478, edge_create, Tuple[1,13,0.7095234609248415,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0494, edge_create, Tuple[1,14,0.8050178334089363,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0494, edge_create, Tuple[1,15,0.5391194057356572,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0494, edge_create, Tuple[1,16,0.4972453142938874,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0494, edge_create, Tuple[1,17,0.9195571351284835,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0494, edge_create, Tuple[1,18,0.24563678195100058,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0494, edge_create, Tuple[1,19,0.270216153507848,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0494, edge_create, Tuple[1,20,0.9940178879833942,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0494, edge_create, Tuple[1,21,0.6645968455205953,1,0.0,1415276158399,1415276158399]
+2014-11-06 07:16:17:0510, discussion_open, 40480
+2014-11-06 07:16:17:0510, diag_itemclicked, id=40480, type=1
+2014-11-06 07:16:19:0335, diag_itemexited, id=40480, type=1
+2014-11-06 07:16:21:0316, diag_detail_itementered, id=50398, type=1
+2014-11-06 07:16:21:0363, diag_detail_itemexited, id=50398, type=1
+2014-11-06 07:16:21:0768, diag_detail_itementered, id=0.270216153507848, type=1
+2014-11-06 07:16:21:0815, diag_detail_itemexited, id=0.270216153507848, type=1
+2014-11-06 07:16:21:0831, diag_detail_itementered, id=50398, type=1
+2014-11-06 07:16:22:0533, diag_detail_itemexited, id=50398, type=1
+2014-11-06 07:16:22:0970, diag_detail_itementered, id=48203, type=1
+2014-11-06 07:16:23:0266, diag_detail_itemexited, id=48203, type=1
+2014-11-06 07:16:23:0562, diag_detail_itementered, id=41056, type=1
+2014-11-06 07:16:23:0890, diag_detail_itemexited, id=41056, type=1
+2014-11-06 07:16:24:0218, diag_detail_itementered, id=37310, type=1
+2014-11-06 07:16:24:0342, diag_detail_itemexited, id=37310, type=1
+2014-11-06 07:16:24:0701, diag_detail_itementered, id=62447, type=1
+2014-11-06 07:16:24:0888, diag_detail_itemexited, id=62447, type=1
+2014-11-06 07:16:25:0325, diag_detail_itementered, id=60269, type=1
+2014-11-06 07:16:25:0559, diag_detail_itemexited, id=60269, type=1
+2014-11-06 07:16:25:0856, diag_detail_itementered, id=56865, type=1
+2014-11-06 07:16:26:0183, diag_detail_itemexited, id=56865, type=1
+2014-11-06 07:16:26:0448, diag_detail_itementered, id=46642, type=1
+2014-11-06 07:16:26:0682, diag_detail_itemexited, id=46642, type=1
+2014-11-06 07:16:26:0901, diag_detail_itementered, id=10506, type=1
+2014-11-06 07:16:27:0104, diag_detail_itemexited, id=10506, type=1
+2014-11-06 07:16:27:0260, diag_detail_itementered, id=57484, type=1
+2014-11-06 07:16:27:0384, diag_detail_itemexited, id=57484, type=1
+2014-11-06 07:16:27:0759, diag_detail_itementered, id=33829, type=1
+2014-11-06 07:16:28:0024, diag_detail_itemexited, id=33829, type=1
+2014-11-06 07:16:28:0336, diag_detail_itementered, id=56943, type=1
+2014-11-06 07:16:28:0492, diag_detail_itemexited, id=56943, type=1
+2014-11-06 07:16:28:0742, diag_detail_itementered, id=39639, type=1
+2014-11-06 07:16:28:0991, diag_detail_itemexited, id=39639, type=1
+2014-11-06 07:16:29:0475, diag_detail_itementered, id=48179, type=1
+2014-11-06 07:16:29:0537, diag_detail_itemexited, id=48179, type=1
+2014-11-06 07:16:30:0052, diag_detail_itementered, id=7269, type=1
+2014-11-06 07:16:30:0146, diag_detail_itemexited, id=7269, type=1
+2014-11-06 07:16:30:0598, diag_detail_itementered, id=30696, type=1
+2014-11-06 07:16:30:0723, diag_detail_itemexited, id=30696, type=1
+2014-11-06 07:16:30:0957, diag_detail_itementered, id=44824, type=1
+2014-11-06 07:16:31:0253, diag_detail_itemexited, id=44824, type=1
+2014-11-06 07:16:31:0472, diag_detail_itementered, id=59557, type=1
+2014-11-06 07:16:31:0752, diag_detail_itemexited, id=59557, type=1
+2014-11-06 07:16:32:0096, diag_detail_itementered, id=60049, type=1
+2014-11-06 07:16:32:0314, diag_detail_itemexited, id=60049, type=1
+2014-11-06 07:16:32:0501, diag_detail_itementered, id=37551, type=1
+2014-11-06 07:16:32:0548, diag_detail_itemexited, id=37551, type=1
+2014-11-06 07:16:33:0094, diag_detail_itementered, id=37551, type=1
+2014-11-06 07:16:35:0028, diag_detail_itemexited, id=37551, type=1
+2014-11-06 07:16:49:0131, list_mouseentered, type=detailRelatedList, item=30696
+2014-11-06 07:16:49:0427, list_mouseexited, type=detailRelatedList
+2014-11-06 07:17:01:0954, list_mouseentered, type=detailRelatedList, item=48179
+2014-11-06 07:17:03:0623, list_mouseexited, type=detailRelatedList
+2014-11-06 07:17:04:0091, list_mouseentered, type=detailRelatedList, item=44824
+2014-11-06 07:17:04:0559, list_mouseexited, type=detailRelatedList

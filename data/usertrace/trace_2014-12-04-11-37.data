@@ -1,0 +1,718 @@
+2014-12-04 11:37:45:0093, setup_loaddata_begin
+2014-12-04 11:37:47:0433, setup_loaddata_end
+2014-12-04 11:37:47:0480, setup_createactions_begin
+2014-12-04 11:37:47:0714, setup_createactions_end
+2014-12-04 11:37:49:0259, setup_loaddata_begin
+2014-12-04 11:37:50:0070, diag_itementered, id=36701, type=1
+2014-12-04 11:37:50:0220, diag_itemexited, id=36701, type=1
+2014-12-04 11:37:52:0326, setup_loaddata_end
+2014-12-04 11:37:52:0404, setup_createactions_begin
+2014-12-04 11:37:52:0701, setup_createactions_end
+2014-12-04 11:37:55:0524, diag_itementered, id=3881, type=1
+2014-12-04 11:37:55:0571, diag_itemexited, id=3881, type=1
+2014-12-04 11:37:55:0665, diag_itementered, id=3881, type=1
+2014-12-04 11:38:02:0513, edge_create, Tuple[0,1,0.4484783947099853,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0513, answer_create, 3886
+2014-12-04 11:38:02:0529, edge_create, Tuple[1,2,0.9685996678147188,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0529, answer_create, 3890
+2014-12-04 11:38:02:0529, edge_create, Tuple[1,3,0.9521062863085957,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0529, answer_create, 4381
+2014-12-04 11:38:02:0529, edge_create, Tuple[1,4,0.20380026212368874,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0529, answer_create, 6358
+2014-12-04 11:38:02:0529, edge_create, Tuple[1,5,0.2787580996895951,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0529, answer_create, 7770
+2014-12-04 11:38:02:0529, edge_create, Tuple[1,6,0.5864789468171179,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0529, answer_create, 8132
+2014-12-04 11:38:02:0544, edge_create, Tuple[1,7,0.559699695510501,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0544, answer_create, 8160
+2014-12-04 11:38:02:0544, edge_create, Tuple[1,8,0.7305763423869374,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0544, answer_create, 13262
+2014-12-04 11:38:02:0544, edge_create, Tuple[1,9,0.5190845264302086,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0544, answer_create, 22074
+2014-12-04 11:38:02:0544, edge_create, Tuple[1,10,0.8979332746623874,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0544, answer_create, 32940
+2014-12-04 11:38:02:0544, edge_create, Tuple[1,11,0.9763405100815943,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0544, answer_create, 38267
+2014-12-04 11:38:02:0544, edge_create, Tuple[1,12,0.27920839087900007,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0544, answer_create, 45518
+2014-12-04 11:38:02:0544, edge_create, Tuple[1,13,0.58350194287407,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0544, answer_create, 47710
+2014-12-04 11:38:02:0544, edge_create, Tuple[1,14,0.6220084321938184,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0544, answer_create, 51213
+2014-12-04 11:38:02:0560, edge_create, Tuple[1,15,0.8529437383513969,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0561, answer_create, 212119
+2014-12-04 11:38:02:0562, edge_create, Tuple[1,16,0.5000785029505816,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0562, answer_create, 247447
+2014-12-04 11:38:02:0562, edge_create, Tuple[1,17,0.07863234249294804,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0562, answer_create, 452516
+2014-12-04 11:38:02:0562, edge_create, Tuple[1,18,0.023339009606005656,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0562, answer_create, 1072549
+2014-12-04 11:38:02:0562, edge_create, Tuple[1,19,0.08273182564521697,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0562, answer_create, 1871889
+2014-12-04 11:38:02:0562, edge_create, Tuple[1,20,0.8377696355163834,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0562, answer_create, 8196334
+2014-12-04 11:38:02:0562, edge_create, Tuple[1,21,0.8731391802476391,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0562, answer_create, 10195862
+2014-12-04 11:38:02:0562, edge_create, Tuple[1,22,0.9708856298942646,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0562, answer_create, 13311822
+2014-12-04 11:38:02:0562, edge_create, Tuple[1,23,0.7733422037803144,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0562, answer_create, 13312050
+2014-12-04 11:38:02:0578, edge_create, Tuple[1,24,0.13521149649419617,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0578, answer_create, 14104551
+2014-12-04 11:38:02:0578, edge_create, Tuple[1,25,0.5840891226872309,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0578, edge_create, Tuple[0,26,0.029239149539608822,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0578, edge_create, Tuple[26,27,0.010054402690837572,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0593, edge_create, Tuple[26,28,0.5714951360933257,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0593, edge_create, Tuple[26,29,0.2904225847530417,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0609, edge_create, Tuple[26,30,0.7952910100894754,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0609, edge_create, Tuple[26,31,0.5196643854288135,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0624, edge_create, Tuple[26,32,0.8243780948409024,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0624, edge_create, Tuple[26,33,0.04643984815092006,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0640, edge_create, Tuple[26,34,0.2760764443853674,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0656, edge_create, Tuple[26,35,0.06035386458543912,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0656, edge_create, Tuple[26,36,0.009634381799726643,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0671, edge_create, Tuple[26,37,0.6871543123213166,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0687, edge_create, Tuple[26,38,0.0928555205285726,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0687, edge_create, Tuple[26,39,0.7349729993319213,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0702, edge_create, Tuple[26,40,0.5167868360041238,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0702, edge_create, Tuple[26,41,0.4925602883538601,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0718, edge_create, Tuple[26,42,0.6920043067294256,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0734, edge_create, Tuple[26,43,0.4534748060946283,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0734, edge_create, Tuple[26,44,0.3343920299012285,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0749, edge_create, Tuple[26,45,0.5093073393774474,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0749, edge_create, Tuple[26,46,0.5450464447854113,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0765, edge_create, Tuple[26,47,0.45481021326215676,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:02:0796, discussion_open, 3881
+2014-12-04 11:38:02:0796, diag_itemclicked, id=3881, type=1
+2014-12-04 11:38:02:0796, diag_itemexited, id=3881, type=1
+2014-12-04 11:38:03:0810, answer_open, VisualItem[tree.nodes,2,id=3886,type=21,title=,body=<p>I'm not a Java developer, but just from the sound of it, it seems like an <code>IllegalArgumentException</code> is called for if you don't want null to be an allowed value, and the <code>NullPointerException</code> would be thrown if you were trying to <em>use</em> a variable that turns out to be null.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=79,searchfield=]
+2014-12-04 11:38:03:0810, answer_open, VisualItem[tree.nodes,2,id=3886,type=21,title=,body=<p>I'm not a Java developer, but just from the sound of it, it seems like an <code>IllegalArgumentException</code> is called for if you don't want null to be an allowed value, and the <code>NullPointerException</code> would be thrown if you were trying to <em>use</em> a variable that turns out to be null.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=79,searchfield=]
+2014-12-04 11:38:03:0826, diag_detail_itementered, id=3886, type=21
+2014-12-04 11:38:04:0574, diag_detail_itemexited, id=3886, type=21
+2014-12-04 11:38:04:0777, answer_open, VisualItem[tree.nodes,3,id=3890,type=20,title=,body=<P>If it's a setter method and null is being passed to it, I think it would make more sense to throw an IllegalArgumentException. A NullPointerException seems to make more sense in the case where you're attempting to actually use the null.</P>
+<P>So, if you're using it and it's null, NullPointer. If it's being passed in and it's null, IllegalArgument.</P>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=5,searchfield=]
+2014-12-04 11:38:04:0793, answer_open, VisualItem[tree.nodes,3,id=3890,type=20,title=,body=<P>If it's a setter method and null is being passed to it, I think it would make more sense to throw an IllegalArgumentException. A NullPointerException seems to make more sense in the case where you're attempting to actually use the null.</P>
+<P>So, if you're using it and it's null, NullPointer. If it's being passed in and it's null, IllegalArgument.</P>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=5,searchfield=]
+2014-12-04 11:38:04:0793, diag_detail_itementered, id=3890, type=20
+2014-12-04 11:38:05:0245, diag_detail_itemexited, id=3890, type=20
+2014-12-04 11:38:05:0308, answer_open, VisualItem[tree.nodes,4,id=4381,type=20,title=,body=<p>I think you should definitely throw a IllegalArgumentException and thus fail-fast. Let other developers know by marking it in the JavaDocs and also define constraints on your methods, so that they see what happens when they pass an invalid objects. I <a href="http://dlinsin.blogspot.com/2008/07/how-to-fail-fast-on-faulty-injection.html" rel="nofollow">wrote about this</a> a couple of weeks ago, if you want to follow up.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:38:05:0323, answer_open, VisualItem[tree.nodes,4,id=4381,type=20,title=,body=<p>I think you should definitely throw a IllegalArgumentException and thus fail-fast. Let other developers know by marking it in the JavaDocs and also define constraints on your methods, so that they see what happens when they pass an invalid objects. I <a href="http://dlinsin.blogspot.com/2008/07/how-to-fail-fast-on-faulty-injection.html" rel="nofollow">wrote about this</a> a couple of weeks ago, if you want to follow up.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:38:05:0323, diag_detail_itementered, id=4381, type=20
+2014-12-04 11:38:05:0698, diag_detail_itemexited, id=4381, type=20
+2014-12-04 11:38:05:0744, answer_open, VisualItem[tree.nodes,5,id=6358,type=20,title=,body=<p>I tend to follow the design of JDK libraries, especially Collections and Concurrency (Joshua Bloch, Doug Lea, those guys know how to design solid APIs). Anyway, many APIs in the JDK pro-actively throws NullPointerException. </p>
+
+<p>For example, the Javadoc for Map.containsKey states:</p>
+
+<blockquote>
+  <p>@throws NullPointerException if the key is null and this map
+    does not permit null keys (optional).</p>
+</blockquote>
+
+<p>It's perfectly valid to throw your own NPE. The convention is to include the parameter name which was null in the message of the exception. </p>
+
+<p>The pattern goes:</p>
+
+<pre><code>public void someMethod(Object mustNotBeNull) {  
+    if (mustNotBeNull == null) {  
+        throw new NullPointerException(mustNotBeNull + " must not be null");  
+
+    }  
+}
+</code></pre>
+
+<p>Whatever you do, don't allow a bad value to get set and throw an exception later when other code attempts to use it. That makes debugging a nightmare. You should always the follow the "fail-fast" principle.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=24,searchfield=]
+2014-12-04 11:38:05:0760, answer_open, VisualItem[tree.nodes,5,id=6358,type=20,title=,body=<p>I tend to follow the design of JDK libraries, especially Collections and Concurrency (Joshua Bloch, Doug Lea, those guys know how to design solid APIs). Anyway, many APIs in the JDK pro-actively throws NullPointerException. </p>
+
+<p>For example, the Javadoc for Map.containsKey states:</p>
+
+<blockquote>
+  <p>@throws NullPointerException if the key is null and this map
+    does not permit null keys (optional).</p>
+</blockquote>
+
+<p>It's perfectly valid to throw your own NPE. The convention is to include the parameter name which was null in the message of the exception. </p>
+
+<p>The pattern goes:</p>
+
+<pre><code>public void someMethod(Object mustNotBeNull) {  
+    if (mustNotBeNull == null) {  
+        throw new NullPointerException(mustNotBeNull + " must not be null");  
+
+    }  
+}
+</code></pre>
+
+<p>Whatever you do, don't allow a bad value to get set and throw an exception later when other code attempts to use it. That makes debugging a nightmare. You should always the follow the "fail-fast" principle.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=24,searchfield=]
+2014-12-04 11:38:05:0760, diag_detail_itementered, id=6358, type=20
+2014-12-04 11:38:06:0103, diag_detail_itemexited, id=6358, type=20
+2014-12-04 11:38:06:0431, answer_open, VisualItem[tree.nodes,5,id=6358,type=20,title=,body=<p>I tend to follow the design of JDK libraries, especially Collections and Concurrency (Joshua Bloch, Doug Lea, those guys know how to design solid APIs). Anyway, many APIs in the JDK pro-actively throws NullPointerException. </p>
+
+<p>For example, the Javadoc for Map.containsKey states:</p>
+
+<blockquote>
+  <p>@throws NullPointerException if the key is null and this map
+    does not permit null keys (optional).</p>
+</blockquote>
+
+<p>It's perfectly valid to throw your own NPE. The convention is to include the parameter name which was null in the message of the exception. </p>
+
+<p>The pattern goes:</p>
+
+<pre><code>public void someMethod(Object mustNotBeNull) {  
+    if (mustNotBeNull == null) {  
+        throw new NullPointerException(mustNotBeNull + " must not be null");  
+
+    }  
+}
+</code></pre>
+
+<p>Whatever you do, don't allow a bad value to get set and throw an exception later when other code attempts to use it. That makes debugging a nightmare. You should always the follow the "fail-fast" principle.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=24,searchfield=]
+2014-12-04 11:38:06:0431, answer_open, VisualItem[tree.nodes,5,id=6358,type=20,title=,body=<p>I tend to follow the design of JDK libraries, especially Collections and Concurrency (Joshua Bloch, Doug Lea, those guys know how to design solid APIs). Anyway, many APIs in the JDK pro-actively throws NullPointerException. </p>
+
+<p>For example, the Javadoc for Map.containsKey states:</p>
+
+<blockquote>
+  <p>@throws NullPointerException if the key is null and this map
+    does not permit null keys (optional).</p>
+</blockquote>
+
+<p>It's perfectly valid to throw your own NPE. The convention is to include the parameter name which was null in the message of the exception. </p>
+
+<p>The pattern goes:</p>
+
+<pre><code>public void someMethod(Object mustNotBeNull) {  
+    if (mustNotBeNull == null) {  
+        throw new NullPointerException(mustNotBeNull + " must not be null");  
+
+    }  
+}
+</code></pre>
+
+<p>Whatever you do, don't allow a bad value to get set and throw an exception later when other code attempts to use it. That makes debugging a nightmare. You should always the follow the "fail-fast" principle.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=24,searchfield=]
+2014-12-04 11:38:06:0431, diag_detail_itementered, id=6358, type=20
+2014-12-04 11:38:06:0618, diag_detail_itemexited, id=6358, type=20
+2014-12-04 11:38:06:0680, answer_open, VisualItem[tree.nodes,6,id=7770,type=20,title=,body=<p>If you choose to throw a NPE and you are using the argument in your method, it might be redundant and expensive to explicitly check for a null. I think the VM already does that for you.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=-2,searchfield=]
+2014-12-04 11:38:06:0696, answer_open, VisualItem[tree.nodes,6,id=7770,type=20,title=,body=<p>If you choose to throw a NPE and you are using the argument in your method, it might be redundant and expensive to explicitly check for a null. I think the VM already does that for you.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=-2,searchfield=]
+2014-12-04 11:38:06:0696, diag_detail_itementered, id=7770, type=20
+2014-12-04 11:38:06:0758, diag_detail_itemexited, id=7770, type=20
+2014-12-04 11:38:07:0148, answer_open, VisualItem[tree.nodes,6,id=7770,type=20,title=,body=<p>If you choose to throw a NPE and you are using the argument in your method, it might be redundant and expensive to explicitly check for a null. I think the VM already does that for you.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=-2,searchfield=]
+2014-12-04 11:38:07:0148, answer_open, VisualItem[tree.nodes,6,id=7770,type=20,title=,body=<p>If you choose to throw a NPE and you are using the argument in your method, it might be redundant and expensive to explicitly check for a null. I think the VM already does that for you.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=-2,searchfield=]
+2014-12-04 11:38:07:0148, diag_detail_itementered, id=7770, type=20
+2014-12-04 11:38:07:0601, diag_detail_itemexited, id=7770, type=20
+2014-12-04 11:38:07:0882, answer_open, VisualItem[tree.nodes,7,id=8132,type=20,title=,body=<p>The accepted practice if to use the <em>IllegalArgumentException( String message )</em> to declare a parameter to be invalid and give as much detail as possible... So to say that a parameters was found to be null while exception non-null, you would do something like this:</p>
+
+<pre><code>if( variable == null )
+    throw new IllegalArgumentException("The object 'variable' cannot be null");
+</code></pre>
+
+<p>You have virtually no reason to implicitly use the "NullPointerException". The NullPointerException is an exception thrown by the Java Virtual Machine when you try to execute code on null reference (Like <em>toString()</em>).</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=3,searchfield=]
+2014-12-04 11:38:07:0882, answer_open, VisualItem[tree.nodes,7,id=8132,type=20,title=,body=<p>The accepted practice if to use the <em>IllegalArgumentException( String message )</em> to declare a parameter to be invalid and give as much detail as possible... So to say that a parameters was found to be null while exception non-null, you would do something like this:</p>
+
+<pre><code>if( variable == null )
+    throw new IllegalArgumentException("The object 'variable' cannot be null");
+</code></pre>
+
+<p>You have virtually no reason to implicitly use the "NullPointerException". The NullPointerException is an exception thrown by the Java Virtual Machine when you try to execute code on null reference (Like <em>toString()</em>).</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=3,searchfield=]
+2014-12-04 11:38:07:0882, diag_detail_itementered, id=8132, type=20
+2014-12-04 11:38:09:0005, diag_detail_itemexited, id=8132, type=20
+2014-12-04 11:38:09:0270, answer_open, VisualItem[tree.nodes,8,id=8160,type=20,title=,body=<p>The standard is to throw the NullPointerException. The generally infallible "Effective Java" discusses this briefly in Item 42 (in the first edition) "Favor the use of standard exceptions":</p>
+
+<blockquote>
+  <p>"Arguably, all erroneous method
+  invocations boil down to an illegal
+  argument or illegal state, but other
+  exceptions are standardly used for
+  certain kinds of illegal arguments and
+  states. If a caller passes null in
+  some parameter for which null values
+  are prohibited, convention dictates
+  that NullPointerException be thrown
+  rather than IllegalArgumentException."</p>
+</blockquote>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=60,searchfield=]
+2014-12-04 11:38:09:0270, answer_open, VisualItem[tree.nodes,8,id=8160,type=20,title=,body=<p>The standard is to throw the NullPointerException. The generally infallible "Effective Java" discusses this briefly in Item 42 (in the first edition) "Favor the use of standard exceptions":</p>
+
+<blockquote>
+  <p>"Arguably, all erroneous method
+  invocations boil down to an illegal
+  argument or illegal state, but other
+  exceptions are standardly used for
+  certain kinds of illegal arguments and
+  states. If a caller passes null in
+  some parameter for which null values
+  are prohibited, convention dictates
+  that NullPointerException be thrown
+  rather than IllegalArgumentException."</p>
+</blockquote>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=60,searchfield=]
+2014-12-04 11:38:09:0270, diag_detail_itementered, id=8160, type=20
+2014-12-04 11:38:09:0723, diag_detail_itemexited, id=8160, type=20
+2014-12-04 11:38:09:0925, answer_open, VisualItem[tree.nodes,9,id=13262,type=20,title=,body=<p>The definitions from the links to the two exceptions above are
+IllegalArgumentException: Thrown to indicate that a method has been passed an illegal or inappropriate argument. 
+NullPointerException: Thrown when an application attempts to use null in a case where an object is required.</p>
+
+<p>The big difference here is the IllegalArgumentException is supposed to be used when checking that an argument to a method is valid. NullPointerException is supposed to be used whenever an object being "used" when it is null.</p>
+
+<p>I hope that helps put the two in perspective.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:38:09:0925, answer_open, VisualItem[tree.nodes,9,id=13262,type=20,title=,body=<p>The definitions from the links to the two exceptions above are
+IllegalArgumentException: Thrown to indicate that a method has been passed an illegal or inappropriate argument. 
+NullPointerException: Thrown when an application attempts to use null in a case where an object is required.</p>
+
+<p>The big difference here is the IllegalArgumentException is supposed to be used when checking that an argument to a method is valid. NullPointerException is supposed to be used whenever an object being "used" when it is null.</p>
+
+<p>I hope that helps put the two in perspective.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:38:09:0941, diag_detail_itementered, id=13262, type=20
+2014-12-04 11:38:10:0003, diag_detail_itemexited, id=13262, type=20
+2014-12-04 11:38:10:0425, answer_open, VisualItem[tree.nodes,9,id=13262,type=20,title=,body=<p>The definitions from the links to the two exceptions above are
+IllegalArgumentException: Thrown to indicate that a method has been passed an illegal or inappropriate argument. 
+NullPointerException: Thrown when an application attempts to use null in a case where an object is required.</p>
+
+<p>The big difference here is the IllegalArgumentException is supposed to be used when checking that an argument to a method is valid. NullPointerException is supposed to be used whenever an object being "used" when it is null.</p>
+
+<p>I hope that helps put the two in perspective.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:38:10:0425, answer_open, VisualItem[tree.nodes,9,id=13262,type=20,title=,body=<p>The definitions from the links to the two exceptions above are
+IllegalArgumentException: Thrown to indicate that a method has been passed an illegal or inappropriate argument. 
+NullPointerException: Thrown when an application attempts to use null in a case where an object is required.</p>
+
+<p>The big difference here is the IllegalArgumentException is supposed to be used when checking that an argument to a method is valid. NullPointerException is supposed to be used whenever an object being "used" when it is null.</p>
+
+<p>I hope that helps put the two in perspective.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=-1,searchfield=]
+2014-12-04 11:38:10:0425, diag_detail_itementered, id=13262, type=20
+2014-12-04 11:38:10:0596, diag_detail_itemexited, id=13262, type=20
+2014-12-04 11:38:10:0643, answer_open, VisualItem[tree.nodes,10,id=22074,type=20,title=,body=<p>Couldn't agree more with what's being said.  Fail early, fail fast.  Pretty good Exception mantra. </p>
+
+<p>The question about which Exception to throw is mostly a matter of personal taste.  In my mind IllegalArgumentException seems more specific than using a NPE since it's telling me that the problem was with an argument I passed to the method and not with a value that may have been generated while performing the method.</p>
+
+<p>My 2 Cents</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=4,searchfield=]
+2014-12-04 11:38:10:0643, answer_open, VisualItem[tree.nodes,10,id=22074,type=20,title=,body=<p>Couldn't agree more with what's being said.  Fail early, fail fast.  Pretty good Exception mantra. </p>
+
+<p>The question about which Exception to throw is mostly a matter of personal taste.  In my mind IllegalArgumentException seems more specific than using a NPE since it's telling me that the problem was with an argument I passed to the method and not with a value that may have been generated while performing the method.</p>
+
+<p>My 2 Cents</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=4,searchfield=]
+2014-12-04 11:38:10:0659, diag_detail_itementered, id=22074, type=20
+2014-12-04 11:38:11:0002, diag_detail_itemexited, id=22074, type=20
+2014-12-04 11:38:11:0080, answer_open, VisualItem[tree.nodes,11,id=32940,type=20,title=,body=<p>If it's a "setter", or somewhere I'm getting a member to use later, I tend to use IllegalArgumentException.</p>
+
+<p>If it's something I'm going to use (dereference) right now in the method, I throw a NullPointerException proactively. I like this better than letting the runtime do it, because I can provide a helpful message (seems like the runtime could do this too, but that's a rant for another day).</p>
+
+<p>If I'm overriding a method, I use whatever the overridden method uses.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:38:11:0080, answer_open, VisualItem[tree.nodes,11,id=32940,type=20,title=,body=<p>If it's a "setter", or somewhere I'm getting a member to use later, I tend to use IllegalArgumentException.</p>
+
+<p>If it's something I'm going to use (dereference) right now in the method, I throw a NullPointerException proactively. I like this better than letting the runtime do it, because I can provide a helpful message (seems like the runtime could do this too, but that's a rant for another day).</p>
+
+<p>If I'm overriding a method, I use whatever the overridden method uses.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:38:11:0080, diag_detail_itementered, id=32940, type=20
+2014-12-04 11:38:11:0189, diag_detail_itemexited, id=32940, type=20
+2014-12-04 11:38:12:0234, diag_itementered, id=27581, type=1
+2014-12-04 11:38:12:0281, diag_itemexited, id=27581, type=1
+2014-12-04 11:38:12:0328, list_mouseentered, id=123, type=1
+2014-12-04 11:38:12:0328, list_mousemoved, id=123, type=1
+2014-12-04 11:38:12:0375, list_mousemoved, id=23853, type=1
+2014-12-04 11:38:12:0406, list_mousemoved, id=35186, type=1
+2014-12-04 11:38:12:0453, list_mousemoved, id=35186, type=1
+2014-12-04 11:38:12:0484, list_mouseexited
+2014-12-04 11:38:13:0281, list_mouseentered, type=detailAnswersList
+2014-12-04 11:38:13:0453, list_mouseexited, type=detailAnswersList
+2014-12-04 11:38:13:0609, answer_open, VisualItem[tree.nodes,8,id=8160,type=20,title=,body=<p>The standard is to throw the NullPointerException. The generally infallible "Effective Java" discusses this briefly in Item 42 (in the first edition) "Favor the use of standard exceptions":</p>
+
+<blockquote>
+  <p>"Arguably, all erroneous method
+  invocations boil down to an illegal
+  argument or illegal state, but other
+  exceptions are standardly used for
+  certain kinds of illegal arguments and
+  states. If a caller passes null in
+  some parameter for which null values
+  are prohibited, convention dictates
+  that NullPointerException be thrown
+  rather than IllegalArgumentException."</p>
+</blockquote>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=60,searchfield=]
+2014-12-04 11:38:13:0625, answer_open, VisualItem[tree.nodes,8,id=8160,type=20,title=,body=<p>The standard is to throw the NullPointerException. The generally infallible "Effective Java" discusses this briefly in Item 42 (in the first edition) "Favor the use of standard exceptions":</p>
+
+<blockquote>
+  <p>"Arguably, all erroneous method
+  invocations boil down to an illegal
+  argument or illegal state, but other
+  exceptions are standardly used for
+  certain kinds of illegal arguments and
+  states. If a caller passes null in
+  some parameter for which null values
+  are prohibited, convention dictates
+  that NullPointerException be thrown
+  rather than IllegalArgumentException."</p>
+</blockquote>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=60,searchfield=]
+2014-12-04 11:38:13:0625, diag_detail_itementered, id=8160, type=20
+2014-12-04 11:38:13:0734, diag_detail_itemexited, id=8160, type=20
+2014-12-04 11:38:14:0951, answer_open, VisualItem[tree.nodes,8,id=8160,type=20,title=,body=<p>The standard is to throw the NullPointerException. The generally infallible "Effective Java" discusses this briefly in Item 42 (in the first edition) "Favor the use of standard exceptions":</p>
+
+<blockquote>
+  <p>"Arguably, all erroneous method
+  invocations boil down to an illegal
+  argument or illegal state, but other
+  exceptions are standardly used for
+  certain kinds of illegal arguments and
+  states. If a caller passes null in
+  some parameter for which null values
+  are prohibited, convention dictates
+  that NullPointerException be thrown
+  rather than IllegalArgumentException."</p>
+</blockquote>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=60,searchfield=]
+2014-12-04 11:38:14:0951, answer_open, VisualItem[tree.nodes,8,id=8160,type=20,title=,body=<p>The standard is to throw the NullPointerException. The generally infallible "Effective Java" discusses this briefly in Item 42 (in the first edition) "Favor the use of standard exceptions":</p>
+
+<blockquote>
+  <p>"Arguably, all erroneous method
+  invocations boil down to an illegal
+  argument or illegal state, but other
+  exceptions are standardly used for
+  certain kinds of illegal arguments and
+  states. If a caller passes null in
+  some parameter for which null values
+  are prohibited, convention dictates
+  that NullPointerException be thrown
+  rather than IllegalArgumentException."</p>
+</blockquote>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=60,searchfield=]
+2014-12-04 11:38:14:0951, diag_detail_itementered, id=8160, type=20
+2014-12-04 11:38:14:0997, diag_detail_itemexited, id=8160, type=20
+2014-12-04 11:38:15:0325, diag_detail_itementered, id=0.8979332746623874, type=4
+2014-12-04 11:38:15:0356, diag_detail_itemexited, id=0.8979332746623874, type=4
+2014-12-04 11:38:15:0450, answer_open, VisualItem[tree.nodes,10,id=22074,type=20,title=,body=<p>Couldn't agree more with what's being said.  Fail early, fail fast.  Pretty good Exception mantra. </p>
+
+<p>The question about which Exception to throw is mostly a matter of personal taste.  In my mind IllegalArgumentException seems more specific than using a NPE since it's telling me that the problem was with an argument I passed to the method and not with a value that may have been generated while performing the method.</p>
+
+<p>My 2 Cents</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=4,searchfield=]
+2014-12-04 11:38:15:0450, answer_open, VisualItem[tree.nodes,10,id=22074,type=20,title=,body=<p>Couldn't agree more with what's being said.  Fail early, fail fast.  Pretty good Exception mantra. </p>
+
+<p>The question about which Exception to throw is mostly a matter of personal taste.  In my mind IllegalArgumentException seems more specific than using a NPE since it's telling me that the problem was with an argument I passed to the method and not with a value that may have been generated while performing the method.</p>
+
+<p>My 2 Cents</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=4,searchfield=]
+2014-12-04 11:38:15:0450, diag_detail_itementered, id=22074, type=20
+2014-12-04 11:38:15:0980, diag_detail_itemexited, id=22074, type=20
+2014-12-04 11:38:16:0027, answer_open, VisualItem[tree.nodes,11,id=32940,type=20,title=,body=<p>If it's a "setter", or somewhere I'm getting a member to use later, I tend to use IllegalArgumentException.</p>
+
+<p>If it's something I'm going to use (dereference) right now in the method, I throw a NullPointerException proactively. I like this better than letting the runtime do it, because I can provide a helpful message (seems like the runtime could do this too, but that's a rant for another day).</p>
+
+<p>If I'm overriding a method, I use whatever the overridden method uses.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:38:16:0027, answer_open, VisualItem[tree.nodes,11,id=32940,type=20,title=,body=<p>If it's a "setter", or somewhere I'm getting a member to use later, I tend to use IllegalArgumentException.</p>
+
+<p>If it's something I'm going to use (dereference) right now in the method, I throw a NullPointerException proactively. I like this better than letting the runtime do it, because I can provide a helpful message (seems like the runtime could do this too, but that's a rant for another day).</p>
+
+<p>If I'm overriding a method, I use whatever the overridden method uses.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:38:16:0027, diag_detail_itementered, id=32940, type=20
+2014-12-04 11:38:16:0089, diag_detail_itemexited, id=32940, type=20
+2014-12-04 11:38:16:0448, answer_open, VisualItem[tree.nodes,12,id=38267,type=20,title=,body=<p>IllegalArgumentException makes more sense, since it clearly shows that the problem was an invalid argument passed to the method.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:38:16:0448, answer_open, VisualItem[tree.nodes,12,id=38267,type=20,title=,body=<p>IllegalArgumentException makes more sense, since it clearly shows that the problem was an invalid argument passed to the method.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=0,searchfield=]
+2014-12-04 11:38:16:0464, diag_detail_itementered, id=38267, type=20
+2014-12-04 11:38:16:0916, diag_detail_itemexited, id=38267, type=20
+2014-12-04 11:38:16:0963, answer_open, VisualItem[tree.nodes,13,id=45518,type=20,title=,body=<p>In general, a developer should <strong>never</strong> throw a NullPointerException. This exception is thrown by the runtime when code attempts to dereference a variable who's value is null. Therefore, if your method wants to explicitly disallow null, as opposed to just happening to have a null value raise a NullPointerException, you should throw an IllegalArgumentException.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=3,searchfield=]
+2014-12-04 11:38:16:0963, answer_open, VisualItem[tree.nodes,13,id=45518,type=20,title=,body=<p>In general, a developer should <strong>never</strong> throw a NullPointerException. This exception is thrown by the runtime when code attempts to dereference a variable who's value is null. Therefore, if your method wants to explicitly disallow null, as opposed to just happening to have a null value raise a NullPointerException, you should throw an IllegalArgumentException.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=3,searchfield=]
+2014-12-04 11:38:16:0963, diag_detail_itementered, id=45518, type=20
+2014-12-04 11:38:17:0135, diag_detail_itemexited, id=45518, type=20
+2014-12-04 11:38:17:0306, diag_detail_itementered, id=65200, type=1
+2014-12-04 11:38:17:0353, diag_detail_itemexited, id=65200, type=1
+2014-12-04 11:38:18:0648, diag_itementered, id=25331, type=1
+2014-12-04 11:38:18:0710, diag_itemexited, id=25331, type=1
+2014-12-04 11:38:19:0022, diag_itementered, id=19766, type=1
+2014-12-04 11:38:19:0085, diag_itemexited, id=19766, type=1
+2014-12-04 11:38:19:0303, diag_itementered, id=3881, type=1
+2014-12-04 11:38:19:0365, diag_itemexited, id=3881, type=1
+2014-12-04 11:38:19:0740, diag_itementered, id=25552, type=1
+2014-12-04 11:38:20:0286, edge_create, Tuple[0,1,0.8379305952957103,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0286, answer_create, 25583
+2014-12-04 11:38:20:0286, edge_create, Tuple[1,2,0.7159694633391719,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0286, answer_create, 25596
+2014-12-04 11:38:20:0286, edge_create, Tuple[1,3,0.5281635777358061,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0286, answer_create, 27502
+2014-12-04 11:38:20:0286, edge_create, Tuple[1,4,0.13941295289429678,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0286, answer_create, 61727
+2014-12-04 11:38:20:0286, edge_create, Tuple[1,5,0.2994888240666739,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0286, answer_create, 677173
+2014-12-04 11:38:20:0286, edge_create, Tuple[1,6,0.762041710177794,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0286, answer_create, 678954
+2014-12-04 11:38:20:0301, edge_create, Tuple[1,7,0.2857801812514542,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0301, answer_create, 937635
+2014-12-04 11:38:20:0301, edge_create, Tuple[1,8,0.46047370818801814,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0301, answer_create, 3098296
+2014-12-04 11:38:20:0301, edge_create, Tuple[1,9,0.5708001856226083,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0301, answer_create, 8076368
+2014-12-04 11:38:20:0301, edge_create, Tuple[1,10,0.7109927461820639,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0301, answer_create, 11989443
+2014-12-04 11:38:20:0301, edge_create, Tuple[1,11,0.4033268572292853,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0301, answer_create, 15465687
+2014-12-04 11:38:20:0301, edge_create, Tuple[1,12,0.7755232585639433,4,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0301, edge_create, Tuple[0,13,0.4898481000908176,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0301, edge_create, Tuple[13,14,0.07414726313267428,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0319, edge_create, Tuple[13,15,0.6410434988725652,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0319, edge_create, Tuple[13,16,0.36941471016252314,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0335, edge_create, Tuple[13,17,0.566114149020299,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0335, edge_create, Tuple[13,18,0.4348668147461735,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0350, edge_create, Tuple[13,19,0.3136917620924602,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0350, edge_create, Tuple[13,20,0.8256153427880916,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0459, edge_create, Tuple[13,21,0.41068898331851766,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0459, edge_create, Tuple[13,22,0.13144376393469448,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0475, edge_create, Tuple[13,23,0.14030412899810774,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0475, edge_create, Tuple[13,24,0.04478856376585283,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0491, edge_create, Tuple[13,25,0.19484559227213705,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0491, edge_create, Tuple[13,26,0.7923177847520356,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0506, edge_create, Tuple[13,27,0.5336043616382325,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0506, edge_create, Tuple[13,28,0.9879672162815251,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0522, edge_create, Tuple[13,29,0.14430759441817664,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0522, edge_create, Tuple[13,30,0.9986697942712287,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0537, edge_create, Tuple[13,31,0.3504924058022172,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0537, edge_create, Tuple[13,32,0.15618946503272357,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0553, edge_create, Tuple[13,33,0.706328070578419,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0553, edge_create, Tuple[13,34,0.9871437704905913,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0569, edge_create, Tuple[13,35,0.5829941764546746,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:38:20:0584, discussion_open, 25552
+2014-12-04 11:38:20:0584, diag_itemclicked, id=25552, type=1
+2014-12-04 11:38:20:0709, diag_itemexited, id=25552, type=1
+2014-12-04 11:38:20:0990, diag_detail_itementered, id=64148, type=1
+2014-12-04 11:38:21:0052, diag_detail_itemexited, id=64148, type=1
+2014-12-04 11:38:21:0442, answer_open, VisualItem[tree.nodes,2,id=25583,type=20,title=,body=<p>I think the best method out there is to implement the <a href="http://support.hyperic.com/display/SIGAR/Home">SIGAR API by Hyperic</a>.  It works for most of the major operating systems ( darn near anything modern ) and is very easy to work with.  The developer(s) are very responsive on their forum and mailing lists.  I also like that it is <strike>GPL2</strike> <a href="http://support.hyperic.com/display/SIGAR/Home;jsessionid=C24464227FA425B5347615B5113884A2#Home-license">Apache licensed</a>.  They provide a ton of examples in Java too!</p>
+
+<p><a href="http://support.hyperic.com/display/SIGAR/Home">SIGAR == System Information, Gathering And Reporting tool.</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=29,searchfield=]
+2014-12-04 11:38:21:0442, answer_open, VisualItem[tree.nodes,2,id=25583,type=20,title=,body=<p>I think the best method out there is to implement the <a href="http://support.hyperic.com/display/SIGAR/Home">SIGAR API by Hyperic</a>.  It works for most of the major operating systems ( darn near anything modern ) and is very easy to work with.  The developer(s) are very responsive on their forum and mailing lists.  I also like that it is <strike>GPL2</strike> <a href="http://support.hyperic.com/display/SIGAR/Home;jsessionid=C24464227FA425B5347615B5113884A2#Home-license">Apache licensed</a>.  They provide a ton of examples in Java too!</p>
+
+<p><a href="http://support.hyperic.com/display/SIGAR/Home">SIGAR == System Information, Gathering And Reporting tool.</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417711065639L,lastactivitydate=0L,tags=,score=29,searchfield=]
+2014-12-04 11:38:21:0442, diag_detail_itementered, id=25583, type=20
+2014-12-04 11:38:22:0862, diag_detail_itemexited, id=25583, type=20
+2014-12-04 11:38:23:0174, diag_detail_itementered, id=25552, type=1
+2014-12-04 11:38:49:0117, diag_detail_itemexited, id=25552, type=1
+2014-12-04 11:38:49:0133, diag_detail_itementered, id=0.4898481000908176, type=1
+2014-12-04 11:38:49:0164, diag_detail_itemexited, id=0.4898481000908176, type=1
+2014-12-04 11:38:49:0195, diag_detail_itementered, id=52874, type=1
+2014-12-04 11:38:49:0226, diag_detail_itemexited, id=52874, type=1
+2014-12-04 11:38:54:0827, search_update, hashmap
+2014-12-04 11:39:05:0014, diag_itementered, id=4, type=0
+2014-12-04 11:39:06:0246, edge_create, Tuple[0,1,0.40928883772580815,2,1.0,1417711065639,1417711065639]
+2014-12-04 11:39:06:0246, pattern_create, 3
+2014-12-04 11:39:06:0246, edge_create, Tuple[1,2,0.562827434865884,2,1.0,1417711065639,1417711065639]
+2014-12-04 11:39:06:0246, edge_create, Tuple[0,3,0.09939174862473743,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:39:06:0246, edge_create, Tuple[3,4,0.33333477739272777,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:39:06:0246, edge_create, Tuple[3,5,0.973600588090212,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:39:06:0262, edge_create, Tuple[3,6,0.10522094744121802,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:39:06:0262, edge_create, Tuple[3,7,0.6353330785364649,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:39:06:0277, edge_create, Tuple[3,8,0.6873015497992438,1,0.0,1417711065639,1417711065639]
+2014-12-04 11:39:06:0308, pattern_open, 4
+2014-12-04 11:39:06:0308, diag_itemclicked, id=4, type=0
+2014-12-04 11:39:16:0838, diag_itemexited, id=4, type=0
+2014-12-04 11:39:17:0166, diag_detail_itementered, id=0.40928883772580815, type=2
+2014-12-04 11:39:17:0182, diag_detail_itemexited, id=0.40928883772580815, type=2
+2014-12-04 11:39:17:0384, diag_detail_itementered, id=2069762254, type=3
+2014-12-04 11:39:17:0400, diag_detail_itemexited, id=2069762254, type=3
+2014-12-04 11:39:17:0806, diag_detail_itementered, id=3, type=0
+2014-12-04 11:39:18:0492, diag_detail_itemexited, id=3, type=0
+2014-12-04 11:39:18:0773, diag_detail_itementered, id=2069762254, type=3
+2014-12-04 11:39:19:0522, diag_detail_itemexited, id=2069762254, type=3
+2014-12-04 11:39:20:0380, diag_detail_itementered, id=11561, type=1
+2014-12-04 11:39:20:0505, diag_detail_itemexited, id=11561, type=1
+2014-12-04 11:39:20:0832, diag_detail_itementered, id=11561, type=1
+2014-12-04 11:39:22:0845, diag_detail_itemexited, id=11561, type=1
+2014-12-04 11:39:22:0923, diag_detail_itementered, id=0.973600588090212, type=1
+2014-12-04 11:39:22:0954, diag_detail_itemexited, id=0.973600588090212, type=1
+2014-12-04 11:39:23:0063, diag_detail_itementered, id=0.10522094744121802, type=1
+2014-12-04 11:39:23:0141, diag_detail_itemexited, id=0.10522094744121802, type=1
+2014-12-04 11:39:23:0500, diag_detail_itementered, id=-775333322, type=3
+2014-12-04 11:39:23:0905, diag_detail_itemexited, id=-775333322, type=3
+2014-12-04 11:39:24:0202, diag_detail_itementered, id=0.33333477739272777, type=1
+2014-12-04 11:39:24:0217, diag_detail_itemexited, id=0.33333477739272777, type=1
+2014-12-04 11:39:24:0264, diag_detail_itementered, id=0.33333477739272777, type=1
+2014-12-04 11:39:24:0311, diag_detail_itemexited, id=0.33333477739272777, type=1
+2014-12-04 11:39:24:0436, diag_detail_itementered, id=11561, type=1
+2014-12-04 11:39:39:0318, diag_detail_itemexited, id=11561, type=1
+2014-12-04 11:39:39:0724, diag_detail_itementered, id=0.33333477739272777, type=1
+2014-12-04 11:39:39:0755, diag_detail_itemexited, id=0.33333477739272777, type=1
+2014-12-04 11:39:43:0889, list_mouseentered, id=4, type=0
+2014-12-04 11:39:43:0889, list_mousemoved, id=4, type=0
+2014-12-04 11:39:43:0920, list_mousemoved, id=4, type=0
+2014-12-04 11:39:43:0936, list_mousemoved, id=4, type=0
+2014-12-04 11:39:43:0936, list_mousemoved, id=4, type=0
+2014-12-04 11:39:43:0952, list_mousemoved, id=4, type=0
+2014-12-04 11:39:43:0967, list_mousemoved, id=4, type=0
+2014-12-04 11:39:43:0983, list_mousemoved, id=4, type=0
+2014-12-04 11:39:43:0998, list_mousemoved, id=4, type=0
+2014-12-04 11:39:44:0014, list_mousemoved, id=4, type=0
+2014-12-04 11:39:44:0030, list_mousemoved, id=4, type=0
+2014-12-04 11:39:44:0030, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0045, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0061, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0076, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0092, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0108, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0123, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0139, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0154, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0170, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0186, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0201, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0217, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0232, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0248, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0264, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:44:0279, list_mouseexited
+2014-12-04 11:39:46:0463, list_mouseentered, id=40471, type=1
+2014-12-04 11:39:46:0479, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:46:0494, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:46:0494, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:46:0510, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:46:0619, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:46:0635, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:46:0650, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:46:0666, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:46:0682, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:46:0697, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0713, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0728, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0744, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0760, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0760, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0791, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0791, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0806, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0822, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0838, list_mousemoved, id=4, type=0
+2014-12-04 11:39:46:0994, list_mouseexited
+2014-12-04 11:39:47:0867, list_mouseentered, id=4, type=0
+2014-12-04 11:39:47:0867, list_mousemoved, id=4, type=0
+2014-12-04 11:39:47:0898, list_mousemoved, id=4, type=0
+2014-12-04 11:39:47:0898, list_mousemoved, id=4, type=0
+2014-12-04 11:39:47:0914, list_mousemoved, id=4, type=0
+2014-12-04 11:39:47:0914, list_mousemoved, id=4, type=0
+2014-12-04 11:39:47:0945, list_mousemoved, id=4, type=0
+2014-12-04 11:39:47:0961, list_mousemoved, id=4, type=0
+2014-12-04 11:39:47:0961, list_mousemoved, id=4, type=0
+2014-12-04 11:39:47:0976, list_mousemoved, id=4, type=0
+2014-12-04 11:39:47:0992, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0008, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0023, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0039, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0054, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0070, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0070, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0086, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0101, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0117, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0132, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0148, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0164, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0179, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0195, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0195, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0226, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0242, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0257, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0273, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0273, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0288, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0304, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0320, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0335, list_mouseexited
+2014-12-04 11:39:48:0460, list_mouseentered, id=40471, type=1
+2014-12-04 11:39:48:0460, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0491, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0491, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0507, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:48:0522, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0538, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0554, list_mousemoved, id=4, type=0
+2014-12-04 11:39:48:0569, list_mouseexited
+2014-12-04 11:39:50:0020, list_mouseentered, id=4, type=0
+2014-12-04 11:39:50:0020, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0036, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0051, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0067, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0082, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0082, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0098, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0114, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0129, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0145, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0160, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0176, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0176, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0192, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0207, list_mousemoved, id=4, type=0
+2014-12-04 11:39:50:0223, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0238, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0254, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0270, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0285, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0301, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0316, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0332, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0332, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0363, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0379, list_mousemoved, id=40471, type=1
+2014-12-04 11:39:50:0394, list_mouseexited
+2014-12-04 11:39:50:0675, list_pattern_mouseentered, id=1, type=0
+2014-12-04 11:39:50:0691, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0706, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0722, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0800, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0831, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0847, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0862, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0878, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0894, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0909, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0925, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0940, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0956, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:50:0987, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0018, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0034, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0050, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0050, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0065, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0081, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0096, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0112, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0128, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0143, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0159, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0159, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0174, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0190, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0206, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0206, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0237, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0252, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0252, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0268, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0284, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0299, list_pattern_mousemoved, id=1, type=0
+2014-12-04 11:39:51:0315, list_pattern_mouseexited
+2014-12-04 11:39:54:0497, search_update, 

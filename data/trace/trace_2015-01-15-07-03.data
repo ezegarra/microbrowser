@@ -1,0 +1,596 @@
+2015-01-15 07:03:46:0432, setup_loaddata_begin
+2015-01-15 07:03:49:0199, setup_loaddata_end
+2015-01-15 07:03:49:0229, setup_createactions_begin
+2015-01-15 07:03:49:0438, setup_createactions_end
+2015-01-15 07:03:55:0792, diag_itementered, id=36701, type=1
+2015-01-15 07:03:56:0056, diag_itemexited, id=36701, type=1
+2015-01-15 07:03:59:0547, diag_itementered, id=36701, type=1
+2015-01-15 07:03:59:0851, diag_itemexited, id=36701, type=1
+2015-01-15 07:04:02:0131, diag_itementered, id=62433, type=1
+2015-01-15 07:04:05:0154, diag_itemexited, id=62433, type=1
+2015-01-15 07:04:05:0319, diag_itementered, id=36701, type=1
+2015-01-15 07:04:06:0718, diag_itemexited, id=36701, type=1
+2015-01-15 07:04:14:0464, diag_itementered, id=62433, type=1
+2015-01-15 07:04:15:0287, diag_itemexited, id=62433, type=1
+2015-01-15 07:04:22:0478, diag_itementered, id=42153, type=1
+2015-01-15 07:04:22:0692, diag_itemexited, id=42153, type=1
+2015-01-15 07:04:23:0110, diag_itemexited, id=3, type=4
+2015-01-15 07:04:23:0131, diag_itementered, id=41107, type=1
+2015-01-15 07:04:23:0799, diag_itemexited, id=41107, type=1
+2015-01-15 07:04:23:0802, diag_itementered, id=15899, type=1
+2015-01-15 07:04:24:0097, diag_itemexited, id=15899, type=1
+2015-01-15 07:04:24:0351, diag_itementered, id=37335, type=1
+2015-01-15 07:04:24:0878, diag_itemexited, id=37335, type=1
+2015-01-15 07:04:25:0167, diag_itementered, id=3881, type=1
+2015-01-15 07:04:25:0397, diag_itemexited, id=3881, type=1
+2015-01-15 07:04:25:0398, diag_itementered, id=26594, type=1
+2015-01-15 07:04:25:0445, diag_itemexited, id=26594, type=1
+2015-01-15 07:04:25:0765, diag_itementered, id=25331, type=1
+2015-01-15 07:04:25:0886, diag_itemexited, id=25331, type=1
+2015-01-15 07:04:26:0151, diag_itemexited, id=3, type=4
+2015-01-15 07:04:26:0164, diag_itementered, id=46898, type=1
+2015-01-15 07:04:27:0764, diag_itemexited, id=46898, type=1
+2015-01-15 07:04:27:0793, diag_itementered, id=40480, type=1
+2015-01-15 07:04:28:0408, diag_itemexited, id=40480, type=1
+2015-01-15 07:04:29:0240, diag_itementered, id=26305, type=1
+2015-01-15 07:04:29:0421, diag_itemexited, id=26305, type=1
+2015-01-15 07:04:36:0374, diag_itemexited, id=3, type=4
+2015-01-15 07:04:36:0555, diag_itementered, id=27578, type=1
+2015-01-15 07:04:36:0586, diag_itemexited, id=27578, type=1
+2015-01-15 07:04:40:0081, diag_itementered, id=27578, type=1
+2015-01-15 07:04:40:0124, diag_itemexited, id=27578, type=1
+2015-01-15 07:04:40:0190, diag_itementered, id=40119, type=1
+2015-01-15 07:04:40:0424, diag_itemexited, id=40119, type=1
+2015-01-15 07:04:40:0433, diag_itementered, id=41107, type=1
+2015-01-15 07:04:40:0479, diag_itemexited, id=41107, type=1
+2015-01-15 07:04:40:0693, diag_itemexited, id=3, type=4
+2015-01-15 07:04:40:0695, diag_itementered, id=18524, type=1
+2015-01-15 07:04:40:0832, diag_itemexited, id=18524, type=1
+2015-01-15 07:04:40:0832, diag_itementered, id=2, type=0
+2015-01-15 07:04:41:0420, diag_itemexited, id=2, type=0
+2015-01-15 07:04:41:0546, diag_itemexited, id=2, type=4
+2015-01-15 07:04:41:0546, diag_itementered, id=27240, type=1
+2015-01-15 07:04:42:0042, diag_itemexited, id=27240, type=1
+2015-01-15 07:04:42:0045, diag_itemexited, id=2, type=4
+2015-01-15 07:04:45:0993, search_update, string
+2015-01-15 07:04:50:0388, search_update, 
+2015-01-15 07:04:52:0071, list_mouseentered, id=24723, type=1
+2015-01-15 07:04:52:0072, list_mousemoved, id=24723, type=1
+2015-01-15 07:04:52:0180, list_mouseexited
+2015-01-15 07:04:53:0443, diag_itementered, id=48249, type=1
+2015-01-15 07:04:53:0675, diag_itemexited, id=48249, type=1
+2015-01-15 07:04:53:0709, diag_itementered, id=60764, type=1
+2015-01-15 07:04:53:0913, diag_itemexited, id=60764, type=1
+2015-01-15 07:04:53:0923, diag_itementered, id=48249, type=1
+2015-01-15 07:04:56:0963, edge_create, Tuple[0,1,0.8882271219819338,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0973, answer_create, 48260
+2015-01-15 07:04:56:0976, edge_create, Tuple[1,2,0.5199815739148359,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0977, answer_create, 48265
+2015-01-15 07:04:56:0978, edge_create, Tuple[1,3,0.8399097065875473,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0979, answer_create, 49532
+2015-01-15 07:04:56:0981, edge_create, Tuple[1,4,0.13629882495874612,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0982, answer_create, 694090
+2015-01-15 07:04:56:0983, edge_create, Tuple[1,5,0.8336150459324515,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0984, answer_create, 694101
+2015-01-15 07:04:56:0985, edge_create, Tuple[1,6,0.08853917228453845,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0987, answer_create, 697862
+2015-01-15 07:04:56:0988, edge_create, Tuple[1,7,0.1603094496762436,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0989, answer_create, 700953
+2015-01-15 07:04:56:0990, edge_create, Tuple[1,8,0.49205859638810745,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0991, answer_create, 716294
+2015-01-15 07:04:56:0993, edge_create, Tuple[1,9,0.5678675220831908,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0994, answer_create, 2245764
+2015-01-15 07:04:56:0995, edge_create, Tuple[1,10,0.2926643512895325,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0996, answer_create, 3137746
+2015-01-15 07:04:56:0998, edge_create, Tuple[1,11,0.47321691754323625,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:56:0998, answer_create, 3802811
+2015-01-15 07:04:57:0003, edge_create, Tuple[1,12,0.8803465522494709,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0004, answer_create, 4810847
+2015-01-15 07:04:57:0004, edge_create, Tuple[1,13,0.6020272045978806,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0005, answer_create, 8945638
+2015-01-15 07:04:57:0006, edge_create, Tuple[1,14,0.5770300636083259,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0006, answer_create, 10381446
+2015-01-15 07:04:57:0007, edge_create, Tuple[1,15,0.11123061383412458,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0007, edge_create, Tuple[0,16,0.8397996339907655,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0008, edge_create, Tuple[16,17,0.16618516805935846,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0013, edge_create, Tuple[16,18,0.5547917741281984,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0013, edge_create, Tuple[16,19,0.36404838859763955,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0023, edge_create, Tuple[16,20,0.451599307820288,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0023, edge_create, Tuple[16,21,0.041556047217268244,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0033, edge_create, Tuple[16,22,0.9250413449293432,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0033, edge_create, Tuple[16,23,0.43065040661078036,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0033, edge_create, Tuple[16,24,0.3450855673689097,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0043, edge_create, Tuple[16,25,0.45916238011717614,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0043, edge_create, Tuple[16,26,0.9042657225806837,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0043, edge_create, Tuple[16,27,0.19402747811758625,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0053, edge_create, Tuple[16,28,0.7859332939294001,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0053, edge_create, Tuple[16,29,0.02743919523982441,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0053, edge_create, Tuple[16,30,0.7300683664378952,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0063, edge_create, Tuple[16,31,0.5761752701080042,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0063, edge_create, Tuple[16,32,0.17321554972301245,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0063, edge_create, Tuple[16,33,0.3434523824037482,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0073, edge_create, Tuple[16,34,0.9956065994159374,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0073, edge_create, Tuple[16,35,0.7515831644040022,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0073, edge_create, Tuple[16,36,0.4249986058942733,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0085, edge_create, Tuple[16,37,0.5410572704795477,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0089, edge_create, Tuple[16,38,0.9296441106185436,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0092, edge_create, Tuple[16,39,0.42420472154706723,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0095, edge_create, Tuple[16,40,0.5416837112996364,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0098, edge_create, Tuple[16,41,0.5342065808890967,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0101, edge_create, Tuple[16,42,0.24981201003659836,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0105, edge_create, Tuple[16,43,0.7059035056900217,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0108, edge_create, Tuple[16,44,0.10213096944823341,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0111, edge_create, Tuple[16,45,0.124749862243423,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0113, edge_create, Tuple[16,46,0.8856181376885486,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0113, edge_create, Tuple[16,47,0.873627180479305,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0123, edge_create, Tuple[16,48,0.5696712687780233,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0123, edge_create, Tuple[16,49,0.46144928068104607,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:04:57:0143, discussion_open, 48249
+2015-01-15 07:04:57:0143, diag_itemclicked, id=48249, type=1
+2015-01-15 07:04:59:0726, diag_itemexited, id=48249, type=1
+2015-01-15 07:05:02:0400, diag_detail_itementered, id=31415, type=1
+2015-01-15 07:05:02:0492, diag_detail_itemexited, id=31415, type=1
+2015-01-15 07:05:04:0351, diag_itementered, id=54686, type=1
+2015-01-15 07:05:04:0453, diag_itemexited, id=54686, type=1
+2015-01-15 07:05:04:0523, diag_itementered, id=26305, type=1
+2015-01-15 07:05:04:0673, diag_itemexited, id=26305, type=1
+2015-01-15 07:05:04:0675, diag_itementered, id=15899, type=1
+2015-01-15 07:05:04:0733, diag_itemexited, id=15899, type=1
+2015-01-15 07:05:05:0251, diag_itementered, id=47605, type=1
+2015-01-15 07:05:05:0330, diag_itemexited, id=47605, type=1
+2015-01-15 07:05:05:0414, diag_itementered, id=11930, type=1
+2015-01-15 07:05:06:0155, diag_itemexited, id=11930, type=1
+2015-01-15 07:05:06:0233, diag_itementered, id=2, type=0
+2015-01-15 07:05:06:0352, diag_itemexited, id=2, type=0
+2015-01-15 07:05:06:0433, diag_itemexited, id=3, type=4
+2015-01-15 07:05:06:0433, diag_itementered, id=47045, type=1
+2015-01-15 07:05:06:0697, diag_itemexited, id=47045, type=1
+2015-01-15 07:05:06:0702, diag_itementered, id=41107, type=1
+2015-01-15 07:05:08:0635, edge_create, Tuple[0,1,0.6929389930751118,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0635, answer_create, 41156
+2015-01-15 07:05:08:0645, edge_create, Tuple[1,2,0.42806924777785327,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0645, answer_create, 41762
+2015-01-15 07:05:08:0645, edge_create, Tuple[1,3,0.06343194782576833,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0645, answer_create, 41177
+2015-01-15 07:05:08:0645, edge_create, Tuple[1,4,0.5605693468123397,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0645, answer_create, 41772
+2015-01-15 07:05:08:0655, edge_create, Tuple[1,5,0.263174417471281,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0655, answer_create, 43496
+2015-01-15 07:05:08:0655, edge_create, Tuple[1,6,0.42833665131944143,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0655, answer_create, 157202
+2015-01-15 07:05:08:0655, edge_create, Tuple[1,7,0.6849727536288786,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0655, answer_create, 1016930
+2015-01-15 07:05:08:0665, edge_create, Tuple[1,8,0.7282810718758895,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0665, answer_create, 1439556
+2015-01-15 07:05:08:0665, edge_create, Tuple[1,9,0.06794025814274685,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0665, answer_create, 2178588
+2015-01-15 07:05:08:0665, edge_create, Tuple[1,10,0.035148846602077954,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0665, answer_create, 6530353
+2015-01-15 07:05:08:0675, edge_create, Tuple[1,11,0.5810488360384528,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0676, answer_create, 10177396
+2015-01-15 07:05:08:0677, edge_create, Tuple[1,12,0.7612539839559179,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0677, answer_create, 10189194
+2015-01-15 07:05:08:0678, edge_create, Tuple[1,13,0.47411925119668386,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0678, answer_create, 7816591
+2015-01-15 07:05:08:0679, edge_create, Tuple[1,14,0.5593514558461652,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0679, answer_create, 7367588
+2015-01-15 07:05:08:0680, edge_create, Tuple[1,15,0.6703873999559802,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0680, answer_create, 10361524
+2015-01-15 07:05:08:0681, edge_create, Tuple[1,16,0.7441919081573198,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0681, answer_create, 11577455
+2015-01-15 07:05:08:0682, edge_create, Tuple[1,17,0.6142864705512651,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0682, answer_create, 11629612
+2015-01-15 07:05:08:0683, edge_create, Tuple[1,18,0.08303623633698742,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0684, answer_create, 12576779
+2015-01-15 07:05:08:0684, edge_create, Tuple[1,19,0.36568561254031673,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0685, answer_create, 12792917
+2015-01-15 07:05:08:0686, edge_create, Tuple[1,20,0.11170149537030838,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0686, answer_create, 12891357
+2015-01-15 07:05:08:0687, edge_create, Tuple[1,21,0.7039702669287342,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0687, answer_create, 13072330
+2015-01-15 07:05:08:0688, edge_create, Tuple[1,22,0.8973161693362794,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0688, answer_create, 13171599
+2015-01-15 07:05:08:0689, edge_create, Tuple[1,23,0.681607257597174,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0689, answer_create, 13365516
+2015-01-15 07:05:08:0690, edge_create, Tuple[1,24,0.39676539781971887,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0690, answer_create, 13678355
+2015-01-15 07:05:08:0691, edge_create, Tuple[1,25,0.15990504702919406,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0691, answer_create, 13686133
+2015-01-15 07:05:08:0692, edge_create, Tuple[1,26,0.5838124091699631,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0692, answer_create, 14021567
+2015-01-15 07:05:08:0693, edge_create, Tuple[1,27,0.8353759198754136,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0693, answer_create, 14241303
+2015-01-15 07:05:08:0693, edge_create, Tuple[1,28,0.7492243634556401,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0693, answer_create, 14433887
+2015-01-15 07:05:08:0693, edge_create, Tuple[1,29,0.7923781614985632,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0693, answer_create, 17672925
+2015-01-15 07:05:08:0693, edge_create, Tuple[1,30,0.5561682902530666,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0693, edge_create, Tuple[0,31,0.8186330933471226,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0693, edge_create, Tuple[31,32,0.8750556220009308,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0703, edge_create, Tuple[31,33,0.41996739049374954,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0703, edge_create, Tuple[31,34,0.27341227891953646,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0703, edge_create, Tuple[31,35,0.4475496158697636,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0713, edge_create, Tuple[31,36,0.5208681670808875,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0713, edge_create, Tuple[31,37,0.48641209068679714,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0713, edge_create, Tuple[31,38,0.13875064069299592,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0723, edge_create, Tuple[31,39,0.08274935550572848,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0723, edge_create, Tuple[31,40,0.007917172786167326,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0723, edge_create, Tuple[31,41,0.6470553035718416,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0733, edge_create, Tuple[31,42,0.30537785736722844,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0733, edge_create, Tuple[31,43,0.5514241128295886,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0733, edge_create, Tuple[31,44,0.6060740809941242,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0743, edge_create, Tuple[31,45,0.8362400750599734,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0743, edge_create, Tuple[31,46,0.22515063263064483,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0743, edge_create, Tuple[31,47,0.8010895253849187,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0753, edge_create, Tuple[31,48,0.7305704486744884,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0753, edge_create, Tuple[31,49,0.027238277963209212,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0753, edge_create, Tuple[31,50,0.7964792974381949,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0763, edge_create, Tuple[31,51,0.46775147261330563,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0763, edge_create, Tuple[31,52,0.04296704179044941,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0763, edge_create, Tuple[31,53,0.7527357031842052,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0773, edge_create, Tuple[31,54,0.39454817947692467,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0773, edge_create, Tuple[31,55,0.8508230192190035,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0773, edge_create, Tuple[31,56,0.5426828330142799,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0785, edge_create, Tuple[31,57,0.466592362086216,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0788, edge_create, Tuple[31,58,0.8999845713294534,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0791, edge_create, Tuple[31,59,0.7529528103153251,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:08:0801, discussion_open, 41107
+2015-01-15 07:05:08:0801, diag_itemclicked, id=41107, type=1
+2015-01-15 07:05:09:0656, diag_itemexited, id=41107, type=1
+2015-01-15 07:05:10:0003, diag_detail_itementered, id=0.8999845713294534, type=1
+2015-01-15 07:05:10:0195, diag_detail_itemexited, id=0.8999845713294534, type=1
+2015-01-15 07:05:12:0802, diag_detail_itementered, id=51438, type=1
+2015-01-15 07:05:12:0905, diag_detail_itemexited, id=51438, type=1
+2015-01-15 07:05:12:0914, diag_detail_itementered, id=66402, type=1
+2015-01-15 07:05:12:0936, diag_detail_itemexited, id=66402, type=1
+2015-01-15 07:05:16:0147, diag_detail_itementered, id=7291, type=1
+2015-01-15 07:05:16:0180, diag_detail_itemexited, id=7291, type=1
+2015-01-15 07:05:16:0574, answer_open, VisualItem[tree.nodes,3,id=41762,type=20,title=,body=<p>Java supplies a way of doing this directly. If you don't want the dashes, they are easy to strip out. </p>
+
+<pre><code>import java.util.UUID;
+String uuid = UUID.randomUUID().toString();
+System.out.println("uuid = " + uuid);
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<p>uuid = 2d7428a6-b58c-4008-8575-f05549f16316</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=197,searchfield=]
+2015-01-15 07:05:16:0576, answer_open, VisualItem[tree.nodes,3,id=41762,type=20,title=,body=<p>Java supplies a way of doing this directly. If you don't want the dashes, they are easy to strip out. </p>
+
+<pre><code>import java.util.UUID;
+String uuid = UUID.randomUUID().toString();
+System.out.println("uuid = " + uuid);
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<p>uuid = 2d7428a6-b58c-4008-8575-f05549f16316</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=197,searchfield=]
+2015-01-15 07:05:16:0577, diag_detail_itementered, id=41762, type=20
+2015-01-15 07:05:18:0429, diag_detail_itemexited, id=41762, type=20
+2015-01-15 07:05:18:0582, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2015-01-15 07:05:18:0587, answer_open, VisualItem[tree.nodes,2,id=41156,type=21,title=,body=<p>Here is code for secure, easy, but a little bit more expensive session identifiers.</p>
+
+<pre><code>import java.security.SecureRandom;
+import java.math.BigInteger;
+
+public final class SessionIdentifierGenerator
+{
+
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId()
+  {
+    return new BigInteger(130, random).toString(32);
+  }
+
+}
+</code></pre>
+
+<p>If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it.</p>
+
+<p>Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters.</p>
+
+<pre><code>import java.util.Random;
+
+public class RandomString
+{
+
+  private static final char[] symbols = new char[36];
+
+  static {
+    for (int idx = 0; idx &lt; 10; ++idx)
+      symbols[idx] = (char) ('0' + idx);
+    for (int idx = 10; idx &lt; 36; ++idx)
+      symbols[idx] = (char) ('a' + idx - 10);
+  }
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length)
+  {
+    if (length &lt; 1)
+      throw new IllegalArgumentException("length &lt; 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString()
+  {
+    for (int idx = 0; idx &lt; buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=238,searchfield=]
+2015-01-15 07:05:18:0588, diag_detail_itementered, id=41156, type=21
+2015-01-15 07:05:18:0651, diag_detail_itemexited, id=41156, type=21
+2015-01-15 07:05:19:0448, answer_open, VisualItem[tree.nodes,3,id=41762,type=20,title=,body=<p>Java supplies a way of doing this directly. If you don't want the dashes, they are easy to strip out. </p>
+
+<pre><code>import java.util.UUID;
+String uuid = UUID.randomUUID().toString();
+System.out.println("uuid = " + uuid);
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<p>uuid = 2d7428a6-b58c-4008-8575-f05549f16316</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=197,searchfield=]
+2015-01-15 07:05:19:0450, answer_open, VisualItem[tree.nodes,3,id=41762,type=20,title=,body=<p>Java supplies a way of doing this directly. If you don't want the dashes, they are easy to strip out. </p>
+
+<pre><code>import java.util.UUID;
+String uuid = UUID.randomUUID().toString();
+System.out.println("uuid = " + uuid);
+</code></pre>
+
+<p><strong>Output:</strong></p>
+
+<p>uuid = 2d7428a6-b58c-4008-8575-f05549f16316</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=197,searchfield=]
+2015-01-15 07:05:19:0451, diag_detail_itementered, id=41762, type=20
+2015-01-15 07:05:20:0057, diag_detail_itemexited, id=41762, type=20
+2015-01-15 07:05:22:0107, diag_itemexited, id=1, type=4
+2015-01-15 07:05:22:0239, diag_itementered, id=27129, type=1
+2015-01-15 07:05:22:0521, diag_itemexited, id=27129, type=1
+2015-01-15 07:05:22:0574, diag_itementered, id=24991, type=1
+2015-01-15 07:05:22:0634, diag_itemexited, id=24991, type=1
+2015-01-15 07:05:22:0927, diag_itemexited, id=3, type=4
+2015-01-15 07:05:22:0929, diag_itementered, id=41107, type=1
+2015-01-15 07:05:23:0480, diag_itemexited, id=41107, type=1
+2015-01-15 07:05:23:0602, diag_itemexited, id=3, type=4
+2015-01-15 07:05:23:0610, diag_itementered, id=46898, type=1
+2015-01-15 07:05:25:0245, edge_create, Tuple[0,1,0.10153978231716965,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0245, answer_create, 46905
+2015-01-15 07:05:25:0255, edge_create, Tuple[1,2,0.6056092671632222,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0255, answer_create, 46908
+2015-01-15 07:05:25:0255, edge_create, Tuple[1,3,0.5291798076257184,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0255, answer_create, 46912
+2015-01-15 07:05:25:0255, edge_create, Tuple[1,4,0.6157744271344401,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0255, answer_create, 46926
+2015-01-15 07:05:25:0255, edge_create, Tuple[1,5,0.9069588404302138,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0255, answer_create, 46989
+2015-01-15 07:05:25:0255, edge_create, Tuple[1,6,0.11834893485917142,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0255, answer_create, 47004
+2015-01-15 07:05:25:0255, edge_create, Tuple[1,7,0.6540707655112749,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0255, answer_create, 48720
+2015-01-15 07:05:25:0265, edge_create, Tuple[1,8,0.3110698351308463,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0265, answer_create, 1295383
+2015-01-15 07:05:25:0265, edge_create, Tuple[1,9,0.6894359202905438,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0265, answer_create, 2190043
+2015-01-15 07:05:25:0265, edge_create, Tuple[1,10,0.9029405315744206,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0265, answer_create, 10632923
+2015-01-15 07:05:25:0265, edge_create, Tuple[1,11,0.8560338523772113,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0265, answer_create, 13943066
+2015-01-15 07:05:25:0265, edge_create, Tuple[1,12,0.3338380399168195,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0265, answer_create, 15556457
+2015-01-15 07:05:25:0265, edge_create, Tuple[1,13,0.34425516976585113,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0265, answer_create, 17404976
+2015-01-15 07:05:25:0275, edge_create, Tuple[1,14,0.8490928287417039,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0275, edge_create, Tuple[0,15,0.8358657965350743,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0275, edge_create, Tuple[15,16,0.9747635169518785,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0275, edge_create, Tuple[15,17,0.2183696245593807,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0289, edge_create, Tuple[15,18,0.5734112962951216,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0293, edge_create, Tuple[15,19,0.5502021710555762,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0296, edge_create, Tuple[0,20,0.3331415438232954,2,1.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0297, pattern_create, 3
+2015-01-15 07:05:25:0297, edge_create, Tuple[20,21,0.40142056680973903,2,1.0,1421323427087,1421323427087]
+2015-01-15 07:05:25:0311, discussion_open, 46898
+2015-01-15 07:05:25:0311, diag_itemclicked, id=46898, type=1
+2015-01-15 07:05:26:0118, diag_itemexited, id=46898, type=1
+2015-01-15 07:05:26:0596, diag_detail_itementered, id=0.6056092671632222, type=4
+2015-01-15 07:05:26:0720, diag_detail_itemexited, id=0.6056092671632222, type=4
+2015-01-15 07:05:26:0877, answer_open, VisualItem[tree.nodes,3,id=46908,type=21,title=,body=<pre><code>for (Map.Entry&lt;String, String&gt; entry : map.entrySet())
+{
+    System.out.println(entry.getKey() + "/" + entry.getValue());
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=572,searchfield=]
+2015-01-15 07:05:26:0879, answer_open, VisualItem[tree.nodes,3,id=46908,type=21,title=,body=<pre><code>for (Map.Entry&lt;String, String&gt; entry : map.entrySet())
+{
+    System.out.println(entry.getKey() + "/" + entry.getValue());
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=572,searchfield=]
+2015-01-15 07:05:26:0880, diag_detail_itementered, id=46908, type=21
+2015-01-15 07:05:27:0789, diag_detail_itemexited, id=46908, type=21
+2015-01-15 07:05:28:0239, answer_open, VisualItem[tree.nodes,2,id=46905,type=20,title=,body=<p>Yes, the order depends on the specific Map implementation.  </p>
+
+<p>@ScArcher2 has the more elegant Java 1.5 syntax.  In 1.4, I would do something like this:</p>
+
+<pre><code>Iterator entries = myMap.entrySet().iterator();
+while (entries.hasNext()) {
+  Entry thisEntry = (Entry) entries.next();
+  Object key = thisEntry.getKey();
+  Object value = thisEntry.getValue();
+  // ...
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=45,searchfield=]
+2015-01-15 07:05:28:0239, answer_open, VisualItem[tree.nodes,2,id=46905,type=20,title=,body=<p>Yes, the order depends on the specific Map implementation.  </p>
+
+<p>@ScArcher2 has the more elegant Java 1.5 syntax.  In 1.4, I would do something like this:</p>
+
+<pre><code>Iterator entries = myMap.entrySet().iterator();
+while (entries.hasNext()) {
+  Entry thisEntry = (Entry) entries.next();
+  Object key = thisEntry.getKey();
+  Object value = thisEntry.getValue();
+  // ...
+}
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=45,searchfield=]
+2015-01-15 07:05:28:0239, diag_detail_itementered, id=46905, type=20
+2015-01-15 07:05:29:0404, diag_detail_itemexited, id=46905, type=20
+2015-01-15 07:05:29:0924, diag_detail_itementered, id=11088, type=1
+2015-01-15 07:05:30:0024, diag_detail_itemexited, id=11088, type=1
+2015-01-15 07:05:34:0789, diag_itemexited, id=1, type=4
+2015-01-15 07:05:35:0247, diag_itemexited, id=3, type=4
+2015-01-15 07:05:35:0248, diag_itementered, id=46898, type=1
+2015-01-15 07:05:38:0427, edge_create, Tuple[0,1,0.4234665935751387,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0427, answer_create, 46905
+2015-01-15 07:05:38:0427, edge_create, Tuple[1,2,0.9916329195849977,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0427, answer_create, 46908
+2015-01-15 07:05:38:0427, edge_create, Tuple[1,3,0.7622256774570766,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0427, answer_create, 46912
+2015-01-15 07:05:38:0427, edge_create, Tuple[1,4,0.5142134374845986,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0427, answer_create, 46926
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,5,0.2035704869085233,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0437, answer_create, 46989
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,6,0.31888982111923103,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0437, answer_create, 47004
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,7,0.2562074082053525,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0437, answer_create, 48720
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,8,0.9471953894110444,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0437, answer_create, 1295383
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,9,0.15512646631362725,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0437, answer_create, 2190043
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,10,0.4288110611073197,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0437, answer_create, 10632923
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,11,0.17351211189608262,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0437, answer_create, 13943066
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,12,0.38136271417900625,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0437, answer_create, 15556457
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,13,0.6121178587539268,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0437, answer_create, 17404976
+2015-01-15 07:05:38:0437, edge_create, Tuple[1,14,0.7697963160151333,4,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0447, edge_create, Tuple[0,15,0.5319149905993568,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0447, edge_create, Tuple[15,16,0.21015855071280387,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0447, edge_create, Tuple[15,17,0.7962416564927867,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0457, edge_create, Tuple[15,18,0.31072307855755754,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0457, edge_create, Tuple[15,19,0.6080520585885486,1,0.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0457, edge_create, Tuple[0,20,0.17330478080814493,2,1.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0457, pattern_create, 3
+2015-01-15 07:05:38:0457, edge_create, Tuple[20,21,0.4163911642563195,2,1.0,1421323427087,1421323427087]
+2015-01-15 07:05:38:0467, discussion_open, 46898
+2015-01-15 07:05:38:0467, diag_itemclicked, id=46898, type=1
+2015-01-15 07:05:40:0515, diag_itemexited, id=46898, type=1
+2015-01-15 07:06:15:0990, answer_open, VisualItem[tree.nodes,12,id=13943066,type=20,title=,body=<p>In <a href="https://github.com/goldmansachs/gs-collections" rel="nofollow">GS Collections</a>, you would use the forEachKeyValue method on the <a href="https://github.com/goldmansachs/gs-collections/blob/master/collections-api/src/main/java/com/gs/collections/api/map/MapIterable.java" rel="nofollow">MapIterable</a> interface, which is inherited by the MutableMap and ImmutableMap interfaces and their implementations.</p>
+
+<pre><code>final MutableBag&lt;String&gt; result = Bags.mutable.of();
+MutableMap&lt;Integer, String&gt; map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue(new Procedure2&lt;Integer, String&gt;()
+{
+    public void value(Integer key, String value)
+    {
+        result.add(key + value);
+    }
+});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+</code></pre>
+
+<p>When Lambdas arrive in Java 8, you will be able to write the code as follows:</p>
+
+<pre><code>MutableBag&lt;String&gt; result = Bags.mutable.of();
+MutableMap&lt;Integer, String&gt; map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue((key, value) -&gt; { result.add(key + value);});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+</code></pre>
+
+<p>Note: I am a developer on GS Collections.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=3,searchfield=]
+2015-01-15 07:06:15:0993, answer_open, VisualItem[tree.nodes,12,id=13943066,type=20,title=,body=<p>In <a href="https://github.com/goldmansachs/gs-collections" rel="nofollow">GS Collections</a>, you would use the forEachKeyValue method on the <a href="https://github.com/goldmansachs/gs-collections/blob/master/collections-api/src/main/java/com/gs/collections/api/map/MapIterable.java" rel="nofollow">MapIterable</a> interface, which is inherited by the MutableMap and ImmutableMap interfaces and their implementations.</p>
+
+<pre><code>final MutableBag&lt;String&gt; result = Bags.mutable.of();
+MutableMap&lt;Integer, String&gt; map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue(new Procedure2&lt;Integer, String&gt;()
+{
+    public void value(Integer key, String value)
+    {
+        result.add(key + value);
+    }
+});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+</code></pre>
+
+<p>When Lambdas arrive in Java 8, you will be able to write the code as follows:</p>
+
+<pre><code>MutableBag&lt;String&gt; result = Bags.mutable.of();
+MutableMap&lt;Integer, String&gt; map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue((key, value) -&gt; { result.add(key + value);});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+</code></pre>
+
+<p>Note: I am a developer on GS Collections.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1421323427087L,lastactivitydate=0L,tags=,score=3,searchfield=]
+2015-01-15 07:06:16:0007, diag_detail_itementered, id=13943066, type=20
+2015-01-15 07:06:16:0064, diag_detail_itemexited, id=13943066, type=20

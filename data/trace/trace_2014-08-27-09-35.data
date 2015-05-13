@@ -1,0 +1,842 @@
+2014-08-27 09:35:40:0898, edge_create, Tuple[0,1,0.2551081896428684,3,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0361, question_create, 123
+2014-08-27 09:35:41:0362, edge_create, Tuple[1,2,0.018556392052016424,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0363, question_create, 126
+2014-08-27 09:35:41:0363, edge_create, Tuple[1,3,0.22130604447223723,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0364, question_create, 382
+2014-08-27 09:35:41:0364, edge_create, Tuple[1,4,0.7383857913536157,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0364, question_create, 564
+2014-08-27 09:35:41:0365, edge_create, Tuple[1,5,0.12102903480479643,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0365, question_create, 2092
+2014-08-27 09:35:41:0366, edge_create, Tuple[1,6,0.2065382150309628,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0366, question_create, 2158
+2014-08-27 09:35:41:0366, edge_create, Tuple[1,7,0.031537250768799874,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0367, question_create, 2931
+2014-08-27 09:35:41:0367, edge_create, Tuple[1,8,0.7631362235175965,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0367, question_create, 2968
+2014-08-27 09:35:41:0368, edge_create, Tuple[1,9,0.3334742747535615,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0369, question_create, 3049
+2014-08-27 09:35:41:0369, edge_create, Tuple[1,10,0.9957179873576649,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0370, question_create, 3881
+2014-08-27 09:35:41:0370, edge_create, Tuple[1,11,0.1437113141148849,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0370, question_create, 4080
+2014-08-27 09:35:41:0371, edge_create, Tuple[1,12,0.985579189377187,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0371, question_create, 4149
+2014-08-27 09:35:41:0371, edge_create, Tuple[1,13,0.08080799369976222,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0372, question_create, 4242
+2014-08-27 09:35:41:0372, edge_create, Tuple[1,14,0.9462166538168242,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0373, question_create, 4630
+2014-08-27 09:35:41:0373, edge_create, Tuple[1,15,0.6990359594328706,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0373, question_create, 4922
+2014-08-27 09:35:41:0374, edge_create, Tuple[1,16,0.050819528094755984,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0374, question_create, 5078
+2014-08-27 09:35:41:0375, edge_create, Tuple[1,17,0.9540916883013199,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0375, question_create, 5222
+2014-08-27 09:35:41:0377, edge_create, Tuple[1,18,0.6797040612635429,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0378, question_create, 5328
+2014-08-27 09:35:41:0378, edge_create, Tuple[1,19,0.536421621017897,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0379, question_create, 5514
+2014-08-27 09:35:41:0380, edge_create, Tuple[1,20,0.3236413073686635,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0381, question_create, 5527
+2014-08-27 09:35:41:0381, edge_create, Tuple[1,21,0.37825601847381773,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0382, question_create, 5855
+2014-08-27 09:35:41:0382, edge_create, Tuple[1,22,0.3897583617041721,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0382, question_create, 6222
+2014-08-27 09:35:41:0383, edge_create, Tuple[1,23,0.23787919849285633,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0383, question_create, 6392
+2014-08-27 09:35:41:0384, edge_create, Tuple[1,24,0.3107959790907303,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0384, question_create, 6612
+2014-08-27 09:35:41:0385, edge_create, Tuple[1,25,0.9473606530049934,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0385, question_create, 6639
+2014-08-27 09:35:41:0385, edge_create, Tuple[1,26,0.7467996296782626,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0386, question_create, 6658
+2014-08-27 09:35:41:0386, edge_create, Tuple[1,27,0.7140683612251233,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0386, question_create, 6682
+2014-08-27 09:35:41:0387, edge_create, Tuple[1,28,0.5847523760341131,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0387, question_create, 6765
+2014-08-27 09:35:41:0388, edge_create, Tuple[1,29,0.15603807152504212,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0388, question_create, 6816
+2014-08-27 09:35:41:0388, edge_create, Tuple[1,30,0.6332971043148341,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0389, question_create, 7269
+2014-08-27 09:35:41:0389, edge_create, Tuple[1,31,0.4690650720419006,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0389, question_create, 7291
+2014-08-27 09:35:41:0390, edge_create, Tuple[1,32,0.8267371731892817,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0390, question_create, 7539
+2014-08-27 09:35:41:0390, edge_create, Tuple[1,33,0.039725022743149596,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0391, question_create, 7596
+2014-08-27 09:35:41:0391, edge_create, Tuple[1,34,0.7982698044456893,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0391, question_create, 7661
+2014-08-27 09:35:41:0392, edge_create, Tuple[1,35,0.7820498322220635,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0393, question_create, 7681
+2014-08-27 09:35:41:0393, edge_create, Tuple[1,36,0.46333934533710475,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0394, question_create, 7720
+2014-08-27 09:35:41:0394, edge_create, Tuple[1,37,0.6630434496312715,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0395, question_create, 7779
+2014-08-27 09:35:41:0395, edge_create, Tuple[1,38,0.8296706408865695,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0395, question_create, 8219
+2014-08-27 09:35:41:0396, edge_create, Tuple[1,39,0.048500739205175614,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0396, question_create, 8318
+2014-08-27 09:35:41:0396, edge_create, Tuple[1,40,0.3836476569314674,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0397, question_create, 8569
+2014-08-27 09:35:41:0397, edge_create, Tuple[1,41,0.22869989822690795,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0397, question_create, 8599
+2014-08-27 09:35:41:0398, edge_create, Tuple[1,42,0.8090645038389392,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0398, question_create, 8968
+2014-08-27 09:35:41:0399, edge_create, Tuple[1,43,0.43460860090564923,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0399, question_create, 9044
+2014-08-27 09:35:41:0399, edge_create, Tuple[1,44,0.3928354123885388,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0400, question_create, 9361
+2014-08-27 09:35:41:0400, edge_create, Tuple[1,45,0.8185309631116414,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0400, question_create, 9913
+2014-08-27 09:35:41:0401, edge_create, Tuple[1,46,0.6350807925943909,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0401, question_create, 10042
+2014-08-27 09:35:41:0401, edge_create, Tuple[1,47,0.8160137546496153,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0402, question_create, 10506
+2014-08-27 09:35:41:0403, edge_create, Tuple[1,48,0.3833023791084793,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0403, question_create, 10586
+2014-08-27 09:35:41:0403, edge_create, Tuple[1,49,0.4238295220936742,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0404, question_create, 10980
+2014-08-27 09:35:41:0404, edge_create, Tuple[1,50,0.2804417310376165,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0404, question_create, 11088
+2014-08-27 09:35:41:0405, edge_create, Tuple[1,51,0.695597280371984,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0405, question_create, 11338
+2014-08-27 09:35:41:0405, edge_create, Tuple[1,52,0.6859282881568217,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0406, question_create, 11341
+2014-08-27 09:35:41:0406, edge_create, Tuple[1,53,0.9738447444651428,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0406, question_create, 11561
+2014-08-27 09:35:41:0407, edge_create, Tuple[1,54,0.1819375194823566,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0407, question_create, 11930
+2014-08-27 09:35:41:0407, edge_create, Tuple[1,55,0.4249422466644778,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0408, question_create, 12088
+2014-08-27 09:35:41:0408, edge_create, Tuple[1,56,0.7016887328496538,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0409, question_create, 12144
+2014-08-27 09:35:41:0409, edge_create, Tuple[1,57,0.5293564375873876,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0409, question_create, 12870
+2014-08-27 09:35:41:0410, edge_create, Tuple[1,58,0.5535402953234961,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0410, question_create, 12877
+2014-08-27 09:35:41:0410, edge_create, Tuple[1,59,0.5902131567265914,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0411, question_create, 12927
+2014-08-27 09:35:41:0412, edge_create, Tuple[1,60,0.7078285406009113,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0412, question_create, 13225
+2014-08-27 09:35:41:0412, edge_create, Tuple[1,61,0.6724821940550907,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0413, question_create, 13751
+2014-08-27 09:35:41:0413, edge_create, Tuple[1,62,0.6599184190454935,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0414, question_create, 13863
+2014-08-27 09:35:41:0414, edge_create, Tuple[1,63,0.8655846739031569,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0414, question_create, 14397
+2014-08-27 09:35:41:0415, edge_create, Tuple[1,64,0.6829839457255416,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0415, question_create, 14617
+2014-08-27 09:35:41:0415, edge_create, Tuple[1,65,0.39438355436727524,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0416, question_create, 14801
+2014-08-27 09:35:41:0416, edge_create, Tuple[1,66,0.9909338230306328,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0416, question_create, 15305
+2014-08-27 09:35:41:0417, edge_create, Tuple[1,67,0.9859836307654575,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0417, question_create, 15481
+2014-08-27 09:35:41:0417, edge_create, Tuple[1,68,0.10208919164128105,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0418, question_create, 15496
+2014-08-27 09:35:41:0418, edge_create, Tuple[1,69,0.4592953059127942,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0418, question_create, 15528
+2014-08-27 09:35:41:0419, edge_create, Tuple[1,70,0.8372747354012503,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0419, question_create, 15649
+2014-08-27 09:35:41:0419, edge_create, Tuple[1,71,0.7457909337820766,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0422, pattern_create, 2109443059
+2014-08-27 09:35:41:0423, edge_create, Tuple[0,72,0.914599637893658,3,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0436, question_create, 43344
+2014-08-27 09:35:41:0436, edge_create, Tuple[72,73,0.30630987464272863,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0437, question_create, 6612
+2014-08-27 09:35:41:0437, edge_create, Tuple[72,74,0.9831967169182672,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0438, question_create, 7291
+2014-08-27 09:35:41:0438, edge_create, Tuple[72,75,0.09128313179825409,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0438, pattern_create, 1641682794
+2014-08-27 09:35:41:0439, edge_create, Tuple[0,76,0.3385077789114639,3,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0444, question_create, 123
+2014-08-27 09:35:41:0445, edge_create, Tuple[76,77,0.03960632243578299,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0445, question_create, 29324
+2014-08-27 09:35:41:0445, edge_create, Tuple[76,78,0.10441526973839999,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0446, question_create, 19347
+2014-08-27 09:35:41:0446, edge_create, Tuple[76,79,0.4419756604846373,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0446, pattern_create, -771804441
+2014-08-27 09:35:41:0447, edge_create, Tuple[0,80,0.6778243885631922,3,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0452, question_create, 41107
+2014-08-27 09:35:41:0454, edge_create, Tuple[80,81,0.9533216349350067,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0454, question_create, 11930
+2014-08-27 09:35:41:0455, edge_create, Tuple[80,82,0.9875136204298656,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0455, question_create, 37628
+2014-08-27 09:35:41:0456, edge_create, Tuple[80,83,0.34966325239519114,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0456, pattern_create, 1796611198
+2014-08-27 09:35:41:0456, edge_create, Tuple[0,84,0.10264230557437981,3,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0460, question_create, 40471
+2014-08-27 09:35:41:0461, edge_create, Tuple[84,85,0.3390194602427774,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0461, question_create, 24596
+2014-08-27 09:35:41:0461, edge_create, Tuple[84,86,0.8717992735322109,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0462, question_create, 6658
+2014-08-27 09:35:41:0462, edge_create, Tuple[84,87,0.4838352844003696,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0462, question_create, 21934
+2014-08-27 09:35:41:0463, edge_create, Tuple[84,88,0.21859561671623373,2,1.0,1409189740890,1409189740890]
+2014-08-27 09:35:41:0685, setup_loaddata
+2014-08-27 09:35:43:0426, diag_itementered, id=12927, type=1
+2014-08-27 09:35:43:0465, diag_itemexited, id=12927, type=1
+2014-08-27 09:35:43:0531, diag_itementered, id=1796611198, type=0
+2014-08-27 09:35:43:0595, diag_itemexited, id=1796611198, type=0
+2014-08-27 09:35:44:0596, diag_itementered, id=3049, type=1
+2014-08-27 09:35:46:0524, edge_create, Tuple[0,1,0.031719668817442814,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0525, answer_create, 3054
+2014-08-27 09:35:46:0527, edge_create, Tuple[1,2,0.05536373841066011,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0528, answer_create, 3060
+2014-08-27 09:35:46:0529, edge_create, Tuple[1,3,0.7182769624945619,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0530, answer_create, 3090
+2014-08-27 09:35:46:0531, edge_create, Tuple[1,4,0.29647207307927137,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0531, answer_create, 6352
+2014-08-27 09:35:46:0532, edge_create, Tuple[1,5,0.2647094249927604,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0533, answer_create, 9725
+2014-08-27 09:35:46:0534, edge_create, Tuple[1,6,0.40416978226903066,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0535, answer_create, 24078
+2014-08-27 09:35:46:0536, edge_create, Tuple[1,7,0.7860498474094579,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0536, answer_create, 41526
+2014-08-27 09:35:46:0537, edge_create, Tuple[1,8,0.23293238377159586,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0538, answer_create, 65870
+2014-08-27 09:35:46:0539, edge_create, Tuple[1,9,0.9238646490773135,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0540, answer_create, 118609
+2014-08-27 09:35:46:0541, edge_create, Tuple[1,10,0.5563109076453516,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0542, answer_create, 15475192
+2014-08-27 09:35:46:0543, edge_create, Tuple[1,11,0.5686783163763005,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0550, edge_create, Tuple[0,12,0.669734887198678,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0551, edge_create, Tuple[12,13,0.21896850958440173,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0553, edge_create, Tuple[12,14,0.4231584190150386,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0555, edge_create, Tuple[12,15,0.5902509446771149,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0557, edge_create, Tuple[12,16,0.2115597163236389,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0559, edge_create, Tuple[12,17,0.12252109660743327,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0561, edge_create, Tuple[12,18,0.054931044459825884,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0563, edge_create, Tuple[12,19,0.6982790250286798,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0564, edge_create, Tuple[12,20,0.35147168437533616,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0566, edge_create, Tuple[12,21,0.6657929264879667,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0567, edge_create, Tuple[12,22,0.060293207528694714,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0569, edge_create, Tuple[12,23,0.23053709284177104,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0571, edge_create, Tuple[12,24,0.5382564515229433,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0572, edge_create, Tuple[12,25,0.32738158350263324,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0574, edge_create, Tuple[12,26,0.5479079000014465,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0576, edge_create, Tuple[12,27,0.1907428976315334,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0578, edge_create, Tuple[12,28,0.8013100910701779,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0580, edge_create, Tuple[12,29,0.3012902058788648,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0583, edge_create, Tuple[12,30,0.9924402528882915,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0585, edge_create, Tuple[12,31,0.08581767919472427,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0587, edge_create, Tuple[12,32,0.4864571510771717,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0589, edge_create, Tuple[12,33,0.3895524870557664,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0590, edge_create, Tuple[12,34,0.5183286982877129,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0592, edge_create, Tuple[12,35,0.11359956193603371,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0593, edge_create, Tuple[12,36,0.9500177768768013,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0595, edge_create, Tuple[12,37,0.6286885412929665,1,0.0,1409189740890,1409189740890]
+2014-08-27 09:35:46:0609, discussion_open, 3049
+2014-08-27 09:35:46:0609, diag_itemclicked, id=3049, type=1
+2014-08-27 09:35:46:0767, diag_itemexited, id=3049, type=1
+2014-08-27 09:35:48:0061, diag_itementered, id=0.5382564515229433, type=1
+2014-08-27 09:35:48:0068, diag_itemexited, id=0.5382564515229433, type=1
+2014-08-27 09:35:48:0076, diag_itementered, id=0.32738158350263324, type=1
+2014-08-27 09:35:48:0084, diag_itemexited, id=0.32738158350263324, type=1
+2014-08-27 09:35:48:0086, diag_itementered, id=0.8013100910701779, type=1
+2014-08-27 09:35:48:0093, diag_itemexited, id=0.8013100910701779, type=1
+2014-08-27 09:35:48:0093, diag_itementered, id=-1116828104, type=3
+2014-08-27 09:35:48:0107, diag_itemexited, id=-1116828104, type=3
+2014-08-27 09:35:48:0109, diag_itementered, id=0.6286885412929665, type=1
+2014-08-27 09:35:48:0120, diag_itemexited, id=0.6286885412929665, type=1
+2014-08-27 09:35:48:0726, diag_itementered, id=3054, type=21
+2014-08-27 09:35:49:0179, diag_itemexited, id=3054, type=21
+2014-08-27 09:35:49:0406, diag_itementered, id=3060, type=20
+2014-08-27 09:35:51:0483, diag_itemexited, id=3060, type=20
+2014-08-27 09:35:52:0776, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:35:53:0783, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=16]
+2014-08-27 09:35:55:0177, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:35:55:0969, answer_open, VisualItem[tree.nodes,4,id=3090,type=20,title=,body=<p>At work we use teraterm and realterm for checking serial data is correctly formatted. Also we have a hardware splitter with a switch so we can monitor traffic to our application via a cable back to another port.</p>
+
+<p>Windows allows you access to the serial port via CreateFile. That gives you a handle and from there you can configure access.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 09:35:56:0582, answer_open, VisualItem[tree.nodes,5,id=6352,type=20,title=,body=<p>From Java the <a href="http://www.rxtx.org/" rel="nofollow">rxtx</a> library is quite good. It picks up where Sun's serial IO framework left off. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:35:57:0134, answer_open, VisualItem[tree.nodes,6,id=9725,type=20,title=,body=<p>For C/C++ on Windows you have (at least) two choices:</p>
+
+<ol>
+<li>Use the SerialPort class provided by .NET.</li>
+<li>Use the Win32 API. There is an <a href="http://msdn.microsoft.com/en-us/library/ms810467.aspx">extensive MSDN article</a> dating back to 1995, and many free libraries and examples on the web to get you started.</li>
+</ol>
+
+<p>The .NET option will be much easier.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=6]
+2014-08-27 09:35:58:0145, answer_open, VisualItem[tree.nodes,5,id=6352,type=20,title=,body=<p>From Java the <a href="http://www.rxtx.org/" rel="nofollow">rxtx</a> library is quite good. It picks up where Sun's serial IO framework left off. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:35:58:0584, answer_open, VisualItem[tree.nodes,4,id=3090,type=20,title=,body=<p>At work we use teraterm and realterm for checking serial data is correctly formatted. Also we have a hardware splitter with a switch so we can monitor traffic to our application via a cable back to another port.</p>
+
+<p>Windows allows you access to the serial port via CreateFile. That gives you a handle and from there you can configure access.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 09:35:59:0038, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:35:59:0586, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=16]
+2014-08-27 09:36:00:0223, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:36:01:0455, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=16]
+2014-08-27 09:36:01:0856, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:36:06:0286, answer_open, VisualItem[tree.nodes,4,id=3090,type=20,title=,body=<p>At work we use teraterm and realterm for checking serial data is correctly formatted. Also we have a hardware splitter with a switch so we can monitor traffic to our application via a cable back to another port.</p>
+
+<p>Windows allows you access to the serial port via CreateFile. That gives you a handle and from there you can configure access.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 09:36:06:0815, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:36:07:0145, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=16]
+2014-08-27 09:36:08:0049, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:36:08:0687, answer_open, VisualItem[tree.nodes,4,id=3090,type=20,title=,body=<p>At work we use teraterm and realterm for checking serial data is correctly formatted. Also we have a hardware splitter with a switch so we can monitor traffic to our application via a cable back to another port.</p>
+
+<p>Windows allows you access to the serial port via CreateFile. That gives you a handle and from there you can configure access.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 09:36:09:0215, answer_open, VisualItem[tree.nodes,5,id=6352,type=20,title=,body=<p>From Java the <a href="http://www.rxtx.org/" rel="nofollow">rxtx</a> library is quite good. It picks up where Sun's serial IO framework left off. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:36:09:0721, answer_open, VisualItem[tree.nodes,6,id=9725,type=20,title=,body=<p>For C/C++ on Windows you have (at least) two choices:</p>
+
+<ol>
+<li>Use the SerialPort class provided by .NET.</li>
+<li>Use the Win32 API. There is an <a href="http://msdn.microsoft.com/en-us/library/ms810467.aspx">extensive MSDN article</a> dating back to 1995, and many free libraries and examples on the web to get you started.</li>
+</ol>
+
+<p>The .NET option will be much easier.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=6]
+2014-08-27 09:36:10:0815, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=16]
+2014-08-27 09:36:11:0408, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:36:11:0971, answer_open, VisualItem[tree.nodes,4,id=3090,type=20,title=,body=<p>At work we use teraterm and realterm for checking serial data is correctly formatted. Also we have a hardware splitter with a switch so we can monitor traffic to our application via a cable back to another port.</p>
+
+<p>Windows allows you access to the serial port via CreateFile. That gives you a handle and from there you can configure access.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 09:36:14:0090, answer_open, VisualItem[tree.nodes,5,id=6352,type=20,title=,body=<p>From Java the <a href="http://www.rxtx.org/" rel="nofollow">rxtx</a> library is quite good. It picks up where Sun's serial IO framework left off. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:36:14:0648, answer_open, VisualItem[tree.nodes,4,id=3090,type=20,title=,body=<p>At work we use teraterm and realterm for checking serial data is correctly formatted. Also we have a hardware splitter with a switch so we can monitor traffic to our application via a cable back to another port.</p>
+
+<p>Windows allows you access to the serial port via CreateFile. That gives you a handle and from there you can configure access.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 09:36:15:0018, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:36:15:0370, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=16]
+2014-08-27 09:36:15:0762, answer_open, VisualItem[tree.nodes,3,id=3060,type=20,title=,body=<p>From the other side, if you want to do it using C#, which will run on both Windows and Linux--with some <a href="http://www.mono-project.com/HowToSystemIOPorts" rel="nofollow">limitations</a> (EDIT: which may be out of date. I have no way to test it.). Just create a <a href="http://msdn.microsoft.com/en-us/library/system.io.ports.serialport.aspx" rel="nofollow">SerialPort</a> object, set its baudrate, port and any other odd settings, call open on it, and write out your byte[]s. After all the setup, the SerialPort object acts very similar to any networked stream, so it should be easy enough to figure out.</p>
+
+<p>And as ibrandy states, you need to know all these settings, like baud rate, before you even start attempting to communicate to any serial device. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:36:16:0114, answer_open, VisualItem[tree.nodes,4,id=3090,type=20,title=,body=<p>At work we use teraterm and realterm for checking serial data is correctly formatted. Also we have a hardware splitter with a switch so we can monitor traffic to our application via a cable back to another port.</p>
+
+<p>Windows allows you access to the serial port via CreateFile. That gives you a handle and from there you can configure access.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=2]
+2014-08-27 09:36:16:0584, answer_open, VisualItem[tree.nodes,5,id=6352,type=20,title=,body=<p>From Java the <a href="http://www.rxtx.org/" rel="nofollow">rxtx</a> library is quite good. It picks up where Sun's serial IO framework left off. </p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=1]
+2014-08-27 09:42:24:0934, diag_itementered, id=2158, type=1
+2014-08-27 09:42:24:0992, diag_itemexited, id=2158, type=1
+2014-08-27 09:42:26:0123, diag_itementered, id=-81650311, type=3
+2014-08-27 09:42:28:0214, diag_itemexited, id=-81650311, type=3
+2014-08-27 09:42:28:0340, diag_itementered, id=123, type=1
+2014-08-27 09:42:28:0372, diag_itemexited, id=123, type=1
+2014-08-27 09:42:31:0702, diag_itementered, id=15496, type=1
+2014-08-27 09:42:31:0804, diag_itemdragged, id=15496, type=1
+2014-08-27 09:42:33:0292, edge_create, Tuple[0,1,0.8417108218835531,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0293, answer_create, 15512
+2014-08-27 09:42:33:0294, edge_create, Tuple[1,2,0.33226667997650516,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0294, answer_create, 15533
+2014-08-27 09:42:33:0295, edge_create, Tuple[1,3,0.5086398703721324,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0296, answer_create, 15538
+2014-08-27 09:42:33:0296, edge_create, Tuple[1,4,0.5297822080383372,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0297, answer_create, 16528
+2014-08-27 09:42:33:0297, edge_create, Tuple[1,5,0.5142105801872644,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0298, answer_create, 16838
+2014-08-27 09:42:33:0298, edge_create, Tuple[1,6,0.2913585939242813,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0299, answer_create, 17702
+2014-08-27 09:42:33:0299, edge_create, Tuple[1,7,0.5488572854569382,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0300, answer_create, 17769
+2014-08-27 09:42:33:0300, edge_create, Tuple[1,8,0.9887293705804621,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0301, answer_create, 35084
+2014-08-27 09:42:33:0301, edge_create, Tuple[1,9,0.17186519523274923,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0302, answer_create, 35108
+2014-08-27 09:42:33:0302, edge_create, Tuple[1,10,0.3591677121695356,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0303, answer_create, 35124
+2014-08-27 09:42:33:0304, edge_create, Tuple[1,11,0.46303076827564027,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0304, answer_create, 39433
+2014-08-27 09:42:33:0305, edge_create, Tuple[1,12,0.5062136048411673,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0305, answer_create, 40967
+2014-08-27 09:42:33:0306, edge_create, Tuple[1,13,0.20828924215850497,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0306, answer_create, 41023
+2014-08-27 09:42:33:0307, edge_create, Tuple[1,14,0.6424056229909274,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0307, answer_create, 42686
+2014-08-27 09:42:33:0308, edge_create, Tuple[1,15,0.9972732562163557,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0308, answer_create, 44054
+2014-08-27 09:42:33:0309, edge_create, Tuple[1,16,0.3462246177707735,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0309, answer_create, 47347
+2014-08-27 09:42:33:0310, edge_create, Tuple[1,17,0.6632440415633082,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0311, answer_create, 47493
+2014-08-27 09:42:33:0311, edge_create, Tuple[1,18,0.9614311971304029,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0312, answer_create, 49701
+2014-08-27 09:42:33:0312, edge_create, Tuple[1,19,0.6721568300341234,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0313, answer_create, 50107
+2014-08-27 09:42:33:0313, edge_create, Tuple[1,20,0.6574412215840706,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0314, answer_create, 52914
+2014-08-27 09:42:33:0314, edge_create, Tuple[1,21,0.14610123680221332,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0315, answer_create, 54762
+2014-08-27 09:42:33:0315, edge_create, Tuple[1,22,0.8179611034458324,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0316, answer_create, 55221
+2014-08-27 09:42:33:0316, edge_create, Tuple[1,23,0.1684435047088818,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0317, answer_create, 55616
+2014-08-27 09:42:33:0317, edge_create, Tuple[1,24,0.383559697360778,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0319, answer_create, 55679
+2014-08-27 09:42:33:0320, edge_create, Tuple[1,25,0.2982590800981644,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0321, answer_create, 64136
+2014-08-27 09:42:33:0321, edge_create, Tuple[1,26,0.6720652972988753,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0322, answer_create, 64164
+2014-08-27 09:42:33:0322, edge_create, Tuple[1,27,0.9577779942983784,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0323, answer_create, 64274
+2014-08-27 09:42:33:0323, edge_create, Tuple[1,28,0.996655367243754,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0324, answer_create, 64369
+2014-08-27 09:42:33:0324, edge_create, Tuple[1,29,0.639390735457544,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0325, answer_create, 64618
+2014-08-27 09:42:33:0325, edge_create, Tuple[1,30,0.13138359425146184,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0326, answer_create, 75519
+2014-08-27 09:42:33:0326, edge_create, Tuple[1,31,0.0022250013478609665,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0327, answer_create, 76317
+2014-08-27 09:42:33:0327, edge_create, Tuple[1,32,0.7019235501766626,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0328, answer_create, 82236
+2014-08-27 09:42:33:0328, edge_create, Tuple[1,33,0.6394740278549873,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0329, answer_create, 83113
+2014-08-27 09:42:33:0329, edge_create, Tuple[1,34,0.8478816948996237,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0330, answer_create, 85703
+2014-08-27 09:42:33:0330, edge_create, Tuple[1,35,0.046729949237840906,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0331, answer_create, 101659
+2014-08-27 09:42:33:0331, edge_create, Tuple[1,36,0.782653497249044,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0332, answer_create, 101851
+2014-08-27 09:42:33:0332, edge_create, Tuple[1,37,0.5118723763599795,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0333, answer_create, 107067
+2014-08-27 09:42:33:0333, edge_create, Tuple[1,38,0.016098319750410983,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0334, answer_create, 129378
+2014-08-27 09:42:33:0334, edge_create, Tuple[1,39,0.8850262536656319,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0335, answer_create, 137600
+2014-08-27 09:42:33:0336, edge_create, Tuple[1,40,0.1810469985861819,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0336, answer_create, 139379
+2014-08-27 09:42:33:0337, edge_create, Tuple[1,41,0.5323070991116268,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0337, answer_create, 142676
+2014-08-27 09:42:33:0338, edge_create, Tuple[1,42,0.37171741938836056,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0338, answer_create, 146121
+2014-08-27 09:42:33:0339, edge_create, Tuple[1,43,0.9922087770210661,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0339, answer_create, 148282
+2014-08-27 09:42:33:0340, edge_create, Tuple[1,44,0.24350082793278793,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0340, answer_create, 169064
+2014-08-27 09:42:33:0341, edge_create, Tuple[1,45,0.6543813189656026,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0341, answer_create, 170999
+2014-08-27 09:42:33:0342, edge_create, Tuple[1,46,0.5004326819334055,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0342, answer_create, 175511
+2014-08-27 09:42:33:0343, edge_create, Tuple[1,47,0.08613710934859242,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0343, answer_create, 229899
+2014-08-27 09:42:33:0344, edge_create, Tuple[1,48,0.7982306231564145,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0345, answer_create, 238827
+2014-08-27 09:42:33:0346, edge_create, Tuple[1,49,0.8143863882210466,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0346, answer_create, 238837
+2014-08-27 09:42:33:0347, edge_create, Tuple[1,50,0.0844541278344868,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0347, answer_create, 259287
+2014-08-27 09:42:33:0348, edge_create, Tuple[1,51,0.5050288531828164,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0348, answer_create, 284614
+2014-08-27 09:42:33:0349, edge_create, Tuple[1,52,0.3786208066528848,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0349, answer_create, 306721
+2014-08-27 09:42:33:0350, edge_create, Tuple[1,53,0.5964417032771554,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0350, answer_create, 321782
+2014-08-27 09:42:33:0351, edge_create, Tuple[1,54,0.43763951935490986,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0351, answer_create, 336346
+2014-08-27 09:42:33:0352, edge_create, Tuple[1,55,0.7700474033320577,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0352, answer_create, 341823
+2014-08-27 09:42:33:0352, edge_create, Tuple[1,56,0.45744353049017616,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0353, answer_create, 404567
+2014-08-27 09:42:33:0353, edge_create, Tuple[1,57,0.8635893066715364,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0353, answer_create, 457863
+2014-08-27 09:42:33:0354, edge_create, Tuple[1,58,0.31011590343092477,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0354, answer_create, 492663
+2014-08-27 09:42:33:0354, edge_create, Tuple[1,59,0.33938493428629046,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0355, answer_create, 511975
+2014-08-27 09:42:33:0355, edge_create, Tuple[1,60,0.01509734562004883,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0356, answer_create, 512216
+2014-08-27 09:42:33:0356, edge_create, Tuple[1,61,0.5512848955465758,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0356, answer_create, 512368
+2014-08-27 09:42:33:0357, edge_create, Tuple[1,62,0.4793898204995951,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0357, answer_create, 556664
+2014-08-27 09:42:33:0358, edge_create, Tuple[1,63,0.35428557794118487,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0358, answer_create, 556756
+2014-08-27 09:42:33:0358, edge_create, Tuple[1,64,0.6292739684670255,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0359, answer_create, 556772
+2014-08-27 09:42:33:0359, edge_create, Tuple[1,65,0.06679730861792377,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0359, answer_create, 562852
+2014-08-27 09:42:33:0360, edge_create, Tuple[1,66,0.08732701357613404,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0360, answer_create, 574522
+2014-08-27 09:42:33:0360, edge_create, Tuple[1,67,0.12765017567702108,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0361, answer_create, 766774
+2014-08-27 09:42:33:0361, edge_create, Tuple[1,68,0.5439694496953448,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0362, answer_create, 851055
+2014-08-27 09:42:33:0362, edge_create, Tuple[1,69,0.6413485776284454,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0362, answer_create, 945115
+2014-08-27 09:42:33:0363, edge_create, Tuple[1,70,0.03101579846550706,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0363, answer_create, 949397
+2014-08-27 09:42:33:0363, edge_create, Tuple[1,71,0.2323085428999777,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0364, answer_create, 983366
+2014-08-27 09:42:33:0364, edge_create, Tuple[1,72,0.8525135833051143,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0364, answer_create, 1025199
+2014-08-27 09:42:33:0365, edge_create, Tuple[1,73,0.5413972918464144,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0365, answer_create, 1025306
+2014-08-27 09:42:33:0366, edge_create, Tuple[1,74,0.9704107001695668,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0366, answer_create, 1027744
+2014-08-27 09:42:33:0366, edge_create, Tuple[1,75,0.3087407221643287,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0367, answer_create, 1191782
+2014-08-27 09:42:33:0367, edge_create, Tuple[1,76,0.012299989732903804,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0368, answer_create, 1276933
+2014-08-27 09:42:33:0368, edge_create, Tuple[1,77,0.2612881433154276,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0368, answer_create, 1305163
+2014-08-27 09:42:33:0369, edge_create, Tuple[1,78,0.6767857739968649,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0369, answer_create, 1305616
+2014-08-27 09:42:33:0370, edge_create, Tuple[1,79,0.1309741500638043,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0371, answer_create, 1674342
+2014-08-27 09:42:33:0371, edge_create, Tuple[1,80,0.39815584998672326,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0371, answer_create, 1804983
+2014-08-27 09:42:33:0372, edge_create, Tuple[1,81,0.6915607668377518,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0372, answer_create, 1805139
+2014-08-27 09:42:33:0373, edge_create, Tuple[1,82,0.5134103467080117,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0373, answer_create, 1805211
+2014-08-27 09:42:33:0373, edge_create, Tuple[1,83,0.04457874008673013,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0374, answer_create, 1807455
+2014-08-27 09:42:33:0374, edge_create, Tuple[1,84,0.49679948269885776,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0374, answer_create, 1834084
+2014-08-27 09:42:33:0375, edge_create, Tuple[1,85,0.785531525985354,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0375, answer_create, 1838200
+2014-08-27 09:42:33:0376, edge_create, Tuple[1,86,0.8134919152933613,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0376, answer_create, 1859579
+2014-08-27 09:42:33:0376, edge_create, Tuple[1,87,0.622127378334088,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0377, answer_create, 1918613
+2014-08-27 09:42:33:0377, edge_create, Tuple[1,88,0.6465905226178024,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0377, answer_create, 2034744
+2014-08-27 09:42:33:0378, edge_create, Tuple[1,89,0.43133205423145327,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0378, answer_create, 2063863
+2014-08-27 09:42:33:0379, edge_create, Tuple[1,90,0.8003143853967276,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0379, answer_create, 2121023
+2014-08-27 09:42:33:0379, edge_create, Tuple[1,91,0.26918460065241523,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0380, answer_create, 2130784
+2014-08-27 09:42:33:0381, edge_create, Tuple[1,92,0.9347863395692589,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0381, answer_create, 2131355
+2014-08-27 09:42:33:0381, edge_create, Tuple[1,93,0.07740867502187854,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0382, answer_create, 2294266
+2014-08-27 09:42:33:0382, edge_create, Tuple[1,94,0.48063246789341174,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0383, answer_create, 2372429
+2014-08-27 09:42:33:0383, edge_create, Tuple[1,95,0.5578314769507347,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0384, answer_create, 2607251
+2014-08-27 09:42:33:0385, edge_create, Tuple[1,96,0.9787751354532532,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0385, answer_create, 3004405
+2014-08-27 09:42:33:0386, edge_create, Tuple[1,97,0.15655702803890825,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0386, answer_create, 3089101
+2014-08-27 09:42:33:0387, edge_create, Tuple[1,98,0.6347657896739151,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0387, answer_create, 3130075
+2014-08-27 09:42:33:0387, edge_create, Tuple[1,99,0.2649299265489974,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0388, answer_create, 3147440
+2014-08-27 09:42:33:0388, edge_create, Tuple[1,100,0.8382649414269197,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0389, answer_create, 3181454
+2014-08-27 09:42:33:0389, edge_create, Tuple[1,101,0.5068870810098401,4,0.0,1409189740890,1409189740890]
+2014-08-27 09:42:33:0402, discussion_open, 15496
+2014-08-27 09:42:33:0402, diag_itemclicked, id=15496, type=1
+2014-08-27 09:42:33:0639, diag_itemexited, id=15496, type=1
+2014-08-27 09:42:34:0810, diag_itementered, id=15512, type=20
+2014-08-27 09:42:34:0824, diag_itemexited, id=15512, type=20
+2014-08-27 09:42:34:0942, diag_itementered, id=15496, type=1
+2014-08-27 09:42:36:0993, diag_itemexited, id=15496, type=1
+2014-08-27 09:42:36:0994, diag_itementered, id=1423419924, type=3
+2014-08-27 09:42:37:0022, diag_itemexited, id=1423419924, type=3
+2014-08-27 09:42:37:0024, diag_itementered, id=0.07740867502187854, type=4
+2014-08-27 09:42:37:0031, diag_itemexited, id=0.07740867502187854, type=4
+2014-08-27 09:42:37:0088, diag_itementered, id=15496, type=1
+2014-08-27 09:42:37:0121, diag_itemexited, id=15496, type=1
+2014-08-27 09:42:37:0528, diag_itementered, id=15512, type=20
+2014-08-27 09:42:37:0581, diag_itemexited, id=15512, type=20
+2014-08-27 09:42:37:0705, diag_itementered, id=15512, type=20
+2014-08-27 09:42:37:0734, diag_itemexited, id=15512, type=20
+2014-08-27 09:42:37:0791, diag_itementered, id=16838, type=20
+2014-08-27 09:42:37:0810, diag_itemexited, id=16838, type=20
+2014-08-27 09:42:37:0813, diag_itementered, id=0.5068870810098401, type=4
+2014-08-27 09:42:37:0827, diag_itemexited, id=0.5068870810098401, type=4
+2014-08-27 09:42:38:0009, diag_itementered, id=0.8382649414269197, type=4
+2014-08-27 09:42:38:0025, diag_itemexited, id=0.8382649414269197, type=4
+2014-08-27 09:42:38:0040, diag_itementered, id=0.2913585939242813, type=4
+2014-08-27 09:42:38:0055, diag_itemexited, id=0.2913585939242813, type=4
+2014-08-27 09:42:38:0086, diag_itementered, id=16838, type=20
+2014-08-27 09:42:38:0632, diag_itemexited, id=16838, type=20
+2014-08-27 09:42:38:0712, diag_itementered, id=0.8382649414269197, type=4
+2014-08-27 09:42:38:0728, diag_itemexited, id=0.8382649414269197, type=4
+2014-08-27 09:42:38:0730, diag_itementered, id=3181454, type=20
+2014-08-27 09:42:38:0750, diag_itemexited, id=3181454, type=20
+2014-08-27 09:42:38:0967, diag_itementered, id=3181454, type=20
+2014-08-27 09:42:38:0981, diag_itemexited, id=3181454, type=20
+2014-08-27 09:42:39:0023, diag_itementered, id=16838, type=20
+2014-08-27 09:42:39:0041, diag_itemexited, id=16838, type=20
+2014-08-27 09:42:39:0045, diag_itementered, id=0.5068870810098401, type=4
+2014-08-27 09:42:39:0063, diag_itemexited, id=0.5068870810098401, type=4
+2014-08-27 09:42:39:0087, diag_itementered, id=15496, type=1
+2014-08-27 09:42:39:0342, diag_itemexited, id=15496, type=1
+2014-08-27 09:42:39:0358, diag_itementered, id=0.6347657896739151, type=4
+2014-08-27 09:42:39:0363, diag_itemexited, id=0.6347657896739151, type=4
+2014-08-27 09:42:39:0366, diag_itementered, id=0.15655702803890825, type=4
+2014-08-27 09:42:39:0380, diag_itemexited, id=0.15655702803890825, type=4
+2014-08-27 09:42:39:0390, diag_itementered, id=0.48063246789341174, type=4
+2014-08-27 09:42:39:0392, diag_itemexited, id=0.48063246789341174, type=4
+2014-08-27 09:42:39:0398, diag_itementered, id=0.07740867502187854, type=4
+2014-08-27 09:42:39:0406, diag_itemexited, id=0.07740867502187854, type=4
+2014-08-27 09:42:39:0407, diag_itementered, id=0.9347863395692589, type=4
+2014-08-27 09:42:39:0415, diag_itemexited, id=0.9347863395692589, type=4
+2014-08-27 09:42:39:0416, diag_itementered, id=0.26918460065241523, type=4
+2014-08-27 09:42:39:0423, diag_itemexited, id=0.26918460065241523, type=4
+2014-08-27 09:42:39:0495, diag_itementered, id=0.5134103467080117, type=4
+2014-08-27 09:42:39:0503, diag_itemexited, id=0.5134103467080117, type=4
+2014-08-27 09:42:39:0512, diag_itementered, id=0.6915607668377518, type=4
+2014-08-27 09:42:39:0519, diag_itemexited, id=0.6915607668377518, type=4
+2014-08-27 09:42:39:0535, diag_itementered, id=0.39815584998672326, type=4
+2014-08-27 09:42:39:0543, diag_itemexited, id=0.39815584998672326, type=4
+2014-08-27 09:42:39:0687, diag_itementered, id=1305616, type=20
+2014-08-27 09:42:39:0961, answer_open, VisualItem[tree.nodes,79,id=1305616,type=20,title=,body=<p>Most people does not know they can clone an array.</p>
+
+<pre><code>int[] arr = {1, 2, 3};
+int[] arr2 = arr.clone();
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=8]
+2014-08-27 09:42:40:0367, diag_itemexited, id=1305616, type=20
+2014-08-27 09:42:40:0378, diag_itementered, id=1674342, type=20
+2014-08-27 09:42:40:0383, diag_itemexited, id=1674342, type=20
+2014-08-27 09:42:42:0267, diag_itementered, id=15496, type=1
+2014-08-27 09:42:42:0448, diag_itemexited, id=15496, type=1
+2014-08-27 09:42:42:0551, diag_itementered, id=16838, type=20
+2014-08-27 09:42:42:0923, answer_open, VisualItem[tree.nodes,6,id=16838,type=20,title=,body=<p><a href="http://www.c2.com/cgi/wiki?DoubleBraceInitialization" rel="nofollow">Double Brace Initialization</a> took me by surprise a few months ago when I first discovered it, never heard of it before.</p>
+
+<p><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadLocal.html" rel="nofollow">ThreadLocals</a> are typically not so widely known as a way to store per-thread state.</p>
+
+<p>Since JDK 1.5 Java has had extremely well implemented and robust concurrency tools beyond just locks, they live in <a href="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/package-summary.html" rel="nofollow">java.util.concurrent</a> and a specifically interesting example is the <a href="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/package-summary.html" rel="nofollow">java.util.concurrent.atomic</a> subpackage that contains thread-safe primitives that implement the <a href="http://www.ibm.com/developerworks/java/library/j-jtp11234/" rel="nofollow">compare-and-swap</a> operation and can map to actual native hardware-supported versions of these operations.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=432]
+2014-08-27 09:42:43:0182, diag_itemexited, id=16838, type=20
+2014-08-27 09:42:43:0224, diag_itementered, id=0.5068870810098401, type=4
+2014-08-27 09:42:43:0238, diag_itemexited, id=0.5068870810098401, type=4
+2014-08-27 09:42:43:0299, diag_itementered, id=0.8417108218835531, type=4
+2014-08-27 09:42:43:0315, diag_itemexited, id=0.8417108218835531, type=4
+2014-08-27 09:42:43:0319, diag_itementered, id=15496, type=1
+2014-08-27 09:42:43:0379, diag_itemexited, id=15496, type=1
+2014-08-27 09:42:43:0782, diag_itementered, id=15512, type=20
+2014-08-27 09:42:43:0815, diag_itemexited, id=15512, type=20
+2014-08-27 09:42:43:0826, diag_itementered, id=15496, type=1
+2014-08-27 09:42:44:0503, diag_itemexited, id=15496, type=1
+2014-08-27 09:42:49:0876, diag_itementered, id=15512, type=20
+2014-08-27 09:42:49:0913, diag_itemexited, id=15512, type=20
+2014-08-27 09:42:49:0928, diag_itementered, id=0.3462246177707735, type=4
+2014-08-27 09:42:49:0940, diag_itemexited, id=0.3462246177707735, type=4
+2014-08-27 09:43:22:0758, answer_open, VisualItem[tree.nodes,7,id=17702,type=20,title=,body=<p>Not really a feature, but it makes me chuckle that <strong><code>goto</code></strong> is a reserved word that does nothing except prompting javac to poke you in the eye.  Just to remind you that you are in OO-land now.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=15]
+2014-08-27 09:43:23:0526, answer_open, VisualItem[tree.nodes,8,id=17769,type=20,title=,body=<p>As a starter I really appreciate the JConsole monitoring software in Java 6, it has solved a couple of problems for me already and I keep on finding new uses for it.</p>
+
+<p>Apparently the JConsole was there already in Java 5 but I reckon it is improved now and at least working much more stable as of now.</p>
+
+<p>JConsole in Java 5:
+<a href="http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html" rel="nofollow" title="Jconsole in Java 5">JConsole in Java 5</a></p>
+
+<p>JConsole in Java 6:
+<a href="http://java.sun.com/developer/technicalArticles/J2SE/monitoring/" rel="nofollow" title="JConsole in Java 6">JConsole in Java 6</a></p>
+
+<p>And while you are at it, have a good look at the other tools in the series:
+<a href="http://java.sun.com/javase/6/docs/technotes/tools/index.html#troubleshoot" rel="nofollow" title="Java 6 troubleshooting tools">Java 6 troubleshooting tools</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=23]
+2014-08-27 09:43:24:0155, answer_open, VisualItem[tree.nodes,7,id=17702,type=20,title=,body=<p>Not really a feature, but it makes me chuckle that <strong><code>goto</code></strong> is a reserved word that does nothing except prompting javac to poke you in the eye.  Just to remind you that you are in OO-land now.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=15]
+2014-08-27 09:43:24:0566, answer_open, VisualItem[tree.nodes,6,id=16838,type=20,title=,body=<p><a href="http://www.c2.com/cgi/wiki?DoubleBraceInitialization" rel="nofollow">Double Brace Initialization</a> took me by surprise a few months ago when I first discovered it, never heard of it before.</p>
+
+<p><a href="http://docs.oracle.com/javase/6/docs/api/java/lang/ThreadLocal.html" rel="nofollow">ThreadLocals</a> are typically not so widely known as a way to store per-thread state.</p>
+
+<p>Since JDK 1.5 Java has had extremely well implemented and robust concurrency tools beyond just locks, they live in <a href="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/package-summary.html" rel="nofollow">java.util.concurrent</a> and a specifically interesting example is the <a href="http://docs.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/package-summary.html" rel="nofollow">java.util.concurrent.atomic</a> subpackage that contains thread-safe primitives that implement the <a href="http://www.ibm.com/developerworks/java/library/j-jtp11234/" rel="nofollow">compare-and-swap</a> operation and can map to actual native hardware-supported versions of these operations.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=432]
+2014-08-27 09:43:25:0031, answer_open, VisualItem[tree.nodes,8,id=17769,type=20,title=,body=<p>As a starter I really appreciate the JConsole monitoring software in Java 6, it has solved a couple of problems for me already and I keep on finding new uses for it.</p>
+
+<p>Apparently the JConsole was there already in Java 5 but I reckon it is improved now and at least working much more stable as of now.</p>
+
+<p>JConsole in Java 5:
+<a href="http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html" rel="nofollow" title="Jconsole in Java 5">JConsole in Java 5</a></p>
+
+<p>JConsole in Java 6:
+<a href="http://java.sun.com/developer/technicalArticles/J2SE/monitoring/" rel="nofollow" title="JConsole in Java 6">JConsole in Java 6</a></p>
+
+<p>And while you are at it, have a good look at the other tools in the series:
+<a href="http://java.sun.com/javase/6/docs/technotes/tools/index.html#troubleshoot" rel="nofollow" title="Java 6 troubleshooting tools">Java 6 troubleshooting tools</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=23]
+2014-08-27 09:43:28:0275, answer_open, VisualItem[tree.nodes,9,id=35084,type=20,title=,body=<p>It's not exactly hidden, but reflection is incredibly useful and powerful.  It is great to use a simple Class.forName("...").newInstance() where the class type is configurable.  It's easy to write this sort of factory implementation.  </p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=12]
+2014-08-27 09:43:29:0198, answer_open, VisualItem[tree.nodes,8,id=17769,type=20,title=,body=<p>As a starter I really appreciate the JConsole monitoring software in Java 6, it has solved a couple of problems for me already and I keep on finding new uses for it.</p>
+
+<p>Apparently the JConsole was there already in Java 5 but I reckon it is improved now and at least working much more stable as of now.</p>
+
+<p>JConsole in Java 5:
+<a href="http://java.sun.com/developer/technicalArticles/J2SE/jconsole.html" rel="nofollow" title="Jconsole in Java 5">JConsole in Java 5</a></p>
+
+<p>JConsole in Java 6:
+<a href="http://java.sun.com/developer/technicalArticles/J2SE/monitoring/" rel="nofollow" title="JConsole in Java 6">JConsole in Java 6</a></p>
+
+<p>And while you are at it, have a good look at the other tools in the series:
+<a href="http://java.sun.com/javase/6/docs/technotes/tools/index.html#troubleshoot" rel="nofollow" title="Java 6 troubleshooting tools">Java 6 troubleshooting tools</a></p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=23]
+2014-08-27 09:43:29:0509, answer_open, VisualItem[tree.nodes,7,id=17702,type=20,title=,body=<p>Not really a feature, but it makes me chuckle that <strong><code>goto</code></strong> is a reserved word that does nothing except prompting javac to poke you in the eye.  Just to remind you that you are in OO-land now.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1409189740890L,lastactivitydate=0L,tags=,score=15]
+2014-08-27 09:43:29:0758, diag_itementered, id=15512, type=20
+2014-08-27 09:43:29:0784, diag_itemexited, id=15512, type=20
+2014-08-27 09:43:29:0797, diag_itementered, id=35108, type=20
+2014-08-27 09:43:29:0812, diag_itemexited, id=35108, type=20
+2014-08-27 09:43:29:0813, diag_itementered, id=39433, type=20
+2014-08-27 09:43:29:0825, diag_itemexited, id=39433, type=20
+2014-08-27 09:43:29:0853, diag_itementered, id=47347, type=20
+2014-08-27 09:43:29:0869, diag_itemexited, id=47347, type=20

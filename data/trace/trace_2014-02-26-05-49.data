@@ -1,0 +1,41 @@
+2014-02-26 05:49:24:0796, setup_loaddata
+2014-02-26 05:49:25:0326, setup_resizewin
+2014-02-26 05:49:31:0106, pattern_create_close
+2014-02-26 05:49:36:0626, pattern_create_close
+2014-02-26 05:49:41:0236, pattern_create_close
+2014-02-26 05:49:47:0436, pattern_create, -482318535
+2014-02-26 05:49:47:0436, pattern_create, 2109443059
+2014-02-26 05:49:47:0796, pattern_create_open
+2014-02-26 05:49:47:0806, pattern_create_close
+2014-02-26 05:49:52:0228, diag_itementered, id=3049, type=1
+2014-02-26 05:49:52:0268, diag_itemexited, id=3049, type=1
+2014-02-26 05:49:54:0378, pattern_create_close
+2014-02-26 05:49:59:0199, pattern_create_close
+2014-02-26 05:50:05:0309, pattern_create_close
+2014-02-26 05:50:10:0309, pattern_create, -649214885
+2014-02-26 05:50:10:0309, pattern_create, 1641682794
+2014-02-26 05:50:10:0389, pattern_create_open
+2014-02-26 05:50:10:0399, pattern_create_close
+2014-02-26 05:50:15:0670, diag_itementered, id=7661, type=1
+2014-02-26 05:50:15:0700, diag_itemexited, id=7661, type=1
+2014-02-26 05:50:19:0630, pattern_create_close
+2014-02-26 05:50:27:0610, pattern_create_close
+2014-02-26 05:50:34:0340, pattern_create_close
+2014-02-26 05:50:41:0570, pattern_create, -625926180
+2014-02-26 05:50:41:0570, pattern_create, -771804441
+2014-02-26 05:50:41:0630, pattern_create_open
+2014-02-26 05:50:41:0640, pattern_create_close
+2014-02-26 05:50:48:0452, diag_itementered, id=7661, type=1
+2014-02-26 05:50:48:0482, diag_itemexited, id=7661, type=1
+2014-02-26 05:50:48:0512, diag_itementered, id=-482318535, type=0
+2014-02-26 05:50:48:0542, diag_itemexited, id=-482318535, type=0
+2014-02-26 05:50:49:0072, diag_itementered, id=564, type=1
+2014-02-26 05:50:49:0112, diag_itemexited, id=564, type=1
+2014-02-26 05:50:51:0262, diag_itementered, id=6765, type=1
+2014-02-26 05:50:51:0312, diag_itemexited, id=6765, type=1
+2014-02-26 05:50:51:0322, diag_itementered, id=5514, type=1
+2014-02-26 05:50:51:0352, diag_itemexited, id=5514, type=1
+2014-02-26 05:50:51:0422, diag_itementered, id=7596, type=1
+2014-02-26 05:50:51:0442, diag_itemexited, id=7596, type=1
+2014-02-26 05:50:52:0492, list_mouseentered, 6658
+2014-02-26 05:50:52:0572, list_mouseexited

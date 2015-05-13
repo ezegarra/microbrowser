@@ -1,0 +1,16 @@
+2014-02-04 08:51:15:0461, setup_loaddata
+2014-02-04 08:51:16:0223, setup_resizewin
+2014-02-04 08:51:16:0977, diag_itementered, id=123, type=1
+2014-02-04 08:51:17:0036, diag_itemexited, id=123, type=1
+2014-02-04 08:51:17:0037, list_mouseentered, 123
+2014-02-04 08:51:17:0099, list_mouseexited, 
+2014-02-04 08:51:18:0780, search_update, e
+2014-02-04 08:51:19:0498, search_update, ee
+2014-02-04 08:51:20:0507, search_update, eee
+2014-02-04 08:51:21:0250, search_update, eeee
+2014-02-04 08:51:21:0742, search_update, eeeee
+2014-02-04 08:51:22:0937, search_update, eeee
+2014-02-04 08:51:23:0138, search_update, eee
+2014-02-04 08:51:23:0350, search_update, ee
+2014-02-04 08:51:24:0327, search_update, e
+2014-02-04 08:51:25:0238, search_update, 

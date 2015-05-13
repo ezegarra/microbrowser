@@ -1,0 +1,1298 @@
+2014-12-02 03:04:54:0709, setup_loaddata_begin
+2014-12-02 03:04:57:0018, setup_loaddata_end
+2014-12-02 03:04:57:0065, setup_createactions_begin
+2014-12-02 03:04:57:0252, setup_createactions_end
+2014-12-02 03:05:05:0068, list_mouseentered, id=24723, type=1
+2014-12-02 03:05:05:0068, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0099, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0208, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0239, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0271, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0286, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0317, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0349, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0380, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0411, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0427, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0458, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:05:0473, list_mouseexited
+2014-12-02 03:05:06:0550, list_mouseentered, id=24723, type=1
+2014-12-02 03:05:06:0550, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0597, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0612, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0643, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0768, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0784, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0815, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0831, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0862, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0893, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0955, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:06:0987, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0002, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0033, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0049, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0080, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0111, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0127, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0158, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0189, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0205, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0299, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:07:0533, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:11:0136, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:11:0167, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:11:0183, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:11:0214, list_mouseexited
+2014-12-02 03:05:11:0386, list_mouseentered, id=24723, type=1
+2014-12-02 03:05:11:0386, list_mousemoved, id=24723, type=1
+2014-12-02 03:05:11:0433, list_mousemoved, id=3049, type=1
+2014-12-02 03:05:11:0464, list_mousemoved, id=41233, type=1
+2014-12-02 03:05:11:0495, list_mousemoved, id=41233, type=1
+2014-12-02 03:05:11:0526, list_mousemoved, id=41233, type=1
+2014-12-02 03:05:11:0557, list_mousemoved, id=41233, type=1
+2014-12-02 03:05:11:0573, list_mousemoved, id=41233, type=1
+2014-12-02 03:05:11:0604, list_mousemoved, id=41233, type=1
+2014-12-02 03:05:11:0635, list_mousemoved, id=41233, type=1
+2014-12-02 03:05:11:0635, list_mousemoved, id=41233, type=1
+2014-12-02 03:05:11:0682, list_mousemoved, id=51276, type=1
+2014-12-02 03:05:11:0713, list_mousemoved, id=51276, type=1
+2014-12-02 03:05:11:0745, list_mousemoved, id=51276, type=1
+2014-12-02 03:05:11:0745, list_mousemoved, id=51276, type=1
+2014-12-02 03:05:11:0776, list_mouseexited
+2014-12-02 03:05:12:0696, diag_itementered, id=25552, type=1
+2014-12-02 03:05:14:0802, diag_itemexited, id=25552, type=1
+2014-12-02 03:05:15:0442, diag_itemexited, id=1, type=4
+2014-12-02 03:05:15:0504, diag_itementered, id=1, type=0
+2014-12-02 03:05:15:0754, diag_itemexited, id=1, type=0
+2014-12-02 03:05:15:0879, diag_itemexited, id=1, type=4
+2014-12-02 03:05:16:0316, diag_itementered, id=3881, type=1
+2014-12-02 03:05:16:0378, diag_itemexited, id=3881, type=1
+2014-12-02 03:05:16:0674, diag_itementered, id=25552, type=1
+2014-12-02 03:05:17:0642, diag_itemexited, id=25552, type=1
+2014-12-02 03:05:17:0938, diag_itementered, id=3881, type=1
+2014-12-02 03:05:18:0234, diag_itemexited, id=3881, type=1
+2014-12-02 03:05:21:0651, diag_itementered, id=3881, type=1
+2014-12-02 03:05:21:0729, diag_itemexited, id=3881, type=1
+2014-12-02 03:05:21:0729, diag_itementered, id=41894, type=1
+2014-12-02 03:05:21:0807, diag_itemexited, id=41894, type=1
+2014-12-02 03:05:22:0041, diag_itementered, id=34571, type=1
+2014-12-02 03:05:22:0946, diag_itemexited, id=34571, type=1
+2014-12-02 03:05:23:0024, diag_itementered, id=34571, type=1
+2014-12-02 03:05:23:0102, diag_itemexited, id=34571, type=1
+2014-12-02 03:05:48:0421, diag_itementered, id=1, type=0
+2014-12-02 03:05:48:0499, diag_itemexited, id=1, type=0
+2014-12-02 03:05:48:0561, diag_itementered, id=60764, type=1
+2014-12-02 03:05:48:0655, diag_itemexited, id=60764, type=1
+2014-12-02 03:05:48:0701, diag_itementered, id=40480, type=1
+2014-12-02 03:05:48:0795, diag_itemexited, id=40480, type=1
+2014-12-02 03:05:55:0441, diag_itementered, id=12088, type=1
+2014-12-02 03:05:55:0503, diag_itemexited, id=12088, type=1
+2014-12-02 03:05:55:0550, list_mouseentered, id=25637, type=1
+2014-12-02 03:05:55:0550, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:55:0628, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:55:0644, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:55:0862, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:55:0878, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:55:0893, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:55:0924, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:55:0940, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:55:0971, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:55:0987, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:56:0002, list_mousemoved, id=25637, type=1
+2014-12-02 03:05:56:0034, list_mouseexited
+2014-12-02 03:05:58:0904, diag_itementered, id=23402, type=1
+2014-12-02 03:05:58:0982, diag_itemexited, id=23402, type=1
+2014-12-02 03:05:59:0388, diag_itemexited, id=1, type=4
+2014-12-02 03:05:59:0388, diag_itementered, id=1, type=0
+2014-12-02 03:05:59:0949, diag_itemexited, id=1, type=0
+2014-12-02 03:06:00:0823, diag_itemexited, id=1, type=4
+2014-12-02 03:06:01:0540, diag_itementered, id=36701, type=1
+2014-12-02 03:06:03:0537, diag_itemexited, id=36701, type=1
+2014-12-02 03:06:03:0896, diag_itementered, id=35842, type=1
+2014-12-02 03:06:03:0958, diag_itemexited, id=35842, type=1
+2014-12-02 03:06:04:0333, diag_itementered, id=35842, type=1
+2014-12-02 03:09:50:0957, diag_itemexited, id=35842, type=1
+2014-12-02 03:09:51:0378, diag_itementered, id=61615, type=1
+2014-12-02 03:09:51:0471, diag_itemexited, id=61615, type=1
+2014-12-02 03:09:51:0799, diag_itemexited, id=1, type=4
+2014-12-02 03:09:51:0799, diag_itementered, id=27129, type=1
+2014-12-02 03:09:51:0877, diag_itemexited, id=27129, type=1
+2014-12-02 03:09:55:0327, diag_itemexited, id=1, type=4
+2014-12-02 03:09:55:0327, diag_itementered, id=27129, type=1
+2014-12-02 03:09:56:0996, diag_itemexited, id=27129, type=1
+2014-12-02 03:09:57:0667, diag_itemexited, id=1, type=4
+2014-12-02 03:09:57:0667, diag_itementered, id=27065, type=1
+2014-12-02 03:09:58:0041, diag_itemexited, id=27065, type=1
+2014-12-02 03:09:58:0260, diag_itemexited, id=1, type=4
+2014-12-02 03:09:58:0260, diag_itementered, id=27065, type=1
+2014-12-02 03:09:59:0164, diag_itemexited, id=27065, type=1
+2014-12-02 03:09:59:0258, diag_itemexited, id=1, type=4
+2014-12-02 03:09:59:0258, diag_itementered, id=34571, type=1
+2014-12-02 03:09:59:0851, diag_itemexited, id=34571, type=1
+2014-12-02 03:09:59:0976, diag_itementered, id=24551, type=1
+2014-12-02 03:10:00:0054, diag_itemexited, id=24551, type=1
+2014-12-02 03:10:00:0210, diag_itementered, id=56974, type=1
+2014-12-02 03:10:01:0239, diag_itemexited, id=56974, type=1
+2014-12-02 03:10:01:0442, diag_itemexited, id=1, type=4
+2014-12-02 03:10:01:0442, diag_itementered, id=1, type=0
+2014-12-02 03:10:01:0520, diag_itemexited, id=1, type=0
+2014-12-02 03:10:01:0629, diag_itemexited, id=1, type=4
+2014-12-02 03:10:01:0629, diag_itementered, id=1, type=0
+2014-12-02 03:10:01:0723, diag_itemexited, id=1, type=0
+2014-12-02 03:10:02:0394, diag_itemexited, id=2, type=4
+2014-12-02 03:10:02:0394, diag_itementered, id=23445, type=1
+2014-12-02 03:10:02:0487, diag_itemexited, id=23445, type=1
+2014-12-02 03:10:03:0657, diag_itemexited, id=2, type=4
+2014-12-02 03:10:04:0812, diag_itemexited, id=3, type=4
+2014-12-02 03:10:04:0874, diag_itementered, id=46898, type=1
+2014-12-02 03:10:06:0762, diag_itemexited, id=46898, type=1
+2014-12-02 03:12:31:0001, diag_itementered, id=40663, type=1
+2014-12-02 03:12:31:0048, diag_itemexited, id=40663, type=1
+2014-12-02 03:12:46:0975, list_mouseentered, id=40663, type=1
+2014-12-02 03:12:46:0975, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0007, list_mouseexited
+2014-12-02 03:12:47:0147, list_mouseentered, id=40663, type=1
+2014-12-02 03:12:47:0147, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0178, list_mouseexited
+2014-12-02 03:12:47:0303, list_mouseentered, id=40663, type=1
+2014-12-02 03:12:47:0303, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0412, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0428, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0443, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0475, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0475, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0506, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0537, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0553, list_mousemoved, id=40663, type=1
+2014-12-02 03:12:47:0584, list_mouseexited
+2014-12-02 03:12:49:0643, search_update, unix
+2014-12-02 03:12:50:0860, list_mouseentered, id=3049, type=1
+2014-12-02 03:12:50:0860, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:50:0891, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:50:0907, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:50:0922, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:50:0938, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:50:0953, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:50:0985, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0000, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0172, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0187, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0203, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0219, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0250, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0265, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0281, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0593, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0624, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0640, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0671, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0687, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:51:0702, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0248, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0264, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0279, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0295, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0311, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0326, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0357, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0373, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0389, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0404, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0420, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0435, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0451, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0467, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0482, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0498, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0513, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0529, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0545, list_mousemoved, id=3049, type=1
+2014-12-02 03:12:52:0919, list_pattern_itemclicked, id=3049, type=1
+2014-12-02 03:12:53:0683, edge_create, Tuple[0,1,0.27071680702543344,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0683, answer_create, 3054
+2014-12-02 03:12:53:0683, edge_create, Tuple[1,2,0.04680517505120485,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0683, answer_create, 3060
+2014-12-02 03:12:53:0699, edge_create, Tuple[1,3,0.8222443965601873,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0699, answer_create, 3090
+2014-12-02 03:12:53:0699, edge_create, Tuple[1,4,0.3120617436552744,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0699, answer_create, 6352
+2014-12-02 03:12:53:0699, edge_create, Tuple[1,5,0.16564494623368708,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0699, answer_create, 9725
+2014-12-02 03:12:53:0699, edge_create, Tuple[1,6,0.8253830933435508,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0699, answer_create, 24078
+2014-12-02 03:12:53:0699, edge_create, Tuple[1,7,0.696996234251337,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0699, answer_create, 41526
+2014-12-02 03:12:53:0699, edge_create, Tuple[1,8,0.3345920111603272,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0699, answer_create, 65870
+2014-12-02 03:12:53:0699, edge_create, Tuple[1,9,0.9215477448930132,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0699, answer_create, 118609
+2014-12-02 03:12:53:0699, edge_create, Tuple[1,10,0.9524069193971133,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0715, answer_create, 15475192
+2014-12-02 03:12:53:0716, edge_create, Tuple[1,11,0.06418351322039728,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0717, edge_create, Tuple[0,12,0.7019148578111353,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0717, edge_create, Tuple[12,13,0.27637955290991245,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0717, edge_create, Tuple[12,14,0.8141420977281884,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0732, edge_create, Tuple[12,15,0.02739055983859684,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0732, edge_create, Tuple[12,16,0.5900608475289311,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0748, edge_create, Tuple[12,17,0.060738931441087884,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0748, edge_create, Tuple[12,18,0.8872067361474821,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0763, edge_create, Tuple[12,19,0.7828620010496458,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0763, edge_create, Tuple[12,20,0.9017737862700583,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0779, edge_create, Tuple[12,21,0.4424764954288768,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0779, edge_create, Tuple[12,22,0.3056369091465033,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0795, edge_create, Tuple[12,23,0.03594396802757016,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0795, edge_create, Tuple[12,24,0.7698938691002452,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0810, edge_create, Tuple[12,25,0.6303947046497456,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0810, edge_create, Tuple[12,26,0.9085055305993864,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0826, edge_create, Tuple[12,27,0.09294127564357779,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0826, edge_create, Tuple[12,28,0.0443615535584202,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0841, edge_create, Tuple[12,29,0.9269629176310484,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0841, edge_create, Tuple[12,30,0.4131449765927807,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0857, edge_create, Tuple[12,31,0.6867708505075445,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0857, edge_create, Tuple[12,32,0.3458803977170448,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0873, edge_create, Tuple[12,33,0.9271974718590718,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0873, edge_create, Tuple[12,34,0.11781242167393036,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0888, edge_create, Tuple[12,35,0.7676427859923315,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:53:0888, edge_create, Tuple[12,36,0.9186911681096421,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:12:54:0060, discussion_open, 3049
+2014-12-02 03:12:54:0060, list_mouseexited
+2014-12-02 03:12:57:0118, list_mouseentered, type=detailAnswersList
+2014-12-02 03:12:57:0149, list_mouseexited, type=detailAnswersList
+2014-12-02 03:12:57:0180, diag_detail_itementered, id=0.3120617436552744, type=4
+2014-12-02 03:12:57:0242, diag_detail_itemexited, id=0.3120617436552744, type=4
+2014-12-02 03:12:58:0615, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-02 03:12:58:0615, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-02 03:12:58:0615, diag_detail_itementered, id=3054, type=21
+2014-12-02 03:12:58:0678, diag_detail_itemexited, id=3054, type=21
+2014-12-02 03:12:58:0693, diag_detail_itementered, id=0.27071680702543344, type=4
+2014-12-02 03:12:58:0756, diag_detail_itemexited, id=0.27071680702543344, type=4
+2014-12-02 03:12:58:0974, diag_detail_itementered, id=3049, type=1
+2014-12-02 03:12:59:0021, diag_detail_itemexited, id=3049, type=1
+2014-12-02 03:12:59:0489, diag_detail_itementered, id=0.7676427859923315, type=1
+2014-12-02 03:12:59:0536, diag_detail_itemexited, id=0.7676427859923315, type=1
+2014-12-02 03:12:59:0536, diag_detail_itementered, id=0.11781242167393036, type=1
+2014-12-02 03:12:59:0582, diag_detail_itemexited, id=0.11781242167393036, type=1
+2014-12-02 03:12:59:0598, diag_detail_itementered, id=0.6867708505075445, type=1
+2014-12-02 03:12:59:0894, diag_detail_itemexited, id=0.6867708505075445, type=1
+2014-12-02 03:12:59:0957, diag_detail_itementered, id=0.3458803977170448, type=1
+2014-12-02 03:13:00:0004, diag_detail_itemexited, id=0.3458803977170448, type=1
+2014-12-02 03:13:00:0269, diag_detail_itementered, id=65475, type=1
+2014-12-02 03:13:00:0503, diag_detail_itemexited, id=65475, type=1
+2014-12-02 03:13:00:0674, list_mouseentered, type=detailRelatedList, item=59128
+2014-12-02 03:13:01:0345, list_mouseexited, type=detailRelatedList
+2014-12-02 03:13:03:0155, list_mouseentered, type=detailAnswersList
+2014-12-02 03:13:06:0478, list_mouseexited, type=detailAnswersList
+2014-12-02 03:13:08:0833, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-02 03:13:08:0833, answer_open, VisualItem[tree.nodes,2,id=3054,type=21,title=,body=<p>Build a time machine and go back to 1987? Ho ho.</p>
+
+<p>Ok, no more snarky comments.</p>
+
+<blockquote>
+  <p>How do I figure out what the configuration settings (e.g. baud rate) should be...</p>
+</blockquote>
+
+<p>Read the datasheet? Ok, ok. Seriously, last one. If you don't know the baud rate of the device you are trying to communicate with, you have two choices. Start guessing, or possibly bust out an o-scope. If you need a good starting point, let me suggest 9600-8-N-1. My suspicion is you can get there with brute force relatively quickly. There's a third option of having an old-school ninja who can tell just by the LOOK of the garbled characters at some standard baud rate what actual baud rate is. An impressive party trick to be sure.</p>
+
+<p>Hopefully though you have access to this information. In unix/linux, you can get ahold of minicom to play with the serial port directly. This should make it fairly quick to get the configuration figured out.</p>
+
+<blockquote>
+  <p>one of the major Unix shells</p>
+</blockquote>
+
+<p>In Unix the serial port(s) is/are file-mapped into the /dev/ subdir. ttyS0, for example. If you setup the correct baud rate and whatnot using minicom, you can even cat stuff to that file to send stuff out there.</p>
+
+<p>On to the meat of the question, you can access it programmatically through the POSIX headers. termios.h is the big one. </p>
+
+<p>See: <a href="http://www.easysw.com/%7Emike/serial/serial.html#3_1">http://www.easysw.com/~mike/serial/serial.html#3_1</a></p>
+
+<blockquote>
+  <p>but I also have some interest in serial programming using Windows/Hyperterminal.</p>
+</blockquote>
+
+<p>Hyperterminal and minicom are basically the same program. As for how Windows let's you get access to the serial port, I'll leave that question for someone else. I haven't done that in Windows since the Win95 days.</p>,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=16,searchfield=]
+2014-12-02 03:13:08:0833, diag_detail_itementered, id=3054, type=21
+2014-12-02 03:13:09:0457, diag_detail_itemexited, id=3054, type=21
+2014-12-02 03:13:10:0112, diag_detail_itementered, id=0.3120617436552744, type=4
+2014-12-02 03:13:10:0237, diag_detail_itemexited, id=0.3120617436552744, type=4
+2014-12-02 03:13:10:0268, diag_detail_itementered, id=0.3120617436552744, type=4
+2014-12-02 03:13:10:0315, diag_detail_itemexited, id=0.3120617436552744, type=4
+2014-12-02 03:13:10:0346, diag_detail_itementered, id=3049, type=1
+2014-12-02 03:13:10:0393, diag_detail_itemexited, id=3049, type=1
+2014-12-02 03:13:10:0409, diag_detail_itementered, id=0.7019148578111353, type=1
+2014-12-02 03:13:10:0456, diag_detail_itemexited, id=0.7019148578111353, type=1
+2014-12-02 03:13:10:0456, diag_detail_itementered, id=1416860967, type=3
+2014-12-02 03:13:10:0534, diag_detail_itemexited, id=1416860967, type=3
+2014-12-02 03:13:10:0534, diag_detail_itementered, id=0.9269629176310484, type=1
+2014-12-02 03:13:10:0596, diag_detail_itemexited, id=0.9269629176310484, type=1
+2014-12-02 03:13:10:0596, diag_detail_itementered, id=0.09294127564357779, type=1
+2014-12-02 03:13:10:0799, diag_detail_itemexited, id=0.09294127564357779, type=1
+2014-12-02 03:13:10:0799, diag_detail_itementered, id=1416860967, type=3
+2014-12-02 03:13:11:0750, diag_detail_itemexited, id=1416860967, type=3
+2014-12-02 03:13:11:0938, diag_detail_itementered, id=0.9186911681096421, type=1
+2014-12-02 03:13:11:0984, diag_detail_itemexited, id=0.9186911681096421, type=1
+2014-12-02 03:13:12:0406, diag_detail_itementered, id=0.7019148578111353, type=1
+2014-12-02 03:13:12:0452, diag_detail_itemexited, id=0.7019148578111353, type=1
+2014-12-02 03:13:12:0686, diag_detail_itementered, id=3049, type=1
+2014-12-02 03:13:14:0465, diag_detail_itemexited, id=3049, type=1
+2014-12-02 03:13:15:0151, diag_detail_itementered, id=0.9186911681096421, type=1
+2014-12-02 03:13:15:0198, diag_detail_itemexited, id=0.9186911681096421, type=1
+2014-12-02 03:13:15:0229, diag_detail_itementered, id=0.04680517505120485, type=4
+2014-12-02 03:13:15:0276, diag_detail_itemexited, id=0.04680517505120485, type=4
+2014-12-02 03:13:15:0307, diag_detail_itementered, id=0.8222443965601873, type=4
+2014-12-02 03:13:15:0354, diag_detail_itemexited, id=0.8222443965601873, type=4
+2014-12-02 03:13:15:0432, diag_detail_itementered, id=0.3120617436552744, type=4
+2014-12-02 03:13:15:0463, diag_detail_itemexited, id=0.3120617436552744, type=4
+2014-12-02 03:13:15:0729, diag_detail_itementered, id=0.3120617436552744, type=4
+2014-12-02 03:13:15:0760, diag_detail_itemexited, id=0.3120617436552744, type=4
+2014-12-02 03:13:15:0775, diag_detail_itementered, id=0.16564494623368708, type=4
+2014-12-02 03:13:15:0822, diag_detail_itemexited, id=0.16564494623368708, type=4
+2014-12-02 03:13:21:0766, diag_detail_itementered, id=0.11781242167393036, type=1
+2014-12-02 03:13:21:0813, diag_detail_itemexited, id=0.11781242167393036, type=1
+2014-12-02 03:13:21:0953, diag_detail_itementered, id=7596, type=1
+2014-12-02 03:13:22:0000, diag_detail_itemexited, id=7596, type=1
+2014-12-02 03:13:22:0000, list_mouseentered, type=detailRelatedList, item=62490
+2014-12-02 03:13:22:0047, list_mouseexited, type=detailRelatedList
+2014-12-02 03:13:22:0437, list_mouseentered, type=detailRelatedList, item=62490
+2014-12-02 03:13:22:0655, list_mouseexited, type=detailRelatedList
+2014-12-02 03:13:22:0717, list_mouseentered, type=detailRelatedList, item=62490
+2014-12-02 03:13:22:0733, list_mouseexited, type=detailRelatedList
+2014-12-02 03:13:23:0825, list_mouseentered, type=detailAnswersList
+2014-12-02 03:13:24:0043, list_mouseexited, type=detailAnswersList
+2014-12-02 03:13:24:0730, list_mouseentered, type=detailAnswersList
+2014-12-02 03:13:24:0964, list_mouseexited, type=detailAnswersList
+2014-12-02 03:13:25:0011, diag_detail_itementered, id=0.3458803977170448, type=1
+2014-12-02 03:13:25:0057, diag_detail_itemexited, id=0.3458803977170448, type=1
+2014-12-02 03:13:50:0891, list_pattern_mouseentered, id=1, type=0
+2014-12-02 03:13:50:0891, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:50:0923, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:50:0938, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:50:0969, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:50:0985, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0001, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0016, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0016, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0047, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0063, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0079, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0110, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0125, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0141, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0157, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0172, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0391, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0406, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0422, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0453, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0469, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0484, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0500, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0515, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0531, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0547, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0562, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0593, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0968, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0983, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:51:0999, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:52:0015, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:52:0015, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:52:0046, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0046, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0077, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0093, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0093, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0124, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0139, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0171, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0186, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0202, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0202, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0233, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0249, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0264, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0280, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0311, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0327, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0342, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0358, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0373, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0389, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0670, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0685, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0701, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0732, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0748, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0779, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0795, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0810, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0810, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:52:0841, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:52:0857, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:52:0873, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:52:0888, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0013, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0029, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0060, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0075, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0091, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0091, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0122, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0138, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0153, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0153, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0185, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0200, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0309, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0325, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0341, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0356, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0372, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0387, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0419, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0434, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0450, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0465, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0481, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0497, list_pattern_mousemoved, id=3, type=0
+2014-12-02 03:13:53:0512, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0543, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0559, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0575, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0590, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0621, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0637, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0653, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0668, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0699, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0731, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0762, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0793, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0809, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0824, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0840, list_pattern_mousemoved, id=2, type=0
+2014-12-02 03:13:53:0855, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:53:0887, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:53:0902, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:53:0918, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:53:0933, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:53:0949, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:53:0965, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:53:0980, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:54:0183, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:13:55:0103, list_pattern_itemclicked, id=1, type=0
+2014-12-02 03:13:55:0150, edge_create, Tuple[0,1,0.3493327219754502,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:13:55:0150, edge_create, Tuple[1,2,0.3276760724718397,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:13:55:0150, edge_create, Tuple[1,3,0.9441026803612259,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:13:55:0181, pattern_open, 1
+2014-12-02 03:13:55:0228, list_pattern_mouseexited
+2014-12-02 03:13:55:0228, list_mouseentered, type=detailAnswersList
+2014-12-02 03:13:55:0322, list_pattern_itemclicked, type=detailAnswersList, item=27065
+2014-12-02 03:13:56:0851, list_mouseexited, type=detailAnswersList
+2014-12-02 03:13:57:0303, diag_detail_itementered, id=1121986196, type=3
+2014-12-02 03:13:57:0896, diag_detail_itemclicked, id=1121986196, type=3
+2014-12-02 03:13:58:0083, diag_detail_itemclicked, id=1121986196, type=3
+2014-12-02 03:13:58:0535, diag_detail_itemexited, id=1121986196, type=3
+2014-12-02 03:13:58:0629, list_mouseentered, type=detailRelatedList, item=27129
+2014-12-02 03:13:58:0691, list_mouseexited, type=detailRelatedList
+2014-12-02 03:13:59:0035, list_mouseentered, type=detailRelatedList, item=27065
+2014-12-02 03:14:00:0205, list_pattern_itemclicked, type=detailRelatedList, item=27065
+2014-12-02 03:14:07:0396, list_pattern_itemclicked, type=detailRelatedList, item=27129
+2014-12-02 03:14:30:0968, list_mouseexited, type=detailRelatedList
+2014-12-02 03:14:31:0187, list_mouseentered, type=detailRelatedList, item=27065
+2014-12-02 03:14:31:0202, list_mouseexited, type=detailRelatedList
+2014-12-02 03:14:32:0684, list_pattern_mouseentered, id=1, type=0
+2014-12-02 03:14:32:0684, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:14:32:0700, list_pattern_mousemoved, id=1, type=0
+2014-12-02 03:14:32:0731, list_pattern_mouseexited
+2014-12-02 03:14:39:0564, search_update, junit
+2014-12-02 03:15:41:0263, search_update, xml
+2014-12-02 03:15:42:0292, list_mouseentered, id=40663, type=1
+2014-12-02 03:15:42:0292, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0355, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0370, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0386, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0401, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0682, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0713, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0745, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0760, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0776, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0791, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0807, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0823, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0838, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0854, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0869, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:42:0869, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:42:0901, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:42:0916, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:42:0947, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:42:0947, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:42:0963, list_mousemoved, id=123, type=1
+2014-12-02 03:15:42:0994, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0010, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0025, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0057, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0072, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0088, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0353, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0369, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0384, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0415, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0431, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0447, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0462, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0478, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0493, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0509, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0540, list_mousemoved, id=123, type=1
+2014-12-02 03:15:43:0556, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:43:0556, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:43:0587, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:43:0603, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:43:0618, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:43:0634, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:43:0649, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:43:0665, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:43:0681, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:43:0696, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0727, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0743, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0759, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0774, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0805, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0821, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0837, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0852, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0883, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0899, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0915, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0961, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:43:0993, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0008, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0227, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0242, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0507, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0539, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0554, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0570, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0585, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0601, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0632, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:44:0648, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:44:0679, list_mousemoved, id=123, type=1
+2014-12-02 03:15:44:0710, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:44:0726, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:44:0741, list_mouseexited
+2014-12-02 03:15:44:0944, list_mouseentered, id=40663, type=1
+2014-12-02 03:15:44:0944, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:44:0975, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:44:0975, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:44:0991, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0022, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0038, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0053, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0069, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0085, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0116, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0131, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0131, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0147, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0178, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0194, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0209, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0241, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0272, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0287, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0303, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0319, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0350, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0475, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0506, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0521, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0537, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0537, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0568, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0584, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0615, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0646, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0896, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0911, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0943, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0958, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0974, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:45:0989, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0005, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0036, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0052, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0052, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0083, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0099, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0114, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0130, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0145, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0177, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0582, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0598, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0629, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0645, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0660, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0707, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0816, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0832, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0847, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0863, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0894, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0910, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:46:0925, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:47:0269, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:47:0284, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:47:0300, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:47:0315, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0347, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0362, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0378, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0393, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0409, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0425, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0487, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0503, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0705, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0737, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0752, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0768, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0768, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0799, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0815, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0830, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0846, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0861, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0877, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0893, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:47:0908, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:47:0939, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:47:0955, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:47:0971, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0002, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0017, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0049, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0064, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0080, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0095, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0111, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0142, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0158, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0173, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0189, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0220, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0251, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0267, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0283, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0314, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0314, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:48:0345, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0361, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0376, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0407, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0423, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0454, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0454, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0470, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0485, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0501, list_mousemoved, id=123, type=1
+2014-12-02 03:15:48:0548, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:48:0563, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:48:0579, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:48:0595, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:48:0610, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:48:0626, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:48:0641, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:48:0673, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:48:0688, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:48:0704, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0719, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0751, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0766, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0797, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0797, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0813, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0844, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0860, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0891, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0907, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:48:0907, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0016, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0031, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0063, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0125, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0141, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0172, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0187, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0203, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0219, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0250, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0265, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0281, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0312, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0328, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0359, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0375, list_mousemoved, id=15899, type=1
+2014-12-02 03:15:49:0390, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:49:0421, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:49:0437, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:49:0453, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:49:0468, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:49:0484, list_mousemoved, id=19893, type=1
+2014-12-02 03:15:49:0499, list_mousemoved, id=123, type=1
+2014-12-02 03:15:49:0515, list_mousemoved, id=123, type=1
+2014-12-02 03:15:49:0531, list_mousemoved, id=123, type=1
+2014-12-02 03:15:49:0546, list_mousemoved, id=123, type=1
+2014-12-02 03:15:49:0562, list_mousemoved, id=123, type=1
+2014-12-02 03:15:49:0593, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:49:0624, list_mousemoved, id=33262, type=1
+2014-12-02 03:15:49:0640, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:49:0655, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:49:0671, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:49:0687, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:49:0702, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:49:0827, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:49:0827, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:49:0858, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:49:0874, list_mousemoved, id=35785, type=1
+2014-12-02 03:15:49:0889, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:49:0921, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:49:0936, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:49:0952, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:49:0967, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:49:0983, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:49:0999, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0014, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0030, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0045, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0061, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0092, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0108, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0123, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0139, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0155, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0170, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0217, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0248, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0279, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0295, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0311, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0326, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0357, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0404, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0747, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0763, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0794, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0810, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0825, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:50:0841, list_mousemoved, id=40663, type=1
+2014-12-02 03:15:51:0262, list_pattern_itemclicked, id=40663, type=1
+2014-12-02 03:15:51:0278, edge_create, Tuple[0,1,0.6955738264815111,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0278, answer_create, 40678
+2014-12-02 03:15:51:0293, edge_create, Tuple[1,2,0.45263604723224393,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0293, answer_create, 40681
+2014-12-02 03:15:51:0293, edge_create, Tuple[1,3,0.5192898285740709,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0293, answer_create, 40956
+2014-12-02 03:15:51:0293, edge_create, Tuple[1,4,0.9951195773831957,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0293, answer_create, 628133
+2014-12-02 03:15:51:0293, edge_create, Tuple[1,5,0.7001079788823902,4,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0293, edge_create, Tuple[0,6,0.24869608691245293,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0293, edge_create, Tuple[6,7,0.11126220944168652,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0309, edge_create, Tuple[6,8,0.8905064390148899,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0309, edge_create, Tuple[6,9,0.1543859712565986,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0327, edge_create, Tuple[6,10,0.7447401443212034,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0327, edge_create, Tuple[6,11,0.5926152508191755,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0342, edge_create, Tuple[6,12,0.0548105837365539,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0342, edge_create, Tuple[6,13,0.4347878305362741,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0358, edge_create, Tuple[6,14,0.27101325006916654,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0358, edge_create, Tuple[6,15,0.6753676335219435,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0373, edge_create, Tuple[6,16,0.1889140346717556,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0373, edge_create, Tuple[6,17,0.32409026694083387,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0389, edge_create, Tuple[6,18,0.5389777937039426,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0389, edge_create, Tuple[6,19,0.08416560312017662,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0405, edge_create, Tuple[6,20,0.823934349494956,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0405, edge_create, Tuple[6,21,0.8450968162303004,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0420, edge_create, Tuple[6,22,0.4530693961343347,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0420, edge_create, Tuple[6,23,0.5733242874079836,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0436, edge_create, Tuple[6,24,0.9236191236384281,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0436, edge_create, Tuple[6,25,0.3291398404124415,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0451, edge_create, Tuple[6,26,0.8559713418006415,1,0.0,1417550695255,1417550695255]
+2014-12-02 03:15:51:0467, discussion_open, 40663
+2014-12-02 03:15:51:0623, list_mouseexited
+2014-12-02 03:15:51:0623, list_mouseentered, type=detailAnswersList
+2014-12-02 03:15:51:0623, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:15:51:0623, list_pattern_itemclicked, type=detailAnswersList, item=15899
+2014-12-02 03:15:53:0682, list_mouseexited, type=detailAnswersList
+2014-12-02 03:15:55:0383, diag_detail_itementered, id=59806, type=1
+2014-12-02 03:15:55:0430, diag_detail_itemexited, id=59806, type=1
+2014-12-02 03:15:55:0788, diag_detail_itementered, id=0.4530693961343347, type=1
+2014-12-02 03:15:55:0835, diag_detail_itemexited, id=0.4530693961343347, type=1
+2014-12-02 03:15:55:0851, diag_detail_itementered, id=0.9236191236384281, type=1
+2014-12-02 03:15:55:0898, diag_detail_itemexited, id=0.9236191236384281, type=1
+2014-12-02 03:15:56:0038, diag_detail_itementered, id=0.24869608691245293, type=1
+2014-12-02 03:15:56:0085, diag_detail_itemexited, id=0.24869608691245293, type=1
+2014-12-02 03:15:56:0100, diag_detail_itementered, id=1112124399, type=3
+2014-12-02 03:15:56:0537, diag_detail_itemclicked, id=1112124399, type=3
+2014-12-02 03:15:56:0646, diag_detail_itemexited, id=1112124399, type=3
+2014-12-02 03:15:57:0536, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:15:57:0551, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:15:57:0551, diag_detail_itementered, id=40678, type=21
+2014-12-02 03:15:58:0160, diag_detail_itemexited, id=40678, type=21
+2014-12-02 03:15:58:0253, answer_open, VisualItem[tree.nodes,3,id=40681,type=20,title=,body=<p>Use <a href="http://xmlsoft.org/" rel="nofollow">libxml</a>, which performs validation <em>and</em> has a streaming mode.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-02 03:15:58:0253, answer_open, VisualItem[tree.nodes,3,id=40681,type=20,title=,body=<p>Use <a href="http://xmlsoft.org/" rel="nofollow">libxml</a>, which performs validation <em>and</em> has a streaming mode.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-02 03:15:58:0253, diag_detail_itementered, id=40681, type=20
+2014-12-02 03:15:59:0314, diag_detail_itemexited, id=40681, type=20
+2014-12-02 03:15:59:0423, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:15:59:0423, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:15:59:0423, diag_detail_itementered, id=40678, type=21
+2014-12-02 03:15:59:0470, diag_detail_itemexited, id=40678, type=21
+2014-12-02 03:15:59:0751, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:15:59:0751, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:15:59:0751, diag_detail_itementered, id=40678, type=21
+2014-12-02 03:15:59:0969, diag_detail_itemexited, id=40678, type=21
+2014-12-02 03:16:00:0078, answer_open, VisualItem[tree.nodes,3,id=40681,type=20,title=,body=<p>Use <a href="http://xmlsoft.org/" rel="nofollow">libxml</a>, which performs validation <em>and</em> has a streaming mode.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-02 03:16:00:0078, answer_open, VisualItem[tree.nodes,3,id=40681,type=20,title=,body=<p>Use <a href="http://xmlsoft.org/" rel="nofollow">libxml</a>, which performs validation <em>and</em> has a streaming mode.</p>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=6,searchfield=]
+2014-12-02 03:16:00:0078, diag_detail_itementered, id=40681, type=20
+2014-12-02 03:16:00:0515, diag_detail_itemexited, id=40681, type=20
+2014-12-02 03:16:00:0593, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:16:00:0593, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:16:00:0593, diag_detail_itementered, id=40678, type=21
+2014-12-02 03:16:00:0640, diag_detail_itemexited, id=40678, type=21
+2014-12-02 03:16:00:0687, diag_detail_itementered, id=0.8450968162303004, type=1
+2014-12-02 03:16:00:0749, diag_detail_itemexited, id=0.8450968162303004, type=1
+2014-12-02 03:16:04:0774, list_mouseentered, type=detailRelatedList, item=41659
+2014-12-02 03:16:05:0133, list_pattern_itemclicked, type=detailRelatedList, item=41659
+2014-12-02 03:16:06:0272, list_pattern_itemclicked, type=detailRelatedList, item=42383
+2014-12-02 03:16:08:0440, list_mouseexited, type=detailRelatedList
+2014-12-02 03:16:08:0924, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:16:08:0924, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:16:08:0924, diag_detail_itementered, id=40678, type=21
+2014-12-02 03:16:08:0986, diag_detail_itemexited, id=40678, type=21
+2014-12-02 03:16:09:0470, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:16:09:0470, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:16:09:0485, diag_detail_itementered, id=40678, type=21
+2014-12-02 03:16:10:0999, diag_detail_itemclicked, id=40678, type=21
+2014-12-02 03:16:11:0201, diag_detail_itemclicked, id=40678, type=21
+2014-12-02 03:16:12:0013, diag_detail_itemexited, id=40678, type=21
+2014-12-02 03:16:12:0465, diag_detail_itementered, id=0.5192898285740709, type=4
+2014-12-02 03:16:12:0512, diag_detail_itemexited, id=0.5192898285740709, type=4
+2014-12-02 03:16:12:0543, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:16:12:0543, answer_open, VisualItem[tree.nodes,2,id=40678,type=21,title=,body=<p>Instead of using a DOMParser, use a SAXParser.  This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory.</p>
+
+<pre><code>SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+</code></pre>
+,solution=,x=0.0,y=0.0,viewcount=0,answercount=0,acceptedanswerid=-1,owner=Anonymous,lasteditdate=1417550695255L,lastactivitydate=0L,tags=,score=26,searchfield=]
+2014-12-02 03:16:12:0543, diag_detail_itementered, id=40678, type=21
+2014-12-02 03:16:13:0276, diag_detail_itemexited, id=40678, type=21
+2014-12-02 03:16:13:0385, list_mouseentered, type=detailAnswersList
+2014-12-02 03:16:13:0479, list_mouseexited, type=detailAnswersList
+2014-12-02 03:16:13:0666, list_mouseentered, type=detailAnswersList
+2014-12-02 03:16:14:0618, list_mouseexited, type=detailAnswersList
+2014-12-02 03:16:18:0206, list_mouseentered, type=detailRelatedList, item=15899
+2014-12-02 03:16:19:0079, list_pattern_itemclicked, type=detailRelatedList, item=24866
+2014-12-02 03:16:21:0575, list_mouseexited, type=detailRelatedList
+2014-12-02 03:16:21:0685, diag_detail_itementered, id=37449, type=1
+2014-12-02 03:16:21:0716, diag_detail_itemexited, id=37449, type=1
+2014-12-02 03:16:21:0887, diag_detail_itementered, id=37449, type=1
+2014-12-02 03:16:21:0934, diag_detail_itemexited, id=37449, type=1
+2014-12-02 03:16:21:0997, diag_detail_itementered, id=0.3291398404124415, type=1
+2014-12-02 03:16:22:0043, diag_detail_itemexited, id=0.3291398404124415, type=1
+2014-12-02 03:16:24:0851, list_mouseentered, id=35785, type=1
+2014-12-02 03:16:24:0851, list_mousemoved, id=35785, type=1
+2014-12-02 03:16:24:0867, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:24:0898, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:24:0914, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:24:0945, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:24:0961, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:24:0976, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0179, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0195, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0210, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0241, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0257, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0273, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0288, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0319, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0335, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0351, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0382, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0397, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0413, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0444, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0460, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0475, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0491, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0522, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0538, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0553, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0585, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0600, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0616, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0631, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0787, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0803, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0819, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0850, list_mousemoved, id=33262, type=1
+2014-12-02 03:16:25:0865, list_mousemoved, id=123, type=1
+2014-12-02 03:16:25:0897, list_mousemoved, id=123, type=1
+2014-12-02 03:16:25:0912, list_mousemoved, id=123, type=1
+2014-12-02 03:16:25:0928, list_mousemoved, id=123, type=1
+2014-12-02 03:16:25:0943, list_mousemoved, id=123, type=1
+2014-12-02 03:16:25:0959, list_mousemoved, id=123, type=1
+2014-12-02 03:16:25:0990, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0689, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0704, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0782, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0798, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0813, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0845, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0860, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0907, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0923, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0938, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0954, list_mousemoved, id=123, type=1
+2014-12-02 03:16:48:0985, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0001, list_mouseexited
+2014-12-02 03:16:49:0079, list_mouseentered, id=123, type=1
+2014-12-02 03:16:49:0079, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0094, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0110, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0125, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0141, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0172, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0188, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0203, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0219, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0250, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0266, list_mousemoved, id=123, type=1
+2014-12-02 03:16:49:0281, list_mousemoved, id=123, type=1
+2014-12-02 03:16:51:0247, list_mousemoved, id=123, type=1
+2014-12-02 03:16:51:0263, list_mousemoved, id=123, type=1
+2014-12-02 03:16:51:0278, list_mousemoved, id=123, type=1
+2014-12-02 03:16:51:0294, list_mouseexited
+2014-12-02 03:16:51:0450, list_mouseentered, id=40663, type=1
+2014-12-02 03:16:51:0450, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:51:0497, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:51:0512, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:51:0528, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:51:0543, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:51:0559, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:51:0575, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:51:0606, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:51:0621, list_mouseexited
+2014-12-02 03:16:52:0136, list_mouseentered, id=40663, type=1
+2014-12-02 03:16:52:0136, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0152, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0167, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0183, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0199, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0214, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0245, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0261, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0277, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0292, list_mouseexited
+2014-12-02 03:16:52:0448, list_mouseentered, id=40663, type=1
+2014-12-02 03:16:52:0448, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0464, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0479, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0495, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0526, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0542, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0557, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0573, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0604, list_mousemoved, id=40663, type=1
+2014-12-02 03:16:52:0620, list_mouseexited
+2014-12-02 03:16:58:0907, search_update, networking
+2014-12-02 03:17:23:0851, list_mouseentered, id=33960, type=1
+2014-12-02 03:17:23:0851, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:23:0883, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:24:0195, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:24:0210, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:24:0241, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:24:0257, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:24:0304, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:24:0319, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:24:0366, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:24:0413, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:27:0393, list_mouseexited
+2014-12-02 03:17:31:0355, list_mouseentered, id=62929, type=1
+2014-12-02 03:17:31:0355, list_mousemoved, id=62929, type=1
+2014-12-02 03:17:31:0386, list_mousemoved, id=62929, type=1
+2014-12-02 03:17:31:0402, list_mouseexited
+2014-12-02 03:17:31:0573, list_mouseentered, id=62929, type=1
+2014-12-02 03:17:31:0573, list_mousemoved, id=62929, type=1
+2014-12-02 03:17:31:0605, list_mousemoved, id=62929, type=1
+2014-12-02 03:17:31:0620, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:31:0729, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:31:0745, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:31:0776, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:31:0792, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:31:0807, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:31:0823, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:31:0854, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:31:0870, list_mousemoved, id=33960, type=1
+2014-12-02 03:17:31:0885, list_mouseexited
+2014-12-02 03:17:32:0946, search_update, 

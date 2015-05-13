@@ -1,0 +1,35 @@
+2014-12-09 07:24:45:0040, setup_loaddata_begin
+2014-12-09 07:24:46:0705, setup_loaddata_end
+2014-12-09 07:24:46:0738, setup_createactions_begin
+2014-12-09 07:24:46:0888, setup_createactions_end
+2014-12-09 07:24:51:0770, diag_itementered, id=25331, type=1
+2014-12-09 07:24:51:0845, diag_itemexited, id=25331, type=1
+2014-12-09 07:24:51:0970, diag_itementered, id=3881, type=1
+2014-12-09 07:24:52:0080, diag_itemexited, id=3881, type=1
+2014-12-09 07:24:52:0145, diag_itementered, id=54909, type=1
+2014-12-09 07:24:52:0228, diag_itemexited, id=54909, type=1
+2014-12-09 07:24:52:0308, diag_itementered, id=40480, type=1
+2014-12-09 07:24:53:0510, diag_itemexited, id=40480, type=1
+2014-12-09 07:24:53:0670, diag_itemexited, id=3, type=4
+2014-12-09 07:24:53:0670, diag_itementered, id=47045, type=1
+2014-12-09 07:24:53:0760, diag_itemexited, id=47045, type=1
+2014-12-09 07:24:53:0850, diag_itemexited, id=3, type=4
+2014-12-09 07:24:53:0850, diag_itementered, id=46898, type=1
+2014-12-09 07:24:54:0820, diag_itemexited, id=46898, type=1
+2014-12-09 07:24:54:0953, diag_itemexited, id=3, type=4
+2014-12-09 07:24:55:0228, diag_itementered, id=41107, type=1
+2014-12-09 07:24:57:0040, diag_itemexited, id=41107, type=1
+2014-12-09 07:24:57:0145, diag_itemexited, id=4, type=4
+2014-12-09 07:24:57:0148, diag_itementered, id=564, type=1
+2014-12-09 07:24:57:0195, diag_itemexited, id=564, type=1
+2014-12-09 07:24:57:0330, diag_itemexited, id=4, type=4
+2014-12-09 07:24:57:0333, diag_itementered, id=40471, type=1
+2014-12-09 07:24:58:0470, diag_itemexited, id=40471, type=1
+2014-12-09 07:24:58:0558, diag_itemexited, id=4, type=4
+2014-12-09 07:24:58:0578, diag_itementered, id=4, type=0
+2014-12-09 07:24:58:0628, diag_itemexited, id=4, type=0
+2014-12-09 07:24:58:0745, diag_itemexited, id=3, type=4
+2014-12-09 07:25:04:0215, diag_itementered, id=36701, type=1
+2014-12-09 07:25:06:0818, diag_itemexited, id=36701, type=1
+2014-12-09 07:25:07:0433, diag_itementered, id=35842, type=1
+2014-12-09 07:25:09:0098, diag_itemexited, id=35842, type=1

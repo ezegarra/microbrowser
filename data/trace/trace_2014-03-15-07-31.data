@@ -1,0 +1,40 @@
+2014-03-15 07:31:04:0846, setup_loaddata
+2014-03-15 07:31:05:0392, setup_resizewin
+2014-03-15 07:31:05:0899, diag_itementered, id=3881, type=1
+2014-03-15 07:31:05:0954, diag_itemexited, id=3881, type=1
+2014-03-15 07:31:06:0037, diag_itementered, id=6682, type=1
+2014-03-15 07:31:06:0088, diag_itemexited, id=6682, type=1
+2014-03-15 07:31:06:0267, diag_itementered, id=7269, type=1
+2014-03-15 07:31:06:0316, diag_itemexited, id=7269, type=1
+2014-03-15 07:31:12:0033, list_mouseentered, 6612
+2014-03-15 07:31:12:0262, list_mouseexited
+2014-03-15 07:31:13:0537, list_mouseentered, 6658
+2014-03-15 07:31:13:0653, list_mouseexited
+2014-03-15 07:31:17:0439, list_mouseentered, 6392
+2014-03-15 07:31:17:0518, list_mouseexited
+2014-03-15 07:31:18:0284, list_mouseentered, 6658
+2014-03-15 07:31:18:0591, list_mouseexited
+2014-03-15 07:31:19:0190, diag_itementered, id=9044, type=1
+2014-03-15 07:31:19:0559, diag_itemexited, id=9044, type=1
+2014-03-15 07:31:19:0813, diag_itementered, id=8219, type=1
+2014-03-15 07:31:20:0142, diag_itemexited, id=8219, type=1
+2014-03-15 07:31:20:0220, diag_itementered, id=7291, type=1
+2014-03-15 07:31:20:0536, diag_itemexited, id=7291, type=1
+2014-03-15 07:31:20:0698, diag_itementered, id=382, type=1
+2014-03-15 07:31:20:0838, diag_itemexited, id=382, type=1
+2014-03-15 07:31:20:0897, diag_itementered, id=10980, type=1
+2014-03-15 07:31:21:0224, diag_itemexited, id=10980, type=1
+2014-03-15 07:31:21:0240, diag_itementered, id=382, type=1
+2014-03-15 07:31:21:0293, diag_itemexited, id=382, type=1
+2014-03-15 07:31:21:0360, list_mouseentered, 564
+2014-03-15 07:31:21:0738, list_mouseexited
+2014-03-15 07:31:22:0179, list_mouseentered, 123
+2014-03-15 07:31:22:0250, list_mouseexited
+2014-03-15 07:31:22:0370, list_mouseentered, 123
+2014-03-15 07:31:22:0426, list_mouseexited
+2014-03-15 07:31:26:0334, list_mouseentered, 126
+2014-03-15 07:31:26:0711, list_mouseexited
+2014-03-15 07:31:52:0989, setup_loaddata
+2014-03-15 07:31:53:0249, setup_resizewin
+2014-03-15 07:35:26:0627, list_mouseentered, 123
+2014-03-15 07:35:26:0874, list_mouseexited

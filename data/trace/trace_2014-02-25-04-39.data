@@ -1,0 +1,36 @@
+2014-02-25 04:39:38:0523, setup_loaddata
+2014-02-25 04:39:39:0085, setup_resizewin
+2014-02-25 04:39:51:0786, list_mouseentered, 126
+2014-02-25 04:39:52:0058, list_mouseexited
+2014-02-25 04:39:52:0757, diag_itementered, id=10506, type=1
+2014-02-25 04:39:52:0796, diag_itemexited, id=10506, type=1
+2014-02-25 04:39:53:0115, diag_itementered, id=6765, type=1
+2014-02-25 04:39:53:0266, diag_itemexited, id=6765, type=1
+2014-02-25 04:39:53:0602, diag_itementered, id=8318, type=1
+2014-02-25 04:39:54:0210, diag_itemexited, id=8318, type=1
+2014-02-25 04:39:54:0698, diag_itemclicked, id=8318, type=1
+2014-02-25 04:39:54:0759, diag_itementered, id=8318, type=1
+2014-02-25 04:39:54:0764, diag_itemexited, id=8318, type=1
+2014-02-25 04:39:57:0509, list_mouseentered, 7291
+2014-02-25 04:39:57:0690, list_mouseexited
+2014-02-25 04:39:57:0912, diag_itementered, id=4149, type=1
+2014-02-25 04:39:57:0948, diag_itemexited, id=4149, type=1
+2014-02-25 04:39:58:0001, diag_itementered, id=11088, type=1
+2014-02-25 04:39:58:0038, diag_itemexited, id=11088, type=1
+2014-02-25 04:39:58:0059, diag_itementered, id=9044, type=1
+2014-02-25 04:39:58:0282, diag_itemexited, id=9044, type=1
+2014-02-25 04:39:58:0338, diag_itementered, id=11088, type=1
+2014-02-25 04:39:59:0092, diag_itemexited, id=11088, type=1
+2014-02-25 04:39:59:0492, diag_itementered, id=8318, type=1
+2014-02-25 04:40:02:0513, diag_itemclicked, id=8318, type=1
+2014-02-25 04:40:02:0566, diag_itemexited, id=8318, type=1
+2014-02-25 04:40:04:0043, list_mouseentered, 8318
+2014-02-25 04:40:04:0596, list_mouseexited
+2014-02-25 04:40:04:0747, diag_itementered, id=4922, type=1
+2014-02-25 04:40:04:0777, diag_itemexited, id=4922, type=1
+2014-02-25 04:40:05:0256, diag_itementered, id=123, type=1
+2014-02-25 04:40:05:0295, diag_itemexited, id=123, type=1
+2014-02-25 04:40:05:0972, diag_itementered, id=7681, type=1
+2014-02-25 04:40:06:0002, diag_itemexited, id=7681, type=1
+2014-02-25 04:40:12:0956, list_mouseentered, 6765
+2014-02-25 04:40:13:0156, list_mouseexited

@@ -1,0 +1,68 @@
+2013-10-26 03:26:17:0845, setup_loaddata
+2013-10-26 03:26:18:0235, setup_resizewin
+2013-10-26 03:26:19:0624, diag_itementered, id=61559, type=1
+2013-10-26 03:26:20:0561, diag_itemexited, id=61559, type=1
+2013-10-26 03:26:21:0200, diag_itementered, id=36347, type=1
+2013-10-26 03:26:21:0248, diag_itemexited, id=36347, type=1
+2013-10-26 03:26:21:0623, diag_itementered, id=36347, type=1
+2013-10-26 03:26:22:0106, diag_itemexited, id=36347, type=1
+2013-10-26 03:26:22:0184, diag_itementered, id=18524, type=1
+2013-10-26 03:26:22:0231, diag_itemexited, id=18524, type=1
+2013-10-26 03:26:22:0231, diag_itementered, id=57689, type=1
+2013-10-26 03:26:22:0638, diag_itemexited, id=57689, type=1
+2013-10-26 03:26:22:0638, diag_itementered, id=18524, type=1
+2013-10-26 03:26:22:0716, diag_itemexited, id=18524, type=1
+2013-10-26 03:26:23:0308, diag_itementered, id=18524, type=1
+2013-10-26 03:26:23:0777, diag_itemexited, id=18524, type=1
+2013-10-26 03:26:25:0947, diag_itementered, id=35785, type=1
+2013-10-26 03:26:25:0947, diag_itemexited, id=35785, type=1
+2013-10-26 03:26:25:0947, diag_itementered, id=15732, type=1
+2013-10-26 03:26:26:0025, diag_itemexited, id=15732, type=1
+2013-10-26 03:26:26:0150, list_mouseentered, 15496
+2013-10-26 03:26:26:0477, list_mouseexited, 
+2013-10-26 03:26:26:0524, diag_itementered, id=15732, type=1
+2013-10-26 03:26:26:0571, diag_itemexited, id=15732, type=1
+2013-10-26 03:26:26:0571, diag_itementered, id=19893, type=1
+2013-10-26 03:26:26:0602, diag_itemexited, id=19893, type=1
+2013-10-26 03:26:26:0602, diag_itementered, id=12144, type=1
+2013-10-26 03:26:26:0680, diag_itemexited, id=12144, type=1
+2013-10-26 03:26:27:0023, diag_itementered, id=12144, type=1
+2013-10-26 03:26:27:0523, diag_itemexited, id=12144, type=1
+2013-10-26 03:26:49:0395, pattern_create, 0.8074935126914159
+2013-10-26 03:26:49:0473, pattern_create_open
+2013-10-26 03:26:49:0473, pattern_create_close
+2013-10-26 03:26:51:0548, diag_itementered, id=0.8074935126914159, type=0
+2013-10-26 03:26:52:0500, diag_itemexited, id=0.8074935126914159, type=0
+2013-10-26 03:26:52:0719, diag_itementered, id=35785, type=1
+2013-10-26 03:26:52:0766, diag_itemexited, id=35785, type=1
+2013-10-26 03:26:52:0766, diag_itementered, id=12144, type=1
+2013-10-26 03:26:52:0922, diag_itemexited, id=12144, type=1
+2013-10-26 03:26:52:0954, diag_itementered, id=12144, type=1
+2013-10-26 03:26:53:0032, diag_itemexited, id=12144, type=1
+2013-10-26 03:26:53:0032, diag_itementered, id=19893, type=1
+2013-10-26 03:26:53:0219, diag_itemexited, id=19893, type=1
+2013-10-26 03:26:53:0234, diag_itementered, id=123, type=1
+2013-10-26 03:26:53:0250, diag_itemexited, id=123, type=1
+2013-10-26 03:26:53:0297, diag_itementered, id=54295, type=1
+2013-10-26 03:26:53:0406, diag_itemexited, id=54295, type=1
+2013-10-26 03:26:53:0718, diag_itementered, id=54295, type=1
+2013-10-26 03:26:53:0765, diag_itemexited, id=54295, type=1
+2013-10-26 03:26:53:0765, diag_itementered, id=25765, type=1
+2013-10-26 03:26:54:0062, diag_itemexited, id=25765, type=1
+2013-10-26 03:26:54:0078, diag_itementered, id=54295, type=1
+2013-10-26 03:26:54:0109, diag_itemexited, id=54295, type=1
+2013-10-26 03:26:54:0421, diag_itementered, id=54295, type=1
+2013-10-26 03:26:55:0857, diag_itemclicked, id=54295, type=1
+2013-10-26 03:26:55:0920, diag_itemexited, id=54295, type=1
+2013-10-26 03:27:01:0194, edge_create, Tuple[112,125,?,2,0.0]
+2013-10-26 03:27:01:0227, pattern_change_open
+2013-10-26 03:27:05:0752, diag_itementered, id=54295, type=1
+2013-10-26 03:27:06:0235, diag_itemexited, id=54295, type=1
+2013-10-26 03:27:07:0046, diag_itementered, id=0.8074935126914159, type=0
+2013-10-26 03:27:07:0968, diag_itemclicked, id=0.8074935126914159, type=0
+2013-10-26 03:27:08:0374, diag_itemexited, id=0.8074935126914159, type=0
+2013-10-26 03:27:14:0506, diag_itementered, id=54295, type=1
+2013-10-26 03:27:15:0412, diag_itemclicked, id=54295, type=1
+2013-10-26 03:27:15:0459, diag_itemexited, id=54295, type=1
+2013-10-26 03:27:22:0199, discussion_open, 8569
+2013-10-26 03:27:31:0592, pattern_change_open

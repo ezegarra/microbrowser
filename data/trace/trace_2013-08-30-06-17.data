@@ -1,0 +1,29 @@
+2013-08-30 06:17:18:0290, setup_loaddata
+2013-08-30 06:17:18:0628, setup_resizewin
+2013-08-30 06:17:24:0402, pattern_create_open
+2013-08-30 06:17:24:0404, pattern_create_close
+2013-08-30 06:17:27:0636, question_create_open
+2013-08-30 06:17:27:0637, question_create_close
+2013-08-30 06:17:39:0613, question_create, 0.4880388192193017
+2013-08-30 06:17:39:0688, question_create_open
+2013-08-30 06:17:39:0690, question_create_close
+2013-08-30 06:17:41:0606, list_mouseentered, 15496
+2013-08-30 06:17:41:0828, list_mouseexited, 
+2013-08-30 06:17:42:0331, diag_itementered, id=0.4880388192193017, type=1
+2013-08-30 06:17:43:0749, diag_itemexited, id=0.4880388192193017, type=1
+2013-08-30 06:17:45:0236, search_update, t
+2013-08-30 06:17:46:0455, search_update, th
+2013-08-30 06:17:46:0630, search_update, thi
+2013-08-30 06:17:47:0870, search_update, th
+2013-08-30 06:17:48:0130, search_update, t
+2013-08-30 06:17:48:0368, search_update, 
+2013-08-30 06:17:55:0970, list_mouseentered, 15496
+2013-08-30 06:17:57:0060, list_mouseexited, 
+2013-08-30 06:17:57:0514, list_mouseentered, 41107
+2013-08-30 06:18:00:0757, list_itemclicked, 0.4880388192193017
+2013-08-30 06:18:02:0595, discussion_open, 0.4880388192193017
+2013-08-30 06:18:02:0623, list_mouseexited, 
+2013-08-30 06:18:07:0051, pattern_change_cancel
+2013-08-30 06:18:07:0052, pattern_change_open
+2013-08-30 06:18:17:0707, answer_create, 8347ms
+2013-08-30 06:18:17:0710, answer_create_open
