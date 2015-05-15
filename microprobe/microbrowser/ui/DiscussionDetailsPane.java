@@ -367,6 +367,8 @@ public class DiscussionDetailsPane extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
+				TraceService.log(TraceService.EVENT_PATTERN_CHANGE_OPEN);
+
 				SelectPatternDialog d = new SelectPatternDialog(null, theNode);
 				d.addWindowListener(new WindowAdapter() {
 					public void windowClosed(WindowEvent e) {
@@ -377,8 +379,6 @@ public class DiscussionDetailsPane extends JPanel {
 					}
 				});
 				d.setVisible(true);
-
-				TraceService.log(TraceService.EVENT_PATTERN_CHANGE_OPEN);
 			}
 		});
 		Box infoPanel = UILib.getBox(new Component[] { title, submitAnswer, pattern, changePattern }, true, 10, 0);
@@ -416,7 +416,7 @@ public class DiscussionDetailsPane extends JPanel {
 				listMenu.clearSelection();
 		        m_vis.getFocusGroup(Visualization.FOCUS_ITEMS).clear();	
 				m_vis.run("repaint");
-				TraceService.log(TraceService.EVENT_LIST_MOUSEEXITED, "type=detailRelatedList" );
+				TraceService.log(TraceService.EVENT_LIST_DETAILS_RELATED_MOUSEEXITED, "type=detailRelatedList" );
 			}
 
 			@Override
@@ -432,7 +432,7 @@ public class DiscussionDetailsPane extends JPanel {
 					m_vis.getFocusGroup(Visualization.FOCUS_ITEMS).setTuple(item);		
 					m_vis.run("repaint");
 
-					TraceService.log(TraceService.EVENT_LIST_MOUSEENTERED, "type=detailRelatedList, item=" + item.getString("id"));
+					TraceService.log(TraceService.EVENT_LIST_DETAILS_RELATED_MOUSEENTERED, "type=detailRelatedList, item=" + item.getString("id"));
 
 				}
 			}
@@ -442,7 +442,7 @@ public class DiscussionDetailsPane extends JPanel {
 				int index = listMenu.locationToIndex(evt.getPoint());
 				VisualItem item = (VisualItem) listMenu.getModel().getElementAt(index);
 
-				TraceService.log(TraceService.EVENT_LIST_ITEMCLICKED, "type=detailRelatedList, item=" + item.getString("id"));
+				TraceService.log(TraceService.EVENT_LIST_DETAILS_RELATED_ITEMCLICKED, "type=detailRelatedList, item=" + item.getString("id"));
 				
 				if ( evt.getClickCount() == 2 ) {
 					// open thread details
@@ -476,7 +476,7 @@ public class DiscussionDetailsPane extends JPanel {
 					m_vis.run("repaint");
 
 					// open the details of the selected answer
-					showSelectedAnswer(item);
+					showSelectedAnswer(item, VisualDBConstants.ORIGIN_VIEW_DETAILS_ANSWER_LIST);
 				}
 			}
 		};
@@ -484,11 +484,11 @@ public class DiscussionDetailsPane extends JPanel {
 		answersList.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseEntered(MouseEvent e) {
-				TraceService.log(TraceService.EVENT_LIST_MOUSEENTERED, "type=detailAnswersList");
+				TraceService.log(TraceService.EVENT_LIST_DETAILS_ANSWER_MOUSEENTERED, "type=detailAnswersList");
 			}
 			@Override
 			public void mouseExited(MouseEvent e) {
-				TraceService.log(TraceService.EVENT_LIST_MOUSEEXITED, "type=detailAnswersList");
+				TraceService.log(TraceService.EVENT_LIST_DETAILS_ANSWER_MOUSEEXITED, "type=detailAnswersList");
 			}
 			
 			@Override
@@ -496,7 +496,7 @@ public class DiscussionDetailsPane extends JPanel {
 				int index = listMenu.locationToIndex(e.getPoint());
 				VisualItem item = (VisualItem) listMenu.getModel().getElementAt(index);
 				
-				TraceService.log(TraceService.EVENT_LIST_ITEMCLICKED, "type=detailAnswersList, item=" + item.getString("id"));			}
+				TraceService.log(TraceService.EVENT_LIST_DETAILS_ANSWER_ITEMCLICKED, "type=detailAnswersList, item=" + item.getString("id"));			}
 		});
 		
 		// create the east panel tab
@@ -677,7 +677,7 @@ public class DiscussionDetailsPane extends JPanel {
 	 * @param item
 	 *            the clicked answer node
 	 */
-	public void showSelectedAnswer(VisualItem item) {
+	public void showSelectedAnswer(VisualItem item, int origin) {
 		if ( item != null ) {
 			logger.info("item=" + item.getInt("id") + ", type=" + item.getInt("type"));
 			answerText.setText(item.getString("body"));
@@ -691,7 +691,13 @@ public class DiscussionDetailsPane extends JPanel {
 				}
 			});
 			
-			TraceService.log(TraceService.EVENT_ANSWER_OPEN, item);			
+			if ( origin == VisualDBConstants.ORIGIN_VIEW_DETAILS_DIAGRAM) {
+				TraceService.log(TraceService.EVENT_ANSWER_OPEN_DETAILS_DIAGRAM, "item=" + item.getInt("id") + ", type=" + item.getInt("type"));				
+			} else if ( origin == VisualDBConstants.ORIGIN_VIEW_DETAILS_ANSWER_LIST) {
+				TraceService.log(TraceService.EVENT_ANSWER_OPEN_DETAILS_LIST_ANSWER, "item=" + item.getInt("id") + ", type=" + item.getInt("type"));
+			} else {
+				TraceService.log(TraceService.EVENT_ANSWER_OPEN_UNKNOWN, "item=" + item.getInt("id") + ", type=" + item.getInt("type"));
+			}
 		}
 	}
 	

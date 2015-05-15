@@ -20,11 +20,12 @@ public class DBDataReader {
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		//String sql = "SELECT * FROM VISUAL.THREADS T WHERE POSTTYPEID = 2 AND PARENTID = ? FOR READ ONLY";
-		String sql = "SELECT * FROM VISUAL_THREADS T WHERE POSTTYPEID = 2 AND PARENTID = ?";
+		String sql = "SELECT * FROM VISUAL.THREADS T WHERE POSTTYPEID = 2 AND PARENTID = ?";
 		Answer answer = null;
 
 		try {
-			conn = VDBConnector.getMySqlConnection();
+			//conn = VDBConnector.getMySqlConnection();
+			conn = VDBConnector.getDerbyConnection();
 			pstmt = conn.prepareStatement(sql);
 			pstmt.setInt(1, threadid);
 			rs = pstmt.executeQuery();

@@ -46,7 +46,7 @@ public class VisualDBConfig {
 	public static final String DATABASE_PASSWORD_MYSQL	= "peru1995";
 	
 	public static final String DATABASE_DRIVER_DERBY 	= "org.apache.derby.jdbc.ClientDriver";
-	public static final String DATABASE_URL_DERBY 		= "jdbc:derby://localhost:1527/VISUALDB;create=false";
+	public static final String DATABASE_URL_DERBY 		= "jdbc:derby://localhost:1527/MICROBROWSERDB;create=false";
 	public static final String DATABASE_USER_DERBY		= "user";
 	public static final String DATABASE_PASSWORD_DERBY	= "password";	
 }

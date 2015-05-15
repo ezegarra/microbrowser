@@ -223,6 +223,7 @@ public class SelectPatternDialog extends JDialog implements ActionListener, List
 //				m_vis.run("draw");
 //				m_vis.run("layout");
 				
+				TraceService.log(TraceService.EVENT_PATTERN_CHANGE, "pattern=" + targetNode.get("title") + ", target=" + sourceNode.getString("id"));
 				this.dispose();
 				
 			

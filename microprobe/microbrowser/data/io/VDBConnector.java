@@ -49,7 +49,7 @@ public class VDBConnector {
 //			e.printStackTrace();
 //		}       
 
-	    return getConnection(VisualDBConfig.DATABASE_DRIVER_DERBY, VisualDBConfig.DATABASE_URL_DERBY, VisualDBConfig.DATABASE_USER_DERBY, VisualDBConfig.DATABASE_PASSWORD_DERBY);
+	    return getDerbyConnection();
 	}
 	
 	/**
@@ -60,6 +60,14 @@ public class VDBConnector {
 	 */
 	public static Connection getMySqlConnection() throws SQLException {
 		return getConnection(VisualDBConfig.DATABASE_DRIVER_MYSQL, VisualDBConfig.DATABASE_URL_MYSQL, VisualDBConfig.DATABASE_USER_MYSQL, VisualDBConfig.DATABASE_PASSWORD_MYSQL);
+	}
+	
+	/**
+	 * Get a connection to the derby database
+	 * 
+	 */
+	public static Connection getDerbyConnection() throws SQLException {
+	    return getConnection(VisualDBConfig.DATABASE_DRIVER_DERBY, VisualDBConfig.DATABASE_URL_DERBY, VisualDBConfig.DATABASE_USER_DERBY, VisualDBConfig.DATABASE_PASSWORD_DERBY);
 	}
 	
 	public static Connection getConnection(String driver, String url, String user, String password) throws SQLException {
@@ -99,7 +107,7 @@ public class VDBConnector {
 	
 	public static DatabaseDataSource getDataSourceFromDerbyNetworkConnection() {
 		String driver 		= "org.apache.derby.jdbc.ClientDriver",
-				url 		= "jdbc:derby://localhost:1527/VISUALDB;create=false",
+				url 		= "jdbc:derby://localhost:1527/MICROBROWSERDB;create=false",
 				//url = "jdbc:derby:/Users/faz23/projects/websphere/usr/servers/microbrowser.0.1/VISUALDB;create=true",
 				user 		= "user",
 				password 	= "password";

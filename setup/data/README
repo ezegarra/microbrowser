@@ -1,0 +1,101 @@
+===============================================================================
+INSTRUCTIONS
+===============================================================================
+
+Document the processes for extracting data from StackOverflow
+
+1. Visit http://data.stackexchange.com
+2. Click 'StackOverflow"
+3. Login with your Yahoo or Google Account
+4. Click Compose Query
+
+===============================================================================
+LOADING DATA TO MICROBROWSER
+===============================================================================
+1. Make sure the database is running
+2. Ensure the database schema supports the data to be loaded (createdb.sql)
+3. Right click on createdb.sql and select 'Execute SQL Files'
+4. From the SQL Results view, verify data base created successfully
+5. From the Data Source Explorer view, right click on table VISUAL.USERS and select Data > Load
+6. Click Browse and select MicroBrowserData>data>QueryResuls_AllUsersForQuestionsAndAnswersForTag.csv
+7. Click OK.  From the SQL Results view, verify everything completed.  There would be one error for the header row.
+8. Repeat steps 5-7 for table VISUAL.THREADS and file QueryResults_AllQuestionsAndAnswersforTagJava.csv
+9. Repeat steps 5-7 for table VISUAL_PATTERNS and file SamplePatterns.csv
+
+===============================================================================
+LOADING DATA TO MICROPROBE
+===============================================================================
+1. Ensure the data has been exported to file QueryResults_AllQuestionsAndAnswersforTagJava
+2. All questions are created under under ezegarra
+3. Run Python script convert_csv_to_qa_csv.py
+4. Clean table qa4_posts
+5. Load csv output
+
+===============================================================================
+SAMPLE QUERIES
+===============================================================================
+...............................................................................
+LOAD ALL POSTS TAGGED AS 'JAVA'
+
+declare @tagId int;
+
+select  @tagId = Id
+from    Tags
+where   TagName = 'java';
+
+      select top 500 p.* 
+      from posts p join PostTags pt on pt.PostId = p.Id 
+      where 
+        p.PostTypeId = 1 and 
+        pt.TagId = @tagId 
+        union 
+  select p1.* 
+  from posts p1 
+  where 
+    p1.ParentId in (
+      select top 500 p.Id 
+      from posts p join PostTags pt on pt.PostId = p.Id 
+      where 
+        p.PostTypeId = 1 and 
+        pt.TagId = @tagId  
+      )
+    and p1.PostTypeId = 2
+...............................................................................
+FIND USERS AND THEIR REPUTATION
+
+select u.id, u.displayname, u.reputation from users u;
+
+...............................................................................
+FIND ALL USERS FOR RETURNED RESULTS
+
+declare @tagId int;
+
+select  @tagId = Id
+from    Tags
+where   TagName = 'java';
+
+select u.id, u.displayname, u.reputation
+ from (
+   select top 500 p.*
+  from posts p, PostTags pt
+    where 
+        p.Id = pt.PostId and
+        p.PostTypeId = 1 and 
+        pt.TagId = @tagId ) t join users u on t.OwnerUserId = u.Id
+    
+union 
+
+select u.id, u.displayname, u.reputation
+ from (
+ 
+select p1.* 
+  from posts p1 
+  where 
+    p1.ParentId in (
+      select top 500 p.Id 
+      from posts p join PostTags pt on pt.PostId = p.Id 
+      where 
+        p.PostTypeId = 1 and 
+        pt.TagId = @tagId  
+      )
+      and p1.PostTypeId = 2 ) t join users u on t.OwnerUserId = u.Id

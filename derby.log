@@ -1,0 +1,25 @@
+Fri May 15 04:19:02 EDT 2015 : Apache Derby Network Server - 10.9.1.0 - (1344872) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Fri May 15 04:19:39 EDT 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-014d-56a7-bc63-00000de57c70 
+on database directory C:\projects\research\git\microbrowser\MICROBROWSERDB  with class loader sun.misc.Launcher$AppClassLoader@66d3c617 
+Loaded from file:/C:/derby/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_31-b13
+user.dir=C:\projects\research\git\microbrowser
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Fri May 15 04:19:42 EDT 2015:
+Shutting down instance a816c00e-014d-56a7-bc63-00000de57c70 on database directory C:\projects\research\git\microbrowser\MICROBROWSERDB with class loader sun.misc.Launcher$AppClassLoader@66d3c617 
+Fri May 15 04:19:42 EDT 2015 Thread[DRDAConnThread_4,5,main] (DATABASE = MICROBROWSERDB), (DRDAID = {2}), Database 'MICROBROWSERDB' shutdown.
+----------------------------------------------------------------
+Fri May 15 04:19:54 EDT 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance 94bc40a2-014d-56a7-bc63-00000de57c70 
+on database directory C:\projects\research\git\microbrowser\MICROBROWSERDB  with class loader sun.misc.Launcher$AppClassLoader@66d3c617 
+Loaded from file:/C:/derby/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_31-b13
+user.dir=C:\projects\research\git\microbrowser
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

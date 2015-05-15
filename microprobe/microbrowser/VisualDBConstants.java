@@ -31,6 +31,10 @@ public interface VisualDBConstants {
 	
 	public static final int AGGREGATE_TYPE_PATTERN 		= 100;
 	public static final int AGGREGATE_TYPE_TAG 			= 200;
+
+	public static final int ORIGIN_VIEW_DETAILS_UNKNOWN 	= 20;
+	public static final int ORIGIN_VIEW_DETAILS_DIAGRAM 	= 21;
+	public static final int ORIGIN_VIEW_DETAILS_ANSWER_LIST = 22;
 	
 	public static String DISPLAY_MODE_SIMILARITY = "SIMILARITY";
 	public static String DISPLAY_MODE_PATTERN = "PATTERN";

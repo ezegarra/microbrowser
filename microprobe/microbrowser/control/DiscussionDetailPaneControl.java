@@ -60,7 +60,7 @@ public class DiscussionDetailPaneControl extends ControlAdapter {
     	int type = item.getInt("type");
         // mark the current item as selected from the list
     	if ( type == VisualDBConstants.NODE_TYPE_ANSWER || type == VisualDBConstants.NODE_TYPE_ANSWER_ACCEPTED) {
-    		discussionDetailsPane.showSelectedAnswer(item);
+    		discussionDetailsPane.showSelectedAnswer(item, VisualDBConstants.ORIGIN_VIEW_DETAILS_DIAGRAM);
     		discussionDetailsPane.setSelectedAnswer(item);
     	} else {
             discussionDetailsPane.selectItemFromList(item);    		
