@@ -196,7 +196,7 @@ public class GraphMLGenerator {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
-		String sql = "SELECT * FROM VISUAL.PATTERNS FOR READ ONLY";
+		String sql = "SELECT * FROM VISUAL.PATTERNS ORDER BY PATTERNNAME ASC FOR READ ONLY";
 		try {
 			 conn = VDBConnector.getConnection();
 			 pstmt = conn.prepareStatement(sql);
@@ -213,6 +213,7 @@ public class GraphMLGenerator {
 			 }
 		} catch (SQLException e) {
 			e.printStackTrace();
+			System.exit(-1);
 		} finally {
 			if ( conn != null ) {
 				try {
