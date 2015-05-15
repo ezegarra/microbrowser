@@ -157,6 +157,7 @@ public class DiscussionOverviewBySimilarityPane extends DiscussionOverviewPane {
     
 	private DefaultListModel listMenuModel;
 	private JScrollPane listScrollPane;
+	private JScrollPane patternListScrollPane;
 	
 	// the query bindings to perform the filtering
     private ListQueryBinding   typesQ    = null;
@@ -773,7 +774,13 @@ public class DiscussionOverviewBySimilarityPane extends DiscussionOverviewPane {
 			Node n 	= GraphMLDataReader.getSourceGraph().getNode(p.getRow());
 			((DefaultListModel)patternsList.getModel()).addElement(n);
 		}
-		tabbedPane.add("Pattern Browser", patternsList);
+		
+		patternListScrollPane = new JScrollPane(patternsList);
+		patternListScrollPane.setMinimumSize(new Dimension(400, 470));
+		patternListScrollPane.setMaximumSize(new Dimension(400, 3000));
+		patternListScrollPane.setPreferredSize(patternListScrollPane.getMinimumSize());
+		
+		tabbedPane.add("Pattern Browser", patternListScrollPane);
 		
 		return tabbedPane;
 	}
