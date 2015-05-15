@@ -33,7 +33,7 @@ public class SimilarityGeneratorByTopic {
 	public SimilarityGeneratorByTopic() {
 		try {
 			File file = new File(
-					"C:/projects/proposal/workspace.microbrowse.0.1/MicroBrowserData/mallet/tutorial_composition.txt");
+					"C:/projects/research/git/microbrowser/setup/mallet/tutorial_composition.txt");
 
 			LineIterator iterator = FileUtils.lineIterator(file, "UTF-8");
 			StringTokenizer tokenizer;

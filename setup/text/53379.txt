@@ -1,0 +1,64 @@
+using DBMS_APPLICATION_INFO with Jboss oracle jboss yes, you can write a wrapper class around your connection pool, and a wraper around the connection so lets say you have: 
+OracleConnection conn=connectionPool.getConnection("java:scott@mydb");
+ Change it to: 
+public class LoggingConnectionPool extends ConnectionPool{
+    public OracleConnection getConnection(String datasourceName, String module, String action){
+    	OracleConnection conn=getConnection(datasourceName);
+    	CallableStatement call=conn.preparedCall("begin dbms_application_info.setModule(module_name => ?, action_name => ?); end;");
+    	try{
+    		call.setString(1,module);
+    		call.setString(2,action);
+    		call.execute();
+    	finally{
+    		call.close();
+    	}
+    	return new WrappedOracleConnection(conn);
+    }
+ Note the use of WrappedOracleConnection above. You need this because you need to trap the close call 
+public class WrappedOracleConnection extends OracleConnection{
+    public void close(){
+    	CallableStatement call=this.preparedCall("begin dbms_application_info.setModule(module_name => ?, action_name => ?); end;");
+    	try{
+    		call.setNull(1,Types.VARCHAR);
+    		call.setNull(2,Types.VARCHAR);
+    		call.execute();
+    	finally{
+    		call.close();
+    	}
+    }
+
+    // and you need to implement every other method
+    //for example
+    public CallableStatement prepareCall(String command){
+    	return super.prepareCall(command);
+    }
+    ...
+}
+ Hope this helps, I do something similar on a development server to catch connections that are not closed (not returned to the pool). If you are using JBoss, you can use a "valid-connection-checker". This class is normaly used to check the validity of the Connection. But, as it will be invoked every time the Connection pool gives the user a Connection, you can use it to set the DBMS_ APPLICATION _INFO. You declare such a class in the oracle-ds.xml like this: <local-tx-datasource>
+	<jndi-name>jdbc/myDS</jndi-name>
+	<connection-url>jdbc:oracle:thin:@10.10.1.15:1521:SID</connection-url>
+	<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+	<security-domain>MyEncryptDBPassword</security-domain>
+	<valid-connection-checker-class-name>test.MyValidConn</valid-connection-checker-class-name>
+	<metadata>
+		<type-mapping>Oracle9i</type-mapping>
+	</metadata>
+</local-tx-datasource>
+ Your class must implement the org.jboss.resource.adapter.jdbc.ValidConnectionChecker interface. If you use Maven, you can include this interface with the following dependency: <dependency>
+    <groupId>jboss</groupId>
+    <artifactId>jboss-common-jdbc-wrapper</artifactId>
+    <version>3.2.3</version>
+    <scope>provided</scope>
+</dependency>
+ This interface has only one method: isValidConnection. I copy my implementation: public SQLException isValidConnection(Connection arg0) {
+	CallableStatement statement;
+	try {
+		statement = arg0.prepareCall("call dbms_application_info.set_client_info('"+getInfos()+"')");
+		statement.execute();
+	} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	return null;
+}
+ Hope it helps ! Benoît In your -ds.xml, you can set a connection property called v$session.program and the value of that property will populate the PROGRAM column of each session in the V$SESSION view created for connections originating from your connection pool. I usually set it to the jboss.server.name property. See here for an example.

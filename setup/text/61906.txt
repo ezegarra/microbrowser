@@ -1,0 +1,81 @@
+Lazy loading property and session.get problem hibernate lazy-loading Not really seen this problem, although we do get intermittent Lazy Load errors - so perhaps we have the same problem, anyway, is it an option to use a different session for the loading of the Bar object - that should load it from scratch, I would expect... I am unable to reproduce the behaviour you are seeing. Here is my code: @Entity
+public class Foo {
+    private Long id; private String name; private Bar bar;
+
+    public Foo() { }
+    public Foo(String name) { this.name = name; }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+
+    @Basic
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    public Bar getBar() { return bar; }
+    public void setBar(Bar bar) { this.bar = bar; }
+}
+
+@Entity
+public class Bar {
+    private Long id; private String name;
+
+    public Bar() { }
+    public Bar(String name) { this.name = name; }
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    public Long getId() { return id; }
+    public void setId(Long id) { this.id = id; }
+
+    @Basic
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+}
+
+    public void testGets() {
+    	SessionFactory sf = new AnnotationConfiguration()
+    		.addPackage("hibtest")
+                .addAnnotatedClass(Foo.class)
+                .addAnnotatedClass(Bar.class)
+    		.configure().buildSessionFactory();
+    	Session session = null;
+    	Transaction txn = null;
+
+    	// Create needed data
+    	try {
+    		session = sf.openSession();
+    		txn = session.beginTransaction();
+
+    		// Create a Bar
+    		Bar bar = new Bar("Test Bar");
+    		session.save(bar);
+
+    		// Create a Foo
+    		Foo foo = new Foo("Test Foo");
+    		session.save(foo);
+
+    		foo.setBar(bar);
+
+    		txn.commit();
+    	} catch (HibernateException ex) {
+    		if (txn != null) txn.rollback();
+    		throw ex;
+    	} finally {
+    		if (session != null) session.close();
+    	}
+
+    	// Try the fetch
+    	try {
+    		session = sf.openSession();
+    		Foo foo = (Foo) session.get(Foo.class, 1L);
+    		Bar bar = (Bar) session.get(Bar.class, 1L);
+    		System.out.println(bar.getName());
+    	} finally {
+    		if (session != null) session.close();
+    	}
+    }
+ And it all works fine, as one would expect. Do you actually need to do lazy loading? Could you not set FetchType to EAGER instead and have it always loaded (properly) using a join? I had a similar problem: I did Session.save(nastyItem) to save an object into the Session. However, I did not fill in the property buyer which is mapped as update="false" insert="false" (this happens a lot when you have a composed primary key, then you map the many-to-one's as insert="false" update="false") I a query to load a list of items, and the item which I just saved, happens to be part of the result set now what goes wrong? Hibernate sees that the item was already in the cache, and Hibernate does not replace (probably not to break my earlier reference nastyItem) it with the newly loaded value, but uses MY nastyItem I have put into the Session cache myself. Even worse, now the lazy loading of the buyer is broken: it contains null. To avoid these Session issues, I always do a flush and a clear after a save, merge, update or delete. Having to solve these nasty problems takes too much of my time :-( You are doing something wrong. I did not test your code, but you should never need to force the initialization of proxies, the property accessors do that for you. If you are using Hibernate explicitly, never mind using JPA, since you already have lost portability. Hibernate should detect automatically whenever it needs to fetch or write to db. If you issue a getProperty() from a proxy, hibernate or any other jpa provider should fetch the correspondent row from the db. The only situation I'm not sure hibernate is clever enough is if you issue a save() and then issue a get() with the id of the saved object, there might be a problem if the save() didn't flush the object to db.

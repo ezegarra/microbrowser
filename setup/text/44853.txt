@@ -1,0 +1,25 @@
+Why am I getting a ClassCastException when generating javadocs? ant javadoc classcastexception It looks like this has been reported as a Java bug. It appears to be caused by using annotations from a 3rd party library (like JUnit) and not including the jar with that annotation in the javadoc invocation. If that is the case, just use the -classpath option on javadoc and include the extra jar files. I have some idea regarding this problem but this not exact solution to get. If you give single comment line \\\\ before annotation and try to run the javadoc once again. This problem will solve Eg: sample.java File @ChannelPipeline
+ Makes changes in \\\\@ChannelPipeline
+ Try to run javadoc command once again. Now Class Cast Exception won't occur I got this problem too. I can compile properly without any errors or warnings. But when I generating javadoc , I got below error. [javadoc] java.lang.ClassCastException: com.sun.tools.javadoc.ClassDocImpl cannot be cast to com.sun.javadoc.AnnotationTypeDoc Here is my classpath loading for my third-party-libs ... <path id="build.classpath">
+<fileset dir=".">
+    <include name="libs/*.jar" />
+</fileset>
+ At my java compile target .. <target name="compile" depends="clean, makedir">
+<javac includeantruntime="false" srcdir="${src.dir}" destdir="${build.dir}" classpathref="build.classpath">
+  <compilerarg value="-Xlint:unchecked"/>
+</javac>
+ And at my javadoc target... <target name="docs" depends="compile">
+<javadoc packagenames="src" sourcepath="${src.dir}" destdir="${docs.dir}" 
+    failonerror="no"
+    author="true"
+    version="true"
+    windowtitle="${Name} API"
+    doctitle="${Name}"
+    bottom="Copyright © 2014 ColayHIlls.com . All Rights Reserved.">
+   <fileset dir="${src.dir}">
+            <include name="main/java/com/colayhills/jpcenter/business/service/**" />
+   </fileset>
+</javadoc>
+<echo message="java docs has been generated!"/>
+</target>
+ So , I added classpathref="build.classpath" option to <javadoc tag. Now It is fine for me.

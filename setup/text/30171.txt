@@ -1,0 +1,179 @@
+Why won't .NET deserialize my primitive array from a web service? .net service primitive Here's what I ended up with. I have never found another solution out there for this, so if you have something better, by all means, contribute. First, the long array definition in the wsdl:types area:   <xsd:complexType name="ArrayOf_xsd_long">
+    <xsd:complexContent mixed="false">
+      <xsd:restriction base="soapenc:Array">
+        <xsd:attribute wsdl:arrayType="soapenc:long[]" ref="soapenc:arrayType" />
+      </xsd:restriction>
+    </xsd:complexContent>
+  </xsd:complexType>
+ Next, we create a SoapExtensionAttribute that will perform the fix. It seems that the problem was that .NET wasn't following the multiref id to the element containing the double value. So, we process the array item, go find the value, and then insert it the value into the element: [AttributeUsage(AttributeTargets.Method)]
+public class LongArrayHelperAttribute : SoapExtensionAttribute
+{
+    private int priority = 0;
+
+    public override Type ExtensionType
+    {
+        get { return typeof (LongArrayHelper); }
+    }
+
+    public override int Priority
+    {
+        get { return priority; }
+        set { priority = value; }
+    }
+}
+
+public class LongArrayHelper : SoapExtension
+{
+    private static ILog log = LogManager.GetLogger(typeof (LongArrayHelper));
+
+    public override object GetInitializer(LogicalMethodInfo methodInfo, SoapExtensionAttribute attribute)
+    {
+        return null;
+    }
+
+    public override object GetInitializer(Type serviceType)
+    {
+        return null;
+    }
+
+    public override void Initialize(object initializer)
+    {
+    }
+
+    private Stream originalStream;
+
+    private Stream newStream;
+
+    public override void ProcessMessage(SoapMessage m)
+    {
+        switch (m.Stage)
+        {
+            case SoapMessageStage.AfterSerialize:
+                newStream.Position = 0; //need to reset stream 
+                CopyStream(newStream, originalStream);
+                break;
+
+            case SoapMessageStage.BeforeDeserialize:
+                XmlWriterSettings settings = new XmlWriterSettings();
+                settings.Indent = false;
+                settings.NewLineOnAttributes = false;
+                settings.NewLineHandling = NewLineHandling.None;
+                settings.NewLineChars = "";
+                XmlWriter writer = XmlWriter.Create(newStream, settings);
+
+                XmlDocument xmlDocument = new XmlDocument();
+                xmlDocument.Load(originalStream);
+
+                List<XmlElement> longArrayItems = new List<XmlElement>();
+                Dictionary<string, XmlElement> multiRefs = new Dictionary<string, XmlElement>();
+                FindImportantNodes(xmlDocument.DocumentElement, longArrayItems, multiRefs);
+                FixLongArrays(longArrayItems, multiRefs);
+
+                xmlDocument.Save(writer);
+                newStream.Position = 0;
+                break;
+        }
+    }
+
+    private static void FindImportantNodes(XmlElement element, List<XmlElement> longArrayItems,
+                                           Dictionary<string, XmlElement> multiRefs)
+    {
+        string val = element.GetAttribute("soapenc:arrayType");
+        if (val != null && val.Contains(":long["))
+        {
+            longArrayItems.Add(element);
+        }
+        if (element.Name == "multiRef")
+        {
+            multiRefs[element.GetAttribute("id")] = element;
+        }
+        foreach (XmlNode node in element.ChildNodes)
+        {
+            XmlElement child = node as XmlElement;
+            if (child != null)
+            {
+                FindImportantNodes(child, longArrayItems, multiRefs);
+            }
+        }
+    }
+
+    private static void FixLongArrays(List<XmlElement> longArrayItems, Dictionary<string, XmlElement> multiRefs)
+    {
+        foreach (XmlElement element in longArrayItems)
+        {
+            foreach (XmlNode node in element.ChildNodes)
+            {
+                XmlElement child = node as XmlElement;
+                if (child != null)
+                {
+                    string href = child.GetAttribute("href");
+                    if (href == null || href.Length == 0)
+                    {
+                        continue;
+                    }
+                    if (href.StartsWith("#"))
+                    {
+                        href = href.Remove(0, 1);
+                    }
+                    XmlElement multiRef = multiRefs[href];
+                    if (multiRef == null)
+                    {
+                        continue;
+                    }
+                    child.RemoveAttribute("href");
+                    child.InnerXml = multiRef.InnerXml;
+                    if (log.IsDebugEnabled)
+                    {
+                        log.Debug("Replaced multiRef id '" + href + "' with value: " + multiRef.InnerXml);
+                    }
+                }
+            }
+        }
+    }
+
+    public override Stream ChainStream(Stream s)
+    {
+        originalStream = s;
+        newStream = new MemoryStream();
+        return newStream;
+    }
+
+    private static void CopyStream(Stream from, Stream to)
+    {
+        TextReader reader = new StreamReader(from);
+        TextWriter writer = new StreamWriter(to);
+        writer.WriteLine(reader.ReadToEnd());
+        writer.Flush();
+    }
+}
+ Finally, we tag all methods in the Reference.cs file that will be deserializing a long array with our attribute:     [SoapRpcMethod("", RequestNamespace="http://some.service.provider",
+        ResponseNamespace="http://some.service.provider")]
+    [return : SoapElement("getFooReturn")]
+    [LongArrayHelper]
+    public Foo getFoo()
+    {
+        object[] results = Invoke("getFoo", new object[0]);
+        return ((Foo) (results[0]));
+    }
+ This fix is long-specific, but it could probably be generalized to handle any primitive type having this problem. Found this link that may offer a better alternative: http://www.tomergabel.com/GettingWCFAndApacheAxisToBeFriendly.aspx Here's a more or less copy-pasted version of a blog post I wrote on the subject. Executive summary: You can either change the way .NET deserializes the result set (see Chris's solution above), or you can reconfigure Axis to serialize its results in a way that's compatible with the .NET SOAP implementation. If you go the latter route, here's how: ... the generated classes look and appear to function normally, but if you'll look at the deserialized array on the client (.NET/WCF) side you'll find that the array has been deserialized incorrectly, and all values in the array are 0. You'll have to manually look at the SOAP response returned by Axis to figure out what's wrong; here's a sample response (again, edited for clarity): <?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope xmlns:soapenv=http://schemas.xmlsoap.org/soap/envelope/>
+    <soapenv:Body>
+        <doSomethingResponse>
+          <doSomethingReturn>
+            <doSomethingReturn href="#id0"/>
+            <doSomethingReturn href="#id1"/>
+            <doSomethingReturn href="#id2"/>
+            <doSomethingReturn href="#id3"/>
+            <doSomethingReturn href="#id4"/>
+          </doSomethingReturn>
+        </doSomethingResponse>
+        <multiRef id="id4">5</multiRef>
+        <multiRef id="id3">4</multiRef>
+        <multiRef id="id2">3</multiRef>
+        <multiRef id="id1">2</multiRef>
+        <multiRef id="id0">1</multiRef>
+   </soapenv:Body>
+</soapenv:Envelope>
+ You'll notice that Axis does not generate values directly in the returned element, but instead references external elements for values. This might make sense when there are many references to relatively few discrete values, but whatever the case this is not properly handled by the WCF basicHttpBinding provider (and reportedly by gSOAP and classic .NET web references as well). It took me a while to find a solution: edit your Axis deployment's server-config.wsdd file and find the following parameter: <parameter name="sendMultiRefs" value="true"/>
+ Change it to false, then redeploy via the command line, which looks (under Windows) something like this: java -cp %AXISCLASSPATH% org.apache.axis.client.AdminClient server-config.wsdl
+ The web service's response should now be deserializable by your .NET client.

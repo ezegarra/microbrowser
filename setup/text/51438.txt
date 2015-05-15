@@ -1,0 +1,49 @@
+Getting A File's Mime Type In Java mime Unfortunately, mimeType = file.toURL().openConnection().getContentType();
+ does not work, since this use of URL leaves a file locked, so that, for example, it is undeletable. However, you have this: mimeType= URLConnection.guessContentTypeFromName(file.getName());
+ and also the following, which has the advantage of going beyond mere use of file extension, and takes a peek at content InputStream is = new BufferedInputStream(new FileInputStream(file));
+mimeType = URLConnection.guessContentTypeFromStream(is);
+ //...close stream
+ However, as suggested by the comment above, the built-in table of mime-types is quite limited, not including, for example, MSWord and PDF. So, if you want to generalize, you'll need to go beyond the built-in libraries, using, e.g., Mime-Util (which is a great library, using both file extension and content). The JAF API is part of JDK 6. Look at javax.activation package. Most interesting classes are javax.activation.MimeType - an actual MIME type holder - and javax.activation.MimetypesFileTypeMap - class whose instance can resolve MIME type as String for a file: String fileName = "/path/to/file";
+MimetypesFileTypeMap mimeTypesMap = new MimetypesFileTypeMap();
+
+// only by file name
+String mimeType = mimeTypesMap.getContentType(fileName);
+
+// or by actual File instance
+File file = new File(fileName);
+mimeType = mimeTypesMap.getContentType(file);
+ From roseindia: FileNameMap fileNameMap = URLConnection.getFileNameMap();
+String mimeType = fileNameMap.getContentTypeFor("alert.gif");
+ In Java 7 you can now just use Files.probeContentType(path). I tried several ways to do it, including the first ones said by @Joshua Fox. But some don't recognize frequent mimetypes like for PDF files, and other could not be trustable with fake files (I tried with a RAR file with extension changed to TIF). The solution I found, as also is said by @Joshua Fox in a superficial way, is to use MimeUtil2, like this: MimeUtil2 mimeUtil = new MimeUtil2();
+mimeUtil.registerMimeDetector("eu.medsea.mimeutil.detector.MagicMimeMimeDetector");
+String mimeType = MimeUtil2.getMostSpecificMimeType(mimeUtil.getMimeTypes(file)).toString();
+ If you're an Android developer, you can use a utility class android.webkit.MimeTypeMap which maps MIME-types to file extensions and vice versa. Following code snippet may help you. private static String getMimeType(String fileUrl) {
+    String extension = MimeTypeMap.getFileExtensionFromUrl(fileUrl);
+    return MimeTypeMap.getSingleton().getMimeTypeFromExtension(extension);
+}
+ Apache Tika offers in tika-core a mime type detection based based on magic markers in the stream prefix. tika-core does not fetch other dependencies, which makes it as lightweight as the currently unmaintained Mime Type Detection Utility. Simple code example (Java 7), using the variables theInputStream and theFileName try (InputStream is = theInputStream;
+        BufferedInputStream bis = new BufferedInputStream(is);) {
+    AutoDetectParser parser = new AutoDetectParser();
+    Detector detector = parser.getDetector();
+    Metadata md = new Metadata();
+    md.add(Metadata.RESOURCE_NAME_KEY, theFileName);
+    MediaType mediaType = detector.detect(bis, md);
+    return mediaType.toString();
+}
+ Please not that MediaType.detect(...) cannot be used directly (TIKA-1120). More hints are provided at https://tika.apache.org/0.10/detection.html. I was just wondering how most people fetch a mime type from a file in Java? For posterity, I've recently finished work on my SimpleMagic Java package which allows content-type (mime-type) determination from files and byte arrays. It is designed to read and run the Unix file(1) command magic files that are a part of most ~Unix OS configurations. I tried Apache Tika but it is huge with tons of dependencies, URLConnection doesn't use the bytes of the files, MimetypesFileTypeMap also just looks at files names, and I couldn't move to Java 7. With SimpleMagic you can do something like: // create a magic utility using the internal magic file
+ContentInfoUtil util = new ContentInfoUtil();
+// if you want to use a different config file(s), you can load them by hand:
+// ContentInfoUtil util = new ContentInfoUtil("/etc/magic");
+...
+ContentInfo info = util.findMatch("/tmp/upload.tmp");
+// or
+ContentInfo info = util.findMatch(inputStream);
+// or
+ContentInfo info = util.findMatch(contentByteArray);
+
+// null if no match
+if (info != null) {
+   String mimeType = info.getMimeType();
+}
+ If you are stuck with java 5-6 then this utility class from servoy open source product https://github.com/Servoy/servoy-client/blob/e7f5bce3c3dc0f0eb1cd240fce48c75143a25432/servoy_shared/src/com/servoy/j2db/util/MimeTypes.java#L34 You only need this function public static String getContentType(byte[] data, String name)
+ It probes the first bytes of the content and returns the content types based on that content and not by file extension. It is better to use two layer validation for files upload. First you can check for the mimeType and validate it. Second you should look to convert the first 4 bytes of your file to hexadecimal and then compare it with the magic numbers. Then it will be a really secure way to check for file validations.

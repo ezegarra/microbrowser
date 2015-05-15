@@ -1,0 +1,60 @@
+Refactoring away labeled loops refactoring label Easily, my good man. for( int idx = 0; idx < vectorLength; idx++) {
+  if( conditionAtVectorPosition( v, idx ) ) continue;
+
+  for( rowIdx = 0; rowIdx < n; rowIdx++ ) {
+    if( anotherConditionAtVector( v, rowIdx ) ) continue;
+    if( conditionAtMatrixRowCol( m, rowIdx, idx ) ) break;
+  }
+  if( !conditionAtMatrixRowCol( m, rowIdx, idx ) )
+    setValueInVector( v, idx );
+}
+ EDIT: Quite correct you are Anders. I've edited my solution to take that into account as well. @Patrick you are assuming calling setValueInVector( v, idx ); at the end of the second loop is OK. If the code is to be identical, logically, it must be rewritten to somethng like this: for( int idx = 0; idx < vectorLength; idx++) {
+    if( conditionAtVectorPosition( v, idx ) ) continue;
+
+    for( rowIdx = 0; rowIdx < n; rowIdx++ ) {
+        if( anotherConditionAtVector( v, rowIdx ) ) continue;
+        if( conditionAtMatrixRowCol( m, rowIdx, idx ) ) break;
+    }
+    if ( !conditionAtMatrixRowCol( m, rowIdx, idx ))
+        setValueInVector( v, idx );
+}
+ Does this work for you? I extracted the inner loop into a method CheckedEntireMatrix (you can name it better than me) - Also my java is a bit rusty.. but I think it gets the message across for( int idx = 0; idx < vectorLength; idx++) {
+    if( conditionAtVectorPosition( v, idx ) 
+    || !CheckedEntireMatrix(v)) continue;
+
+    setValueInVector( v, idx );
+}
+
+private bool CheckedEntireMatrix(Vector v)
+{
+    for( rowIdx = 0; rowIdx < n; rowIdx++ ) {
+        if( anotherConditionAtVector( v, rowIdx ) ) continue;
+        if( conditionAtMatrixRowCol( m, rowIdx, idx ) ) return false;
+    }   
+    return true;
+}
+ Gishu has the right idea : for( int idx = 0; idx < vectorLength; idx++) {
+    if (!conditionAtVectorPosition( v, idx ) 
+        && checkedRow(v, idx))
+         setValueInVector( v, idx );
+}
+
+private boolean checkedRow(Vector v, int idx) {
+    for( rowIdx = 0; rowIdx < n; rowIdx++ ) {
+        if( anotherConditionAtVector( v, rowIdx ) ) continue;
+        if( conditionAtMatrixRowCol( m, rowIdx, idx ) ) return false;
+    }  
+    return true;
+}
+ I'm not too sure to understand the first continue. I would copy Gishu and write something like ( sorry if there are some mistakes ) : for( int idx = 0; idx < vectorLength; idx++) {
+    if( !conditionAtVectorPosition( v, idx ) && CheckedEntireMatrix(v))
+        setValueInVector( v, idx );
+}
+
+inline bool CheckedEntireMatrix(Vector v) {
+    for(rowIdx = 0; rowIdx < n; rowIdx++)
+        if ( !anotherConditionAtVector(v,rowIdx) && conditionAtMatrixRowCol(m,rowIdx,idx) ) 
+            return false;
+    return true;
+}
+ From reading your code. I noticed your eliminating the invalid vector positions at conditionAtVectorPosition then you remove the invalid rows at anotherConditionAtVector. It seems that checking rows at anotherConditionAtVector is redundant since whatever the value of idx is, anotherConditionAtVector only depends on the row index (assuming anotherConditionAtVector has no side effects). So you can do this: Get the valid positions first using conditionAtVectorPosition (these are the valid columns). Then get the valid rows using anotherConditionAtVector. Finally, use conditionAtMatrixRowCol using the valid columns and rows. I hope this helps. Looking at the solutions presented so far: They all look less readable than the original, in that they involve spending more code on the mechanism of the code rather than on the algorithm itself Some of them are broken, or were before they were edited. Most damning is the fact that people are having to think quite hard about how to write the code without labels and not break anything. Some come with a performance penalty of running the same test twice, which may not always be trivial. The alternative to that is storing and passing round booleans, which gets ugly. Refactoring the relevant part of the code into a method is effectively a no-op: it rearranges how the code is laid out in the file, but has no effect on how it's executed. All of which makes me believe that, at least in the case of this question as phrased, the label is the correct solution and doesn't need to be refactored away. Certainly there are cases where labels are used incorrectly and should be refactored away. I just don't think it should be treated as some unbreakable rule. @Sadie: They all look less readable than the original, in that they involve spending more code on the mechanism of the code rather than on the algorithm itself Externalizing the second loop outside the algorithm is not necessarily less readable. If the method name is well chosen, it can improve readability. Some of them are broken, or were before they were edited. Most damning is the fact that people are having to think quite hard about how to write the code without labels and not break anything. I have a different point of view: some of them are broken because it is hard to figure out the behavior of the original algorithm. Some come with a performance penalty of running the same test twice, which may not always be trivial. The alternative to that is storing and passing round booleans, which gets ugly. The performance penalty is minor. However I agree that running a test twice is not a nice solution. Refactoring the relevant part of the code into a method is effectively a no-op: it rearranges how the code is laid out in the file, but has no effect on how it's executed. I don't see the point. Yep, it doesn't change the behavior, like... refactoring? Certainly there are cases where labels are used incorrectly and should be refactored away. I just don't think it should be treated as some unbreakable rule. I totally agree. But as you have pointed out, some of us have difficulties while refactoring this example. Even if the initial example is readable, it is hard to maintain. @Nicolas Some of them are broken, or were before they were edited. Most damning is the fact that people are having to think quite hard about how to write the code without labels and not break anything. I have a different point of view: some of them are broken because it is hard to figure out the behavior of the original algorithm. I realise that it's subjective, but I don't have any trouble reading the original algorithm. It's shorter and clearer than the proposed replacements. What all the refactorings in this thread do is emulate the behaviour of a label using other language features - as if you were porting the code to a language that didn't have labels. Some come with a performance penalty of running the same test twice, which may not always be trivial. The alternative to that is storing and passing round booleans, which gets ugly. The performance penalty is minor. However I agree that running a test twice is not a nice solution. I believe the question was how to remove the labels, not how to optimize the algorithm. It appeared to me that the original poster was unaware of how to use 'continue' and 'break' keywords without labels, but of course, my assumptions may be wrong. When it comes to performance, the post does not give any information about the implementation of the other functions, so for all I know they might as well be downloading the results via FTP as consisting of simple calculations inlined by the compiler. That being said, doing the same test twice is not optimal—in theory. EDIT: On a second thought, the example is actually not a horrible use of labels. I agree that "goto is a no-no", but not because of code like this. The use of labels here does not actually affect the readability of the code in a significant way. Of course, they are not required and can easily be omitted, but not using them simply because "using labels is bad" is not a good argument in this case. After all, removing the labels does not make the code much easier to read, as others have already commented. This question was not about optimizing the algorithm - but thanks anyway ;-) At the time I wrote it, I considered the labeled continue as a readable solution. I asked SO a question about the convention (having the label in all caps or not) for labels in Java. Basically every answer told me "do not use them - there is always a better way! refactor!". So I posted this question to ask for a more readable (and therefore better?) solution. Until now, I am not completely convinced by the alternatives presented so far. Please don't get me wrong. Labels are evil most of the time. But in my case, the conditional tests are pretty simple and the algorithm is taken from a mathematical paper and therefore very likely to not change in the near future. So I prefer having all the relevant parts visible at once instead of having to scroll to another method named something like checkMatrixAtRow(x). Especially at more complex mathematical algorithms, I find it pretty hard to find "good" function-names - but I guess that is yet another question I think that labelled loops are so uncommon that you can pick whatever method of labelling works for you - what you have there makes your intentions with the continues perfectly clear. After leading the charge to suggest refactoring the loops in the original question and now seeing the code in question, I think you've got a very readable loop there. What I had imagined was a very different chunk of code - putting the actual example up, I can see it is much cleaner than I had thought. My apologies for the misunderstanding.

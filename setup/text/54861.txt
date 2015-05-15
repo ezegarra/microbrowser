@@ -1,0 +1,32 @@
+Better way of opening a Document from Java? windows process If you are using Java 6 you can just use the open method of java.awt.Desktop to launch the file using the default application for the current platform. Not sure if this will help you much... I use java 1.5+'s ProcessBuilder to launch external shell scripts in a java program. Basically I do the following: ( although this may not apply because you don't want to capture the commands output; you actually wanna fire up the document - but, maybe this will spark something that you can use ) List<String> command = new ArrayList<String>();
+command.add(someExecutable);
+command.add(someArguemnt0);
+command.add(someArgument1);
+command.add(someArgument2);
+ProcessBuilder builder = new ProcessBuilder(command);
+try {
+final Process process = builder.start();
+...    
+} catch (IOException ioe) {}
+ The issue may be the "start" command you are using, rather than your file name parsing. For example, this seems to work well on my WinXP machine (using JDK 1.5) import java.io.IOException;
+import java.io.File;
+
+public class test {
+
+    public static void openDocument(String path) throws IOException {
+    	path = "\"" + path + "\"";
+    	File f = new File( path );
+    	String command = "C:\\Windows\\System32\\cmd.exe /c " + f.getPath() + "";
+        	Runtime.getRuntime().exec(command);          
+    }
+
+    public static void main( String[] argv ) {
+    	test thisApp = new test();
+    	try {
+    		thisApp.openDocument( "c:\\so\\My Doc.doc");
+    	}
+    	catch( IOException e ) {
+    		e.printStackTrace();
+    	}
+    }
+}

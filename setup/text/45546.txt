@@ -1,0 +1,21 @@
+How do I return a 403 Forbidden in Spring MVC? spring can you use response.setStatus(403) ? http://forum.springframework.org/archive/index.php/t-20877.html Quickie If you are using plain JSP views (as is most common), then simply add <% response.setStatus( 403 ); %>
+ somewhere in your view file. At the top is a nice place. Detail In MVC, i would always set this in the view, and in most cases with Spring-MVC, use the SimpleMappingExceptionResolver to present the correct view in response to a thrown runtime Exception. For example: create and throw a PermissionDeniedException in your controller or service layer and have the exception resolver point to a view file permissionDenied.jsp. This view file sets the 403 status and shows the user an appropriate message. In your Spring bean XML file: <bean id="exceptionResolver"
+      class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+  <property name="exceptionMappings">
+    <props>
+      <prop key="PermissionDeniedException">          
+        rescues/permissionDenied
+      </prop>
+      ... set other exception/view mappings as <prop>s here ...
+    </props>
+  </property>
+  <property name="defaultErrorView" value="rescues/general" />
+</bean>
+
+<bean id="viewResolver"
+      class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+  <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+  <property name="prefix" value="/WEB-INF/views/" />
+  <property name="suffix" value=".jsp" />
+</bean>
+ If you need to implement a user login mechanism, take a look at Spring Security (formerly Acegi Security). Using an ExceptionResolver is a great way to go, but if you just want this to be view-independent, you could certainly make a call to response.sendError(HttpServletResponse.SC_FORBIDDEN, "AdditionalInformationIfAvailable"); in your Controller.

@@ -1,0 +1,46 @@
+Java, UTF-8 and Windows console windows utf-8 console Just a wild guess: Could windows be mad about start.bat not being of code page 65001 ? Have you tried PowerShell rather than old cmd.exe. Try chcp 65001 && start.bat We had some similar problems in Linux. Our code was in ISO-8859-1 (mostly cp-1252 compatible) but the console was UTF-8, making the code to not compile. Simply changing the console to ISO-8859-1 would make the build script, in UTF-8, to break. We found a couple of choices: 1- define some standard encoding and sticky to it. That was our choice. We choose to keep all in ISO-8859-1, modifying the build scripts. 2- Setting the encoding before starting any task, even inside the build scripts. Some code like the erickson said. In Linux was like : lang=pt_BR.ISO-8859-1 /usr/local/xxxx
+ My eclipse is still like this. Both do work well. Windows doesn't support the 65001 code page: http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/chcp.mspx?mfr=true Java on windows does NOT support unicode ouput by default. I have written a workaround method by calling Native API with JNA library.The method will call WriteConsoleW for unicode output on the console. import com.sun.jna.Native;
+import com.sun.jna.Pointer;
+import com.sun.jna.ptr.IntByReference;
+import com.sun.jna.win32.StdCallLibrary;
+
+/** For unicode output on windows platform
+ * @author Sandy_Yin
+ * 
+ */
+public class Console {
+    private static Kernel32 INSTANCE = null;
+
+    public interface Kernel32 extends StdCallLibrary {
+        public Pointer GetStdHandle(int nStdHandle);
+
+        public boolean WriteConsoleW(Pointer hConsoleOutput, char[] lpBuffer,
+                int nNumberOfCharsToWrite,
+                IntByReference lpNumberOfCharsWritten, Pointer lpReserved);
+    }
+
+    static {
+        String os = System.getProperty("os.name").toLowerCase();
+        if (os.startsWith("win")) {
+            INSTANCE = (Kernel32) Native
+                    .loadLibrary("kernel32", Kernel32.class);
+        }
+    }
+
+    public static void println(String message) {
+        boolean successful = false;
+        if (INSTANCE != null) {
+            Pointer handle = INSTANCE.GetStdHandle(-11);
+            char[] buffer = message.toCharArray();
+            IntByReference lpNumberOfCharsWritten = new IntByReference();
+            successful = INSTANCE.WriteConsoleW(handle, buffer, buffer.length,
+                    lpNumberOfCharsWritten, null);
+            if(successful){
+                System.out.println();
+            }
+        }
+        if (!successful) {
+            System.out.println(message);
+        }
+    }
+}

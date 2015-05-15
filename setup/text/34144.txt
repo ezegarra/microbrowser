@@ -1,0 +1,8 @@
+In Maven 2, how do I know from which dependency comes a transitive dependency? maven-2 build-process Using the Maven Dependency Plugin: mvn dependency:tree
+ If you run maven with "-x" switch, it will print out plenty of diagnostics, I guess the relevant dependency path can be picked up from there. To add to @David Crow, here's a dependency:tree example from the Maven site: mvn dependency:tree -Dincludes=velocity:velocity
+ might output [INFO] [dependency:tree]
+[INFO] org.apache.maven.plugins:maven-dependency-plugin:maven-plugin:2.0-alpha-5-SNAPSHOT
+[INFO] \- org.apache.maven.doxia:doxia-site-renderer:jar:1.0-alpha-8:compile
+[INFO]    \- org.codehaus.plexus:plexus-velocity:jar:1.1.3:compile
+[INFO]       \- velocity:velocity:jar:1.4:compile
+ The dependency information is also included in the Project Information/Dependencies report if you have maven generate a site for the project, using mvn site. If you use eclipse and the m2eclipse plugin (http://m2eclipse.sonatype.org) then there is a graphical version of dependency tree where you can filter by scope etc. You can have many reports by mvn site One of them is the dependency report.

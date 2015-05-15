@@ -1,0 +1,2 @@
+How I hide empty Velocity variable names? templates struts velocity You can mark variables as "silent" like this: $!variable
+ If $variable is null, nothing will be rendered. If it is not null, its value will render as it normally would. You will also need to be sure and use the proper syntax. Your example is missing the dollar before the variable. It should be $!{person.age}, not just {person.age}.

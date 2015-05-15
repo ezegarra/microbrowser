@@ -1,0 +1,100 @@
+Creating a custom button in Java swing jbutton I haven't done SWING development since my early CS classes but if it wasn't built in you could just inherit javax.swing.AbstractButton and create your own. Should be pretty simple to wire something together with their existing framework. You could always try the Synth look & feel. You provide an xml file that acts as a sort of stylesheet, along with any images you want to use. The code might look like this: try {
+    SynthLookAndFeel synth = new SynthLookAndFeel();
+    Class aClass = MainFrame.class;
+    InputStream stream = aClass.getResourceAsStream("\\default.xml");
+
+    if (stream == null) {
+        System.err.println("Missing configuration file");
+        System.exit(-1);                
+    }
+
+    synth.load(stream, aClass);
+
+    UIManager.setLookAndFeel(synth);
+} catch (ParseException pe) {
+    System.err.println("Bad configuration file");
+    pe.printStackTrace();
+    System.exit(-2);
+} catch (UnsupportedLookAndFeelException ulfe) {
+    System.err.println("Old JRE in use. Get a new one");
+    System.exit(-3);
+}
+ From there, go on and add your JButton like you normally would. The only change is that you use the setName(string) method to identify what the button should map to in the xml file. The xml file might look like this: <synth>
+    <style id="button">
+        <font name="DIALOG" size="12" style="BOLD"/>
+        <state value="MOUSE_OVER">
+            <imagePainter method="buttonBackground" path="dirt.png" sourceInsets="2 2 2 2"/>
+            <insets top="2" botton="2" right="2" left="2"/>
+        </state>
+        <state value="ENABLED">
+            <imagePainter method="buttonBackground" path="dirt.png" sourceInsets="2 2 2 2"/>
+            <insets top="2" botton="2" right="2" left="2"/>
+        </state>
+    </style>
+    <bind style="button" type="name" key="dirt"/>
+</synth>
+ The bind element there specifies what to map to (in this example, it will apply that styling to any buttons whose name property has been set to "dirt"). And a couple of useful links: http://javadesktop.org/articles/synth/ http://docs.oracle.com/javase/tutorial/uiswing/lookandfeel/synth.html Yes, this is possible. One of the main pros for using Swing is the ease with which the abstract controls can be created and manipulates. Here is a quick and dirty way to extend the existing JButton class to draw a circle to the right of the text. package test;
+
+import java.awt.Color;
+import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Graphics;
+
+import javax.swing.JButton;
+import javax.swing.JFrame;
+
+public class MyButton extends JButton {
+
+    private static final long serialVersionUID = 1L;
+
+    private Color circleColor = Color.BLACK;
+
+    public MyButton(String label) {
+        super(label);
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+
+        Dimension originalSize = super.getPreferredSize();
+        int gap = (int) (originalSize.height * 0.2);
+        int x = originalSize.width + gap;
+        int y = gap;
+        int diameter = originalSize.height - (gap * 2);
+
+        g.setColor(circleColor);
+        g.fillOval(x, y, diameter, diameter);
+    }
+
+    @Override
+    public Dimension getPreferredSize() {
+        Dimension size = super.getPreferredSize();
+        size.width += size.height;
+        return size;
+    }
+
+    /*Test the button*/
+    public static void main(String[] args) {
+        MyButton button = new MyButton("Hello, World!");
+
+        JFrame frame = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 400);
+
+        Container contentPane = frame.getContentPane();
+        contentPane.setLayout(new FlowLayout());
+        contentPane.add(button);
+
+        frame.setVisible(true);
+    }
+
+}
+ Note that by overriding paintComponent that the contents of the button can be changed, but that the border is painted by the paintBorder method. The getPreferredSize method also needs to be managed in order to dynamically support changes to the content. Care needs to be taken when measuring font metrics and image dimensions. For creating a control that you can rely on, the above code is not the correct approach. Dimensions and colours are dynamic in Swing and are dependent on the look and feel being used. Even the default Metal look has changed across JRE versions. It would be better to implement AbstractButton and conform to the guidelines set out by the Swing API. A good starting point is to look at the javax.swing.LookAndFeel and javax.swing.UIManager classes. http://docs.oracle.com/javase/8/docs/api/javax/swing/LookAndFeel.html http://docs.oracle.com/javase/8/docs/api/javax/swing/UIManager.html Understanding the anatomy of LookAndFeel is useful for writing controls: Creating a Custom Look and Feel When I was first learning Java we had to make Yahtzee and I thought it would be cool to create custom Swing components and containers instead of just drawing everything on one JPanel. The benefit of extending Swing components, of course, is to have the ability to add support for keyboard shortcuts and other accessibility features that you can't do just by having a paint() method print a pretty picture. It may not be done the best way however, but it may be a good starting point for you. Edit 8/6 - If it wasn't apparent from the images, each Die is a button you can click. This will move it to the DiceContainer below. Looking at the source code you can see that each Die button is drawn dynamically, based on its value. Here are the basic steps: Create a class that extends JComponent Call parent constructor super() in your constructors Make sure you class implements MouseListener Put this in the constructor: enableInputMethods(true);   
+addMouseListener(this);
+ Override these methods: public Dimension getPreferredSize()  
+public Dimension getMinimumSize()  
+public Dimension getMaximumSize()
+ Override this method: public void paintComponent(Graphics g)
+ The amount of space you have to work with when drawing your button is defined by getPreferredSize(), assuming getMinimumSize() and getMaximumSize() return the same value. I haven't experimented too much with this but, depending on the layout you use for your GUI your button could look completely different. And finally, the source code. In case I missed anything. I'm probably going a million miles in the wrong direct (but i'm only young :P ). but couldn't you add the graphic to a panel and then a mouselistener to the graphic object so that when the user on the graphic your action is preformed.

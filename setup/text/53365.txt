@@ -1,0 +1,3 @@
+Getting hibernate to log clob parameters oracle hibernate Try using: log4j.logger.net.sf.hibernate=DEBUG
+log4j.logger.org.hibernate=DEBUG
+ That's the finest level you'll get. If it does not show the information you want, then it's not possible. Well, it looks like you can't. (Thanks Marcio for the suggestion, but sadly that didn't add anything useful) Try to set log4j.logger.org.hibernate.type=TRACE and see if that helps.

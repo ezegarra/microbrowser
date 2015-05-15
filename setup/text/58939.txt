@@ -1,0 +1,27 @@
+JComboBox Selection Change Listener? swing jcombobox itemlistener It should respond to ActionListeners, like this: combo.addActionListener (new ActionListener () {
+    public void actionPerformed(ActionEvent e) {
+        doSomething();
+    }
+});
+ @John Calsbeek rightly points out that addItemListener() will work, too. You may get 2 ItemEvents, though, one for the deselection of the previously selected item, and another for the selection of the new item. Just don't use both event types! I would try the itemStateChanged() method of the ItemListener interface if jodonnell's solution fails. int selectedIndex = myComboBox.getSelectedIndex(); -or- Object selectedObject = myComboBox.getSelectedValue(); -or- String selectedValue = myComboBox.getSelectedValue().toString(); Code example of ItemListener implementation class ItemChangeListener implements ItemListener{
+    @Override
+    public void itemStateChanged(ItemEvent event) {
+       if (event.getStateChange() == ItemEvent.SELECTED) {
+          Object item = event.getItem();
+          // do something with object
+       }
+    }       
+}
+ Now we will get only selected item. Then just add listener to your JComboBox addItemListener(new ItemChangeListener());
+ I was recently looking for this very same solution and managed to find a simple one without assigning specific variables for the last selected item and the new selected item. And this question, although very helpful, didn't provide the solution I needed. This solved my problem, I hope it solves yours and others. Thanks. HOW TO: Get Previous \ Last Item JComboBox Here is creating a Combo Box & action of item change JComboBox comboBox = new JComboBox();     comboBox.setBounds(84, 45, 150, 20);
+    contentPane.add(comboBox);
+
+    JComboBox comboBox_1 = new JComboBox();
+    comboBox_1.setBounds(84, 97, 150, 20);
+    contentPane.add(comboBox_1);
+    comboBox.addItemListener(new ItemListener() {
+        public void itemStateChanged(ItemEvent arg0) {
+            //Do Something
+        }
+    });
+}

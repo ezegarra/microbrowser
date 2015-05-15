@@ -1,0 +1,70 @@
+XML serialization in Java? xml serialization If you're talking about automatic XML serialization of objects, check out Castor: Castor is an Open Source data binding framework for Java[tm]. It's the shortest path between Java objects, XML documents and relational tables. Castor provides Java-to-XML binding, Java-to-SQL persistence, and more. XStream is pretty good at serializing object to XML without much configuration and money! (it's under BSD license). We used it in one of our project to replace the plain old java-serialization and it worked almost out of the box. The "Official" Java API for this is now JAXB - Java API for XML Binding. The reference implementation lives at http://jaxb.java.net/ XMLBeans works great if you have a schema for your XML. It creates Java objects for the schema and creates easy to use parse methods. Usually I use jaxb or XMLBeans if I need to create objects serializable to XML. Now, I can see that XStream might be very useful as it's nonintrusive and has really simple api. I'll play with it soon and probably use it. The only drawback I noticed is that I can't create object's id on my own for cross referencing. @Barak Schiller Thanks for posting link to XStream! You may want to look at Simple, its the closest thing I've found to the System.Xml.Serialization in .Net. Don't forget JiBX. JAXB is part of JDK standard edition version 1.6+. So it is FREE and no extra libraries to download and manage. A simple example can be found here XStream seems to be dead. Last update was on Dec 6 2008. Simple seems as easy and simpler as JAXB but I could not find any licensing information to evaluate it for enterprise use. if you want a structured solution (like ORM) then JAXB2 is a good solution. If you want a serialization like DOT NET then you could use Long Term Persistence of JavaBeans Components The choice depends on use of serialization. Worth mentioning that since version 1.4, Java had the classes java.beans.XMLEncoder and java.beans.XMLDecoder. These classes perform XML encoding which is at least very comparable to XML Serialization and in some circumstances might do the trick for you. If your class sticks to the JavaBeans specification for its getters and setters, this method is straightforward to use and you don't need a schema. With the following caveats: As with normal Java serialization coding and decoding run over a InputStream and OutputStream the process uses the familar writeObject and readObject methods In contrast to normal Java serialization the encoding but also decoding causes constructors and initializers to be invoked encoding and decoding work regardless if your class implements Serializable or not transient modifiers are not taken into account works only for public classes, that have public constructors For example, take the following declaration: public class NPair {
+  public NPair() { }
+  int number1 = 0;
+  int number2 = 0;
+  public void setNumber1(int value) { number1 = value;}
+  public int getNumber1() { return number1; }
+  public void setNumber2(int value) { number2 = value; }
+  public int getNumber2() {return number2;}
+}
+ Executing this code: NPair fe = new NPair();
+fe.setNumber1(12);
+fe.setNumber2(13);
+FileOutputStream fos1 = new FileOutputStream("d:\\ser.xml");
+java.beans.XMLEncoder xe1 = new java.beans.XMLEncoder(fos1);
+xe1.writeObject(fe);
+xe1.flush();
+xe1.close();
+ Would result in the following file: <?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_02" class="java.beans.XMLDecoder">
+ <object class="NPair">
+  <void property="number1">
+   <int>12</int>
+  </void>
+  <void property="number2">
+   <int>13</int>
+  </void>
+ </object>
+</java>
+ public static String genXmlTag(String tagName, String innerXml, String properties )
+{
+    return String.format("<%s %s>%s</%s>", tagName, properties, innerXml, tagName);
+}
+
+public static String genXmlTag(String tagName, String innerXml )
+{
+    return genXmlTag(tagName, innerXml, "");
+}
+
+public static <T> String serializeXML(List<T> list)
+{
+    String result = "";
+    if (list.size() > 0)
+    {
+        T tmp = list.get(0);
+        String clsName = tmp.getClass().getName();
+        String[] splitCls = clsName.split("\\.");
+        clsName = splitCls[splitCls.length - 1];
+        Field[] fields = tmp.getClass().getFields();
+
+        for (T t : list)
+        {
+            String row = "";
+            try {
+                for (Field f : fields)
+                {
+                    Object value = f.get(t);
+                    row += genXmlTag(f.getName(), value == null ? "" : value.toString());
+                }
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            }
+            row = genXmlTag(clsName, row);
+
+            result += row;
+        }
+    }
+
+    result = genXmlTag("root", result);
+    return result;
+}

@@ -1,0 +1,24 @@
+Should I use clone when adding a new element? When should clone be used? memory class In my opinion you should never clone the element unless you explicitly state that your data structure does that. The desired functionality of most things needs the actual object to be passed into the data structure by-reference. If you want to make the Node class safer, make it an inner class of the graph. It isn't clear to me why you are adding the additional indirection of the String names for the nodes. Wouldn't it make more sense for your Edge constructor's signature to be something like public Edge(String, Node, Node) instead of public Edge (String, String, String)? I don't know where clone would help you here. ETA: If the danger comes from having the node name changed after the node is created, throw an IllegalOperationException if the client tries to call setName() on a node with an existing name. In addition to the comments by @jhkiley.blogspot.com, you can create a factory for Edges and Nodes that refuses to create objects with a name that was already used. I work with graph structures in Java a lot, and my advice would be to make any data member of the Node and Edge class that the Graph depends on for maintaining its structure final, with no setters. In fact, if you can, I would make Node and Edge completely immutable, which has many benefits. So, for example: public final class Node {
+
+    private final String name;
+
+    public Node(String name) {
+           this.name = name;
+    }
+
+    public String getName() { return name; }
+    // note: no setter for name
+}
+ You would then do your uniqueness check in the Graph object: public class Graph {
+    Set<Node> nodes = new HashSet<Node>();
+    public void addNode(Node n) {
+        // note: this assumes you've properly overridden 
+        // equals and hashCode in Node to make Nodes with the 
+        // same name .equal() and hash to the same value.
+        if(nodes.contains(n)) {
+            throw new IllegalArgumentException("Already in graph: " + node);
+        }
+        nodes.add(n);
+    }
+}
+ If you need to modify a name of a node, remove the old node and add a new one. This might sound like extra work, but it saves a lot of effort keeping everything straight. Really, though, creating your own Graph structure from the ground up is probably unnecessary -- this issue is only the first of many you are likely to run into if you build your own. I would recommend finding a good open source Java graph library, and using that instead. Depending on what you are doing, there are a few options out there. I have used JUNG in the past, and would recommend it as a good starting point. Using NodeEnvelopes or edge/node Factories sounds like overdesign to me. Do you really want to expose a setName() method on Node at all? There's nothing in your example to suggest that you need that. If you make both your Node and Edge classes immutable, most of the integrity-violation scenarios you're envisioning become impossible. (If you need them to be mutable but only until they're added to a Graph, you could enforce this by having an isInGraph flag on your Node/Edge classes that is set to true by Graph.Add{Node, Edge}, and have your mutators throw an exception if called after this flag is set.) I agree with jhkiley that passing Node objects to the Edge constructor (instead of Strings) sounds like a good idea. If you want a more intrusive approach, you could have a pointer from the Node class back to the Graph it resides in, and update the Graph if any critical properties (e.g., the name) of the Node ever change. But I wouldn't do that unless you're sure you need to be able to change the names of existing Nodes while preserving Edge relationships, which seems unlikely. Object.clone() has some major problems, and its use is discouraged in most cases. Please see Item 11, from "Effective Java" by Joshua Bloch for a complete answer. I believe you can safely use Object.clone() on primitive type arrays, but apart from that you need to be judicious about properly using and overriding clone. You are probably better off defining a copy constructor or a static factory method that explicitly clones the object according to your semantics.

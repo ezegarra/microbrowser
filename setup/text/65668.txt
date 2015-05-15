@@ -1,0 +1,58 @@
+Why to use StringBuffer in Java instead of the string concatenation operator optimization string-concatenation One shouldn't be faster than the other. This wasn't true before Java 1.4.2, because when concatenating more than two strings using the "+" operator, intermediate String objects would be created during the process of building the final string. However, as the JavaDoc for StringBuffer states, at least since Java 1.4.2 using the "+" operator compiles down to creating a StringBuffer and append()ing the many strings to it. So no difference, apparently. However, be careful when using adding a string to another inside a loop! For example: String myString = "";
+
+for (String s : listOfStrings) {
+  // Be careful! You're creating one intermediate String object
+  // for every iteration on the list (this is costly!)
+  myString += s;
+}
+ Keep in mind, however, that usually concatenating a few strings with "+" is cleaner than append()ing them all. Under the hood, it actually creates and appends to a StringBuffer, calling toString() on the result. So it actually doesn't matter which you use anymore. So String s = "a" + "b" + "c";
+ becomes String s = new StringBuffer().append("a").append("b").append("c").toString();
+ That's true for a bunch of inlined appends within a single statement. If you build your string over the course of multiple statements, then you're wasting memory and a StringBuffer or StringBuilder is your better choice. Because Strings are imutable in Java, every time you concanate a String, new object is created in memory. SpringBuffer use the same object in memory. StringBuffer is mutable. It adds the value of the string to the same object without instantiating another object. Doing something like: myString = myString + "XYZ"
+ will create a new String object. Java turns string1 + string2 into a StringBuffer construct, append(), and toString(). This makes sense. However, in Java 1.4 and earlier, it would do this for each + operator in the statement separately. This meant that doing a + b + c would result in two StringBuffer constructs with two toString() calls. If you had a long string of concats, it would turn into a real mess. Doing it yourself meant you could control this and do it properly. Java 5.0 and above seem to do it more sensibly, so it's less of a problem and is certainly less verbose. To concatenate two strings using '+', a new string needs to be allocated with space for both strings, and then the data copied over from both strings. A StringBuffer is optimized for concatenating, and allocates more space than needed initially. When you concatenate a new string, in most cases, the characters can simply be copied to the end of the existing string buffer. For concatenating two strings, the '+' operator will probably have less overhead, but as you concatenate more strings, the StringBuffer will come out ahead, using fewer memory allocations, and less copying of data. It's better to use StringBuilder (it's an unsynchronized version; when do you build strings in parallel?) these days, in almost every case, but here's what happens: When you use + with two strings, it compiles code like this: String third = first + second;
+ To something like this: StringBuilder builder = new StringBuilder( first );
+builder.append( second );
+third = builder.toString();
+ Therefore for just little examples, it usually doesn't make a difference. But when you're building a complex string, you've often got a lot more to deal with than this; for example, you might be using many different appending statements, or a loop like this: for( String str : strings ) {
+  out += str;
+}
+ In this case, a new StringBuilder instance, and a new String (the new value of out - Strings are immutable) is required in each iteration. This is very wasteful. Replacing this with a single StringBuilder means you can just produce a single String and not fill up the heap with Strings you don't care about. The StringBuffer class maintains an array of characters to hold the contents of the strings you concatenate, whereas the + method creates a new string each time its called and appends the two parameters (param1 + param2). The StringBuffer is faster because 1. it might be able to use its already existing array to concat/store all of the strings. 2. even if they don't fit in the array, its faster to allocate a larger backing array then to generate new String objects for each evocation. I think that given jdk1.5 (or greater) and your concatenation is thread-safe you should use StringBuilder instead of StringBuffer http://java4ever.blogspot.com/2007/03/string-vs-stringbuffer-vs-stringbuilder.html As for the gains in speed: http://www.about280.com/stringtest.html Personally I'd code for readability, so unless you find that string concatenation makes your code considerably slower, stay with whichever method makes your code more readable. Because Strings are immutable, each call to the + operator creates a new String object and copies the String data over to the new String. Since copying a String takes time linear in the length of the String, a sequence of N calls to the + operator results in O(N2) running time (quadratic). Conversely, since a StringBuffer is mutable, it does not need to copy the String every time you perform an Append(), so a sequence of N Append() calls takes O(N) time (linear). This only makes a significant difference in runtime if you are appending a large number of Strings together. I think the simplest answer is: it's faster. If you really want to know all the under-the-hood stuff, you could always have a look at the source yourself: http://www.sun.com/software/opensource/java/getinvolved.jsp http://download.java.net/jdk6/latest/archive/ As said, the String object is ummutable, meaning once it is created (see below) it cannot be changed. String x = new String("something"); // or String x = "something"; So when you attempt to concanate String objects, the value of those objects are taken and put into a new String object. If you instead use the StringBuffer, which IS mutable, you continually add the values to an internal list of char (primitives), which can be extended or truncated to fit the value needed. No new objects are created, only new char's are created/removed when needed to hold the values. The section String Concatenation Operator + of the Java Language Specification gives you some more background information on why the + operator can be so slow. When you concatenate two strings, you actually create a third String object in Java. Using StringBuffer (or StringBuilder in Java 5/6), is faster because it uses an internal array of chars to store the string, and when you use one of its add(...) methods, it doesn't create a new String object. Instead, StringBuffer/Buider appends the internal array. In simple concatenations, it's not really an issue whether you concatenate strings using StringBuffer/Builder or the '+' operator, but when doing a lot of string concatenations, you'll see that using a StringBuffer/Builder is way faster. For simple concatenations like: String s = "a" + "b" + "c";
+ It is rather pointless to use StringBuffer - as jodonnell pointed out it will be smartly translated into: String s = new StringBuffer().append("a").append("b").append("c").toString();
+ BUT it is very unperformant to concatenate strings in a loop, like: String s = "";
+for (int i = 0; i < 10; i++) {
+    s = s + Integer.toString(i);
+}
+ Using string in this loop will generate 10 intermediate string objects in memory: "0", "01", "012" and so on. While writing the same using StringBuffer you simply update some internal buffer of StringBuffer and you do not create those intermediate string objects that you do not need: StringBuffer sb = new StringBuffer();
+for (int i = 0; i < 10; i++) {
+    sb.append(i);
+}
+ Actually for the example above you should use StringBuilder (introduced in Java 1.5) instead of StringBuffer - StringBuffer is little heavier as all its methods are synchronized. AFAIK it depends on version of JVM, in versions prior to 1.5 using "+" or "+=" actually copied the whole string every time. Beware that using += actually allocates the new copy of string. As was pointed using + in loops involves copying. When strings that are conactenated are compile time constants there concatenated at compile time, so String foo = "a" + "b" + "c";
+ Has is compiled to: String foo = "abc";
+ In some cases this is obsolete due to optimisations performed by the compiler, but the general issue is that code like: string myString="";
+for(int i=0;i<x;i++)
+{
+    myString += "x";
+}
+ will act as below (each step being the next loop iteration): construct a string object of length 1, and value "x" Create a new string object of size 2, copy the old string "x" into it, add "x" in position 2. Create a new string object of size 3, copy the old string "xx" into it, add "x" in position 3. ... and so on As you can see, each iteration is having to copy one more character, resulting in us performing 1+2+3+4+5+...+N operations each loop. This is an O(n^2) operation. If however we knew in advance that we only needed N characters, we could do it in a single allocation, with copy of just N characters from the strings we were using - a mere O(n) operation. StringBuffer/StringBuilder avoid this because they are mutable, and so do not need to keep copying the same data over and over (so long as there is space to copy into in their internal buffer). They avoid performing an allocation and copy proportional to the number of appends done by over-allocing their buffer by a proportion of its current size, giving amortized O(1) appending. However its worth noting that often the compiler will be able to optimise code into StringBuilder style (or better - since it can perform constant folding etc.) automatically. Further information: StringBuffer is a thread-safe class 
+public final class StringBuffer extends AbstractStringBuilder
+    implements Serializable, CharSequence
+{
+// .. skip ..
+     public synchronized StringBuffer append(StringBuffer stringbuffer)
+    {
+        super.append(stringbuffer);
+        return this;
+    }
+// .. skip ..
+}
+ But StringBuilder is not thread-safe, thus it is faster to use StringBuilder if possible 
+public final class StringBuilder extends AbstractStringBuilder
+    implements Serializable, CharSequence
+{
+// .. skip ..
+    public StringBuilder append(String s)
+    {
+        super.append(s);
+        return this;
+    }
+// .. skip ..
+}

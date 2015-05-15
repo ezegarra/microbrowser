@@ -1,0 +1,30 @@
+How do you embed binary data in XML? xml binary binary-data Maybe encode them into a known set - something like base 64 is a popular choice. Try Base64 encoding/decoding your binary data. Also look into CDATA sections You could encode the binary data using base64 and put it into a Base64 element; the below article is a pretty good one on the subject. Handling Binary Data in XML Documents I usually encode the binary data with MIME Base64 or URL encoding. XML is so versatile... <DATA>
+  <BINARY>
+    <BIT index="0">0</BIT>
+    <BIT index="1">0</BIT>
+    <BIT index="2">1</BIT>
+    ...
+    <BIT index="n">1</BIT>
+  </BINARY>
+</DATA>
+ XML is like violence - If it doesn't solve your problem, you're not using enough of it. EDIT: BTW: Base64 + CDATA is probably the best solution (EDIT2: Whoever upmods me, please also upmod the real answer. We don't want any poor soul to come here and actually implement my method because it was the highest ranked on SO, right?) Base64 is indeed the right answer but CDATA is not, that's basically saying: "this could be anything", however it must not be just anything, it has to be Base64 encoded binary data. XML Schema defines Base 64 binary as a primitive datatype which you can use in your xsd. You can also Uuencode you original binary data. This format is a bit older but it does the same thing as base63 encoding. Any binary-to-text encoding will do the trick. I use something like that <data encoding="yEnc>
+<![CDATA[ encoded binary data ]]>
+</data>
+ I had this problem just last week. I had to serialize a PDF file and send it, inside an XML file, to a server. If you're using .NET, you can convert a binary file directly to a base64 string and stick it inside an XML element. string base64 = Convert.ToBase64String(File.ReadAllBytes(fileName));
+ Or, there is a method built right into the XmlWriter object. In my particular case, I had to include Microsoft's datatype namespace: StringBuilder sb = new StringBuilder();
+System.Xml.XmlWriter xw = XmlWriter.Create(sb);
+xw.WriteStartElement("doc");
+xw.WriteStartElement("serialized_binary");
+xw.WriteAttributeString("types", "dt", "urn:schemas-microsoft-com:datatypes", "bin.base64");
+byte[] b = File.ReadAllBytes(fileName);
+xw.WriteBase64(b, 0, b.Length);
+xw.WriteEndElement();
+xw.WriteEndElement();
+string abc = sb.ToString();
+ The string abc looks something that looks like this: <?xml version="1.0" encoding="utf-16"?>
+<doc>
+    <serialized_binary types:dt="bin.base64" xmlns:types="urn:schemas-microsoft-com:datatypes">
+        JVBERi0xLjMKJaqrrK0KNCAwIG9iago8PCAvVHlwZSAvSW5mbw...(plus lots more)
+    </serialized_binary>
+</doc>
+ Here's a good example of how to proceed XEP-0239 PS: don't forget to read Mo's answer. PS2: read the NOTICE section on the XEP. Do not use base64 encoding as it increases the amount of data you need to store by at least 40%. Rather use other encoding methods like yEnc. Base64 overhead is 33%. BaseXML for XML1.0 overhead is only 20%. But it's not a standard and only have a C implementation yet. Check it out if you're concerned with data size. Note that however browsers tends to implement compression so that it is less needed. I developed it after the discussion in this thread: Encoding binary data within XML : alternatives to base64.

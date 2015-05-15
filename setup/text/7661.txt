@@ -1,0 +1,94 @@
+Java code for WGS84 to Google map position and back google-maps mapping wgs84 Someone took the javascript code from Google Maps and ported it to python: gmerc.py I've used this and it works great. GeoTools has code to transform to and from about any coordinate system you could imagine, and among them also Google Map's. It's also open source. However, it should also be pointed out that GeoTools is a large library, so if you're looking something small, quick and easy, it's likely not the way to go. I would highly recommend it though if you're going to do other GIS/coordinate transformations, etc. as well. If you use GeoTools or something similar, you might also be interested in knowing that the Google Map coordinate system is called EPSG 3785. Tile utility code in Java on mapki.com (great resource for google map developers) Here are the functions in JavaSCript ... As extracted from OpenLayers function toMercator (lon, lat) {
+  var x = lon * 20037508.34 / 180;
+  var y = Math.log(Math.tan((90 + lat) * Math.PI / 360)) / (Math.PI / 180);
+  y = y * 20037508.34 / 180;
+
+  return [x, y];
+  }
+
+function inverseMercator (x, y) {
+  var lon = (x / 20037508.34) * 180;
+  var lat = (y / 20037508.34) * 180;
+
+  lat = 180/Math.PI * (2 * Math.atan(Math.exp(lat * Math.PI / 180)) - Math.PI / 2);
+
+  return [lon, lat];
+  }
+ Fairly straightforward to convert to Java I ported this to PHP - here's the code, if anyone would need it: To mercator: $lon = ($lon * 20037508.34) / 180;
+$lat = log(tan((90 + $lat) * M_PI / 360)) / (M_PI / 180);
+$lat = $lat * 20037508.34 / 180;
+ From mercator: $lon = ($lon / 20037508.34) * 180;
+$lat = ($lat / 20037508.34) * 180;
+$lat = 180/M_PI * (2 * atan(exp($lat * M_PI / 180)) - M_PI / 2);
+ /*
+ * Utility functions to transform between wgs84 and google projection coordinates
+ * Derived from openmap http://openmap.bbn.com/
+ */
+
+public class MercatorTransform {
+    public final static double NORTH_POLE = 90.0;
+    public final static double SOUTH_POLE = -NORTH_POLE;
+    public final static double DATELINE = 180.0;
+    public final static double LON_RANGE = 360.0;
+
+    final public static transient double wgs84_earthEquatorialRadiusMeters_D = 6378137.0;
+    private static double latfac = wgs84_earthEquatorialRadiusMeters_D;
+    private static double lonfac = wgs84_earthEquatorialRadiusMeters_D;
+
+    final public static transient double HALF_PI_D = Math.PI / 2.0d;
+
+    /**
+     * Returns google projection coordinates from wgs84 lat,long coordinates
+     */
+    public static double[] forward(double lat, double lon) {
+
+        lat = normalizeLatitude(lat);
+        lon = wrapLongitude(lon);
+
+        double latrad = Math.toRadians(lat);
+        double lonrad = Math.toRadians(lon);
+
+        double lat_m = latfac * Math.log(Math.tan(((latrad + HALF_PI_D) / 2d)));
+        double lon_m = lonfac * lonrad;
+
+        double[] x = { lon_m, lat_m };
+        return x;
+    }
+
+    /**
+     * Returns wgs84 lat,long coordinates from google projection coordinates
+     */
+    public static float[] inverse(float lon_m, float lat_m) {
+        double latrad = (2d * Math.atan(Math.exp(lat_m / latfac))) - HALF_PI_D;
+        double lonrad = lon_m / lonfac;
+
+        double lat = Math.toDegrees(latrad);
+        double lon = Math.toDegrees(lonrad);
+
+        lat = normalizeLatitude(lat);
+        lon = wrapLongitude(lon);
+        float[] x = { (float) lat, (float) lon };
+
+        return x;
+    }
+
+    private static double wrapLongitude(double lon) {
+        if ((lon < -DATELINE) || (lon > DATELINE)) {
+            lon += DATELINE;
+            lon = lon % LON_RANGE;
+            lon = (lon < 0) ? DATELINE + lon : -DATELINE + lon;
+        }
+        return lon;
+    }
+
+    private static double normalizeLatitude(double lat) {
+        if (lat > NORTH_POLE) {
+            lat = NORTH_POLE;
+        }
+        if (lat < SOUTH_POLE) {
+            lat = SOUTH_POLE;
+        }
+        return lat;
+    }
+
+}

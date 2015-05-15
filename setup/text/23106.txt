@@ -1,0 +1,19 @@
+Best method to parse various custom XML documents in Java xml You will want to use org.xml.sax.XMLReader (http://docs.oracle.com/javase/7/docs/api/org/xml/sax/XMLReader.html). I would use Stax to parse XML, it's fast and easy to use. I've been using it on my last project to parse XML files up to 24MB. There's a nice introduction on java.net, which tells you everything you need to know to get started. Basically, you have two main XML parsing methods in Java : SAX, where you use an handler to only grab what you want in your XML and ditch the rest DOM, which parses your file all along, and allows you to grab all elements in a more tree-like fashion. Another very useful XML parsing method, albeit a little more recent than these ones, and included in the JRE only since Java6, is StAX. StAX was conceived as a medial method between the tree-based of DOM and event-based approach of SAX. It is quite similar to SAX in the fact that parsing very large documents is easy, but in this case the application "pulls" info from the parser, instead of the parsing "pushing" events to the application. You can find more explanation on this subject here. So, depending on what you want to achieve, you can use one of these approaches. If you only need to parse then I would recommend using XPath library. Here is a nice reference: http://www.ibm.com/developerworks/library/x-javaxpathapi.html But you may want to consider turning XMLs to objects and then the sky is the limit. For that you may use XStream, this is a great library which i use alot Use the dom4j library First read the document import java.net.URL;
+
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.io.SAXReader;
+
+public class Foo {
+
+    public Document parse(URL url) throws DocumentException {
+        SAXReader reader = new SAXReader();
+        Document document = reader.read(url);
+        return document;
+    }
+}
+ Then use XPATH to get to the values you need public void get_author(Document document) {
+    Node node = document.selectSingleNode( "//AppealRequestProcessRequest/author" );
+    String author = node.getText();
+    return author;
+}

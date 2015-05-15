@@ -1,0 +1,10 @@
+Make a JPanel not draw its background (Transparent) gui setOpaque(false) It'll pass off painting the background to its parent, which may draw its own background. You can do a screen capture and then use that to paint the background of the panel. This article seems to have some handy info on how to create shaped and transparent windows in Java: http://today.java.net/pub/a/today/2008/03/18/translucent-and-shaped-swing-windows.html Technically a JPanel may start off non-opague. This was true for the Gtk look & feel in 1.5 (or 1.4?), but no other PL&Fs as far as I am aware. class TransparentJPanel extends JPanel
+{
+    TransparentJPanel()
+    {
+        super() ;
+        this.setOpaque( false ) ; // this will make the JPanel transparent 
+                                  // but not its components (JLabel, TextField etc.)
+        this.setLayout( null ) ;
+    }
+}

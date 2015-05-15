@@ -1,0 +1,17 @@
+Can you disable the back button in a JFace wizard? eclipse rcp jface wizard You can return null from the getPreviousPage() method in your wizard page implementation. From a UI perspective this seems rather bad. Your users are going to get frustrated if they make a mistake and want to go back and correct it and you don't let them. I think it would be much better to change the application to allow going back rather than looking for ways to prevent it. There is no way to do this using standard JFace wizard APIs. My team accomplished this by writing a custom WizardDialog. We did this on an Eclipse RCP application and not on an eclipse plugin. Disabling the back button is breaking convention, but our business analysts really wanted the functionality. Expanding on jodonell's answer: Disabling the back button is harder than it should be, due to non-intuitive behavior in the default implementation of WizardPage.getPreviousPage(). You can call setPreviousPage( null ), and getPreviousPage() still returns the previous page. You need to override the implementation of getPreviousPage() in order to disable the back button: public abstract class MyWizardPage extends WizardPage {
+    private boolean backButtonEnabled = true;
+
+    public void setBackButtonEnabled(boolean enabled) {
+        backButtonEnabled = enabled;
+        getContainer().updateButtons();
+    }
+
+    @Override
+    public IWizardPage getPreviousPage() {
+        if (!backButtonEnabled) {
+            return null;
+        }
+        return super.getPreviousPage();
+    }
+}
+ See my blog post for a few more JFace wizard tips and tricks: http://nsawadsky.blogspot.com/2011/07/jface-wizard-tips-and-tricks.html

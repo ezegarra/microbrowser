@@ -1,0 +1,44 @@
+Struts 2: return to calling page struts2 struts return INPUT;
+ will do the trick. INPUT constant is defined in Action interface itself. It indicates that action needs more input. By calling page if you meant the page that took you to the action input page, then your input page will have to store HTTP header "Referer" in the request scope for the Action. You can use a dynamic result in struts.xml. For instance: <action
+   name="Visual"
+   class="it.___.web.actions.VisualizationAction">
+   <result name="next">${next}</result>
+</action>
+ Then in your action, you create a field called next. So to invoke the action you will pass the name of the page that you want to forward to next. The action then returns "next" and struts will know which page to go to. There is a nicer explanation on this post: Stack Overflow I prefer the way when you navigating users by particular actions. http://domain.com/myAction.action You could use some parameter as indicator, that you want to change current design: i.e. http://domain.com/myAction.action?changeDesign=silver_theme So then, you write some struts 2 interceptor, which logic is to check the presence of such parameter 'changeDesign', and this interceptor will do nessesary work of changing design and will control workflow. With interceptor you decouple your actions from crosscutting logic. My solution would involve one interface and one interceptor. You implement the following interface for all actions to which you are likely to want to redirect: public interface TargetAware {
+  public String getTarget();
+  public void setTarget(String target);
+}
+ The interceptor simply ensures that the target is set, if required: public class SetTargetInterceptor extends MethodFilterInterceptor implements Interceptor {
+   public String doIntercept(ActionInvocation invocation) {
+      Object action = invocation.getAction();
+      HttpServletRequest request = (HttpServletRequest) invocation.getInvocationContext().get(StrutsStatics.HTTP_REQUEST);
+      if (action instanceof TargetAware) {
+         TargetAware targetAwareAction = (TargetAware) action;
+         if (targetAwareAction.getTarget() == null)
+            targetAwareAction.setTarget(getCurrentUri(request));
+      } 	
+      return invocation.invoke();
+   }
+
+   // I'm sure we can find a better implementation of this...
+   private static String getCurrentUri(HttpServletRequest request) {
+      String uri = request.getRequestURI();
+      String queryString = request.getQueryString();
+      if (queryString != null && !queryString.equals(""))
+         uri += "?" + queryString;
+      return uri;
+   }
+
+   public void init() { /* do nothing */ }
+   public void destroy() { /* do nothing */ }
+}
+ From then on, once these two bits are in place and your actions implement the TargetAware interface (if you expect to have to redirect to them), then you have access to a target parameter in your JSPs whenever you need it. Pass that parameter on to your VisualizationAction (which might as well implement also the TargetAware interface!), and on SUCCESS, redirect as explained by Vincent Ramdhanie: <action name="Visual" class="it.___.web.actions.VisualizationAction">
+   <result type="redirect">
+      <param name="location">${target}</param>
+      <param name="parse">true</param>
+   </result>
+</action>
+ I did not try every single detail of this strategy. In particular, beware of the notation surrounding the redirect result type (depending on your specific version of Struts2: 2.0.x and 2.1.x may differ on this...). ok, in your class it.___.web.actions.VisualizationAction, you must return a string value containing INPUT, then, on struts.xml you have to set something like this: <action name="Visual" class="it.___.web.actions.VisualizationAction">
+   <result name="input">yourJspPage.jsp</result>
+</action>
+ this will lead you to the page you want. This should work, I've been working on struts2 along 2 months

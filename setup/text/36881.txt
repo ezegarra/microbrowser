@@ -1,0 +1,36 @@
+Updating Android Tab Icons android android-tabhost The short answer is, you're not missing anything. The Android SDK doesn't provide a direct method to change the indicator of a TabHost after it's been created. The TabSpec is only used to build the tab, so changing the TabSpec after the fact will have no effect. I think there's a workaround, though. Call mTabs.getTabWidget() to get a TabWidget object. This is just a subclass of ViewGroup, so you can call getChildCount() and getChildAt() to access individual tabs within the TabWidget. Each of these tabs is also a View, and in the case of a tab with a graphical indicator and a text label, it's almost certainly some other ViewGroup (maybe a LinearLayout, but it doesn't matter) that contains an ImageView and a TextView. So with a little fiddling with the debugger or Log.i, you should be able to figure out a recipe to get the ImageView and change it directly. The downside is that if you're not careful, the exact layout of the controls within a tab could change and your app could break. Your initial solution is perhaps more robust, but then again it might lead to other unwanted side effects like flicker or focus problems. Just to confirm dominics answer, here's his solution in code (that actually works): tabHost.setOnTabChangedListener(new OnTabChangeListener() {
+    		public void onTabChanged(String tabId) {
+    			if (TAB_MAP.equals(tabId)) {
+    				ImageView iv = (ImageView)tabHost.getTabWidget().getChildAt(0).findViewById(android.R.id.icon);
+    				iv.setImageDrawable(getResources().getDrawable(R.drawable.tab_map_black));
+    				iv = (ImageView)tabHost.getTabWidget().getChildAt(1).findViewById(android.R.id.icon);
+    				iv.setImageDrawable(getResources().getDrawable(R.drawable.tab_list_white));
+    			} else if (TAB_LIST.equals(tabId)) {
+    				ImageView iv = (ImageView)tabHost.getTabWidget().getChildAt(0).findViewById(android.R.id.icon);
+    				iv.setImageDrawable(getResources().getDrawable(R.drawable.tab_map_white));
+    				iv = (ImageView)tabHost.getTabWidget().getChildAt(1).findViewById(android.R.id.icon);
+    				iv.setImageDrawable(getResources().getDrawable(R.drawable.tab_list_black));
+    			}
+    		}
+        });
+ Ofcourse it's not polished at all and using those direct indices in getChildAt() is not nice at all... See my post with code example regarding Customized Android Tabs. Thanks Spct It might be a little late but you might wanna take a look at this thread http://groups.google.com/group/android-developers/browse_thread/thread/ef3bdebcb715b385 This is what I did and it works for me. I created this function in the activity that extends from TabBarActivity public void updateTab(int stringID) {
+    ViewGroup identifyView = (ViewGroup)getTabWidget().getChildAt(0);
+    TextView v =  (TextView)identifyView.getChildAt(identifyView.getChildCount() - 1);
+    v.setText(stringID);
+}
+ You can modify this function to change the image instead of text or you can change both, also you can modify this to get any tab child. I was particularly interested in modifying the text of the first tab at runtime. I called this function from the relevant activity using this call getParent().updateTab(R.string.tab_bar_analyze);
+ Try This :: tabHost.setOnTabChangedListener(new OnTabChangeListener() { 
+            public void onTabChanged(String tabId) { 
+                    if (TAB_MAP.equals(tabId)) { 
+                            ImageView iv = (ImageView)tabHost.getTabWidget().getChildAt(0).findViewById(android.R.id.icon); 
+                            iv.setImageDrawable(getResources().getDrawable(R.drawable.tab_map_black)); 
+                            iv = (ImageView)tabHost.getTabWidget().getChildAt(1).findViewById(android.R.id.icon); 
+                            iv.setImageDrawable(getResources().getDrawable(R.drawable.tab_list_white)); 
+                    } else if (TAB_LIST.equals(tabId)) { 
+                            ImageView iv = (ImageView)tabHost.getTabWidget().getChildAt(0).findViewById(android.R.id.icon); 
+                            iv.setImageDrawable(getResources().getDrawable(R.drawable.tab_map_white)); 
+                            iv = (ImageView)tabHost.getTabWidget().getChildAt(1).findViewById(android.R.id.icon); 
+                            iv.setImageDrawable(getResources().getDrawable(R.drawable.tab_list_black)); 
+                    } 
+            } 
+    });

@@ -1,0 +1,4 @@
+How do I detect if a function is available during JNLP execution? security deployment permissions jnlp You want to ask to the SecurityManager if you have Exec right with the checkExec method. I have also found that adding the following to the JNLP file: <security>
+    <all-permissions/>
+</security>
+ And signing the JAR file allows the app to run with all the permissions needed for Runtime.exec. For the specific example of Runtime.exec there is a method on the SecurityManager class checkExec(String cmd) that will throw an exception that can be caught to determine if the necessary command can be executed. For more information see the javadoc for Runtime.exec and SecurityManager.checkExec. The more general case requires creating a Permission object representing the task being checked and running SecurityManager's checkPermission method.

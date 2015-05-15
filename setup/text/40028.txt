@@ -1,0 +1,9 @@
+How to find a normal vector pointing directly from virtual world to screen in Java3D? graphics java-3d If I get this right, you want a vector that is normal to the screen plane, but in world coordinates? In that case you want to INVERT the transformation from World -> Screen and do Screen -> World of (0,0,-1) or (0,0,1) depending on which axis the screen points down. Since the ModelView matrix is just a rotation matrix (ignoring the homogenous transformation part), you can simply pull this out by taking the transpose of the rotational part, or simple reading in the bottom row - as this transposes onto the Z coordinate column under transposition. Yes, you got my question right. Sorry that I was a little bit confused yesterday. Now I have corrected the code by following your suggestion and mixing two pieces of code in the question together: Vector3f toScreenVector = new Vector3f(0, 0, 1);
+
+Transform3D t3d = new Transform3D();
+canvas.getImagePlateToVworld(t3d);
+t3d.transform(toScreenVector);
+
+tg.getTransform(t3d); //tg is Transform Group of all objects in a scene
+t3d.transform(toScreenVector);
+ Thank you.

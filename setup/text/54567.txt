@@ -1,0 +1,33 @@
+How do I get InputVerifier to work with an editable JComboBox swing Show us a small section of your code. package inputverifier;
+
+import javax.swing.*;
+
+    class Go {
+    public static void main(String[] args) {
+        java.awt.EventQueue.invokeLater(new Runnable() { public void run() {
+            runEDT();
+        }});
+    }
+    private static void runEDT() {
+        new JFrame("combo thing") {{
+            setLayout(new java.awt.GridLayout(2, 1));
+            add(new JComboBox() {{
+                setEditable(true);
+                setInputVerifier(new InputVerifier() {
+                    @Override public boolean verify(JComponent input) {
+                        System.err.println("Hi!");
+                        return true;
+                    }
+                });
+            }});
+            add(new JTextField());
+            setDefaultCloseOperation(EXIT_ON_CLOSE);
+            pack();
+            setVisible(true);
+        }};
+    }    
+}
+ Looks like it's a problem with JComboBox being a composite component. I'd suggest avoiding such nasty UI solutions. I found a workaround. I thought I'd let the next person with this problem know about. Basically. Instead of setting the inputVerifier on the ComboBox you set it to it's "Editor Component". JComboBox combo = new JComboBox();
+JTextField tf = (JTextField)(combo.getEditor().getEditorComponent());
+tf.setInputVerifier(verifyer);
+ I wouldn't use the term workaround. Based on all the swing code I've seen from a bunch of different sources that looks to be the canonical solution.

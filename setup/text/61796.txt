@@ -1,0 +1,1 @@
+Does Tiles for Struts2 support UTF-8 encoded templates? internationalization tiles What if you put this at the top? <%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" language="java" %>

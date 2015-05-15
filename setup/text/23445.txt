@@ -1,0 +1,121 @@
+How Best to Compare Two Collections in Java and Act on Them? collections For a set that small is generally not worth it to convert from an Array to a HashMap/set. In fact, you're probably best off keeping them in an array and then sorting them by key and iterating over both lists simultaneously to do the comparison. I have created an approximation of what I think you are looking for just using the Collections Framework in Java. Frankly, I think it is probably overkill as @Mike Deck points out. For such a small set of items to compare and process I think arrays would be a better choice from a procedural standpoint but here is my pseudo-coded (because I'm lazy) solution. I have an assumption that the Foo class is comparable based on it's unique id and not all of the data in it's contents: Collection<Foo> oldSet = ...;
+Collection<Foo> newSet = ...;
+
+private Collection difference(Collection a, Collection b) {
+Collection result = a.clone();
+result.removeAll(b)
+return result;
+}
+
+private Collection intersection(Collection a, Collection b) {
+Collection result = a.clone();
+result.retainAll(b)
+return result;
+}
+
+public doWork() {
+    // if foo is in(*) oldSet but not newSet, call doRemove(foo)
+    Collection removed = difference(oldSet, newSet);
+    if (!removed.isEmpty()) {
+    	loop removed {
+    		Foo foo = removedIter.next();
+    		doRemove(foo);
+    	}
+    }
+//else if foo is not in oldSet but in newSet, call doAdd(foo)
+Collection added = difference(newSet, oldSet);
+if (!added.isEmpty()) {
+	loop added  {
+		Foo foo = addedIter.next();
+		doAdd(foo);
+	}
+}
+
+// else if foo is in both collections but modified, call doUpdate(oldFoo, newFoo)
+Collection matched = intersection(oldSet, newSet);
+Comparator comp = new Comparator() {
+	int compare(Object o1, Object o2) {
+		Foo f1, f2;
+		if (o1 instanceof Foo) f1 = (Foo)o1;
+		if (o2 instanceof Foo) f2 = (Foo)o2;
+		return f1.activated == f2.activated ? f1.startdate.compareTo(f2.startdate) == 0 ? ... : f1.startdate.compareTo(f2.startdate) : f1.activated ? 1 : 0;
+	}
+
+	boolean equals(Object o) {
+		// equal to this Comparator..not used
+	}
+}
+loop matched {
+	Foo foo = matchedIter.next();
+	Foo oldFoo = oldSet.get(foo);
+	Foo newFoo = newSet.get(foo);
+	if (comp.compareTo(oldFoo, newFoo ) != 0) {
+		doUpdate(oldFoo, newFoo);
+	} else {
+		//else if !foo.activated && foo.startDate >= now, call doStart(foo)
+		if (!foo.activated && foo.startDate >= now) doStart(foo);
+
+		// else if foo.activated && foo.endDate <= now, call doEnd(foo)
+		if (foo.activated && foo.endDate <= now) doEnd(foo);
+	}
+}
+}
+ As far as your questions: If I convert oldSet and newSet into HashMap (order is not of concern here), with the IDs as keys, would it made the code easier to read and easier to compare? How much of time & memory performance is loss on the conversion? I think that you would probably make the code more readable by using a Map BUT...you would probably use more memory and time during the conversion. Would iterating the two sets and perform the appropriate operation be more efficient and concise? Yes, this would be the best of both worlds especially if you followed @Mike Sharek 's advice of Rolling your own List with the specialized methods or following something like the Visitor Design pattern to run through your collection and process each item. I'd move to lists and solve it this way: Sort both lists by id ascending using custom Comparator if objects in lists aren't Comparable Iterate over elements in both lists like in merge phase in merge sort algorithm, but instead of merging lists, you check your logic. The code would be more or less like this: /* Main method */
+private void execute(Collection<Foo> oldSet, Collection<Foo> newSet) {
+  List<Foo> oldList = asSortedList(oldSet);
+  List<Foo> newList = asSortedList(newSet);
+
+  int oldIndex = 0;
+  int newIndex = 0;
+  // Iterate over both collections but not always in the same pace
+  while( oldIndex < oldList.size() 
+      && newIndex < newIndex.size())  {
+    Foo oldObject = oldList.get(oldIndex);
+    Foo newObject = newList.get(newIndex);
+
+    // Your logic here
+    if(oldObject.getId() < newObject.getId()) {
+      doRemove(oldObject);
+      oldIndex++;
+    } else if( oldObject.getId() > newObject.getId() ) {
+      doAdd(newObject);
+      newIndex++;
+    } else if( oldObject.getId() == newObject.getId() 
+            && isModified(oldObject, newObject) ) {
+      doUpdate(oldObject, newObject);
+      oldIndex++;
+      newIndex++;
+    } else {
+      ... 
+    }
+  }// while
+
+  // Check if there are any objects left in *oldList* or *newList*
+
+  for(; oldIndex < oldList.size(); oldIndex++ ) {
+    doRemove( oldList.get(oldIndex) );  
+  }// for( oldIndex )
+
+  for(; newIndex < newList.size(); newIndex++ ) {
+    doAdd( newList.get(newIndex) );
+  }// for( newIndex ) 
+}// execute( oldSet, newSet )
+
+/** Create sorted list from collection 
+    If you actually perform any actions on input collections than you should 
+    always return new instance of list to keep algorithm simple.
+*/
+private List<Foo> asSortedList(Collection<Foo> data) {
+  List<Foo> resultList;
+  if(data instanceof List) {
+     resultList = (List<Foo>)data;
+  } else {
+     resultList = new ArrayList<Foo>(data);
+  }
+  Collections.sort(resultList)
+  return resultList;
+}
+ Apache's commons.collections library has a CollectionUtils class that provides easy-to-use methods for Collection manipulation/checking, such as intersection, difference, and union. The org.apache.commons.collections.CollectionUtils API docs are here. I think the easiest way to do that is by using apache collections api - CollectionUtils.subtract(list1,list2) as long the lists are of the same type. For comaparing a list or set we can use Arrays.equals(object[], object[]). It will check for the values only. To get the Object[] we can use Collection.toArray() method. You can try the Sets class from Guava: Set<String> intersection = Sets.intersection(set1, set2);
+Set<String> difference = Sets.difference(set1, set2);
+Set<String> symmetricDifference = Sets.symmetricDifference(set1, set2);
+Set<String> union = Sets.union(set1, set2);

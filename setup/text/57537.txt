@@ -1,0 +1,23 @@
+Accessing Tomcat Context Path from Servlet tomcat servlets Do you mean: public class MyServlet extends HttpServlet {
+
+    public void init(final ServletConfig config) {
+        final String context = config.getServletContext();
+        ...
+    }
+
+    ...
+}
+ Or something more complex? This should give you the real path that you can use to extract / edit files. Javadoc Link We're doing something similar in a context listener. public class MyServlet extends HttpServlet {
+
+    public void init(final ServletConfig config) {
+        final String context = config.getServletContext().getRealPath("/");
+        ...
+    }
+
+    ...
+}
+ I was googling the result and getting no where. In JSP pages that need to use Java Script to access the current contextPath it is actually quite easy. Just put the following lines into your html head inside a script block. // set up a global java script variable to access the context path
+var contextPath = "${request.contextPath}" 
+ In my Servlet I would like to access the root of the context so that I can do some JavaScript minifying You can also access the files in the WebContent by ServletContext#getResource(). So if your JS file is for example located at WebContent/js/file.js then you can use the following in your Servlet to get a File handle of it: File file = new File(getServletContext().getResource("/js/file.js").getFile());
+ or to get an InputStream: InputStream input = getServletContext().getResourceAsStream("/js/file.js");
+ That said, how often do you need to minify JS files? I have never seen the need for request-based minifying, it would only unnecessarily add much overhead. You probably want to do it only once during application's startup. If so, then using a Servlet for this is a bad idea. Better use ServletContextListener and do your thing on contextInitialized().

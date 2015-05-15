@@ -1,0 +1,10 @@
+Equivalent to StAX for C c xml libxml is a heavily used and documented XML library for C, which provides a SAX API. Expat is another, but in my experience is not as well documented. I have used Expat pretty extensively - I like it for its simplicity and small footprint. Expat does StAX 
+ #include "expat.h"`
+VRM_parser = XML_ParserCreate("ISO-8859-1");
+XML_SetElementHandler(VRM_parser, CbStartTagHandler, CbEndTagHandler);
+XML_Parse(VRM_parser, text, strlen(text), 0); // start of XML
+XML_Parse(VRM_parser, text, strlen(text), 0); // more XML
+XML_Parse(VRM_parser, text, strlen(text), 0); // more XML
+XML_Parse(VRM_parser, text, strlen(text), 0); // more XML
+XML_Parse(VRM_parser, "", 0, 1); // to finish parsing
+ Huh? No, Expat does not do Stax, and code example confirms this. Perhaps you meant it does something bit like SAX? If you are not opposed to C++ then try LLama

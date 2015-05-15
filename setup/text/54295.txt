@@ -1,0 +1,187 @@
+How to write java.util.Properties to XML with sorted keys? xml java.util.Properties is based on Hashtable, which does not store its values in alphabetical order, but in order of the hash of each item, that is why you are seeing the behaviour you are. java.util.Properties is a subclass of java.util.Hashtable. ('Hash', being the key here.)You'd have to come up with your own customer implementation based on something that keeps/defines order...like a TreeMap. You could sort the keys first, then loop through the items in the properties file and write them to the xml file. public static void main(String[] args){
+    	String propFile = "/tmp/test2.xml";
+    	Properties props = new Properties();
+    	props.setProperty("key", "value");
+    	props.setProperty("key1", "value1");
+    	props.setProperty("key2", "value2");
+    	props.setProperty("key3", "value3");
+    	props.setProperty("key4", "value4");
+
+    	try {
+    	    BufferedWriter out = new BufferedWriter(new FileWriter(propFile));
+    	    List<String> list = new ArrayList<String>();
+    	    for(Object o : props.keySet()){
+    	    	list.add((String)o);
+    	    }
+    	    Collections.sort(list);
+    	    out.write("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+    	    out.write("<!DOCTYPE properties SYSTEM \"http://java.sun.com/dtd/properties.dtd\">\n");
+    	    out.write("<properties>\n");
+    	    out.write("<comment/>\n");
+    	    for(String s : list){
+    	    	out.write("<entry key=\"" + s + "\">" + props.getProperty(s) + "</entry>\n");
+    	    }
+    	    out.write("</properties>\n");
+    	    out.flush();
+    	    out.close();
+    	} catch (IOException e) {
+    	    e.printStackTrace();
+    	}
+    }
+ You could try this: Make a new class that does what java.util.XMLUtils does but in the save method change this: Set keys = props.keySet();
+Iterator i = keys.iterator();
+ to Set keys = props.keySet();
+List<String> newKeys = new ArrayList<String>();
+for(Object key : keys)
+{
+   newKeys.add(key.toString());
+}
+Collections.sort(newKeys);
+Iterator i = newKeys.iterator();
+ Extend properties and override the Properties class storeToXML method to call your new class's save method. Why do you want the XML file to be sorted in the first place? Presumably, there is another piece of code that reads the file and puts the data in another Properties object. Do you want to do this so you can manually find and edit entries in the XML file? The simplest hack would be to override keySet. A bit of a hack, and not guaranteed to work in future implementations: new Properties() {
+    @Override Set<Object> keySet() {
+        return new TreeSet<Object>(super.keySet());
+    }
+}
+ (Disclaimer: I have not even tested that it compiles.) Alternatively, you could use something like XSLT to reformat the produced XML. Here's a quick and dirty way to do it: String propFile = "/path/to/file";
+Properties props = new Properties();
+/*set some properties here*/
+Properties tmp = new Properties() {
+
+  @Override
+  public Set<Object> keySet()
+  {
+    return Collections.unmodifiableSet(new TreeSet<Object>(super.keySet()));
+  }
+
+};
+tmp.putAll(props);
+try {
+    FileOutputStream xmlStream = new FileOutputStream(propFile);
+    /*this comes out SORTED! */
+    tmp.storeToXML(xmlStream,"");
+} catch (IOException e) {
+    e.printStackTrace();
+}
+ Here are the caveats: The tmp Properties (an anonymous subclass) doesn't fulfill the contract of Properties. For example, if you got its keySet and tried to remove an element from it, an exception would be raised. So, don't allow instances of this subclass to escape! In the snippet above, you are never passing it to another object or returning it to a caller who has a legitimate expectation that it fulfills the contract of Properties, so it is safe. The implementation of Properties.storeToXML could change, causing it to ignore the keySet method. For example, a future release, or OpenJDK, could use the keys() method of Hashtable instead of keySet. This is one of the reasons why classes should always document their "self-use" (Effective Java Item 15). However, in this case, the worst that would happen is that your output would revert to unsorted. Remember that the Properties storage methods ignore any "default" entries. Here's a way to produce sorted output for both store Properties.store(OutputStream out, String comments) and Properties.storeToXML(OutputStream os, String comment): Properties props = new Properties() {
+    @Override
+    public Set<Object> keySet(){
+        return Collections.unmodifiableSet(new TreeSet<Object>(super.keySet()));
+    }
+
+    @Override
+    public synchronized Enumeration<Object> keys() {
+        return Collections.enumeration(new TreeSet<Object>(super.keySet()));
+    }
+};
+props.put("B", "Should come second");
+props.put("A", "Should come first");
+props.storeToXML(new FileOutputStream(new File("sortedProps.xml")), null);
+props.store(new FileOutputStream(new File("sortedProps.properties")), null);
+ You can implement your LinkedProperties which is sorted instead of using the Properties of Java. The source code sample: package com.cpviet.training.eclipseplugin;
+
+import java.util.Enumeration;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Properties;
+import java.util.Set;
+
+public class LinkedProperties extends Properties {
+
+    private static final long serialVersionUID = 1L;
+
+    private Map<Object, Object> m_linkMap = new LinkedHashMap<Object, Object>();
+
+    @Override
+    public synchronized Object put(Object key, Object value) {
+        return m_linkMap.put(key, value);
+    }
+
+    @Override
+    public synchronized boolean contains(Object value) {
+        return m_linkMap.containsValue(value);
+    }
+
+    @Override
+    public boolean containsValue(Object value) {
+        return m_linkMap.containsValue(value);
+    }
+
+    @Override
+    public synchronized Enumeration<Object> elements() {
+        throw new UnsupportedOperationException("Enumerations are so old-school, don't use them, " + "use keySet() or entrySet() instead");
+    }
+
+    @Override
+    public Set<Entry<Object, Object>> entrySet() {
+        return m_linkMap.entrySet();
+    }
+
+    @Override
+    public synchronized void clear() {
+        m_linkMap.clear();
+    }
+
+    @Override
+    public synchronized boolean containsKey(Object key) {
+        return m_linkMap.containsKey(key);
+    }
+
+}
+ Here is another solution: public static void save_sorted(Properties props, String filename) throws Throwable {
+    FileOutputStream fos = new FileOutputStream(filename);
+    Properties prop_sorted = new Properties() {
+        @Override
+        public Set<String> stringPropertyNames() {
+            TreeSet<String> set = new TreeSet<String>();
+            for (Object o : keySet()) {
+                set.add((String) o);
+            }
+            return set;
+        }
+    };
+    prop_sorted.putAll(props);
+    prop_sorted.storeToXML(fos, "test xml");
+}
+ In my testing, the other answers to this question don't work properly on AIX. My particular test machine is running this version: IBM J9 VM (build 2.4, JRE 1.6.0 IBM J9 2.4 AIX ppc64-64 jvmap6460sr9-20110624_85526 After looking through the implementation of the store method, I found that it relies upon entrySet. This method works well for me. public static void saveSorted(Properties props, FileWriter fw, String comment) throws IOException {
+    Properties tmp = new Properties() {
+        @Override
+        public Set<Object> keySet() {
+            return Collections.unmodifiableSet(new TreeSet<Object>(super.keySet()));
+        }
+
+        @Override
+        public Set<java.util.Map.Entry<Object,Object>> entrySet() {
+            TreeSet<java.util.Map.Entry<Object,Object>> tmp = new TreeSet<java.util.Map.Entry<Object,Object>>(new Comparator<java.util.Map.Entry<Object,Object>>() {
+                @Override
+                public int compare(java.util.Map.Entry<Object, Object> entry1, java.util.Map.Entry<Object, Object> entry2) {
+                    String key1 = entry1.getKey().toString();
+                    String key2 = entry2.getKey().toString();
+                    return key1.compareTo(key2);
+                }
+            });
+
+            tmp.addAll(super.entrySet());
+
+            return Collections.unmodifiableSet(tmp);
+        }
+
+        @Override
+        public synchronized Enumeration<Object> keys() {
+            return Collections.enumeration(new TreeSet<Object>(super.keySet()));
+        }
+
+        @Override
+        public Set<String> stringPropertyNames() {
+            TreeSet<String> set = new TreeSet<String>();
+            for(Object o : keySet()) {
+                set.add((String)o);
+            }
+            return set;
+        }
+    };
+
+    tmp.putAll(props);
+    tmp.store(fw, comment);
+}

@@ -1,0 +1,1 @@
+Eclipse Plugin Dev: How do I get the paths for the currently selected project? eclipse eclipse-api You should take a look at ICProject, especially the getOutputEntries and getAllSourceRoots operations. This tutorial has some brief examples too. I work with JDT so thats pretty much what I can do. Hope it helps :)

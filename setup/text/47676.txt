@@ -1,0 +1,59 @@
+Tomcat vs Weblogic JNDI Lookup tomcat java-ee weblogic jndi How about an evironment variable? Set developers machines with the tomcat name and production with the Weblogic name. You can even set your code to use a default one (WebLogic) in case the variable don't exist. My application also had a similar problem and this is how I solved it: 1) WEB-INF/classes/application.properties contains the entry: 
+ds.jndi=java:comp/env/jdbc/tcds
+ 2) On the WLS machine, I have an entry in the /etc/sysenv file: 
+ds.jndi=wlsds
+ 3) I configured spring to lookup the JNDI vis the property ${ds.jndi}, using a PropertyPlaceholderConfigurer bean with classpath:application.properties and file:/etc/sysenv as locations. I also set the ignoreResourceNotFound to true so that developers need not have /etc/sysenv on their machines. 4) I run an integration test using Cargo+Jetty and I could not properly set up a JNDI environment there. So I have a fallback BasicDataSource configured too using the defaultObject property of JndiObjectFactoryBean. JndiLocatorSupport has a property resourceRef. When setting this true, "java:comp/env/" prefix will be prepended automatically. So I believe it would be correct to differentiate this parameter when moving from Tomcat to Weblogic. How are you referencing the resource in spring? This is what we have for tomcat: context: <Resource name="jms/ConnectionFactory" auth="Container" type="org.apache.activemq.ActiveMQConnectionFactory" description="
+JMS Connection Factory"
+        factory="org.apache.activemq.jndi.JNDIReferenceFactory" brokerURL="tcp://localhost:61615" brokerName="StandaloneAc
+tiveMQBroker"/>
+ spring:     <beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd
+http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd">
+
+<jee:jndi-lookup jndi-name="jms/ConnectionFactory" id="connectionFactory" resource-ref="true"
+                         expected-type="javax.jms.ConnectionFactory" lookup-on-startup="false"/>
+ The jee namespace comes from: http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd I've managed the trick with Tomcat and WebLogic using Spring. Here is a description of how it worked for me. How to use a single JNDI name in your web app I've struggled with this for a few months myself. The best solution is to make your application portable so you have the same JNDI name in both Tomcat and Weblogic. In order to do that, you change your web.xml and spring-beans.xml to point to a single jndi name, and provide a mapping to each vendor specific jndi name. I've placed each file below. You need: A <resource-ref /> entry in web.xml for your app to use a single name A file WEB-INF/weblogic.xml to map your jndi name to the resource managed by WebLogic A file META-INF/context.xml to map your jndi name to the resource managed by Tomcat This can be either in the Tomcat installation or in your app. As a general rule, prefer to have your jndi names in your app like jdbc/MyDataSource and jms/ConnFactory and avoid prefixing them with java:comp/env/. Also, data sources and connection factories are best managed by the container and used with JNDI. It's a common mistake to instantiate database connection pools in your application. spring <?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="
+http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd">
+
+<jee:jndi-lookup jndi-name="jdbc/appds"
+                 id="dataSource" />
+</beans>
+ web.xml <resource-ref>
+    <description>My data source</description>
+    <res-ref-name>jdbc/appds</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+</resource-ref>
+ weblogic.xml <?xml version="1.0" encoding="UTF-8" ?>
+<weblogic-web-app
+    xmlns="http://xmlns.oracle.com/weblogic/weblogic-web-app"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://xmlns.oracle.com/weblogic/weblogic-web-app http://http://www.oracle.com/technology/weblogic/weblogic-web-app/1.1/weblogic-web-app.xsd">
+
+<resource-description>
+    <jndi-name>appds</jndi-name>
+    <res-ref-name>jdbc/appds</res-ref-name>
+</resource-description>
+</weblogic-web-app>
+ META-INF/context.xml (for Tomcat) <Context>
+    <ResourceLink global="jdbc/appds" name="jdbc/appds" type="javax.sql.DataSource"/>
+</Context>
+ Setting up DataSource in the application itself is not that crazy :) I would say that is even mandatory if application is meant to be deployed on a grid. River, GigaSpaces, or similar. Note: I do not say connection settings have to be hardcoded inside of WAR, they need to be supplied at deployment time/runtime. This simplifies management of cloud instances since there is only on place to configure. Configuring resources at the container makes sense only if multiple applications are deployed there and they can use shared resource. Again, in cloud type of deployments there is only one application per servlet container instance. The following config works in Tomcat and Weblogic for me. In Spring: <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean">
+   <!-- This will prepend 'java:comp/env/' for Tomcat, but still fall back to the short name for Weblogic -->
+   <property name="resourceRef" value="true" /> 
+   <property name="jndiName" value="jdbc/AgriShare" />
+</bean>
+ In Weblogic Admin Console create a JDBC resource named jdbc/AgriShare. Under 'Targets', MAKE SURE YOU TARGET THE DATASOURCE TO THE SERVER YOU ARE DEPLOYING YOUR APP TO!. This particular point cost me some time just now...

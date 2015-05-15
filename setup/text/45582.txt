@@ -1,0 +1,25 @@
+How can I convince GroovyShell to maintain state over eval() calls? groovy scripting groovyshell This might be what you are looking for? From Groovy in Action def binding = new Binding(x: 6, y: 4)
+def shell = new GroovyShell(binding)
+def expression = '''f = x * y'''
+shell.evaluate(expression)
+assert binding.getVariable("f") == 24
+ An appropriate use of Binding will allow you to maintain state? I am not sure about what you mean about declared classes not existing between evals, the following two scripts work as expected when evaled one after another: class C {{println 'hi'}}
+new C()
+ ... new C()
+ However methods become bound to the class that declared them, and GroovyShell creates a new class for each instance. If you do not need the return value of any of the scripts and they are truly scripts (not classes with main methods) you can attach the following to the end of every evaluated scrips. Class klass = this.getClass()
+this.getMetaClass().getMethods().each {
+  if (it.declaringClass.cachedClass == klass) {
+    binding[it.name] = this.&"$it.name"
+  }
+}
+ If you depend on the return value you can hand-manage the evaluation and run the script as part of your parsing (warning, untested code follows, for illustrative uses only)... String scriptText = ...
+Script script = shell.parse(scriptText)
+def returnValue = script.run()
+Class klass = script.getClass()
+script.getMetaClass().getMethods().each {
+  if (it.declaringClass.cachedClass == klass) {
+    shell.context[it.name] = this.&"$it.name"
+  }
+}
+// do whatever with returnValue...
+ There is one last caveat I am sure you are aware of. Statically typed variables are not kept between evals as they are not stored in the binding. So in the previous script the variable 'klass' will not be kept between script invocations and will disappear. To rectify that simply remove the type declarations on the first use of all variables, that means they will be read and written to the binding. Ended up injecting code before each script compilation. End goal is that the user written script has a domain-specific-language available for use.

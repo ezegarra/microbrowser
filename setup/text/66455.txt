@@ -1,0 +1,78 @@
+Is there an easy way to change the behavior of a Java/Swing control when it gets focus? gui swing The only way I know is to create a FocusListener and attach it to your component. If you want it this FocusListener to be global to all components in your application you might consider using Aspect Oriented Programming (AOP). With AOP is possible to code it once and apply your focus listener to all components instantiated in your app without having to copy-and-paste the component.addFocusListener(listener) code throughout your application.. Your aspect would have to intercept the creation of a JComponent (or the sub-classes you want to add this behaviour to) and add the focus listener to the newly created instance. The AOP approach is better than copy-and-pasting the FocusListener to your entire code because you keep it all in a single piece of code, and don't create a maintenance nightmare once you decide to change your global behavior like removing the listener for JSpinners. There are many AOP frameworks out there to choose from. I like JBossAOP since it's 100% pure Java, but you might like to take a look at AspectJ. When I've needed this in the past, I've created subclasses of the components I wanted to add "auto-clearing" functionality too. eg: public class AutoClearingTextField extends JTextField {
+   final FocusListener AUTO_CLEARING_LISTENER = new FocusListener(){
+      @Override
+      public void focusLost(FocusEvent e) {
+         //onFocusLost(e);
+      }
+
+      @Override
+      public void focusGained(FocusEvent e) {
+         selectAll();
+      }
+   };
+
+   public AutoClearingTextField(String string) {
+      super(string);
+      addListener();
+   }
+
+   private void addListener() {
+      addFocusListener(AUTO_CLEARING_LISTENER);      
+   }
+}
+ The biggest problem is that I haven't found a "good" way to get all the standard constructors without writing overrides. Adding them, and forcing a call to addListener is the most general approach I've found. Another option is to watch for ContainerEvents on a top-level container with a ContainerListeer to detect the presence of new widgets, and add a corresponding focus listener based on the widgets that have been added. (eg: if the container event is caused by adding a TextField, then add a focus listener that knows how to select all the text in a TextField, and so on.) If a Container is added, then you need to recursively add the ContainerListener to that new sub-container as well. Either way, you won't need to muck about with focus listeners in your actual UI code -- it will all be taken care of at a higher level. I haven't tried this myself (only dabbled in it a while ago), but you can probably get the current focused component by using: KeyboardFocusManager (there is a static method getCurrentKeyboardFocusManager()) an adding a PropertyChangeListener to it. From there, you can find out if the component is a JTextComponent and select all text. A separate class that attaches a FocusListener to the desired text field can be written. All the focus listener would do is call selectAll() on the text widget when it gains the focus. public class SelectAllListener implements FocusListener {
+  private static INSTANCE = new SelectAllListener();
+
+  public void focusLost(FocusEvent e) { }
+
+  public void focusGained(FocusEvent e) {
+    if (e.getSource() instanceof JTextComponent) {  
+      ((JTextComponent)e.getSource()).selectAll();
+    }
+  };
+
+  public static void addSelectAllListener(JTextComponent tc) {
+    tc.addFocusListener(INSTANCE);
+  }
+
+  public static void removeSelectAllListener(JTextComponent tc) {
+    tc.removeFocusListener(INSTANCE);
+  }
+}
+ By accepting a JTextComponent as an argument this behavior can be added to JTextArea, JPasswordField, and all of the other text editing components directly. This also allows the class to add select all to editable combo boxes and JSpinners, where your control over the text editor component may be more limited. Convenience methods can be added: public static void addSelectAllListener(JSpinner spin) {
+  if (spin.getEditor() instanceof JTextComponent) {
+    addSelectAllListener((JTextComponent)spin.getEditor());
+  }
+}
+
+public static void addSelectAllListener(JComboBox combo) {
+  JComponent editor = combo.getEditor().getEditorComponent();
+  if (editor instanceof JTextComponent) {
+    addSelectAllListener((JTextComponent)editor);
+  }
+}
+ Also, the remove listener methods are likely unneeded, since the listener contains no exterior references to any other instances, but they can be added to make code reviews go smoother. After reading the replies so far (Thanks!) I passed the outermost JPanel to the following method: void addTextFocusSelect(JComponent component){
+    if(component instanceof JTextComponent){
+        component.addFocusListener(new FocusAdapter() {
+                @Override
+                public void focusGained(FocusEvent event) {
+                    super.focusGained(event);
+                    JTextComponent component = (JTextComponent)event.getComponent();
+                    // a trick I found on JavaRanch.com
+                    // Without this, some components don't honor selectAll
+                    component.setText(component.getText());
+                    component.selectAll();
+                }
+            });
+
+    }
+    else
+    {
+        for(Component child: component.getComponents()){
+            if(child instanceof JComponent){
+                addTextFocusSelect((JComponent) child);
+            }
+        }
+    }
+}
+ It works!

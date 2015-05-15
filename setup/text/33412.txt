@@ -1,0 +1,71 @@
+How do you configure HttpOnly cookies in tomcat / java webapps? security cookies xss httponly For session cookies it doesn't seem to be supported in Tomcat yet. See the bug report Need to add support for HTTPOnly session cookie parameter. A somewhat involved work-around for now can be found here, which basically boils down to manually patching Tomcat. Can't really find an easy way to do it at this moment at this point I'm affraid. To summarize the work-around, it involves downloading the 5.5 source, and then change the source in the following places: org.apache.catalina.connector.Request.java //this is what needs to be changed
+//response.addCookieInternal(cookie);
+
+//this is whats new
+response.addCookieInternal(cookie, true);
+}
+ org.apache.catalina.connectorResponse.addCookieInternal public void addCookieInternal(final Cookie cookie) {
+addCookieInternal(cookie, false);
+}
+
+public void addCookieInternal(final Cookie cookie, boolean HTTPOnly) {
+
+if (isCommitted())
+return;
+
+final StringBuffer sb = new StringBuffer();
+//web application code can receive a IllegalArgumentException
+//from the appendCookieValue invokation
+if (SecurityUtil.isPackageProtectionEnabled()) {
+AccessController.doPrivileged(new PrivilegedAction() {
+public Object run(){
+ServerCookie.appendCookieValue
+(sb, cookie.getVersion(), cookie.getName(),
+cookie.getValue(), cookie.getPath(),
+cookie.getDomain(), cookie.getComment(),
+cookie.getMaxAge(), cookie.getSecure());
+return null;
+}
+});
+} else {
+ServerCookie.appendCookieValue
+(sb, cookie.getVersion(), cookie.getName(), cookie.getValue(),
+cookie.getPath(), cookie.getDomain(), cookie.getComment(),
+cookie.getMaxAge(), cookie.getSecure());
+}
+//of course, we really need to modify ServerCookie
+//but this is the general idea
+if (HTTPOnly) {
+sb.append("; HttpOnly");
+}
+
+//if we reached here, no exception, cookie is valid
+// the header name is Set-Cookie for both "old" and v.1 ( RFC2109 )
+// RFC2965 is not supported by browsers and the Servlet spec
+// asks for 2109.
+addHeader("Set-Cookie", sb.toString());
+
+cookies.add(cookie);
+}
+ Update: The JSESSIONID stuff here is only for older containers. Please use jt's currently accepted answer unless you are using < Tomcat 6.0.19 or < Tomcat 5.5.28 or another container that does not support HttpOnly JSESSIONID cookies as a config option. When setting cookies in your app, use response.setHeader( "Set-Cookie", "name=value; HttpOnly");
+ However, in many webapps, the most important cookie is the session identifier, which is automatically set by the container as the JSESSIONID cookie. If you only use this cookie, you can write a ServletFilter to re-set the cookies on the way out, forcing JSESSIONID to HttpOnly. The page at http://keepitlocked.net/archive/2007/11/05/java-and-httponly.aspx http://alexsmolen.com/blog/?p=16 suggests adding the following in a filter. if (response.containsHeader( "SET-COOKIE" )) {
+  String sessionid = request.getSession().getId();
+  response.setHeader( "SET-COOKIE", "JSESSIONID=" + sessionid 
+                      + ";Path=/<whatever>; Secure; HttpOnly" );
+} 
+ but note that this will overwrite all cookies and only set what you state here in this filter. If you use additional cookies to the JSESSIONID cookie, then you'll need to extend this code to set all the cookies in the filter. This is not a great solution in the case of multiple-cookies, but is a perhaps an acceptable quick-fix for the JSESSIONID-only setup. Please note that as your code evolves over time, there's a nasty hidden bug waiting for you when you forget about this filter and try and set another cookie somewhere else in your code. Of course, it won't get set. This really is a hack though. If you do use Tomcat and can compile it, then take a look at Shabaz's excellent suggestion to patch HttpOnly support into Tomcat. httpOnly is supported as of Tomcat 6.0.19 and Tomcat 5.5.28. See the changelog entry for bug 44382. The last comment for bug 44382 states, "this has been applied to 5.5.x and will be included in 5.5.28 onwards." However, it does not appear that 5.5.28 has been released. The httpOnly functionality can be enabled for all webapps in conf/context.xml: <Context useHttpOnly="true">
+...
+</Context>
+ My interpretation is that it also works for an individual context by setting it on the desired Context entry in conf/server.xml (in the same manner as above). Please be careful not to overwrite the ";secure" cookie flag in https-sessions. This flag prevents the browser from sending the cookie over an unencrypted http connection, basically rendering the use of https for legit requests pointless. private void rewriteCookieToHeader(HttpServletRequest request, HttpServletResponse response) {
+    if (response.containsHeader("SET-COOKIE")) {
+        String sessionid = request.getSession().getId();
+        String contextPath = request.getContextPath();
+        String secure = "";
+        if (request.isSecure()) {
+            secure = "; Secure"; 
+        }
+        response.setHeader("SET-COOKIE", "JSESSIONID=" + sessionid
+                         + "; Path=" + contextPath + "; HttpOnly" + secure);
+    }
+}
+ also it should be noted that turning on HttpOnly will break applets that require stateful access back to the jvm. the Applet http requests will not use the jsessionid cookie and may get assigned to a different tomcat. For cookies that I am explicitly setting, I switched to use SimpleCookie provided by Apache Shiro. It does not inherit from javax.servlet.http.Cookie so it takes a bit more juggling to get everything to work correctly however it does provide a property set HttpOnly and it works with Servlet 2.5. For setting a cookie on a response, rather than doing response.addCookie(cookie) you need to do cookie.saveTo(request, response).

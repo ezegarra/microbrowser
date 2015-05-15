@@ -1,0 +1,49 @@
+Should I avoid using Java Label Statements? loops I'm curious to hear what your alternative to labels is. I think this is pretty much going to boil down to the argument of "return as early as possible" vs. "use a variable to hold the return value, and only return at the end." Labels are pretty standard when you have nested loops. The only way they really decrease readability is when another developer has never seen them before and doesn't understand what they mean. I never use labels in my code. I prefer to create a guard and initialize it to null or other unusual value. This guard is often a result object. I haven't seen any of my coworkers using labels, nor found any in our repository. It really depends on your style of coding. In my opinion using labels would decrease the readability as it's not a common construct and usually it's not used in Java. Many algorithms are expressed more easily if you can jump across two loops (or a loop containing a switch statement). Don't feel bad about it. On the other hand, it may indicate an overly complex solution. So stand back and look at the problem. Some people prefer a "single entry, single exit" approach to all loops. That is to say avoiding break (and continue) and early return for loops altogether. This may result in some duplicate code. What I would strongly avoid doing is introducing auxilary variables. Hiding control-flow within state adds to confusion. Splitting labeled loops into two methods may well be difficult. Exceptions are probably too heavyweight. Try a single entry, single exit approach. Further to labels being like goto's: Use them sparingly, and only when they make your code more understandable and faster, e.g., If you are in big loops six levels deep and you encounter a condition that makes the rest of the loop pointless to complete, there's no sense in having 6 extra trap doors in your condition statements to exit out the loop early. goto's aren't evil, it's just that sometimes people use them in bad ways. The same could be said for labels. I've never seen labels used "in the wild" in Java code. If you really want to break across nested loops, see if you can refactor your method so that an early return statement does what you want. Technically, I guess there's not much difference between an early return and a label. Practically, though, almost every Java developer has seen an early return and knows what it does. I'd guess many developers would at least be surprised by a label, and probably be confused. I was taught the single entry / single exit orthodoxy in school, but I've since come to appreciate early return statements and breaking out of loops as a way to simplify code and make it clearer. I think with the new for-each loop, the label can be really clear. For example: sentence: for(Sentence sentence: paragraph) {
+  for(String word: sentence) {
+    // do something
+    if(isDone()) {
+      continue sentence;
+    }
+  }
+}
+ I think that looks really clear by having your label the same as your variable in the new for-each. In fact, maybe Java should be evil and add implicit labels for-each variables heh I'd argue in favour of them in some locations, I found them particularly useful in this example: 
+nextItem: for(CartItem item : user.getCart()) {
+
+  nextCondition : for(PurchaseCondition cond : item.getConditions()) {
+     if(!cond.check())
+        continue nextItem;
+     else
+        continue nextCondition;
+
+  }
+  purchasedItems.add(item);
+}
+ There are few occasions when you need labels and they can be confusing because they are rarely used. However if you need to use one then use one. BTW: this compiles and runs. class MyFirstJavaProg {  
+        public static void main(String args[]) {
+           http://www.javacoffeebreak.com/java101/java101.html
+           System.out.println("Hello World!");
+        }
+}
+ I have use a Java labeled loop for an implementation of a Sieve method to find prime numbers (done for one of the project Euler math problems) which made it 10x faster compared to nested loops. Eg if(certain condition) go back to outer loop. `private static void testByFactoring() {
+
+{
+
+        primes: for (int ctr = 0; ctr < m_toFactor.length; ctr++) {
+
+            int toTest = m_toFactor[ctr];
+
+            for (int ctr2 = 0; ctr2 < m_divisors.length; ctr2++) {
+
+                // max (int) Math.sqrt(m_numberToTest) + 1 iterations
+
+                if (toTest != m_divisors[ctr2]
+                        && toTest % m_divisors[ctr2] == 0) {
+                    continue primes; 
+                }
+
+            } // end of the divisor loop
+
+        } // end of primes loop
+
+    } // method`
+ I asked a C++ programmer how bad labeled loops are, he said he would use them sparingly, but they can occasionally come in handy. For example, if you have 3 nested loops and for certain conditions you want to go back to the outermost loop. So they have their uses, it depends on the problem you were trying to solve.

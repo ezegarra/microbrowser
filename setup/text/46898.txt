@@ -1,0 +1,221 @@
+How do I iterate over each Entry in a Map? map iteration Yes, the order depends on the specific Map implementation. @ScArcher2 has the more elegant Java 1.5 syntax. In 1.4, I would do something like this: Iterator entries = myMap.entrySet().iterator();
+while (entries.hasNext()) {
+  Entry thisEntry = (Entry) entries.next();
+  Object key = thisEntry.getKey();
+  Object value = thisEntry.getValue();
+  // ...
+}
+ for (Map.Entry<String, String> entry : map.entrySet())
+{
+    System.out.println(entry.getKey() + "/" + entry.getValue());
+}
+ In theory, the most efficient way will depend on which implementation of Map. The official way to do this is to call map.entrySet(), which returns a set of Map.Entry, each of which contains a key and a value (entry.getKey() and entry.getValue()). In an idiosyncratic implementation, it might make some difference whether you use map.keySet(), map.entrySet() or something else. But I can't think of a reason why anyone would write it like that. Most likely it makes no difference to performance what you do. And yes, the order will depend on the implementation - as well as (possibly) the order of insertion and other hard-to-control factors. [edit] I wrote valueSet() originally but of course entrySet() is actually the answer. Typical code for iterating over a map is: Map<String,Thing> map = ...;
+for (Map.Entry<String,Thing> entry : map.entrySet()) {
+    String key = entry.getKey();
+    Thing thing = entry.getValue();
+    ...
+}
+ HashMap is the canonical map implementation and doesn't make guarantees (or though it should not change order if no mutating operation are performed on it). SorterMap will return entries on however the map sorts the keys. LinkedHashMap will either return entries in insertion-order or access-order depending upon how it has been constructed. EnumMap returns entries in natural order of keys. Note, IdentityHashMap entrySet iterator currently has a peculiar implementation which returns the same Map.Entry instance for every item in the entrySet! However, every time a new the iterator advances the Map.Entry is updated. This is a two part question: How to iterate over the entries of a Map - @ScArcher2 has answered that perfectly. What is the order of iteration - if you are just using Map, then strictly speaking, there are no ordering guarantees. So you shouldn't really rely on the ordering given by any implementation. However, the SortedMap interface extends Map and provides exactly what you are looking for - implementations will aways give a consistent sort order. NavigableMap is another useful extension - this is a SortedMap with additional methods for finding entries by their ordered position in the key set. So potentially this can remove the need for iterating in the first place - you might be able to find the specific entry you are after using the higherEntry, lowerEntry, ceilingEntry, or floorEntry methods. The descendingMap method even gives you an explicit method of reversing the traversal order. FYI, you can also use map.keySet() and map.values() if you're only interested in keys/values of the map and not the other. The correct way to do this is to use the accepted answer as it is the most efficient. I find the following code looks a bit cleaner. for (String key: map.keySet()) {
+   System.out.println(key + "/" + map.get(key));
+}
+ Example of using iterator and generics: Iterator<Map.Entry<String, String>> entries = myMap.entrySet().iterator();
+while (entries.hasNext()) {
+  Map.Entry<String, String> entry = entries.next();
+  String key = entry.getKey();
+  String value = entry.getValue();
+  // ...
+}
+ Try this with Java 1.4: for( Iterator entries = myMap.entrySet().iterator(); entries.hasNext();){
+
+  Entry entry = (Entry) entries.next();
+
+  System.out.println(entry.getKey() + "/" + entry.getValue());
+
+  //...
+}
+ public class abcd{
+    public static void main(String[] args)
+    {
+       Map<Integer, String> testMap = new HashMap<Integer, String>();
+        testMap.put(10, "a");
+        testMap.put(20, "b");
+        testMap.put(30, "c");
+        testMap.put(40, "d");
+        for (Integer key:testMap.keySet()) {
+            String value=testMap.get(key);
+            System.out.println(value);
+        }
+    }
+}
+ OR public class abcd {
+    public static void main(String[] args)
+    {
+       Map<Integer, String> testMap = new HashMap<Integer, String>();
+        testMap.put(10, "a");
+        testMap.put(20, "b");
+        testMap.put(30, "c");
+        testMap.put(40, "d");
+        for (Entry<Integer, String> entry : testMap.entrySet()) {
+            Integer key=entry.getKey();
+            String value=entry.getValue();
+        }
+    }
+}
+ In GS Collections, you would use the forEachKeyValue method on the MapIterable interface, which is inherited by the MutableMap and ImmutableMap interfaces and their implementations. final MutableBag<String> result = Bags.mutable.of();
+MutableMap<Integer, String> map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue(new Procedure2<Integer, String>()
+{
+    public void value(Integer key, String value)
+    {
+        result.add(key + value);
+    }
+});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+ When Lambdas arrive in Java 8, you will be able to write the code as follows: MutableBag<String> result = Bags.mutable.of();
+MutableMap<Integer, String> map = Maps.mutable.of(1, "One", 2, "Two", 3, "Three");
+map.forEachKeyValue((key, value) -> { result.add(key + value);});
+Assert.assertEquals(Bags.mutable.of("1One", "2Two", "3Three"), result);
+ Note: I am a developer on GS Collections. Yes, as many people agreed this is the best way to iterate over MAP. But there are chances to throw nullpointerexception if map is null.Don't forget to put null .check                                                   | 
+                                                  |  
+                                          - - - - 
+                                        |
+                                        |          
+ for (Map.Entry<String, Object> entry : map.entrySet()) {
+    String key = entry.getKey();
+    Object value = entry.getValue();
+
+}
+ you can do it using generics: Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+Iterator<Map.Entry<Integer, Integer>> entries = map.entrySet().iterator();
+while (entries.hasNext()) {
+Map.Entry<Integer, Integer> entry = entries.next();
+System.out.println("Key = " + entry.getKey() + ", Value = " + entry.getValue());}
+ In Java 8 you can do it clean and fast like this using the new lambdas features:  Map<String,String> map = new HashMap<>();
+ map.put("SomeKey", "SomeValue");
+ map.forEach( (k,v) -> [do something with key and value] );
+
+ // such as
+ map.forEach( (k,v) -> System.out.println("Key: " + k + ": Value: " + v));
+ The type of K and V will be inferred by the compiler and there is no need to use Map.Entry any more. Easy-peasy! If you have a generic untyped Map you can use:     Map map = new HashMap();
+    for (Map.Entry entry : ((Set<Map.Entry>) map.entrySet())) {
+        System.out.println(entry.getKey() + "/" + entry.getValue());
+    }
+ There are the several way to iterate a map please refer the following code When you iterate a map using iterator Interface you must to go with Entry or entrySet() look like this import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+public class IteratMapDemo{
+public static void main(String arg[]){
+Map<String,String> mapOne =new HashMap<String,String>();
+   mapOne.put("1","January");
+   mapOne.put("2","February");
+   mapOne.put("3","March");
+   mapOne.put("4","April");
+   mapOne.put("5","May");
+   mapOne.put("6","June");
+   mapOne.put("7","July");
+   mapOne.put("8","August");
+   mapOne.put("9","September");
+   mapOne.put("10","Octomber");
+   mapOne.put("11","November");
+   mapOne.put("12","December"); 
+
+    Iterator it = mapOne.entrySet().iterator();
+    while(it.hasNext())
+    {
+        Map.Entry me=(Map.Entry) it.next();
+        //System.out.println("Get Key through While loop = " +me.getKey());
+    }
+    for(Map.Entry<String,String> entry:mapOne.entrySet()){
+        //System.out.println(entry.getKey() + "=" +entry.getValue() );
+    }
+
+    for (Object key : mapOne.keySet()) {
+    System.out.println("Key : " + key.toString() + " Value : "
+        + mapOne.get(key));
+}
+
+}
+}
+ In Map one can Iteration over keys and/or values and/or both (e.g., entrySet) depends on one's interested in_ Like: 1.) Iterate through the keys -> keySet() of the map: Map<String, Object> map = ...;
+
+for (String key : map.keySet()) {
+    //your Business logic...
+}
+ 2.) Iterate through the values -> values() of the map: for (Object value : map.values()) {
+    //your Business logic...
+}
+ 3.) Iterate through the both -> entrySet() of the map: for (Map.Entry<String, Object> entry : map.entrySet()) {
+    String key = entry.getKey();
+    Object value = entry.getValue();
+    //your Business logic...
+}
+ Moreover, there are 3 difference ways to Iterate Through a HashMap. They are as below_ //1.
+for (Map.Entry entry : hm.entrySet()) {
+    System.out.print("key,val: ");
+    System.out.println(entry.getKey() + "," + entry.getValue());
+}
+
+//2.
+Iterator iter = hm.keySet().iterator();
+while(iter.hasNext()) {
+    Integer key = (Integer)iter.next();
+    String val = (String)hm.get(key);
+    System.out.println("key,val: " + key + "," + val);
+}
+
+//3.
+Iterator it = hm.entrySet().iterator();
+while (it.hasNext()) {
+    Map.Entry entry = (Map.Entry) it.next();
+    Integer key = (Integer)entry.getKey();
+    String val = (String)entry.getValue();
+    System.out.println("key,val: " + key + "," + val);
+}
+ There are several ways to iterate over map. Here is comparison of their performances for a common data set stored in map by storing 10 lacs key value pairs in map and will iterate over map. 1) Using entrySet() in for each loop for (Map.Entry<String,Integer> entry : testMap.entrySet()) {
+    entry.getKey();
+    entry.getValue();
+}
+ 50 milliseconds 2) Using keySet() in for each loop for (String key : testMap.keySet()) {
+    testMap.get(key);
+}
+ 76 milliseconds 3) Using entrySet() and iterator Iterator<Map.Entry<String,Integer>> itr1 = testMap.entrySet().iterator();
+while(itr1.hasNext()) {
+    Map.Entry<String,Integer> entry = itr1.next();
+    entry.getKey();
+    entry.getValue();
+}
+ 50 milliseconds 4) Using keySet() and iterator Iterator itr2 = testMap.keySet().iterator();
+while(itr2.hasNext()) {
+    String key = itr2.next();
+    testMap.get(key);
+}
+ 75 milliseconds I have referred this link. Iterator itr2 = testMap.keySet().iterator();
+while (itr2.hasNext()) {
+    String key = itr2.next();
+    testMap.get(key);
+}
+
+for (String key: map.keySet()) {    
+    System.out.println(key + "/" + map.get(key)); 
+}
+ The best way is entrySet() though. Iterator iterator = map.entrySet().iterator();     while (iterator.hasNext()) {
+
+        Map.Entry element = (Map.Entry)it.next();
+
+        LOGGER.debug("Key: " + element.getKey());
+
+        LOGGER.debug("value: " + element.getValue());
+
+
+    }
+ JAVA 8 You can use Lambda Expressions. myMap.entrySet().stream().forEach((entry) -> {
+    Object currentKey = entry.getKey();
+    Object currentValue = entry.getValue();
+});
+ For more information follow this. I copied the data of a map to another with this code: HashMap product =(HashMap)shopping_truck.get(i);
+HashMap tmp = new HashMap();
+for (Iterator it = product.entrySet().iterator(); it.hasNext();) {
+    Map.Entry thisEntry = (Map.Entry) it.next();
+    tmp.put(thisEntry.getKey(), thisEntry.getValue());
+}

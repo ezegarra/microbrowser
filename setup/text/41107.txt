@@ -1,0 +1,713 @@
+How to generate a random alpha-numeric string? string random alphanumeric Here is code for secure, easy, but a little bit more expensive session identifiers. import java.security.SecureRandom;
+
+public final class SessionIdentifierGenerator {
+  private SecureRandom random = new SecureRandom();
+
+  public String nextSessionId() {
+    return new BigInteger(130, random).toString(32);
+  }
+}
+ This works by choosing 130 bits from a cryptographically secure random bit generator, and encoding them in base-32. 128 bits is considered to be cryptographically strong, but each digit in a base 32 number can encode 5 bits, so 128 is rounded up to the next multiple of 5. This encoding is compact and efficient, with 5 random bits per character. Compare this to a random UUID, which only has 3.4 bits per character in standard layout, and only 122 random bits in total. If you allow session identifiers to be easily guessable (too short, flawed random number generator, etc.), attackers can hijack other's sessions. Note that SecureRandom objects are expensive to initialize, so you'll want to keep one around and reuse it. Here is alternative code for cheap, insecure random alpha-numeric strings. You can tweak the "symbols" if you want to use more characters. public class RandomString {
+
+  private static final char[] symbols;
+
+  static {
+    StringBuilder tmp = new StringBuilder();
+    for (char ch = '0'; ch <= '9'; ++ch)
+      tmp.append(ch);
+    for (char ch = 'a'; ch <= 'z'; ++ch)
+      tmp.append(ch);
+    symbols = tmp.toString().toCharArray();
+  }   
+
+  private final Random random = new Random();
+
+  private final char[] buf;
+
+  public RandomString(int length) {
+    if (length < 1)
+      throw new IllegalArgumentException("length < 1: " + length);
+    buf = new char[length];
+  }
+
+  public String nextString() {
+    for (int idx = 0; idx < buf.length; ++idx) 
+      buf[idx] = symbols[random.nextInt(symbols.length)];
+    return new String(buf);
+  }
+}
+ Here it is in Java: import static java.lang.Math.round;
+import static java.lang.Math.random;
+import static java.lang.Math.pow;
+import static java.lang.Math.abs;
+import static java.lang.Math.min;
+import static org.apache.commons.lang.StringUtils.leftPad
+
+public class RandomAlphaNum {
+  public static String gen(int length) {
+    StringBuffer sb = new StringBuffer();
+    for (int i = length; i > 0; i -= 12) {
+      int n = min(12, abs(i));
+      sb.append(leftPad(Long.toString(round(random() * pow(36, n)), 36), n, '0'));
+    }
+    return sb.toString();
+  }
+}
+ Here's a sample run: scala> RandomAlphaNum.gen(42)
+res3: java.lang.String = uja6snx21bswf9t89s00bxssu8g6qlu16ffzqaxxoy
+ Java supplies a way of doing this directly. If you don't want the dashes, they are easy to strip out. import java.util.UUID;
+String uuid = UUID.randomUUID().toString();
+System.out.println("uuid = " + uuid);
+ Output: uuid = 2d7428a6-b58c-4008-8575-f05549f16316 I found this solution that generates a random hex encoded string. The provided unit test seems to hold up to my primary use case. Although, it is slightly more complex than some of the other answers provided. /**
+ * Generate a random hex encoded string token of the specified length
+ *  
+ * @param length
+ * @return random hex string
+ */
+public static synchronized String generateUniqueToken(Integer length) 
+{
+
+    byte random[] = new byte[length];
+    Random randomGenerator = new Random();
+    StringBuffer buffer = new StringBuffer();
+
+    randomGenerator.nextBytes(random);
+
+    for (int j = 0; j < random.length; j++)
+    {
+        byte b1 = (byte) ((random[j] & 0xf0) >> 4);
+        byte b2 = (byte) (random[j] & 0x0f);
+        if (b1 < 10)
+            buffer.append((char) ('0' + b1));
+        else
+            buffer.append((char) ('A' + (b1 - 10)));
+        if (b2 < 10)
+            buffer.append((char) ('0' + b2));
+        else
+            buffer.append((char) ('A' + (b2 - 10)));
+    }
+
+    return (buffer.toString());
+}
+
+@Test
+public void testGenerateUniqueToken()
+{
+    Set set = new HashSet();
+    String token = null;
+    int size = 16;
+
+    /* Seems like we should be able to generate 500K tokens 
+     * without a duplicate 
+    */
+    for (int i=0; i<500000; i++)
+    {
+        token = Utility.generateUniqueToken(size);
+
+        if (token.length() != size * 2)
+        {
+            fail("Incorrect length");
+        }
+        else
+        if (set.contains(token)) 
+        {
+            fail("Duplicate token generated");
+        }
+        else
+        {
+            set.add(token);
+        }
+    }
+
+}
+ If you're happy to use Apache classes, why not just use org.apache.commons.lang.RandomStringUtils (commons-lang) https://commons.apache.org/proper/commons-lang/javadocs/api-2.6/org/apache/commons/lang/RandomStringUtils.html static final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+static Random rnd = new Random();
+
+String randomString( int len ) 
+{
+   StringBuilder sb = new StringBuilder( len );
+   for( int i = 0; i < len; i++ ) 
+      sb.append( AB.charAt( rnd.nextInt(AB.length()) ) );
+   return sb.toString();
+}
+ Hi this is Amar (mailz4amar@yahoo.com) from Hyderabad. I have developed an application to develop an auto generated alphanumberic string for my project. In this string the first three chars are alphabets and the next seven are integers. the code is public class AlphaNumericGenerator { public static void main(String[] args) {
+    java.util.Random r = new java.util.Random();
+    int i = 1, n = 0;
+    char c;
+    String str="";
+    for (int t = 0; t < 3; t++) {
+        while (true) {
+            i = r.nextInt(10);
+            if (i > 5 && i < 10) {
+
+                if (i == 9) {
+                    i = 90;
+                    n = 90;
+                    break;
+                }
+                if (i != 90) {
+                    n = i * 10 + r.nextInt(10);
+                    while (n < 65) {
+                        n = i * 10 + r.nextInt(10);
+                    }
+                }
+
+                break;
+            }
+        }
+        c=(char)n;
+
+        str= String.valueOf(c)+str;
+    }
+    while(true){
+    i = r.nextInt(10000000);
+    if(i>999999)
+        break;
+    }
+    str=str+i;
+    System.out.println(str);
+
+}
+ } In one line: Long.toHexString(Double.doubleToLongBits(Math.random()));
+ http://mynotes.wordpress.com/2009/07/23/java-generating-random-string/ import java.util.*;
+import javax.swing.*;
+public class alphanumeric
+{
+    public static void main(String args[])
+    {
+        String nval,lenval;
+        int n,len;
+
+        nval=JOptionPane.showInputDialog("Enter number of codes you require : ");
+        n=Integer.parseInt(nval);
+
+        lenval=JOptionPane.showInputDialog("Enter code length you require : ");
+        len=Integer.parseInt(lenval);
+
+        find(n,len);
+
+    }
+    public static void find(int n,int length)
+    {
+        String str1="0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        StringBuilder sb=new StringBuilder(length);
+        Random r = new Random();
+
+        System.out.println("\n\t Unique codes are \n\n");
+        for(int i=0;i<n;i++)
+        {
+            for(int j=0;j<length;j++)
+            {
+                sb.append(str1.charAt(r.nextInt(str1.length())));
+            }
+            System.out.println("  "+sb.toString());
+            sb.delete(0,length);
+        }
+    }
+}
+ You mention "simple", but just in case anyone else is looking for something that meets more stringent security requirements, you might want to take a look at jpwgen. jpwgen is modeled after pwgen in Unix, and is very configurable. import java.util.Date;
+import java.util.Random;
+
+public class RandomGenerator {
+
+  private static Random random = new Random((new Date()).getTime());
+
+    public static String generateRandomString(int length) {
+      char[] values = {'a','b','c','d','e','f','g','h','i','j',
+               'k','l','m','n','o','p','q','r','s','t',
+               'u','v','w','x','y','z','0','1','2','3',
+               '4','5','6','7','8','9'};
+
+      String out = "";
+
+      for (int i=0;i<length;i++) {
+          int idx=random.nextInt(values.length);
+        out += values[idx];
+      }
+
+      return out;
+    }
+}
+ import java.util.Random;
+
+public class passGen{
+    //Verison 1.0
+    private static final String dCase = "abcdefghijklmnopqrstuvwxyz";
+    private static final String uCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final String sChar = "!@#$%^&*";
+    private static final String intChar = "0123456789";
+    private static Random r = new Random();
+    private static String pass = "";
+
+    public static void main (String[] args) {
+        System.out.println ("Generating pass...");
+        while (pass.length () != 16){
+            int rPick = r.nextInt(4);
+            if (rPick == 0){
+                int spot = r.nextInt(25);
+                pass += dCase.charAt(spot);
+            } else if (rPick == 1) {
+                int spot = r.nextInt (25);
+                pass += uCase.charAt(spot);
+            } else if (rPick == 2) {
+                int spot = r.nextInt (7);
+                pass += sChar.charAt(spot);
+            } else if (rPick == 3){
+                int spot = r.nextInt (9);
+                pass += intChar.charAt (spot);
+            }
+        }
+        System.out.println ("Generated Pass: " + pass);
+    }
+}
+ So what this does is just add's the password into the string and ... yeah works good check it out... very simple. I wrote it A short and easy solution, but uses only lowercase and numerics:  r = new util.Random ();
+ Long.toString (r.nextLong (), 36);
+ The size is about 12 digits to base 36 and can't be improved further, that way. Of course you can append multiple instances. Best Random String Generator Method public class RandomStringGenerator{
+
+    private static int randomStringLength = 25 ;
+    private static boolean allowSpecialCharacters = true ;
+    private static String specialCharacters = "!@$%*-_+:";
+    private static boolean allowDuplicates = false ;
+
+    private static boolean isAlphanum = false;
+    private static boolean isNumeric = false;
+    private static boolean isAlpha = false;
+    private static final String alphabet = "abcdefghijklmnopqrstuvwxyz";
+    private static boolean mixCase = false;
+    private static final String capAlpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final String num = "0123456789";
+
+    public static String getRandomString() {
+        String returnVal = "";
+        int specialCharactersCount = 0;
+        int maxspecialCharacters = randomStringLength/4;
+
+        try {
+            StringBuffer values = buildList();
+            for (int inx = 0; inx < randomStringLength; inx++) {
+                int selChar = (int) (Math.random() * (values.length() - 1));
+                if (allowSpecialCharacters)
+                {
+                    if (specialCharacters.indexOf("" + values.charAt(selChar)) > -1)
+                    {
+                        specialCharactersCount ++;
+                        if (specialCharactersCount > maxspecialCharacters)
+                        {
+                            while (specialCharacters.indexOf("" + values.charAt(selChar)) != -1)
+                            {
+                                selChar = (int) (Math.random() * (values.length() - 1));
+                            }
+                        }
+                    }
+                }
+                returnVal += values.charAt(selChar);
+                if (!allowDuplicates) {
+                    values.deleteCharAt(selChar);
+                }
+            }
+        } catch (Exception e) {
+            returnVal = "Error While Processing Values";
+        }
+        return returnVal;
+    }
+
+    private static StringBuffer buildList() {
+        StringBuffer list = new StringBuffer(0);
+        if (isNumeric || isAlphanum) {
+            list.append(num);
+        }
+        if (isAlpha || isAlphanum) {
+            list.append(alphabet);
+            if (mixCase) {
+                list.append(capAlpha);
+            }
+        }
+        if (allowSpecialCharacters)
+        {
+            list.append(specialCharacters);
+        }
+        int currLen = list.length();
+        String returnVal = "";
+        for (int inx = 0; inx < currLen; inx++) {
+            int selChar = (int) (Math.random() * (list.length() - 1));
+            returnVal += list.charAt(selChar);
+            list.deleteCharAt(selChar);
+        }
+        list = new StringBuffer(returnVal);
+        return list;
+    }   
+
+}
+ You can use Apache library for this: RandomStringUtils RandomStringUtils.randomAlphanumeric(20).toUpperCase();
+ Here it is a Scala solution: (for (i <- 0 until rnd.nextInt(64)) yield { 
+  ('0' + rnd.nextInt(64)).asInstanceOf[Char] 
+}) mkString("")
+ Random 10 letter string between upper and lower cases StringBuilder randomString = new StringBuilder();   
+Random random = new Random();
+boolean alphaType = true;
+int j;
+
+for(int i = 0; i <= 9; ++i)
+{
+    j = (random.nextInt(25) + (alphaType == true ? 65 : 97));
+    randomString.append((char)j);
+    alphaType = !alphaType;
+}
+return randomString.toString();
+ public static String generateSessionKey(int length){
+String alphabet = 
+        new String("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"); //9
+int n = alphabet.length(); //10
+
+String result = new String(); 
+Random r = new Random(); //11
+
+for (int i=0; i<length; i++) //12
+    result = result + alphabet.charAt(r.nextInt(n)); //13
+
+return result;
+}
+ using apache library it can be done in one line import org.apache.commons.lang.RandomStringUtils;
+RandomStringUtils.randomAlphanumeric(64);
+ here is doc http://commons.apache.org/lang/api-2.3/org/apache/commons/lang/RandomStringUtils.html Surprising no-one here has suggested it but: import java.util.UUID
+
+UUID.randomUUID().toString();
+ Easy. Benefit of this is UUIDs are nice and long and guaranteed to be almost impossible to collide. Wikipedia has a good explanation of it: " ...only after generating 1 billion UUIDs every second for the next 100 years, the probability of creating just one duplicate would be about 50%." http://en.wikipedia.org/wiki/Universally_unique_identifier#Random_UUID_probability_of_duplicates The first 4 bits are the version type and 2 for the variant so you get 122 bits of random. So if you want to you can truncate from the end to reduce the size of the UUID. It's not recommended but you still have loads of randomness, enough for your 500k records easy. You can use following code , if your password mandatory contains numbers alphabetic special characters: private static final String NUMBERS = "0123456789";
+private static final String UPPER_ALPHABETS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+private static final String LOWER_ALPHABETS = "abcdefghijklmnopqrstuvwxyz";
+private static final String SPECIALCHARACTERS = "@#$%&*";
+private static final int MINLENGTHOFPASSWORD = 8;
+
+public static String getRandomPassword() {
+    StringBuilder password = new StringBuilder();
+    int j = 0;
+    for (int i = 0; i < MINLENGTHOFPASSWORD; i++) {
+
+        password.append(getRandomPasswordCharacters(j));
+        j++;
+        if (j == 3) {
+            j = 0;
+        }
+    }
+    return password.toString();
+}
+
+private static String getRandomPasswordCharacters(int pos) {
+    Random randomNum = new Random();
+    StringBuilder randomChar = new StringBuilder();
+    switch (pos) {
+        case 0:
+            randomChar.append(NUMBERS.charAt(randomNum.nextInt(NUMBERS.length() - 1)));
+            break;
+        case 1:
+            randomChar.append(UPPER_ALPHABETS.charAt(randomNum.nextInt(UPPER_ALPHABETS.length() - 1)));
+            break;
+        case 2:
+            randomChar.append(SPECIALCHARACTERS.charAt(randomNum.nextInt(SPECIALCHARACTERS.length() - 1)));
+            break;
+        case 3:
+            randomChar.append(LOWER_ALPHABETS.charAt(randomNum.nextInt(LOWER_ALPHABETS.length() - 1)));
+            break;
+    }
+    return randomChar.toString();
+
+}
+ You can use a little math and a Random() object to do this.. public static String RandomAlphaNumericString(int size){
+    String chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    String ret = "";
+    int length = chars.length();
+    for (int i = 0; i < size; i ++){
+        ret += chars.split("")[ (int) (Math.random() * (length - 1)) ];
+    }
+    return ret;
+}
+ public static String getRandomString(int length) 
+{
+   String randomStr = UUID.randomUUID().toString();
+   while(randomStr.length() < length) {
+       randomStr += UUID.randomUUID().toString();
+   }
+   return randomStr.substring(0, length);
+}
+ Lots of use of StringBuilder above. I guess it's easy, but requires a function call per char, growing an array, etc... If using the stringbuilder, a suggestion is to specify the required capacity of the string ie., new StringBuilder(int capacity);
+ Here's a version that doesn't use a StringBuilder or String appending, and no dictionary. public static String randomString(int length)
+{
+    SecureRandom random = new SecureRandom();
+    char[] chars = new char[length];
+    for(int i=0;i<chars.length;i++)
+    {
+        int v = random.nextInt(10 + 26 + 26);
+        char c;
+        if (v < 10)
+        {
+            c = (char)('0' + v);
+        }
+        else if (v < 36)
+        {
+            c = (char)('a' - 10 + v);
+        }
+        else
+        {
+            c = (char)('A' - 36 + v);
+        }
+        chars[i] = c;
+    }
+    return new String(chars);
+}
+    public static String randomSeriesForThreeCharacter() {
+
+    Random r = new Random();
+             String value="";
+                char random_Char ;
+    for(int i=0; i<10;i++)
+             { 
+               random_Char = (char) (48 + r.nextInt(74));
+                value=value+random_char;
+             }
+    return value;
+}
+ You can create a character array which includes all the letters and numbers, then you can randomly select from this char array and create your own string password. char[] chars = new char[62]; // sum of letters and numbers
+
+int i = 0;
+
+    for(char c = 'a'; c <= 'z';c++) { // for letters
+        chars[i++] = c;
+    }
+
+    for(char c = '0'; c <= '9';c++) { // for numbers
+        chars[i++] = c;
+    }
+
+    for(char c = 'A'; c <= 'Z';c++) { // for capital letters
+        chars[i++] = c;
+    }
+
+    int numberOfCodes = 0;
+    String code = "";
+    while (numberOfCodes < 1) {//enter how much you want to generate at one time
+        int numChars = 8; //Enter how many digits you want in your password
+
+        for(i = 0; i < numChars; i++) {
+            char c = chars[(int)(Math.random() * chars.length)];
+            code = code + c;
+        }
+        System.out.println("Code is :" + code);
+    }
+ You can use this simple java function:  public class GenerateRandomString {
+   private static final String ALPHA_NUM =
+           "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+   public static void main(String[] args) {
+      GenerateRandomString grs = new GenerateRandomString();
+      System.out.println(grs.getAlphaNumeric(10));
+      System.out.println(grs.getAlphaNumeric(20));
+   }
+   public String getAlphaNumeric(int len) {
+      StringBuffer sb = new StringBuffer(len);
+      for (int i=0;  i<len;  i++) {
+         int ndx = (int)(Math.random()*ALPHA_NUM.length());
+         sb.append(ALPHA_NUM.charAt(ndx));
+      }
+      return sb.toString();
+   }
+}
+ You can use the UUID class with its getLeastSignificantBits() message to get 64bit of Random data, then convert it to a radix 36 number (i.e. a string consisting of 0-9,A-Z): Long.toString(Math.abs( UUID.randomUUID().getLeastSignificantBits(), 36));
+ This yields a String up to 13 characters long. We use Math.abs() to make sure there isn't a minus sign sneaking in. 1] Change String characters as per as your required. 2] String is immutable. Here StringBuilder.append is more efficient than string concatenation. public static String getRandomString(int length) {
+       final String characters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJLMNOPQRSTUVWXYZ1234567890!@#$%^&*()_+";
+       StringBuilder result = new StringBuilder();
+       while(length > 0) {
+           Random rand = new Random();
+           result.append(characters.charAt(rand.nextInt(characters.length())));
+           length--;
+       }
+       return result.toString();
+    }
+ You can make it the hard way: package gaming;
+
+import java.util.Random;
+
+public class game2 {
+
+public static char c;
+public static Random r = new Random();
+public static int i = r.nextInt(25);
+public static int i2 = r.nextInt(25);
+public static int i3 = r.nextInt(25);
+public static int i4= r.nextInt(25);
+public static int i5 = r.nextInt(25);
+public static int num2 = r.nextInt(9);
+public static int num3= r.nextInt(9);
+public static String s1 = String.valueOf(num2);
+public static String s2 = String.valueOf(num3);
+
+public static void main(String[] args){
+
+
+    System.out.print("The pin is: ");
+    changeToString(i);
+    System.out.print(c);
+    changeToString(i2);
+    System.out.print(c);
+    changeToString(i3);
+    System.out.print(c);
+    changeToString(i4);
+    System.out.print(c);
+    changeToString(i5);
+    System.out.print(c);
+    System.out.print(s1);
+    System.out.print(s2);
+
+}
+
+public static void changeToString(int rand){
+
+    switch (rand){
+
+    case 0:
+
+        c = 'A';
+        break;
+    case 1:
+
+        c = 'B';
+        break;
+    case 2:
+
+        c = 'C';
+        break;
+    case 3:
+
+        c = 'D';
+        break;
+    case 4:
+
+        c = 'E';
+        break;
+    case 5:
+
+        c = 'F';
+        break;
+    case 6:
+
+        c = 'G';
+        break;
+    case 7:
+
+        c = 'H';
+        break;
+    case 8:
+
+        c = 'I';
+        break;
+    case 9:
+
+        c = 'J';
+        break;
+    case 10:
+
+        c = 'K';
+        break;
+    case 11:
+
+        c = 'L';
+        break;
+    case 12:
+
+        c = 'M';
+        break;
+    case 13:
+
+        c = 'N';
+        break;
+    case 14:
+
+        c = 'O';
+        break;
+    case 15:
+
+        c = 'P';
+        break;
+    case 16:
+
+        c = 'Q';
+        break;
+    case 17:
+
+        c = 'R';
+        break;
+    case 18:
+
+        c = 'S';
+        break;
+    case 19:
+
+        c = 'T';
+        break;
+    case 20:
+
+        c = 'U';
+        break;
+    case 21:
+
+        c = 'V';
+        break;
+    case 22:
+
+        c = 'W';
+        break;
+    case 23:
+
+        c = 'X';
+        break;
+    case 24:
+
+        c = 'Y';
+        break;
+    case 25:
+
+        c = 'Z';
+        break;
+
+    }
+
+}
+}
+ /**
+    Generate a random String with maxlength random
+    characters found in the ASCII table between 33
+    and 122 (so it contains every lowercase / uppercase
+    letters, numbers and some others characters
+*/
+public static String GetRandomString(int maxlength)
+{
+    String result = "";
+    int i = 0, n = 0, min = 33, max = 122;
+    while(i < maxlength)
+    {
+        n = (int)(Math.random() * (max - min) + min);
+        if(n >= 33 && n < 123)
+        {
+            result += (char)n;
+            ++i;
+        }
+    }
+    return(result);
+}
+ using Dollar should be simple as: // "0123456789" + "ABCDE...Z"
+String validCharacters = $('0', '9').join() + $('A', 'Z').join();
+
+String randomString(int length) {
+    return $(validCharacters).shuffle().slice(length).toString();
+}
+
+@Test
+public void buildFiveRandomStrings() {
+    for (int i : $(5)) {
+        System.out.println(randomString(12));
+    }
+}
+ it outputs something like that: 
+DKL1SBH9UJWC
+JH7P0IT21EA5
+5DTI72EO6SFU
+HQUMJTEBNF7Y
+1HCR6SKYWGT7

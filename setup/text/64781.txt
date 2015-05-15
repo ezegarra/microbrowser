@@ -1,0 +1,9 @@
+Batch insert using JPA/Toplink oracle jpa toplink What is your measure of "requests/sec"? In other words, what happens for the 31st request? What resource is being blocked? If it is the front-end/servlet/web portion, can you run em.persist() in another thread and return immediately? Also, are you creating transactions each time? Are you creating EntityManagerFactory objects with each request? You should decouple from the JPA interface and use the bare TopLink API. You can probably chuck the objects you're persisting into a UnitOfWork and commit the UnitOfWork on your schedule (sync or async). Note that one of the costs of em.persist() is the implicit clone that happens of the whole object graph. TopLink will work rather better if you uow.registerObject() your two user objects yourself, saving itself the identity tests it has to otherwise do. So you'll end up with: uow=sess.acquireUnitOfWork();
+for (job in batch) {
+ thingyCl=uow.registerObject(new Thingy());
+ user1Cl=uow.registerObject(user1);
+ user2Cl=uow.registerObject(user2);
+ thingyCl.setUsers(user1Cl,user2Cl);
+}
+uow.commit();
+ This is very old school TopLink btw ;) Note that the batch will help a lot, because batch writing and more especially batch writing with parameter binding will kick in which for this simple example will probably have a very large impact on your performance. Other things to look for: your sequencing size. A lot of the time spent writing objects in TopLink is actually spent reading sequencing information from the database, especially with the small defaults (I would probably have several hundred or even more as my sequence size).

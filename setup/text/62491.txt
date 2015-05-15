@@ -1,0 +1,16 @@
+How to create J2ME midlets for Nokia using Eclipse eclipse java-me nokia wtk Here's what's needed to make a simple hello world - Get Eclipse IDE for Java. I used Ganymede. Set it up. Get Sun's Wireless Toolkit. I used 2.5.2. Install it. Get Nokia's SDK (found here), in my case for S40 6230i Edition, and install it choosing the option to integrate with Sun's WTK Follow the instructions at http://www.eclipseme.org/ to download and install Mobile Tools Java (MTJ). I used version 1.7.9. When configuring devices profiles in MTJ (inside Eclipse) use the Nokia device from the WTK folder and NOT from Nokia's folder. Set the WTK root to the main installation folder - for instance c:\WTK2.5.2; Note that the WTK installer creates other folders apparently for backward compatibility. Get Antenna and set its location in MTJ's property page (in Eclipse). Here's an HelloWorld sample to test the configuration. Note: It worked for me on WindowsXP. Also note: This should work for S60 as well. Just replace the S40 SDK in phase 3 with S60's. Unless you need to do something Nokia-specific, I suggest avoiding the Nokia device definitions altogether. Develop for a generic device, then download your application to real, physical devices for final testing. The steps I suggest: Download and install Sun's Wireless Toolkit. Install EclipseME, using the method "installing via a downloaded archive". Configure EclipseME. Choose a generic device, such as the "DefaultColorPhone" to develop on. Create a new project "J2ME Midlet Suite" Right-click on the project, and create a new Midlet "HelloWorld" Enter the code, for example: public HelloWorld() {
+    super();
+    myForm = new Form("Hello World!");
+    myForm.append( new StringItem(null, "Hello, world!"));
+    myForm.addCommand(new Command("Exit", Command.EXIT, 0));
+    myForm.setCommandListener(this);
+}
+protected void startApp() throws MIDletStateChangeException {
+    Display.getDisplay(this).setCurrent(myForm);
+}
+protected void pauseApp() {}
+protected void destroyApp(boolean arg0) throws MIDletStateChangeException {}
+public void commandAction(Command arg0, Displayable arg1) {
+    notifyDestroyed();
+}  
+ The most annoying issue with EclipseME for me was the "broken" debugger, which just wouldn't start. This is covered in docs, but it took me about an hour to find this tip when I first installed EclipseME, and another hour when I returned to JavaME development a year later, so I decided to share this piece of knowledge here, too. If the debugger won't start, open "Java > Debug" section in Eclipse "Preferences" menu, and uncheck "Suspend execution on uncaught exceptions" and "Suspend execution on compilation errors" and increase the "Debugger timeout" near the bottom of the dialog to at least 15000 ms. After that, Eclipse should be able to connect to KVM and run a midlet with a debugger attached.

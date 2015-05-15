@@ -1,0 +1,2 @@
+Reading model objects mapped in Velocity Templates struts velocity You should change the #if line to: #if($car)
+ In the upcoming Velocity 1.6 release, you will be able to do #if( $car == $null ) without error messages. This will allow you to distinguish easily between when $car is null and when it is false. To do that now requires #if( $car && $car != false ), which just isn't as friendly.

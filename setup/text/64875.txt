@@ -1,0 +1,2 @@
+How to replace a character programatically in Oracle 8.x series sql oracle exception unicode Assuming the characters are present in a text field: update TABLE set COLUMN=REPLACE(convert(varchar(5000), COLUMN), 'searchstring', 'replacestring')
+ (note that this will only work on a text field with no more than 5000 characters, for larger text fields increase the number in the query).

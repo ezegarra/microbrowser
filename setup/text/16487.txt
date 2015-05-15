@@ -1,0 +1,139 @@
+How can I deploy artifacts from a Maven build to the SourceForge File Release System? maven-2 sourceforge The Maven SourceForge plug-in does not work with Maven 2. Also I believe this plug-in uses FTP which is no longer supported. It looks like I am going to have to write this myself. https://sourceforge.net/projects/wagon-sf/ I found that CruiseControl can upload releases to SFEE and also works with Maven and Maven2 I'm not able to test this to confirm, but I believe it is possible without writing any plugins. You can deploy to SourceForge using SCP, and the maven-deploy-plugin can be configured to use SCP so it should work. You can also deploy your site to SourceForge via SCP. You would configure the SourceForge server in your settings.xml to use a "combined" username with a comma separator. With these credentials: SourceForge username: foo
+SourceForge user password: secret
+SourceForge project name: bar
+Path: /home/frs/project/P/PR/PROJECT_UNIX_NAME/ 
+    - Substitute your project UNIX name data for /P/PR/PROJECT_UNIX_NAME
+ The server element would look like this: <server>
+  <id>sourceforge</id>
+  <username>foo,bar</username>
+  <password>secret</password>
+</server>
+ And the distributionManagement section in your POM would look like this: <!-- Enabling the use of FTP -->
+<distributionManagement>
+  <repository>
+    <id>ssh-repository</id>
+    <url>
+scpexe://frs.sourceforge.net:/home/frs/project/P/PR/PROJECT_UNIX_NAME</url>
+  </repository>
+</distributionManagement>
+ Finally declare that ssh-external is to be used: <build>
+  <extensions>
+    <extension>
+      <groupId>org.apache.maven.wagon</groupId>
+       <artifactId>wagon-ssh-external</artifactId>
+       <version>1.0-alpha-5</version>
+    </extension>
+  </extensions>
+</build>
+ If this doesn't work, you may be able to use the recommended approach in the site reference above, i.e. create a shell on shell.sourceforge.net with your username and project group: ssh -t <username>,<project name>@shell.sf.net create
+ Then use shell.sourceforge.net (instead of web.sourceforge.net) in your site URL in the diestributionManagement section: <url>scp://shell.sourceforge.net/home/frs/project/P/PR/PROJECT_UNIX_NAME/</url>
+ After trying this a number of times, I finally got it to work -- with sftp not scp. This should work from a unix box (or Mac) -- I'm not sure about sftp clients for Windoze. I am using mvn version 2.2.0 and I don't think I have any special plugins installed. This deploys the various mvn packages to the Files section of my project page. You'll need to change the following in your settings to get it to work: user -- replace with your sourceforce username secret -- replace with your password ormlite -- replace with your project name /o/or/ -- replace with the first char and first 2 chars of your project name In my $HOME/.m2/settings.xml file I have the following for the SF server: <server>
+  <id>sourceforge</id>
+  <password>secret</password>
+  <filePermissions>775</filePermissions>
+  <directoryPermissions>775</directoryPermissions>
+</server>
+ I don't specify the username in the settings.xml file because it needs to be username,project and I want to deploy multiple packages to SF. Then, in my pom.xml file for the ormlite package I have the following: <distributionManagement>
+ <repository>
+  <id>sourceforge</id>
+  <name>SourceForge</name>
+  <url>sftp://user,ormlite@frs.sourceforge.net:/home/frs/project/o/or/ormlite/releases
+  </url>
+ </repository>
+ <snapshotRepository>
+  <id>sourceforge</id>
+  <name>SourceForge</name>
+  <url>sftp://user,ormlite@frs.sourceforge.net:/home/frs/project/o/or/ormlite/snapshots
+  </url>
+ </snapshotRepository>
+</distributionManagement>
+ Obviously the /releases and /snapshots directory suffixes can be changed depending on your file hierarchy. Where timp = user and webmacro = project scp url does not work: scp://timp,webmacro@shell.sourceforge.net:/home/groups/w/we/webmacro/htdocs/maven2/
+ sftp url works:  sftp://timp,webmacro@web.sourceforge.net:/home/groups/w/we/webmacro/htdocs/maven2
+ or for project release artifacts: sftp://timp,webmacro@web.sourceforge.net:/home/frs/project/w/we/webmacro/releases
+ scp will work to shell.sourceforge.net, but you have to create the shell before use with ssh -t timp,webmacro@shell.sourceforge.net create
+ I have uploaded an example to sourceforge.net at: http://sf-mvn-plugins.sourceforge.net/example-1jar-thinlet/ You can check out it via svn - so you can see how to use plugins for upload and download of and to sourceforge.net file system area and web site. The main points to upload are to use sftp: Add this similar code to your pom.xml <distributionManagement>
+                <!-- use the following if you're not using a snapshot version. -->
+                <repository>
+                    <id>sourceforge-sf-mvn-plugins</id>
+                    <name>FRS Area</name>
+                    <uniqueVersion>false</uniqueVersion>
+                    <url>sftp://web.sourceforge.net/home/frs/project/s/sf/sf-mvn-plugins/m2-repo</url>
+                </repository>
+                <site>
+                    <id>sourceforge-sf-mvn-plugins</id>
+                    <name>Web Area</name>
+                    <url>
+                        sftp://web.sourceforge.net/home/groups/s/sf/sf-mvn-plugins/htdocs/${artifactId}
+                    </url>
+                </site>
+</distributionManagement>
+ Add similar code to settings.xml    <server>
+      <id>sourceforge-sf-mvn-plugins-svn</id>
+      <username>tmichel,sf-mvn-plugins</username>
+      <password>secret</password>
+    </server>
+
+    <server>
+      <id>sourceforge-sf-mvn-plugins</id>
+      <username>user,project</username>
+      <password>secret</password>
+    </server>
+ The main point for download is to use the wagon-http-sourceforge maven plugin - please see at: sf-mvn-plugins.sourceforge.net/wagon-http-sourceforge/FAQ.html Please add the following code to your pom.xml     <repositories>
+        <repository>
+            <id>sourceforge-svn</id>
+            <name>SF Maven Plugin SVN Repository</name>
+            <url>http://sf-mvn-plugins.svn.sourceforge.net/svnroot/sf-mvn-plugins/_m2-repo/trunk</url>
+        </repository>
+    </repositories>
+
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>sourceforge-frs</id>
+            <name>SF Maven Plugin Repository</name>
+            <url>http://sourceforge.net/projects/sf-mvn-plugins/files/m2-repo</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <build>
+    <extensions>
+        <extension>
+            <groupId>net.sf.maven.plugins</groupId>
+            <artifactId>wagon-http-sourceforge</artifactId>
+            <version>0.4</version>
+        </extension>
+    </extensions>
+   :
+   </build>
+ This really did not turn out to be that hard. First up I had the mvn site:deploy working following the instructions at this sourceforge site. Basically you start the sourceforge shell with ssh -t user,project@shell.sourceforge.net create
+ That will create the shell at their end with a folder mounted to your project on a path such as (depending on your projects name): /home/groups/c/ch/chex4j/
+ In that shell I on the sourceforge server I created a folder for my repo under the project apache folder "htdocs" with mkdir /home/groups/c/ch/chex4j/htdocs/maven2
+ In my settings.xml I set the username and password to that shell server so that maven can login: <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                      http://maven.apache.org/xsd/settings-1.0.0.xsd/"> 
+  <servers>
+        <server>
+            <id>chex4j.sf.net</id>
+            <username>me,myproject</username>
+            <password>password</password>
+            <filePermissions>775</filePermissions>
+            <directoryPermissions>775</directoryPermissions>
+        </server>
+    </servers>
+</settings>
+ In the pom.xml you just need your distibutionManagement section setup to name the server by ID that you set the password for in your settings file: <distributionManagement>
+    <site>
+        <id>chex4j.sf.net</id>
+        <url>scp://shell.sourceforge.net/home/groups/c/ch/chex4j/htdocs/
+        </url>
+    </site>
+    <repository>
+        <id>chex4j.sf.net</id>
+        <name>SourceForge shell repo</name>
+        <url>scp://shell.sourceforge.net/home/groups/c/ch/chex4j/htdocs/maven2</url>
+    </repository>
+</distributionManagement>
+ There the repository entry is the one for the mvn deploy command and the site entry is for the mvn site:deploy command. Then all I have to do is start the shell connection to bring up the server side then on my local side just run: mvn deploy
+ which uploads the jar, pom and sources and the like onto my sourceforge projects website. If you try to hit the /maven2 folder on your project website sourceforge kindly tell you that directory listing is off by default and how to fix it. To do this on the server shell you create a .htaccess file in your htdocs/maven2 folder containing the following apache options Options +Indexes
+ Then bingo, you have a maven repo which looks like: http://chex4j.sourceforge.net/maven2/net/sf/chex4j/chex4j-core/1.0.0/ Your sf.net shell it shuts down after a number of hours to not hog resources; so you run the "ssh -t ... create" when you want to deploy the site or your build artifacts. You can browse all my maven project code under sourceforge to see my working settings: http://chex4j.svn.sourceforge.net/viewvc/chex4j/branches/1.0.x/chex4j-core/ SCP URL does work. But do not use ":" after server name. MVN tries to read the following test as integer (port number). You do not need to establish tunnels as simbo1905 did.

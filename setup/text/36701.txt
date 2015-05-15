@@ -1,0 +1,127 @@
+Struct like objects in Java design oop struct I don't see the harm if you know that it's always going to be a simple struct and that you're never going to want to attach behaviour to it. If the Java way is the OO way, then yes, creating a class with public fields breaks the principles around information hiding which say that an object should manage its own internal state. (So as I'm not just spouting jargon at you, a benefit of information hiding is that the internal workings of a class are hidden behind an interface - say you wanted to change the mechanism by which your struct class saved one of its fields, you'll probably need to go back and change any classes that use the class...) You also can't take advantage of the support for JavaBean naming compliant classes, which will hurt if you decide to, say, use the class in a JavaServer Page which is written using Expression Language. The JavaWorld article Why Getter and Setter Methods are Evil article also might be of interest to you in thinking about when not to implement accessor and mutator methods. If you're writing a small solution and want to minimise the amount of code involved, the Java way may not be the right way - I guess it always depends on you and the problem you're trying to solve. This is often picked up topic. The drawback of creating public fields in objects is that you have no control over values that are set to it. And sometimes it's better to return a copy of field's object or transform it somehow etc. You can mock such methods in your tests. If you create new class you might not see all possible actions. It's like defensive programming - someday getters and setters may be helpful and it doesn't cost a lot to create/use them. So they are sometimes useful. In practice most fields have simple getters and setters. That's why in Java 7 probably there will be added properties which would behave like normal fields unless you need more control over getting/setting a value to them. There's still discussion over it. One of possible solutions would look like this: public property String foo;   
+a->Foo = b->Foo;
+ You can read more on this on Alex Miller's Java 7 page. Update: It's highly unlikely that property support will be added in Java 7 or perhaps ever. Other JVM languages like Groovy, Scala, etc do support this feature now. - Alex Miller This is a question on Object Oriented Design, not Java the language. It's generally good practice to hide data types within the class and expose only the methods that are part of the class API. If you expose internal data types, you can never change them in the future. If you hide them, your only obligation to the user is the method's return and argument types. By the way, the structure you're giving as an example already exist in the Java base class library as java.awt.Point. It has x and y as public fields, check it out for yourself. If you know what you're doing, and others in your team know about it, then it is okay to have public fields. But you shouldn't rely on it because they can cause headaches as in bugs related to developers using objects as if they were stack allocated structs (java objects are always sent to methods as references and not as copies). Use common sense really. If you have something like public class ScreenCoord2D
+{
+    public int x;
+    public int y;
+}
+ Then there's little point in wrapping them up in getters and setters. You're never going to store an x,y coordinate in whole pixels any other way. Getters and setters will only slow you down. On the other hand, with public class BankAccount
+{
+    public int balance;
+}
+ you might want to change the way a balance is calculated at some point in the future. This should really use getters and setters. It's always preferable to know why you're applying good practice, so that you know when it's ok to bend the rules. Re: aku, izb, John Topley... Watch out for mutability issues... It may seem sensible to omit getters/setters. It actually may be ok in some cases. The real problem with the proposed pattern shown here is mutability. The problem is once you pass an object reference out containing non-final, public fields. Anything else with that reference is free to modify those fields. You no longer have any control over the state of that object. (Think what would happen if Strings were mutable.) It gets bad when that object is an important part of the internal state of another, you've just exposed internal implementation. To prevent this, a copy of the object must be returned instead. This works, but can cause massive GC pressure from tons of single-use copies created. If you have public fields, consider making the class read-only. Add the fields as parameters to the constructor, and mark the fields final. Otherwise make sure you're not exposing internal state, and if you need to construct new instances for a return value, make sure it won't be called excessively. See: "Effective Java" by Joshua Bloch -- Item #13: Favor Immutability. PS: Also keep in mind, all JVMs these days will optimize away the getMethod if possible, resulting in just a single field-read instruction. To address mutability concerns you can declare x and y as final. For example: class Data {
+  public final int x;
+  public final int y;
+  public Data( int x, int y){
+    this.x = x;
+    this.y = y;
+  }
+}
+ Calling code that attempts to write to these fields will get a compile time error of "field x is declared final; cannot be assigned". The client code can then have the 'short-hand' convenience you described in your post public class DataTest {
+    public DataTest() {
+        Data data1 = new Data(1, 5);
+        Data data2 = new Data(2, 4);
+        System.out.println(f(data1));
+        System.out.println(f(data2));
+    }
+
+    public int f(Data d) {
+        return (3 * d.x) / d.y;
+    }
+
+    public static void main(String[] args) {
+        DataTest dataTest = new DataTest();
+    }
+}
+ The problem with using public field access is the same problem as using new instead of a factory method - if you change your mind later, all existing callers are broken. So, from an API evolution point of view, it's usually a good idea to bite the bullet and use getters/setters. One place where I go the other way is when you strongly control access to the class, for example in an inner static class used as an internal data structure. In this case, it might be much clearer to use field access. By the way, on e-bartek's assertion, it is highly unlikely IMO that property support will be added in Java 7. I frequently use this pattern when building private inner classes to simplify my code, but I would not recommend exposing such objects in a public API. In general, the more frequently you can make objects in your public API immutable the better, and it is not possible to construct your 'struct-like' object in an immutable fashion. As an aside, even if I were writing this object as a private inner class I would still provide a constructor to simplify the code to initialize the object. Having to have 3 lines of code to get a usable object when one will do is just messy. You can make a simple class with public fields and no methods in Java, but it is still a class and is still handled syntactically and in terms of memory allocation just like a class. There is no way to genuinely reproduce structs in Java. Sometime I use such class, when I need to return multiple values from a method. Of course, such object is short lived and with very limited visibility, so it should be OK. I have tried this in a few projects, on the theory that getters and setters clutter up the code with semantically meaningless cruft, and that other languages seem to do just fine with convention-based data-hiding or partitioning of responsibilities (e.g. python). As others have noted above, there are 2 problems that you run into, and they're not really fixable: Just about any automated tool in the java world relies on the getter/setter convention. Ditto for, as noted by others, jsp tags, spring configuration, eclipse tools, etc. etc... Fighting against what your tools expect to see is a recipe for long sessions trolling through google trying to find that non-standard way of initiating spring beans. Really not worth the trouble. Once you have your elegantly coded application with hundreds of public variables you will likely find at least one situation where they're insufficient- where you absolutely need immutability, or you need to trigger some event when the variable gets set, or you want to throw an exception on a variable change because it sets an object state to something unpleasant. You're then stuck with the unenviable choices between cluttering up your code with some special method everywhere the variable is directly referenced, having some special access form for 3 out of the 1000 variables in your application. And this is in the best case scenario of working entirely in a self-contained private project. Once you export the whole thing to a publicly accessible library these problems will become even larger. Java is very verbose, and this is a tempting thing to do. Don't do it. There is nothing wrong with that type of code, provided that the author knows they are structs (or data shuttles) instead of objects. Lots of Java developers can't tell the difference between a well-formed object (not just a subclass of java.lang.Object, but a true object in a specific domain) and a pineapple. Ergo,they end up writing structs when they need objects and viceversa. As with most things, there's the general rule and then there are specific circumstances. If you are doing a closed, captured application so that you know how a given object is going to be used, then you can exercise more freedom to favor visibility and/or efficiency. If you're developing a class which is going to be used publicly by others beyond your control, then lean towards the getter/setter model. As with all things, just use common sense. It's often ok to do an initial round with publics and then change them to getter/setters later. It appears that many Java people are not familiar with the Sun Java Coding Guidelines which say it is quite appropriate to use public instance variable when the class is essentially a "Struct", if Java supported "struct" (when there is no behavior). People tend to think getters and setters are the Java way, as if they are at the heart of Java. This is not so. If you follow the Sun Java Coding Guidelines, using public instance variables in appropriate situations, you are actually writing better code than cluttering it with needless getters and setters. Java Code Conventions from 1999 and still unchanged. 10.1 Providing Access to Instance and Class Variables Don't make any instance or class variable public without good reason. Often, instance variables don't need to be explicitly set or gotten-often that happens as a side effect of method calls. One example of appropriate public instance variables is the case where the class is essentially a data structure, with no behavior. *In other words, if you would have used a struct instead of a class (if Java supported struct), then it's appropriate to make the class's instance variables public.* http://www.oracle.com/technetwork/java/javase/documentation/codeconventions-137265.html#177 http://en.wikipedia.org/wiki/Plain_old_data_structure http://docs.oracle.com/javase/1.3/docs/guide/collections/designfaq.html#28 Aspect-oriented programming lets you trap assignments or fetches and attach intercepting logic to them, which I propose is the right way to solve the problem. (The issue of whether they should be public or protected or package-protected is orthogonal.) Thus you start out with unintercepted fields with the right access qualifier. As your program requirements grow you attach logic to perhaps validate, make a copy of the object being returned, etc. The getter/setter philosophy imposes costs on a large number of simple cases where they are not needed. Whether aspect-style is cleaner or not is somewhat qualitative. I would find it easy to see just the variables in a class and view the logic separately. In fact, the raison d'etre for Apect-oriented programming is that many concerns are cross-cutting and compartmentalizing them in the class body itself is not ideal (logging being an example -- if you want to log all gets Java wants you to write a whole bunch of getters and keeping them in sync but AspectJ allows you a one-liner). The issue of IDE is a red-herring. It is not so much the typing as it is the reading and visual pollution that arises from get/sets. Annotations seem similar to aspect-oriented programming at first sight however they require you to exhaustively enumerate pointcuts by attaching annotations, as opposed to a concise wild-card-like pointcut specification in AspectJ. I hope awareness of AspectJ prevents people from prematurely settling on dynamic languages. Here I create a program to input Name and Age of 5 different persons and perform a selection sort (age wise). I used an class which act as a structure (like C programming language) and a main class to perform the complete operation. Hereunder I'm furnishing the code... import java.io.*;
+
+class NameList {
+    String name;
+    int age;
+}
+
+class StructNameAge {
+    public static void main(String [] args) throws IOException {
+
+        NameList nl[]=new NameList[5]; // Create new radix of the structure NameList into 'nl' object
+        NameList temp=new NameList(); // Create a temporary object of the structure
+
+        BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
+
+        /* Enter data into each radix of 'nl' object */
+
+        for(int i=0; i<5; i++) {
+            nl[i]=new NameList(); // Assign the structure into each radix
+
+            System.out.print("Name: ");
+            nl[i].name=br.readLine();
+
+            System.out.print("Age: ");
+            nl[i].age=Integer.parseInt(br.readLine());
+
+            System.out.println();
+        }
+
+        /* Perform the sort (Selection Sort Method) */
+
+        for(int i=0; i<4; i++) {
+            for(int j=i+1; j<5; j++) {
+                if(nl[i].age>nl[j].age) {
+                    temp=nl[i];
+                    nl[i]=nl[j];
+                    nl[j]=temp;
+                }
+            }
+        }
+
+        /* Print each radix stored in 'nl' object */
+
+        for(int i=0; i<5; i++)
+            System.out.println(nl[i].name+" ("+nl[i].age+")");
+    }
+}
+ The above code is Error Free and Tested... Just copy and paste it into your IDE and ... You know and what??? :) A very-very old question, but let me make another short contribution. Java 8 introduced lambda expressions and method references. Lambda expressions can be simple method references and not declare a "true" body. But you cannot "convert" a field into a method reference. Thus stream.mapToInt(SomeData1::x)
+ isn't legal, but stream.mapToInt(SomeData2::getX)
+ is. Dont use public fields Don't use public fields when you really want to wrap the internal behavior of a class. Take java.io.BufferedReader for example. It has the following field: private boolean skipLF = false; // If the next character is a line feed, skip it
+ skipLF is read and written in all read methods. What if an external class running in a separate thread maliciously modified the state of skipLF in the middle of a read? BufferedReader will definitely go haywire. It's OK to use public fields Take this Point class for example: class Point {
+    private int x;
+    private int y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
+    public int getX() {
+        return this.x;
+    }
+
+    public int getY() {
+        return this.y;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+}
+ This would make calculating the distance between two points very painful to write. Point a = new Point(5, 4);
+Point b = new Point(4, 9);
+double distance = Math.sqrt(Math.pow(b.getX() - a.getX(), 2) + Math.pow(b.getY() - a.getY(), 2));
+ The class does not have any behavior other than plain getters and setters. It is acceptable to use public fields when the class represents just a data structure, and does not have, and never will have behavior (thin getters and setters is not considered behavior here). It can be written better this way: class Point {
+    public int x;
+    public int y;
+
+    public Point(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+}
+
+Point a = new Point(5, 4);
+Point b = new Point(4, 9);
+double distance = Math.sqrt(Math.pow(b.x - a.x, 2) + Math.pow(b.y - a.y, 2));
+ Clean! But remember: Not only your class must be absent of behavior, but it should also have no reason to have behavior in the future as well.

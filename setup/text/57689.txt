@@ -1,0 +1,93 @@
+How do I expose data in a JSON format through a web service using Java? web-services json http://www.json.org/java/index.html has what you need. Yup! Check out json-lib Here is a simplified code snippet from my own code that send a set of my domain objects: private String getJsonDocumenent(Object myObj) (
+    String result = "oops";
+    try {
+        JSONArray jsonArray = JSONArray.fromObject(myObj);
+
+        result = jsonArray.toString(2);  //indent = 2
+
+    } catch (net.sf.json.JSONException je) {
+
+        throw je;
+    }
+    return result;
+}
+ We have been using Flexjson for converting Java objects to JSON and have found it very easy to use. http://flexjson.sourceforge.net Here are some examples: public String searchCars() {
+  List<Car> cars = carsService.getCars(manufacturerId);
+  return new JSONSerializer().serialize(cars);
+}
+ It has some cool features such as deepSerialize to send the entire graph and it doesn't break with bi directional relationships. new JSONSerializer().deepSerialize(user);
+ Formatting dates on the server side is often handy too new JSONSerializer().transform(
+  new DateTransformer("dd/MM/yyyy"),"startDate","endDate"
+).serialize(contract);
+ To me, the best Java <-> JSON parser is XStream (yes, I'm really talking about json, not about xml). XStream already deals with circular dependencies and has a simple and powerful api where you could write yours drivers, converters and so on. Kind Regards For RESTful web services in Java, also check out the Restlet API which provides a very powerful and flexible abstraction for REST web services (both server and client, in a container or standalone), and also integrates nicely with Spring and JSON. It might be worth looking into Jersey. Jersey makes it easy to expose restful web services as xml and/or JSON. An example... start with a simple class @XmlType(name = "", propOrder = { "id", "text" })
+@XmlRootElement(name = "blah")
+public class Blah implements Serializable {
+    private Integer id;
+    private String text;
+
+    public Blah(Integer id, String text) {
+        this.id = id;
+        this.text = text;
+    }    
+
+    @XmlElement
+    public Integer getId() { return id; }
+    public void setId(Integer id) { this.id = id; }
+
+    @XmlElement
+    public String getText() { return text; }
+    public void setText(String value) { this.text = value; }
+}
+ Then create a Resource @Path("/blah")
+public class BlahResource {
+    private Set<Blah> blahs = new HashSet<Blah>();
+
+    @Context
+    private UriInfo context;
+
+    public BlahResource() {
+        blahs.add(new Blah(1, "blah the first"));
+        blahs.add(new Blah(2, "blah the second"));
+    }
+
+    @GET
+    @Path("/{id}")
+    @ProduceMime({"application/json", "application/xml"})
+    public Blah getBlah(@PathParam("id") Integer id) {
+        for (Blah blah : blahs) {
+            if (blah.getId().equals(id)) {
+                return blah;
+            }
+        }
+        throw new NotFoundException("not found");
+    }
+}
+ and expose it. There are many ways to do this, such as by using Jersey's ServletContainer. (web.xml) <servlet>
+    <servlet-name>jersey</servlet-name>
+    <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+    <load-on-startup>1</load-on-startup>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>jersey</servlet-name>
+    <url-pattern>/*</url-pattern>
+</servlet-mapping>
+ Thats all you need to do... pop open your browser and browse to http://localhost/blah/1. By default you will see XML output. If you are using FireFox, install TamperData and change your accept header to application/json to see the JSON output. Obviously there is much more to it, but Jersey makes all that stuff quite easy. Good luck! As already mentioned, Jersey (JAX-RS impl) is the framework to use; but for basic mapping of Java objects to/from JSON, Tutorial is good. Unlike many alternatives, it does not use strange XML-compatibility conventions but reads and writes clean JSON that directly maps to and from objects. It also has no problems with null (there is difference between missing entry and one having null), empty Lists or Strings (both are distinct from nulls). Jackson works nicely with Jersey as well, either using JAX-RS provider jar, or even just manually. Similarly it's trivially easy to use with plain old servlets; just get input/output stream, call ObjectMapper.readValue() and .writeValue(), and that's about it. I have been using jaxws-json, for providing JSON format web services. you can check the project https://jax-ws-commons.dev.java.net/json/. it's a nice project, once you get it up, you'll find out how charming it is. I have found google-gson compelling. It converts to JSON and back. http://code.google.com/p/google-gson/ It's very flexible and can handle complexities with objects in a straightforward manner. I love its support for generics. /*
+* we're looking for results in the form
+* {"id":123,"name":thename},{"id":456,"name":theOtherName},...
+*
+* TypeToken is Gson--allows us to tell Gson the data we're dealing with
+* for easier serialization.
+*/
+Type mapType = new TypeToken<List<Map<String, String>>>(){}.getType();
+
+List<Map<String, String>> resultList = new LinkedList<Map<String, String>>();
+
+for (Map.Entry<String, String> pair : sortedMap.entrySet()) {
+    Map<String, String> idNameMap = new HashMap<String, String>();
+    idNameMap.put("id", pair.getKey());
+    idNameMap.put("name", pair.getValue());
+    resultList.add(idNameMap);
+}
+
+return (new Gson()).toJson(resultList, mapType);

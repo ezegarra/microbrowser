@@ -1,0 +1,17 @@
+Checking the results of a Factory in a unit test unit-testing tdd Since I don't know how your factory method looks like, all I can advise right now is to Check to see the object is the correct concrete implementation you were looking for: IMyInterface fromFactory = factory.create(...);  
+Assert.assertTrue(fromFactory instanceof MyInterfaceImpl1);
+ You can check if the factory setup the concrete instances with valid instance variables. if (myNewObject instanceof CorrectClass)
+{
+    /* pass test */
+}
+ update: Don't know why this got marked down, so I'll expand it a bit... public void doTest()
+{
+    MyInterface inst = MyFactory.createAppropriateObject();
+    if (! inst instanceof ExpectedConcreteClass)
+    {
+        /* FAIL */
+    }
+}
+ @cem-catikkas I think it would be more correct to compare the getClass().getName() values. In the case that MyInterfaceImpl1 class is subclassed your test could be broken, as the subclass is instanceof MyInterfaceImpl1. I would rewrite as follow: IMyInterface fromFactory = factory.create(...);  
+Assert.assertEquals(fromFactory.getClass().getName(), MyInterfaceImpl1.class.getName());
+ If you think this could fail in some way (I can't imagine), make the two verifications.

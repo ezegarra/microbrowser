@@ -1,0 +1,45 @@
+How do I load an org.w3c.dom.Document from XML in a string? xml document w3c This works for me in Java 1.5 - I stripped out specific exceptions for readability. import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.DocumentBuilder;
+import org.w3c.dom.Document;
+import java.io.ByteArrayInputStream;
+
+public Document loadXMLFromString(String xml) throws Exception
+{
+    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+
+    factory.setNamespaceAware(true);
+    DocumentBuilder builder = factory.newDocumentBuilder();
+
+    return builder.parse(new ByteArrayInputStream(xml.getBytes()));
+}
+ Whoa there! There's a potentially serious problem with this code, because it ignores the character encoding specified in the String (which is UTF-8 by default). When you call String.getBytes() the platform default encoding is used to encode Unicode characters to bytes. So, the parser may think it's getting UTF-8 data when in fact it's getting EBCDIC or something… not pretty! Instead, use the parse method that takes an InputSource, which can be constructed with a Reader, like this: import java.io.StringReader;
+import org.xml.sax.InputSource;
+â€¦
+        return builder.parse(new InputSource(new StringReader(xml)));
+ It may not seem like a big deal, but ignorance of character encoding issues leads to insidious code rot akin to y2k. Just had a similar problem, except i needed a NodeList and not a Document, here's what I came up with. It's mostly the same solution as before, augmented to get the root element down as a NodeList and using erickson's suggestion of using an InputSource instead for character encoding issues. private String DOC_ROOT="root";
+String xml=getXmlString();
+Document xmlDoc=loadXMLFrom(xml);
+Element template=xmlDoc.getDocumentElement();
+NodeList nodes=xmlDoc.getElementsByTagName(DOC_ROOT);
+
+public static Document loadXMLFrom(String xml) throws Exception {
+    	InputSource is= new InputSource(new StringReader(xml));
+    	DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+    	factory.setNamespaceAware(true);
+    	DocumentBuilder builder = null;
+    	builder = factory.newDocumentBuilder();
+    	Document doc = builder.parse(is);
+    	return doc;
+    }
+ To manipulate XML in Java, I always tend to use the Transformer API: import javax.xml.transform.Source;
+import javax.xml.transform.TransformerException;
+import javax.xml.transform.TransformerFactory;
+import javax.xml.transform.dom.DOMResult;
+import javax.xml.transform.stream.StreamSource;
+
+public static Document loadXMLFrom(String xml) throws TransformerException {
+    Source source = new StreamSource(new StringReader(xml));
+    DOMResult result = new DOMResult();
+    TransformerFactory.newInstance().newTransformer().transform(source , result);
+    return (Document) result.getNode();
+}

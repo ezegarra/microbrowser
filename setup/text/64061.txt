@@ -1,0 +1,1 @@
+What Feed Reader libraries for Java are best? rss feeds Will ROME do? We also use ROME. While the SAX/eventing based FeedParser architecture is interesting it is a dormant project at Apache. The "dormant" at Apache seems to imply NO binary download links and NO active development.

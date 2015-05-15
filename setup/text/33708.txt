@@ -1,0 +1,3 @@
+My (Java/Swing) MouseListener isn't listening, help me figure out why swing The implements mouselistener, mousemotionlistener just allows the displayArea class to listen to some, to be defined, Swing component's mouse events. You have to explicitly define what it should be listening at. So I suppose you could add something like this to the constructor: this.addMouseListener(this);
+this.addMouseMotionListener(this);
+ I don't see anywhere in the code where you call addMouseListener(this) or addMouseMotionListener(this) for the DisplayArea in order for it to subscribe to those events. I don't see any code here to register to the mouse listeners. You have to call addMouseListener(this) and addMouseMotionListener(this) on the DisplayArea.

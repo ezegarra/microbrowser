@@ -1,0 +1,11 @@
+How do I in java add a stacktrace to my debugging printout debugging You should be catching the exception in a try-catch block. e.getStackTrace();
+ That returns StackTraceElement[] that you can then interpret. Also: e.printStackTrace()
+ will...print the stacktrace. You cannot just do an exception.ToString() like in .NET and get everything? Just creating an arbitrary exception does the trick for me: System.out.println("Oops, the bad thing happened");
+new IllegalStateException().printStackTrace();
+ As well as what @jjnguy said, if you don't have an exception, you can also call Thread.getStackTrace(). Thread.dumpStack(); If you want to save the stack trace into a String you can do this; String exception = "";
+for (StackTraceElement element : e.getStackTrace())
+   exception += element.toString() + "\n";
+ Where e is, obviously, an exception. Besides, it sounds very weird to autogenerate an own Exception just to find get a stack trace for a debug. Get Eclipse and use it's debug mode, it's really awesome. If you're using log4j Exception e = new Exception();
+log.error("error here", e);
+ will print the stacktrace to your log. Just because I needed it myself: As inspired by answer http://stackoverflow.com/questions/421280/in-java-how-do-i-find-the-caller-of-a-method-using-stacktrace-or-reflection , you can retrieve the call stack using StackTraceElement[] stackTraceElements = Thread.currentThread().getStackTrace()
+ Then you process and print/log whatever you are interested in. More work than using Thread.dumpStack(), but more flexible.

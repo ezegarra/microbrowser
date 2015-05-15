@@ -1,0 +1,12 @@
+Java: JApplet, How do you embed it in a webpage? html web-applications Use the <applet> tag. For more info: http://java.sun.com/docs/books/tutorial/deployment/applet/html.html Here is an example from sun's website: <applet code="TumbleItem.class" 
+        codebase="examples/"
+        archive="tumbleClasses.jar, tumbleImages.jar"
+        width="600" height="95">
+    <param name="maxwidth" value="120">
+    <param name="nimgs" value="17">
+    <param name="offset" value="-57">
+    <param name="img" value="images/tumble">
+
+Your browser is completely ignoring the &lt;APPLET&gt; tag!
+</applet>
+ Although you didn't say so, just in case you were using JSPs, you also have the option of the jsp:plugin tag?

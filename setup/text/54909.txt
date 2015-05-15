@@ -1,0 +1,33 @@
+How do I clone a generic List in Java? generics clone ArrayList first = new ArrayList ();
+ArrayList copy = (ArrayList) first.clone ();
+ ArrayList newArrayList = (ArrayList) oldArrayList.clone();
+ I find using addAll works fine. ArrayList(String) copy = new ArrayList(String)();
+copy.addAll(original);
+ parentheses are used rather than the generics syntax I think this should work: ArrayList<String> orig = new ArrayList&<String>();
+ArrayList<String> copy = (ArrayList<String>) orig.clone()
+ I think this should do the trick using the Collections API: Note: the copy method runs in linear time. //assume oldList exists and has data in it.
+List<String> newList = new ArrayList<String>();
+Collections.copy(newList, oldList);
+ Why would you want to clone? Creating a new list usually makes more sense. List<String> strs;
+...
+List<String> newStrs = new ArrayList<String>(strs);
+ Job done. Be advised that Object.clone() has some major problems, and its use is discouraged in most cases. Please see Item 11, from "Effective Java" by Joshua Bloch for a complete answer. I believe you can safely use Object.clone() on primitive type arrays, but apart from that you need to be judicious about properly using and overriding clone. You are probably better off defining a copy constructor or a static factory method that explicitly clones the object according to your semantics. just create a new one: new ArrayList<String>(origArrayList) Be very careful when cloning ArrayLists. Cloning in java is shallow. This means that it will only clone the Arraylist itself and not its members. So if you have an ArrayList X1 and clone it into X2 any change in X2 will also manifest in X1 and vice-versa. When you clone you will only generate a new ArrayList with pointers to the same elements in the original. I am not a java professional, but I have the same problem and I tried to solve by this method. (It suppose that T has a copy constructor).  public static <T extends Object> List<T> clone(List<T> list) {
+      try {
+           List<T> c = list.getClass().newInstance();
+           for(T t: list) {
+             T copy = (T) t.getClass().getDeclaredConstructor(t.getclass()).newInstance(t);
+             c.add(copy);
+           }
+           return c;
+      } catch(Exception e) {
+           throw new RuntimeException("List cloning unsupported",e);
+      }
+}
+ This is the code I use for that: ArrayList copy = new ArrayList (original.size);
+Collections.copy(copy, original);
+ Hope is usefull for you My function to clone a List with type: public static <T extends Object> List<T> cloneList(List<T> list) {
+    return ((List<T>) ((ArrayList<T>) list).clone());
+}
+ To clone a generic interface like java.util.List you will just need to cast it. here you are an example: List list = new ArrayList();
+List list2 = ((List) ( (ArrayList) list).clone());
+ It is a bit tricky, but it works, if you are tied to return a List interface, so anyone after you, can implement your list whatever he wants. I know this is close to the final answer, but it answer how to do all of that while you are working with List not ArrayList

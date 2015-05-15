@@ -1,0 +1,80 @@
+add values to enum c# .net You can't inherit from/extend an enum, you can use attributes to declare a description. If you're looking for an integer value, that's built-in. Hmmm - as far as I know, this can't be done - enumerations are written at design-time and are used as a convenience to the programmer. I'm pretty sure that when the code is compiled, the equivalent values will be substituted for the names in your enumeration, thereby removing the concept of an enumeration and (therefore) the ability to extend it. Adding enums is a fairly common thing to do if you go back to the source code and edit, any other way (inheritance or reflection, if either is possible) is likely to come back and hit you when you get an upgrade of the library and they have introduced the same enum name or the same enum value - I have seen plenty of lowlevel code where the integer number matches to the binary encoding, where you would run into problems Ideally code referencing enums should be written as equals only (or switches), and try to be future proof by not expecting the enum set to be const You can use .NET reflection to retrieve the labels and values from an existing enum at run-time (Enum.GetNames() and Enum.GetValues() are the two specific methods you would use) and then use code injection to create a new one with those elements plus some new ones. This seems somewhat analagous to "inheriting from an existing enum". The reason you can't extend Enums is because it would lead to problems with polymorphism. Say you have an enum MyEnum with values A, B, and C , and extend it with value D as MyExtEnum. Suppose a method expects a myEnum value somewhere, for instance as a parameter. It should be legal to supply a MyExtEnum value, because it's a subtype, but now what are you going to do when it turns out the value is D? To eliminate this problem, extending enums is illegal When built-in enums aren't enough, you can do it the old fashion way and craft your own. For example, if you wanted to add an additional property, for example, a description field, you could do it as follows: public class Action {
+    public string Name {get; private set;}
+    public string Description {get; private set;}
+
+    private Action(string name, string description) {
+        Name = name;
+        Description = description;
+    }
+
+    public static Action DoIt = new Action("Do it", "This does things");
+    public static Action StopIt = new Action("Stop It", "This stops things");
+}
+ You can then treat it like an enum like so: public void ProcessAction(Action a) {
+    Console.WriteLine("Performing action: " + a.Name)
+    if (a == Action.DoIt) {
+       // ... and so on
+    }
+}
+ The trick is to make sure that the constructor is private (or protected if you want to inherit), and that your instances are static. If you mean extends in the Base class sense, then in Java... no. But you can extend an enum value to have properties and methods if that's what you mean. For example, the following uses a Bracket enum: class Person {
+    enum Bracket {
+        Low(0, 12000),
+        Middle(12000, 60000),
+        Upper(60000, 100000);
+
+        private final int low;
+        private final int high;
+        Brackets(int low, int high) {
+            this.low = low;
+            this.high = high;
+        }
+
+        public int getLow() {
+            return low;
+        }
+
+        public int getHigh() {
+            return high;
+        }
+
+        public boolean isWithin(int value) {
+           return value >= low && value <= high;
+        }
+
+        public String toString() {
+            return "Bracket " + low + " to " + high;
+        }
+    }
+
+    private Bracket bracket;
+    private String name;
+
+    public Person(String name, Bracket bracket) {
+        this.bracket = bracket;
+        this.name = name;
+    }
+
+    public String toString() {
+        return name + " in " + bracket;
+    }        
+}
+ Enums are supposed to represent the enumeration of all possible values, so extending rather does go against the idea. However, what you can do in Java (and presumably C++0x) is have an interface instead of a enum class. Then put you standard values in an enum that implements the feature. Obviously you don't get to use java.util.EnumSet and the like. This is the approach taken in "more NIO features", which should be in JDK7. public interface Result {
+    String name();
+    String toString();
+}
+public enum StandardResults implements Result {
+    TRUE, FALSE
+}
+
+
+public enum WTFResults implements Result {
+    FILE_NOT_FOUND
+}
+ Saw a post regarding this for Java a while back, check out http://www.javaspecialists.eu/archive/Issue161.html . You're going the wrong way: a subclass of an enum would have fewer entries. In pseudocode, think: enum Animal { Mosquito, Dog, Cat };
+enum Mammal : Animal { Dog, Cat };  // (not valid C#)
+ Any method that can accept an Animal should be able to accept a Mammal, but not the other way around. Subclassing is for making something more specific, not more general. That's why "object" is the root of the class hierarchy. Likewise, if enums were inheritable, then a hypothetical root of the enum hierarchy would have every possible symbol. But no, C#/Java don't allow sub-enums, AFAICT, though it would be really useful at times. It's probably because they chose to implement Enums as ints (like C) instead of interned symbols (like Lisp). (Above, what does (Animal)1 represent, and what does (Mammal)1 represent, and are they the same value?) You could write your own enum-like class (with a different name) that provided this, though. With C# attributes it might even look kind of nice. I didn't see anyone else mention this but the ordinal value of an enum is important. For example, with grails when you save an enum to the database it uses the ordinal value. If you could somehow extend an enum, what would be the ordinal values of your extensions? If you extended it in multiple places how could you preserve some kind of order to these ordinals? Chaos/instability in the ordinal values would be a bad thing which is probably another reason why the language designers have not touched this. Another difficulty if you were the language designer, how can you preserve the functionality of the values() method which is supposed to return all of the enum values. What would you invoke this on and how would it gather up all of the values? I would like to be able to add values to C# enumerations which are combinations of existing values. For example (this is what I want to do): AnchorStyles is defined as public enum AnchorStyles { None = 0, Top = 1, Bottom = 2, Left = 4, Right = 8, } and I would like to add an AnchorStyles.BottomRight = Right + Bottom so instead of saying my_ctrl.Anchor = AnchorStyles.Right | AnchorStyles.Bottom;
+ I can just say my_ctrl.Anchor = AnchorStyles.BottomRight;
+ This doesn't cause any of the problems that have been mentioned above, so it would be nice if it was possible. As far as java is concerned it is not allowed because adding elements to an enum would effectively create a super class rather than a sub class. Consider:  enum Person (JOHN SAM}   
+ enum Student extends First {HARVEY ROSS}
+ A general use case of Polymorphism would be  Person person = Student.ROSS;   //not legal
+ which is clearly wrong.

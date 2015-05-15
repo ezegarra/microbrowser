@@ -1,0 +1,22 @@
+How to reference javadocs to dependencies in Maven's eclipse plugin when javadoc not attached to dependency eclipse maven-2 Would having the sources for the dependency help? You can tell the eclipse plugin to download those (and refer to them in the .classpath) with -DdownloadSources=true From the Maven Eclipse Plugin FAQ The following example shows how to do this in the command-line: mvn eclipse:eclipse -DdownloadSources=true  -DdownloadJavadocs=true
+ or in your pom.xml: <project>
+  [...]
+  <build>
+    [...]
+    <plugins>
+      [...]
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-eclipse-plugin</artifactId>
+        <configuration>
+          <downloadSources>true</downloadSources>
+          <downloadJavadocs>true</downloadJavadocs>
+        </configuration>
+      </plugin>
+      [...]
+    </plugins>
+    [...]
+  </build>
+  [...]
+</project>
+ You might consider just avoiding this problem completely by installing the javadoc jar into your local repository manually using the install-file goal and passing in the -Dclassifier=javadoc option. Once you do that the .classpath that mvn generates should be correct. If you use a remote repo as a proxy to central you could also deploy the javadocs to that repo and then everyone else who uses that proxy will now get the javadocs automatically as well. I'm running STS 2.8.1 which is basically eclipse + spring tools; In an existing maven project, I right clicked on the project -> maven -> Download Sources and Download JavaDocs As mentioned in How to download sources and javadoc artifacts with Maven Eclipse plugin from other repository?, you can do this: In Eclipse go to Windows-> Preferences-> Maven. Check the box that says "Download Artifact Javadoc." That has worked well for me.

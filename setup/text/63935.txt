@@ -1,0 +1,1 @@
+Can I submit a Struts form that references POJO (i.e. not just String or boolean) fields? jsp struts You can, as long as the fields follow the JavaBean conventions and the setter takes something Struts can understand. So Thing needs getThingName() and setThingName(String).

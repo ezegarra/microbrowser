@@ -1,0 +1,107 @@
+How to get a list of current open windows/process with Java? process The only way I can think of doing it is by invoking a command line application that does the job for you and then screenscraping the output (like Linux's ps and Window's tasklist). Unfortunately, that'll mean you'll have to write some parsing routines to read the data from both. Process proc = Runtime.getRuntime().exec ("tasklist.exe");
+InputStream procOutput = proc.getInputStream ();
+if (0 == proc.waitFor ()) {
+    // TODO scan the procOutput for your data
+}
+ This is another aproach to parse the the process list from the command "ps -e":     try {
+        String line;
+        Process p = Runtime.getRuntime().exec("ps -e");
+        BufferedReader input =
+                new BufferedReader(new InputStreamReader(p.getInputStream()));
+        while ((line = input.readLine()) != null) {
+            System.out.println(line); //<-- Parse data here.
+        }
+        input.close();
+    } catch (Exception err) {
+        err.printStackTrace();
+    }
+ If you are using Windows, then you sould change the line: "Process p = Runtime.getRun..." etc... (3rd line), for one that looks like this:     Process p = Runtime.getRuntime().exec
+        (System.getenv("windir") +"\\system32\\"+"tasklist.exe");
+ Hope the info helps! There is no platform-neutral way of doing this. In the 1.6 release of Java, a "Desktop" class was added the allows portable ways of browsing, editing, mailing, opening, and printing URI's. It is possible this class may someday be extended to support processes, but I doubt it. If you are only curious in Java processes, you can use the java.lang.management api for getting thread/memory information on the JVM. YAJSW (Yet Another Java Service Wrapper) looks like it has JNA-based implementations of its org.rzo.yajsw.os.TaskList interface for win32, linux, bsd and solaris and is under an LGPL license. I haven't tried calling this code directly, but YAJSW works really well when I've used it in the past, so you shouldn't have too many worries. On Windows there is an alternative using JNA: import com.sun.jna.Native;
+import com.sun.jna.platform.win32.*;
+import com.sun.jna.win32.W32APIOptions;
+
+public class ProcessList {
+
+    public static void main(String[] args) {
+        WinNT winNT = (WinNT) Native.loadLibrary(WinNT.class, W32APIOptions.UNICODE_OPTIONS);
+
+        WinNT.HANDLE snapshot = winNT.CreateToolhelp32Snapshot(Tlhelp32.TH32CS_SNAPPROCESS, new WinDef.DWORD(0));
+
+        Tlhelp32.PROCESSENTRY32.ByReference processEntry = new Tlhelp32.PROCESSENTRY32.ByReference();
+
+        while (winNT.Process32Next(snapshot, processEntry)) {
+            System.out.println(processEntry.th32ProcessID + "\t" + Native.toString(processEntry.szExeFile));
+        }
+
+        winNT.CloseHandle(snapshot);
+    }
+}
+ Using code to parse "ps" for linux and "tasklist" for windows are your best options, until something more general comes along. For windows, you can reference: http://www.rgagnon.com/javadetails/java-0593.html package com.vipul;
+
+import java.applet.Applet;
+import java.awt.Checkbox;
+import java.awt.Choice;
+import java.awt.Font;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+
+public class BatchExecuteService extends Applet {
+    public Choice choice;
+
+    public void init() 
+    {
+        setFont(new Font("Helvetica", Font.BOLD, 36));
+        choice = new Choice();
+    }
+
+    public static void main(String[] args) {
+        BatchExecuteService batchExecuteService = new BatchExecuteService();
+        batchExecuteService.run();
+    }
+
+    List<String> processList = new ArrayList<String>();
+
+    public void run() {
+        try {
+            Runtime runtime = Runtime.getRuntime();
+            Process process = runtime.exec("D:\\server.bat");
+            process.getOutputStream().close();
+            InputStream inputStream = process.getInputStream();
+            InputStreamReader inputstreamreader = new InputStreamReader(
+                    inputStream);
+            BufferedReader bufferedrReader = new BufferedReader(
+                    inputstreamreader);
+            BufferedReader bufferedrReader1 = new BufferedReader(
+                    inputstreamreader);
+
+            String strLine = "";
+            String x[]=new String[100];
+            int i=0;
+            int t=0;
+            while ((strLine = bufferedrReader.readLine()) != null) 
+            {
+        //      System.out.println(strLine);
+                String[] a=strLine.split(",");
+                x[i++]=a[0];
+            }
+    //      System.out.println("Length : "+i);
+
+            for(int j=2;j<i;j++)
+            {
+                System.out.println(x[j]);
+            }
+        }
+        catch (IOException ioException) 
+        {
+            ioException.printStackTrace();
+        }
+
+    }
+}
+    You can create batch file like 
+ TASKLIST /v /FI "STATUS eq running" /FO "CSV" /FI "Username eq LHPL002\soft" /FI "MEMUSAGE gt 10000" /FI "Windowtitle ne N/A" /NH

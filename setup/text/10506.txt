@@ -1,0 +1,3 @@
+Weird DB2 issue with DBUnit db2 dbunit Well, I think I fixed it by doing the following: db2stop force
+db2start
+ At least, things seem to be working now..... In my case it was an expired DB/2 license. You can see your licenses by issuing db2licm -l If you have a license file you can install it by, for example: db2licm -a db2ese.lic See also: http://publib.boulder.ibm.com/infocenter/tivihelp/v2r1/index.jsp?topic=/com.ibm.IBMDS.doc/pdguide10.htm

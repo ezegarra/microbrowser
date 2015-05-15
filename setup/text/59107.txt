@@ -1,0 +1,32 @@
+Can I convert the following code to use generics? generics comparison Change it to: protected static <T extends Comparable<T>> int nullCompare(T o1, T o2) {
+ You need that because Comparable is itself a generic type. Here's an odd case: static class A {
+    ...
+}
+
+static class B extends A implements Comparable<A> {
+    public int compareTo(A o) {
+        return ...;
+    }
+}
+ Luckily code like the one above is rare, but nullCompare() will not support comparison of Bs unless it is stated that Comparable may apply to T or any superclass thereof: protected static <T extends Comparable<? super T>> int nullCompare(T o1, T o2) {
+ Even though most people will never benefit from the above tweak, it may come in handy when designing APIs for exported libraries. I'm not sure that genericizing this method makes sense. Currently the method works on any kind of Comparable; if you genericize it you will have to implement it (with exactly the same code) multiple times. Sometimes it is possible to compare two objects that don't have a common ancestor, and any generic version won't allow this. By adding generics you won't add any safety to the code; any problems of safety will occur in the call to compareTo. What I would suggest is simply suppressing the warning. It's not really warning you about anything useful. Cannot edit so I have to post my answer. You need to declare nested type parameter since Comparable is generic. protected static <T extends Comparable<? super T>> int nullCompare(T o1, T o2) {
+ Please note that Comparable< ? super T >, which makes more flexible. You will see the same method definition on Collections.sort public static <T extends Comparable<? super T>> void sort(List<T> list) {
+ To make it even more general, you could even allow it to work for two different types. =P   /**
+   * Compare two Comparables, treat nulls as -infinity.
+   * @param o1
+   * @param o2
+   * @return -1 if o1&lt;o2, 0 if o1==o2, 1 if o1&gt;o2
+   */
+  protected static <T> int nullCompare(Comparable<? super T> o1, T o2) {
+    if (o1 == null) {
+      if (o2 == null) {
+        return 0;
+      } else {
+        return -1;
+      }
+    } else if (o2 == null) {
+      return 1;
+    } else {
+      return o1.compareTo(o2);
+    }
+  }

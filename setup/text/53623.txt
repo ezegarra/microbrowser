@@ -1,0 +1,62 @@
+How to get whois information of a domain name in my program? c# whois domain-name This might help: Whois search using C# I think, the easiest way is a socket connection to a whois server on port 43. Send the domainname followed by a newline and read the response. Here's the Java solution, which just opens up a shell and runs whois: import java.io.*;
+import java.util.*;
+
+public class ExecTest2 {
+    public static void main(String[] args) throws IOException {
+        Process result = Runtime.getRuntime().exec("whois stackoverflow.com");
+
+        BufferedReader output = new BufferedReader(new InputStreamReader(result.getInputStream()));
+        StringBuffer outputSB = new StringBuffer(40000);
+        String s = null;
+
+        while ((s = output.readLine()) != null) {
+            outputSB.append(s + "\n");
+            System.out.println(s);
+        }
+
+        String whoisStr = output.toString();
+    }
+}
+ Thomas' answer will only work if you know which "whois" server to connect to. There are many different ways of finding that out, but none (AFAIK) that works uniformly for every domain registry. Some domain names support an SRV record for the _nicname._tcp service in the DNS, but there are issues with that because there's no accepted standard yet on how to prevent a subdomain from serving up SRV records which override those of the official registry (see http://tools.ietf.org/html/draft-sanz-whois-srv-00). For many TLDs it's possible to send your query to <tld>.whois-servers.net. This actually works quite well, but beware that it won't work in all cases where there are officially delegated second level domains. For example in .uk there are several official sub-domains, but only some of them are run by the .uk registry and the others have their own WHOIS services and those aren't in the whois-servers.net database. Confusingly there are also "unofficial" registries, such as .uk.com, which are in the whois-servers.net database. p.s. the official End-Of-Line delimiter in WHOIS, as with most IETF protocols is CRLF, not just LF. I found some web services that offer this information. This one is free and worked great for me. http://www.webservicex.net/whois.asmx?op=GetWhoIS I found a perfect C# example here. It's 11 lines of code to copy and paste straight into your own application. /// <summary>
+/// Gets the whois information.
+/// </summary>
+/// <param name="whoisServer">The whois server.</param>
+/// <param name="url">The URL.</param>
+/// <returns></returns>
+private string GetWhoisInformation(string whoisServer, string url)
+{
+    StringBuilder stringBuilderResult = new StringBuilder();
+    TcpClient tcpClinetWhois = new TcpClient(whoisServer, 43);
+    NetworkStream networkStreamWhois = tcpClinetWhois.GetStream();
+    BufferedStream bufferedStreamWhois = new BufferedStream(networkStreamWhois);
+    StreamWriter streamWriter = new StreamWriter(bufferedStreamWhois);
+
+    streamWriter.WriteLine(url);
+    streamWriter.Flush();
+
+    StreamReader streamReaderReceive = new StreamReader(bufferedStreamWhois);
+
+    while (!streamReaderReceive.EndOfStream)
+        stringBuilderResult.AppendLine(streamReaderReceive.ReadLine());
+
+    return stringBuilderResult.ToString();
+}
+ I found a perfect C# example here. It's 11 lines of code to copy and paste straight into your own application. BUT FIRST you should add some using statements to ensure that the dispose methods are properly called to prevent memory leaks: StringBuilder stringBuilderResult = new StringBuilder();
+using(TcpClient tcpClinetWhois = new TcpClient(whoIsServer, 43))
+{
+   using(NetworkStream networkStreamWhois = tcpClinetWhois.GetStream())
+   {
+      using(BufferedStream bufferedStreamWhois = new BufferedStream(networkStreamWhois))
+      {
+         using(StreamWriter streamWriter = new StreamWriter(bufferedStreamWhois))
+         {
+            streamWriter.WriteLine(url);
+            streamWriter.Flush();
+            using (StreamReader streamReaderReceive = new StreamReader(bufferedStreamWhois))
+            {
+               while (!streamReaderReceive.EndOfStream) stringBuilderResult.AppendLine(streamReaderReceive.ReadLine());
+            }
+         }
+      }
+   }
+}

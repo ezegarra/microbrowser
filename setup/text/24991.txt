@@ -1,0 +1,20 @@
+Why can't I explicitly pass the type argument to a generic Java method? generics syntax It was quite some time since I dug into those parts of Java, but... Why you can't do it was probably a design choice by the language developers. Still, due to the type erasure employed by Java, the generics information gets dropped at compile time anyway, so in your example it would create exactly the same byte code whether you had the type parameter or not. You can, if you pass in the type as a method parameter. static <T> List<T> createEmptyList( Class<T> type ) {
+  return new ArrayList<T>();
+}
+
+@Test
+public void createStringList() {
+  List<String> stringList = createEmptyList( String.class );
+}
+ Methods cannot be genericised in the same way that a type can, so the only option for a method with a dynamically-typed generic return type -- phew that's a mouthful :-) -- is to pass in the type as an argument. For a truly excellent FAQ on Java generics, see Angelika Langer's generics FAQ. . . Follow-up: It wouldn't make sense in this context to use the array argument as in Collection.toArray( T[] ). The only reason an array is used there is because the same (pre-allocated) array is used to contain the results (if the array is large enough to fit them all in). This saves on allocating a new array at run-time all the time. However, for the purposes of education, if you did want to use the array typing, the syntax is very similar: static <T> List<T> createEmptyList( T[] array ) {
+  return new ArrayList<T>();
+}
+
+@Test
+public void testThing() {
+  List<Integer> integerList = createEmptyList( new Integer[ 1 ] );
+}
+ @pauldoo Yes, you are quite right. It is one of the weaknesses with the java generics imho. I response to Cheekysoft I'd like to propose to also look at how it is done by the Java people themselves, such as T[] AbstractCollection#toArray(T[] a). I think Cheekysofts version is superior, but the Java one has the advantage of familiarity. Edit: Added link. Re-edit: Found a bug on SO :) Follow-up on Cheekysoft: Well, as it is a list of some type that should be returned the corresponding example should look something like: static <T> List<T> createEmptyList( List<T> a ) {
+  return new ArrayList<T>();
+}
+ But yes, passing the class object is clearly the better one. My only argument is that of familiarity, and in this exact instance it isn't worth much (in fact it is bad). When the java compiler cannot infer the parameter type by itself for a static method, you can always pass it using the full qualified method name: Class . < Type > method(); Object list = Collections.<String> emptyList();

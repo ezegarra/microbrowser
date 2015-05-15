@@ -1,0 +1,24 @@
+Accessing post variables using Java Servlets http servlets Your HttpServletRequest object has a getParameter(String paramName) method that can be used to get parameter values. http://java.sun.com/javaee/5/docs/api/javax/servlet/ServletRequest.html#getParameter(java.lang.String) POST variables should be accessible via the request object: HttpRequest.getParameterMap(). The exception is if the form is sending multipart MIME data (the FORM has enctype="multipart/form-data"). In that case, you need to parse the byte stream with a MIME parser. You can write your own or use an existing one like the Apache Commons File Upload API. Here's a simple example. I didn't get fancy with the html or the servlet, but you should get the idea. I hope this helps you out. <html>
+<body>
+<form method="post" action="/myServlet">
+<input type="text" name="username" />
+<input type="password" name="password" />
+<input type="submit" />
+</form>
+</body>
+</html>
+ Now for the Servlet import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
+public class MyServlet extends HttpServlet {
+  public void doPost(HttpServletRequest request,
+                    HttpServletResponse response)
+      throws ServletException, IOException {
+
+    String userName = request.getParameter("username");
+    String password = request.getParameter("password");
+    ....
+    ....
+  }
+}

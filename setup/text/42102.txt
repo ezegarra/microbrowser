@@ -1,0 +1,30 @@
+Using different classloaders for different JUnit tests? unit-testing junit singleton When I run into these sort of situations I prefer to use what is a bit of a hack. I might instead expose a protected method such as reinitialize(), then invoke this from the test to effectively set the factory back to its initial state. This method only exists for the test cases, and I document it as such. It is a bit of a hack, but it's a lot easier than other options and you won't need a 3rd party lib to do it (though if you prefer a cleaner solution, there probably are some kind of 3rd party tools out there you could use). You can use Reflection to set myClassImpl by calling instantiateMyClass() again. Take a look at this answer to see example patterns for playing around with private methods and variables. Singletons lead to a whole world of hurt. Avoid singletons and your code becomes much easier to test and just all-round nicer. This question might be old but since this was the nearest answer I found when I had this problem I though I'd describe my solution. Using Junit4 Split your tests up so that there is one test method per class (this solution only changes classloaders between classes, not between methods as the parent runner gathers all the methods once per class) Add the @RunWith(SeparateClassloaderTestRunner.class) annotation to your test classes. Create the SeparateClassloaderTestRunner to look like this: public class SeparateClassloaderTestRunner extends BlockJUnit4ClassRunner {
+
+    public SeparateClassloaderTestRunner(Class<?> clazz) throws InitializationError {
+        super(getFromTestClassloader(clazz));
+    }
+
+    private static Class<?> getFromTestClassloader(Class<?> clazz) throws InitializationError {
+        try {
+            ClassLoader testClassLoader = new TestClassLoader();
+            return Class.forName(clazz.getName(), true, testClassLoader);
+        } catch (ClassNotFoundException e) {
+            throw new InitializationError(e);
+        }
+    }
+
+    public static class TestClassLoader extends URLClassLoader {
+        public TestClassLoader() {
+            super(((URLClassLoader)getSystemClassLoader()).getURLs());
+        }
+
+        @Override
+        public Class<?> loadClass(String name) throws ClassNotFoundException {
+            if (name.startsWith("org.mypackages.")) {
+                return super.findClass(name);
+            }
+            return super.loadClass(name);
+        }
+    }
+}
+ Note I had to do this to test code running in a legacy framework which I couldn't change. Given the choice I'd reduce the use of statics and/or put test hooks in to allow the system to be reset. It may not be pretty but it allows me to test an awful lot of code that would be difficult otherwise. Also this solution breaks anything else that relies on classloading tricks such as mokito. If executing Junit via the Ant task you can set fork=true to execute every class of tests in it's own JVM. Also put each test method in its own class and they will each load and initialise their own version of MyClass. It's extreme but very effective.

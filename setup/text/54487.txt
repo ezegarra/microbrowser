@@ -1,0 +1,7 @@
+Conditional Number Formatting In Java java1.4 If you use DecimalFormat and specify # in the pattern it only displays the value if it is not zero. See my question How do I format a number in java? Sample Code  DecimalFormat format = new DecimalFormat("###.##");
+
+    double[] doubles = {123.45, 99.0, 23.2, 45.0};
+    for(int i=0;i<doubles.length;i++){
+        System.out.println(format.format(doubles[i]));
+    }
+ Check out the DecimalFormat class, e.g. new DecimalFormat("0.##").format(99.0) will return "99". new Formatter().format( "%f", myFloat )

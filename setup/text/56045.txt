@@ -1,0 +1,8 @@
+Stuts2 Tiles Tomcat suspected of changing UTF-8 to? utf-8 internationalization struts2 tiles Try setting the lang attribute on the <html/> element. HTML example: 
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja"> 
+ XHTML example: 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja"> 
+ You could try something like this. It's taken from sun's page on Character Sets and Encodings. I think this has to be the very first line in your jsp. <%@ page contentType="text/html; charset=UTF-8" %>
+ OMG - it turns out that the cause was a total WTF? all our tile responses were being served by a homegrown servlet that was ignoring the <%@ page contentType="text/html; charset=UTF-8" %> directive (and who know what else). TilesDispatchExtensionServlet : bloody architecture astronauts, i shake my fist at ye. You need to use a filter. See: http://wiki.apache.org/tomcat/Tomcat/UTF-8

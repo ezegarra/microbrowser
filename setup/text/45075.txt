@@ -1,0 +1,43 @@
+Java: Flash a window to grab user's attention user-interface Well, there are a few minor improvements we could make. ;) I would use a Timer to make sure callers don't have to wait for the method to return. And preventing more than one flashing operation at a time on a given window would be nice too. import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.ConcurrentHashMap;
+import javax.swing.JFrame;
+
+public class WindowFlasher {
+
+    private final Timer timer = new Timer();
+    private final Map<JFrame, TimerTask> flashing
+                              = new ConcurrentHashMap<JFrame, TimerTask>();
+
+    public void flashWindow(final JFrame window,
+                            final long period,
+                            final int blinks) {
+        TimerTask newTask = new TimerTask() {
+            private int remaining = blinks * 2;
+
+            @Override
+            public void run() {
+                if (remaining-- > 0)
+                    window.setVisible(!window.isVisible());
+                else {
+                    window.setVisible(true);
+                    cancel();
+                }
+            }
+
+            @Override
+            public boolean cancel() {
+                flashing.remove(this);
+                return super.cancel();
+            }
+        };
+        TimerTask oldTask = flashing.put(window, newTask);
+
+        // if the window is already flashing, cancel the old task
+        if (oldTask != null)
+            oldTask.cancel();
+        timer.schedule(newTask, 0, period);
+    }
+}
+ Please don't vote up Professor Internet's answer -- he posted a few times with fake/misleading information. That one just seems to have slipped through the cracks. It is certainly not industry standard. There are two common ways to do this: use JNI to set urgency hints on the taskbar's window, and create a notification icon/message. I prefer the second way, since it's cross-platform and less annoying. See documentation on the TrayIcon class, particularly the displayMessage() method. The following links may be of interest: New System Tray Functionality in Java SE 6 Java Programming - Iconified window blinking TrayIcon for earlier versions of Java

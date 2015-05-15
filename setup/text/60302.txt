@@ -1,0 +1,46 @@
+Starting a process with inherited stdin/stdout/stderr in Java 6 io processes pipes You will need to copy the Process out, err, and input streams to the System versions. The easiest way to do that is using the IOUtils class from the Commons IO package. The copy method looks to be what you need. The copy method invocations will need to be in separate threads. Here is the basic code: // Assume you already have a processBuilder all configured and ready to go
+final Process process = processBuilder.start();
+new Thread(new Runnable() {public void run() {
+  IOUtils.copy(process.getOutputStream(), System.out);
+} } ).start();
+new Thread(new Runnable() {public void run() {
+  IOUtils.copy(process.getErrorStream(), System.err);
+} } ).start();
+new Thread(new Runnable() {public void run() {
+  IOUtils.copy(System.in, process.getInputStream());
+} } ).start();
+ A variation on John's answer that compiles and doesn't require you to use Commons IO: private static void pipeOutput(Process process) {
+    pipe(process.getErrorStream(), System.err);
+    pipe(process.getInputStream(), System.out);
+}
+
+private static void pipe(final InputStream src, final PrintStream dest) {
+    new Thread(new Runnable() {
+        public void run() {
+            try {
+                byte[] buffer = new byte[1024];
+                for (int n = 0; n != -1; n = src.read(buffer)) {
+                    dest.write(buffer, 0, n);
+                }
+            } catch (IOException e) { // just exit
+            }
+        }
+    }).start();
+}
+ For System.in use the following pipein() instead of pipe() pipein(System.in, p.getOutputStream());
+ Implementation: private static void pipein(final InputStream src, final OutputStream dest) {
+
+    new Thread(new Runnable() {
+        public void run() {
+            try {
+               int ret = -1;
+               while ((ret = System.in.read()) != -1) {
+                  dest.write(ret);
+                  dest.flush();
+               }
+            } catch (IOException e) { // just exit
+            }
+        }
+    }).start();
+
+}

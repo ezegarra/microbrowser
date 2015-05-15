@@ -1,0 +1,123 @@
+How do I convert images between CMYK and RGB in ColdFusion (Java)? image coldfusion A very simple formula for converting from CMYK to RGB ignoring all color profiles is: 
+    R = ( (255-C)*(255-K) ) / 255;
+    G = ( (255-M)*(255-K) ) / 255;
+    B = ( (255-Y)*(255-K) ) / 255;
+ This code requires CMYK values to be in rage of 0-255. If you have 0 to 100 or 0.0 to 1.0 you'll have to convert the values. Hope this will get you started. As for the java and ColdFusion interfacing, I'm sorry, but I have no idea how to do that. The tag cfx_image may be of use to you. I haven't used it in a while but I remember it had a ton of features. Alternatively, you might be able to script a windows app such as Irfanview (via commandline using cfexecute) to process images. Hope that helps I use the Java ImageIO libraries (https://jai-imageio.dev.java.net). They aren't perfect, but can be simple and get the job done. As far as converting from CMYK to RGB, here is the best I have been able to come up with. Download and install the ImageIO JARs and native libraries for your platform. The native libraries are essential. Without them the ImageIO JAR files will not be able to detect the CMYK images. Originally, I was under the impression that the native libraries would improve performance but was not required for any functionality. I was wrong. The only other thing that I noticed is that the converted RGB images are sometimes much lighter than the CMYK images. If anyone knows how to solve that problem, I would be appreciative. Below is some code to convert a CMYK image into an RGB image of any supported format. Thank you, Randy Stegbauer package cmyk;
+
+import java.awt.color.ColorSpace;
+import java.awt.image.BufferedImage;
+import java.awt.image.ColorConvertOp;
+import java.io.File;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+import org.apache.commons.lang.StringUtils;
+
+public class Main
+{
+
+    /**
+     * Creates new RGB images from all the CMYK images passed
+     * in on the command line.
+     * The new filename generated is, for example "GIF_original_filename.gif".
+     *
+     */
+    public static void main(String[] args)
+    {
+        for (int ii = 0; ii < args.length; ii++)
+        {
+            String filename = args[ii];
+            boolean cmyk = isCMYK(filename);
+            System.out.println(cmyk + ": " + filename);
+            if (cmyk)
+            {
+                try
+                {
+                    String rgbFile = cmyk2rgb(filename);
+                    System.out.println(isCMYK(rgbFile) + ": " + rgbFile);
+                }
+                catch (IOException e)
+                {
+                    System.out.println(e.getMessage());
+                }
+            }
+        }
+    }
+
+    /**
+     * If 'filename' is a CMYK file, then convert the image into RGB,
+     * store it into a JPEG file, and return the new filename.
+     *
+     * @param filename
+     */
+    private static String cmyk2rgb(String filename) throws IOException
+    {
+        // Change this format into any ImageIO supported format.
+        String format = "gif";
+        File imageFile = new File(filename);
+        String rgbFilename = filename;
+        BufferedImage image = ImageIO.read(imageFile);
+        if (image != null)
+        {
+            int colorSpaceType = image.getColorModel().getColorSpace().getType();
+            if (colorSpaceType == ColorSpace.TYPE_CMYK)
+            {
+                BufferedImage rgbImage =
+                    new BufferedImage(
+                        image.getWidth(), image.getHeight(), BufferedImage.TYPE_3BYTE_BGR);
+                ColorConvertOp op = new ColorConvertOp(null);
+                op.filter(image, rgbImage);
+
+                rgbFilename = changeExtension(imageFile.getName(), format);
+                rgbFilename = new File(imageFile.getParent(), format + "_" + rgbFilename).getPath();
+                ImageIO.write(rgbImage, format, new File(rgbFilename));
+            }
+        }
+        return rgbFilename;
+    }
+
+    /**
+     * Change the extension of 'filename' to 'newExtension'.
+     *
+     * @param filename
+     * @param newExtension
+     * @return filename with new extension
+     */
+    private static String changeExtension(String filename, String newExtension)
+    {
+        String result = filename;
+        if (filename != null && newExtension != null && newExtension.length() != 0);
+        {
+            int dot = filename.lastIndexOf('.');
+            if (dot != -1)
+            {
+                result = filename.substring(0, dot) + '.' + newExtension;
+            }
+        }
+        return result;
+    }
+
+    private static boolean isCMYK(String filename)
+    {
+        boolean result = false;
+        BufferedImage img = null;
+        try
+        {
+            img = ImageIO.read(new File(filename));
+        }
+        catch (IOException e)
+        {
+            System.out.println(e.getMessage() + ": " + filename);
+        }
+        if (img != null)
+        {
+            int colorSpaceType = img.getColorModel().getColorSpace().getType();
+            result = colorSpaceType == ColorSpace.TYPE_CMYK;
+        }
+
+        return result;
+    }
+}
+ I know that this question is old, but I still encounter problems with CMYK images & ColdFusion. However, I just read a CMYK JPEG image using ColdFusion 10 and resaved it. The saved image was able to to be read using ColdFusion 9 (which is only capable of reading RGB JPEGs.) I'm not sure if this conversion is intentional or not and I don't currently have any way of identifying whether the source image's color profile is CMYK or not as the saved color profile still appears to be the same. <cfset imgData = ImageRead(expandPath("./CMYK_image.jpg"))>
+<cfset ImageWrite(imgData, expandPath("./Saved_image.jpg"))>

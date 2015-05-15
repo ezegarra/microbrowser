@@ -1,0 +1,12 @@
+Sockets and Processes in Java networking sockets blackberry If you can afford the threading, try this (keep in mind I've left out some details like exception handling and playing nice with threads). You may want to look into SocketChannels and/or NIO async sockets / selectors. This should get you started. boolean finished = false;
+int port = 10000;
+ServerSocket server = new ServerSocket(port);
+
+while(!finished)
+{
+    // This will block until a connection is made
+    Socket s = server.accept();
+    // Spawn off some thread (or use a thread pool) to handle this socket
+    // Server will continue to listen
+}
+ I'd need to go back to the basics for this one too. I'd recommend O'Reilly's excellent Java in a Nutshell that includes code examples for just such a case (available online as well). See Chapter 7 for a pretty good overview of the decisions you'd want to make early on. As for connecting to a Blackberry, this is problematic since in most cases the Blackberry won't have a public IP address and will instead be behind a WAP gateway or wireless provider access point server. RIM provides the Mobile Data Server (MDS) to get around this and provide "Push" data which uses ServerSocket semantics on the Blackberry. The MDS is available with the Blackberry Enterprise Server (BES) and the Unite Server. Once set up data can be sent to a particular unit via the MDS using the HTTP protocol. There is an excellent description of the Push protocol here with LAMP source code. The parameter PORT=7874 in pushout.pl connects to the Blackberry Browser Push server socket. By changing that parameter the payload can be sent to an arbitrary port where your own ServerSocket is accepting connections. If your socket code has to run on a BlackBerry, you cannot using standard Java sockets. You have to use the J2ME Connector.open API for creating both types of sockets (those that initiate connections from the BlackBerry, and those that listen for connections/pushes on the BlackBerry). Have a look at the examples that come with RIM's JDE.

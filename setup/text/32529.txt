@@ -1,0 +1,48 @@
+How do I restrict JFileChooser to a directory? swing jfilechooser You can probably do this by setting your own FileSystemView. Incase anyone else needs this in the future: class DirectoryRestrictedFileSystemView extends FileSystemView
+{
+    private final File[] rootDirectories;
+
+    DirectoryRestrictedFileSystemView(File rootDirectory)
+    {
+        this.rootDirectories = new File[] {rootDirectory};
+    }
+
+    DirectoryRestrictedFileSystemView(File[] rootDirectories)
+    {
+        this.rootDirectories = rootDirectories;
+    }
+
+    @Override
+    public File createNewFolder(File containingDir) throws IOException
+    {       
+        throw new UnsupportedOperationException("Unable to create directory");
+    }
+
+    @Override
+    public File[] getRoots()
+    {
+        return rootDirectories;
+    }
+
+    @Override
+    public boolean isRoot(File file)
+    {
+        for (File root : rootDirectories) {
+            if (root.equals(file)) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+ You'll obviously need to make a better "createNewFolder" method, but this does restrict the user to one of more directories. And use it like this: FileSystemView fsv = new DirectoryRestrictedFileSystemView(new File("X:\\"));
+JFileChooser fileChooser = new JFileChooser(fsv);
+ or like this: FileSystemView fsv = new DirectoryRestrictedFileSystemView( new File[] {
+    new File("X:\\"),
+    new File("Y:\\")
+});
+JFileChooser fileChooser = new JFileChooser(fsv);
+ The solution of Allain is almost complete. Three problems are open to solve: Clicking the "Home"-Button kicks the user out of restrictions DirectoryRestrictedFileSystemView is not accessible outside the package Starting point is not Root Append @Override to DirectoryRestrictedFileSystemView public TFile getHomeDirectory() { return rootDirectories[0]; } set class and constructor public Change JFileChooser fileChooser = new JFileChooser(fsv); into JFileChooser fileChooser = new JFileChooser(fsv.getHomeDirectory(),fsv); I use it for restricting users to stay in a zip-file via TrueZips TFileChooser and with slight modifications to the above code, this works perfectly. Thanks a lot. No need to be that complicated. You can easily set selection mode of a JFileChooser like this JFileChooser fc = new JFileChooser();
+fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+fc.setMultiSelectionEnabled(false);
+ You can read more reference here How to Use File Choosers

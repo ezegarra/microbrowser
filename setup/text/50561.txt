@@ -1,0 +1,27 @@
+Programmatically determine which Java thread holds a lock multithreading concurrency You can only tell whether the current thread holds a normal lock (Thread.holdsLock(Object)). You can't get a reference to the thread that has the lock without native code. However, if you're doing anything complicated with threading, you probably want to familiarize yourself with the java.util.concurrent packages. The ReentrantLock does allow you to get its owner (but its a protected method, so you'd have to extend this). Depending on your application, it may well be that by using the concurrency packages, you'll find that you don't need to get the lock's owner after all. There are non-programmatic methods to find the lock owners, such as signaling the JVM to issue a thread dump to stderr, that are useful to determine the cause of deadlocks. Run jconsole. It is included in the Java SDK and is run from the command line. I'm not sure what OS you are using, but on windows you can just pass it the PID of the java process. It should help you find the thread that is causing the problem. Or, you can use a commercial profiler like YourKit or any number of other profilers. You can, from 1.6, use JMX to do all sorts of interesting things including finding held locks. You can't get the actual object, but you do get the class and identity hash value (which is not unique). There's an example in one of my weblogs. In 1.5, you can find all the threads and get each one's state, eg like this:     Map<Thread,StackTraceElement[]> map = Thread.getAllStackTraces();
+    for (Map.Entry<Thread, StackTraceElement[]> threadEntry : map.entrySet()) {
+        log.info("Thread:"+threadEntry.getKey().getName()+":"+threadEntry.getKey().getState());
+        for (StackTraceElement element : threadEntry.getValue()) {
+            log.info("--> "+element);
+        }
+    }
+ Thread.getState gives you info about whether the thread is BLOCKED, WAITING etc, see jdk api ThreadState You can get at the locks held by threads with reflection. This only works with java 1.6. ThreadMXBean bean = ManagementFactory.getThreadMXBean();
+ThreadInfo[] ti = bean.getThreadInfo(bean.getAllThreadIds(), true, true);
+ On each of these ThreadInfo objects there are LockInfo objects which you can use the identityHashCode on them to compare to the lock in question. You can use a variable to hold the current thread when you take the lock, then print it if someone else is trying to use it. Thread holderOfLock = null;
+Object theLock = new Object();
+
+public void doStuff()
+{
+    if(holderOfLock != null)
+    {
+       //get and print name of holderOfLock-thread or get stacktrace etc.
+    }
+
+    synchronized (theLock)
+    {
+        holderOfLock = Thread.currentThread();
+        //do stuff...
+        holderOfLock = null;
+    }
+}
+ You can check the lock on the particular object by calling wait() or notify() method on that object. If the object does not hold the lock, then it will throw llegalMonitorStateException . 2- By calling holdsLock(Object o) method. This will return the boolean value.

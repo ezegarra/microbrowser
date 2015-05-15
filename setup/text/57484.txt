@@ -1,0 +1,39 @@
+How do you "OR" criteria together when using a criteria query with hibernate? hibernate You want to use Restrictions.disjuntion(). Like so session.createCriteria(Whatever.class)
+    .add(Restrictions.disjunction()
+        .add(Restrictions.eq("name", queryString))
+        .add(Restrictions.eq("address", queryString))
+        .add(Restrictions.eq("phoneNumber", queryString))
+    );
+ See the Hibernate doc here. Assuming you have a hibernate session to hand then something like the following should work: Criteria c = session.createCriteria(Whatever.class);
+Disjunction or = Restrictions.disjunction();
+or.add(Restrictions.eq("name",searchString));
+or.add(Restrictions.eq("address",searchString));
+or.add(Restrictions.eq("phoneNumber",searchString));
+c.add(or);
+ Just in case anyone should stumble upon this with the same question for NHibernate: ICriteria c = session.CreateCriteria(typeof (Whatever))
+    .Add(Expression.Disjunction()
+        .Add(Expression.Eq("name", searchString))
+        .Add(Expression.Eq("address", searchString))
+        .Add(Expression.Eq("phoneNumber", searchString)));
+     //Expression :  (c1 AND c2) OR (c3)      
+
+
+     Criteria criteria = session.createCriteria(Employee.class);
+
+      Criterion c1 = Restrictions.like("name", "%e%");
+      Criterion c2 = Restrictions.ge("salary", 10000.00);
+      Criterion c3 = Restrictions.like("name", "%YYY%");
+      Criterion c4 = Restrictions.or(Restrictions.and(c1, c2), c3);
+      criteria.add(c4);
+ //Same thing can be done for (c1 OR c2) AND c3, or any complex expression. //Expression :  (c1 AND c2) OR (c3)      
+
+
+ Criteria criteria = session.createCriteria(Employee.class);
+
+  Criterion c1 = Restrictions.like("name", "%e%");
+  Criterion c2 = Restrictions.ge("salary", 10000.00);
+  Criterion c3 = Restrictions.like("name", "%YYY%");
+  Criterion c4 = Restrictions.or(Restrictions.and(c1, c2), c3);
+  criteria.add(c4);
+
+  //Same thing can be done for (c1 OR c2) AND c3, or any complex expression.

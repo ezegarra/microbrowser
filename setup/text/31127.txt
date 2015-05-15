@@ -1,0 +1,13 @@
+Java Swing: Displaying images from within a Jar swing image You can try something like: InputStream stream = this.getClass().getClassLoader().getResourceAsStream("/images/image.jpg");
+ In your JAR file, you might have a directory structure of: MyJAR.jar - com (class files in here) - images ----image.jpg To create an ImageIcon from an image file within the same jars your code is loaded: new javax.swing.ImageIcon(getClass().getResource("myimage.jpeg"))
+ Class.getResource returns a URL of a resource (or null!). ImageIcon has a constructors that load from a URL. To construct a URL for a resource in a jar not on your "classpath", see the documentation for java.net.JarURLConnection. This is working for me to load and set the content pane background image: jar (or build path) contains:  - com
+ - img
+ ---- bg.png
+ java contains: JFrame f = new JFrame("Testing load resource from jar");
+try {
+    BufferedImage bg = ImageIO.read(getClass().getResource("/img/bg.png"));
+    f.setContentPane(new ImagePanel(bg));
+} catch (IOException e) {
+    e.printStackTrace();
+}
+ Tested and working in both jar and unjarred (is that the technical term) execution. BTW getClass().getClassLoader().getResourceAsStream("/img/bg.png") - which I tried first - returned me a null InputStream.

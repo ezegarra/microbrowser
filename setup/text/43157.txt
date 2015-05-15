@@ -1,0 +1,62 @@
+Easy way to write contents of a Java InputStream to an OutputStream io stream I think this will work, but make sure to test it... minor "improvement", but it might be a bit of a cost at readability. byte[] buffer = new byte[1024];
+int len;
+while ((len = in.read(buffer)) != -1) {
+    out.write(buffer, 0, len);
+}
+ PipedInputStream and PipedOutputStream may be of some use, as you can connect one to the other. There's no way to do this a lot easier with JDK methods, but as Apocalisp has already noted, you're not the only one with this idea: You could use IOUtils from Jakarta Commons IO, it also has a lot of other useful things, that IMO should actually be part of the JDK... As WMR mentioned, org.apache.commons.io.IOUtils from Apache has a method called copy(InputStream,OutputStream) which does exactly what you're looking for. So, you have: InputStream in;
+OutputStream out;
+IOUtils.copy(in,out);
+in.close();
+out.close();
+ ...in your code. Is there a reason you're avoiding IOUtils? PipedInputStream and PipedOutputStream should only be used when you have multiple threads, as noted by the javadoc. Also note that input streams and output streams do not wrap any thread interruptions with IOExceptions... So you should consider incorporating an interruption policy to your code: byte[] buffer = new byte[1024];
+int len = in.read(buffer);
+while (len != -1) {
+    out.write(buffer, 0, len);
+    len = in.read(buffer);
+    if (Thread.interrupted()) {
+        throw new InterruptedException();
+    }
+}
+ This would be an useful addition if you expect to use this API for copying large volumes of data, or data from streams that get stuck for an intolerably long time. Another possible candidate are the Guava I/O utilities: http://code.google.com/p/guava-libraries/wiki/IOExplained I thought I'd use these since Guava is already immensely useful in my project, rather than adding yet another library for one function. I think it's better to use a large buffer, because most of the files are greater than 1024 bytes. Also it's a good practice to check the number of read bytes to be positive. byte[] buffer = new byte[4096];
+int n;
+while ((n = in.read(buffer)) > 0) {
+    out.write(buffer, 0, n);
+}
+out.close();
+ If you only need this for say writing an inputstream to a file you can use this private void copy(InputStream in, File file) {
+    try {
+        OutputStream out = new FileOutputStream(file);
+        byte[] buf = new byte[1024];
+        int len;
+        while((len=in.read(buf))>0){
+            out.write(buf,0,len);
+        }
+        out.close();
+        in.close();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+ If you are using Java7, Files is the best one (No extra library require): /* You can get Path from file also: file.toPath() */
+Files.copy(InputStream in, Path target)
+Files.copy(Path source, OutputStream out)
+ EDIT: Of course it's just usefull when you create one of InputStream or OutputStream from file. Use file.toPath() to get path from file. Use Commons Net's Util class: import org.apache.commons.net.io.Util;
+...
+Util.copyStream(in, out);
+ you can use this method public static void copyStream(InputStream is, OutputStream os)
+ {
+     final int buffer_size=1024;
+     try
+     {
+         byte[] bytes=new byte[buffer_size];
+         for(;;)
+         {
+           int count=is.read(bytes, 0, buffer_size);
+           if(count==-1)
+               break;
+           os.write(bytes, 0, count);
+         }
+     }
+     catch(Exception ex){}
+ }
+ Using Guava library: ByteStreams.copy(inputStream, outputStream);

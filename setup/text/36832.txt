@@ -1,0 +1,31 @@
+Virtual functions in constructors, why do languages differ? .net c++ language-agnostic Both ways can lead to unexpected results. Your best bet is to not call a virtual function in your constructor at all. The C++ way I think makes more sense, but leads to expectation problems when someone reviews your code. If you are aware of this situation, you should purposely not put your code in this situation for later debugging's sake. I think C++ offers the best semantics in terms of having the 'most correct' behavior ... however it is more work for the compiler and the code is definitiely non-intuitive to someone reading it later. With the .NET approach the function must be very limited not to rely on any derived object state. Virtual functions in constructors, why do languages differ? Because there's no one good behaviour. I find the C++ behaviour makes more sense (since base class c-tors are called first, it stands to reason that they should call base class virtual functions--after all, the derived class c-tor hasn't run yet, so it may not have set up the right preconditions for the derived class virtual function). But sometimes, where I want to use the virtual functions to initialize state (so it doesn't matter that they're being called with the state uninitialized) the C#/Java behaviour is nicer. Delphi makes good use of virtual constructors in the VCL GUI framework: type
+  TComponent = class
+  public
+    constructor Create(AOwner: TComponent); virtual; // virtual constructor
+  end;
+
+  TMyEdit = class(TComponent)
+  public
+    constructor Create(AOwner: TComponent); override; // override virtual constructor
+  end;
+
+  TMyButton = class(TComponent)
+  public
+    constructor Create(AOwner: TComponent); override; // override virtual constructor
+  end;
+
+  TComponentClass = class of TComponent;
+
+function CreateAComponent(ComponentClass: TComponentClass; AOwner: TComponent): TComponent;
+begin
+  Result := ComponentClass.Create(AOwner);
+end;
+
+var
+  MyEdit: TMyEdit;
+  MyButton: TMyButton;
+begin
+  MyEdit := CreateAComponent(TMyEdit, Form) as TMyEdit;
+  MyButton := CreateAComponent(TMyButton, Form) as TMyButton;
+end;
+ There's a fundamental difference in how the languages define an object's life time. In Java and .Net the object members are zero/null initialized before any constructor is run and is at this point that the object life time begins. So when you enter the constructor you've already got an initialized object. In C++ the object life time only begins when the constructor finishes (although member variables and base classes are fully constructed before it starts). This explains the behaviour when virtual functions are called and also why the destructor isn't run if there's an exception in the constructor's body. The problem with the Java/.Net definition of object lifetime is that it's harder to make sure the object always meets its invariant without having to put in special cases for when the object is initialized but the constructor hasn't run. The problem with the C++ definition is that you have this odd period where the object is in limbo and not fully constructed. I have found the C++ behavior very annoying. You cannot write virtual functions to, for instance, return the desired size of the object, and have the default constructor initialize each item. For instance it would be nice to do: BaseClass() { for (int i=0; i<virtualSize(); i++) initialize_stuff_for_index(i); } Then again the advantage of C++ behavior is that it discourages constuctors like the above from being written. I don't think the problem of calling methods that assume the constructor has been finished is a good excuse for C++. If this really was a problem then the constructor would not be allowed to call any methods, since the same problem can apply to methods for the base class. Another point against C++ is that the behavior is much less efficient. Although the constructor knows directly what it calls, the vtab pointer has to be changed for every single class from base to final, because the constructor might call other methods that will call virtual functions. From my experience this wastes far more time than is saved by making virtual functions calls in the constructor more efficient. Far more annoying is that this is also true of destructors. If you write a virtual cleanup() function, and the base class destructor does cleanup(), it certainly does not do what you expect. This and the fact that C++ calls destructors on static objects on exit have really pissed me off for a long time.

@@ -1,0 +1,57 @@
+Why can't I use a try block around my super() call? exception mocking Unfortunately, compilers can't work on theoretical principles, and even though you may know that it is safe in your case, if they allowed it, it would have to be safe for all cases. In other words, the compiler isn't stopping just you, it's stopping everyone, including all those that don't know that it is unsafe and needs special handling. There are probably other reasons for this as well, as all languages usually have ways to do unsafe things if one knows how to deal with them. In C# .NET there are similar provisions, and the only way to declare a constructor that calls a base constructor is this: public ClassName(...) : base(...) in doing so, the base constructor will be called before the body of the constructor, and you cannot change this order. I don't know how Java is implemented internally, but if the constructor of the superclass throws an exception, then there isn't a instance of the class you extend. It would be impossible to call the toString() or equals() methods, for example, since they are inherited in most cases. Java may allow a try/catch around the super() call in the constructor if 1. you override ALL methods from the superclasses, and 2. you don't use the super.XXX() clause, but that all sounds too complicated to me. I can't presume to have a deep understanding of Java internals, but it is my understanding that, when a compiler needs to instantiate a derived class, it has to first create the base (and its base before that(...)) and then slap on the extensions made in the subclass. So it is not even the danger of uninited variables or anything like that at all. When you try to do something in the subclass' constructor before the base class' constructor, you are basically asking the compiler to extend a base object instance that doesn't exist yet. Edit:In your case, MyClass becomes the base object, and MyClassMock is a subclass. It's done to prevent someone from creating a new SecurityManager object from untrusted code. public class Evil : SecurityManager {
+  Evil()
+  {
+      try {
+         super();
+      } catch { Throwable t }
+      {
+      }
+   }
+}
+ I know this is an old question, but I liked it, and as such, I decided to try to give it my answer. Perhaps, somehow, my understanding of why this cannot be done contributes to the discussion and to future readers of your interesting question. Let me start with an example of failing object construction. Let's define a class A, such that: class A {
+   private String a = "A";
+
+   public A() throws Exception {
+        throw new Exception();
+   }
+}
+ Now, let's assume we would like to create an object of type A in a try...catch block. A a = null;
+try{
+  a = new A();
+}catch(Exception e) {
+  //...
+}
+System.out.println(a);
+ Evidently, the output of this code will be: null. Why Java does not return a partially constructed version of A? After all, by the point the constructor fails its name field member has already being initialized, right? Java does not do that because the object was not successfully built. The object is in a inconsistent state, and it is therefore discarded by Java. Your variable A is not even initialized, it is kept as null. Now, as you know, to fully build a new object, all its super classes must be initialized first. If one of the super classes failed to build, what would be the final state of the object? It is impossible to determine that. Look at this more elaborate example class A {
+   private final int a;
+   public A() throws Exception { 
+      a = 10;
+   }
+}
+
+class B extends A {
+   private final int b;
+   public B() throws Exception {
+       methodThatThrowsException(); 
+       b = 20;
+   }
+}
+
+class C extends B {
+   public C() throws Exception { super(); }
+}
+ When the constructor of C is invoked, if an exception occurs on initializing B, what would be the value of the final variable int b? As such, the object C cannot be created, it is bogus, it is trash, it is not fully initialized. For me, this explains why your code is illegal. One way to get around it is by calling a private static class: public class Test  {
+  public Test()  {
+     this(Test.getObjectThatMightThrowException());
+  }
+  public Test(Object o)  {
+     //...
+  }
+  private static final Object getObjectThatMightThrowException()  {
+     try  {
+        return  new ObjectThatMightThrowAnException();
+     }  catch(RuntimeException rtx)  {
+        throw  new RuntimeException("It threw an exception!!!", rtx);
+     }
+  }
+}

@@ -1,0 +1,3 @@
+How do I get the path where the user installed my Java application? environment-variables System.getProperty("user.dir")
+ gets the directory the Java VM was started from. System.getProperty("user.dir");
+ The above method gets the user's working directory when the application was launched. This is fine if the application is launched by a script or shortcut that ensures that this is the case. However, if the app is launched from somewhere else (entirely possible if the command line is used), then the return value will be wherever the user was when they launched the app. A more reliable method is to work out the application install directory using ClassLoaders.

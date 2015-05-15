@@ -51,7 +51,7 @@ public class TextDataExporter {
 				} else {
 					
 					content.append(rs.getString("title")).append(" ");
-					content.append(rs.getString("body")).append(" ");
+					//content.append(Jsoup.parse(rs.getString("body")).text()).append(" ");
 					
 					// Save the tags
 					String tags = processTags(rs.getString("TAGS"));
@@ -82,8 +82,8 @@ public class TextDataExporter {
 		try {
 
 			file = new File(
-					"C:/projects/proposal/workspace.microbrowse.0.1/MicroBrowserData/text/"
-							+ threadid + ".txt");
+					//"C:/projects/proposal/workspace.microbrowse.0.1/MicroBrowserData/text/"
+					"setup/text/"+ threadid + ".txt");
 			fop = new FileOutputStream(file);
 
 			// if file doesnt exists, then create it

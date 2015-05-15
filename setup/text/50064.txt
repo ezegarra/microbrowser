@@ -1,0 +1,6 @@
+Setting Colors in SWT swt colors To create a color, try this: Device device = Display.getCurrent ();
+Color red = new Color (device, 255, 0, 0);
+ Remember that in SWT you must explicitly dispose any resources that you create when you are done with them. This includes widgets, fonts, colors, images, displays, printers, and GCs. If you do not dispose these resources, eventually your application will reach the resource limit of your operating system and the application will cease to run. See also: SWT: Managing Operating System Resources For standard colors (including common colors and default colors used by the operating system) Use Display.getSystemColor(int), and pass in the SWT.COLOR_* constant for the color you want. Display display = Display.getCurrent();
+Color blue = display.getSystemColor(SWT.COLOR_BLUE);
+Color listBackground = display.getSystemColor(SWT.COLOR_LIST_BACKGROUND);
+ Note that you do not need to dispose these colors because SWT created them.

@@ -1,0 +1,82 @@
+How do you keep the machine awake? windows osx cross-platform operating-system Run a command inside a timer like pinging the server.. Wouldn't it be easier to disable the power management on the server? It might be argued that servers shouldn't go into powersave mode? I have a very brute-force technique of moving the mouse 1 point in the x direction and then back every 3 minutes. There may me a more elegant solution but it's a quick fix. On Windows, use the SystemParametersInfo function. It's a Swiss army-style function that lets you get/set all sorts of system settings. To disable the screen shutting off, for instance: SystemParametersInfo( SPI_SETPOWEROFFACTIVE, 0, NULL, 0 );
+ Just be sure to set it back when you're done... I'd just do a function (or download a freebie app) that moves the mouse around. Inelegant, but easy. I use this code to keep my workstation from locking. It's currently only set to move the mouse once every minute, you could easily adjust it though. It's a hack, not an elegant solution. import java.awt.*;
+import java.util.*;
+public class Hal{
+
+    public static void main(String[] args) throws Exception{
+    	Robot hal = new Robot();
+    	Random random = new Random();
+    	while(true){
+    		hal.delay(1000 * 60);
+    		int x = random.nextInt() % 640;
+    		int y = random.nextInt() % 480;
+    		hal.mouseMove(x,y);
+    	}
+    }
+}
+ Wouldn't all the suggestions moving the mouse back and forth drive the user crazy? I know I'd remove any app that would do that as soon as I can isolate it. I've been using pmset to control sleep mode on my Mac for awhile now, and it's pretty easy to integrate. Here's a rough example of how you could call that program from Java to disable/enable sleep mode. Note that you need root privileges to run pmset, and therefore you'll need them to run this program. import java.io.BufferedInputStream;
+import java.io.IOException;
+
+/**
+ * Disable sleep mode (record current setting beforehand), and re-enable sleep
+ * mode. Works with Mac OS X using the "pmset" command.
+ */
+public class SleepSwitch {
+
+    private int sleepTime = -1;
+
+    public void disableSleep() throws IOException {
+        if (sleepTime != -1) {
+            // sleep time is already recorded, assume sleep is disabled
+            return;
+        }
+
+        // query pmset for the current setting
+        Process proc = Runtime.getRuntime().exec("pmset -g");
+        BufferedInputStream is = new BufferedInputStream(proc.getInputStream());
+        StringBuffer output = new StringBuffer();
+        int c;
+        while ((c = is.read()) != -1) {
+            output.append((char) c);
+        }
+        is.close();
+
+        // parse the current setting and store the sleep time
+        String outString = output.toString();
+        String setting = outString.substring(outString.indexOf(" sleep\t")).trim();
+        setting = setting.substring(7, setting.indexOf(" ")).trim();
+        sleepTime = Integer.parseInt(setting);
+
+        // set the sleep time to zero (disable sleep)
+        Runtime.getRuntime().exec("pmset sleep 0");
+    }
+
+    public void enableSleep() throws IOException {
+        if (sleepTime == -1) {
+            // sleep time is not recorded, assume sleep is enabled
+            return;
+        }
+
+        // set the sleep time to the previously stored value
+        Runtime.getRuntime().exec("pmset sleep " + sleepTime);
+
+        // reset the stored sleep time
+        sleepTime = -1;
+    }
+}
+ I've heard stories of people getting a large sub-woofer, then duct taping a box lid to the top. You can then put the mouse in the box and turn up the music. Preferably something with a lot of bass that will keep the mouse moving around. You can use the program Caffeine caffiene to keep your workstation awake. You could run the program via the open command in os X. Adding to scarcher2's code snippet above and moving mouse by only 1 pixel. I have moved the mouse twice so that some change occurs even if pointer is on extremes: while(true){
+
+            hal.delay(1000 * 30);       
+            pObj = MouseInfo.getPointerInfo().getLocation();
+            System.out.println(pObj.toString() + "x>>" + pObj.x + "  y>>" + pObj.y);
+            hal.mouseMove(pObj.x + 1, pObj.y + 1);  
+            hal.mouseMove(pObj.x - 1, pObj.y - 1);
+            pObj = MouseInfo.getPointerInfo().getLocation();
+            System.out.println(pObj.toString() + "x>>" + pObj.x + "  y>>" + pObj.y);
+        }
+ This code moves the pointer to the same location where it already is so the user doesn't notice any difference. while (true) {
+    Thread.sleep(180000);//this is how long before it moves
+    Point mouseLoc = MouseInfo.getPointerInfo().getLocation();
+    Robot rob = new Robot();
+    rob.mouseMove(mouseLoc.x, mouseLoc.y);
+}

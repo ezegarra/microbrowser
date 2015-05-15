@@ -1,0 +1,44 @@
+Best practice for Java IPC multithreading Could you clarify a bit? Do you mean IPC in a single JVM? (Multiple threads, yes, but at an OS-level only one process.) Or do you mean multiple JVMs? (And truly OS-level inter process communications.) If it is the first, then maybe something out of java.util.concurrent, like ConcurrentLinkedQueue would do the trick. (I pass message around inbetween my threads with classes from java.util.concurrent with success.) If the later, then I'm going to just guess and suggest taking a look at RMI, although I don' think it qualifies as fully reliable--you'd have to manage that a bit more 'hands on' like. I recommend looking into the entire java.util.concurrent package, which have multiple classes for dealing with concurrency and different communication means between threads. All depends on what you want to achieve, as your question is pretty general. Assuming the scenario 1 JVM, multiple threads then indeed java.util.concurrent is the place to look, specifically the various Queue implementations. However an abstraction on top of that may be nice and there Jetlang looks very interesting, lightweight Java message passing. You should use a producer/consumer queue. By doing that you avoid the pitfalls of multithreaded programming: race-conditions and deadlocks. Plus it is not just easier and cleaner, but also much faster if you use a lock-free queue like Disruptor or MentaQueue. I wrote a blog article where I talk about this in detail and show how to get < 100 nanoseconds latencies: Inter-thread communication with 2-digit nanosecond latency. Here is simple code for RMI to get filename and file content: import java.rmi.*;
+import java.rmi.registry.*;
+import java.rmi.server.*;
+import java.io.*;
+
+interface myimpl extends Remote{
+    public void file(String filename)throws RemoteException;
+}
+
+class ipcbingo extends UnicastRemoteObject implements myimpl{
+    ipcbingo() throws RemoteException{}
+    public void file(String filename){
+   try{
+        FileReader fr=new FileReader(filename);
+         System.out.println(filename);
+        BufferedReader br=new BufferedReader(fr);
+      String total="";
+      String temp="";
+       while((temp=br.readLine())!=null)
+        {
+        total+=temp;
+        }
+       System.out.println(total);
+   }catch(Exception e){}
+    }
+}
+
+class ipcser{
+    public static void main(String args[])throws Exception
+    {
+        ipcbingo i1=new ipcbingo();
+        Registry r1=LocateRegistry.createRegistry(1099);
+        r1.bind("abcd", i1);
+
+    }
+}
+
+class ipccli{
+    public static void main(String args[])throws Exception
+    {
+        myimpl i1=(myimpl)Naming.lookup("abcd");
+        i1.file("C:\\Users\\scc\\Documents\\NetBeansProjects\\rmi\\src\\lucky.txt");
+    }
+}

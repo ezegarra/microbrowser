@@ -1,0 +1,88 @@
+Can I specify a class wide group on a TestNG test case? testng I'm not sure how the annotation inheritance works for TestNG but this article may be of some use. http://beust.com/weblog/archives/000170.html. Actually, this may help better http://testng.org/doc/documentation-main.html#annotations, look at inheritGroups. TestNG will run all the public methods from a class with a @Test annotation. Maybe you could change the methods you don't want TestNG to run to be non-public You can specify the @Test annotation at method level that allows for maximum flexibility. public class DBTestBase {
+
+    @BeforeTest(groups = "db-test")
+    public void beforeTest() {
+        System.out.println("Running before test");
+    }
+
+    public void method1() {
+        Assert.fail(); // this does not run. It does not belong to 'db-test' group.
+    }
+
+    @Test(groups = "db-test")
+    public void testMethod1() {
+        Assert.assertTrue(true);
+    }
+}
+ Does this works for you or I am missing something from your question. It would seem to me as the following code-challenge (community wiki post): How to be able to execute all test methods of Extended class from the group 'aGlobalGroup' without: specifying the 'aGlobalGroup' group on the Extended class itself ? testing non-annotated public methods of Extended class ? The first answer is easy: add a class TestNG(groups = { "aGlobalGroup" }) on the Base class level That group will apply to all public methods of both Base class and Extended class. BUT: even non-testng public methods (with no TestNG annotation) will be included in that group. CHALLENGE: avoid including those non-TestNG methods. @Test(groups = { "aGlobalGroup" })
+public class Base {
+
+    /**
+     * 
+     */
+    @BeforeClass
+     public final void setUp() {
+    	   System.out.println("Base class: @BeforeClass");
+     }
+
+
+    /**
+     * Test not part a 'aGlobalGroup', but still included in that group due to the class annotation. <br />
+     * Will be executed even if the TestNG class tested is a sub-class.
+     */
+    @Test(groups = { "aLocalGroup" })
+     public final void aFastTest() {
+       System.out.println("Base class: Fast test");
+     }
+
+    /**
+     * Test not part a 'aGlobalGroup', but still included in that group due to the class annotation. <br />
+     * Will be executed even if the TestNG class tested is a sub-class.
+     */
+    @Test(groups = { "aLocalGroup" })
+     public final void aSlowTest() {
+        System.out.println("Base class: Slow test");
+        //throw new IllegalArgumentException("oups");
+     }
+
+     /**
+      * Should not be executed. <br />
+      * Yet the global annotation Test on the class would include it in the TestNG methods...
+     */
+    public final void notATest() {
+       System.out.println("Base class: NOT a test");
+     }
+
+    /**
+     * SubClass of a TestNG class. Some of its methods are TestNG methods, other are not. <br />
+     * The goal is to check if a group specify in the super-class will include methods of this class. <br />
+     * And to avoid including too much methods, such as public methods not intended to be TestNG methods.
+     * @author <a href="http://stackoverflow.com/users/6309/vonc">VonC</a>
+     */
+    public static class Extended extends Base
+    {
+    	/**
+    	 * Test not part a 'aGlobalGroup', but still included in that group due to the super-class annotation. <br />
+    	 * Will be executed even if the TestNG class tested is a sub-class.
+    	 */
+    	@Test
+    	public final void anExtendedTest() {
+    	   System.out.println("Extended class: An Extended test");
+    	}
+
+    	/**
+    	 * Should not be executed. <br />
+    	 * Yet the global annotation Test on the class would include it in the TestNG methods...
+    	 */	
+    	public final void notAnExtendedTest() {
+    		System.out.println("Extended class: NOT an Extended test");
+    	}
+    }
+ The answer is through a custom org.testng.IMethodSelector: Its includeMethod() can exclude any method we want, like a public not-annotated method. However, to register a custom Java MethodSelector, you must add it to the XMLTest instance managed by any TestRunner, which means you need your own custom TestRunner. But, to build a custom TestRunner, you need to register a TestRunnerFactory, through the -testrunfactory option. BUT that -testrunfactory is NEVER taken into account by TestNG class... so you need also to define a custom TestNG class : in order to override the configure(Map) method, so you can actually set the TestRunnerFactory TestRunnerFactory which will build you a custom TestRunner, TestRunner which will set to the XMLTest instance a custom XMLMethodSelector XMLMethodSelector which will build a custom IMethodSelector IMethodSelector which will exclude any TestNG methods of your choosing! Ok... it's a nightmare. But it is also a code-challenge, so it must be a little challenging ;) All the code is available at DZone snippets. As usual for a code challenge: one java class (and quite a few inner classes) copy-paste the class in a 'source/test' directory (since the package is 'test') run it (no arguments needed) Update from Mike Stone: I'm going to accept this because it sounds pretty close to what I ended up doing, but I figured I would add what I did as well. Basically, I created a Groups annotation that behaves like the groups property of the Test (and other) annotations. Then, I created a GroupsAnnotationTransformer, which uses IAnnotationTransformer to look at all tests and test classes being defined, then modifies the test to add the groups, which works perfectly with group exclusion and inclusion. Modify the build to use the new annotation transformer, and it all works perfectly! Well... the one caveat is that it doesn't add the groups to non-test methods... because at the time I did this, there was another annotation transformer that lets you transform ANYTHING, but it somehow wasn't included in the TestNG I was using for some reason... so it is a good idea to make your before/after annotated methods to alwaysRun=true... which is sufficient for me. The end result is I can do: @Groups({ "myGroup1", "myGroup2"})
+public class MyTestCase {
+    @Test
+    @Groups("aMethodLevelGroup")
+    public void myTest() {
+    }
+}
+ And I made the transformer work with subclassing and everything.

@@ -1,0 +1,1 @@
+Hibernate - maxElementsOnDisk from EHCache to TreeCache hibernate caching This page seems to imply that the correct configuration element is: <attribute name="MaxCapacity">20000</attribute> However, I've only ever used EHCache myself. In the version I am working on (JBossCache 1.4.1), it looks like it is not possible to configure this parameter.

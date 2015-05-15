@@ -1,0 +1,13 @@
+Sprintf equivalent in Java string formatting // Store the formatted string in 'result'
+String result = String.format("%4d", i * j);
+
+// Write the result to standard output
+System.out.println( result );
+ See format and its syntax @erickson. Strings are immutable types. You cannot modify them, only return new string instances. Because of that, "foo".format() makes little sense, as it would have to be called like string newString = "foo".format();
+ The original java authors (and .NET authors), decided that a static method made more sense in this situation, as you are not modifying "foo", but instead calling a format method and passing in an input string. EDIT: Heh, this site can be so amusing sometimes. I got downvoted for mentioning the fact that strings are immutable types. Here is an example of why Format() would be dumb as an instance method. In .NET (and probably in Java), Replace() is an instance method. You can do this:  "I Like Wine".Replace("Wine","Beer");
+ However, nothing happens, because Strings are immutable. Replace tries to return a new string, but it is assigned to nothing. This causes lots of common rookie mistakes like: // Contrived Example
+inputText.Replace(" ","%20");
+ Again, nothing happens, instead you have to do : inputText = inputText.Replace(" ","%20");
+ Now, if you understand that strings are immutable, that makes perfect sense. If you don't, then you are just confused. The proper place for Replace, would be where Format is, as a static method of String:  inputText = String.Replace(inputText," ", "%20");
+ Now there is no question as to whats going on. The real question is, why did the authors of these frameworks decide that one should be an instance method, and the other static? In my opinion, both are more elegantly expressed as static methods, but erickson seems to think both belong as instance methods. Regardless of your opinion, the truth is that you are less prone to make a mistake using the static version, and the code is easier to understand (No Hidden Gotchas). Of course there are some methods that are perfect as instance methods, take String.Length() int length = "123".Length();
+ In this situation, its obvious we are not trying to modify "123", we just inspecting it, and returning its length...This is a perfect candidate for an instance method. My simple rules for Instance Methods on Immutable Objects: If you need to return a new instance of the same type, use a static method. Otherwise, use an instance method.

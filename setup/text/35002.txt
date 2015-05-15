@@ -1,0 +1,166 @@
+Does C# have a way of giving me an immutable Dictionary? c# .net collections dictionary I don't think so. There is a way to create a read-only List and read only Collection, but I don't think there's a built in read only Dictionary. System.ServiceModel has a ReadOnlyDictinoary implementation, but its internal. Probably wouldn't be too hard to copy it though, using Reflector, or to simply create your own from scratch. It basically wraps an Dictionary and throws when a mutator is called. As far as I know, there is not. But may be you can copy some code (and learn alot) from these articles: Immutability in C# Part One: Kinds of Immutability Immutability in C# Part Two: A Simple Immutable Stack Immutability in C# Part Three: A Covariant Immutable Stack Immutability in C# Part Four: An Immutable Queue Immutability in C# Part Six: A Simple Binary Tree Immutability in C# Part Seven: More on Binary Trees Immutability in C# Part Eight: Even More On Binary Trees Immutability in C# Part Nine: Academic? Plus my AVL tree implementation Immutability in C# Part 10: A double-ended queue Immutability in C# Part Eleven: A working double-ended queue "Out of the box" there is not a way to do this. You can create one by deriving your own Dictionary class and implementing the restrictions you need. One workaround might be, throw a new list of KeyValuePair from the Dictionary to keep the original unmodified. var dict = new Dictionary<string, string>();
+
+dict.Add("Hello", "World");
+dict.Add("The", "Quick");
+dict.Add("Brown", "Fox");
+
+var dictCopy = dict.Select(
+    item => new KeyValuePair<string, string>(item.Key, item.Value));
+
+// returns dictCopy;
+ This way the original dictionary won't get modified. No, but a wrapper is rather trivial: public class ReadOnlyDictionary<TKey, TValue> : IDictionary<TKey, TValue>
+{
+    IDictionary<TKey, TValue> _dict;
+
+    public ReadOnlyDictionary(IDictionary<TKey, TValue> backingDict)
+    {
+        _dict = backingDict;
+    }
+
+    public void Add(TKey key, TValue value)
+    {
+        throw new InvalidOperationException();
+    }
+
+    public bool ContainsKey(TKey key)
+    {
+        return _dict.ContainsKey(key);
+    }
+
+    public ICollection<TKey> Keys
+    {
+        get { return _dict.Keys; }
+    }
+
+    public bool Remove(TKey key)
+    {
+        throw new InvalidOperationException();
+    }
+
+    public bool TryGetValue(TKey key, out TValue value)
+    {
+        return _dict.TryGetValue(key, out value);
+    }
+
+    public ICollection<TValue> Values
+    {
+        get { return _dict.Values; }
+    }
+
+    public TValue this[TKey key]
+    {
+        get { return _dict[key]; }
+        set { throw new InvalidOperationException(); }
+    }
+
+    public void Add(KeyValuePair<TKey, TValue> item)
+    {
+        throw new InvalidOperationException();
+    }
+
+    public void Clear()
+    {
+        throw new InvalidOperationException();
+    }
+
+    public bool Contains(KeyValuePair<TKey, TValue> item)
+    {
+        return _dict.Contains(item);
+    }
+
+    public void CopyTo(KeyValuePair<TKey, TValue>[] array, int arrayIndex)
+    {
+        _dict.CopyTo(array, arrayIndex);
+    }
+
+    public int Count
+    {
+        get { return _dict.Count; }
+    }
+
+    public bool IsReadOnly
+    {
+        get { return true; }
+    }
+
+    public bool Remove(KeyValuePair<TKey, TValue> item)
+    {
+        throw new InvalidOperationException();
+    }
+
+    public IEnumerator<KeyValuePair<TKey, TValue>> GetEnumerator()
+    {
+        return _dict.GetEnumerator();
+    }
+
+    System.Collections.IEnumerator 
+           System.Collections.IEnumerable.GetEnumerator()
+    {
+        return ((System.Collections.IEnumerable)_dict).GetEnumerator();
+    }
+}
+ Obviously, you can change the this[] setter above if you want to allow modifying values. I've found an implementation of an Inmutable (not READONLY) implementation of a AVLTree for C# here. An AVL tree has logarithmic (not constant) cost on each operation, but stills fast. http://csharpfeeds.com/post/7512/Immutability_in_Csharp_Part_Nine_Academic_Plus_my_AVL_tree_implementation.aspx Adding onto dbkk's answer, I wanted to be able to use an object initializer when first creating my ReadOnlyDictionary. I made the following modifications: private readonly int _finalCount;
+
+/// <summary>
+/// Takes a count of how many key-value pairs should be allowed.
+/// Dictionary can be modified to add up to that many pairs, but no
+/// pair can be modified or removed after it is added.  Intended to be
+/// used with an object initializer.
+/// </summary>
+/// <param name="count"></param>
+public ReadOnlyDictionary(int count)
+{
+    _dict = new SortedDictionary<TKey, TValue>();
+    _finalCount = count;
+}
+
+/// <summary>
+/// To allow object initializers, this will allow the dictionary to be
+/// added onto up to a certain number, specifically the count set in
+/// one of the constructors.
+/// </summary>
+/// <param name="key"></param>
+/// <param name="value"></param>
+public void Add(TKey key, TValue value)
+{
+    if (_dict.Keys.Count < _finalCount)
+    {
+        _dict.Add(key, value);
+    }
+    else
+    {
+        throw new InvalidOperationException(
+            "Cannot add pair <" + key + ", " + value + "> because " +
+            "maximum final count " + _finalCount + " has been reached"
+        );
+    }
+}
+ Now I can use the class like so: ReadOnlyDictionary<string, string> Fields =
+    new ReadOnlyDictionary<string, string>(2)
+        {
+            {"hey", "now"},
+            {"you", "there"}
+        };
+ Since Linq, there is a generic interface ILookup. Read more in MSDN. Therefore, To simply get immutable dictionary you may call: using System.Linq;
+// (...)
+var dictionary = new Dictionary<string, object>();
+// (...)
+var read_only = dictionary.ToLookup(kv => kv.Key, kv => kv.Value);
+ There's also another alternative as I have described at: http://www.softwarerockstar.com/2010/10/readonlydictionary-tkey-tvalue/ Essentially it's a subclass of ReadOnlyCollection>, which gets the work done in a more elegant manner. Elegant in the sense that it has compile-time support for making the Dictionary read-only rather than throwing exceptions from methods that modify the items within it. The open-source PowerCollections library includes a read-only dictionary wrapper (as well as read-only wrappers for pretty much everything else), accessible via a static ReadOnly() method on the Algorithms class. You could try something like this: private readonly Dictionary<string, string> _someDictionary;
+
+public IEnumerable<KeyValuePair<string, string>> SomeDictionary
+{
+    get { return _someDictionary; }
+}
+ This would remove the mutability problem in favour of having your caller have to either convert it to their own dictionary: foo.SomeDictionary.ToDictionary(kvp => kvp.Key);
+ ... or use a comparison operation on the key rather than an index lookup, e.g.: foo.SomeDictionary.First(kvp => kvp.Key == "SomeKey");
+ With the release of .NET 4.5, there is a new ReadOnlyDictionary class. You simply pass an IDictionary to the constructor to create the immutable dictionary. Here is a helpful extension method which can be used to simplify creating the readonly dictionary. In general it is a much better idea to not pass around any dictionaries in the first place (if you don't HAVE to). Instead - create a domain-object with an interface that doesn't offer any methods modifying the dictionary (that it wraps). Instead offering required LookUp-method that retrieves element from the dictionary by key (bonus is it makes it easier to use than a dictionary as well). public interface IMyDomainObjectDictionary 
+{
+    IMyDomainObject GetMyDomainObject(string key);
+}
+
+internal class MyDomainObjectDictionary : IMyDomainObjectDictionary 
+{
+    public IDictionary<string, IMyDomainObject> _myDictionary { get; set; }
+    public IMyDomainObject GetMyDomainObject(string key)         {.._myDictionary .TryGetValue..etc...};
+}

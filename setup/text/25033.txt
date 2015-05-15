@@ -1,0 +1,7 @@
+I Am Not Getting the Result I Expect Using readLine() in Java java-io No input is not the same as the end of the stream. You can usually simulate the end of the stream in a console by pressing Ctrl+D (AFAIK some systems use Ctrl+Z instead). But I guess this is not what you want so better test for empty strings additionally to null strings. From my understanding of this, readLine should return null the first time no input is entered other than a line termination, like '\r'. That is not correct. readLine will return null if the end of the stream is reached. That is, for example, if you are reading a file, and the file ends, or if you're reading from a socket and the socket closses. But if you're simply reading the console input, hitting the return key on your keyboard does not constitute an end of stream. It's simply a character that is returned (\n or \r\n depending on your OS). So, if you want to break on both the empty string and the end of line, you should do: while (line != null && !line.equals(""))
+ Also, your current program should work as expected if you pipe some file directly into it, like so: java -cp . Echo < test.txt
+ There's a nice apache commons lang library which has a good api for common :) actions. You could use statically import StringUtils and use its method isNotEmpty(String ) to get: while(isNotEmpty(line)) {
+    System.out.println(line);
+    line = br.readLine();
+}
+ It might be useful someday:) There are also other useful classes in this lib.

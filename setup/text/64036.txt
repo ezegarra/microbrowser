@@ -1,0 +1,79 @@
+How do you make a deep copy of an object in Java? class clone A safe way is to serialize the object, then deserialize. This ensures everything is a brand new reference. Here's an article about how to do this efficiently. Caveats: It's possible for classes to override serialization such that new instances are not created, e.g. for singletons. Also this of course doesn't work if your classes aren't Serializable. Deep copying can only be done with each class's consent. If you have control over the class hierarchy then you can implement the clonable interface and implement the Clone method. Otherwise doing a deep copy is impossible to do safely because the object may also be sharing non-data resources (e.g. database connections). In general however deep copying is considered bad practice in the Java environment and should be avoided via the appropriate design practices. You can do a serialization-based deep clone using org.apache.commons.lang.SerializationUtils.clone() in Commons Lang, but be careful--the performance is abysmal. In general, it is best practice to write your own clone methods for each class of an object in the object graph needing cloning. Use XStream(http://xstream.codehaus.org/). You can even control which properties you can ignore through annotations or explicitly specifying the property name to XStream class. Moreover you do not need to implement clonable interface. XStream is really useful in such instances. Here is a simple code to do cloning private static final XStream XSTREAM = new XStream();
+...
+
+Object newObject = XSTREAM.fromXML(XSTREAM.toXML(obj));
+ A few people have mentioned using or overriding Object.clone(). Don't do it. Object.clone() has some major problems, and its use is discouraged in most cases. Please see Item 11, from "Effective Java" by Joshua Bloch for a complete answer. I believe you can safely use Object.clone() on primitive type arrays, but apart from that you need to be judicious about properly using and overriding clone. The schemes that rely on serialization (XML or otherwise) are kludgy. There is no easy answer here. If you want to deep copy an object you will have to traverse the object graph and copy each child object explicitly via the object's copy constructor or a static factory method that in turn deep copies the child object. Immutables (e.g. Strings) do not need to be copied. As an aside, you should favor immutability for this reason. import com.thoughtworks.xstream.XStream;
+
+public class deepCopy {
+
+    private static  XStream xstream = new XStream();
+
+
+    //serialize with Xstream them deserialize ...
+
+    public static Object deepCopy(Object obj){
+
+
+        return xstream.fromXML(xstream.toXML(obj));
+
+
+    }
+
+
+
+}
+ You can make a deep copy serialization without creating some files. Copy: ByteArrayOutputStream bos = new ByteArrayOutputStream();
+ObjectOutputStream oos = new ObjectOutputStream(bos);
+oos.writeObject(object);
+oos.flush();
+oos.close();
+bos.close();
+byte[] byteData = bos.toByteArray();
+ Restore: ByteArrayInputStream bais = new ByteArrayInputStream(byteData);
+(Object) object = (Object) new ObjectInputStream(bais).readObject();
+ One way to implement deep copy is to add copy constructors to each associated class. A copy constructor takes an instance of 'this' as its single argument and copies all the values from it. Quite some work, but pretty straightforward and safe. EDIT: note that you don't need to use accessor methods to read fields. You can access all fields directly because the source instance is always of the same type as the instance with the copy constructor. Obvious but might be overlooked. Example: public class Order {
+
+    private long number;
+
+    public Order() {
+    }
+
+    /**
+     * Copy constructor
+     */
+    public Order(Order source) {
+        number = source.number;
+    }
+}
+
+
+public class Customer {
+
+    private String name;
+    private List<Order> orders = new ArrayList<Order>();
+
+    public Customer() {
+    }
+
+    /**
+     * Copy constructor
+     */
+    public Customer(Customer source) {
+        name = source.name;
+        for (Order sourceOrder : source.orders) {
+            orders.add(new Order(sourceOrder));
+        }
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+ Edit: Note that when using copy constructors you need to know the runtime type of the object you are copying. With the above approach you cannot easily copy a mixed list (you might be able to do it with some reflection code). One very easy and simple approach is to use Jackson JSON to serialize complex Java Object to JSON and read it back. http://wiki.fasterxml.com/JacksonInFiveMinutes You can use a library that has a simple API, and performs relatively fast cloning with reflection (should be faster than serialization methods). Cloner cloner=new Cloner();
+
+MyClass clone=cloner.deepClone(o);
+// clone is a deep-clone of o

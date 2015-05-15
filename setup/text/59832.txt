@@ -1,0 +1,10 @@
+getting java exception: java.net.MalformedURLException: no protocol url io As a side note, you should be using URI because Java URL class is screwed up. (The equals method I believe) That url string looks like it's invalid. Sure it's not supposed to be 'http://path'? Or are the server & port blank? Your code works perfectly fine for me: public static void main(String[] args) {
+	try {
+		java.net.URL connection_url = new java.net.URL("http://:/path");
+		System.out.println("Instantiated new URL: " + connection_url);
+	}
+	catch (MalformedURLException e) {
+		e.printStackTrace();
+	}
+}
+ Instantiated new URL: http://:/path Sure you have the right line of code? I have also had the same exception, but in my case the URL which I was trying to execute had a space appended. After removing the space it worked fine for me. Check that the URL does not have any trailing spaces in your case. I had the same error and it got resolved by the below : The jar files (JFree) which I added few days back got corrupted automatically and was causing this error. I downloaded the same files again from net and it worked fine for me.

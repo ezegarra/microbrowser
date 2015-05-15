@@ -1,0 +1,19 @@
+drawing animations at the show of JDialog gui swing animation Are you trying to show the JDialog indepentently of the annimation? In order to get the order set properly, you may need to bundle those actions in a runnable that is passed to the EDT at once. eg: SwingUtilities.invokeLater(new Runnable(){
+   public void run(){
+      doAnnimation();
+      showDialog();
+   }
+}
+ It may be best to subclass JDialog so that you can just add the doAnnimation() logic to the setVisible(..) or show() method before calling the superclass implementation. Finally, I imagine you'll need to set the dimensions of the dalog manually -- I don't remember if Java will know the actual size of the dialog before it is shown, so you may get some useless information for your annimation if you query the size before showing it. You may be able to take @rcreswick's answer and expand on it a little to make it work. void myShowDialog() {
+  new Thread(new Runnable() {public void run() {
+    SwingUtilities.invokeAndWait(new Runnable() { public void run() {
+      doAnimation();
+    } } );
+    // Delay to wait for the animation to finish (if needed)
+    Thread.sleep(500);
+    SwingUtilities.invokeAndWait(new Runnable() { public void run() {
+      showDialog();
+    } } );
+  } } ).start();
+}
+ It's pretty ugly and would have to be invoked in place of the basic showDialog() call, but it should work. Maybe you have a look at the SwingWorker Project which is included in JSE 6. (Link to SwingWorker) In the book "Filthy Rich Client" that I am reading at the moment they use this tool a lot. Maybe you can find a hint in the examples on the books website: http://filthyrichclients.org/ One possibility is to paint your own dialog on the Glass Pane. Then you have full control of the dialog and can paint whatever you want. Here's a tutorial on creating animations on the Glass Pane.

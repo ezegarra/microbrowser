@@ -1,0 +1,22 @@
+Getting mail from GMail into Java application using IMAP gmail imap You have to connect to GMail using SSL only. Setting the following properties will force that for you. 
+props.setProperty("mail.imap.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
+props.setProperty("mail.imap.socketFactory.fallback", "false");
+ In JavaMail, you can use imaps as the URL scheme to use IMAP over SSL. (See SSLNOTES.txt in your JavaMail distribution for more details.) For example, imaps://username%40gmail.com@imap.gmail.com/INBOX. Similarly, use smtps to send emails via Gmail. e.g., smtps://username%40gmail.com@smtp.gmail.com/. Again, read SSLNOTES.txt for more details. Hope it helps! Using imaps was a great suggestion. Neither of the answers provided just worked for me, so I googled some more and found something that worked. Here's how my code looks now. Properties props = System.getProperties();
+props.setProperty("mail.store.protocol", "imaps");
+try {
+  Session session = Session.getDefaultInstance(props, null);
+  Store store = session.getStore("imaps");
+  store.connect("imap.gmail.com", "<username>@gmail.com", "<password>");
+  ...
+} catch (NoSuchProviderException e) {
+  e.printStackTrace();
+  System.exit(1);
+} catch (MessagingException e) {
+  e.printStackTrace();
+  System.exit(2);
+}
+ This is nice because it takes the redundant Authenticator out of the picture. I'm glad this worked because the SSLNOTES.txt make my head spin. Check http://g4j.sourceforge.net/. There is a minimal gmail client built using this API. If you'd like more sample code on using JavaMail with Gmail (e.g. converting Gmail labels to IMAP folder names, or using IMAP IDLE), do check out my program GmailAssistant on SourceForge. URLName server = new URLName("imaps://:@imap.gmail.com/INBOX"); I used following properties to get the store and It works well. "mail.imaps.host" : "imap.gmail.com" "mail.store.protocol" : "imaps" "mail.imaps.port" : "993" You need to have JSSE installed to use SSL with Java You need to use the following properties for imaps: props.setProperty("mail.imaps.host", "imap.gmail.com");
+props.setProperty("mail.imaps.port", "993");
+props.setProperty("mail.imaps.connectiontimeout", "5000");
+props.setProperty("mail.imaps.timeout", "5000");
+ Notices it's "imaps", not "imap", since the protocol you're using is imaps (IMAP + SSL)

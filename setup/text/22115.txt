@@ -1,0 +1,145 @@
+Using Regex to generate Strings rather than match them regex You'll have to write your own parser, like the author of String::Random (Perl) did. In fact, he doesn't use regexes anywhere in that module, it's just what perl-coders are used to. On the other hand, maybe you can have a look at the source, to get some pointers. EDIT: Damn, blair beat me to the punch by 15 seconds. Edit: As mentioned in the comments, there is a library available at Google Code to acheive this: http://code.google.com/p/xeger See also https://github.com/mifmif/Generex as suggested by Mifmif Original message: Firstly, with a complex enough regexp, i beleive this can be impossible. But you should be able to put something together for simple regexps. If you take a look at the source code of the class java.util.regex.Pattern, you'll see that it uses an internal representation of Node instances. Each of the different pattern components have their own implementation of a Node subclass. These Nodes are organised into a tree. By producing a visitor that traverses this tree, you should be able to call an overloaded generator method or some kind of Builder that cobbles something together. Visual Studio Team System does include something like this http://msdn.microsoft.com/en-us/library/aa833197(VS.80).aspx Not much help for Java though, so sorry. On stackoverflow podcast 11: Spolsky: Yep. There's a new product also, if you don't want to use the Team System there our friends at Redgate have a product called SQL Data Generator [http://www.red-gate.com/products/sql_data_generator/index.htm]. It's $295, and it just generates some realistic test data. And it does things like actually generate real cities in the city column that actually exist, and then when it generates those it'll get the state right, instead of getting the state wrong, or putting states into German cities and stuff like... you know, it generates pretty realistic looking data. I'm not really sure what all the features are. This is probably not what you are looking for, but it might be a good starting off point, instead of creating your own. I can't seem to find anything in google, so I would suggest tackling the problem by parsing a given regular expression into the smallest units of work (\w, [x-x], \d, etc) and writing some basic methods to support those regular expression phrases. So for \w you would have a method getRandomLetter() which returns any random letter, and you would also have getRandomLetter(char startLetter, char endLetter) which gives you a random letter between the two values. I know there's already an accepted answer, but I've been using RedGate's Data Generator (the one mentioned in Craig's answer) and it works REALLY well for everything I've thrown at it. It's quick and that leaves me wanting to use the same regex to generate the real data for things like registration codes that this thing spits out. It takes a regex like: [A-Z0-9]{3,3}-[A-Z0-9]{3,3}
+ and it generates tons of unique codes like: LLK-32U
+ Is this some big secret algorithm that RedGate figured out and we're all out of luck or is it something that us mere mortals actually could do? It's far from supporting a full PCRE regexp, but I wrote the following Ruby method to take a regexp-like string and produce a variation on it. (For language-based CAPTCHA.) # q = "(How (much|many)|What) is (the (value|result) of)? :num1 :op :num2?"
+# values = { :num1=>42, :op=>"plus", :num2=>17 }
+# 4.times{ puts q.variation( values ) }
+# => What is 42 plus 17?
+# => How many is the result of 42 plus 17?
+# => What is the result of 42 plus 17?
+# => How much is the value of 42 plus 17?
+class String
+  def variation( values={} )
+    out = self.dup
+    while out.gsub!( /\(([^())?]+)\)(\?)?/ ){
+      ( $2 && ( rand > 0.5 ) ) ? '' : $1.split( '|' ).random
+    }; end
+    out.gsub!( /:(#{values.keys.join('|')})\b/ ){ values[$1.intern] }
+    out.gsub!( /\s{2,}/, ' ' )
+    out
+  end
+end
+
+class Array
+  def random
+    self[ rand( self.length ) ]
+  end
+end I've gone the root of rolling my own :) Xeger (Java) is capable of doing it as well: String regex = "[ab]{4,6}c";
+Xeger generator = new Xeger(regex);
+String result = generator.generate();
+assert result.matches(regex);
+ I am on flight and just saw the question: I have written easiest but inefficient and incomplete solution. I hope it may help you to start writing your own parser: public static void main(String[] args) {
+
+    String line = "[A-Z0-9]{16}";
+    String[] tokens = line.split(line);
+    char[] pattern = new char[100];
+    int i = 0;
+    int len = tokens.length;
+    String sep1 = "[{";
+    StringTokenizer st = new StringTokenizer(line, sep1);
+
+    while (st.hasMoreTokens()) {
+        String token = st.nextToken();
+        System.out.println(token);
+
+        if (token.contains("]")) {
+            char[] endStr = null;
+
+            if (!token.endsWith("]")) {
+                String[] subTokens = token.split("]");
+                token = subTokens[0];
+
+                if (!subTokens[1].equalsIgnoreCase("*")) {
+                    endStr = subTokens[1].toCharArray();
+                }
+            }
+
+            if (token.startsWith("^")) {
+                String subStr = token.substring(1, token.length() - 1);
+                char[] subChar = subStr.toCharArray();
+                Set set = new HashSet<Character>();
+
+                for (int p = 0; p < subChar.length; p++) {
+                    set.add(subChar[p]);
+                }
+
+                int asci = 1;
+
+                while (true) {
+                    char newChar = (char) (subChar[0] + (asci++));
+
+                    if (!set.contains(newChar)) {
+                        pattern[i++] = newChar;
+                        break;
+                    }
+                }
+                if (endStr != null) {
+                    for (int r = 0; r < endStr.length; r++) {
+                        pattern[i++] = endStr[r];
+                    }
+                }
+
+            } else {
+                pattern[i++] = token.charAt(0);
+            }
+        } else if (token.contains("}")) {
+            char[] endStr = null;
+
+            if (!token.endsWith("}")) {
+                String[] subTokens = token.split("}");
+                token = subTokens[0];
+
+                if (!subTokens[1].equalsIgnoreCase("*")) {
+                    endStr = subTokens[1].toCharArray();
+                }
+            }
+
+            int length = Integer.parseInt((new StringTokenizer(token, (",}"))).nextToken());
+            char element = pattern[i - 1];
+
+            for (int j = 0; j < length - 1; j++) {
+                pattern[i++] = element;
+            }
+
+            if (endStr != null) {
+                for (int r = 0; r < endStr.length; r++) {
+                    pattern[i++] = endStr[r];
+                }
+            }
+        } else {
+            char[] temp = token.toCharArray();
+
+            for (int q = 0; q < temp.length; q++) {
+                pattern[i++] = temp[q];
+            }
+        }
+    }
+
+    String result = "";
+
+    for (int j = 0; j < i; j++) {
+        result += pattern[j];
+    }
+
+    System.out.print(result);
+}
+ Too late but it could help newcomer , here is a useful java library that provide many features for using regex to generate String (random generation ,generate String based on it's index, generate all String..) check it out here . Example :     Generex generex = new Generex("[0-3]([a-c]|[e-g]{1,2})");
+
+    // generate the second String in lexicographical order that match the given Regex.
+    String secondString = generex.getMatchedString(2);
+    System.out.println(secondString);// it print '0b'
+
+    // Generate all String that matches the given Regex.
+    List<String> matchedStrs = generex.getAllMatchedStrings();
+
+    // Using Generex iterator
+    Iterator iterator = generex.iterator();
+    while (iterator.hasNext()) {
+        System.out.print(iterator.next() + " ");
+    }
+    // it print 0a 0b 0c 0e 0ee 0e 0e 0f 0fe 0f 0f 0g 0ge 0g 0g 1a 1b 1c 1e
+    // 1ee 1e 1e 1f 1fe 1f 1f 1g 1ge 1g 1g 2a 2b 2c 2e 2ee 2e 2e 2f 2fe 2f 2f 2g
+    // 2ge 2g 2g 3a 3b 3c 3e 3ee 3e 3e 3f 3fe 3f 3f 3g 3ge 3g 3g 1ee
+
+    // Generate random String
+    String randomStr = generex.random();
+    System.out.println(randomStr);// a random value from the previous String list

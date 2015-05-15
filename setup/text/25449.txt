@@ -1,0 +1,16 @@
+How to create a pluginable Java program? plugins plugin-architecture Have you considered building on top of Eclipse's Rich Client Platform, and then exposing the Eclipse extension framework? Also, depending on your needs, the Spring Framework might help with that and other things you might want to do: http://www.springframework.org/ I've done this for software I've written in the past, it's very handy. I did it by first creating an Interface that all my 'plugin' classes needed to implement. I then used the Java ClassLoader to load those classes and create instances of them. One way you can go about it is this: File dir = new File("put path to classes you want to load here");
+URL loadPath = dir.toURI().toURL();
+URL[] classUrl = new URL[]{loadPath};
+
+ClassLoader cl = new URLClassLoader(classUrl);
+
+Class loadedClass = cl.loadClass("classname"); // must be in package.class name format
+ That has loaded the class, now you need to create an instance of it, assuming the interface name is MyModule: MyModule modInstance = (MyModule)loadedClass.newInstance();
+ I recommend that you take a close look at the Java Service Provider (SPI) API. It provides a simple system for finding all of the classes in all Jars on the classpath that expose themselves as implementing a particular service. I've used it in the past with plugin systems with great success. Look into OSGi. On one hand, OSGi provides all sorts of infrastructure for managing, starting, and doing lots of other things with modular software components. On the other hand, it could me too heavy-weight for your needs. Incidentally, Eclipse uses OSGi to manage its plugins. At the home-grown classloader approach: While its definitely a good way to learn about classloaders there is something called "classloader hell", mostly known by people who wrestled with it when it comes to use in bigger projects. Conflicting classes are easy to introduce and hard to solve. And there is a good reason why eclipse made the move to OSGi years ago. So, if its more then a pet project, take a serious look into OSGi. Its worth looking at. You'll learn about classloaders PLUS an emerging technolgy standard. Although I'll second the accepted solution, if a basic plugin support is needed (which is the case most of the time), there is also the Java Plugin Framework (JPF) which, though lacking proper documentation, is a very neat plugin framework implementation. It's easily deployable and - when you get through the classloading idiosynchrasies - very easy to develop with. A comment to the above is to be aware that plugin loadpaths below the plugin directory must be named after the full classpath in addition to having its class files deployed in a normal package path named path. E.g. plugins
+`-com.my.package.plugins
+  `-com
+    `-my
+      `-package
+        `-plugins
+          |- Class1.class
+          `- Class2.class

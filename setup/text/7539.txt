@@ -1,0 +1,39 @@
+Use of java.math.MathContext math bigdecimal mathcontext If I'm understanding you correctly, it sounds like you're expecting the MathContext to control how many digits should be kept after the decimal point. That's not what it's for. It specifies how many digits to keep, total. So if you specify that you want 3 significant digits, that's all you're going to get. For example, this: System.out.println(new BigDecimal("1234567890.123456789",
+                   new MathContext(20)));
+
+System.out.println(new BigDecimal("1234567890.123456789",
+                   new MathContext(10)));
+
+System.out.println(new BigDecimal("1234567890.123456789",
+                   new MathContext(5)));
+ will output: 1234567890.123456789
+1234567890
+1.2346E+9
+ It's not for fun. Actually I found some online example, which stated the use of MathContext to round the amounts/numbers stored in BigDecimal. For example, If MathContext is configured to have precision = 2 and rounding mode = ROUNDHALFEVEN BigDecimal Number = 0.5294, is rounded to 0.53 So I thought it is a newer technique and used it for rounding purpose. However it turned into nightmare because it started rounding even mentissa part of number. For example, Number = 1.5294, is rounded to 1.5 Number = 10.5294, is rounded to 10 Number = 101.5294 is rounded to 100 .... and so on So this is not the behavior I expected for rounding (as precision = 2). It seems to be having some logic because from patter I can say that it takes first two digits (as percision is 2) of number and then appends 0s till the no. of digits become same as unrounded amount (checkout the example of 101.5294 ...) Regards, Jatan @jatan Thanks for you answer. It makes sense. Can you please explain me MathContext in the context of BigDecimal#round method. There's nothing special about BigDecimal.round() vs. any other BigDecimal method. In all cases, the MathContext specifies the number of significant digits and the rounding technique. Basically, there are two parts of every MathContext. There's a precision, and there's also a RoundingMode. The precision again specifies the number of significant digits. So if you specify 123 as a number, and ask for 2 significant digits, you're going to get 120. It might be clearer if you think in terms of scientific notation. 123 would be 1.23e2 in scientific notation. If you only keep 2 significant digits, then you get 1.2e2, or 120. By reducing the number of significant digits, we reduce the precision with which we can specify a number. The RoundingMode part specifies how we should handle the loss of precision. To reuse the example, if you use 123 as the number, and ask for 2 significant digits, you've reduced your precision. With a RoundingMode of HALF_UP (the default mode), 123 will become 120. With a RoundingMode of CEILING, you'll get 130. For example: System.out.println(new BigDecimal("123.4",
+                   new MathContext(4,RoundingMode.HALF_UP)));
+System.out.println(new BigDecimal("123.4",
+                   new MathContext(2,RoundingMode.HALF_UP)));
+System.out.println(new BigDecimal("123.4",
+                   new MathContext(2,RoundingMode.CEILING)));
+System.out.println(new BigDecimal("123.4",
+                   new MathContext(1,RoundingMode.CEILING)));
+ Outputs: 123.4
+1.2E+2
+1.3E+2
+2E+2
+ You can see that both the precision and the rounding mode affect the output. For rounding just the fractional part of a BigDecimal, check out the BigDecimal.setScale(int newScale, int roundingMode) method. E.g. to change a number with three digits after the decimal point to one with two digits, and rounding up: BigDecimal original = new BigDecimal("1.235");
+BigDecimal scaled = original.setScale(2, BigDecimal.ROUND_HALF_UP);
+ The result of this is a BigDecimal with the value 1.24 (because of the rounding up rule) I would add here, a few examples. I haven't found them in previous answers, but I find them useful for those who maybe mislead significant digits with number of decimal places. Let's assume, we have such context: MathContext MATH_CTX = new MathContext(3, RoundingMode.HALF_UP);
+ For this code: BigDecimal d1 = new BigDecimal(1234.4, MATH_CTX);
+System.out.println(d1);
+ it's perfectly clear, that your result is 1.23E+3 as guys said above. First significant digits are 123... But what in this case: BigDecimal d2 = new BigDecimal(0.000000454770054, MATH_CTX);
+System.out.println(d2);
+ your number will not be rounded to 3 places after comma - for someone it can be not intuitive and worth to emphasize. Instead it will be rounded to the first 3 significant digits, which in this case are "4 5 4". So above code results in 4.55E-7 and not in 0.000 as someone could expect. Similar examples: BigDecimal d3 = new BigDecimal(0.001000045477, MATH_CTX);
+ System.out.println(d3);  // 0.00100
+
+BigDecimal d4 = new BigDecimal(0.200000477, MATH_CTX);
+ System.out.println(d4);   // 0.200
+
+BigDecimal d5 = new BigDecimal(0.000000004, MATH_CTX);
+    System.out.println(d5); //4.00E-9
+ I hope this obvious, but relevant example would be helpful...

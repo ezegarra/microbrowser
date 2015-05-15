@@ -1,0 +1,44 @@
+How can I override an EJB 3 session bean method with a generic argument - if possible at all? generics inheritance java-ee ejb-3.0 Can you write a unit test against your FooRepository class just using it as a POJO. If that works as expected then I'm not familiar with any reason why it would function differently inside a container. I suspect there is something else going on and it will probably be easier to debug if you test it as a POJO. I tried it with a pojo and it seems to work. I had to modify your code a bit. I think your interfaces were a bit off, but I'm not sure. I assumed "Foo" was a concrete type, but if not I can do some more testing for you. I just wrote a main method to test this. I hope this helps! public static void main(String[] args){
+    	FooRepository fooRepository = new FooRepositoryImpl();
+    	fooRepository.delete(new Foo("Bar"));
+}
+
+public class Foo
+{
+    private String value;
+
+    public Foo(String inValue){
+    	super();
+    	value = inValue;
+    }
+    public String toString(){
+    	return value;
+    }
+}
+
+public interface Repository<E>
+{
+    public void delete(E entity);
+}
+
+public interface FooRepository extends Repository<Foo>
+{
+    //other methods
+}
+
+public class AbstractRespository<E> implements Repository<E>
+{
+    public void delete(E entity){
+    	System.out.println("Delete-" + entity.toString());
+    }
+}
+
+public class FooRepositoryImpl extends AbstractRespository<Foo> implements FooRepository
+{
+     @Override
+       public void delete(Foo entity){
+          //do something before deleting the entity
+    	 	System.out.println("something before");
+          super.delete(entity);
+       }
+}

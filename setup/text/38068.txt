@@ -1,0 +1,15 @@
+Generics in Java generics No. Though, groovy, a JVM language, is dynamically typed and would let you write: def map = new HashMap<complicated generic expression>();
+ There's the pseudo-typedef antipattern... class StringList extends ArrayList<String> { }
+ Good stuff, drink up! ;-) As the article notes, this technique has some serious issues, primarily that this "typedef" is actually a separate class and thus cannot be used interchangeably with either the type it extends or other similarly defined types. In a generic method, you can use a limited form of type inferrence to avoid some repetitions. Example: if you have the function     <K, V> Map<K, V> getSomething() {
+        //...
+    }
+ you can use: final Map<String, Object> something = getsomething();
+ instead of: final Map<String, Object> something = this.<String, Object>getsomething();
+ Use Factory Pattern for creation of Generics: Method Sample: public Map<String, Integer> createGenMap(){
+    	return new HashMap<String,Integer>();
+
+    }
+ The pseudo-typedef antipattern mentioned by Shog9 would work - though it's not recommended to use an ANTIPATTERN - but it does not address your intentions. The goal of pseudo-typedef is to reduce clutter in declaration and improve readability. What you want is to be able to replace a group of generics declarations by one single trade. I think you have to stop and think: "in witch ways is it valuable?". I mean, I can't think of a scenario where you would need this. Imagine class A: class A {
+     private Map<String, Integer> values = new HashMap<String, Integer>();
+}
+ Imagine now that I want to change the 'values' field to a Map. Why would exist many other fields scattered through the code that needs the same change? As for the operations that uses 'values' a simple refactoring would be enough.

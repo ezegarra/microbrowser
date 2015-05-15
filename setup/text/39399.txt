@@ -1,0 +1,70 @@
+How can I set the welcome page to a struts action? jsp struts It appears that a popular solution will not work in all containers... http://www.theserverside.com/discussions/thread.tss?thread_id=30190 I would create a filter and bounce all requests to root back with forward responce. Hacks with creating home.do page looks ugly to me (One more thing to remember for you and investigate for someone who will support your code). "Surely there's a better way!" There isn't. Servlet specifications (Java Servlet Specification 2.4, "SRV.9.10 Welcome Files" for instance) state: The purpose of this mechanism is to allow the deployer to specify an ordered list of partial URIs for the container to use for appending to URIs when there is a request for a URI that corresponds to a directory entry in the WAR not mapped to a Web component. You can't map Struts on '/', because Struts kind of require to work with a file extension. So you're left to use an implicitely mapped component, such as a JSP or a static file. All the other solutions are just hacks. So keep your solution, it's perfectly readable and maintainable, don't bother looking further. Personally, I'd keep the same setup you have now, but change the redirect for a forward. That avoids sending a header back to the client and having them make another request. So, in particular, I'd replace the <% 
+  response.sendRedirect("/myproject/MyAction.action");
+%>
+ in index.jsp with <jsp:forward page="/MyAction.action" />
+ The other effect of this change is that the user won't see the URL in the address bar change from "http://server/myproject" to "http://server/myproject/index.jsp", as the forward happens internally on the server. As of the 2.4 version of the Servlet specification you are allowed to have a servlet in the welcome file list. Note that this may not be a URL (such as /myproject/MyAction.action). It must be a named servlet and you cannot pass a query string to the servlet. Your controller servlet would need to have a default action. <servlet>
+  <servlet-name>MyController</servlet-name>
+  <servlet-class>com.example.MyControllerServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>MyController</servlet-name>
+  <url-pattern>*.action</url-pattern>
+</servlet-mapping>
+<welcome-file-list>
+  <welcome-file>MyController</welcome-file>
+</welcome-file-list>
+ create an empty file with name as your struts action, then set the name into "welcome-file-list" in your web.xml. For eg: your struts action : "welcome.do" 1. create an empty file and named it: "welcome.do" then put into your web dir 2. put welcome.do in your "welcome-file-list" in web.xml file This is a pretty old thread but the topic discussed, i think, is still relevant. I use a struts tag - s:action to achieve this. I created an index.jsp in which i wrote this... <s:action name="loadHomePage" namespace="/load" executeResult="true" />
+ This works as well reducing the need of a new servlet or jsp <welcome-file-list>
+<welcome-file>/MyAction.action</welcome-file>
+</welcome-file-list>
+ Here two blogs with same technique: http://technologicaloddity.com/2010/03/25/spring-welcome-file-without-redirect/ http://wiki.metawerx.net/wiki/HowToUseAServletAsYourMainWebPage It require Servlet API >= v2.4: <servlet-mapping>
+    <servlet-name>dispatcher</servlet-name>
+    <url-pattern>/</url-pattern>
+    <url-pattern>/index.htm</url-pattern>    <<==  *1*
+</servlet-mapping>
+<welcome-file-list>
+    <welcome-file>index.htm</welcome-file>   <<== *2*
+</welcome-file-list>
+ so you no longer need redirect.jsp in non-WEB-INF directory!! Just add a filter in web.xml like <filter>
+    <filter-name>customfilter</filter-name>
+    <filter-class>com.example.CustomFilter</filter-class>
+</filter>
+<filter-mapping>
+    <filter-name>customfilter</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+ And add the following code in doFilter method of that CustomFilter class public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse,
+        FilterChain filterChain) throws IOException, ServletException {
+    HttpServletRequest httpRequest = (HttpServletRequest)servletRequest;
+    HttpServletResponse httpResponse = (HttpServletResponse)servletResponse;
+    if (! httpResponse.isCommitted()) {
+        if ((httpRequest.getContextPath() + "/").equals(httpRequest.getRequestURI())) {
+            httpResponse.sendRedirect(httpRequest.getContextPath() + "/MyAction");
+        }
+        else {
+            filterChain.doFilter(servletRequest, servletResponse);
+        }
+    }
+}
+ So that Filter will redirect to the action. You dont need any JSP to be placed outside WEB-INF as well. This worked fine for me, too: <welcome-file-list>
+<welcome-file>MyAction.action</welcome-file>
+</welcome-file-list>
+ I was not able to get the default action to execute when the user enters the webapp using the root of the web app (mywebapp/). There is a bug in struts 2.3.12 that won't go to the default action or use the welcome page when you use the root url. This will be a common occurrence. Once I changed back to struts 2.1.8 it worked fine. I have configured like following. it worked perfect and no URL change also... Create a dummy action like following in struts2.xml file. so whenever we access application like http://localhost:8080/myapp, it will forward that to dummy action and then it redirects to index.jsp / index.tiles... <action name="">
+    <result type="tiles">/index.tiles</result>
+</action>
+ w/o tiles <action name="">
+    <result>/index.jsp</result>
+</action>
+ may be we configure some action index.action in web.xml as <welcome-file>index.action</welcome-file>, and use that action to forward required page... there are this answer above but it is not clear about web app context so i do this: <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+<servlet>
+    <servlet-name>TilesDispatchServlet</servlet-name>
+    <servlet-class>org.apache.tiles.web.util.TilesDispatchServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>TilesDispatchServlet</servlet-name>
+    <url-pattern>*.tiles</url-pattern>
+</servlet-mapping>
+ And in index.jsp i just write: <jsp:forward page="index.tiles" />
+ And i have index definition, named index and it all togather work fine and not depends on webapp context path. Something that I do is to put an empty file of the same name as your struts action and trick the container to call the struts action. Ex. If your struts action is welcome.do, create an empty file named welcome.do. That should trick the container to call the Struts action.

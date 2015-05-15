@@ -1,0 +1,12 @@
+Do Java multi-line comments account for strings? eclipse comments Eclipse is correct. There is no interpretation context inside a comment (no escaping, etc). See JLS §3.7. Yes, I am commenting the code out just to do a quick test. I've already tested what I needed to by commenting the code out another way; I was just curious about what appears to be an odd misfeature of Java and/or Eclipse. A simple test shows Eclipse is correct: public class Test {
+  public static final void main(String[] args) throws Exception {
+    String s = "This is the original string.";
+    /* This is commented out.
+    s = "This is the end of a comment: */ ";
+    */
+    System.out.println(s);
+  }
+}
+ This fails to compile with: Test.java:5: unclosed string literal
+    s = "This is the end of a comment: */ ";
+ I may be helpful to just do a "batch" multiline comment so that it comments each line with "//". It is Ctrl+"/" in Idea for commenting and uncommenting the selected lines, Eclipse should have a similar feature. In Eclipse you can highlight the part of the source code you want to comment out and use the Ctrl+/ to single-line comment every line in the highlighted section - puts a "//" at the beginning of the lines. Or if you really want to block-comment the selection use the Ctrl+Shift+/ combination. It will detect the block comments in your selection. However undoing this is harder than single-line comments. I often use only // for inline commments, and use /* */ only for commenting out large blocks the way you have. A lot of developers will still use /* */ for inline comments, because that's what they're familiar with, but they all run into problems like this one, in C it didn't matter as much because you could #if 0 the stuff away.

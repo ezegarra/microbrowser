@@ -1,0 +1,16 @@
+Changing default file structure in a Java Struts App templates struts configuration-files For persistence.xml, specifically, you can put a persistence unit in a separate JAR, which you can deploy separately from your web application WAR, or both together in an EAR archive, depending on what your application server supports. For example, the JBoss manual describes this as Deploy EAR with EJB3 JAR. For struts-config.xml I expect that you are going to have to override the Struts code that loads it, if you want to use a non-standard location. I don't know about the Velocity templates. In general, web applications only load resources from within the WAR, for security reasons. There are other techniques you can use, but you may find it easier to try weblets, which seems to be a framework designed to let you load resources from a separate JAR. You need to look into velocity.properties file in your WEB_INF folder.IMHO it is here where you need to change your template root changing the property file.resource.loader.path. Hope it helps, Petr If I understood your question about Struts config files right, they are specified in web.xml. Find the Struts servlet config param. The param-value can be a list of comma separated list of XML files to load. Eg: <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+    	<param-name>config</param-name>
+    	<param-value>
+    		WEB-INF/config/struts-config.xml,
+    		WEB-INF/config/struts-config-stuff.xml,
+    		WEB-INF/config/struts-config-good.xml,
+    		WEB-INF/config/struts-config-bad.xml,
+    		WEB-INF/config/struts-config-ugly.xml
+    	</param-value>
+    </init-param>
+    ...
+</servlet>
+ See this Struts guide under 5.3.2. And yes, this applies to 2.x also.

@@ -1,0 +1,103 @@
+How do I format a number in java? numberformat From this thread, there are different ways to do this: double r = 5.1234;
+System.out.println(r); // r is 5.1234
+
+int decimalPlaces = 2;
+BigDecimal bd = new BigDecimal(r);
+
+// setScale is immutable
+bd = bd.setScale(decimalPlaces, BigDecimal.ROUND_HALF_UP);
+r = bd.doubleValue();
+
+System.out.println(r); // r is 5.12
+ f = (float) (Math.round(n*100.0f)/100.0f);
+ DecimalFormat df2 = new DecimalFormat( "#,###,###,##0.00" );
+double dd = 100.2397;
+double dd2dec = new Double(df2.format(dd)).doubleValue();
+
+// The value of dd2dec will be 100.24
+ The DecimalFormat() seems to be the most dynamic way to do it, and it is also very easy to understand when reading others code. You and String.format() will be new best friends! http://java.sun.com/j2se/1.5.0/docs/api/java/util/Formatter.html#syntax  String.format("%.2f", (double)value);
+ Use DecimalFormat. Round numbers, yes. This is the main example source. /*
+ * Copyright (c) 1995 - 2008 Sun Microsystems, Inc.  All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ *   - Redistributions of source code must retain the above copyright
+ *     notice, this list of conditions and the following disclaimer.
+ *
+ *   - Redistributions in binary form must reproduce the above copyright
+ *     notice, this list of conditions and the following disclaimer in the
+ *     documentation and/or other materials provided with the distribution.
+ *
+ *   - Neither the name of Sun Microsystems nor the names of its
+ *     contributors may be used to endorse or promote products derived
+ *     from this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+ * IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+ * THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
+ * CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ * EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+ * PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+ * PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ * LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ */ 
+
+
+ import java.util.*;
+ import java.text.*;
+
+ public class DecimalFormatDemo {
+
+    static public void customFormat(String pattern, double value ) {
+    DecimalFormat myFormatter = new DecimalFormat(pattern);
+    String output = myFormatter.format(value);
+    System.out.println(value + "  " + pattern + "  " + output);
+ }
+
+ static public void localizedFormat(String pattern, double value, 
+                                  Locale loc ) {
+  NumberFormat nf = NumberFormat.getNumberInstance(loc);
+  DecimalFormat df = (DecimalFormat)nf;
+  df.applyPattern(pattern);
+  String output = df.format(value);
+  System.out.println(pattern + "  " + output + "  " + loc.toString());
+ }
+
+  static public void main(String[] args) {
+
+  customFormat("###,###.###", 123456.789);
+  customFormat("###.##", 123456.789);
+  customFormat("000000.000", 123.78);
+  customFormat("$###,###.###", 12345.67);
+  customFormat("\u00a5###,###.###", 12345.67);
+
+  Locale currentLocale = new Locale("en", "US");
+
+  DecimalFormatSymbols unusualSymbols = 
+     new DecimalFormatSymbols(currentLocale);
+  unusualSymbols.setDecimalSeparator('|');
+  unusualSymbols.setGroupingSeparator('^');
+  String strange = "#,##0.###";
+  DecimalFormat weirdFormatter = new DecimalFormat(strange, unusualSymbols);
+  weirdFormatter.setGroupingSize(4);
+  String bizarre = weirdFormatter.format(12345.678);
+  System.out.println(bizarre);
+
+  Locale[] locales = {
+     new Locale("en", "US"),
+     new Locale("de", "DE"),
+     new Locale("fr", "FR")
+  };
+
+  for (int i = 0; i < locales.length; i++) {
+     localizedFormat("###,###.###", 123456.789, locales[i]);
+  }
+
+  }
+ }
+ There are two approaches in the standard library. One is to use java.text.DecimalFormat. The other more cryptic methods (String.format, PrintStream.printf, etc) based around java.util.Formatter should keep C programmers happy(ish). Be aware that classes that descend from NumberFormat (and most other Format descendants) are not synchronized. It is a common (but dangerous) practice to create format objects and store them in static variables in a util class. In practice, it will pretty much always work until it starts experiencing significant load. As Robert has pointed out in his answer: DecimalFormat is neither synchronized nor does the API guarantee thread safety (it might depend on the JVM version/vendor you are using). Use Spring's Numberformatter instead, which is thread safe. Try this: String.format("%.2f", 32.302342342342343); Simple and efficient.

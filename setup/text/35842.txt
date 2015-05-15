@@ -1,0 +1,124 @@
+How can a Java program get its own process ID? pid There exists no platform-independent way that can be guaranteed to work in all jvm implementations. ManagementFactory.getRuntimeMXBean().getName() looks like the best (closest) solution. It's short, and probably works in every implementation in wide use. On linux it returns a value like 12345@localhost (12345 being the process id). Beware though that according to the docs, there are no guarantees about this value: Returns the name representing the running Java virtual machine. The returned name string can be any arbitrary string and a Java virtual machine implementation can choose to embed platform-specific useful information in the returned name string. Each running virtual machine could have a different name. It depends on where you are looking for the information from. If you are looking for the information from the console you can use the jps command. The command gives output similar to the Unix ps command and comes with the JDK since I believe 1.5 If you are looking from the process the RuntimeMXBean (as said by Wouter Coekaerts) is probably your best choice. The output from getName() on Windows using Sun JDK 1.6 u7 is in the form [PROCESS_ID]@[MACHINE_NAME]. You could however try to execute jps and parse the result from that: String jps = [JDK HOME] + "\\bin\\jps.exe";
+Process p = Runtime.getRuntime().exec(jps);
+ If run with no options the output should be the process id followed by the name. You can check out my project: JavaSysMon on GitHub. It provides process id and a bunch of other stuff (CPU usage, memory usage) cross-platform (presently Windows, Mac OSX, Linux and Solaris) Try Sigar - http://support.hyperic.com/display/SIGAR/Home. very extensive APIs. Apache 2 license.     private Sigar sigar;
+
+    public synchronized Sigar getSigar() {
+        if (sigar == null) {
+            sigar = new Sigar();
+        }
+        return sigar;
+    }
+
+    public synchronized void forceRelease() {
+        if (sigar != null) {
+            sigar.close();
+            sigar = null;
+        }
+    }
+
+    public long getPid() {
+        return getSigar().getPid();
+    }
+ For older JVM, in linux... private static String getPid() {
+    byte[] bo = new byte[256];
+    InputStream is = new FileInputStream("/proc/self/stat");
+    is.read(bo);
+    for (int i = 0; i < bo.length; i++) {
+        if ((bo[i] < '0') || (bo[i] > '9')) {
+            return new String(bo, 0, i);
+        }
+    }
+    return "-1";
+}
+ You could use JNA. Unfortunately there is no common JNA API to get the current process ID yet, but each platform is pretty simple: Windows Make sure you have jna-platform.jar then: int pid = Kernel32.INSTANCE.GetCurrentProcessId();
+ Unix Declare: private interface CLibrary extends Library {
+    CLibrary INSTANCE = (CLibrary) Native.loadLibrary("c", CLibrary.class);   
+    int getpid ();
+}
+ Then: int pid = CLibrary.INSTANCE.getpid();
+ The latest I have found is that there is a system property called sun.java.launcher.pid that is available at least on linux. My plan is to use that and if it is not found to use the JMX bean. The following method tries to extract the PID from java.lang.management.ManagementFactory: private static String getProcessId(final String fallback) {
+    // Note: may fail in some JVM implementations
+    // therefore fallback has to be provided
+
+    // something like '<pid>@<hostname>', at least in SUN / Oracle JVMs
+    final String jvmName = ManagementFactory.getRuntimeMXBean().getName();
+    final int index = jvmName.indexOf('@');
+
+    if (index < 1) {
+        // part before '@' empty (index = 0) / '@' not found (index = -1)
+        return fallback;
+    }
+
+    try {
+        return Long.toString(Long.parseLong(jvmName.substring(0, index)));
+    } catch (NumberFormatException e) {
+        // ignore
+    }
+    return fallback;
+}
+ Just call getProcessId("<PID>"), for instance. Here's a backdoor method which might not work with all VMs but should work on both linux and windows (original example here): java.lang.management.RuntimeMXBean runtime = 
+    java.lang.management.ManagementFactory.getRuntimeMXBean();
+java.lang.reflect.Field jvm = runtime.getClass().getDeclaredField("jvm");
+jvm.setAccessible(true);
+sun.management.VMManagement mgmt =  
+    (sun.management.VMManagement) jvm.get(runtime);
+java.lang.reflect.Method pid_method =  
+    mgmt.getClass().getDeclaredMethod("getProcessId");
+pid_method.setAccessible(true);
+
+int pid = (Integer) pid_method.invoke(mgmt);
+ This is the code JConsole, and potentially jps and VisualVM uses. It utilizes classes from sun.jvmstat.monitor.* package, from tool.jar. package my.code.a003.process;
+
+import sun.jvmstat.monitor.HostIdentifier;
+import sun.jvmstat.monitor.MonitorException;
+import sun.jvmstat.monitor.MonitoredHost;
+import sun.jvmstat.monitor.MonitoredVm;
+import sun.jvmstat.monitor.MonitoredVmUtil;
+import sun.jvmstat.monitor.VmIdentifier;
+
+
+public class GetOwnPid {
+
+    public static void main(String[] args) {
+        new GetOwnPid().run();
+    }
+
+    public void run() {
+        System.out.println(getPid(this.getClass()));
+    }
+
+    public Integer getPid(Class<?> mainClass) {
+        MonitoredHost monitoredHost;
+        Set<Integer> activeVmPids;
+        try {
+            monitoredHost = MonitoredHost.getMonitoredHost(new HostIdentifier((String) null));
+            activeVmPids = monitoredHost.activeVms();
+            MonitoredVm mvm = null;
+            for (Integer vmPid : activeVmPids) {
+                try {
+                    mvm = monitoredHost.getMonitoredVm(new VmIdentifier(vmPid.toString()));
+                    String mvmMainClass = MonitoredVmUtil.mainClass(mvm, true);
+                    if (mainClass.getName().equals(mvmMainClass)) {
+                        return vmPid;
+                    }
+                } finally {
+                    if (mvm != null) {
+                        mvm.detach();
+                    }
+                }
+            }
+        } catch (java.net.URISyntaxException e) {
+            throw new InternalError(e.getMessage());
+        } catch (MonitorException e) {
+            throw new InternalError(e.getMessage());
+        }
+        return null;
+    }
+}
+ There are few catches: The tool.jar is a library distributed with Oracle JDK but not JRE! You cannot get tool.jar from Maven repo; configure it with Maven is a bit tricky The tool.jar probably contains platform dependent (native?) code so it is not easily distributable It runs under assumption that all (local) running JVM apps are "monitorable". It looks like that from Java 6 all apps generally are (unless you actively configure opposite) It probably works only for Java 6+ Eclipse does not publish main class, so you will not get Eclipse PID easily Bug in MonitoredVmUtil? UPDATE: I have just double checked that JPS uses this way, that is Jvmstat library (part of tool.jar). So there is no need to call JPS as external process, call Jvmstat library directly as my example shows. You can aslo get list of all JVMs runnin on localhost this way. See JPS source code: http://grepcode.com/file_/repository.grepcode.com/java/root/jdk/openjdk/6-b14/sun/tools/jps/Jps.java/?v=source This is what I used when I had similar requirement. This determines the PID of the Java process correctly. Let your java code spawn a server on a pre-defined port number and then execute OS commands to find out the PID listening on the port. For Linux netstat -tupln | grep portNumber
+ Based on Ashwin Jayaprakash's answer (+1) about the Apache 2.0 licensed SIGAR, here is how I use it to get only the PID of the current process: import org.hyperic.sigar.Sigar;
+
+Sigar sigar = new Sigar();
+long pid = sigar.getPid();
+sigar.close();
+ Even though it does not work on all platforms, it does work on Linux, Windows, OS X and various Unix platforms as listed here.

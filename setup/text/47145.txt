@@ -1,0 +1,1 @@
+Customising log4j adapter log4j Write custom appenders for log4j May I suggest that you leverage the existing SyslogAppender?

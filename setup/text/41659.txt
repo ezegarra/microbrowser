@@ -1,0 +1,30 @@
+Is there a way to access web.xml properties from a Java Bean? design-patterns servlets Have you considered using the Spring framework for this? That way, your beans don't get any extra cruft, and spring handles the configuration setup for you. I think that you will have to add an associated bootstrap class which takes a reference to a ServletConfig (or ServletContext) and transcribes those values to the Factory class. At least this way you can package it separately. @toolkit : Excellent, most humbled - This is something that I have been trying to do for a while One way you could do this is: public class FactoryInitialisingServletContextListener implements ServletContextListener {
+
+    public void contextDestroyed(ServletContextEvent event) {
+    }
+
+    public void contextInitialized(ServletContextEvent event) {
+        Properties properties = new Properties();
+        ServletContext servletContext = event.getServletContext();
+        Enumeration<?> keys = servletContext.getInitParameterNames();
+        while (keys.hasMoreElements()) {
+            String key = (String) keys.nextElement();
+            String value = servletContext.getInitParameter(key);
+            properties.setProperty(key, value);
+        }
+        Factory.setServletContextProperties(properties);
+    }
+}
+
+public class Factory {
+
+    static Properties _servletContextProperties = new Properties();
+
+    public static void setServletContextProperties(Properties servletContextProperties) {
+        _servletContextProperties = servletContextProperties;
+    }
+}
+ And then have the following in your web.xml <listener>
+    <listener-class>com.acme.FactoryInitialisingServletContextListener<listener-class>
+</listener>
+ If your application is running in a web container, then the listener will be invoked by the container once the context has been created. In which case, the _servletContextProperties will be replaced with any context-params specified in the web.xml. If your application is running outside a web container, then _servletContextProperties will be empty.

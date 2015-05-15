@@ -1,0 +1,30 @@
+Painless resource management in java resources Yes you can and should put try/catch/finally block around your code. In C# there is a shorthand "using" statement, but in Java you are stuck with: public int foo() {
+    Resource f = new Resource();
+    try {
+        DoSomething(f);
+    }
+    finally {
+        f.Release();
+    }
+}
+ If you want the using block get involved in the java closure debate :S Sorry to disappoint you but in Java we do use try\catch\finally blocks a lot. And with "a lot", I mean A LOT. I do sometimes wish that Java has the C# using block. Most of the time you won't need to free up resources as Java's garbage collector will take care of that. However exceptions do have their uses in making error handling a lot cleaner. You can write your own exceptions and catch them for whatever you are doing. No more returning arbitrary error codes to the user! It is possible to factor out try/finally (and exception and algorithms) using the Execute around idiom. However the syntax is highly verbose. public int foo() {
+    withResource(new WithResource() { public void run(Resource resource) {
+        doSomething(resource);
+    }});
+}
+
+...
+
+public interface WithResource {
+    void run(Resource resource);
+}
+
+public static void withResource(WithResource handler) {
+    Resource resource = new Resource();
+    try {
+        handler.run(resource);
+    } finally {
+        resource.release();
+    }
+}
+ This sort of thing makes more sense if you are abstracting more than try/finally. For instance, with JDBC you can execute a statement, loop through the results, close resources and wrap the exception. This question dates to 2008 and therefore pertains to Java 6. Since then Java 7 has been released, which contains a new feature for Automatic Resource Management. For a more recent question that is relevant to Java 7 see this question: java techniques for automatic resource release? "prompt cleanup"?

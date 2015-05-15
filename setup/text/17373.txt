@@ -1,0 +1,68 @@
+How do I open the default mail program with a Subject and Body in a cross-platform way? windows osx email Mailto isn't a bad route to go. But as you mentioned, you'll need to make sure it is encoded correctly. The main problem with using mailto is with breaking lines. Use %0A for carriage returns, %20 for spaces. Also, keep in mind that the mailto is considered the same as a URL of sorts and therefore will have the same limitations for length. See http://support.microsoft.com/kb/208427, note the maximum URL length of 2083 characters. This is confirmed for mailto as well in this article: http://support.microsoft.com/kb/279460/en-us. Also, some mail clients can also have a limit (I believe older versions of Outlook Express had a limit of something much smaller like 483 characters or something. If you expect to have a longer string than that then you'll need to look at alternatives. BTW, you shouldn't have to resort to kicking out a script to do that as long as you can shell out a command from Java (I don't know if you can since I don't do Java). 1. Add a Subject Line You can prefill the subject line in the email by adding the subject preceded by '?subject=' after the email address. So the link now becomes: <a href="mailto:someone@yoursite.com?subject=Mail from Our Site">Email Us</a> 
+ 2. Send to Multiple Recipients Mail can be sent to additional recipients either as carbon copies (cc) or blind carbon copies (bcc). This is done in a similar way, by placing '?cc=someoneelse@theirsite.com' after the initial address. So the link looks like this: <a href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com">Email Us</a>
+ cc can simply be replaced by bcc if you wish to send blind carbon copies. This can be very useful if you have links on pages with different subjects. You might have the email on each page go to the appropriate person in a company but with a copy of all mails sent to a central address also. You can of course specify more than one additional recipient, just separate your list of recipients with a comma. <a href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com">Email Us</a> 
+ Sourced from Getting More From 'mailto' which now 404s. I retrieved the content from waybackmachine. 3. Combining Code You can combine the various bits of code above by the addition of an '&' between each. Thus adding me@mysite.com?subject=Hello&cc=you@yoursite.com&bcc=her@hersite.com
+ would send an email with the subject 'Hello' to me, you and her. 4. Write the Email You can also prefill the body of the email with the start of a message, or write the whole message if you like! To add some thing to the body of the email it is again as simple as above - '?body=' after the email address. However formatting that email can be a little tricky. To create spaces between words you will have to use hex code - for example '%20' between each word, and to create new lines will mean adding '%0D'. Similarly symbols such as $ signs will need to be written in hex code. If you also wish to add a subject line and send copies to multiple recipients, this can make for a very long and difficult to write bit of code. It will send a message to three people, with the subject and the message filled in, all you need to do is add your name. Just look at the code! <a href="mailto:abbeyvet@outfront.net?CC=spooky@outfront.net
+&BCC=thomasbrunt@outfront.net&Subject=Please%2C%20I%20insist
+%21&Body=Hi%0DI%20would%20like%20to%20send%20you%20
+%241000000%20to%20divide%20as%20you%20see%20fit%20among
+%20yourselves%20and%20all%20the%20moderators.%0DPlease%
+20let%20me%20know%20to%20whom%20I%20should%20send
+%20the%20check.">this link</a> 
+ Note: Original source URL where I found this is now 404ing so I grabbed to content from waybackmachine and posted it here so it doesn't get lost. Also, the OP stated it was not for a website, which is what these examples are, but some of these techniques may still be useful. I have implemented this, and it works well on OS X. (Ryan's mention of the max URL length has not been codified.) public void email(String subject, String body) throws Exception {
+    String cmd = "open mailto:";        
+    cmd += "?subject=" + urlEncode(subject);
+    cmd += "&body=" + urlEncode(body);
+    Runtime.getRuntime().exec(cmd);
+}
+
+private static String urlEncode(String s) {
+    StringBuilder sb = new StringBuilder();
+    for (int i = 0; i < s.length(); i++) {
+        char ch = s.charAt(i);
+        if (Character.isLetterOrDigit(ch)) {
+            sb.append(ch);
+        }
+        else {
+            sb.append(String.format("%%%02X", (int)ch));
+        }
+    }
+    return sb.toString();
+}
+ I had to re-implement URLencode because Java's would use + for space and Mail took those literally. Haven't tested on Windows yet. I had to re-implement URLencode because Java's would use + for space and Mail took those literally. I don't know if Java has some built-in method for urlencoding the string, but this link http://www.permadi.com/tutorial/urlEncoding/ shows some of the most common chars to encode: ;       %3B
+?       %3F
+/       %2F
+:       %3A
+#       %23
+&       %24
+=       %3D
++       %2B
+$       %26
+,       %2C
+space   %20 or +
+%       %25
+<       %3C
+>       %3E
+~       %7E
+%       %25
+ start works fine in Windows (see below). I would use Java's built in UrlEscape then just run a second replacement for '+' characters. start mailto:"?subject=My%20Subject&body=The%20Body"
+ I don't know if Java has some built-in method for urlencoding the string, but this link http://www.permadi.com/tutorial/urlEncoding/ shows some of the most common chars to encode: For percent-encoding mailto URI hnames and hvalues, I use the rules at http://shadow2531.com/opera/testcases/mailto/modern_mailto_uri_scheme.html#encoding. Under http://shadow2531.com/opera/testcases/mailto/modern_mailto_uri_scheme.html#implementations, there's a Java example that may help. Basically, I use: private String encodex(final String s) {
+    try {
+        return java.net.URLEncoder.encode(s, "utf-8").replaceAll("\\+", "%20").replaceAll("\\%0A", "%0D%0A");
+    } catch (Throwable x) {
+        return s;
+    }
+}
+ The string that's passed in should be a string with \r\n, and stray \r already normalized to \n. Also note that just returning the original string on an exception like above is only safe if the mailto URI argument you're passing on the command-line is properly escaped and quoted. On windows that means: Quote the argument. Escape any " inside the quotes with \. Escape any \ that precede a " or the end of the string with \. Also, on windows, if you're dealing with UTF-16 strings like in Java, you might want to use ShellExecuteW to "open" the mailto URI. If you don't and return s on an exception (where some hvalue isn't completely percent-encoded, you could end up narrowing some wide characters and losing information. But, not all mail clients accept unicode arguments, so ideally, you want to pass a properly percent-encoded-utf8 ascii argument with ShellExecute. Like 'start', ShellExecute with "open" should open the mailto URI in the default client. Not sure about other OS's. Never use Runtime.exec(String) on Mac OS X or any other operating system. If you do that, you'll have to figure out how to properly quote all argument strings and so on; it's a pain and very error-prone. Instead, use Runtime.exec(String[]) which takes an array of already-separated arguments. This is much more appropriate for virtually all uses. In Java 1.6 you have a stardard way to open the default mailer of the platform: the Desktop.mail(URI) method.The URI can be used to set all the fields of the mail (sender, recipients, body, subject). You can check a full example of desktop integration in Java 1.6 on Using the Desktop API in Java SE 6 You may use this... main(string[] args){    
+String forUri = String.format("mailto:?subject=%s&body=%s",  urlEncode(sub), urlEncode(mailBody));
+                        Desktop.getDesktop().mail(new URI(forUri));
+}
+
+private static final String urlEncode(String str) {
+        try {
+            return URLEncoder.encode(str, "UTF-8").replace("+", "%20");
+        } catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+ Also for formatting read A simple way of sending emails in Java: mail-to links

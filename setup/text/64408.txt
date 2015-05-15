@@ -1,0 +1,1 @@
+How do I get rid of "Cannot resolve property key" in fmt:message tags in JSPs in Intellij jsp ide intellij-idea jstl IMHO you can disable every hint or error marker in IDEA. Please tell us the version of IDEA that you use. I reported this as an issue to JetBrains and according to their issue report this is fixed in "Diana 8858". AFICT that means this will be fixed in IDEA 8.0.

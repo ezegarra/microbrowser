@@ -1,0 +1,3 @@
+How do I add a MIME type to .htaccess? apache .htaccess mime jnlp You should be able to just add this line: AddType application/x-java-jnlp-file     .jnlp
+ AddType application/x-java-jnlp-file .jnlp
+ Note that you might not actually be allowed to do that. See also the documentation of the AddType directive and the .htaccess howto.

@@ -1,0 +1,16 @@
+Is DocumentBuilder.parse() thread safe? thread-safety Even though DocumentBuilder.parse appears not to mutate the builder it does on the Sun JDK default implementation (based on Apache Xerces). Eccentric design decision. What can you do? I guess use a ThreadLocal: private static final ThreadLocal<DocumentBuilder> builderLocal =
+    new ThreadLocal<DocumentBuilder>() {
+        @Override protected DocumentBuilder initialValue() {
+            try {
+                return
+                    DocumentBuilderFactory
+                        .newInstance(
+                            "xx.MyDocumentBuilderFactory",
+                            getClass().getClassLoader()
+                        ).newDocumentBuilder();
+            } catch (ParserConfigurationException exc) {
+                throw new IllegalArgumentException(exc);
+            }
+        }
+    };
+ (Disclaimer: Not so much as attempted to compile the code.) There's a reset() method on DocumentBuilder which restores it to the state when it was first created. If you're going the ThreadLocal route, don't forget to call this or you're hosed. You can also check this code to make further optimization https://svn.apache.org/repos/asf/shindig/trunk/java/common/src/main/java/org/apache/shindig/common/xml/XmlUtil.java

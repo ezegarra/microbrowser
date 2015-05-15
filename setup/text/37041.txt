@@ -1,0 +1,39 @@
+Exposing a remote interface or object model eclipse osgi oop For the asynchronous bit, I would suggest checking into java.util.concurrent, and especially the Future interface. The future interface is used to represent objects which are not ready yet, but are beeing created in a seperate thread. You say that objects can be modified at any time by a third party, but I would still suggest you use immutable return objects here, and instead have a seperate thread/event log you can subscribe to to get noticed when objects expire. I have little programming with UIs, but I believe using Futures for asynchronus calls would let you have a responsive gui, rather than one that was waiting for a server reply. For the queries I would suggest using method chaining to build the query object, and each object returned by method chaining should be Iterable. Similar to how Djangos model is. Say you have QuerySet which implements Iterable. You can then call allSongs() which would return a result iterating over all Songs. Or allSongs().artist("Beatles"), and you would have an iterable over all Betles songs. Or even allSongs().artist("Beatles").years(1965,1967) and so on. Hope this helps as a starting place. @Staale: Thanks a bunch! Using Future for the async operations is interesting. The only drawback being that it is doesn't provide callbacks. But then again, I tried that approach, and look where that got me :) I'm currently solving a similar problem using a worker thread and a blocking queue for dispatching the incoming command replies, but that approach doesn't translate very well. The remote objects can be modified, but since I do use threads, I try to keep the objects immutable. My current hypothesis is that I will send notification events on track updates on the form somehandlername(int changes, Track old_track, Track new_track)
+ or similar, but then I might end up with several versions of the same track. I'll definitely look into Djangos method chaining. I've been looking at some similar constructs but haven't been able to come up with a good variant. Returning something iterable is interesting, but the query could take some time to complete, and I wouldn't want to actually execute the query before it's completely constructed. Perhaps something like Tracks.allSongs().artist("Beatles").years(1965,1967).execute()
+ returning a Future might work... Iterable only has the method Iterator get() or somesuch. So no need to build any query or execute any code until you actually start iterating. It does make the execute in your example redundant. However, the thread will be locked until the first result is available, so you might consider using an Executor to run the code for the query in a separate thread. @Staale It is certainly possibly, but as you note, that would make it blocking (at home for something like 10 seconds due to sleeping disks), meaning I can't use it to update the UI directly. I could use the iterator to create a copy of the result in a separate thread and then send that to the UI, but while the iterator solution by itself is rather elegant, it won't fit in very well. In the end, something implementing IStructuredContentProvider needs to return an array of all the objects in order to display it in a TableViewer, so if I can get away with getting something like that out of a callback... :) I'll give it some more thought. I might just be able to work out something. It does give the code a nice look. My conclusions so far; I am torn on whether to use getters for the Track objects or just expose the members since the object is immutable. class Track {
+    public final String album;
+    public final String artist;
+    public final String title;
+    public final String genre;
+    public final String comment;
+
+    public final String cover_id;
+
+    public final long duration;
+    public final long bitrate;
+    public final long samplerate;
+    public final long id;
+    public final Date date;
+
+    /* Some more stuff here */
+}
+ Anybody who wants to know when something happened to a track in the library would implement this... interface TrackUpdateListener {
+    void trackUpdate(Track oldTrack, Track newTrack);
+}
+ This is how querys are built. Chain calls to your hearts content. the jury is still out on the get() though. There are some details missing, such as how I should handle wildcards and more advanced queries with disjunctions. I might just need some completion callback functionality, perhaps similar to the Asynchronous Completion Token, but we'll see about that. Perhaps that will happen in an additional layer. interface TrackQuery extends Iterable<Track> {
+    TrackQuery years(int from, int to);
+    TrackQuery artist(String name);
+    TrackQuery album(String name);
+    TrackQuery id(long id);
+    TrackQuery ids(long id[]);
+
+    Future<Track[]> get();
+}
+ Some examples: tracks.allTracks();
+tracks.allTracks().artist("Front 242").album("Tyranny (For You)");
+ The tracks interface is mostly just the glue between the connection and the individual tracks. It will be the one implementing or managing meta-data caching, if any (as today, but I think I'll just remove it during the refactoring and see if I actually need it). Also, this provides medialib track updates as it would just be too much work to implement it by track. interface Tracks {
+    TrackQuery allTracks();
+
+    void addUpdateListener(TrackUpdateListener listener);
+    void removeUpdateListener(TrackUpdateListener listener);
+}

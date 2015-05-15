@@ -1,0 +1,25 @@
+How do I write Facebook apps in Java? facebook api Facebook stopped supporting the official Java API on 5 May 2008 according to their developer wiki. In no way does that mean you shouldn't use Java any more to write FB apps. There are several alternative Java approaches outlined on the wiki. You might also want to check this project out; however, it only came out a few days ago so YMMV. There's a community project which is intended to keep the Facebook Java API up to date, using the old official Facebook code as a starting point. You can find it here along with a Getting Started guide and a few bits of sample code. I write an example using facebook java api It use FacebookXmlRestClient in order to make client request and print all user infos http://programmaremobile.blogspot.com/2009/01/facebook-java-apieng.html this may be of use http://www.ifc0nfig.com/dear-java-i-hate-you-accessing-the-facebook-api-with-java/ You might want to try Spring Social. It might be limited in terms of Facebook features, but lets you also connect to Twitter, LinkedIn, TripIt, GitHub, and Gowalla. The other side of things is that as Facebook adds features some of the old API's might break, so using a simpler pure FB api (that you can update when things don't work) might be a good idea. BatchFB provides a modern Java API that lets you easily optimize your Facebook calls down to a minimum set: http://code.google.com/p/batchfb/ Here's the example taken from the main page of what you can effectively do in a single FB request: /** You write your own Jackson user mapping for the pieces you care about */
+public class User {
+    long uid;
+    @JsonProperty("first_name") String firstName;
+    String pic_square;
+    String timezone;
+}
+
+Batcher batcher = new FacebookBatcher(accessToken);
+
+Later<User> me = batcher.graph("me", User.class);
+Later<User> mark = batcher.graph("markzuckerberg", User.class);
+Later<List<User>> myFriends = batcher.query(
+    "SELECT uid, first_name, pic_square FROM user WHERE uid IN" +
+    "(SELECT uid2 FROM friend WHERE uid1 = " + myId + ")", User.class);
+Later<User> bob = batcher.queryFirst("SELECT timezone FROM user WHERE uid = " + bobsId, User.class);
+PagedLater<Post> feed = batcher.paged("me/feed", Post.class);
+
+// No calls to Facebook have been made yet.  The following get() will execute the
+// whole batch as a single Facebook call.
+String timezone = bob.get().timezone;
+
+// You can just get simple values forcing immediate execution of the batch at any time.
+User ivan = batcher.graph("ivan", User.class).get();
+ This tutorial will literally step you through everything you need to do: http://ocpsoft.org/opensource/creating-a-facebook-app-setup-and-tool-installation/ It comes in 3 parts. The other 2 are linked from there.

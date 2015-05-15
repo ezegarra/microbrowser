@@ -1,0 +1,19 @@
+Find all available JREs on Mac OS X from Java application installer osx installer It should be as simple as looking at /System/Library/Frameworks/JavaVM.framework/Versions/ E.g. from my machine: manoa:~ stu$ ll /System/Library/Frameworks/JavaVM.framework/Versions/
+total 56
+774077 lrwxr-xr-x  1 root  wheel    5 Jul 23 15:31 1.3 -> 1.3.1
+167151 drwxr-xr-x  3 root  wheel  102 Jan 14  2008 1.3.1
+167793 lrwxr-xr-x  1 root  wheel    5 Feb 21  2008 1.4 -> 1.4.2
+774079 lrwxr-xr-x  1 root  wheel    3 Jul 23 15:31 1.4.1 -> 1.4
+166913 drwxr-xr-x  8 root  wheel  272 Feb 21  2008 1.4.2
+168494 lrwxr-xr-x  1 root  wheel    5 Feb 21  2008 1.5 -> 1.5.0
+166930 drwxr-xr-x  8 root  wheel  272 Feb 21  2008 1.5.0
+774585 lrwxr-xr-x  1 root  wheel    5 Jul 23 15:31 1.6 -> 1.6.0
+747415 drwxr-xr-x  8 root  wheel  272 Jul 23 10:24 1.6.0
+167155 drwxr-xr-x  8 root  wheel  272 Jul 23 15:31 A
+776765 lrwxr-xr-x  1 root  wheel    1 Jul 23 15:31 Current -> A
+774125 lrwxr-xr-x  1 root  wheel    3 Jul 23 15:31 CurrentJDK -> 1.5
+manoa:~ stu$
+ This artical may help: http://developer.apple.com/technotes/tn2002/tn2110.html Summery: String javaVersion = System.getProperty("java.version");
+if (javaVersion.startsWith("1.4")) {
+  // New features for 1.4
+}

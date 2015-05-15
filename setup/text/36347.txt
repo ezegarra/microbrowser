@@ -1,0 +1,88 @@
+What are the differences between "generic" types in C++ and Java? c++ generics templates language-features C++ has templates. Java has generics, which look kinda sorta like C++ templates, but they're very, very different. Templates work, as the name implies, by providing the compiler with a (wait for it...) template that it can use to generate type-safe code by filling in the template parameters. Generics, as i understand them, work the other way around: the type parameters are used by the compiler to verify that the code using them is type-safe, but the resulting code is generated without types at all. Think of C++ templates as a really good macro system, and Java generics as a tool for automatically generating typecasts.   There is a big difference between them. In C++ you don't have to specify a class or an interface for the generic type. That's why you can create truly generic functions and classes, with the caveat of a looser typing. <typename T> T sum(T a, T b) { return a + b; }
+ The method above adds two objects of the same type, and can be used for any type T that has the "+" operator available. In Java you have to specify a type if you want to call methods on the objects passed, something like: <T extends Something> T sum(T a, T b) { return a.add ( b ); }
+ In C++ generic functions/classes can only be defined in headers, since the compiler generates different functions for different types (that it's invoked with). So the compilation is slower. In Java the compilation doesn't have a major penalty, but Java uses a technique called "erasure" where the generic type is erased at runtime, so at runtime Java is actually calling ... Something sum(Something a, Something b) { return a.add ( b ); }
+ So generic programming in Java is not really useful, it's only a little syntactic sugar to help with the new foreach construct. EDIT: the opinion above on usefulness was written by a younger self. Java's generics help with type-safety of course. Java (and C#) generics seem to be a simple run-time type substitution mechanism. C++ templates are a compile-time construct which give you a way to modify the language to suit your needs. They are actually a purely-functional language that the compiler executes during a compile. Another advantage of C++ templates is specilization. <typename T> T sum(T a, T b) { return a + b; }
+<typename T> T sum(T* a, T* b) { return (*a) + (*b); }
+Special sum(const Special& a, const Special& b) { return a.plus(b); }
+ Now, if you call sum with pointers, the second method will be called, if you call sum with non-pointer objects the first method will be called, and if you call sum() with Special objects, the third will be called. I don't think that this is possible with Java. @Keith: That code is actually wrong and apart from the smaller glitches (template omitted, specialization syntax looks differently), partial specialization doesn't work on function templates, only on class templates. The code would however work without partial template specialization, instead using plain old overloading: template <typename T> T sum(T a, T b) { return a + b; }
+template <typename T> T sum(T* a, T* b) { return (*a) + (*b); }
+ Basically, AFAIK, C++ templates create a copy of the code for each type, while Java generics use exactly the same code. Yes, you can say that C++ template is equivalent to Java generic concept ( although more properly would be to say Java generics are equivalent to C++ in concept ) If you are familiar with C++'s template mechanism, you might think that generics are similar, but the similarity is superficial. Generics do not generate a new class for each specialization, nor do they permit â€œtemplate metaprogramming.â€? from: Java Generics Java Generics are massively different to C++ templates. Basically in C++ templates are basically a glorified preprocessor/macro set (Note: since some people seem unable to comprehend an analogy, I'm not saying template processing is a macro). In Java they are basically syntactic sugar to minimize boilerplate casting of Objects. Here is a pretty decent introduction to C++ templates vs Java generics. To elaborate on this point: when you use a C++ template, you're basically creating another copy of the code, just as if you used a #define macro. This allows you to do things like have int parameters in template definitions that determine sizes of arrays and such. Java doesn't work like that. In Java all objects extent from java.lang.Object so, pre-Generics, you'd write code like this: public class PhoneNumbers {
+  private Map phoneNumbers = new HashMap();
+
+  public String getPhoneNumber(String name) {
+    return (String)phoneNumbers.get(name);
+  }
+
+  ...
+}
+ because all the Java collection types used Object as their base type so you could put anything in them. Java 5 rolls around and adds generics so you can do things like: public class PhoneNumbers {
+  private Map<String, String> phoneNumbers = new HashMap<String, String>();
+
+  public String getPhoneNumber(String name) {
+    return phoneNumbers.get(name);
+  }
+
+  ...
+}
+ And that's all Java Generics are: wrappers for casting objects. That's because Java Generics aren't reified. They use type erasure. This decision was made because Java Generics came along so late in the piece that they didn't want to break backward compatibility (a Map<String, String> is usable whenever a Map is called for). Compare this to .Net/C# where type erasure isn't used, which leads to all sorts of differences (eg you can use primitive types and IEnumerable and IEnumerable<T> bear no relation to each other). And a class using generics compiled with a Java 5+ compiler is usable no JDK 1.4 (assuming it doesn't use any ohter features or classes that require Java 5+). That's why Java Generics are called syntactic sugar. But this decision on how to do generics has profound effects so much so that the (superb) Java Generics FAQ has sprung up to answer the many, many questions people have about Java Generics. C++ templates have a number of features that Java Generics don't: Use of primitive type arguments. For example: template<class T, int i>
+class Matrix {
+  int T[i][i];
+  ...
+}
+ Use of default type arguments, which is one feature I miss in Java but there are backwards compatibility reasons for this; C++ allows the use of primitive type arguments, Java doesn't; and Java allows bounding of arguments. For example: public class ObservableList<T extends List> {
+  ...
+}
+ It really does need to be stressed that template invocations with different arguments really are different types. They don't even share static members. In Java this is not the case. Aside from the differences with generics, for completeness, here is a basic comparison of C++ and Java (and another one). And I can also suggest Thinking in Java. As a C++ programmer a lot of the concepts like objects will be second nature already but there are subtle differences so it can be worthwhile to have an introductory text even if you skim parts. A lot of what you'll learn when laerning Java is all the libraries (both standard--what comes in the JDK--and nonstandard, which includes commonly used things like Spring). Java syntax is more verbose than C++ syntax and doesn't have a lot of C++ features (eg operator overloading, mutliple inheritance, the destructor mechanism, etc) but that doesn't strictly make it a subset of C++ either. There is a great explanation of this topic in Java Generics and Collections By Maurice Naftalin, Philip Wadler. I highly recommend this book. To quote: Generics in Java resemble templates in C++. ... The syntax is deliberately similar and the semantics are deliberately different. ... Semantically, Java generics are defined by erasure, where as C++ templates are defined by expansion. Please read the full explanation here. Another feature that C++ templates have that Java generics don't is specialization. That allows you to have a different implementation for specific types. So you can, for example, have a highly optimized version for an int, while still having a generic version for the rest of the types. Or you can have different versions for pointer and non-pointer types. This comes in handy if you want to operate on the dereferenced object when handed a pointer. Templates are nothing but a macro system. Syntax sugar. They are fully expanded before actual compilation (or, at least, compilers behave as if it were the case). Example: Let's say we want two functions. One function takes two sequences (list, arrays, vectors, whatever goes) of numbers, and returns their inner product. Another function takes a length, generates two sequences of that length, passes them to the first function, and returns it's result. The catch is that we might make a mistake in the second function, so that these two functions aren't really of the same length. We need the compiler to warn us in this case. Not when the program is running, but when it's compiling. In Java you can do something like this: import java.io.*;
+interface ScalarProduct<A> {
+    public Integer scalarProduct(A second);
+}
+class Nil implements ScalarProduct<Nil>{
+    Nil(){}
+    public Integer scalarProduct(Nil second) {
+        return 0;
+    }
+}
+class Cons<A implements ScalarProduct<A>> implements ScalarProduct<Cons<A>>{
+    public Integer value;
+    public A tail;
+    Cons(Integer _value, A _tail) {
+        value = _value;
+        tail = _tail;
+    }
+    public Integer scalarProduct(Cons<A> second){
+        return value * second.value + tail.scalarProduct(second.tail);
+    }
+}
+class _Test{
+    public static Integer main(Integer n){
+        return _main(n, 0, new Nil(), new Nil());
+    }
+    public static <A implements ScalarProduct<A>> 
+      Integer _main(Integer n, Integer i, A first, A second){
+        if (n == 0) {
+            return first.scalarProduct(second);
+        } else {
+            return _main(n-1, i+1, 
+                         new Cons<A>(2*i+1,first), new Cons<A>(i*i, second));
+            //the following line won't compile, it produces an error:
+            //return _main(n-1, i+1, first, new Cons<A>(i*i, second));
+        }
+    }
+}
+public class Test{
+    public static void main(String [] args){
+        System.out.print("Enter a number: ");
+        try {
+            BufferedReader is = 
+              new BufferedReader(new InputStreamReader(System.in));
+            String line = is.readLine();
+            Integer val = Integer.parseInt(line);
+            System.out.println(_Test.main(val));
+        } catch (NumberFormatException ex) {
+            System.err.println("Not a valid number");
+        } catch (IOException e) {
+            System.err.println("Unexpected IO ERROR");
+        }
+    }
+}
+ In C# you can write almost the same thing. Try to rewrite it in C++, and it won't compile, complaining about infinite expansion of templates.

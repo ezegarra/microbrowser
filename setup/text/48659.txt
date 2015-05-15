@@ -1,0 +1,3 @@
+How do you send and receive UDP packets in Java on a multihomed machine? sockets Look at the alternate constructor for DatagramSocket: DatagramSocket(int port, InetAddress laddr)
+Creates a datagram socket, bound to the specified local address.
+ I'm guessing you're only specifying the port.

@@ -1,0 +1,24 @@
+Write a Servlet that Talks to JMS (ActiveMQ) and OnMessage Update the Site javascript servlets jms activemq You probably need to get a JMS connection from JNDI, like this: Properties props = new Properties();
+props.setProperty(Context.INITIAL_CONTEXT_FACTORY,
+    "org.apache.activemq.jndi.ActiveMQInitialContextFactory");
+props.setProperty(Context.PROVIDER_URL,
+    "tcp://hostname:61616");
+javax.naming.Context ctx = new InitialContext(props);
+// lookup the connection factory
+javax.jms.TopicConnectionFactory factory = 
+    (javax.jms.TopicConnectionFactory)ctx.lookup("ConnectionFactory");
+// create a new TopicConnection for pub/sub messaging
+javax.jms.TopicConnection conn = factory.getTopicConnection();
+// lookup an existing topic
+javax.jms.Topic mytopic = (javax.jms.Topic)ctx.lookup("MyTopic");
+// create a new TopicSession for the client
+javax.jms.TopicSession session = 
+    conn.createTopicSession(false,TopicSession.AUTO_ACKNOWLEDGE);
+// create a new subscriber to receive messages
+javax.jms.TopicSubscriber subscriber = session.createSubscriber(mytopic);
+ The problem with having a servlet implement MessageListener is that servlets are synchronous and MessageListeners are asynchronous. Instead you should create some other object to act as the MessageListener and update some state somewhere (possibly a database or a JMX MBean or a Stateful Session EJB) when messages come in. Then the servlet can query that state to see if there's data to report back to the client, and your web page can periodically ping the servlet to ask for fresh data. Have you tried reading the answers for this question which links to the ActiveMQ Ajax support. Basically ActiveMQ has native support for Ajax so you can use its JavaScript library to directly subscribe from an ActiveMQ topic. Also see the ActiveMQ web samples which show how to do things like real time chat or real time stock portfolio screens using Ajax with ActiveMQ As James Strachan says - http://activemq.apache.org/ajax.html is an ideal out-of-the-box solution for your problem. If you still want to create such solution manually you can just create JMS connection in your Ajax servlet (connection per request). Consider using Spring JMS template for that reason ( http://static.springsource.org/spring/docs/2.5.x/reference/jms.html ). Then just receive the message in the Servlet doGet/doPost method. Consider low timeout value for receiving in that case. Such solution will work for the Queues and durable Topics. For non-durable Topics consider external message listener. Spring MessageListenerContainer is an excellent tool for that purpose: <bean class="org.springframework.jms.listener.DefaultMessageListenerContainer
+   <property name="connectionFactory" ref="jmsFactory"/>
+   <property name="destination" ref="myTopic" />
+   <property name="messageListener" ref="lastTenUpdatesCache" />
+</bean>
+ Bean lastTenUpdatesCache will be a singleton bean implementing MesssageListener. This bean would be responsible for caching last ten messages (just putting it into a java.util list). It will be injected into your Ajax servlet so in your doGet/doPost method you can ask it about last 10 messages sent to the topic.

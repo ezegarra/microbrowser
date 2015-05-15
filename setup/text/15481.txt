@@ -1,0 +1,80 @@
+Java Coding standard / best practices - labeled break/continue label convention The convention is to avoid labels altogether. There are very, very few valid reasons to use a label for breaking out of a loop. Breaking out is ok, but you can remove the need to break at all by modifying your design a little. In the example you have given, you would extract the 'Lots of code' sections and put them in individual methods with meaningful names. for ( ;/*stuff*/; ) 
+{
+    lotsOfCode();
+
+    if ( !isEnough() )
+    {
+        moreCode();
+    }
+}
+ Edit: having seen the actual code in question (over here), I think the use of labels is probably the best way to make the code readable. In most cases using labels is the wrong approach, in this instance, I think it is fine. The convetion/best practise would still be not to use them at all and to refactor the code so that is more readable using extract as method. If you have to use them use capitals, this draws attention to them and singles them out from being mistakenly interpreted as "Class" names. Drawing attention to them has the additional benefit of catching someone's eye that will come along and refactor your code and remove them. ;) They are kind of the goto of Java - not sure if C# has them. I have never used them in practice, I can't think of a case where avoiding them wouldn't result in much more readable code. But if you have to- I think all caps is ok. Most people won't use labelled breaks, so when they see the code, the caps will jump out at them and will force them to realise what is going on. I know, I should not use labels. But just assume, I have some code, that could gain a lot in readability from labeled breaks, how do I format them. Mo, your premise is wrong. The question shouldn't be 'how do I format them?' Your question should be 'I have code that has a large amount of logic inside loops - how do I make it more readable?' The answer to that question is to move the code into individual, well named functions. Then you don't need to label the breaks at all. Mo, your premise is wrong. The question shouldn't be 'how do I format them?' Your question should be 'I have code that has a large amount of logic inside loops - how do I make it more readable?' The answer to that question is to move the code into individual, well named functions. Then you don't need to label the breaks at all. Ok, I'll give up on this one. But I will open a new question with a more sepcific code problem and how to refactor it in order to avoid the labels. The convention I've most seen is simply camel case, like a method name... myLabel:
+ but I've also seen labels prefixed with an underscore _myLabel:
+ or with lab... labSomething:
+ You can probably sense though from the other answers that you'll be hard-pushed to find a coding standard that says anything other than 'Don't use labels'. The answer then I guess is that you should use whatever style makes sense to you, as long as it's consistent. I don't understand where this "don't use labels" rule comes from. When doing non-trivial looping logic, the test to break or continue isn't always neatly at the end of the surrounding block. outer_loop:
+for (...) {
+  //  some code
+  for (...) {
+    //  some code
+    if (...)
+      continue outer_loop;
+    //  more code
+  }
+  //  more code
+}
+ Yes, cases like this do happen all the time. What are people suggesting I use instead? A boolean condition like this? for (...) {
+  //  some code
+  boolean continueOuterLoop = false;
+  for (...) {
+    //  some code
+    if (...) {
+      continueOuterLoop = true;
+      break;
+    }
+    //  more code
+  }
+  if (continueOuterLoop)
+    continue;
+  //  more code
+}
+ Yuck! Refactoring it as a method doesn't alleviate that either: boolean innerLoop (...) {
+  for (...) {
+    //  some code
+    if (...) {
+      return true;
+    }
+    //  more code
+  }
+  return false;
+}
+
+for (...) {
+  //  some code
+  if (innerLoop(...))
+    continue;
+  //  more code
+}
+ Sure it's a little prettier, but it's still passing around a superfluous boolean. And if the inner loop modified local variables, refactoring it into a method isn't always the correct solution. So why are you all against labels? Give me some solid reasons, and practical alternatives for the above case. wrt sadie's code example: You gave outerloop:
+for (...) {
+  //  some code
+  for (...) {
+    //  some code
+    if (...)
+      continue outerloop;
+    //  more code
+  }
+  //  more code
+}
+ As an example. You make a good point. My best guess would be: public void lookMumNoLabels() {
+  for (...) {
+    // some code
+    doMoreInnerCodeLogic(...);
+  }
+}
+
+private void doMoreInnerCodeLogic(...) {
+   for (...) {
+      // some code
+      if (...) return;
+   }
+}
+ But there would be examples where that kind of refactoring doesn't sit correctly with whatever logic you're doing. As labels are so rarely useful, it appears, that there is no clear convention. The Java language specification has one example with labels and they are in non_cap. But since they are so rare, in my opinion it is best, to think twice whether they are really the right tool. And if they are the right tool, make them all caps so that other developers (or yourself later on) realize them as something unusual right away. (as Craig already pointed out) Sun's Java code style seem to prefer naming labels in the same way as variables, meaning camel case with the first letter in lower case.

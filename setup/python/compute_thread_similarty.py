@@ -1,0 +1,1 @@
+# this script will pre-compute the thread similarity

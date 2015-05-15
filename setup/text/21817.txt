@@ -1,0 +1,89 @@
+Why can't I declare static methods in an interface? interface methods static Static methods are not instance methods. There's no instance context, therefore to implement it from the interface makes little sense. I'll answer your question with an example. Suppose we had a Math class with a static method add. You would call this method like so: Math.add(2, 3);
+ If Math were an interface instead of a class, it could not have any defined functions. As such, saying something like Math.add(2, 3) makes no sense. The reason why you can't have a static method in an interface lies in the way Java resolves static references. Java will not bother looking for an instance of a class when attempting to execute a static method. This is because static methods are not instance dependent and hence can be executed straight from the class file. Given that all methods in an interface are abstract, the VM would have to look for a particular implementation of the interface in order to find the code behind the static method so that it could be executed. This then contradicts how static method resolution works and would introduce an inconsistency into the language. An interface is used for polymorphism, which applies to Objects, not types. Therefore (as already noted) it makes no sense to have an static interface member. Perhaps a code example would help, I'm going to use C#, but you should be able to follow along. Lets pretend we have an interface called IPayable public interface IPayable
+{
+    public Pay(double amount);
+}
+ Now, we have two concrete classes that implement this interface: public class BusinessAccount : IPayable
+{
+    public void Pay(double amount)
+    {
+    	//Logic
+    }
+}
+
+public class CustomerAccount : IPayable
+{
+    public void Pay(double amount)
+    {
+    	//Logic
+    }
+}
+ Now, lets pretend we have a collection of various accounts, to do this we will use a generic list of the type IPayable List<IPayable> accountsToPay = new List<IPayable>();
+accountsToPay.add(new CustomerAccount());
+accountsToPay.add(new BusinessAccount());
+ Now, we want to pay $50.00 to all those accounts: foreach (IPayable account in accountsToPay)
+{
+    account.Pay(50.00);
+}
+ So now you see how interfaces are incredibly useful. They are used on instantiated objects only. Not on static classes. If you had made pay static, when looping through the IPayable's in accountsToPay there would be no way to figure out if it should call pay on BusinessAcount or CustomerAccount. There are a few issues at play here. The first is the issue of declaring a static method without defining it. This is the difference between public interface Foo {
+  public static int bar();
+}
+ and public interface Foo {
+  public static int bar() {
+    ...
+  }
+}
+ Java doesn't allow either, but it could allow the second. The first is impossible for the reasons that Espo mentions: you don't know which implementing class is the correct definition. Java could allow the latter, as long as it treated Interfaces as first-class Objects. Ruby's Modules, which are approximately equivalent to Java's Interfaces, allow exactly that: module Foo
+  def self.bar
+    ...
+  end
+end
+ The reason lies in the design-principle, that java does not allow multiple inheritance. The problem with multiple inheritance can be illustrated by the following example: public class A {
+   public method x() {...}
+}
+public class B {
+   public method x() {...}
+}
+public class C extends A, B { ... }
+ Now what happens if you call C.x()? Will be A.x() or B.x() executed? Every language with multiple inheritance has to solve this problem. Interfaces allow in Java some sort of restricted multiple inheritance. To avoid the problem above, they are not allowed to have methods. If we look at the same problem with interfaces and static methods: public interface A {
+   public static method x() {...}
+}
+public interface B {
+   public static method x() {...}
+}
+public class C implements A, B { ... }
+ Same problem here, what happen if you call C.x()? There's a very nice and concise answer to your question here. (It struck me as such a nicely straightforward way of explaining it that I want to link it from here.) It seems the static method in the interface might be supported in Java 8, well, my solution is just define them in the inner class. interface Foo {
+    // ...
+    class fn {
+        public static void func1(...) {
+            // ...
+        }
+    }
+}
+ The same technique can also be used in annotations: public @interface Foo {
+    String value();
+
+    class fn {
+        public static String getValue(Object obj) {
+            Foo foo = obj.getClass().getAnnotation(Foo.class);
+            return foo == null ? null : foo.value();
+        }
+    }
+}
+ The inner class should always be accessed in the form of Interface.fn... instead of Class.fn..., then, you can get rid of ambiguous problem. Illegal combination of modifiers : static and abstract If a member of a class is declared as static, it can be used with its class name which is confined to that class, without creating an object. If a member of a class is declared as abstract, you need to declare the class as abstract and you need to provide the implementation of the abstract member in its inherited class (Sub-Class). You need to provide an implementation to the abstract member of a class in sub-class where you are going to change the behaviour of static method, also declared as abstract which is a confined to the base class, which is not correct Since static methods can not be inherited . So no use placing it in the interface. Interface is basically a contract which all its subscribers have to follow . Placing a static method in interface will force the subscribers to implement it . which now becomes contradictory to the fact that static methods can not be inherited . Now Java8 allows us to define even Static Methods in Interface. interface X {
+    static void foo() {
+       System.out.println("foo");
+    }
+}
+
+class Y implements X {
+    //...
+}
+
+public class Z {
+   public static void main(String[] args) {
+      X.foo();
+      // Y.foo(); // won't compile because foo() is a Static Method of X and not Y
+   }
+}
+ Note: Methods in Interface are still public abstract by default if we don't explicitly use the keywords default/static to make them Defender methods and Static methods resp.

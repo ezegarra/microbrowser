@@ -1,0 +1,18 @@
+Why is my image coming out garbled? file-io apache-commons-fileupload Are you sure that the image isn't coming through garbled or that you aren't dropping some packets on the way in. I don't know what difference it makes, but there seems to be a mismatch of method signatures. The getBytes() method called in your doPost() method has only one argument: byte[] bytes = StreamUtils.getBytes(stream);
+ while the method source you included has two arguments: public static byte[] getBytes(InputStream src, int buffsize)
+ Hope that helps. Can you perform a checksum on your original file, and the uploaded file and see if there is any immediate differences? If there are then you can look at performing a diff, to determine the exact part(s) of the file that are missing changed. Things that pop to mind is beginning or end of stream, or endianness. One thing I don't like is here in this block from StreamUtils.getBytes():  1 while (true) {
+ 2   int nBytesRead = src.read(buff);
+ 3   if (nBytesRead < 0) {
+ 4     break;
+ 5   }
+ 6   byteStream.write(buff);
+ 7 }
+ At line 6, it writes the entire buffer, no matter how many bytes are read in. I am not convinced this will always be the case. It would be more correct like this:  1 while (true) {
+ 2   int nBytesRead = src.read(buff);
+ 3   if (nBytesRead < 0) {
+ 4     break;
+ 5   } else {
+ 6     byteStream.write(buff, 0, nBytesRead);
+ 7   }
+ 8 }
+ Note the 'else' on line 5, along with the two additional parameters (array index start position and length to copy) on line 6. I could imagine that for larger files, like images, the buffer returns before it is filled (maybe it is waiting for more). That means you'd be unintentionally writing old data that was remaining in the tail end of the buffer. This is almost certainly happening most of the time at EoF, assuming a buffer > 1 byte, but extra data at EoF is probably not the cause of your corruption...it is just not desirable. I'd just use commons io Then you could just do an IOUtils.copy(InputStream, OutputStream); It's got lots of other useful utility methods.

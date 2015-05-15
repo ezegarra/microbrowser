@@ -1,0 +1,24 @@
+Parsing search queries in Java search Depends a lot on the kind of queries you've got to parse and somewhat on the structure of the data in your database. I'm going to assume that you're not trying to do full text search in a DB (i.e. a search engine across your entire DB) because, as most Information Retrieval people will tell you, the performance for that is terrible. Inverted indexes are most certainly the best way of doing that. Tell us a bit more about the actual problem: what are the users going to input, what are they expecting as output, and what's the data model like. Design a search solution without those pieces of information, and you'll get a far from optimal result. What exactly do you have in mind? I've used Lucene for text-searching, but where it excels is building an index and searching that instead of hitting the database at all. I recently set up an system where I index a table in Lucene by concatenating all the columns (separated by spaces) into one field, and popping that into Lucene, and then also adding the primary key in a separate column. Lucene does all the searching and returned a list of primary keys, which I used to pull up a populated set of results and display to the user. Converting a search query into a SQL statement would seem to me to be a little messy. Also, here's a great beginning tutorial explaining the basic structure of Lucene. You are correct to assume that I am not looking for full text search. The information looks something like this schema for book info: Name: string, publisher:string, numpages int, publishdate:date... The search queries are of the sort: Harry Potter (search any books whos name has both Harry and Potter) publisher:Nature* pages>100 (books from a publisher starting with Nature with more than 100 books) ("New years" or Christmas) and present (you get the picture...) physics and publish>1/1/2008 (new physics books) You could try using something like javacc (Java Compiler Compiler) to implement a parser or else just manually parse the string by brute force. Every time you come across an expression you represent it as an object. Then you just have to translate your expression tree into a where clause. For example: "Harry Potter" becomes new AndExp(new FieldContainsExp("NAME", "Harry"), new FieldContainsExp("NAME", "Potter")
+ And "publisher:Nature* pages > 100" becomes new AndExp(new FieldContainsExp("PUBLISHER", "Nature"), FieldGreaterThan("PAGES", 100))
+ Then, once you have these, it's pretty easy to turn them into SQL: FieldContainsExp.toSQL(StringBuffer sql, Collection<Object> args) {
+  sql.append(fieldName);
+  sql.append(" like ");
+  sql.append("'%?%'");
+  args.add(value);
+}
+
+AndExp.toSQL(StringBuffer sql, Collection<Object> args) {
+    exp1.toSQL(sql, args);
+    sql.append(" AND ");
+    exp2.toSQL(sql, args);
+}
+ You can imagine the rest. You can nest And expressions as deeply as you want. SQL-ORM is a very lightweight Java library which includes the ability to construct a (dynamic) SQL query in Java as a graph of objects IMHO, this is a far better technique for building dynamic SQL queries than the usual String concatentation method. Disclaimer: I have made some very minor contributions to this project Try to combine an ORM tool (like openJPA) and Compass (framework for OSEM). It automatically indexes the updates done through the ORM tools and gives you the Lucene power for search. After that you can of-course retrieve the object from the DB. It out-performs any SQL-based searching solution. String [] array; int checkWord(String searchWord)
+{
+    for(int i = 0; i < array.length; i++)
+    {
+        if(searchWord.equals(array[i]))
+            return i;
+    }
+    return 0;
+
+}

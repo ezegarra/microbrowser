@@ -1,0 +1,5 @@
+How to convert a date String to a Date or Calendar object? date calendar DateFormat.parse(String) In brief: DateFormat formatter = new SimpleDateFormat("MM/dd/yy");
+Date date = formatter.parse("01/29/02");
+ See SimpleDateFormat javadoc for more. And to turn it into a Calendar, do: Calendar calendar = Calendar.getInstance();
+calendar.setTime(date);
+ The DateFormat class has a parse method. http://java.sun.com/j2se/1.4.2/docs/api/java/text/DateFormat.html The highly regarded Joda Time library is also worth a look. This is basis for the new date and time api that is pencilled in for Java 7. The design is neat, intuitive, well documented and avoids a lot of the clumsiness of the original java.util.Date / java.util.Calendar classes. Joda's DateFormatter can parse a String to a Joda DateTime.

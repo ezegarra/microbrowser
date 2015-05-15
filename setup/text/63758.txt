@@ -1,0 +1,17 @@
+Is it possible to kill a Java Virtual Machine from another Virtual Machine? process-management You should be able to do that java.lang.Runtime.exec and shell commands. You can have the java code detect the platform at runtime and fire off the platform's kill process command. This is really an refinement on your current solution. There's also Process.destroy(), if you're using the ProcessBuilder API I may be missing something but can't you call the destroy() method on the Process object returned by Runtime.exec()? You could also publish a service (via burlap, hessian, etc) on the second JVM that calls System.exit() and consume it from the watchdog JVM. If you only want to shut the second JVM down when it stops sending those periodic notifications, it might not be in a state to respond to the service call. Calling shell commands with java.lang.Runtime.exec() is probably your best bet. Not exactly process management, but you could start an rmi server in the java virtual machine you are launching, and bind a remote instance with a method that does whatever cleanup required and calls System.exit(). The first vm could then call that remote method to shutdown the second vm. You can use java.lang.Process to do what you want. Once you have created the nested process and have a reference to the Process instance, you can get references to its standard out and err streams. You can periodically monitor those, and call .destroy() if you want to close the process. The whole thing might look something like this: Process nestedProcess = new ProcessBuilder("java mysubprocess").start();
+InputStream nestedStdOut = nestedProcess.getInputStream(); //kinda backwards, I know
+InputStream nestedStdErr = nestedProcess.getErrorStream();
+while (true) {
+    /*
+       TODO: read from the std out or std err (or get notifications some other way)
+       Then put the real "kill-me" logic here instead of if (false)
+    */
+    if (false) {
+        nestedProcess.destroy();
+        //perform post-destruction cleanup here
+        return;
+    }
+
+    Thread.currentThread().sleep(1000L); //wait for a bit
+}
+ Hope this helps, Sean java.lang.Process has a waitFor() method to wait for a process to die, and a destroy() method to kill the subprocess. OK the twist of the gist is as follows: I was using the Process API to close the second virtual machine, but it wouldn't work. The reason is that my second application is an Eclipse RCP Application, and I launched it using the eclipse.exe launcher included. However, that means that the Process API destroy() method will target the eclipse.exe process. Killing this process leaves the Java Process unscathed. So, one of my colleagues here wrote a small application that will kill the right application. So one of the solutions to use the Process API (and remove redundant middle steps) is to get away with the Eclipse launcher, having my first virtual machine duplicate all its functionality. I guess I will have to get to work. The usual way to do this is to call Process.destroy()... however it is an incomplete solution since when using the sun JVM on *nix destroy maps onto a SIGTERM which is not guaranteed to terminate the process (for that you need SIGKILL as well). The net result is that you can't do real process management using Java. There are some open bugs about this issue see: link text

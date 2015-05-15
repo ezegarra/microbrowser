@@ -1,0 +1,3 @@
+Java Right Click does not make a selection. What is the easiest way to solve this globally? swing Using the Glass Pane will do the trick. Here's a tutorial on how to use the glass pane to get the right click button and redispatch it to the right component. As the glass pane is not a solution in this case, I suggest you take a look at the Toolkit class. Specificaly the addAWTEventListener method. You can add a global event listener with it. To add a mouse event listener: Toolkit.getDefaultToolkit().
+        addAWTEventListener(listener, AWTEvent.MOUSE_EVENT_MASK);
+ Cheers

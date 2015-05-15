@@ -1,0 +1,50 @@
+Internationalized page properties in Tapestry 4.1.2 internationalization tapestry Everything seems to be correct. Are you really sure getPassword() returns garbage? Isn't it someone else (your editor, OS, database,...) that doesn't know that it's a unicode string when it displays it to you while the password may be perfectly okay? What exactly makes you think it's a garbage? I would also make sure there's no strange encoding set in the .application config file <meta key="org.apache.tapestry.output-encoding" value="some strange encoding"/>
+ I found the problem. Tomcat was mangling the parameters before Tapestry or my page class even had a crack at it. Creating a servlet filter that enforced the desired character encoding fixed it. CharacterEncodingFilter.java package mycode;
+
+import java.io.IOException;
+
+import javax.servlet.*;
+
+/**
+ * Allows you to enforce a particular character encoding on incoming requests.
+ * @author Robert J. Walker
+ */
+public class CharacterEncodingFilter implements Filter {
+    private static final String ENCODINGPARAM = "encoding";
+
+    private String encoding;
+
+    public void init(FilterConfig config) throws ServletException {
+	    encoding = config.getInitParameter(ENCODINGPARAM);
+
+    	if (encoding != null) {
+		    encoding = encoding.trim();
+	    }
+    }
+
+    public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
+		    throws IOException, ServletException {
+	    request.setCharacterEncoding(encoding);
+	    chain.doFilter(request, response);
+    }
+
+    public void destroy() {
+	    // do nothing
+    }
+}
+ web.xml <web-app>
+    ...
+    <filter>
+        <filter-name>characterEncoding</filter-name>
+        <filter-class>mycode.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>characterEncoding</filter-name>
+        <url-pattern>/app/*</url-pattern>
+    </filter-mapping>
+    ...
+</web-app>

@@ -1,0 +1,82 @@
+Looking for an HQL builder (Hibernate Query Language) hibernate hql Doesn't the Criteria API do it for you? It looks almost exactly like what you're asking for. It looks like you want to use the Criteria query API built into Hibernate. To do your above query it would look like this: List<Stock> stocks = session.createCriteria(Stock.class)
+    .add(Property.forName("id").eq(id))
+    .list();
+ If you don't have access to the Hibernate Session yet, you can used 'DetachedCriteria' like so: DetachedCriteria criteria = DetachedCriteria.forClass(Stock.class) 
+    .add(Property.forName("id").eq(id));
+ If you wanted to get all Stock that have a Bonus with a specific ID you could do the following: DetachedCriteria criteria = DetachedCriteria.forClass(Stock.class)
+     .createCriteria("Stock")
+          .add(Property.forName("id").eq(id)));
+ For more infromation check out Criteria Queries from the Hibernate docs @Sébastien Rocca-Serra select stock
+from com.something.Stock as stock, com.something.Bonus as bonus
+where stock.bonus.id = bonus.id
+ That's just a join. Hibernate does it automatically, if and only if you've got the mapping between Stock and Bonus setup and if bonus is a property of Stock. Criteria.list() will return Stock objects and you just call stock.getBonus(). Note, if you want to do anything like select stock
+from com.something.Stock as stock
+where stock.bonus.value > 1000000
+ You need to use Criteria.createAlias(). It'd be something like session.createCriteria(Stock.class).createAlias("bonus", "b")
+   .add(Restrictions.gt("b.value", 1000000)).list()
+ @Sébastien Rocca-Serra Now we're getting somewhere concrete. The sort of join you're trying to do isn't really possible through the Criteria API, but a sub-query should accomplish the same thing. First you create a DetachedCriteria for the bonus table, then use the IN operator for someValue. DetachedCriteria bonuses = DetachedCriteria.forClass(Bonus.class);
+List stocks = session.createCriteria(Stock.class)
+    .add(Property.forName("someValue").in(bonuses)).list();
+ This is equivalent to select stock
+from com.something.Stock as stock
+where stock.someValue in (select bonus.id from com.something.Bonus as bonus)
+ The only downside would be if you have references to different tables in someValue and your ID's are not unique across all tables. But your query would suffer from the same flaw. Criteria API does not provide all functionality avaiable in HQL. For example, you cannot do more than one join over the same column. Why don't you use NAMED QUERIES? The look much more clean: Person person = session.getNamedQuery("Person.findByName")
+                             .setString(0, "Marcio")
+                             .list();
+ I wrote a GPL'd solution for OMERO which you could easily build suited to your situation. Source: QueryBuilder.java Test: QueryBuilderMockTest Usage: QueryBuilder qb = new QueryBuilder();
+qb.select("img");
+qb.from("Image", "img");
+qb.join("img.pixels", "pix", true, false);
+
+// Can't join anymore after this
+qb.where(); // First
+qb.append("(");
+qb.and("pt.details.creationTime > :time");
+qb.param("time", new Date());
+qb.append(")");
+qb.and("img.id in (:ids)");
+qb.paramList("ids", new HashSet());
+qb.order("img.id", true);
+qb.order("this.details.creationEvent.time", false);
+ It functions as a state machine "select->from->join->where->order", etc. and keeps up with optional parameters. There were several queries which the Criteria API could not perform (see HHH-879), so in the end it was simpler to write this small class to wrap StringBuilder. (Note: there is a ticket HHH-2407 describing a Hibernate branch which should unify the two. After that, it would probably make sense to re-visit the Criteria API) Take a look at the search package available from the hibernate-generic-dao project. This is a pretty decent HQL Builder implementation. I know this thread is pretty old, but I also was looking for a HqlBuilder And I found this "screensaver" project It is NOT a Windows screensaver, it's a "Lab Information Management System (LIMS) for high-throughput screening (HTS) facilities that perform small molecule and RNAi screens." It contains an HQLBuilder that is looking quite good. Here is a sample list of available methods: ...
+HqlBuilder select(String alias);
+HqlBuilder select(String alias, String property);
+HqlBuilder from(Class<?> entityClass, String alias);
+HqlBuilder fromFetch(String joinAlias, String joinRelationship, String alias);
+HqlBuilder where(String alias, String property, Operator operator, Object value);
+HqlBuilder where(String alias, Operator operator, Object value);
+HqlBuilder where(String alias1, Operator operator, String alias2);
+HqlBuilder whereIn(String alias, String property, Set<?> values);
+HqlBuilder whereIn(String alias, Set<?> values);
+HqlBuilder where(Clause clause);
+HqlBuilder orderBy(String alias, String property);
+HqlBuilder orderBy(String alias, SortDirection sortDirection);
+HqlBuilder orderBy(String alias, String property, SortDirection sortDirection);
+String toHql();
+...
+ For a type-safe approach to your problem, consider Querydsl. The example query becomes HQLQuery query = new HibernateQuery(session);
+List<Stock> s = query.from(stock, bonus)
+  .where(stock.someValue.eq(bonus.id))
+  .list(stock);
+ Querydsl uses APT for code generation like JPA2 and supports JPA/Hibernate, JDO, SQL and Java collections. I am the maintainer of Querydsl, so this answer is biased. For another type-safe query dsl, I recommend http://www.torpedoquery.org. The library is still young but it provides type safety by directly using your entity's classes. This means early compiler errors when the query no longer applies before of refactoring or redesign. I also provided you with an example. I think from your posts that you where trying to do a subquery restriction, so I based the exemple on that: import static org.torpedoquery.jpa.Torpedo.*;
+
+Bonus bonus = from(Bonus.class);
+Query subQuery = select(bonus.getId());
+
+Stock stock = from(Stock.class);
+where(stock.getSomeValue()).in(subQuery);
+
+List<Stock> stocks = select(stock).list(entityManager);
+ Now are also available the standard JPA Type Safe query and an less standard but also good Object Query Examples: JPA Type Safe EntityManager em = ...
+CriteriaBuilder qb = em.getCriteriaBuilder();
+CriteriaQuery<Stock> c = qb.createQuery(Stock.class);
+Root<Stock> = c.from(Stock.class);
+Predicate condition = qb.eq(p.get(Stock_.id), id);
+c.where(condition);
+TypedQuery<Stock> q = em.createQuery(c); 
+List<Stock> result = q.getResultList();
+ Object Query EntityManager em = ...
+ObjectQuery<Stock> query = new GenericObjectQuery<Stock>(Stock.class);
+Stock toSearch = query.target();
+query.eq(toSearch.getId(),id);
+List<Stock> res = (List<Stock>)JPAObjectQuery.execute(query, em);

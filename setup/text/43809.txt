@@ -1,0 +1,2 @@
+Which jstl url should I reference in my jsps? jsp web-applications jstl Go with <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+ More on this topic here

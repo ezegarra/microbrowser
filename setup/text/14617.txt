@@ -1,0 +1,464 @@
+Java: What is the best way to SFTP a file from a server ftp sftp security This was the solution I came up with http://sourceforge.net/projects/sshtools/ (most error handling omitted for clarity). This is an excerpt from my blog SshClient ssh = new SshClient();
+ssh.connect(host, port);
+//Authenticate
+PasswordAuthenticationClient passwordAuthenticationClient = new PasswordAuthenticationClient();
+passwordAuthenticationClient.setUsername(userName);
+passwordAuthenticationClient.setPassword(password);
+int result = ssh.authenticate(passwordAuthenticationClient);
+if(result != AuthenticationProtocolState.COMPLETE){
+     throw new SFTPException("Login to " + host + ":" + port + " " + userName + "/" + password + " failed");
+}
+//Open the SFTP channel
+SftpClient client = ssh.openSftpClient();
+//Send the file
+client.put(filePath);
+//disconnect
+client.quit();
+ssh.disconnect();
+ Another option is to consider looking at the JSch library. JSch seems to be the preferred library for a few large open source projects, including Eclipse, Ant and Apache Commons HttpClient, amongst others. It supports both user/pass and certificate-based logins nicely, as well as all a whole host of other yummy SSH2 features. Here's a simple remote file retrieve over SFTP. Error handling is left as an exercise for the reader :-) JSch jsch = new JSch();
+
+String knownHostsFilename = "/home/username/.ssh/known_hosts";
+jsch.setKnownHosts( knownHostsFilename );
+
+Session session = jsch.getSession( "remote-username", "remote-host" );    
+{
+  // "interactive" version
+  // can selectively update specified known_hosts file 
+  // need to implement UserInfo interface
+  // MyUserInfo is a swing implementation provided in 
+  //  examples/Sftp.java in the JSch dist
+  UserInfo ui = new MyUserInfo();
+  session.setUserInfo(ui);
+
+  // OR non-interactive version. Relies in host key being in known-hosts file
+  session.setPassword( "remote-password" );
+}
+
+session.connect();
+
+Channel channel = session.openChannel( "sftp" );
+channel.connect();
+
+ChannelSftp sftpChannel = (ChannelSftp) channel;
+
+sftpChannel.get("remote-file", "local-file" );
+// OR
+InputStream in = sftpChannel.get( "remote-file" );
+  // process inputstream as needed
+
+sftpChannel.exit();
+session.disconnect();
+ A nice abstraction on top of Jsch is Apache commons-vfs which offers a virtual filesystem API that makes accessing and writing SFTP files almost transparent. Worked well for us. The best solution I've found is Paramiko. There's a Java version. You also have JFileUpload with SFTP add-on (Java too): http://www.jfileupload.com/products/sftp/index.html Try edtFTPj/PRO, a mature, robust SFTP client library that supports connection pools and asynchronous operations. Also supports FTP and FTPS so all bases for secure file transfer are covered. I use this SFTP API called Zehon, it's great, so easy to use with a lot of sample code. Here is the site http://www.zehon.com sshj has a complete implementation of SFTP version 3 (what OpenSSH implements) Below is an example using Apache Common VFS: FileSystemOptions fsOptions = new FileSystemOptions();
+SftpFileSystemConfigBuilder.getInstance().setStrictHostKeyChecking(fsOptions, "no");
+FileSystemManager fsManager = VFS.getManager();
+String uri = "sftp://user:password@host:port/absolute-path";
+FileObject fo = fsManager.resolveFile(uri, fsOptions);
+ Here is the complete source code of an example using JSch without having to worry about the ssh key checking. import com.jcraft.jsch.*;
+
+public class TestJSch {
+    public static void main(String args[]) {
+        JSch jsch = new JSch();
+        Session session = null;
+        try {
+            session = jsch.getSession("username", "127.0.0.1", 22);
+            session.setConfig("StrictHostKeyChecking", "no");
+            session.setPassword("password");
+            session.connect();
+
+            Channel channel = session.openChannel("sftp");
+            channel.connect();
+            ChannelSftp sftpChannel = (ChannelSftp) channel;
+            sftpChannel.get("remotefile.txt", "localfile.txt");
+            sftpChannel.exit();
+            session.disconnect();
+        } catch (JSchException e) {
+            e.printStackTrace();  
+        } catch (SftpException e) {
+            e.printStackTrace();
+        }
+    }
+}
+ I found complete working example for SFTP in java using JSCH API http://kodehelp.com/java-program-for-uploading-file-to-sftp-server/ Andy , to delete file on remote system,you need to use (channelExec) of JSch and pass unix/linux commands to delete it. Though answers above were very helpful, I've spent a day to make them work, facing various exceptions like "broken channel", "rsa key unknown" and "packet corrupt". Below is a working reusable class for SFTP FILES UPLOAD/DOWNLOAD using JSch library. Upload usage: SFTPFileCopy upload = new SFTPFileCopy(true, /path/to/sourcefile.png", /path/to/destinationfile.png");
+ Download usage: SFTPFileCopy download = new SFTPFileCopy(false, "/path/to/sourcefile.png", "/path/to/destinationfile.png");
+ The class code: import com.jcraft.jsch.Channel;
+import com.jcraft.jsch.ChannelSftp;
+import com.jcraft.jsch.JSch;
+import com.jcraft.jsch.Session;
+import com.jcraft.jsch.UIKeyboardInteractive;
+import com.jcraft.jsch.UserInfo;
+import java.io.BufferedInputStream;
+import java.io.BufferedOutputStream;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import javax.swing.JOptionPane;
+import menue.Menue;
+
+public class SFTPFileCopy1 {
+
+    public SFTPFileCopy1(boolean upload, String sourcePath, String destPath) throws FileNotFoundException, IOException {
+        Session session = null;
+        Channel channel = null;
+        ChannelSftp sftpChannel = null;
+        try {
+            JSch jsch = new JSch();
+            //jsch.setKnownHosts("/home/user/.putty/sshhostkeys");
+            session = jsch.getSession("login", "mysite.com", 22);
+            session.setPassword("password");
+
+            UserInfo ui = new MyUserInfo() {
+                public void showMessage(String message) {
+
+                    JOptionPane.showMessageDialog(null, message);
+
+                }
+
+                public boolean promptYesNo(String message) {
+
+                    Object[] options = {"yes", "no"};
+
+                    int foo = JOptionPane.showOptionDialog(null,
+                            message,
+                            "Warning",
+                            JOptionPane.DEFAULT_OPTION,
+                            JOptionPane.WARNING_MESSAGE,
+                            null, options, options[0]);
+
+                    return foo == 0;
+
+                }
+            };
+            session.setUserInfo(ui);
+
+            session.setConfig("StrictHostKeyChecking", "no");
+            session.connect();
+            channel = session.openChannel("sftp");
+            channel.setInputStream(System.in);
+            channel.setOutputStream(System.out);
+            channel.connect();
+            sftpChannel = (ChannelSftp) channel;
+
+            if (upload) { // File upload.
+                byte[] bufr = new byte[(int) new File(sourcePath).length()];
+                FileInputStream fis = new FileInputStream(new File(sourcePath));
+                fis.read(bufr);
+                ByteArrayInputStream fileStream = new ByteArrayInputStream(bufr);
+                sftpChannel.put(fileStream, destPath);
+                fileStream.close();
+            } else { // File download.
+                byte[] buffer = new byte[1024];
+                BufferedInputStream bis = new BufferedInputStream(sftpChannel.get(sourcePath));
+                OutputStream os = new FileOutputStream(new File(destPath));
+                BufferedOutputStream bos = new BufferedOutputStream(os);
+                int readCount;
+                while ((readCount = bis.read(buffer)) > 0) {
+                    bos.write(buffer, 0, readCount);
+                }
+                bis.close();
+                bos.close();
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        } finally {
+            if (sftpChannel != null) {
+                sftpChannel.exit();
+            }
+            if (channel != null) {
+                channel.disconnect();
+            }
+            if (session != null) {
+                session.disconnect();
+            }
+        }
+    }
+
+    public static abstract class MyUserInfo
+            implements UserInfo, UIKeyboardInteractive {
+
+        public String getPassword() {
+            return null;
+        }
+
+        public boolean promptYesNo(String str) {
+            return false;
+        }
+
+        public String getPassphrase() {
+            return null;
+        }
+
+        public boolean promptPassphrase(String message) {
+            return false;
+        }
+
+        public boolean promptPassword(String message) {
+            return false;
+        }
+
+        public void showMessage(String message) {
+        }
+
+        public String[] promptKeyboardInteractive(String destination,
+                String name,
+                String instruction,
+                String[] prompt,
+                boolean[] echo) {
+
+            return null;
+        }
+    }
+}
+ Apache Commons SFTP library Common java properties file for all the examples serverAddress=111.222.333.444 userId=myUserId password=myPassword remoteDirectory=products/ localDirectory=import/ Upload file to remote server using SFTP import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSystemOptions;
+import org.apache.commons.vfs2.Selectors;
+import org.apache.commons.vfs2.impl.StandardFileSystemManager;
+import org.apache.commons.vfs2.provider.sftp.SftpFileSystemConfigBuilder;
+
+public class SendMyFiles {
+
+ static Properties props;
+
+ public static void main(String[] args) {
+
+  SendMyFiles sendMyFiles = new SendMyFiles();
+  if (args.length < 1)
+  {
+   System.err.println("Usage: java " + sendMyFiles.getClass().getName()+
+     " Properties_file File_To_FTP ");
+   System.exit(1);
+  }
+
+  String propertiesFile = args[0].trim();
+  String fileToFTP = args[1].trim();
+  sendMyFiles.startFTP(propertiesFile, fileToFTP);
+
+ }
+
+ public boolean startFTP(String propertiesFilename, String fileToFTP){
+
+  props = new Properties();
+  StandardFileSystemManager manager = new StandardFileSystemManager();
+
+  try {
+
+   props.load(new FileInputStream("properties/" + propertiesFilename));
+   String serverAddress = props.getProperty("serverAddress").trim();
+   String userId = props.getProperty("userId").trim();
+   String password = props.getProperty("password").trim();
+   String remoteDirectory = props.getProperty("remoteDirectory").trim();
+   String localDirectory = props.getProperty("localDirectory").trim();
+
+   //check if the file exists
+   String filepath = localDirectory +  fileToFTP;
+   File file = new File(filepath);
+   if (!file.exists())
+    throw new RuntimeException("Error. Local file not found");
+
+   //Initializes the file manager
+   manager.init();
+
+   //Setup our SFTP configuration
+   FileSystemOptions opts = new FileSystemOptions();
+   SftpFileSystemConfigBuilder.getInstance().setStrictHostKeyChecking(
+     opts, "no");
+   SftpFileSystemConfigBuilder.getInstance().setUserDirIsRoot(opts, true);
+   SftpFileSystemConfigBuilder.getInstance().setTimeout(opts, 10000);
+
+   //Create the SFTP URI using the host name, userid, password,  remote path and file name
+   String sftpUri = "sftp://" + userId + ":" + password +  "@" + serverAddress + "/" + 
+     remoteDirectory + fileToFTP;
+
+   // Create local file object
+   FileObject localFile = manager.resolveFile(file.getAbsolutePath());
+
+   // Create remote file object
+   FileObject remoteFile = manager.resolveFile(sftpUri, opts);
+
+   // Copy local file to sftp server
+   remoteFile.copyFrom(localFile, Selectors.SELECT_SELF);
+   System.out.println("File upload successful");
+
+  }
+  catch (Exception ex) {
+   ex.printStackTrace();
+   return false;
+  }
+  finally {
+   manager.close();
+  }
+
+  return true;
+ }
+
+
+}
+ Download file from remote server using SFTP import java.io.File;
+import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSystemOptions;
+import org.apache.commons.vfs2.Selectors;
+import org.apache.commons.vfs2.impl.StandardFileSystemManager;
+import org.apache.commons.vfs2.provider.sftp.SftpFileSystemConfigBuilder;
+
+public class GetMyFiles {
+
+ static Properties props;
+
+ public static void main(String[] args) {
+
+  GetMyFiles getMyFiles = new GetMyFiles();
+  if (args.length < 1)
+  {
+   System.err.println("Usage: java " + getMyFiles.getClass().getName()+
+   " Properties_filename File_To_Download ");
+   System.exit(1);
+  }
+
+  String propertiesFilename = args[0].trim();
+  String fileToDownload = args[1].trim();
+  getMyFiles.startFTP(propertiesFilename, fileToDownload);
+
+ }
+
+ public boolean startFTP(String propertiesFilename, String fileToDownload){
+
+  props = new Properties();
+  StandardFileSystemManager manager = new StandardFileSystemManager();
+
+  try {
+
+   props.load(new FileInputStream("properties/" + propertiesFilename));
+   String serverAddress = props.getProperty("serverAddress").trim();
+   String userId = props.getProperty("userId").trim();
+   String password = props.getProperty("password").trim();
+   String remoteDirectory = props.getProperty("remoteDirectory").trim();
+   String localDirectory = props.getProperty("localDirectory").trim();
+
+
+   //Initializes the file manager
+   manager.init();
+
+   //Setup our SFTP configuration
+   FileSystemOptions opts = new FileSystemOptions();
+   SftpFileSystemConfigBuilder.getInstance().setStrictHostKeyChecking(
+     opts, "no");
+   SftpFileSystemConfigBuilder.getInstance().setUserDirIsRoot(opts, true);
+   SftpFileSystemConfigBuilder.getInstance().setTimeout(opts, 10000);
+
+   //Create the SFTP URI using the host name, userid, password,  remote path and file name
+   String sftpUri = "sftp://" + userId + ":" + password +  "@" + serverAddress + "/" + 
+     remoteDirectory + fileToDownload;
+
+   // Create local file object
+   String filepath = localDirectory +  fileToDownload;
+   File file = new File(filepath);
+   FileObject localFile = manager.resolveFile(file.getAbsolutePath());
+
+   // Create remote file object
+   FileObject remoteFile = manager.resolveFile(sftpUri, opts);
+
+   // Copy local file to sftp server
+   localFile.copyFrom(remoteFile, Selectors.SELECT_SELF);
+   System.out.println("File download successful");
+
+  }
+  catch (Exception ex) {
+   ex.printStackTrace();
+   return false;
+  }
+  finally {
+   manager.close();
+  }
+
+  return true;
+ }
+
+}
+ Delete a file on remote server using SFTP import java.io.FileInputStream;
+import java.util.Properties;
+
+import org.apache.commons.vfs2.FileObject;
+import org.apache.commons.vfs2.FileSystemOptions;
+import org.apache.commons.vfs2.impl.StandardFileSystemManager;
+import org.apache.commons.vfs2.provider.sftp.SftpFileSystemConfigBuilder;
+
+public class DeleteRemoteFile {
+
+ static Properties props;
+
+ public static void main(String[] args) {
+
+  DeleteRemoteFile getMyFiles = new DeleteRemoteFile();
+  if (args.length < 1)
+  {
+   System.err.println("Usage: java " + getMyFiles.getClass().getName()+
+   " Properties_filename File_To_Delete ");
+   System.exit(1);
+  }
+
+  String propertiesFilename = args[0].trim();
+  String fileToDownload = args[1].trim();
+  getMyFiles.startFTP(propertiesFilename, fileToDownload);
+
+ }
+
+ public boolean startFTP(String propertiesFilename, String fileToDownload){
+
+  props = new Properties();
+  StandardFileSystemManager manager = new StandardFileSystemManager();
+
+  try {
+
+   props.load(new FileInputStream("properties/" + propertiesFilename));
+   String serverAddress = props.getProperty("serverAddress").trim();
+   String userId = props.getProperty("userId").trim();
+   String password = props.getProperty("password").trim();
+   String remoteDirectory = props.getProperty("remoteDirectory").trim();
+
+
+   //Initializes the file manager
+   manager.init();
+
+   //Setup our SFTP configuration
+   FileSystemOptions opts = new FileSystemOptions();
+   SftpFileSystemConfigBuilder.getInstance().setStrictHostKeyChecking(
+     opts, "no");
+   SftpFileSystemConfigBuilder.getInstance().setUserDirIsRoot(opts, true);
+   SftpFileSystemConfigBuilder.getInstance().setTimeout(opts, 10000);
+
+   //Create the SFTP URI using the host name, userid, password,  remote path and file name
+   String sftpUri = "sftp://" + userId + ":" + password +  "@" + serverAddress + "/" + 
+     remoteDirectory + fileToDownload;
+
+   //Create remote file object
+   FileObject remoteFile = manager.resolveFile(sftpUri, opts);
+
+   //Check if the file exists
+   if(remoteFile.exists()){
+    remoteFile.delete();
+    System.out.println("File delete successful");
+   }
+
+  }
+  catch (Exception ex) {
+   ex.printStackTrace();
+   return false;
+  }
+  finally {
+   manager.close();
+  }
+
+  return true;
+ }
+
+}

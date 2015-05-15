@@ -1,0 +1,22 @@
+How do I use Java to read from a file that is actively being written? file file-io Not Java per-se, but you may run into issues where you have written something to a file, but it hasn't been actually written yet - it might be in a cache somewhere, and reading from the same file may not actually give you the new information. Short version - use flush() or whatever the relevant system call is to ensure that your data is actually written to the file. Note I am not talking about the OS level disk cache - if your data gets into here, it should appear in a read() after this point. It may be that the language itself caches writes, waiting until a buffer fills up or file is flushed/closed. I've never tried it, but you should write a test case to see if reading from a stream after you have hit the end will work, regardless of if there is more data written to the file. Is there a reason you can't use a piped input/output stream? Is the data being written and read from the same application (if so, you have the data, why do you need to read from the file)? Otherwise, maybe read till end of file, then monitor for changes and seek to where you left off and continue... though watch out for race conditions. The answer seems to be "no" ... and "yes". There seems to be no real way to know if a file is open for writing by another application. So, reading from such a file will just progress until content is exhausted. I took Mike's advice and wrote some test code: Writer.java writes a string to file and then waits for the user to hit enter before writing another line to file. The idea being that it could be started up, then a reader can be started to see how it copes with the "partial" file. The reader I wrote is in Reader.java. Writer.java public class Writer extends Object {     Writer () {     }     public static String[] strings =         {             "Hello World",             "Goodbye World"         };     public static void main(String[] args)         throws java.io.IOException {         java.io.PrintWriter pw =             new java.io.PrintWriter(new java.io.FileOutputStream("out.txt"), true);         for(String s : strings) {             pw.println(s);             System.in.read();         }         pw.close();     } } Reader.java public class Reader extends Object {     Reader () {     }     public static void main(String[] args)         throws Exception {         java.io.FileInputStream in = new java.io.FileInputStream("out.txt");         java.nio.channels.FileChannel fc = in.getChannel();         java.nio.ByteBuffer bb = java.nio.ByteBuffer.allocate(10);         while(fc.read(bb) >= 0) {             bb.flip();             while(bb.hasRemaining()) {                 System.out.println((char)bb.get());             }             bb.clear();         }         System.exit(0);     } } No guarantees that this code is best practice. This leaves the option suggested by Mike of periodically checking if there is new data to be read from the file. This then requires user intervention to close the file reader when it is determined that the reading is completed. Or, the reader needs to be made aware the content of the file and be able to determine and end of write condition. If the content were XML, the end of document could be used to signal this. You might also take a look at java channel for locking a part of a file. http://java.sun.com/javase/6/docs/api/java/nio/channels/FileChannel.html This function of the FileChannel might be a start lock(long position, long size, boolean shared)
+ An invocation of this method will block until the region can be locked Could not get the example to work using FileChannel.read(ByteBuffer) because it isn't a blocking read. Did however get the code below to work: boolean running = true;
+BufferedInputStream reader = new BufferedInputStream( 
+    new FileInputStream( "out.txt" ) );
+
+public void run() {
+    while( running ) {
+        if( reader.available() > 0 ) {
+            System.out.print( (char)reader.read() );
+        }
+        else {
+            try {
+                sleep( 500 );
+            }
+            catch( InterruptedException ex )
+            {
+                running = false;
+            }
+        }
+    }
+}
+ Of course the same thing would work as a timer instead of a Thread, but I leave that up to the programmer. I'm still looking for a better way, but this works for me for now. Oh, and I'll caveat this with: I'm using 1.4.2. Yes I know I'm in the stone ages still. Look into using the Tailer from Apache Commons IO. It handles most of the edge cases.

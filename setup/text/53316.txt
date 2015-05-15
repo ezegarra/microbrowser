@@ -1,0 +1,3 @@
+Hibernate crops clob values oddly oracle hibernate LOB/CLOB column may not be large enough. Hibernate has some default column sizes for LOB/CLOB that are relatively small (may depend on db). Anyway, try something like this: @Lob 
+@Column(length=2147483648)
+ Adjust the length (in bytes) based on your needs. Many JDBC drivers, early versions of Oracle in particular, have problems while inserting LOBs. Did you make sure that the query Hibernate fires, with the same parameters bound works successfully in your JDBC driver?

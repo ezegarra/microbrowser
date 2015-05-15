@@ -1,0 +1,42 @@
+How would you use Java to handle various XML documents? xml sax stax JAXB. The Java Architecture for XML Binding. Basically you create an xsd defining your XML layout (I believe you could also use a DTD). Then you pass the XSD to the JAXB compiler and the compiler creates Java classes to marshal and unmarshal your XML document into Java objects. It's really simple. BTW, there are command line options to jaxb to specify the package name you want to place the resulting classes in, etc. You've done a good job of explaining what you want to do but not why. There are several XML frameworks that simplify marshalling and unmarshalling Java objects to/from XML. The simplest is Commons Digester which I typically use to parse configuration files. But if you are want to deal with Java objects then you should look at Castor, JiBX, JAXB, XMLBeans, XStream, or something similar. Castor or JiBX are my two favourites. I have tried the SAXParser once, but once I found XStream I never went back to it. With XStream you can create Java Objects and convert them to XML. Send them over and use XStream to recreate the object. Very easy to use, fast, and creates clean XML. Either way you have to know what data your going to receiver from the XML file. You can send them over in different ways to know which parser to use. Or have a data object that can hold everything but only one structure is populated (product/store/managers). Maybe something like: public class DataStructure {
+
+    List<ProductStructure> products;
+
+    List<StoreStructure> stors;
+
+    List<ManagerStructure> managers;
+
+    ...
+
+    public int getProductCount() {
+        return products.lenght();
+    }
+
+    ...
+}
+ And with XStream convert to XML send over and then recreate the object. Then do what you want with it. As I understand it, the problem is that you don't know what format the document is prior to parsing. You could use a delegate pattern. I'm assuming you're not validating against a DTD/XSD/etcetera and that it is OK for the DefaultHandler to have state. public class DelegatingHandler extends DefaultHandler {
+
+    private Map<String, DefaultHandler> saxHandlers;
+    private DefaultHandler delegate = null;
+
+    public DelegatingHandler(Map<String, DefaultHandler> delegates) {
+        saxHandlers = delegates;
+    }
+
+    @Override
+    public void startElement(String uri, String localName, String name,
+            Attributes attributes) throws SAXException {
+       if(delegate == null) {
+           delegate = saxHandlers.get(name);
+       }
+       delegate.startElement(uri, localName, name, attributes);
+    }
+
+    @Override
+    public void endElement(String uri, String localName, String name)
+            throws SAXException {
+        delegate.endElement(uri, localName, name);
+    }
+
+//etcetera...
+ See the documentation for XMLReader.setContentHandler(), it says: Applications may register a new or different handler in the middle of a parse, and the SAX parser must begin using the new handler immediately. Thus, you should be able to create a SelectorContentHandler that consumes events until the first startElement event, based on that changes the ContentHandler on the XML reader, and passes the first start element event to the new content handler. You just have to pass the XMLReader to the SelectorContentHandler in the constructor. If you need all the events to be passes to the vocabulary specific content handler, SelectorContentHandler has to cache the events and then pass them, but in most cases this is not needed. On a side note, I've lately used XOM in almost all my projects to handle XML ja thus far performance hasn't been the issue. If you want more dynamic handling, Stax approach would probably work better than Sax. That's quite low-level, still; if you want simpler approach, XStream and JAXB are my favorites. But they do require quite rigid objects to map to. Agree with StaxMan, who interestingly enough wants you to use Stax. It's a pull based parser instead of the push you are currently using. This would require some significant changes to your code though. :-) Yes, I have some bias towards Stax. But as I said, oftentimes data binding is more convenient than streaming solution. But if it's streaming you want, and don't need pipelining (of multiple filtering stages), Stax is simpler than SAX. One more thing: as good as XOM is (wrt alternatives), often Tree Model is not the right thing to use if you are not dealing with "document-centric" xml (~= xhtml pages, docbook, open office docs). For data interchange, config files etc data binding is more convenient, more efficient, more natural. Just say no to tree models like DOM for these use cases. So, JAXB, XStream, JibX are good. Or, for more acquired taste, digester, castor, xmlbeans.

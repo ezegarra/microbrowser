@@ -1,0 +1,60 @@
+$0 (Program Name) in Java? Discover main class? Try this:     StackTraceElement[] stack = Thread.currentThread ().getStackTrace ();
+    StackTraceElement main = stack[stack.length - 1];
+    String mainClass = main.getClassName ();
+ Of course, this only works if you're running from the main thread. Unfortunately I don't think there's a system property you can query to find this out. Edit: Pulling in @John Meagher's comment, which is a great idea: To expand on @jodonnell you can also get all stack traces in the system using Thread.getAllStackTraces(). From this you can search all the stack traces for the "main" Thread to determine what the main class is. This will work even if your class is not running in the main thread. Also from the command line you could run the jps tool. Sounds like a jps -l
+ will get you what you want. To expand on @jodonnell you can also get all stack traces in the system using Thread.getAllStackTraces(). From this you can search all the stack traces for the main Thread to determine what the main class is. This will work even if your class is not running in the main thread. Or you could just use getClass(). You can do something like: public class Foo
+{
+    public static final String PROGNAME = new Foo().getClass().getName();
+}
+ And then PROGNAME will be available anywhere inside Foo. If you're not in a static context, it gets easier as you could use this: String myProgramName = this.getClass().getName();
+ Try this : Java classes have static instance of their own class (java.lang.Class type). That means if we have a class named Main. Then we can get its class instance by Main.class If you're interested in name only then, String className = Main.class.getName(); For access to the class objects when you are in a static context public final class ClassUtils {
+    public static final Class[] getClassContext() {
+        return new SecurityManager() { 
+            protected Class[] getClassContext(){return super.getClassContext();}
+        }.getClassContext(); 
+    };
+    private ClassUtils() {};
+    public static final Class getMyClass() { return getClassContext()[2];}
+    public static final Class getCallingClass() { return getClassContext()[3];}
+    public static final Class getMainClass() { 
+        Class[] c = getClassContext();
+        return c[c.length-1];
+    }
+    public static final void main(final String[] arg) {
+        System.out.println(getMyClass());
+        System.out.println(getCallingClass());
+        System.out.println(getMainClass());
+    }
+}
+ Obviously here all 3 calls will return class ClassUtils
+ but you get the picture; classcontext[0] is the securitymanager
+classcontext[1] is the anonymous securitymanager
+classcontext[2] is the class with this funky getclasscontext method
+classcontext[3] is the calling class
+classcontext[last entry] is the root class of this thread.
+ This is the code I came up with when using the combined responses of jodonnell and John Meagher. It stores the main class in a static variable to reduce overhead of repeated calls: private static Class<?> mainClass;
+
+public static Class<?> getMainClass() {
+  if (mainClass != null)
+    return mainClass;
+
+  Collection<StackTraceElement[]> stacks = Thread.getAllStackTraces().values();
+  for (StackTraceElement[] currStack : stacks) {
+    if (currStack.length==0)
+      continue;
+    StackTraceElement lastElem = currStack[currStack.length - 1];
+    if (lastElem.getMethodName().equals("main")) {
+      try {
+        String mainClassName = lastElem.getClassName();
+        mainClass = Class.forName(mainClassName);
+        return mainClass;
+      } catch (ClassNotFoundException e) {
+        // bad class name in line containing main?! 
+        // shouldn't happen
+        e.printStackTrace();
+      }
+    }
+  }
+  return null;
+}
+ System.getProperty("sun.java.command")

@@ -1,0 +1,14 @@
+Algorithm to perform RFC calculation in Java regex algorithm reflection You should find your answer in the Java language specification. You have forgot static method call, method call inside parameters... Calling a method using reflection (the name of the method is in a string). You could use the Byte Code Engineering Library with binaries. You can use a DescendingVisitor to visit a class' members and references. I've used it to find class dependencies. Alternatively, you could reuse some model of the source files. I'm pretty sure the Java editor in the Eclipse JDT is backed by some form of model. Does M include calls to its own methods? Or calls to inner classes? For instance: class J {
+  a() { }
+  b() { this.a(); }
+  c() { jj.aa(); }
+  d() { i.k(); }
+  e() { this.f().a(); }
+  f() { return this; }
+  g() { i.m().n(); }
+
+  class JJ {
+    aa() { a(); }
+  }
+}
+ What would the M value of this be? There's only three function calls to a method not defined in this class (the calls in the d() and g() functions). Do you want to include calls to inner classes, or calls to the main class made in the inner class? Do you want to include calls to other methods on the same class? If you're looking at any method calls, regardless of the source, then a regex could probably work, but would be tricky to get right (does your regex properly ignore strings that contain method-call like contents? Does it handle constructor calls properly?). If you care about the source of the method call then regexes probably won't get you what you want. You'd need to use reflection (though unfortunately I don't know enough about reflection to be helpful there).

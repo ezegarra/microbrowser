@@ -1,0 +1,13 @@
+Reconnecting JMS listener to JBossMQ jboss jms jbossmq You should implement in your client code javax.jms.ExceptionListener. You will need a method called onException. When the client's connection is lost, you should get a JMSException, and this method will be called automatically. The only thing you have to look out for is if you are intentionally disconnecting from JBossMQ-- that will also throw an exception. Some code might look like this:     public void onException (JMSException jsme)
+    {
+        if (!closeRequested)
+        {
+            this.disconnect();
+            this.establishConnection(connectionProps, queueName, uname, pword, clientID, messageSelector);
+        }        
+        else
+        {
+            //Client requested close so do not try to reconnect
+        }
+    }
+ In your "establishConnection" code, you would then implement a while(!initialized) construct that contains a try/catch inside of it. Until you are sure you have connected and subscribed properly, stay inside the while loop catching all JMS/Naming/etc. exceptions. We've used this method for years with JBossMQ and it works great. We have never had a problem with our JMS clients not reconnecting after bouncing JBossMQ or losing our network connection. I'd highly recommend you use the Spring abstractions for JMS such as the MessageListenerContainer to deal with reconnection, transactions and pooling for you. You just need to supply a MessageListener and configure the MessageListenerContainer with the ConnectionFactory and the container does the rest. If you're purely a listener and do no other JMS calls other than connection setup, then the "onException() handler" answer is correct. If you do any JMS calls in your code, just using onException() callback isn't sufficient. Problems are relayed from the JMS provider to the app either via an exception on a JMS method call or through the onException() callback. Not both. So if you call any JMS methods from your code, you'll also want to invoke that reconnection logic if you get any exceptions on those calls. Piece of advice from personal experience. Upgrade to JBoss Messaging. I've seen it in production for 4 months without problems. It has fully transparent failover - amongst many other features. Also, if you do go with Spring, be very careful with the JmsTemplate.

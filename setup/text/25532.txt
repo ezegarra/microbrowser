@@ -1,0 +1,15 @@
+ASP.NET Master Pages equivalent in Java model-view-controller master-pages First, the equivalent of ASP.Net in Java is going to be a web framework, such as the ones you mention (Tiles, Tapestry and Velocity). Master pages give the ability to define pages in terms of content slotted into a master template. Master pages are a feature of ASP.Net (the .Net web framework), so you are looking for a feature similar to master pages in a Java web framework. http://tiles.apache.org/framework/tutorial/basic/pages.html gives some basic examples using Tiles and JSP to implement something similar with Struts, a Java web framework. In this case, the Master Pages functionality is a plugin on top of Struts. Velocity is a generic templating engine, not specialized for web pages and definitely more complicated than you need. (I've seen it used for code generation.) Tapestry is more of a full featured web stack than Tile, and is probably good for your purposes. Its templating functionality involves creating a component and putting all common markup in that. An example is at http://www.infoq.com/articles/tapestry5-intro. The specifics of this differ based on which Java web framework you choose. You should also check out Facelets; there is a good introductory article on DeveloperWorks. The Facelets <ui:insert/> tag is comparable to the ASP.NET <asp:ContentPlaceHolder/> tag used in master pages; it lets you provide default content for that area of the page, but this can be overridden. To fill the Facelets template in another page, you start with a <ui:composition/> element that points to the template file. This is roughly equivalent to declaring the MasterPageFile attribute in an ASP.NET page. Inside the <ui:composition/> element, you use <ui:define/> elements to override the template defaults, similar to the way an <asp:Content/> tag is used. These elements can contain any kind of content - from simple strings to JSF elements. So, to bring it all together... In master.xhtml: <!-- HTML header content here -->
+<ui:insert name="AreaOne">Default content for AreaOne</ui:insert>
+<ui:insert name="AreaTwo">Default content for AreaTwo</ui:insert>
+<!-- HTML footer content here -->
+ In page.xhtml: <ui:composition template="/WEB-INF/templates/master.xhtml">
+  <ui:define name="AreaOne">Here is some new content</ui:define>
+  <ui:define name="AreaTwo">
+    <p>Some new content here too</p>
+  </ui:define>
+</ui:composition>
+ And this will render as: <!-- HTML header content here -->
+Here is some new content
+<p>Some new content here too</p>
+<!-- HTML footer content here -->
+ You also get some other benefits with Facelets, such as the ability to reuse page components with different data. (Edited to provide more information.) I've used sitemesh in previous projects and it's pretty easy to set up. Essentially, you create decorators which are equivalents of master pages. You then define which child pages use which decorators. See introduction to sitemesh for more information.

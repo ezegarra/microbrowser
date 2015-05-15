@@ -1,0 +1,76 @@
+Design: Java and returning self-reference in setter methods design I wouldn't do it myself, because to me it muddies what a particular method does, and the method-chaining is of limited use to me over doing it longhand. It isn't going to send me into a quivering ball of rage and psychosis, though, which is always a good thing. :') I wouldn't be concerned about performance; just ask Knuth. This is called a Fluent Interface, for reference. Personally, I think it's a pretty neat idea, but a matter of taste really. I think jQuery works this way. I agree with @Bernard that method chaining like this muddles the purpose of the setters. Instead I would suggest that if you are always creating chains of setters like this that you create a custom Constructor for your class so instead of     MyClass
+    .setInt(1)
+    .setString("test")
+    .setBoolean(true)
+  ;
+ You do new MyClass(1,"test",true);
+ This makes it more readable and you can use this to make your class immutable if you chose to. This idea is seen a lot in c++, it allows operations to be cascaded... for example 
+
+std::cout << "this" << "is" << "cascading" 
+ is where the stream method << returns an instance of itself (*this). see this: http://www.java2s.com/Tutorial/Cpp/0180__Class/Cascadingmemberfunctioncallswiththethispointer.htm I find this to be in poor style when used in setters. Immutable classes are usually a better fit for chaining, such as: aWithB = myObject.withA(someA).withB(someB);
+ where myObject is of this class: class MyClass {
+    withA(TypeA a) {
+         this.a.equals(a) ? this : new MyClass(this, a);
+    }
+
+    private MyClass(MyClass copy, TypeA a) {
+        this(copy);
+        this.a = a;
+    }
+}
+ The builder pattern is also useful, since it allows the final object to be immutable while preventing the intermediate instances you would normally have to create when using this technique. I use to be a fan of the Java (and worse C#) practice of making getters and setters (get set properties) throughout an object. This use to be what I considered object oriented, but really this leads us just to exposing the guts and implementation of the object and not really taking advantage of encapsulation. There are times you can't get away from this (OR/M comes to mind), but in general the object should be set up and then perform its function. My dream objects tend to have one or two constructors, and maybe a half dozen functions that do work. The reason for this is that once I started developing API's there is a real need to keep things simple. You really only want to add as much complexity as is required to get the job done, and getters and setters, while simple in themselves, add complexity in heaps when added in mass. What happens when I load setters i na different order? Anythign different? Are you sure? @martinatime Yes, I agree that you can also do that, but it really gets messy if you have more than 7 parameters. I think that's what a Builder pattern solves but in a more complex way. @Dan again, for more complex situations (immutability comes in mind) the Builder Pattern is a great solution. Also, I agree with you mostly in getters. I believe what you are saying is to mostly follow the "Tell don't ask" paradigm and I greatly agree. But that is oriented mostly at getters. Lastly, all of the above are for classes that have a great deal of attributes. I don't see a reason for any if you only have less than, say, 7. @pek Chained invocation is one of proposals for Java 7. It says that if a method return type is void, it should implicitly return this. If you're interested in this topic, there is a bunch of links and a simple example on Alex Miller's Java 7 page. I ended up doing this a lot when working with the Apache POI excel library; I ended up writing helper methods that chained so I could apply formatting, data types, internal cell data, formulas, and cell positioning. For stuff with lots of little tiny flyweight elements that need to have finicky little tweaks applied it works pretty well. It makes sense for builders, where all you are going to do is set a load of stuff, create the real object and throw the builder away. For builders, you might as well get rid of the "set" part of the method name. Similarly, immutable types don't really need the "get". Something thing = new SomethingBuilder()
+    .aProperty(wotsit)
+    .anotherProperty(somethingElse)
+    .create();
+ A useful trick (if you don't mind a ~2K runtime overhead per class) is to use the double brace idiom: JFrame frame = new JFrame("My frame") {{
+    setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+    setLocation(frameTopLeft);
+    add(createContents());
+    pack();
+    setVisible(true);
+}};
+ How To Use /**
+ *
+ * @author sanjay
+ */
+public class NewClass {
+private int left ;
+private int top;
+public void set(int x,int y)
+    {
+    left=x;
+    top=y;
+}
+public NewClass UP(int x)
+    {
+    top+=x;
+    return this;
+}
+public NewClass DOWN(int x)
+    {
+    top-=x;
+    return this;
+}
+public NewClass RIGHT(int x)
+    {
+    left+=x;
+    return this;
+}
+public NewClass LEFT(int x)
+    {
+    left-=x;
+    return this;
+}
+public void Display()
+    {
+    System.out.println("TOP:"+top);
+    System.out.println("\nLEFT\n:"+left);
+}
+}
+public static void main(String[] args) {
+    // TODO code application logic here
+    NewClass test = new NewClass();
+    test.set(0,0);
+    test.Display();
+    test.UP(20).UP(45).DOWN(12).RIGHT(32).LEFT(20);
+     test.Display();

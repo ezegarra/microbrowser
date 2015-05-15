@@ -1,0 +1,19 @@
+How to fetch HTML in Java html screen-scraping I'm currently using this: String content = null;
+URLConnection connection = null;
+try {
+  connection =  new URL("http://www.google.com").openConnection();
+  Scanner scanner = new Scanner(connection.getInputStream());
+  scanner.useDelimiter("\\Z");
+  content = scanner.next();
+}catch ( Exception ex ) {
+    ex.printStackTrace();
+}
+System.out.println(content);
+ But not sure if there's a better way. I just left this post in your other thread, though what you have above might work as well. I don't think either would be any easier than the other. The Apache packages can be accessed by just using import org.apache.commons.HttpClient at the top of your code. Edit: Forgot the link ;) This has worked well for me: URL url = new URL(theURL);
+InputStream is = url.openStream();
+int ptr = 0;
+StringBuffer buffer = new StringBuffer();
+while ((ptr = is.read()) != -1) {
+    buffer.append((char)ptr);
+}
+ Not sure at to whether the other solution(s) provided are any more efficient or not. Whilst not vanilla-Java, I'll offer up a simpler solution. Use Groovy ;-) String siteContent = new URL("http://www.google.com").text

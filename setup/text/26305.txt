@@ -1,0 +1,218 @@
+How can I play sound in Java? audio A bad example: import  sun.audio.*;    //import the sun.audio package
+import  java.io.*;
+
+//** add this into your application code as appropriate
+// Open an input stream  to the audio file.
+InputStream in = new FileInputStream(Filename);
+
+// Create an AudioStream object from the input stream.
+AudioStream as = new AudioStream(in);         
+
+// Use the static class member "player" from class AudioPlayer to play
+// clip.
+AudioPlayer.player.start(as);            
+
+// Similarly, to stop the audio.
+AudioPlayer.player.stop(as); 
+ I personally made this code that works fine. I think it only works with .wav format. public static synchronized void playSound(final String url) {
+  new Thread(new Runnable() {
+  // The wrapper thread is unnecessary, unless it blocks on the
+  // Clip finishing; see comments.
+    public void run() {
+      try {
+        Clip clip = AudioSystem.getClip();
+        AudioInputStream inputStream = AudioSystem.getAudioInputStream(
+          Main.class.getResourceAsStream("/path/to/sounds/" + url));
+        clip.open(inputStream);
+        clip.start(); 
+      } catch (Exception e) {
+        System.err.println(e.getMessage());
+      }
+    }
+  }).start();
+}
+ The Sound Trail of the Java Tutorial is worth being the starting point. There is an alternative to importing the sound files which works in both applets and applications: convert the audio files into .java files and simply use them in your code. I have developed a tool which makes this process a lot easier. It simplifies the Java Sound API quite a bit. http://stephengware.com/projects/soundtoclass/ Hope this helps. -- Stephen I created a game framework sometime ago to work on Android and Desktop, the desktop part that handle sound maybe can be used as inspiration to what you need. https://github.com/hamilton-lima/jaga/blob/master/jaga%20desktop/src-desktop/com/athanazio/jaga/desktop/sound/Sound.java Here is the code for reference. package com.athanazio.jaga.desktop.sound;
+
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import javax.sound.sampled.AudioFormat;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.DataLine;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.SourceDataLine;
+import javax.sound.sampled.UnsupportedAudioFileException;
+
+public class Sound {
+
+    AudioInputStream in;
+
+    AudioFormat decodedFormat;
+
+    AudioInputStream din;
+
+    AudioFormat baseFormat;
+
+    SourceDataLine line;
+
+    private boolean loop;
+
+    private BufferedInputStream stream;
+
+    // private ByteArrayInputStream stream;
+
+    /**
+     * recreate the stream
+     * 
+     */
+    public void reset() {
+        try {
+            stream.reset();
+            in = AudioSystem.getAudioInputStream(stream);
+            din = AudioSystem.getAudioInputStream(decodedFormat, in);
+            line = getLine(decodedFormat);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void close() {
+        try {
+            line.close();
+            din.close();
+            in.close();
+        } catch (IOException e) {
+        }
+    }
+
+    Sound(String filename, boolean loop) {
+        this(filename);
+        this.loop = loop;
+    }
+
+    Sound(String filename) {
+        this.loop = false;
+        try {
+            InputStream raw = Object.class.getResourceAsStream(filename);
+            stream = new BufferedInputStream(raw);
+
+            // ByteArrayOutputStream out = new ByteArrayOutputStream();
+            // byte[] buffer = new byte[1024];
+            // int read = raw.read(buffer);
+            // while( read > 0 ) {
+            // out.write(buffer, 0, read);
+            // read = raw.read(buffer);
+            // }
+            // stream = new ByteArrayInputStream(out.toByteArray());
+
+            in = AudioSystem.getAudioInputStream(stream);
+            din = null;
+
+            if (in != null) {
+                baseFormat = in.getFormat();
+
+                decodedFormat = new AudioFormat(
+                        AudioFormat.Encoding.PCM_SIGNED, baseFormat
+                                .getSampleRate(), 16, baseFormat.getChannels(),
+                        baseFormat.getChannels() * 2, baseFormat
+                                .getSampleRate(), false);
+
+                din = AudioSystem.getAudioInputStream(decodedFormat, in);
+                line = getLine(decodedFormat);
+            }
+        } catch (UnsupportedAudioFileException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (LineUnavailableException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private SourceDataLine getLine(AudioFormat audioFormat)
+            throws LineUnavailableException {
+        SourceDataLine res = null;
+        DataLine.Info info = new DataLine.Info(SourceDataLine.class,
+                audioFormat);
+        res = (SourceDataLine) AudioSystem.getLine(info);
+        res.open(audioFormat);
+        return res;
+    }
+
+    public void play() {
+
+        try {
+            boolean firstTime = true;
+            while (firstTime || loop) {
+
+                firstTime = false;
+                byte[] data = new byte[4096];
+
+                if (line != null) {
+
+                    line.start();
+                    int nBytesRead = 0;
+
+                    while (nBytesRead != -1) {
+                        nBytesRead = din.read(data, 0, data.length);
+                        if (nBytesRead != -1)
+                            line.write(data, 0, nBytesRead);
+                    }
+
+                    line.drain();
+                    line.stop();
+                    line.close();
+
+                    reset();
+                }
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+}
+ For playing sound in java, you can refer to the following code.
+
+import java.io.*;
+import java.net.URL;
+import javax.sound.sampled.*;
+import javax.swing.*;
+
+// To play sound using Clip, the process need to be alive.
+// Hence, we use a Swing application.
+public class SoundClipTest extends JFrame {
+
+   // Constructor
+   public SoundClipTest() {
+      this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      this.setTitle("Test Sound Clip");
+      this.setSize(300, 200);
+      this.setVisible(true);
+
+      try {
+         // Open an audio input stream.
+         URL url = this.getClass().getClassLoader().getResource("gameover.wav");
+         AudioInputStream audioIn = AudioSystem.getAudioInputStream(url);
+         // Get a sound clip resource.
+         Clip clip = AudioSystem.getClip();
+         // Open audio clip and load samples from the audio input stream.
+         clip.open(audioIn);
+         clip.start();
+      } catch (UnsupportedAudioFileException e) {
+         e.printStackTrace();
+      } catch (IOException e) {
+         e.printStackTrace();
+      } catch (LineUnavailableException e) {
+         e.printStackTrace();
+      }
+   }
+
+   public static void main(String[] args) {
+      new SoundClipTest();
+   }
+}
+ Some minutes ago I found another way. This example is very easy. Check it here.

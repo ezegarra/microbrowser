@@ -1,0 +1,58 @@
+Calling .NET Web Service (WSE 2/3, WS-Security) from Java .net axis2 ws-security wse CXF - I'd look into CXF. I've used it to create a web service and client in java using ws-secuirty. I also connected a .net web service to it. They have pretty good documentation too. I had more luck with it than axis. Apache Axis can generate proxy code from WSDL http://ws.apache.org/axis/java/user-guide.html#UsingWSDLWithAxis NetBeans with the RESTful Web Services plug-in can generate code for you. Instructions for an example client for the eBay shopping web service are at http://ebay.custhelp.com/cgi-bin/ebay.cfg/php/enduser/std_adp.php?p_faqid=1230. I guess I should be more clear - I have used the wsdl2java code generators to generate client code for the service. However the generated code does not include the necessary WS-Security SOAP headers so that the service will accept the requests. @Mike I recently did a test and this is the code I used. I'm not using policy stuff, but I used WS-Security with plain text authentication. CXF has really good documentation on how to accomplish this stuff. I used wsdl2java and then added this code to use the web service with ws-security. I hope this helps you out. import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import javax.security.auth.callback.Callback;
+import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth.callback.UnsupportedCallbackException;
+
+import org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor;
+import org.apache.ws.security.WSConstants;
+import org.apache.ws.security.WSPasswordCallback;
+import org.apache.ws.security.handler.WSHandlerConstants;
+
+public class ServiceTest implements CallbackHandler
+{
+
+     public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
+
+            WSPasswordCallback pc = (WSPasswordCallback) callbacks[0];
+            // set the password for our message.
+            pc.setPassword("buddah");
+        }
+
+    public static void main(String[] args){
+    	PatientServiceImplService locator = new PatientServiceImplService();
+    	PatientService service = locator.getPatientServiceImplPort();
+
+    	org.apache.cxf.endpoint.Client client = org.apache.cxf.frontend.ClientProxy.getClient(service);
+    	org.apache.cxf.endpoint.Endpoint cxfEndpoint = client.getEndpoint();
+
+    	Map<String, Object> outProps = new HashMap<String, Object>();
+    	outProps.put(WSHandlerConstants.ACTION, WSHandlerConstants.USERNAME_TOKEN + " " +  WSHandlerConstants.TIMESTAMP);
+    	outProps.put(WSHandlerConstants.USER, "joe");
+    	outProps.put(WSHandlerConstants.PASSWORD_TYPE, WSConstants.PW_TEXT);
+
+    	// Callback used to retrieve password for given user.
+    	outProps.put(WSHandlerConstants.PW_CALLBACK_CLASS, ServiceTest.class.getName());
+
+    	WSS4JOutInterceptor wssOut = new WSS4JOutInterceptor(outProps);
+    	cxfEndpoint.getOutInterceptors().add(wssOut);
+
+
+    	try
+    	{
+    		List list = service.getInpatientCensus();
+    		for(Patient p : list){
+    			System.out.println(p.getFirstName() + " " + p.getLastName());
+    		}
+
+    	}
+    	catch (Exception e)
+    	{
+    		// TODO Auto-generated catch block
+    		e.printStackTrace();
+    	}
+    }
+}
+ WS-Security specifications are not typically contained in a WSDL (never in a WSE WSDL). So wsdl2java does not know that WS-Security is even required for this service. The fact that security constraints are not present in a WSE WSDL is a big disappointment to me (WCF will include WS-Trust information in a WSDL). On the client end, you'll need to use Rampart to add the necessary WS-Security headers to your outgoing client message. Since the WSDL does not report what WS-Security settings are necessary, you're best off by asking the service provider what is required. WS-Security requirements may be simple plaintext password, or might be X509 certificates, or might be encrypted message..... Rampart should be able to handle most of these scenarios. Apache Rampart is "turned on" by engaging the module in your axis2.xml file. You'll need to download the Rampart module and put it in a specific place in your axis2 directory, then modify the xml file. You can also engage Rampart programatically (please edit your original question if this is a requirement and I'll edit this response). Depending on how you configure rampart (through other XML files or programatically), it will intercept any outgoing messages and add the necessary WS-Security information to it. I've personally used axis2 with rampart to call a WSE3 service that is secured with UsernameToken in plaintext and it worked great. Similar, but more advanced scenarios should also work. There are more details on how to set up and get started with Rampart on the site linked above. If you have problems about the specifics of Rampart or how to use Rampart with your particular WSE setup, then edit your question and I'll try my best to answer. This seems to be a popular question so I'll provide an overview of what we did in our situation. It seems that services built in .NET are following an older ws-addressing standard (http://schemas.xmlsoap.org/ws/2004/03/addressing/) and axis2 only understands the newer standard (http://schemas.xmlsoap.org/ws/2004/08/addressing/). In addition, the policyCache.config file provided is in a form that the axis2 rampart module can't understand. So the steps we had to do, in a nutshell: Read the policyCache.config and try to understand it. Then rewrite it into a policy that rampart could understand. (Some updated docs helped.) Configure rampart with this policy. Take the keys that were provided in the .pfx file and convert them to a java key store. There is a utility that comes with Jetty that can do that. Configure rampart with that key store. Write a custom axis2 handler that backward-converts the newer ws-addressing stuff that comes out of axis2 into the older stuff expected by the service. Configure axis2 to use the handler on outgoing messages. In the end it was a lot of configuration and code for something that is supposed to be an open standard supported by the vendors. Although I'm not sure what the alternative is...can you wait for the vendors (or in this case, the one vendor) to make sure that everything will inter-op? As a postscript I'll add that I didn't end up doing the work, it was someone else on my team, but I think I got the salient details correct. The other option that I was considering (before my teammate took over) was to call the WSS4J API directly to construct the SOAP envelope as the .NET service expected it. I think that would have worked too.

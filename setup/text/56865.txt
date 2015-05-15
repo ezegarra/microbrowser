@@ -1,0 +1,36 @@
+Calling a Web Service from Seam seam import org.restlet.Client;
+import org.restlet.data.Protocol;
+import org.restlet.data.Reference;
+import org.restlet.data.Response;
+import org.restlet.resource.DomRepresentation;
+import org.w3c.dom.Node;
+
+/**
+ * Uses YAHOO!'s RESTful web service with XML.
+ */
+public class YahooSearch {
+    private static final String BASE_URI = "http://api.search.yahoo.com/WebSearchService/V1/webSearch";
+
+    public static void main(final String[] args) {
+        if (1 != args.length) {
+            System.err.println("You need to pass a search term!");
+        } else {
+            final String term = Reference.encode(args[0]);
+            final String uri = BASE_URI + "?appid=restbook&query=" + term;
+            final Response response = new Client(Protocol.HTTP).get(uri);
+            final DomRepresentation document = response.getEntityAsDom();
+
+            document.setNamespaceAware(true);
+            document.putNamespace("y", "urn:yahoo:srch");
+
+            final String expr = "/y:ResultSet/y:Result/y:Title/text()";
+            for (final Node node : document.getNodes(expr)) {
+                System.out.println(node.getTextContent());
+            }
+        }
+    }
+}
+ This code uses Restlet to make a request to Yahoo's RESTful search service. Obviously, the details of the web service you are using will dictate what your client for it looks like. final Response response = new Client(Protocol.HTTP).get(uri);
+ So, if I understand this correctly, the above line is where the actual call to the web service is being made, with the response being converted to an appropriate format and manipulated after this line. Assuming I were not using Restlet, how would this line differ? (Of course, the actual processing code would be significantly different as well, so that's a given.) There's roughly a gajillion HTTP client libraries (Restlet is quite a bit more than that, but I already had that code snippet for something else), but they should all provide support for sending GET requests. Here's a rather less featureful snippet that uses HttpClient from Apache Commons: HttpClient client = new HttpClient();
+HttpMethod method = new GetMethod("http://api.search.yahoo.com/WebSearchService/V1/webSearch?appid=restbook&query=HttpClient");
+client.executeMethod(method);

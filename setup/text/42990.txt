@@ -1,0 +1,21 @@
+Regex to match against something that is not a specific substring c# regex regex-negation I'm not familiar with Java regex but documentation for the Pattern Class would suggest you could use (?!X) for a non-capturing zero-width negative lookahead (it looks for something that is not X at that postision, without capturing it as a backreference). So you could do: foo.*(?!bar) // not correct
+ Update: Apocalisp's right, you want negative lookbehind. (you're checking that what the .* matches doesn't end with bar) As other commenters said, you need a negative lookahead. In Java you can use this pattern: "^first_string(?!.?second_string)\\z"
+ ^ - ensures that string starts with first_string \z - ensures that string ends with second_string (?!.?second_string) - means that first_string can't be followed by second_string I think in this case you want negative lookbehind, like so: foo.*(?<!bar)
+ Verified @Apocalisp's answer using: import java.util.regex.Pattern;
+public class Test {
+  public static void main(String[] args) {
+    Pattern p = Pattern.compile("^foo.*(?<!bar)$");
+    System.out.println(p.matcher("foobar").matches());
+    System.out.println(p.matcher("fooBLAHbar").matches());
+    System.out.println(p.matcher("1foo").matches());
+    System.out.println(p.matcher("fooBLAH-ar").matches());
+    System.out.println(p.matcher("foo").matches());
+    System.out.println(p.matcher("foobaz").matches());
+  }
+}
+ This output the the right answers: false
+false
+false
+true
+true
+true

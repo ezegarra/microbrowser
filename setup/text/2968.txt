@@ -1,0 +1,44 @@
+What are the different methods to parse strings in Java? string parsing I really like regular expressions. As long as the command strings are fairly simple, you can write a few regexes that could take a few pages of code to manually parse. I would suggest you check out http://www.regular-expressions.info for a good intro to regexes, as well as specific examples for Java. A simple string tokenizer on spaces should work, but there are really many ways you could do this. Here is an example using a tokenizer: String command = "kick person"; StringTokenizer tokens = new StringTokenizer(command); String action = null; if (tokens.hasMoreTokens()) {     action = tokens.nextToken(); } if (action != null) {     doCommand(action, tokens); } Then tokens can be further used for the arguments. This all assumes no spaces are used in the arguments... so you might want to roll your own simple parsing mechanism (like getting the first whitespace and using text before as the action, or using a regular expression if you don't mind the speed hit), just abstract it out so it can be used anywhere. I would look at Java migrations of Zork, and lean towards a simple Natural Language Processor (driven either by tokenizing or regex) such as the following (from this link):     public static boolean simpleNLP( String inputline, String keywords[])
+    {
+        int i;
+        int maxToken = keywords.length;
+        int to,from;
+        if( inputline.length() < 1) return false;
+
+        Vector lexed  = new Vector();  // stores the words
+        // first extract every substring in inputline that has a blank on either side.
+
+        from = 0;
+        to = 0;
+        while( inputline.charAt(from) == ' ' && from < inputline.length() ) from ++;  // skip ' '
+        if( from >= inputline.length()) return false; // check for blank and empty lines
+        while( to >=0 )
+        {
+            to = inputline.indexOf(' ',from);
+            if( to > 0){
+                lexed.addElement(inputline.substring(from,to));
+                from = to;
+                while( inputline.charAt(from) == ' '
+                && from < inputline.length()-1 ) from ++;
+            }else{
+                lexed.addElement( inputline.substring(from));
+            }
+        }
+        //
+        // if we get here we have a vector of strings that correspond to the words in the input.
+        //
+        // so now we look for matches in order
+        boolean status =false;
+        to = 0;
+        for( i=0; i< lexed.size(); i++)
+        {
+            String s = (String)lexed.elementAt(i);
+            if( s.equalsIgnoreCase( keywords[to]) )
+            {
+                to++;
+                if( to >= keywords.length) { status = true; break;}
+            }
+        }
+        return status;
+    }
+ ... Anything which gives a programmer a reason to look at Zork again is good in my book, just watch out for Grues. ... I assume you're trying to make the command interface as forgiving as possible. If this is the case, I suggest you use an algorithm similar to this: Read in the string Split the string into tokens Use a dictionary to convert synonyms to a common form For example, convert "hit", "punch", "strike", and "kick" all to "hit" Perform actions on an unordered, inclusive base Unordered - "punch the monkey in the face" is the same thing as "the face in the monkey punch" Inclusive - If the command is supposed to be "punch the monkey in the face" and they supply "punch monkey", you should check how many commands this matches. If only one command, do this action. It might even be a good idea to have command priorities, and even if there were even matches, it would perform the top action. @CodingTheWheel Heres your code, a bit clean up and through eclipse (ctrl+shift+f) and the inserted back here :) Including the four spaces in front each line. public static boolean simpleNLP(String inputline, String keywords[]) {     if (inputline.length() < 1)         return false;     List<String> lexed = new ArrayList<String>();     for (String ele : inputline.split(" ")) {         lexed.add(ele);     }     boolean status = false;     to = 0;     for (i = 0; i < lexed.size(); i++) {         String s = (String) lexed.get(i);         if (s.equalsIgnoreCase(keywords[to])) {             to++;             if (to >= keywords.length) {                 status = true;                 break;             }         }     }     return status; } When the separator String for the command is allways the same String or char (like the ";") y recomend you use the StrinkTokenizer class: StringTokenizer but when the separator varies or is complex y recomend you to use the regular expresions, wich can be used by the String class itself, method split, since 1.4. It uses the Pattern class from the java.util.regex package Pattern Sun itself recommends staying away from StringTokenizer and using the String.spilt method instead. You'll also want to look at the Pattern class. Parsing manually is a lot of fun... at the beginning:) In practice if commands aren't very sophisticated you can treat them the same way as those used in command line interpreters. There's a list of libraries that you can use: http://java-source.net/open-source/command-line. I think you can start with apache commons CLI or args4j (uses annotations). They are well documented and really simple in use. They handle parsing automatically and the only thing you need to do is to read particular fields in an object. If you have more sophisticated commands, then maybe creating a formal grammar would be a better idea. There is a very good library with graphical editor, debugger and interpreter for grammars. It's called ANTLR (and the editor ANTLRWorks) and it's free:) There are also some example grammars and tutorials. If this is to parse command lines I would suggest using Commons Cli. The Apache Commons CLI library provides an API for processing command line interfaces. Another vote for ANTLR/ANTLRWorks. If you create two versions of the file, one with the Java code for actually executing the commands, and one without (with just the grammar), then you have an executable specification of the language, which is great for testing, a boon for documentation, and a big timesaver if you ever decide to port it. Try JavaCC a parser generator for Java. It has a lot of features for interpreting languages, and it's well supported on Eclipse. If the language is dead simple like just VERB NOUN then splitting by hand works well. If it's more complex, you should really look into a tool like ANTLR or JavaCC. I've got a tutorial on ANTLR (v2) at http://javadude.com/articles/antlrtut which will give you an idea of how it works. JCommander seems quite good, although I have yet to test it. If your text contains some delimiters then you can your split method. If text contains irregular strings means different format in it then you must use regular expressions. split method can split a string into an array of the specified substring expression regex. Its arguments in two forms, namely: split (String regex) and split (String regex, int limit), which split (String regex) is actually by calling split (String regex, int limit) to achieve, limit is 0. Then, when the limit> 0 and limit <0 represents what? When the jdk explained: when limit> 0 sub-array lengths up to limit, that is, if possible, can be limit-1 sub-division, remaining as a substring (except by limit-1 times the character has string split end); limit <0 indicates no limit on the length of the array; limit = 0 end of the string empty string will be truncated. StringTokenizer class is for compatibility reasons and is preserved legacy class, so we should try to use the split method of the String class. refer to http://codingkit.com/java/9529.html

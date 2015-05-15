@@ -1,0 +1,1 @@
+Find the settings JNDI is using for error reporting jndi Reporting the value for InitialContext.getEnvironment().get(Context.PROVIDER_URL) might be helpful.

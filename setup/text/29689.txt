@@ -1,0 +1,16 @@
+Javadoc template generator documentation javadoc If you right-click in the source of a file in Eclipse, it has a Javadoc generation option under the source menu. The JAutodoc plugin for eclipse does exactly what you need, but with a package granularity : right click on a package, select "Add javadoc for members..." and the skeleton will be added. There are numerous interesting options : templates for javadoc, adding a TODO in the header of every file saying : "template javadoc, must be filled...", etc. You can configure eclipse to show warnings for things that lack javadoc, or have javadoc that does not have all the information, or has wrong information. It can also insert templates for you to fill out. Not quite the tool you asked for, but probably better because you won't end up with empty skeletons on methods that you missed. You can achieve this by investigating and editing the preference page beyond the path Window > Preferences > Java > Compiler > Javadoc for your workspace. The screenshot of that preference page is below: For further information about the items in this screen please follow the link below: Java Compiler Javadoc Preferences Help I think auto-generating empty Javadoc is an anti-pattern and should be discouraged; it gives code the appearance of being documented, but just adds noise to the codebase. I would recommend instead that you configure your code editor to assist on a per-method and per-class basis to use when you actually write the javadoc (one commenter pointed to Eclipse's feature that does this). You can also place your cursor on the line above a method you would like to JavaDoc, then type: /**
+ and press Enter. This will generate your JavaDoc stub. Select the method that you want add Javadoc and alt+Shift+j, creates automatically the javadoc comment. EXAMPLE: /**
+     * @param currDate
+     * @param index
+     * @return
+     */
+    public static String getAtoBinary(String currDate, int index){  
+        String HourA = "0";
+        try{
+            String[] mydate = currDate.split("/");
+            HourA = mydate[index].substring(1, 2);
+        }catch(Exception e){
+            Log.e(TAG, e.getMessage());
+        }
+        return HourA;
+    }

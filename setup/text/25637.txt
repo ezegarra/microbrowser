@@ -1,0 +1,76 @@
+Shutting down a computer cross-platform shutdown Create your own function to execute an OS command through the command line? For the sake of an example. But know where and why you'd want to use this as others note. public static void main(String arg[]) throws IOException{
+	Runtime runtime = Runtime.getRuntime();
+	Process proc = runtime.exec("shutdown -s -t 0");
+	System.exit(0);
+}
+ The quick answer is no. The only way to do it is by invoking the OS-specific commands that will cause the computer to shutdown, assuming your application has the necessary privileges to do it. This is inherently non-portable, so you'd need either to know where your application will run or have different methods for different OSs and detect which one to use. You can use JNI to do it in whatever way you'd do it with C/C++. Here's another example that could work cross-platform: public static void shutdown() throws RuntimeException, IOException {
+    String shutdownCommand;
+    String operatingSystem = System.getProperty("os.name");
+
+    if ("Linux".equals(operatingSystem) || "Mac OS X".equals(operatingSystem)) {
+        shutdownCommand = "shutdown -h now";
+    }
+    else if ("Windows".equals(operatingSystem)) {
+        shutdownCommand = "shutdown.exe -s -t 0";
+    }
+    else {
+        throw new RuntimeException("Unsupported operating system.");
+    }
+
+    Runtime.getRuntime().exec(shutdownCommand);
+    System.exit(0);
+}
+ The specific shutdown commands may require different paths or administrative privileges. Better use .startsWith than use .equals ... String osName = System.getProperty("os.name");        
+if (osName.startsWith("Win")) {
+  shutdownCommand = "shutdown.exe -s -t 0";
+} else if (osName.startsWith("Linux") || osName.startsWith("Mac")) {
+  shutdownCommand = "shutdown -h now";
+} else {
+  System.err.println("Shutdown unsupported operating system ...");
+    //closeApp();
+}
+ work fine Ra. I use this program to shutdown the computer in X minutes.    public class Shutdown {
+    public static void main(String[] args) {
+
+        int minutes = Integer.valueOf(args[0]);
+        Timer timer = new Timer();
+        timer.schedule(new TimerTask() {
+
+            @Override
+            public void run() {
+                ProcessBuilder processBuilder = new ProcessBuilder("shutdown",
+                        "/s");
+                try {
+                    processBuilder.start();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
+            }
+
+        }, minutes * 60 * 1000);
+
+        System.out.println(" Shutting down in " + minutes + " minutes");
+    }
+ }
+ On Windows Embedded by default there is no shutdown command in cmd. In such case you need add this command manually or use function ExitWindowsEx from win32 (user32.lib) by using JNA (if you want more Java) or JNI (if easier for you will be to set priviliges in C code). Here is an example using Apache Commons Lang's SystemUtils: public static boolean shutdown(int time) throws IOException {
+    String shutdownCommand = null, t = time == 0 ? "now" : String.valueOf(time);
+
+    if(SystemUtils.IS_OS_AIX)
+        shutdownCommand = "shutdown -Fh " + t;
+    else if(SystemUtils.IS_OS_FREE_BSD || SystemUtils.IS_OS_LINUX || SystemUtils.IS_OS_MAC|| SystemUtils.IS_OS_MAC_OSX || SystemUtils.IS_OS_NET_BSD || SystemUtils.IS_OS_OPEN_BSD || SystemUtils.IS_OS_UNIX)
+        shutdownCommand = "shutdown -h " + t;
+    else if(SystemUtils.IS_OS_HP_UX)
+        shutdownCommand = "shutdown -hy " + t;
+    else if(SystemUtils.IS_OS_IRIX)
+        shutdownCommand = "shutdown -y -g " + t;
+    else if(SystemUtils.IS_OS_SOLARIS || SystemUtils.IS_OS_SUN_OS)
+        shutdownCommand = "shutdown -y -i5 -g" + t;
+    else if(SystemUtils.IS_OS_WINDOWS_XP || SystemUtils.IS_OS_WINDOWS_VISTA || SystemUtils.IS_OS_WINDOWS_7)
+        shutdownCommand = "shutdown.exe -s -t " + t;
+    else
+        return false;
+
+    Runtime.getRuntime().exec(shutdownCommand);
+    return true;
+}
+ This method takes into account a whole lot more operating systems than any of the above answers. It also looks a lot nicer and is more reliable then checking the os.name property. Edit: It now has the option for the user to enter a delay if they like!

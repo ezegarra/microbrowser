@@ -1,0 +1,10 @@
+Java sound recording and mixer settings javasound To answer your first question, you can check if the Line.Info object for your recording input matches Port.Info.LINE_IN like this: public static boolean isLineIn(Line.Info lineInfo) {
+    Line.Info[] detected = AudioSystem.getSourceLineInfo(Port.Info.LINE_IN);
+    for (Line.Info lineIn : detected) {
+        if (lineIn.matches(lineInfo)) {
+            return true;
+        }
+    }
+    return false;
+}
+ However, this doesn't work with operating systems or soundcard driver APIs that don't provide the type of each available mixer channel. So when I test it on Windows it works, but not on Linux or Mac. For more information and recommendations, see this FAQ. Regarding your second question, you can try changing the recording input settings through a Control class. In particular, see FloatControl.Type for some common settings. Keep in mind that the availability of these controls depends on the operating system and soundcard drivers, just like line-in detection.

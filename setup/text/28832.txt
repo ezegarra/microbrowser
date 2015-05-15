@@ -1,0 +1,26 @@
+Java and manually executing finalize garbage-collection finalize The finalize method is never invoked more than once by a JVM for any given object. You shouldn't be relying on finalize anyway because there's no guarantee that it will be invoked. If you're calling finalize because you need to execute clean up code then better to put it into a separate method and make it explicit, e.g: public void cleanUp() {
+  .
+  .
+  .
+}
+
+myInstance.cleanUp();
+ According to this simple test program, the JVM will still make its call to finalize() even if you explicitly called it: private static class Blah
+{
+  public void finalize() { System.out.println("finalizing!"); }
+}
+
+private static void f() throws Throwable
+{
+   Blah blah = new Blah();
+   blah.finalize();
+}
+
+public static void main(String[] args) throws Throwable
+{
+	System.out.println("start");
+	f();
+	System.gc();
+	System.out.println("done");
+}
+ The output is: start finalizing! finalizing! done Every resource out there says to never call finalize() explicitly, and pretty much never even implement the method because there are no guarantees as to if and when it will be called. You're better off just closing all of your resources manually. One must understand the Garbage Collector(GC) Workflow to understand the function of finalize. calling .finalize() will not invoke the garbage collector, nor calling system.gc. Actually, What finalize will help the coder is to declare the reference of the object as "unreferenced". GC forces a suspension on the running operation of JVM, which creates a dent on the performance. During operation, GC will traverse all referenced objects, starting from the root object(your main method call). This suspension time can be decreased by declaring the objects as unreferenced manually, because it will cut down the operation costs to declare the object reference obsolete by the automated run. By declaring finalize(), coder sets the reference to the object obsolete, thus on the next run of GC operation, GC run will sweep the objects without using operation time. Quote: "After the finalize method has been invoked for an object, no further action is taken until the Java virtual machine has again determined that there is no longer any means by which this object can be accessed by any thread that has not yet died, including possible actions by other objects or classes which are ready to be finalized, at which point the object may be discarded. " from Java API Doc on java.Object.finalize(); For detailed explanation, you can also check: javabook.computerware

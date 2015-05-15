@@ -1,0 +1,14 @@
+What is the best way to work around the fact that ALL Java bytes are signed? byte unsigned signed I guess you could just use a short to store them. Not very efficient, but really the only option besides some herculean effort that I have seen. Probably your best bet is to use an integer rather than a byte. It has the room to allow for numbers greater than 128 without the overhead of having to create a special object to replace byte. This is also suggested by people smarter than me (everybody) http://www.darksleep.com/player/JavaAndUnsignedTypes.html http://www.jguru.com/faq/view.jsp?EID=13647 When reading any single value from the array copy it into something like a short or an int and manually convert the negative number into the positive value it should be. byte[] foobar = ..;
+int value = foobar[10];
+if (value < 0) value += 256 // Patch up the 'falsely' negative value
+ You can do a similar conversion when writing into the array. The best way to do bit manipulation/unsigned bytes is through using ints. Even though they are signed they have plenty of spare bits (32 total) to treat as an unsigned byte. Also, all of the mathematical operators will convert smaller fixed precision numbers to int. Example: short a = 1s;
+short b = 2s;
+int c = a + b; // the result is up-converted
+short small = (short)c; // must cast to get it back to short
+ Because of this it is best to just stick with integer and mask it to get the bits that you are interested in. Example: int a = 32;
+int b = 128;
+int foo = (a + b) | 255;
+ Here is some more info on Java primitive types http://mindprod.com/jgloss/primitive.html One last trivial note, there is one unsigned fixed precision number in Java. That is the char primitive. Using ints is generally better than using shorts because java uses 32-bit values internally anyway (Even for bytes, unless in an array) so using ints will avoid unnecessary conversion to/from short values in the bytecode. @pauldoo It is actually possible to get rid of the if statement and the addition if you do it like this. byte[] foobar = ..;
+int value = (foobar[10] & 0xff);
+ This way Java doesn't interpret the byte as a negative number and flip the sign bit on the integer also. I know this is a very late response, but I came across this thread when trying to do the exact same thing. The issue is simply trying to determine if a Java byte is >127. The simple solution is: if((val & (byte)0x80) != 0) { ... }
+ If the real issue is >128 instead, just adding another condition to that if-statement will do the trick.

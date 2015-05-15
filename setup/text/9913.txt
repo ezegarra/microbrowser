@@ -1,0 +1,116 @@
+Java File IO Compendium file-io As a solution to 1a, Read a text file into a single string, this method will do it. public static String readFromFile( String filename ) throws FileNotFoundException, IOException {
+
+    StringBuffer readBuffer = new StringBuffer();
+    BufferedReader fileReader = new BufferedReader( new FileReader( filename ) );
+
+    char[] readChars = new char[1024];      
+    while( fileReader.read( readChars ) >= 0 ){         
+        readBuffer.append( readChars );         
+    }
+
+    return readBuffer.toString();
+
+}
+ @warren-taylor; Should this be: public static String readFromFile( String filename )
+    throws FileNotFoundException, IOException {
+
+    StringBuffer readBuffer = new StringBuffer();
+    BufferedReader fileReader = new BufferedReader( 
+                                       new FileReader( filename ) );
+
+    char[] readChars = new char[1024]; 
+    int count;
+    while( (count = fileReader.read( readChars )) >= 0 ){                 
+        readBuffer.append( readChars, 0, count );                 
+    }
+
+    return readBuffer.toString();
+
+}
+ ? Read a file one line at a time using a BufferedReader and the .readLine method, similar to @warren-taylor's answer for part 1. public static void readFromFile( String filename )
+    throws FileNotFoundException, IOException {
+
+    StringBuffer readBuffer = new StringBuffer();
+    BufferedReader fileReader = new BufferedReader( 
+                                       new FileReader( filename ) );
+
+    String sRead = null;
+    do
+    {
+        sRead = fileReader.readLine();
+        if(sRead!=null)
+        {
+            System.out.println(sRead);
+        }
+    }
+    while(sRead!=null);
+  }
+
+}
+ I have a couple of issues with some of the solutions offered so far. None of the file operations use anything other than the system default character encoding. As every good developer knows, there's no such thing as plain text. Here is how to get the platform encoding to see what you're using: public static String getDefaultFileEncoding() {
+    final String keyEncoding = "file.encoding";
+    final String encoding = System
+            .getProperty(keyEncoding);
+    if (encoding == null) {
+        throw new IllegalStateException(
+                keyEncoding
+                        + "=null");
+    }
+    return encoding;
+}
+ Alternatively, use the Charset class for a strongly typed value (alas, not every API in Java 6 has been updated to support Charset, so sometimes you need to fall back on a String). List of supported encodings. The Reader/Writer implementations handle the character conversion. For example: //<?xml version="1.0" encoding="UTF-8"?>
+InputStream in = new FileInputStream("myfile.xml");
+/*Reader reader = new InputStreamReader(in); ///WRONG!!!!!!*/
+Reader reader = new InputStreamReader(in, "UTF-8"); //RIGHT
+ File streams are being handled in a way that may lead to resource leaks. Streams should be closed in a finally block. This ensures that they are closed even if there is an I/O error. Note that the stream initialization is before the try block. OutputStream out = new FileOutputStream("file.txt");
+try {
+    //write to stream
+} finally {
+    out.close();
+}
+ Here is an example of how to read a file into a String:   /** Copies characters from reader to writer */
+  public static void copy(Reader reader, Writer writer)
+      throws IOException {
+    final int bufferSize = 1024; // arbitrary value
+    char[] buffer = new char[bufferSize];
+    while (true) {
+      int r = reader.read(buffer);
+      if (r < 0) {
+        break;
+      }
+      writer.write(buffer, 0, r);
+    }
+  }
+
+  /** Copies contents of File to String. Decodes from given encoding. */
+  public static String readToString(File file,
+      Charset encoding) throws IOException {
+    Writer writer = new StringWriter();
+    InputStream in = new FileInputStream(file);
+    Closeable resource = in;
+    try {
+      Reader reader = new InputStreamReader(in, encoding);
+      resource = reader;
+      copy(reader, writer);
+    } finally {
+      resource.close();
+    }
+    return writer.toString();
+  }
+ Sample usage:   public static void main(String[] args) {
+    File file = new File("foo.xml");
+    Charset utf8 = Charset.forName("UTF8");
+    try {
+      String s = readToString(file, utf8);
+      System.out.println(s);
+    } catch (IOException e) {
+      System.out
+          .println("Error:" + e.getLocalizedMessage());
+    }
+  }
+ I'd look into jakarta commons io. It provides some convenience methods for working with files and streams. Here's an example of reading a file into a List of lines. String filename = "file.txt";
+FileReader fileReader = new FileReader(filename);
+
+List lines = IOUtils.readLines(fileReader);
+IOUtils.closeQuietly(fileReader);
+ http://mindprod.com/applet/fileio.html There's a big Java IO tutorial available here, covering all that, including how to get a directory listing, how all the Java streams, Reader's and Writer's work etc. http://tutorials.jenkov.com/java-io/index.html This link, http://www.javafaq.nu/java-example-code-127.html, seems to have a pretty good return-all-bytes function: getBytesFromFile(...) Unfortunately this seems to be a "I wrote it and I won't share it with anyone!" type of mentality in java. I also pursue this question, but only in relation to text files. See my question on python-like java-io: http://stackoverflow.com/questions/2802711/python-like-java-io-library The reason I take python as something to strive for, is because of their rich text and file processing libraries that are simple to deal with. I would appreciate any feedback.

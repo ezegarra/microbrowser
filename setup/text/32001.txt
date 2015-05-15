@@ -1,0 +1,128 @@
+Resettable Java Timer timer Do you need to schedule a recurring task? In that case I recommend you consider using Quartz. I don't think it's possible to do it with Timer/TimerTask, but depending on what exactly you want to achieve you might be happy with using java.util.concurrent.ScheduledThreadPoolExecutor. According to the Timer documentation, in Java 1.5 onwards, you should prefer the ScheduledThreadPoolExecutor instead. (You may like to create this executor using Executors.newSingleThreadScheduledExecutor() for ease of use; it creates something much like a Timer.) The cool thing is, when you schedule a task (by calling schedule()), it returns a ScheduledFuture object. You can use this to cancel the scheduled task. You're then free to submit a new task with a different triggering time. ETA: The Timer documentation linked to doesn't say anything about ScheduledThreadPoolExecutor, however the OpenJDK version had this to say: Java 5.0 introduced the java.util.concurrent package and one of the concurrency utilities therein is the ScheduledThreadPoolExecutor which is a thread pool for repeatedly executing tasks at a given rate or delay. It is effectively a more versatile replacement for the Timer/TimerTask combination, as it allows multiple service threads, accepts various time units, and doesn't require subclassing TimerTask (just implement Runnable). Configuring ScheduledThreadPoolExecutor with one thread makes it equivalent to Timer. If your Timer is only ever going to have one task to execute then I would suggest subclassing it: class ReschedulableTimer extends Timer {
+  private Runnable task;
+  private TimerTask timerTask;
+
+  public void schedule(Runnable runnable, long delay) {
+    task = runnable;
+    timerTask = new TimerTask() { public void run() { task.run(); };
+    timer.schedule(timerTask, delay);        
+  }
+
+  public void reschedule(long delay) {
+    timerTask.cancel();
+    timerTask = new TimerTask() { public void run() { task.run(); };
+    timer.schedule(timerTask, delay);        
+  }
+}
+ You will need to work on the code to add checks for mis-use, but it should achieve what you want. The ScheduledThreadPoolExecutor does not seem to have built in support for rescheduling existing tasks either, but a similar approach should work there as well. this is what I'm trying out. I have a class that polls a database every 60 seconds using a TimerTask. in my main class, I keep the instance of the Timer, and an instance of my local subclass of TimerTask. the main class has a method to set the polling interval (say going from 60 to 30). in it, i cancel my TimerTask (which is my subclass, where I overwrote the cancel() method to do some cleanup, but that shouldn't matter) and then make it null. i recreate a new instance of it, and schedule the new instance at the new interval in the existing Timer. since the Timer itself isn't canceled, the thread it was using stays active (and so would any other TimerTasks inside it), and the old TimerTask is replaced with a new one, which happens to be the same, but VIRGIN (since the old one would have been executed or scheduled, it is no longer VIRGIN, as required for scheduling). when i want to shutdown the entire timer, i cancel and null the TimerTask (same as i did when changing the timing, again, for cleaning up resources in my subclass of TimerTask), and then i cancel and null the Timer itself. The whole Code snippet goes like this .... I hope it will be help full {
+
+        Runnable r = new ScheduleTask();
+        ReschedulableTimer rescheduleTimer = new ReschedulableTimer();
+        rescheduleTimer.schedule(r, 10*1000);
+
+
+    public class ScheduleTask implements Runnable {
+        public void run() {
+            //Do schecule task
+
+        }
+      }
+
+
+class ReschedulableTimer extends Timer {
+        private Runnable task;
+        private TimerTask timerTask;
+
+        public void schedule(Runnable runnable, long delay) {
+          task = runnable;
+          timerTask = new TimerTask() { 
+              public void run() { 
+                  task.run(); 
+                  }
+              };
+
+          timer.schedule(timerTask, delay);        
+        }
+
+        public void reschedule(long delay) {
+            System.out.println("rescheduling after seconds "+delay);
+          timerTask.cancel();
+          timerTask = new TimerTask() { 
+              public void run() { 
+                  task.run(); 
+              }
+          };
+          timer.schedule(timerTask, delay);        
+        }
+      }
+
+
+}
+ Here is the example for Resetable Timer . Try to change it for your convinence... package com.tps.ProjectTasks.TimeThread;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Timer;
+import java.util.TimerTask;
+
+/**
+ * Simple demo that uses java.util.Timer to schedule a task to execute
+ * every 5 seconds and have a delay if you give any input in console.
+ */
+
+public class DateThreadSheduler extends Thread {  
+    Timer timer;
+    BufferedReader br ;
+    String data = null;
+    Date dNow ;
+    SimpleDateFormat ft;
+
+    public DateThreadSheduler() {
+
+        timer = new Timer();
+        timer.schedule(new RemindTask(), 0, 5*1000); 
+        br = new BufferedReader(new InputStreamReader(System.in));
+        start();
+    }
+
+    public void run(){
+
+        while(true){
+            try {
+                data =br.readLine();
+                if(data != null && !data.trim().equals("") ){
+                    timer.cancel();
+                    timer = new Timer();
+                    dNow = new Date( );
+                    ft = new SimpleDateFormat ("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+                    System.out.println("Modified Current Date ------> " + ft.format(dNow));
+                    timer.schedule(new RemindTask(), 5*1000 , 5*1000);
+                }
+
+            }catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public static void main(String args[]) {
+        System.out.format("Printint the time and date was started...\n");
+        new DateThreadSheduler();
+    }
+}
+
+class RemindTask extends TimerTask {
+    Date dNow ;
+    SimpleDateFormat ft;
+
+    public void run() {
+
+        dNow = new Date();
+        ft = new SimpleDateFormat ("E yyyy.MM.dd 'at' hh:mm:ss a zzz");
+        System.out.println("Current Date: " + ft.format(dNow));
+    }
+}
+ This example prints the current date and time for every 5 seconds...But if you give any input in console the timer will be delayed to perform the given input task...

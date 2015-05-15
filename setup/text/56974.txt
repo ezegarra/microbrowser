@@ -1,0 +1,1 @@
+Keyword for the outer class from an anonymous inner class? anonymous-inner-class In general you use OuterClassName.this to refer to the enclosing instance of the outer class. In your example that would be a.this.otherMethod() OuterClassName.this.outerClassMethod();

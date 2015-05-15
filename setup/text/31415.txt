@@ -1,0 +1,24 @@
+Quick way to find a value in HTML (Java) html regex Depends on how sophisticated of an Http request you need to build (authentication, etc). Here's one simple way I've seen used in the past. StringBuilder html = new StringBuilder();
+java.net.URL url = new URL("http://www.google.com/");
+BufferedReader input = null;
+try {
+    input new BufferedReader(
+        new InputStreamReader(url.openStream()));
+
+    String htmlLine;
+    while ((htmlLine=input.readLine())!=null) {
+        html.appendLine(htmlLine);
+    }
+}
+finally {
+    input.close();
+}
+
+Pattern exp = Pattern.compile(
+    "<meta name=\"generator\" value=\"([^\"]*)\" />");
+Matcher matcher = exp.matcher(html.toString());
+if(matcher.find())
+{
+    System.out.println("Generator: "+matcher.group(1));
+}
+ Probably plenty of typos here to be found when compiled. (hope this wasn't homework) You may want to check the documentation for Apache's org.apache.commons.HttpClient package and the related packages here. Sending an HTTP request from a Java application is pretty easy to do. Poking through the documentation should get you off in the right direction. I haven't tried this, but wouldn't the basic framework be Open a java.net.HttpURLConnection Get an input stream using getInputStream Use the regular expression in Mike's answer to parse out the bit you want Strictly speaking you can't really be sure you got the right value, since the meta tag may be commented out, or the meta tag may be in uppercase etc. It depends on how certain you are that the HTML can be considered as "nice". You should be using XPath query. It'ls as simple as getting value of "/html/head/meta[@name=generator]/@value". a good tutorial: Parsing an XML Document with XPath It depends. If you are extracting information from a site or sites that are guaranteed to be well-formed HTML, and you know that the <meta> won't be obfuscated in some way then a reading the <head> section line by line and applying a regex is a good approach. On the other hand, if the HTML may be mangled or "tricky" then you need to use a proper HTML parser, possibly a permissive one like HTMLTidy. Beware of using a strict HTML or XML parser on stuff trawled from random websites. Lots of so-called HTML you find out there is actually malformed. Its amazing how noone, when adressing the problem of using RegEx with HTML, confronts the problem of HTML often NOT being well-formed, thus rendering a lot of HTML-parsers completely useless. If you are developing tools to analyze webpages and its a fact that these are not well-formed HTML, the statement "Regex should never be used to parse HTML" og "use a HTML parser" is just completely bogus. Facts are that in the real world, people create HTML as they feel like - and not necessarily suited for parsers. RegEx is a completely valid way to find elements in text, thus in HTML. If there are any other reasonable way to confront the problems the Original Poster has, then post them instead of refering to a "use a parser" or "RTFM" statement.

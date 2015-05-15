@@ -1,0 +1,49 @@
+Why @OneToMany does not work with inheritance in Hibernate hibernate inheritance orm I think you need to annotate your Problem super-class with @MappedSuperclass instead of @Entity. Unfortunately, according to the Hibernate documentation "Properties from superclasses not mapped as @MappedSuperclass are ignored." I ran up against this too. My solution was to represent the desired inheritance through interfaces rather than the entity beans themselves. In your case, you could define the following: public interface Problem {
+    public Person getPerson();
+}
+
+public interface UglyProblem extends Problem {
+}
+ Then implement these interfaces using an abstract superclass and two entity subclasses: @MappedSuperclass
+public abstract class AbstractProblemImpl implements Problem {
+    @ManyToOne
+    private Person person;
+
+    public Person getPerson() {
+        return person;
+    }
+}
+
+@Entity
+public class ProblemImpl extends AbstractProblemImpl implements Problem {
+}
+
+@Entity
+public class UglyProblemImpl extends AbstractProblemImpl implements UglyProblem {
+}
+ As an added benefit, if you code using the interfaces rather than the actual entity beans that implement those interfaces, it makes it easier to change the underlying mappings later on (less risk of breaking compatibility). I figured out how to do the OneToMany mappedBy problem. In the derived class UglyProblem from the original post. The callback method needs to be in the derived class not the parent class. @Entity
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
+@ForceDiscriminator
+public class Problem {
+
+}
+
+@Entity
+@DiscriminatorValue("UP")
+public class UglyProblem extends Problem {
+    @ManyToOne
+    private Person person;
+}
+
+@Entity
+public class Person {
+    @OneToMany(mappedBy="person")
+    private List< UglyProblem > problems;
+}
+ Found the secret sauce for using Hibernate at least. http://docs.jboss.org/hibernate/stable/annotations/api/org/hibernate/annotations/ForceDiscriminator.html The @ForceDiscriminator makes the @OneToMany honor the discriminator Requires Hibernate Annotations. I think it's a wise decision made by the Hibernate team. They could be less arrogante and make it clear why it was implemented this way, but that's just how Emmanuel, Chris and Gavin works. :) Let's try to understand the problem. I think your concepts are "lying". Firts you say that many Problems are associated to People. But, then you say that one Person have many UglyProblems (and does not relate to other Problems). Something is wrong with that design. Imagine how it's going to be mapped to the database. You have a single table inheritance, so:           _____________
+          |__PROBLEMS__|          |__PEOPLE__|
+          |id <PK>     |          |          |
+          |person <FK> | -------->|          |
+          |problemType |          |_________ |
+          --------------
+ How is hibernate going to enforce the database to make Problem only relate to People if its problemType is equal UP? That's a very difficult problem to solve. So, if you want this kind of relation, every subclass must be in it's own table. That's what @MappedSuperclass does. PS.: Sorry for the ugly drawing :D

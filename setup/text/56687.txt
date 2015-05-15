@@ -1,0 +1,64 @@
+How do I ensure that RMI uses only a specific set of ports? rmi You can do this with a custom RMI Socket Factory. The socket factories create the sockets for RMI to use at both the client and server end so if you write your own you've got full control over the ports used. The client factories are created on the server, Serialized and then sent down to the client which is pretty neat. Here's a guide at Sun telling you how to do it. Summary of the long answer below: to solve the problem that I had (restricting server and callback ports at either end of the RMI connection), I needed to create two pairs of client and server socket factories. Longer answer ensues: Our solution to the callback problem had essentially three parts. The first was the object wrapping which needed the ability to specify that it was being used for a client to server connection vs. being used for a server to client callback. Using an extension of UnicastRemoteObject gave us the ability to specify the client and server socket factories that we wanted to use. However, the best place to lock down the socket factories is in the constructor of the remote object. public class RemoteObjectWrapped extends UnicastRemoteObject {
+// ....
+private RemoteObjectWrapped(final boolean callback) throws RemoteException {
+  super((callback ? RemoteConnectionParameters.getCallbackPort() : RemoteConnectionParameters.getServerSidePort()),
+        (callback ? CALLBACK_CLIENT_SOCKET_FACTORY : CLIENT_SOCKET_FACTORY),
+        (callback ? CALLBACK_SERVER_SOCKET_FACTORY : SERVER_SOCKET_FACTORY));
+}
+// ....
+}
+ So, the first argument specifies the part on which the object is expecting requests, whereas the second and third specify the socket factories that will be used at either end of the connection driving this remote object. Since we wanted to restrict the ports used by the connection, we needed to extend the RMI socket factories and lock down the ports. Here are some sketches of our server and client factories: public class SpecifiedServerSocketFactory implements RMIServerSocketFactory {
+/** Always use this port when specified. */
+private int serverPort;
+/**
+ * @param ignoredPort This port is ignored.  
+ * @return a {@link ServerSocket} if we managed to create one on the correct port.
+ * @throws java.io.IOException
+ */
+@Override
+public ServerSocket createServerSocket(final int ignoredPort) throws IOException {
+    try {
+        final ServerSocket serverSocket = new ServerSocket(this.serverPort);
+        return serverSocket;
+    } catch (IOException ioe) {
+        throw new IOException("Failed to open server socket on port " + serverPort, ioe);
+    }
+}
+// ....
+}
+ Note that the server socket factory above ensures that only the port that you previously specified will ever be used by this factory. The client socket factory has to be paired with the appropriate socket factory (or you'll never connect). public class SpecifiedClientSocketFactory implements RMIClientSocketFactory, Serializable {
+/** Serialization hint */
+public static final long serialVersionUID = 1L;
+/** This is the remote port to which we will always connect. */
+private int remotePort;
+/** Storing the host just for reference. */
+private String remoteHost = "HOST NOT YET SET";
+// ....
+/**
+ * @param host The host to which we are trying to connect
+ * @param ignoredPort This port is ignored.  
+ * @return A new Socket if we managed to create one to the host.
+ * @throws java.io.IOException
+ */
+@Override
+public Socket createSocket(final String host, final int ignoredPort) throws IOException {
+    try {
+        final Socket socket = new Socket(host, remotePort);
+        this.remoteHost = host;
+        return socket;
+    } catch (IOException ioe) {
+        throw new IOException("Failed to open a socket back to host " + host + " on port " + remotePort, ioe);
+    }
+}
+// ....
+}
+ So, the only thing remaining to force your two way connection to stay on the same set of ports is some logic to recognize that you are calling back to the client-side. In that situation, just make sure that your factory method for the remote object calls the RemoteObjectWrapper constructor up top with the callback parameter set to true. I've been having various problems implementing an RMI Server/Client architecture, with Client Callbacks. My scenario is that both Server and Client are behind Firewall/NAT. In the end I got a fully working implementation. Here are the main things that I did: Server Side , Local IP: 192.168.1.10. Public (Internet) IP 80.80.80.10 On the Firewall/Router/Local Server PC open port 6620. On the Router/NAT redirect incoming connections on port 6620 to 192.168.1.10:6620 In the actual program: System.getProperties().put("java.rmi.server.hostname", IP 80.80.80.10); UnicastRemoteObject.exportObject(this, 6620); Client Side, Local IP: 10.0.1.123 Public (Internet) IP 70.70.70.20 On the Firewall/Router/Local Server PC open port 1999. On the Router/NAT redirect incoming connections on port 1999 to 10.0.1.123:1999 In the actual program: System.getProperties().put("java.rmi.server.hostname", 70.70.70.20); UnicastRemoteObject.exportObject(this, 1999); Hope this helps. Iraklis Disregard my previous answer, It was full of omissions. Hello all. I've been having various problems implementing an RMI Server/Client architecture, with Client Callbacks. My scenario is that both Server and Client are behind Firewall/NAT. In the end I got a fully working implementation. Here are the main things that I did: Server Side , Local IP: 192.168.1.10. Public (Internet) IP 80.80.80.10 On the Firewall/Router/Local Server PC open port 6620. On the Firewall/Router/Local Server PC open port 1099. On the Router/NAT redirect incoming connections on port 6620 to 192.168.1.10:6620 On the Router/NAT redirect incoming connections on port 1099 to 192.168.1.10:1099 In the actual program: System.getProperties().put("java.rmi.server.hostname", IP 80.80.80.10);
+MyService rmiserver = new MyService();
+MyService stub = (MyService) UnicastRemoteObject.exportObject(rmiserver, 6620);
+LocateRegistry.createRegistry(1099);
+Registry registry = LocateRegistry.getRegistry();
+registry.rebind("FAManagerService", stub);
+ Client Side, Local IP: 10.0.1.123 Public (Internet) IP 70.70.70.20 On the Firewall/Router/Local Server PC open port 1999. On the Router/NAT redirect incoming connections on port 1999 to 10.0.1.123:1999 In the actual program: System.getProperties().put("java.rmi.server.hostname", 70.70.70.20);
+UnicastRemoteObject.exportObject(this, 1999);
+MyService server = (MyService) Naming.lookup("rmi://" + serverIP + "/MyService ");
+ Hope this helps. Iraklis

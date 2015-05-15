@@ -1,0 +1,786 @@
+Hidden Features of Java Language-level assert keyword. I really like the rewritten Threading API from Java 1.6. Callables are great. They are basically threads with a return value. static imports to "enhance" the language, so you can do nice literal things in type safe ways: List<String> ls = List("a", "b", "c");
+ (can also do with maps, arrays, sets). http://gleichmann.wordpress.com/2008/01/13/building-your-own-literals-in-java-lists-and-arrays/ Taking it further: List<Map<String, String>> data = List(Map( o("name", "michael"), o("sex", "male")));
+ I think another "overlooked" feature of java is the JVM itself. It is probably the best VM available. And it supports lots of interesting and useful languages (Jython, JRuby, Scala, Groovy). All those languages can easily and seamlessly cooperate. If you design a new language (like in the scala-case) you immediately have all the existing libraries available and your language is therefore "useful" from the very beginning. All those languages make use of the HotSpot optimizations. The VM is very well monitor and debuggable. Double Brace Initialization took me by surprise a few months ago when I first discovered it, never heard of it before. ThreadLocals are typically not so widely known as a way to store per-thread state. Since JDK 1.5 Java has had extremely well implemented and robust concurrency tools beyond just locks, they live in java.util.concurrent and a specifically interesting example is the java.util.concurrent.atomic subpackage that contains thread-safe primitives that implement the compare-and-swap operation and can map to actual native hardware-supported versions of these operations. Not really a feature, but it makes me chuckle that goto is a reserved word that does nothing except prompting javac to poke you in the eye. Just to remind you that you are in OO-land now. As a starter I really appreciate the JConsole monitoring software in Java 6, it has solved a couple of problems for me already and I keep on finding new uses for it. Apparently the JConsole was there already in Java 5 but I reckon it is improved now and at least working much more stable as of now. JConsole in Java 5: JConsole in Java 5 JConsole in Java 6: JConsole in Java 6 And while you are at it, have a good look at the other tools in the series: Java 6 troubleshooting tools It's not exactly hidden, but reflection is incredibly useful and powerful. It is great to use a simple Class.forName("...").newInstance() where the class type is configurable. It's easy to write this sort of factory implementation. How about covariant return types which have been in place since JDK 1.5? It is pretty poorly publicised, as it is an unsexy addition, but as I understand it, is absolutely necessary for generics to work. Essentially, the compiler now allows a subclass to narrow the return type of an overridden method to be a subclass of the original method's return type. So this is allowed: class Souper {
+    Collection<String> values() {
+        ...
+    }
+}
+
+class ThreadSafeSortedSub extends Souper {
+    @Override
+    ConcurrentSkipListSet<String> values() {
+        ...
+    }
+}
+ You can call the subclass's values method and obtain a sorted thread safe Set of Strings without having to down cast to the ConcurrentSkipListSet. Functors are pretty cool. They are pretty close to a function pointer, which everyone is usually quick to say is impossible in Java. Functors in Java For most people I interview for Java developer positions labeled blocks are very surprising. Here is an example: // code goes here
+
+getmeout:{
+    for (int i = 0; i < N; ++i) {
+        for (int j = i; j < N; ++j) {
+            for (int k = j; k < N; ++k) {
+                //do something here
+                break getmeout;
+            }
+        }
+    }
+}
+ Who said goto in java is just a keyword? :) I was aware that Java 6 included scripting support, but I just recently discovered jrunscript, which can interpret and run JavaScript (and, one presumes, other scripting languages such as Groovy) interactively, sort of like the Python shell or irb in Ruby Dynamic proxies (added in 1.3) allow you to define a new type at runtime that conforms to an interface. It's come in handy a surprising number of times. Joint union in type parameter variance: public class Baz<T extends Foo & Bar> {}
+ For example, if you wanted to take a parameter that's both Comparable and a Collection: public static <A, B extends Collection<A> & Comparable<B>>
+boolean foo(B b1, B b2, A a) {
+   return (b1.compareTo(b2) == 0) || b1.contains(a) || b2.contains(a);
+}
+ This contrived method returns true if the two given collections are equal or if either one of them contains the given element, otherwise false. The point to notice is that you can invoke methods of both Comparable and Collection on the arguments b1 and b2. I know this was added in release 1.5 but the new enum type is a great feature. Not having to use the old "int enum pattern" has greatly helped a bunch of my code. Check out JLS 8.9 for the sweet gravy on your potatoes! final for instance variables: Really useful for multi-threading code and it makes it a lot easier to argue about the instance state and correctness. Haven't seen it a lot in industry context and often not thought in java classes. static {something;}: Used to initialize static members (also I prefer a static method to do it (because it has a name). Not thought. I was surprised by instance initializers the other day. I was deleting some code-folded methods and ended up creating multiple instance initializers : public class App {
+    public App(String name) { System.out.println(name + "'s constructor called"); }
+
+    static { System.out.println("static initializer called"); }
+
+    { System.out.println("instance initializer called"); }
+
+    static { System.out.println("static initializer2 called"); }
+
+    { System.out.println("instance initializer2 called"); }
+
+    public static void main( String[] args ) {
+        new App("one");
+        new App("two");
+  }
+}
+ Executing the main method will display: static initializer called
+static initializer2 called
+instance initializer called
+instance initializer2 called
+one's constructor called
+instance initializer called
+instance initializer2 called
+two's constructor called
+ I guess these would be useful if you had multiple constructors and needed common code They also provide syntactic sugar for initializing your classes: List<Integer> numbers = new ArrayList<Integer>(){{ add(1); add(2); }};
+
+Map<String,String> codes = new HashMap<String,String>(){{ 
+  put("1","one"); 
+  put("2","two");
+}};
+ Joshua Bloch's new Effective Java is a good resource. Local classes. Instantiating Java inner-classes from outside of the containing class. Allowing methods and constructors in enums surprised me. For example: enum Cats {
+  FELIX(2), SHEEBA(3), RUFUS(7);
+
+  private int mAge;
+  Cats(int age) {
+    mAge = age;
+  }
+  public int getAge() {
+    return mAge;
+   }
+}
+ You can even have a "constant specific class body" which allows a specific enum value to override methods. More documentation here. Not really part of the Java language, but the javap disassembler which comes with Sun's JDK is not widely known or used. Self-bound generics: class SelfBounded<T extends SelfBounded<T>> {
+}
+ http://www.artima.com/weblogs/viewpost.jsp?thread=136394 JDK 1.6_07+ contains an app called VisualVM (bin/jvisualvm.exe) that is a nice GUI on top of many of the tools. It seems more comprehensive than JConsole. The type params for generic methods can be specified explicitly like so: Collections.<String,Integer>emptyMap()
+ It took them long enough to add support for this, System Tray The asList method in java.util.Arrays allows a nice combination of varargs, generic methods and autoboxing: List<Integer> ints = Arrays.asList(1,2,3);
+ Some control-flow tricks, finally around a return statement: int getCount() { 
+  try { return 1; }
+  finally { System.out.println("Bye!"); }
+}
+ The rules for definite assignment will check that a final variable is always assigned through a simple control-flow analysis: final int foo;
+if(...)
+  foo = 1;
+else
+  throw new Exception();
+foo+1;
+ JVisualVM from the bin directory in the JDK distribution. Monitoring and even profiling any java application, even one you didn't launch with any special parameters. Only in recent versions of the Java 6SE JDK. Transfer of control in a finally block throws away any exception. The following code does not throw RuntimeException -- it is lost. public static void doSomething() {
+    try {
+      //Normally you would have code that doesn't explicitly appear 
+      //to throw exceptions so it would be harder to see the problem.
+      throw new RuntimeException();
+    } finally {
+      return;
+    }
+  }
+ From http://jamesjava.blogspot.com/2006/03/dont-return-in-finally-clause.html The addition of the for-each loop construct in 1.5. I <3 it. // For each Object, instantiated as foo, in myCollection
+for(Object foo: myCollection) {
+  System.out.println(foo.toString());
+}
+ And can be used in nested instances: for (Suit suit : suits)
+  for (Rank rank : ranks)
+    sortedDeck.add(new Card(suit, rank));
+ The for-each construct is also applicable to arrays, where it hides the index variable rather than the iterator. The following method returns the sum of the values in an int array: // Returns the sum of the elements of a
+int sum(int[] a) {
+  int result = 0;
+  for (int i : a)
+    result += i;
+  return result;
+}
+ Link to the Sun documentation "const" is a keyword, but you can't use it. int const = 1;   // "not a statement"
+const int i = 1; // "illegal start of expression"
+ I guess the compiler writers thought it might be used in the future and they'd better keep it reserved. Not really a feature, but an amusing trick I discovered recently in some Web page: class Example
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Hello World!");
+    http://Phi.Lho.free.fr
+
+    System.exit(0);
+  }
+}
+ is a valid Java program (although it generates a warning). If you don't see why, see Gregory's answer! ;-) Well, syntax highlighting here also gives a hint! My favorite: dump all thread stack traces to standard out. windows: CTRL-Break in your java cmd/console window unix: kill -3 PID The power you can have over the garbage collector and how it manages object collection is very powerful, especially for long-running and time-sensitive applications. It starts with weak, soft, and phantom references in the java.lang.ref package. Take a look at those, especially for building caches (there is a java.util.WeakHashMap already). Now dig a little deeper into the ReferenceQueue and you'll start having even more control. Finally grab the docs on the garbage collector itself and you'll be able to control how often it runs, sizes of different collection areas, and the types of algorithms used (for Java 5 see http://java.sun.com/docs/hotspot/gc5.0/gc_tuning_5.html). Using this keyword for accessing fields/methods of containing class from an inner class. In below, rather contrived example, we want to use sortAscending field of container class from the anonymous inner class. Using ContainerClass.this.sortAscending instead of this.sortAscending does the trick. import java.util.Comparator;
+
+public class ContainerClass {
+boolean sortAscending;
+public Comparator createComparator(final boolean sortAscending){
+	Comparator comparator = new Comparator<Integer>() {
+
+		public int compare(Integer o1, Integer o2) {
+			if (sortAscending || ContainerClass.this.sortAscending) {
+				return o1 - o2;
+			} else {
+				return o2 - o1;
+			}
+		}
+
+	};
+	return comparator;
+}
+}
+ This is not exactly "hidden features" and not very useful, but can be extremely interesting in some cases: Class sun.misc.Unsafe - will allow you to implement direct memory management in Java (you can even write self-modifying Java code with this if you try a lot): public class UnsafeUtil {
+
+    public static Unsafe unsafe;
+    private static long fieldOffset;
+    private static UnsafeUtil instance = new UnsafeUtil();
+
+    private Object obj;
+
+    static {
+    	try {
+    		Field f = Unsafe.class.getDeclaredField("theUnsafe");
+    		f.setAccessible(true);
+
+    		unsafe = (Unsafe)f.get(null);
+    		fieldOffset = unsafe.objectFieldOffset(UnsafeUtil.class.getDeclaredField("obj"));
+    	} catch (Exception e) {
+    		throw new RuntimeException(e);
+    	}
+    };
+}
+ Since no one else has said it yet (I Think) my favorite feature is Auto boxing! public class Example
+{
+    public static void main(String[] Args)
+    {
+         int a = 5;
+         Integer b = a; // Box!
+         System.out.println("A : " + a);
+         System.out.println("B : " + b);
+    }
+}
+ How about Properties files in your choice of encodings? Used to be, when you loaded your Properties, you provided an InputStream and the load() method decoded it as ISO-8859-1. You could actually store the file in some other encoding, but you had to use a disgusting hack like this after loading to properly decode the data: String realProp = new String(prop.getBytes("ISO-8859-1"), "UTF-8");
+ But, as of JDK 1.6, there's a load() method that takes a Reader instead of an InputStream, which means you can use the correct encoding from the beginning (there's also a store() method that takes a Writer). This seems like a pretty big deal to me, but it appears to have been snuck into the JDK with no fanfare at all. I only stumbled upon it a few weeks ago, and a quick Google search turned up just one passing mention of it. If you do a lot of JavaBean development and work with property change support, you generally wind up writing a lot of setters like this: public void setFoo(Foo aFoo){
+  Foo old = this.foo;
+  this.foo = aFoo;
+  changeSupport.firePropertyChange("foo", old, aFoo);
+}
+ I recently stumbled across a blog that suggested a more terse implementation of this that makes the code a lot easier to write: public void setFoo(Foo aFoo){
+  changeSupport.firePropertyChange("foo", this.foo, this.foo = aFoo);
+}
+ It actually simplified things to the point where I was able to adjust the setter template in Eclipse so the method gets created automatically. String Parameterised Class Factory. Class.forName( className ).newInstance();
+ Load a resource (property file, xml, xslt, image etc) from deployment jar file. this.getClass().getClassLoader().getResourceAsStream( ... ) ;
+ Something that really surprised me was the custom serialization mechanism. While these methods are private!!, they are "mysteriously" called by the JVM during object serialization. private void writeObject(ObjectOutputStream out) throws IOException;
+private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException;
+ This way you can create your own custom serialization to make it more "whatever" (safe, fast, rare, easy etc. ) This is something that really should be considering if a lot of information has to be passed through nodes. The serialization mechanism may be changed to send the half of data. There are many times when the bottlenecks are not in the platform, but in the amount of that sent trough the wire, may save you thousands of dlls in hardware. Here is an article. http://java.sun.com/developer/technicalArticles/Programming/serialization/ You can declare a class in a method: public Foo foo(String in) {
+    class FooFormat extends Format {
+        public Object parse(String s, ParsePosition pp) { // parse stuff }
+    }
+    return (Foo) new FooFormat().parse(in);
+
+}
+ Annotation Processing API from Java 6 looks very perspective for code generation and static code verification. final initialization can be postponed. It makes sure that even with a complex flow of logic return values are always set. It's too easy to miss a case and return null by accident. It doesn't make returning null impossible, just obvious that it's on purpose: public Object getElementAt(int index) {
+    final Object element;
+    if (index == 0) {
+         element = "Result 1";
+    } else if (index == 1) {
+         element = "Result 2";
+    } else {
+         element = "Result 3";
+    }
+    return element;
+}
+ Some years ago when I had to do Java (1.4.x) I wanted an eval() method and Suns javac is (was?) written in Java so it was just to link tools.jar and use that with some glue-code around it. Java processing does a neat trick on variable definition if you do not use a default initializer. 
+{
+   int x;
+
+   if(whatever)
+      x=1;
+
+   if(x == 1)
+      ...
+}
+ This will give you an error at compile time that you have a path where X isn't properly defined. This has helped me a few times, and I've taken to considering default initialization like these: 
+int x=0;
+String s=null;
+ to be a bad pattern since it blocks this helpful checking. That said, sometimes it's difficult to get around--I have had to go back and edit in the =null when it made sense as a default, but I never put it in on the first pass any more. You can access final local variables and parameters in initialization blocks and methods of local classes. Consider this:     final String foo = "42";
+    new Thread() {
+        public void run() {
+             dowhatever(foo);
+        }
+    }.start();
+ A bit like a closure, isn't it? The value of: new URL("http://www.yahoo.com").equals(new URL("http://209.191.93.52"))
+ is true. (From Java Puzzlers) A couple of people have posted about instance initializers, here's a good use for it: Map map = new HashMap() {{
+    put("a key", "a value");
+    put("another key", "another value");
+}};
+ Is a quick way to initialize maps if you're just doing something quick and simple. Or using it to create a quick swing frame prototype: JFrame frame = new JFrame();
+
+JPanel panel = new JPanel(); 
+
+panel.add( new JLabel("Hey there"){{ 
+    setBackground(Color.black);
+    setForeground( Color.white);
+}});
+
+panel.add( new JButton("Ok"){{
+    addActionListener( new ActionListener(){
+        public void actionPerformed( ActionEvent ae ){
+            System.out.println("Button pushed");
+        }
+     });
+ }});
+
+
+ frame.add( panel );
+ Of course it can be abused:     JFrame frame = new JFrame(){{
+         add( new JPanel(){{
+               add( new JLabel("Hey there"){{ 
+                    setBackground(Color.black);
+                    setForeground( Color.white);
+                }});
+
+                add( new JButton("Ok"){{
+                    addActionListener( new ActionListener(){
+                        public void actionPerformed( ActionEvent ae ){
+                            System.out.println("Button pushed");
+                        }
+                     });
+                 }});
+        }});
+    }};
+ As of Java 1.5, Java now has a much cleaner syntax for writing functions of variable arity. So, instead of just passing an array, now you can do the following public void foo(String... bars) {
+   for (String bar: bars)
+      System.out.println(bar);
+}
+ bars is automatically converted to array of the specified type. Not a huge win, but a win nonetheless. Javadoc - when written properly (not always the case with some developers unfortunately), it gives you a clear, coherent description of what code is supposed to do, as opposed to what it actually does. It can then be turned into a nice browsable set of HTML documentation. If you use continuous integration etc it can be generated regularly so all developers can see the latest updates. SwingWorker for easily managing user interface callbacks from background threads. Instances of the same class can access private members of other instances: class Thing {
+  private int x;
+
+  public int addThings(Thing t2) {
+    return this.x + t2.x;  // Can access t2's private value!
+  }
+}
+ Apparently with some debug builds there is an option which dumps the native (JIT) assembly code from HotSpot: http://weblogs.java.net/blog/kohsuke/archive/2008/03/deep_dive_into.html Unfortunately I wasn't able to find the build via the link in that post, if anyone can find a more precise URL, I'd love to play with it. My vote goes to java.util.concurrent with its concurrent collections and flexible executors allowing among others thread pools, scheduled tasks and coordinated tasks. The DelayQueue is my personal favorite, where elements are made available after a specified delay. java.util.Timer and TimerTask may safely be put to rest. Also, not exactly hidden but in a different package from the other classes related to date and time. java.util.concurrent.TimeUnit is useful when converting between nanoseconds, microseconds, milliseconds and seconds. It reads a lot better than the usual someValue * 1000 or someValue / 1000. The strictfp keyword. (I never saw it used in a real application though :) You can get the class for primitive types by using the following notation: int.class, float.class, etc. Very useful when doing reflection. Final arrays can be used to "return" values from anonymous inner classes (warning, useless example below): final boolean[] result = new boolean[1];
+SwingUtilities.invokeAndWait(new Runnable() {
+  public void run() { result[0] = true; }
+});
+ Haven't seen anyone mention instanceof being implemented in such a way that checking for null is not necessary. Instead of: if( null != aObject && aObject instanceof String )
+{
+    ...
+}
+ just use: if( aObject instanceof String )
+{
+    ...
+}
+ I enjoyed javadoc's taglet and doclet that enable us to customize javadoc output. JDK tools: jstat, jstack etc. The next-generation Java plugin found in Java 1.6 Update 10 and later has some very neat features: Pass java_arguments parameter to pass arguments to the JVM that is created. This allows you to control the amount of memory given to the applet. Create separate class loaders or even separate JVM's for each applet. Specify the JVM version to use. Install partial Java kernels in cases where you only need a subset of the full Java libraries' functionality. Better Vista support. Support (experimental) to drag an applet out of the browser and have it keep running when you navigate away. Many other things that are documented here: http://jdk6.dev.java.net/plugin2/ More from this release here: http://jdk6.dev.java.net/6u10ea.html You can build a string sprintf-style using String.format(). String w = "world";
+String s = String.format("Hello %s %d", w, 3);
+ You can of course also use special specifiers to modify the output. More here: http://java.sun.com/j2se/1.5.0/docs/api/java/util/Formatter.html#syntax with static imports you can do cool stuff like: List<String> myList = list("foo", "bar");
+Set<String> mySet = set("foo", "bar");
+Map<String, String> myMap = map(v("foo", "2"), v("bar", "3"));
+ I like the static import of methods. For example create the following util class: package package.name;
+
+public class util {
+
+     private static void doStuff1(){
+        //the end
+     }
+
+     private static String doStuff2(){
+        return "the end";
+     }
+
+}
+ Then use it like this. import static package.name.util.*;
+
+public class main{
+
+     public static void main(String[] args){
+          doStuff1(); // wee no more typing util.doStuff1()
+          System.out.print(doStuff2()); // or util.doStuff2()
+     }
+
+}
+ Static Imports works with any class, even Math... import static java.lang.Math.*;
+import static java.lang.System.out;
+public class HelloWorld {
+    public static void main(String[] args) {
+        out.println("Hello World!");
+        out.println("Considering a circle with a diameter of 5 cm, it has:");
+        out.println("A circumference of " + (PI * 5) + "cm");
+        out.println("And an area of " + (PI * pow(5,2)) + "sq. cm");
+    }
+}
+ List.subList returns a view on the original list A documented but little known feature of lists. This allows you to work with parts of a list with changes mirrored in the original list. List subList(int fromIndex, int toIndex) "This method eliminates the need for explicit range operations (of the sort that commonly exist for arrays). Any operation that expects a list can be used as a range operation by passing a subList view instead of a whole list. For example, the following idiom removes a range of elements from a list:        list.subList(from, to).clear();
+ Similar idioms may be constructed for indexOf and lastIndexOf, and all of the algorithms in the Collections class can be applied to a subList." i personally discovered java.lang.Void very late -- improves code readability in conjunction with generics, e.g. Callable<Void> You can use enums to implement an interface. public interface Room {
+   public Room north();
+   public Room south();
+   public Room east();
+   public Room west();
+}
+
+public enum Rooms implements Room {
+   FIRST {
+      public Room north() {
+         return SECOND;
+      }
+   },
+   SECOND {
+      public Room south() {
+         return FIRST;
+      }
+   }
+
+   public Room north() { return null; }
+   public Room south() { return null; }
+   public Room east() { return null; }
+   public Room west() { return null; }
+}
+ EDIT: Years later.... I use this feature here public enum AffinityStrategies implements AffinityStrategy {
+ https://github.com/peter-lawrey/Java-Thread-Affinity/blob/master/src/main/java/vanilla/java/affinity/AffinityStrategies.java By using an interface, developers can define their own strategies. Using an enum means I can define a collection (of five) built in ones. Intersection types allow you to (kinda sorta) do enums that have an inheritance hierarchy. You can't inherit implementation, but you can delegate it to a helper class. enum Foo1 implements Bar {}
+enum Foo2 implements Bar {}
+
+class HelperClass {
+   static <T extends Enum<T> & Bar> void fooBar(T the enum) {}
+}
+ This is useful when you have a number of different enums that implement some sort of pattern. For instance, a number of pairs of enums that have a parent-child relationship. enum PrimaryColor {Red, Green, Blue;}
+enum PastelColor {Pink, HotPink, Rockmelon, SkyBlue, BabyBlue;}
+
+enum TransportMedium {Land, Sea, Air;}
+enum Vehicle {Car, Truck, BigBoat, LittleBoat, JetFighter, HotAirBaloon;}
+ You can write generic methods that say "Ok, given an enum value thats a parent of some other enum values, what percentage of all the possible child enums of the child type have this particular parent value as their parent?", and have it all typesafe and done without casting. (eg: that "Sea" is 33% of all possible vehicles, and "Green" 20% of all possible Pastels). The code look like this. It's pretty nasty, but there are ways to make it better. Note in particuar that the "leaf" classes themselves are quite neat - the generic classes have declarations that are horribly ugly, but you only write them onece. Once the generic classes are there, then using them is easy. import java.util.EnumSet;
+
+import javax.swing.JComponent;
+
+public class zz extends JComponent {
+
+    public static void main(String[] args) {
+    	System.out.println(PrimaryColor.Green + " " + ParentUtil.pctOf(PrimaryColor.Green) + "%");
+    	System.out.println(TransportMedium.Air + " " + ParentUtil.pctOf(TransportMedium.Air) + "%");
+    }
+
+
+}
+
+class ParentUtil {
+    private ParentUtil(){}
+    static <P extends Enum<P> & Parent<P, C>, C extends Enum<C> & Child<P, C>> //
+    float pctOf(P parent) {
+    	return (float) parent.getChildren().size() / //
+    			(float) EnumSet.allOf(parent.getChildClass()).size() //
+    			* 100f;
+    }
+    public static <P extends Enum<P> & Parent<P, C>, C extends Enum<C> & Child<P, C>> //
+    EnumSet<C> loadChildrenOf(P p) {
+    	EnumSet<C> cc = EnumSet.noneOf(p.getChildClass());
+    	for(C c: EnumSet.allOf(p.getChildClass())) {
+    		if(c.getParent() == p) {
+    			cc.add(c);
+    		}
+    	}
+    	return cc;
+    }
+}
+
+interface Parent<P extends Enum<P> & Parent<P, C>, C extends Enum<C> & Child<P, C>> {
+    Class<C> getChildClass();
+
+    EnumSet<C> getChildren();
+}
+
+interface Child<P extends Enum<P> & Parent<P, C>, C extends Enum<C> & Child<P, C>> {
+    Class<P> getParentClass();
+
+    P getParent();
+}
+
+enum PrimaryColor implements Parent<PrimaryColor, PastelColor> {
+    Red, Green, Blue;
+
+    private EnumSet<PastelColor>	children;
+
+    public Class<PastelColor> getChildClass() {
+    	return PastelColor.class;
+    }
+
+    public EnumSet<PastelColor> getChildren() {
+    	if(children == null) children=ParentUtil.loadChildrenOf(this);
+    	return children;
+    }
+}
+
+enum PastelColor implements Child<PrimaryColor, PastelColor> {
+    Pink(PrimaryColor.Red), HotPink(PrimaryColor.Red), //
+    Rockmelon(PrimaryColor.Green), //
+    SkyBlue(PrimaryColor.Blue), BabyBlue(PrimaryColor.Blue);
+
+    final PrimaryColor	parent;
+
+    private PastelColor(PrimaryColor parent) {
+    	this.parent = parent;
+    }
+
+    public Class<PrimaryColor> getParentClass() {
+    	return PrimaryColor.class;
+    }
+
+    public PrimaryColor getParent() {
+    	return parent;
+    }
+}
+
+enum TransportMedium implements Parent<TransportMedium, Vehicle> {
+    Land, Sea, Air;
+
+    private EnumSet<Vehicle>	children;
+
+    public Class<Vehicle> getChildClass() {
+    	return Vehicle.class;
+    }
+
+    public EnumSet<Vehicle> getChildren() {
+    	if(children == null) children=ParentUtil.loadChildrenOf(this);
+    	return children;
+    }
+}
+
+enum Vehicle implements Child<TransportMedium, Vehicle> {
+    Car(TransportMedium.Land), Truck(TransportMedium.Land), //
+    BigBoat(TransportMedium.Sea), LittleBoat(TransportMedium.Sea), //
+    JetFighter(TransportMedium.Air), HotAirBaloon(TransportMedium.Air);
+
+    private final TransportMedium	parent;
+
+    private Vehicle(TransportMedium parent) {
+    	this.parent = parent;
+    }
+
+    public Class<TransportMedium> getParentClass() {
+    	return TransportMedium.class;
+    }
+
+    public TransportMedium getParent() {
+    	return parent;
+    }
+}
+ Read "Java Puzzlers" by Joshua Bloch and you will be both enlightened and horrified. Source code URLs. E.g. here is some legal java source code: http://google.com
+ (Yes, it was in Java Puzzlers. I laughed...) People are sometimes a bit surprised when they realize that it's possible to call private methods and access/change private fields using reflection... Consider the following class: public class Foo {
+    private int bar;
+
+    public Foo() {
+        setBar(17);
+    }
+
+    private void setBar(int bar) {
+        this.bar=bar;
+    }
+
+    public int getBar() {
+        return bar;
+    }
+
+    public String toString() {
+        return "Foo[bar="+bar+"]";
+    }
+}
+ Executing this program... import java.lang.reflect.*;
+
+public class AccessibleExample {
+    public static void main(String[] args)
+        throws NoSuchMethodException,IllegalAccessException, InvocationTargetException, NoSuchFieldException {
+        Foo foo=new Foo();
+        System.out.println(foo);
+
+        Method method=Foo.class.getDeclaredMethod("setBar", int.class);
+        method.setAccessible(true);
+        method.invoke(foo, 42);
+
+        System.out.println(foo);
+        Field field=Foo.class.getDeclaredField("bar");
+        field.setAccessible(true);
+        field.set(foo, 23);
+        System.out.println(foo);
+    }
+}
+ ...will yield the following output: Foo[bar=17]
+Foo[bar=42]
+Foo[bar=23]
+ Part feature, part bother: Java's String handling to make it 'appear' a native Type (use of operators on them, +, +=) Being able to write: String s = "A";
+s += " String"; // so s == "A String"
+ is very convenient, but is simply syntactic sugar for (ie gets compiled to): String s = new String("A");
+s = new StringBuffer(s).append(" String").toString();
+ ergo an Object instantiation and 2 method invocations for a simple concatenation. Imagine Building a long String inside a loop in this manner!? AND all of StringBuffer's methods are declared synchronized. Thankfully in (I think) Java 5 they introduced StringBuilder which is identical to StringBuffer without the syncronization. A loop such as: String s = "";
+for (int i = 0 ; i < 1000 ; ++i)
+  s += " " + i; // Really an Object instantiation & 3 method invocations!
+ can (should) be rewritten in your code as: StringBuilder buf = new StringBuilder(); // Empty buffer
+for (int i = 0 ; i < 1000 ; ++i)
+  buf.append(' ').append(i); // Cut out the object instantiation & reduce to 2 method invocations
+String s = buf.toString();
+ and will run approximately 80+% faster than the original loop! (up to 180% on some benchmarks I have run) Perhaps the most surprising hidden feature is the sun.misc.Unsafe class. http://www.docjar.com/html/api/ClassLib/Common/sun/misc/Unsafe.java.html You can; Create an object without calling a constructor. Throw any exception even Exception without worrying about throws clauses on methods. (There are other way to do this I know) Get/set randomly accessed fields in an object without using reflection. allocate/free/copy/resize a block of memory which can be long (64-bit) in size. Obtain the location of fields in an object or static fields in a class. independently lock and unlock an object lock. (like synchronize without a block) define a class from provided byte codes. Rather than the classloader determining what the byte code should be. (You can do this with reflection as well) BTW: Incorrect use of this class will kill the JVM. I don't know which JVMs support this class so its not portable. You can define an anonymous subclass and directly call a method on it even if it implements no interfaces. new Object() {
+  void foo(String s) {
+    System.out.println(s);
+  }
+}.foo("Hello");
+ An optimization trick that makes your code easier to maintain and less susceptible to a concurrency bug. public class Slow {
+  /** Loop counter; initialized to 0. */
+  private long i;
+
+  public static void main( String args[] ) {
+    Slow slow = new Slow();
+
+    slow.run();
+  }
+
+  private void run() {
+    while( i++ < 10000000000L )
+      ;
+  }
+}
+ $ time java Slow real 0m15.397s $ time java Slow real 0m20.012s $ time java Slow real 0m18.645s Average: 18.018s public class Fast {
+  /** Loop counter; initialized to 0. */
+  private long i;
+
+  public static void main( String args[] ) {
+    Fast fast = new Fast();
+
+    fast.run();
+  }
+
+  private void run() {
+    long i = getI();
+
+    while( i++ < 10000000000L )
+      ;
+
+    setI( i );
+  }
+
+  private long setI( long i ) {
+    this.i = i;
+  }
+
+  private long getI() {
+    return this.i;
+  }
+}
+ $ time java Fast real 0m12.003s $ time java Fast real 0m9.840s $ time java Fast real 0m9.686s Average: 10.509s It requires more bytecodes to reference a class-scope variable than a method-scope variable. The addition of a method call prior to the critical loop adds little overhead (and the call might be inlined by the compiler anyway). Another advantage to this technique (always using accessors) is that it eliminates a potential bug in the Slow class. If a second thread were to continually reset the value of i to 0 (by calling slow.setI( 0 ), for example), the Slow class could never end its loop. Calling the accessor and using a local variable eliminates that possibility. Tested using J2SE 1.6.0_13 on Linux 2.6.27-14. Java Bean property accessor methods do not have to start with "get" and "set". Even Josh Bloch gets this wrong in Effective Java. I just (re)learned today that $ is a legal name for a method or variable in Java. Combined with static imports it can make for some slightly more readable code, depending on your view of readable: http://garbagecollected.org/2008/04/06/dollarmaps/ It has already been mentioned that a final array can be used to pass a variable out of the anonymous inner classes. Another, arguably better and less ugly approach though is to use AtomicReference (or AtomicBoolean/AtomicInteger/…) class from java.util.concurrent.atomic package. One of the benefits in doing so is that these classes also provide such methods as compareAndSet, which may be useful if you're creating several threads which can modify the same variable. Another useful related pattern: final AtomicBoolean dataMsgReceived = new AtomicBoolean(false);
+final AtomicReference<Message> message = new AtomicReference<Message>();
+withMessageHandler(new MessageHandler() {
+    public void handleMessage(Message msg) {
+         if (msg.isData()) {
+             synchronized (dataMsgReceived) {
+                 message.set(msg);
+                 dataMsgReceived.set(true);
+                 dataMsgReceived.notifyAll();
+             }
+         }
+    }
+}, new Interruptible() {
+    public void run() throws InterruptedException {
+        synchronized (dataMsgReceived) {
+            while (!dataMsgReceived.get()) {
+                dataMsgReceived.wait();
+            }
+        }
+    }
+});
+ In this particular example we could have simply waited on message for it to become non-null, however null may often be a valid value and then you need to use a separate flag to finish the wait. waitMessageHandler(…) above is yet another useful pattern: it sets up a handler somewhere, then starts executing the Interruptible which may throw an exception, and then removes the handler in the finally block, like so: private final AtomicReference<MessageHandler> messageHandler = new AtomicReference<MessageHandler>();
+public void withMessageHandler(MessageHandler handler, Interruptible logic) throws InterruptedException {
+    synchronized (messageHandler) {
+        try {
+            messageHandler.set(handler);
+            logic.run();
+        } finally {
+            messageHandler.set(null);
+        }
+    }
+}
+ Here I assume that the messageHandler's (if it's not null) handleMessage(…) method is called by another thread when a message is received. messageHandler must not be simply of MessageHandler type: that way you will synchronize on a changing variable, which is clearly a bug. Of course, it doesn't need to be InterruptedException, it could be something like IOException, or whatever makes sense in a particular piece of code. Comma & array. It is legal syntax: String s[] = { "123" , "234" , }; Most people does not know they can clone an array. int[] arr = {1, 2, 3};
+int[] arr2 = arr.clone();
+ Use StringBuilder instead of StringBuffer when you don't need synchronized management included in StringBuilder. It will increase the performance of your application. Improvements for Java 7 would be even better than any hidden Java features: Diamond syntax: Link Don't use those infinite <> syntax at instanciation: Map<String, List<String>> anagrams = new HashMap<String, List<String>>();
+
+// Can now be replaced with this:
+
+Map<String, List<String>> anagrams = new HashMap<>();
+ Strings in switch: Link Use String in switch, instead of old-C int: String s = "something";
+switch(s) {
+ case "quux":
+    processQuux(s);
+    // fall-through
+
+  case "foo":
+  case "bar":
+    processFooOrBar(s);
+    break;
+
+  case "baz":
+     processBaz(s);
+    // fall-through
+
+  default:
+    processDefault(s);
+    break;
+}
+ Automatic Resource Management Link This old code: static void copy(String src, String dest) throws IOException {
+    InputStream in = new FileInputStream(src);
+    try {
+        OutputStream out = new FileOutputStream(dest);
+        try {
+            byte[] buf = new byte[8 * 1024];
+            int n;
+            while ((n = in.read(buf)) >= 0)
+                out.write(buf, 0, n);
+        } finally {
+            out.close();
+        }
+    } finally {
+        in.close();
+    }
+}
+ can now be replaced by this much simpler code: static void copy(String src, String dest) throws IOException {
+    try (InputStream in = new FileInputStream(src);
+            OutputStream out = new FileOutputStream(dest)) {
+        byte[] buf = new byte[8192];
+        int n;
+        while ((n = in.read(buf)) >= 0)
+            out.write(buf, 0, n);
+    }
+}
+ You can switch(this) inside method definitions of enum classes. Made me shout "whut!" loudly when I discovered that this actually works. Actually, what I love about Java is how few hidden tricks there are. It's a very obvious language. So much so that after 15 years, almost every one I can think of is already listed on these few pages. Perhaps most people know that Collections.synchronizedList() adds synchronization to a list. What you can't know unless you read the documentation is that you can safely iterate on the elements of that list by synchronizing on the list object itself. CopyOnWriteArrayList might be unknown to some, and Future represents an interesting way to abstract multithreaded result access. You can attach to VMs (local or remote), get information on GC activity, memory use, file descriptors and even object sizes through the various management, agent and attach APIs. Although TimeUnit is perhaps better than long, I prefer Wicket's Duration class. Oh, I almost forgot this little gem. Try this on any running java process: jmap -histo:live PID You will get a histogram of live heap objects in the given VM. Invaluable as a quick way to figure certain kinds of memory leaks. Another technique I use to prevent them is to create and use size-bounded subclasses of all the collections classes. This causes quick failures in out-of-control collections that are easy to identify. A feature with which you can display splash screens for your Java Console Based Applications. Use the command line tool java or javaw with the option -splash eg: java -splash:C:\myfolder\myimage.png -classpath myjarfile.jar com.my.package.MyClass
+ the content of C:\myfolder\myimage.png will be displayed at the center of your screen, whenever you execute the class "com.my.package.MyClass" When working in Swing I like the hidden Ctrl - Shift - F1 feature. It dumps the component tree of the current window. (Assuming you have not bound that keystroke to something else.) Surprises me that an interface can extend multiple interfaces but class can extend only one class. Classpath wild cards since Java 6. java -classpath ./lib/* so.Main
+ Instead of java -classpath ./lib/log4j.jar:./lib/commons-codec.jar:./lib/commons-httpclient.jar:./lib/commons-collections.jar:./lib/myApp.jar so.Main
+ See http://java.sun.com/javase/6/docs/technotes/tools/windows/classpath.html Shutdown Hooks. This allows to register a thread that will be created immediatly but started only when the JVM ends ! So it is some kind of "global jvm finalizer", and you can make useful stuff in this thread (for example shutting down java ressources like an embedded hsqldb server). This works with System.exit(), or with CTRL-C / kill -15 (but not with kill -9 on unix, of course). Moreover it's pretty easy to set up.             Runtime.getRuntime().addShutdownHook(new Thread() {
+                  public void run() {
+                      endApp();
+                  }
+            });;
+ Identifiers can contain foreign language chars like umlauts: instead of writing: String title="";
+ someone could write: String Überschrift="";
+ Java 6 (from Sun) comes with an embedded JavaScrip interpreter. http://java.sun.com/javase/6/docs/technotes/guides/scripting/programmer_guide/index.html#jsengine Didn't read about this Integer a = 1;
+Integer b = 1;
+Integer c = new Integer(1);
+Integer d = new Integer(1);
+
+Integer e = 128;
+Integer f = 128;
+
+assertTrue (a == b);   // again: this is true!
+assertFalse(e == f); // again: this is false!
+assertFalse(c == d);   // again: this is false!
+ read more about this by searching java's pool of integer (internal 'cache' from -128 to 127 for autoboxing) or look into Integer.valueOf You can override a method and have the superclass constructor call it (this may come as a surprise to C++ programmers.) Example Here's my list. My favourite (and scariest) hidden feature is that you can throw checked exceptions from methods that are not declaring to throw anything. import java.rmi.RemoteException;
+
+class Thrower {
+    public static void spit(final Throwable exception) {
+        class EvilThrower<T extends Throwable> {
+            @SuppressWarnings("unchecked")
+            private void sneakyThrow(Throwable exception) throws T {
+                throw (T) exception;
+            }
+        }
+        new EvilThrower<RuntimeException>().sneakyThrow(exception);
+    }
+}
+
+public class ThrowerSample {
+    public static void main( String[] args ) {
+        Thrower.spit(new RemoteException("go unchecked!"));
+    }
+}
+ Also you may like to know you can throw 'null'... public static void main(String[] args) {
+     throw null;
+}
+ Guess what this prints: Long value = new Long(0);
+System.out.println(value.equals(0));
+ And, guess what this returns: public int returnSomething() {
+    try {
+        throw new RuntimeException("foo!");
+    } finally {
+        return 0;
+    }
+}
+ the above should not surprise good developers. In Java you can declare an array in following valid ways: String[] strings = new String[] { "foo", "bar" };
+// the above is equivalent to the following:
+String[] strings = { "foo", "bar" };
+ So following Java code is perfectly valid: public class Foo {
+    public void doSomething(String[] arg) {}
+
+    public void example() {
+        String[] strings = { "foo", "bar" };
+        doSomething(strings);
+    }
+}
+ Is there any valid reason why, instead, the following code shouldn't be valid? public class Foo {
+
+    public void doSomething(String[] arg) {}
+
+    public void example() {
+        doSomething({ "foo", "bar" });
+    }
+}
+ I think, that the above syntax would have been a valid substitute to the varargs introduced in Java 5. And, more coherent with the previously allowed array declarations. Every class file starts with the hex value 0xCAFEBABE to identify it as valid JVM bytecode. (Explanation) You can add runtime checks of generic types using a Class<T> object, this comes in handy when a class is being created in a configuration file somewhere and there is no way to add a compile time check for the generic type of the class. You dont want the class to blow up at runtime if the app happens to be configured wrong and you dont want all you classes riddled with instance of checks. public interface SomeInterface {
+  void doSomething(Object o);
+}
+public abstract class RuntimeCheckingTemplate<T> {
+  private Class<T> clazz;
+  protected RuntimeChecking(Class<T> clazz) {
+    this.clazz = clazz;
+  }
+
+  public void doSomething(Object o) {
+    if (clazz.isInstance(o)) {
+      doSomethingWithGeneric(clazz.cast(o));
+    } else {
+      // log it, do something by default, throw an exception, etc.
+    }
+  }
+
+  protected abstract void doSomethingWithGeneric(T t);
+}
+
+public class ClassThatWorksWithStrings extends RuntimeCheckingTemplate<String> {
+  public ClassThatWorksWithStrings() {
+     super(String.class);
+  }
+
+  protected abstract void doSomethingWithGeneric(T t) {
+    // Do something with the generic and know that a runtime exception won't occur 
+    // because of a wrong type
+  }
+}
+ I was surprised when I first noticed the Ternary-Operator which equals a simple if-then-else statement: minVal = (a < b) ? a : b;
+ I can add Scanner object. It is the best for parsing. String input = "1 fish 2 fish red fish blue fish";
+Scanner s = new Scanner(input).useDelimiter("\\s*fish\\s*");
+System.out.println(s.nextInt());
+System.out.println(s.nextInt());
+System.out.println(s.next());
+System.out.println(s.next());
+s.close();
+ You can define and invoke methods on anonymous inner classes. Well they're not that hidden, but very few people know they can be used to define a new method in a class and invoke it like this: (new Object() {
+    public String someMethod(){ 
+        return "some value";
+    }
+}).someMethod();
+ Probably is not very common because it not very useful either, you can call the method it only when you define it ( or via reflection ) This is not really a hidden feature but it did give me a big surprise when I saw this compiled fine: public int aMethod(){
+    http://www.google.com
+    return 1;
+}
+ the reason why it compiles is that the line http://www.google.com the "http:" part is treated by the compiler as a label and the rest of the line is a comment. So, if you want to write some bizzare code (or obfuscated code), just put alot of http addresses there. ;-) The C-Style printf() :) System.out.printf("%d %f %.4f", 3,Math.E,Math.E);
+ Output: 3 2.718282 2.7183 Binary Search (and it's return value) int[] q = new int[] { 1,3,4,5};
+int position = Arrays.binarySearch(q, 2);
+ Similar to C#, if '2' is not found in the array, it returns a negative value but if you take the 1's Complement of the returned value you actually get the position where '2' can be inserted. In the above example, position = -2, ~position = 1 which is the position where 2 should be inserted...it also lets you find the "closest" match in the array. I thinks its pretty nifty... :) Not so hidden, but interesting. You can have a "Hello, world" without main method ( it throws NoSuchMethodError thought ) Originally posted by RusselW on Strangest language feature public class WithoutMain {
+    static {
+        System.out.println("Look ma, no main!!");
+        System.exit(0);
+    }
+}
+
+$ java WithoutMain
+Look ma, no main!!

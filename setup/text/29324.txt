@@ -1,0 +1,20 @@
+How Do I Create a Hash Table in Java? hash hashmap import java.util.*; Map map = new HashMap(); Map map = new HashMap();
+Hashtable ht = new Hashtable();
+ Both classes can be found from the java.util package. The difference between the 2 is explained in the following jGuru FAQ entry. What Edmund said. As for not calling .add all the time, no, not idiomatically. There would be various hacks (storing it in an array and then looping) that you could do if you really wanted to, but I wouldn't recommend it. Also don't forget that both Map and Hashtable are generic in Java 5 and up (as in any other class in the Collections framework). Map<String, Integer> numbers = new HashMap<String, Integer>();
+numbers.put("one", 1);
+numbers.put("two", 2);
+numbers.put("three", 3);
+
+Integer one = numbers.get("one");
+Assert.assertEquals(1, one);
+ And is there a way to populate the table with a list of key->value pairs without individually calling an add method on the object for each pair? One problem with your question is that you don't mention what what form your data is in to begin with. If your list of pairs happened to be a list of Map.Entry objects it would be pretty easy. Just to throw this out, there is a (much maligned) class named java.util.Properties that is an extension of Hashtable. It expects only String keys and values and lets you load and store the data using files or streams. The format of the file it reads and writes is as follows: key1=value1
+key2=value2
+ I don't know if this is what you're looking for, but there are situations where this can be useful. You can use double-braces to set up the data. You still call add, or put, but it's less ugly: private static final Hashtable<String,Integer> MYHASH = new Hashtable<String,Integer>() {{
+    put("foo",      1);
+    put("bar",      256);
+    put("data",     3);
+    put("moredata", 27);
+    put("hello",    32);
+    put("world",    65536);
+ }};
+ It is important to note that Java's hash function is less than optimal. If you want less collisions and almost complete elimination of re-hashing at ~50% capacity, I'd use a Buz Hash algorithm Buz Hash The reason Java's hashing algorithm is weak is most evident in how it hashes Strings. "a".hash() give you the ascii representation of "a" - 97, so "b" would be 98. The whole point of hashing is to assign an arbitrary and "as random as possible" number. If you need a quick and dirty hash table, by all means, use java.util. If you are looking for something robust that is more scalable, I'd look into implementing your own.

@@ -1,0 +1,16 @@
+Embedded custom-tag in dynamic content (nested tag) not rendering jsp jstl custom-tag Just using <bodycontent>JSP</bodycontent>
+ is not enough. You should do soimething like JspFragment body = getJspBody(); 
+StringWriter stringWriter = new StringWriter(); 
+StringBuffer buff = stringWriter.getBuffer(); 
+buff.append("<h1>"); 
+body.invoke(stringWriter); 
+buff.append("</h1>"); 
+out.println(stringWriter);
+ to get inner tags rendered (example is for SimpleTag doTag method). However, in the question's code I see that inner tag is comming from a string which is not rendered as a part of JSP, but just some random string. I do not think you can force JSP translator to parse it. You can use regexp in your case or try to redesign your code in a way to have a jsp like this: <jsp:useBean id="ImportantNoticeBean" scope="page class="com.mysite.beans.ImportantNoticeProcessBean"/>
+<c:forEach var="noticeBean" items="${ImportantNoticeBean.importantNotices}">
+    <mysite:notice importantNotice="${noticeBean}">
+        <mysite:quote author="Some Guy">Quote this</mysite:quote>
+        <mysite:messagebody author="Some Guy" />
+    </mysite:notice>
+</c:forEach>
+ I whould go with regexp. I would be inclined to change the "architecture of your tagging" in that the data you wish to achieve should not be by tag on the inside of the class as it is "markup" designed for a page(though in obscurity it is possible to get the evaluating program thread of the JSP Servlet engine). What you would probably find better and more within standard procedure would be using "cooperating tags" with BodyTagSupport class extension and return EVAL_BODY_BUFFERED in doStartTag() method to repeat process the body and/or object sharing such as storing retrived data in the application hierarchy of the session or on the session for the user. See oracle j2ee custom tags tutorial for more information.

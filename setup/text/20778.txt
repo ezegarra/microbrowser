@@ -1,0 +1,34 @@
+How do you convert binary data to Strings and back in Java? serialization If you encode it in base64, this will turn any data into ascii safe text, but base64 encoded data is larger than the orignal data How are you building your XML document? If you use java's built in XML classes then the string encoding should be handled for you. Take a look at the javax.xml and org.xml packages. That's what we use for generating XML docs, and it handles all the string encoding and decoding quite nicely. ---EDIT: Hmm, I think I misunderstood the problem. You're not trying to encode a regular string, but some set of arbitrary binary data? In that case the Base64 encoding suggested in an earlier comment is probably the way to go. I believe that's a fairly standard way of encoding binary data in XML. See this question, http://stackoverflow.com/questions/19893 Instead of converting the byte[] into String then pushing into XML somewhere, convert the byte[] to a String via BASE64 encoding (some XML libraries have a type to do this for you). The BASE64 decode once you get the String back from XML. Use http://commons.apache.org/codec/ You data may be getting messed up due to all sorts of weird character set restrictions and the presence of non-priting characters. Stick w/ BASE64. String(byte[]) treats the data as the default character encoding. So, how bytes get converted from 8-bit values to 16-bit Java Unicode chars will vary not only between operating systems, but can even vary between different users using different codepages on the same machine! This constructor is only good for decoding one of your own text files. Do not try to convert arbitrary bytes to chars in Java! Encoding as base64 is a good solution. This is how files are sent over SMTP (e-mail). The (free) Apache Commons Codec project will do the job. byte[] bytes = loadFile(file);          
+//all chars in encoded are guaranteed to be 7-bit ASCII
+byte[] encoded = Base64.encodeBase64(bytes);
+String printMe = new String(encoded, "US-ASCII");
+System.out.println(printMe);
+byte[] decoded = Base64.decodeBase64(encoded);
+ Alternatively, you can use the Java 6 DatatypeConverter: import java.io.*;
+import java.nio.channels.*;
+import javax.xml.bind.DatatypeConverter;
+
+public class EncodeDecode {    
+  public static void main(String[] args) throws Exception {
+    File file = new File("/bin/ls");
+    byte[] bytes = loadFile(file, new ByteArrayOutputStream()).toByteArray();
+    String encoded = DatatypeConverter.printBase64Binary(bytes);
+    System.out.println(encoded);
+    byte[] decoded = DatatypeConverter.parseBase64Binary(encoded);
+    // check
+    for (int i = 0; i < bytes.length; i++) {
+      assert bytes[i] == decoded[i];
+    }
+  }
+
+  private static <T extends OutputStream> T loadFile(File file, T out)
+                                                       throws IOException {
+    FileChannel in = new FileInputStream(file).getChannel();
+    try {
+      assert in.size() == in.transferTo(0, in.size(), Channels.newChannel(out));
+      return out;
+    } finally {
+      in.close();
+    }
+  }
+}

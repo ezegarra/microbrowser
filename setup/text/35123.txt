@@ -1,0 +1,49 @@
+Prevent SWT scrolledComposite from eating part of it's children eclipse swt rcp Don't you need to recompute the size of the scrollBox after the layout? If I am not mistaken you need to swap the mParent.layout();
+ and mParent.setSize(mParent.computeSize(SWT.DEFAULT, SWT.DEFAULT, true));
+ so that you have: public void createPartControl(Composite parent) {
+  parent.setLayout(new FillLayout());
+  ScrolledComposite scrollBox = new ScrolledComposite(parent, SWT.V_SCROLL);
+  scrollBox.setExpandHorizontal(true);
+  mParent = new Composite(scrollBox, SWT.NONE);
+  scrollBox.setContent(mParent);
+  FormLayout layout = new FormLayout();
+  mParent.setLayout(layout);
+  // Adds a bunch of controls here
+  mParent.setSize(mParent.computeSize(SWT.DEFAULT, SWT.DEFAULT, true));
+  mParent.layout();
+}
+ Try setting .setMinWidth and .setMinHeight on the ScrolledComposite once the layout has been done, passing it the size of the main composite. This is a common hurdle when using ScrolledComposite. When the SC is gets so small that the scroll bar must be shown, the client control has to shrink horizontally to make room for the scroll bar. This has the side effect of making some labels wrap lines, which moved the following controls farther down, which increased the minimum height needed by the content composite. You need to listen for width changes on the content composite (mParent), compute the minimum height again given the new content width, and call setMinHeight() on the scrolled composite with new height. public void createPartControl(Composite parent) {
+  parent.setLayout(new FillLayout());
+  ScrolledComposite scrollBox = new ScrolledComposite(parent, SWT.V_SCROLL);
+  scrollBox.setExpandHorizontal(true);
+  scrollBox.setExpandVertical(true);
+
+  // Using 0 here ensures the horizontal scroll bar will never appear.  If
+  // you want the horizontal bar to appear at some threshold (say 100
+  // pixels) then send that value instead.
+  scrollBox.setMinWidth(0);
+
+  mParent = new Composite(scrollBox, SWT.NONE);
+
+  FormLayout layout = new FormLayout();
+  mParent.setLayout(layout);
+
+  // Adds a bunch of controls here
+
+  mParent.addListener(SWT.Resize, new Listener() {
+    int width = -1;
+    public void handleEvent(Event e) {
+      int newWidth = mParent.getSize().x;
+      if (newWidth != width) {
+        scrollBox.setMinHeight(mParent.computeSize(newWidth, SWT.DEFAULT).y);
+        width = newWidth;
+      }
+    }
+  }
+
+  // Wait until here to set content pane.  This way the resize listener will
+  // fire when the scrolled composite first resizes mParent, which in turn
+  // computes the minimum height and calls setMinHeight()
+  scrollBox.setContent(mParent);
+}
+ In listening for size changes, note that we ignore any resize events where the width stays the same. This is because changes in the height of the content do not affect the minimum height of the content, as long as the width is the same.

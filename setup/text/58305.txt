@@ -1,0 +1,52 @@
+Is there a way to take a screenshot using Java and save it to some sort of image? image screenshot Believe it or not, you can actually use java.awt.Robot to "create an image containing pixels read from the screen." You can then write that image to a file on disk. I just tried it, and the whole thing ends up like: Rectangle screenRect = new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
+BufferedImage capture = new Robot().createScreenCapture(screenRect);
+ImageIO.write(capture, "bmp", new File(args[0]));
+ NOTE: This will only capture the primary monitor. See GraphicsConfiguration for multi-monitor support. I never liked using Robot, so I made my own simple method for making screenshots of JFrame objects: /**
+ * Use this method to create a screenshot of the JFrame object argFrame.
+ *
+ * Author(s):
+ *   Dejan Lekic
+ * License: 
+ *   Public Domain
+ *
+ * @param argFrame JFrame you want to make screenshot of.
+ */
+public static final void makeScreenshot(JFrame argFrame) {
+    Rectangle rec = argFrame.getBounds();
+    BufferedImage bufferedImage = new BufferedImage(rec.width, rec.height,
+            BufferedImage.TYPE_INT_ARGB);
+    argFrame.paint(bufferedImage.getGraphics());
+
+    try {
+        // Create temp file.
+        File temp = File.createTempFile("screenshot", ".png");
+
+        // Use the ImageIO API to write the bufferedImage to a temporary file
+        ImageIO.write(bufferedImage, "png", temp);
+
+        // Delete temp file when program exits.
+        temp.deleteOnExit();
+    } catch (IOException ioe) {
+        LOGGER.debug(ioe.toString());
+    } // catch
+} // makeScreenshot method
+ public void captureScreen(String fileName) throws Exception {
+   Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+   Rectangle screenRectangle = new Rectangle(screenSize);
+   Robot robot = new Robot();
+   BufferedImage image = robot.createScreenCapture(screenRectangle);
+   ImageIO.write(image, "png", new File(fileName));
+}
+ If you'd like to capture all monitors, you can use the following code: GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+GraphicsDevice[] screens = ge.getScreenDevices();
+
+Rectangle allScreenBounds = new Rectangle();
+for (GraphicsDevice screen : screens) {
+    Rectangle screenBounds = screen.getDefaultConfiguration().getBounds();
+
+    allScreenBounds.width += screenBounds.width;
+    allScreenBounds.height = Math.max(allScreenBounds.height, screenBounds.height);
+}
+
+Robot robot = new Robot();
+BufferedImage screenShot = robot.createScreenCapture(allScreenBounds);

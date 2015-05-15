@@ -1,0 +1,59 @@
+How to remove debug statements from production code in Java debugging compiler-construction Use Java Preprocessor? (google foo low but this is a link to the old Joel forums discussing it) public abstract class Config
+{
+    public static final boolean ENABLELOGGING = true;
+}
+ import static Config.*;
+
+public class MyClass
+{
+    public myMethod()
+    {
+        System.out.println("Hello, non-logging world");
+
+        if (ENABLELOGGING)
+        {
+            log("Hello, logging world.");
+        }
+    }
+}
+ The compiler will remove the code block with "Hello, logging world." in it if ENABLE_LOGGING is set to true because it's a static final value. If you use an obfuscator such as proguard, then the Config class will vanish too. An obfuscator would also allow things like this instead: public class MyClass
+{
+    public myMethod()
+    {
+        System.out.println("Hello, non-logging world");
+
+        Log.log("Hello, logging world.");
+    }
+}
+ import static Config.*;
+
+public abstract class Log
+{
+    public static void log(String s)
+    {
+        if (ENABLELOGGING)
+        {
+            log(s);
+        }
+    }
+}
+ The method Log#log would reduce to nothing in the compiler, and be removed by the obfuscator, along with any calls to that method and eventually even the Log class would itself be removed. Java contains some sort of preprocessor of its own. It's called APT. It processes and generates code. At the moment I'm not sure how this should work (I haven't tried it). But it seems to be used for these kind of things. To directly answer your question: I don't know. But here is another solution to your problem: In my mind, there are two statements that collide with each other here: "debug statements" and "production code". What is the purpose of debug statements? Help to get rid of bugs while (unit) testing. If a piece of software is properly tested and works according to the requirements, debug statements are nothing else but OBSOLETE. I strongly disagree with leaving any debug statements in production code. I bet nobody bothers testing side-effects of debug code in production code. The code probably does what it's supposed to do, but does it do more than that? Do all your #defines work correctly and really take ALL of the debug code out? Who analyzes 100000 lines of pre-processed code to see if all the debug stuff is gone? Unless we have a different definition of production code, you should consider taking out the debug statements after the code is tested and be done with it. Two recommendations. First: for real logging, use a modern logging package like log4j or java's own built in logging. Don't worry about performance so much, the logging level check is on the order of nanoseconds. (it's an integer comparison). And if you have more than a single log statement, guard the whole block: (log4j, for example:) if (logger.isDebugEnabled()) {
+
+  // perform expensive operations
+  // build string to log
+
+  logger.debug("....");
+}
+ This gives you the added ability control logging at runtime. Having to restart and run a debug build can be very inconvenient. Second: You may find assertions are more what you need. An assertion is a statement which evaluates to a boolean result, with an optional message:  assert (sky.state != FALLING) : "The sky is falling!";
+ Whenever the assertion results in a false, the assertion fails and an AssertionError is thrown containing your message (this is an unchecked exception, intended to exit the application). The neat thing is, these are treated special by the JVM and can toggled at runtime down to the class level, using a VM parameter (no recompile needed). If not enabled, there is zero overhead. I would also highly recommend using a logging framework. The logger.IsDebugEnabled() is not mandatory, it is just that it can be faster to check whether the system is in the debug level before logging. Using a logging framework means you can configure logging levels on the fly without restarting the application. You could have logging like: logger.error("Something bad happened")
+logger.debug("Something bad happend with loads more detail")
+ Another possibility is to put the if statement within your logging function, you get less code this way, but at the expense of some extra function calls. I'm also not a big fan of completely removing the debug code. Once you're in production, you'll probably need access to debug messages if something goes wrong. If you remove all of your code level debugging, than this isn't a possibility. This "trick" seems to make your debug statements vanished public static final boolean DEBUG = false;
+
+if (DEBUG) { //disapeared on compilation }
+ The post said that javac is smart enough to check the static final boolean and exclude the debug statements. (I did not personally try it) For logging, I personally donot like to see code like: if (logger.isDebugEnabled()) {
+    logger.debug("....");
+}
+realImportantWork();
+ The logging things distracts me from the realImportantWork(). The right way for me is: logger.debug("....");
+realImportantWork()
+ plus the config which excludes all debug messages on Production. I mean that the logger.isDebugEnabled() control should be the job of the logging framework, not my job. Most logging framework support concepts like "logger", "LogLevel".. which can do the trick.

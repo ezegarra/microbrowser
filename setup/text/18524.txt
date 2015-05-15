@@ -1,0 +1,74 @@
+Java: Best way of converting List to List string collections integer As far as I know, iterate and instantiate is the only way to do this. Something like (for others potential help, since I'm sure you know how to do this): List<Integer> oldList = ...
+/* Specify the size of the list up front to prevent resizing. */
+List<String> newList = new ArrayList<String>(oldList.size()) 
+for (Integer myInt : oldList) { 
+  newList.add(String.valueOf(myInt)); 
+}
+ @Jonathan: I could be mistaken, but I believe that String.valueOf() in this case will call the String.valueOf(Object) function rather than getting boxed to String.valueOf(int). String.valueOf(Object) just returns "null" if it is null or calls Object.toString() if non-null, which shouldn't involve boxing (although obviously instantiating new string objects is involved). Instead of using String.valueOf I'd use .toString(); it avoids some of the auto boxing described by @johnathan.holland The javadoc says that valueOf returns the same thing as Integer.toString(). List<Integer> oldList = ...
+List<String> newList = new ArrayList<String>(oldList.size());
+
+for (Integer myInt : oldList) { 
+  newList.add(myInt.toString()); 
+}
+ I think using Object.toString() for any purpose other than debugging is probably a really bad idea, even though in this case the two are functionally equivalent (assuming the list has no nulls). Developers are free to change the behavior of any toString() method without any warning, including the toString() methods of any classes in the standard library. Don't even worry about the performance problems caused by the boxing/unboxing process. If performance is critical, just use an array. If it's really critical, don't use Java. Trying to outsmart the JVM will only lead to heartache. The source for String.valueOf shows this: public static String valueOf(Object obj) {
+    return (obj == null) ? "null" : obj.toString();
+}
+ Not that it matters much, but I would use toString. You can't avoid the "boxing overhead"; Java's faux generic containers can only store Objects, so your ints must be boxed into Integers. In principle it could avoid the downcast from Object to Integer (since it's pointless, because Object is good enough for both String.valueOf and Object.toString) but I don't know if the compiler is smart enough to do that. The conversion from String to Object should be more or less a no-op, so I would be disinclined to worry about that one. Not core Java, and not generic-ified, but the popular Jakarta commons collections library has some useful abstractions for this sort of task. Specifically, have a look at the collect methods on CollectionUtils Something to consider if you are already using commons collections in your project. What you're doing is fine, but if you feel the need to 'Java-it-up' you could use a Transformer and the collect method from Apache Commons, e.g.: public class IntegerToStringTransformer implements Transformer<Integer, String> {
+   public String transform(final Integer i) {
+      return (i == null ? null : i.toString);
+   }
+}
+ ..and then.. CollectionUtils.collect(
+   collectionOfIntegers, 
+   new IntegerToStringTransformer(), 
+   newCollectionOfStrings);
+ To the people concerned about "boxing" in jsight's answer: there is none. String.valueOf(Object) is used here, and no unboxing to int is ever performed. Whether you use Integer.toString() or String.valueOf(Object) depends on how you want to handle possible nulls. Do you want to throw an exception (probably), or have "null" Strings in your list (maybe). If the former, do you want to throw a NullPointerException or some other type? Also, one small flaw in jsight's response: List is an interface, you can't use the new operator on it. I would probably use a java.util.ArrayList in this case, especially since we know up front how long the list is likely to be. An answer for experts only:     List<Integer> ints = ...;
+    String all = new ArrayList<Integer>(ints).toString();
+    String[] split = all.substring(1, all.length()-1).split(", ");
+    List<String> strs = Arrays.asList(split);
+ Just for fun, a solution using the jsr166y fork-join framework that should in JDK7. import java.util.concurrent.forkjoin.*;
+
+private final ForkJoinExecutor executor = new ForkJoinPool();
+...
+List<Integer> ints = ...;
+List<String> strs =
+    ParallelArray.create(ints.size(), Integer.class, executor)
+    .withMapping(new Ops.Op<Integer,String>() { public String op(Integer i) {
+        return String.valueOf(i);
+    }})
+    .all()
+    .asList();
+ (Disclaimer: Not compiled. Spec is not finalised. Etc.) Unlikely to be in JDK7 is a bit of type inference and syntactical sugar to make that withMapping call less verbose:     .withMapping(#(Integer i) String.valueOf(i))
+ This is such a basic thing to do I wouldn't use an external library (it will cause a dependency in your project that you probably don't need). We have a class of static methods specifically crafted to do these sort of jobs. Because the code for this is so simple we let Hotspot do the optimization for us. This seems to be a theme in my code recently: write very simple (straightforward) code and let Hotspot do its magic. We rarely have performance issues around code like this - when a new VM version comes along you get all the extra speed benefits etc. As much as I love Jakarta collections, they don't support Generics and use 1.4 as the LCD. I am wary of Google Collections because they are listed as Alpha support level! Using Google Collections, you could use the transform method in the Lists class import com.google.common.collect.Lists;
+import com.google.common.base.Functions
+
+List<Integer> integers = Arrays.asList(1, 2, 3, 4);
+
+List<String> strings = Lists.transform(integers, Functions.toStringFunction());
+ The List returned by transform is a view on the backing list - the transformation will be applied on each access to the transformed list. Be aware that Functions.toStringFunction() will throw a NullPointerException when applied to null, so only use it if you are sure your list will not contain null. Lambdaj allows to do that in a very simple and readable way. For example, supposing you have a list of Integer and you want to convert them in the corresponding String representation you could write something like that; List<Integer> ints = asList(1, 2, 3, 4);
+Iterator<String> stringIterator = convertIterator(ints, new Converter<Integer, String> {
+    public String convert(Integer i) { return Integer.toString(i); }
+}
+ Lambdaj applies the conversion function only while you're iterating on the result. Here's a one-liner solution without cheating with a non-JDK library. List<String> strings = Arrays.asList(list.toString().replaceAll("\\[(.*)\\]", "$1").split(", "));
+ I just wanted to chime in with an object oriented solution to the problem. If you model domain objects, then the solution is in the domain objects. The domain here is a List of integers for which we want string values. The easiest way would be to not convert the list at all. That being said, in order to convert without converting, change the original list of Integer to List of Value, where Value looks something like this... class Value {
+    Integer value;
+    public Integer getInt()
+    {
+       return value;
+    }
+    public String getString()
+    {
+       return String.valueOf(value);
+    }
+}
+ This will be faster and take up less memory than copying the List. Good Luck! Solution for Java 8. A bit longer than the Guava one, but at least you don't have to install a library. import java.util.Arrays;
+import java.util.List;
+import java.util.stream.Collectors;
+
+//...
+
+List<Integer> integers = Arrays.asList(1, 2, 3, 4);
+List<String> strings = integers.stream().map(Object::toString)
+                                        .collect(Collectors.toList());
+ Another Solution using Guava and Java 8 List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+List<String> strings = Lists.transform(numbers, number -> String.valueOf(number));

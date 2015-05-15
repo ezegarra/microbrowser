@@ -1,0 +1,9 @@
+Can a servlet determine if the data posted to it is enctype="multipart/form-data"? servlets multipartform-data frontcontroller Yes, the Content-type header in the user agent's request should include multipart/form-data as described in (at least) the HTML4 spec: http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.2 You can call a method to get the content type. http://java.sun.com/j2ee/sdk_1.3/techdocs/api/javax/servlet/ServletRequest.html#getContentType() According to http://www.w3.org/TR/html401/interact/forms.html#h-17.13.4.2, the content type will be "multipart/form-data". Don't forget that: request.getContent() may return null. request.getContent() may not be equal to "multipart/form-data", but may just start with it. So, with all this in mind: if (request.getContentType() != null && 
+    request.getContentType().toLowerCase().indexOf("multipart/form-data") > -1 ) 
+{
+    << code block >>
+}
+ You'll have to read the request parameters in order to determine this, at least on some level. The ServletRequest class has a getContentType method that you'll want to look at. If you are going to try using the request.getContentType() method presented above, be aware that: request.getContent() may return null. request.getContent() may not be equal to "multipart/form-data", but may just start with it. With this in mind, the check you should run is : if (request.getContentType() != null && request.getContentType().toLowerCase().indexOf("multipart/form-data") > -1 ) {
+// Multipart logic here
+}
+ ServletFileUpload implements isMultipartContent(). Perhaps you can lift this implementation (as opposed to going through the overhead to create a ServletFileUpload) for your needs. http://www.docjar.com/html/api/org/apache/commons/fileupload/servlet/ServletFileUpload.java.html

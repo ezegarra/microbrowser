@@ -1,0 +1,49 @@
+Java and SQLite sqlite The wiki lists some more wrappers: Java wrapper (around a SWIG interface): http://tk-software.home.comcast.net/ A good tutorial to use JDBC driver for SQLite. (it works at least !) http://www.ci.uchicago.edu/wiki/bin/view/VDS/VDSDevelopment/UsingSQLite JDBC driver for Windows, Linux, Mac OS X, and Pure Java: https://bitbucket.org/xerial/sqlite-jdbc/overview (formerly zentus) Another Java - SWIG wrapper. It only works on Win32. http://rodolfo_3.tripod.com/index.html sqlite-java-shell: 100% pure Java port of the sqlite3 commandline shell built with NestedVM. (This is not a JDBC driver). SQLite JDBC Driver for Mysaifu JVM: SQLite JDBC Driver for Mysaifu JVM and SQLite JNI Library for Windows (x86) and Linux (i386/PowerPC). Hey, I found your question while searching for information with SQLite and Java. Just thought I'd add my answer which I also posted on my blog. I have been coding in Java for a while now. I have also known about SQLite but never used it… Well I have used it through other applications but never in an app that I coded. So I needed it for a project this week and it's so simple use! First I found the website of David Crawshaw who has a Java JDBC driver for SQLite. Just add his JAR file to your classpath and import java.sql.* His test app will create a database file, send some SQL commands to create a table, store some data in the table, and read it back and display on console. It will create the test.db file in the root directory of the project. You can run this example with java -cp .:sqlitejdbc-v056.jar Test. package com.rungeek.sqlite;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.Statement;
+
+public class Test {
+    public static void main(String[] args) throws Exception {
+        Class.forName("org.sqlite.JDBC");
+        Connection conn = DriverManager.getConnection("jdbc:sqlite:test.db");
+        Statement stat = conn.createStatement();
+        stat.executeUpdate("drop table if exists people;");
+        stat.executeUpdate("create table people (name, occupation);");
+        PreparedStatement prep = conn.prepareStatement(
+            "insert into people values (?, ?);");
+
+        prep.setString(1, "Gandhi");
+        prep.setString(2, "politics");
+        prep.addBatch();
+        prep.setString(1, "Turing");
+        prep.setString(2, "computers");
+        prep.addBatch();
+        prep.setString(1, "Wittgenstein");
+        prep.setString(2, "smartypants");
+        prep.addBatch();
+
+        conn.setAutoCommit(false);
+        prep.executeBatch();
+        conn.setAutoCommit(true);
+
+        ResultSet rs = stat.executeQuery("select * from people;");
+        while (rs.next()) {
+            System.out.println("name = " + rs.getString("name"));
+            System.out.println("job = " + rs.getString("occupation"));
+        }
+        rs.close();
+        conn.close();
+    }
+  }
+ I understand you asked specifically about SQLite, but maybe HSQL database would be a better fit with Java. It is written in Java itself, runs in the JVM, supports in-memory tables etc. and all that features make it quite usable for prototyping and unit-testing. There is a new project SQLJet that is a pure Java implementation of SQLite. It doesn't support all of the SQLite features yet, but may be a very good option for some of the Java projects that work with SQLite databases. Bernie's post is very helpful. Couldn't vote up (don't have enough reputation :( ). But it Helped a lot. Just to reiterate! http://www.zentus.com/sqlitejdbc/ Here you can find the latest SQLite JDBC jar. Just add the jar into you classpath and you are done! :) You can run Bernie's sample code to test if everything is fine. http://souptonuts.sourceforge.net/readme_sqlite_tutorial.html http://www.sqlite.org/lang.html Here you can find some help on SQL syntax for SQLite. Cheers to SQLite :) The example code leads to a memory leak in Tomcat (after undeploying the webapp, the classloader still remains in memory) which will cause an outofmemory eventually. The way to solve it is to use the sqlite-jdbc-3.7.8.jar; it's a snapshot, so it doesn't appear for maven yet. Typo: java -cp .:sqlitejdbc-v056.jar Test should be: java -cp .:sqlitejdbc-v056.jar; Test notice the semicolon after ".jar" i hope that helps people, could cause a lot of hassle When you compile and run the code, you should set the classpath options value. Just like the following: javac -classpath .;sqlitejdbc-v056.jar Text.java
+
+java -classpath .;sqlitejdbc-v056.jar Text
+ Please pay attention to "." and the sparate ";"(win, the linux is ":") David Crawshaw project(sqlitejdbc-v056.jar) seems out of date and last update was Jun 20, 2009, source here I would recomend Xerials fork of Crawshaw sqlite wrapper. I replaced sqlitejdbc-v056.jar with Xerials sqlite-jdbc-3.7.2.jar file without any problem. Uses same syntax as in Bernie's answer and is much faster and with latest sqlite library. What is different from Zentus's SQLite JDBC? The original Zentus's SQLite JDBC driver http://www.zentus.com/sqlitejdbc/ itself is an excellent utility for using SQLite databases from Java language, and our SQLiteJDBC library also relies on its implementation. However, its pure-java version, which totally translates c/c++ codes of SQLite into Java, is significantly slower compared to its native version, which uses SQLite binaries compiled for each OS (win, mac, linux). To use the native version of sqlite-jdbc, user had to set a path to the native codes (dll, jnilib, so files, which are JNDI C programs) by using command-line arguments, e.g., -Djava.library.path=(path to the dll, jnilib, etc.), or -Dorg.sqlite.lib.path, etc. This process was error-prone and bothersome to tell every user to set these variables. Our SQLiteJDBC library completely does away these inconveniences. Another difference is that we are keeping this SQLiteJDBC libray up-to-date to the newest version of SQLite engine, because we are one of the hottest users of this library. For example, SQLite JDBC is a core component of UTGB (University of Tokyo Genome Browser) Toolkit, which is our utility to create personalized genome browsers. EDIT : As usual when you update something, there will be problems in some obscure place in your code(happened to me). Test test test =) sqlitejdbc code can be downloaded using git from https://github.com/crawshaw/sqlitejdbc. # git clone https://github.com/crawshaw/sqlitejdbc.git sqlitejdbc
+...
+# cd sqlitejdbc
+# make
+ Note: Makefile requires curl binary to download sqlite libraries/deps.

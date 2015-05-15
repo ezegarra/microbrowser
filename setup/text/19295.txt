@@ -1,0 +1,117 @@
+Database backed i18n for java web-app internationalization Are you just asking how to store UTF-8/16 characters in a DB? in mysql it's just a matter of making sure you build with UTF8 support and setting that as the default, or specifying it at the column or table level. I've done this in oracle and mysql before. Create a table and cut and paste some i18n data into it and see what happens... you might be set already.. or am I completely missing your point? edit: to be more explicit... I usually implement a three column table... language, key, value... where "value" contains potentially foreign language words or phrases... "language" contains some language key and "key" is an english key (i.e. login.error.password.dup)... language and key are indexed... I've then built interfaces on a structure like this that shows each key with all its translations (values)... it can get fancy and include audit trails and "dirty" markers and all the other stuff you need to enable translators and data entry folk to make use of it.. Edit 2: Now that you added the info about the JSTL tags, I understand a bit more... I've never done that myself.. but I found this old info on theserverside... HttpSession session = .. [get hold of the session] 
+ResourceBundle bundle = new PropertyResourceBundle(toInputStream(myOwnProperties)) [toInputStream just stores the properties into an inputstream] 
+Locale locale = .. [get hold of the locale]
+javax.servlet.jsp.jstl.core.Config.set(session, Config.FMT_LOCALIZATION_CONTEXT, new LocalizationContext(bundle ,locale));
+ We have a database table with key/language/term where key is a n integer and is a combined primary key together with language. We are using Struts, so we ended up writing our own PropertyMessageResources implementation which allows us to do something like <bean:message key="impressum.text" />. It works very well and gives us the flexibility to do dynamically switch languages in the front-end as well as updating the translations on the fly. I finally got this working with danb's help above. This is my resource bundle class and resource bundle control class. I used this code from @[danb]'s. ResourceBundle bundle = ResourceBundle.getBundle("AwesomeBundle", locale, DbResourceBundle.getMyControl());
+javax.servlet.jsp.jstl.core.Config.set(actionBeanContext.getRequest(), Config.FMT_LOCALIZATION_CONTEXT, new LocalizationContext(bundle, locale));
+ and wrote this class. public class DbResourceBundle extends ResourceBundle
+{
+    private Properties properties;
+
+    public DbResourceBundle(Properties inProperties)
+    {
+    	properties = inProperties;
+    }
+
+    @Override
+    @SuppressWarnings(value = { "unchecked" })
+    public Enumeration<String> getKeys()
+    {
+    	return properties != null ? ((Enumeration<String>) properties.propertyNames()) : null;
+    }
+
+    @Override
+    protected Object handleGetObject(String key)
+    {
+    	return properties.getProperty(key);
+    }
+
+    public static ResourceBundle.Control getMyControl()
+    {
+    	return new ResourceBundle.Control()
+    	{
+
+    		@Override
+    		public List<String> getFormats(String baseName)
+    		{
+    			if (baseName == null)
+    			{
+    				throw new NullPointerException();
+    			}
+    			return Arrays.asList("db");
+    		}
+
+    		@Override
+    		public ResourceBundle newBundle(String baseName, Locale locale, String format, ClassLoader loader, boolean reload) throws IllegalAccessException,
+    		      InstantiationException, IOException
+    		{
+    			if ((baseName == null) || (locale == null) || (format == null) || (loader == null))
+    				throw new NullPointerException();
+    			ResourceBundle bundle = null;
+    			if (format.equals("db"))
+    			{
+    				Properties p = new Properties();
+    				DataSource ds = (DataSource) ContextFactory.getApplicationContext().getBean("clinicalDataSource");
+    				Connection con = null;
+    				Statement s = null;
+    				ResultSet rs = null;
+    				try
+    				{
+    					con = ds.getConnection();
+    					StringBuilder query = new StringBuilder();
+    					query.append("select label, value from i18n where bundle='" + StringEscapeUtils.escapeSql(baseName) + "' ");
+
+    					if (locale != null)
+    					{
+    						if (StringUtils.isNotBlank(locale.getCountry()))
+    						{
+    							query.append("and country='" + escapeSql(locale.getCountry()) + "' ");
+
+    						}
+    						if (StringUtils.isNotBlank(locale.getLanguage()))
+    						{
+    							query.append("and language='" + escapeSql(locale.getLanguage()) + "' ");
+
+    						}
+    						if (StringUtils.isNotBlank(locale.getVariant()))
+    						{
+    							query.append("and variant='" + escapeSql(locale.getVariant()) + "' ");
+
+    						}
+    					}
+    					s = con.createStatement();
+    					rs = s.executeQuery(query.toString());
+    					while (rs.next())
+    					{
+    						p.setProperty(rs.getString(1), rs.getString(2));
+    					}
+    				}
+    				catch (Exception e)
+    				{
+    					e.printStackTrace();
+    					throw new RuntimeException("Can not build properties: " + e);
+    				}
+    				finally
+    				{
+    					DbUtils.closeQuietly(con, s, rs);
+    				}
+    				bundle = new DbResourceBundle(p);
+    			}
+    			return bundle;
+    		}
+
+    		@Override
+    		public long getTimeToLive(String baseName, Locale locale)
+    		{
+    			return 1000 * 60 * 30;
+    		}
+
+    		@Override
+    		public boolean needsReload(String baseName, Locale locale, String format, ClassLoader loader, ResourceBundle bundle, long loadTime)
+    		{
+    			return true;
+    		}
+
+    	};
+    }
+ Actuly what ScArcher2 needed is davids response which is not marked a correct or helpfull. The solution ScArcher2 chose to use is imo terrible mestake:) Loading ALL the translations at one time... in any bigger application its gonna kill it. Loading thousends of translations each request... david's method is more commonly used in real production environments. Sometimes to limit db calls, which is with every message translated, you can create groups of translations by topic, functionality etc. to preload them. But this is little bit more complex and can be substituted with good cache system.

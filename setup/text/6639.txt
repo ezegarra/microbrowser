@@ -1,0 +1,15 @@
+How should I load files into my Java application? file loading The short answer Use one of these two methods: Class.getResource(String) Class.getResourceAsStream(String) For example: InputStream inputStream = 
+                YourClass.class.getResourceAsStream("image.jpg");
+ -- The long answer Typically, one would not want to load files using absolute paths. For example, don’t do this if you can help it: File file = new File("C:\\Users\\Joe\\image.jpg");
+ This technique is not recommended for at least two reasons. First, it creates a dependency on a particular operating system, which prevents the application from easily moving to another operating system. One of Java’s main benefits is the ability to run the same bytecode on many different platforms. Using an absolute path like this makes the code much less portable. Second, depending on the relative location of the file, this technique might create an external dependency and limit the application’s mobility. If the file exists outside the application’s current directory, this creates an external dependency and one would have to be aware of the dependency in order to move the application to another machine (error prone). Instead, use the getResource() methods in the Class class. This makes the application much more portable. It can be moved to different platforms, machines, or directories and still function correctly. getResource is fine, but using relative paths will work just as well too, as long as you can control where your working directory is (which you usually can). Furthermore the platform dependence regarding the separator character can be gotten around using File.separator, File.separatorChar, or System.getProperty("file.separator"). I haven't had a problem just using unix-style path separators, even on Windows (though it is good practice to check File.separatorChar). The technique of using ClassLoader.getResource() is best for read-only resources that are going to be loaded from JAR files. Sometimes, you can programmatically determine the application directory, which is useful for admin-configurable files or server applications. (Of course, user-editable files should be stored somewhere in the System.getProperty("user.home") directory.) What are you loading the files for - configuration or data (like an input file) or as a resource? If as a resource, follow the suggestion and example given by Will and Justin If configuration, then you can use a ResourceBundle or Spring (if your configuration is more complex). If you need to read a file in order to process the data inside, this code snippet may help BufferedReader file = new BufferedReader(new FileReader(filename)) and then read each line of the file using file.readLine(); Don't forget to close the file. public byte[] loadBinaryFile (String name) {
+    try {
+
+        DataInputStream dis = new DataInputStream(new FileInputStream(name));
+        byte[] theBytes = new byte[dis.available()];
+        dis.read(theBytes, 0, dis.available());
+        dis.close();
+        return theBytes;
+    } catch (IOException ex) {
+    }
+    return null;
+} // ()

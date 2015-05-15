@@ -1,0 +1,246 @@
+Does finally always execute in Java? return try-catch-finally finally finally will be called. The only time finally won't be called is if you call System.exit() or if the JVM crashes first. finally is always executed unless there is abnormal program termination (like calling System.exit(0)..). so, you sysout will get printed Yes it will get called. That's the whole point of having a finally keyword. If jumping out of the try/catch block could just skip the finally block it was the same as putting the System.out.println outside the try/catch. //proof code class Test
+{
+    public static void main(String args[]) 
+    { 
+    	System.out.println(Test.test()); 
+    }
+
+    public static int test()
+    {
+    	try {  
+            	return 0;  
+    	}  
+    	finally {  
+    	    System.out.println("finally trumps return.");
+    	}
+    }
+}
+ output: finally trumps return. 
+0
+ That's actually true in any language...finally will always execute before a return statement, no matter where that return is in the method body. If that wasn't the case, the finally block wouldn't have much meaning. The finally block is always executed unless there is abnormal program termination, either resulting from a JVM crash or from a call to System.exit(0). On top of that, any value returned from within the finnally block will override the value returned prior to execution of the finally block, so be careful of checking all exit points when using try finally. Also, although it's bad practice, if there is a return statement within the finally block, it will trump any other return from the regular block. That is, the following block would return false: try { return true; } finally { return false; }
+ Same thing with throwing exceptions from the finally block. Also a return in finally will throw away any exception. http://jamesjava.blogspot.com/2006/03/dont-return-in-finally-clause.html A logical way to think about this is: Code placed in a finally block must be executed whatever occurs within the try block So if code in the try block tries to return a value or throw an exception the item is placed 'on the shelf' till the finally block can execute Because code in the finally block has (by definition) a high priority it can return or throw whatever it likes. In which case anything left 'on the shelf' is discarded. The only exception to this is if the VM shuts down completely during the try block e.g. by 'System.exit' In addition to the point about return in finally replacing a return in the try block, the same is true of an exception. A finally block that throws an exception will replace a return or exception thrown from within the try block. I tried the above example with slight modification- public static void main(String[] args) { System.out.println(Test.test());
+ } public static int test() { int i = 0;
+try {
+  i=2;
+  return i;
+} finally {
+  i = 12;
+  System.out.println("finally trumps return.");
+}  
+ } The above code outputs- finally trumps return. 2 This is because when return i; is executed i has a value 2. After this the finally block is executed where 12 is assigned to i and then sys out is executed. After executing finally block the try block returns 2, rather than returning i=12, because this return statement is not executed again. If you will debug this code in Eclipse then you'll get a feeling that after executing Sys out of finally block the return statement of try block is executed again. But this is not the case. It simply returns the value 2. Finally is always run that's the whole point, just because it appears in the code after the return doesn't mean that that's how it's implemented. The Java runtime has the responsibility to run this code when exiting the try block. For example if you have the following: int foo() { 
+    try {
+        return 42;
+    }
+    finally {
+        System.out.println("done");
+    }
+}
+ The runtime will generate something like this: int foo() {
+    int ret = 42;
+    System.out.println("done");
+    return 42;
+}
+ If an uncaught exception is thrown the finally block will run and the exception will continue propagating. Because a finally block will always be called unless you call System.exit() (or the thread crashes). That is the whole idea of a finally block. It lets you make sure you do cleanups that might otherwise be skipped because you return, among other things, of course. Finally gets called regardless of what happens in the try block, unless you call System.exit(int) or the Java Virtual Machine kicks out for some other reason. Because the final is always be called in whatever cases you have. You don't have exception, it is still called, catch exception, it is still called In addition to the other responses, it is important to point out that 'finally' has the right to override any exception/returned value by the try..catch block. For example, the following code returns 12: public static int getMonthsInYear(){
+    try{
+        return 10;
+    } finally {
+        return 12;
+    }
+}
+ Similarly, the following method does not throw an exception: public static int getMonthsInYear(){
+    try{
+        throw new RuntimeException();
+    } finally {
+        return 12;
+    }
+}
+ While the following method does throw it: public static int getMonthsInYear(){
+    try{
+        return 12;          
+    } finally {
+        throw new RuntimeException();
+    }
+}
+ Consider this in a normal course of execution (i.e without any Exception being thrown): if method is not 'void' then it always explicitly returns something, yet, finally always gets executed Here's the official words from the Java Language Specification. JLS 14.20.2 Execution of try-catch-finally A try statement with a finally block is executed by first executing the try block. Then there is a choice: If execution of the try block completes normally, [...] If execution of the try block completes abruptly because of a throw of a value V, [...] If execution of the try block completes abruptly for any other reason R, then the finally block is executed. Then there is a choice: If the finally block completes normally, then the try statement completes abruptly for reason R. If the finally block completes abruptly for reason S, then the try statement completes abruptly for reason S (and reason R is discarded). The specification for return actually makes this explicit: JLS 14.17 The return Statement ReturnStatement:
+     return Expression(opt) ;
+ A return statement with no Expression attempts to transfer control to the invoker of the method or constructor that contains it. A return statement with an Expression attempts to transfer control to the invoker of the method that contains it; the value of the Expression becomes the value of the method invocation. The preceding descriptions say "attempts to transfer control" rather than just "transfers control" because if there are any try statements within the method or constructor whose try blocks contain the return statement, then any finally clauses of those try statements will be executed, in order, innermost to outermost, before control is transferred to the invoker of the method or constructor. Abrupt completion of a finally clause can disrupt the transfer of control initiated by a return statement. This is because you assigned the value of i as 12, but did not return the value of i to the function. The correct code is as follows: public static int test()
+{
+    int i=0;
+
+    try {  
+        return i;  
+    }  
+    finally {  
+        i=12;
+        System.out.println("finally trumps return.");
+        return i;
+    }
+}
+ If an exception is thrown, finally runs. If an exception is not thrown, finally runs. If the exception is caught, finally runs. If the exception is not caught, finally runs. Only time it does not run is when JVM exits. Try this code, you will understand the code in finally block is get executed after return statement. public class TestTryCatchFinally {
+    static int x = 0;
+
+    public static void main(String[] args){
+        System.out.println(f1() );
+        System.out.println(f2() );
+    }
+
+    public static int f1(){
+        try{
+            x = 1;
+            return x;
+        }finally{
+            x = 2;
+        }
+    }
+
+    public static int f2(){
+        return x;
+    }
+}
+ No, not always one exception case is// System.exit(0); before the finally block prevents finally to be executed. class A
+{
+public static void main(String args[])
+{
+DataInputStream cin = new DataInputStream(System.in);
+try
+{
+int i=Integer.parseint(cin.readLine());
+}catch(ArithmeticException e)
+{
+}
+catch(Exception e)
+{
+System.exit(0);//Program terminates before executing finally block
+}
+finally()
+{
+System.out.println("No error");
+}
+}
+}
+ Yes, it will. No matter what happens in your try or catch block unless otherwise System.exit() called or JVM crashed. if there is any return statement in the block(s),finally will be executed prior to that return statement. finally block execute always, no matter exception object occur or not. there are two possibility to stop finally block : 1. return statement. 2. System.exit(0); public class test
+{
+public static void main(String[] args)
+{
+if(true)
+{
+return;
+}
+try
+{
+System.out.println(1);
+return;
+ Here's an elaboration of Kevin's answer. It's important to know that the expression to be returned is evaluated before finally, even if it is returned after. class Test
+{
+    public static void main(String args[]) 
+    { 
+        System.out.println(Test.test()); 
+    }
+
+    public static int printX()
+    {
+        System.out.println("X");
+        return 0;
+    }
+
+    public static int test()
+    {
+        try {  
+            return printX();
+        }  
+        finally {  
+            System.out.println("finally trumps return... sort of");
+        }
+    }
+}
+ Output: X
+finally trumps return... sort of
+0
+ Yes It will. Only case it will not is JVM exits or crashes Finally block always execute whether exception handle or not .if any exception occurred before try block then finally block will not execute. Yes, in a try/catch/finally block, the finally will always be called. However, in your example: try {
+   something();
+   return success; // Will return out of the method if successful.
+} catch (Exception ex) {
+   return failure; // Will return out of the method if not successful.
+} finally {
+   // Possibly unreachable code.
+   System.out.println("I'm not sure if this will be printed...");
+}
+ Your finally might not be executed because of the return statements. Now, depending on the circumstances of the code, just one return statement is suffice and pass down a variable. public boolean runSomething () {
+    boolean isSuccess = true;
+    try {
+       something(); // Runs thread. If successful, run finally block.
+    } catch (Exception ex) {
+       // If exception is caught, display (if desired) exception and set
+       // the out bound variable to false. Finally, run finally block.
+       System.out.println("Exception: " + ex.toString());
+       isSuccess = false;
+    } finally {
+       System.out.println("This was executed in the finally.");
+    }
+    return isSuccess; // Returns success flag.
+}
+ I do realize this post is 5 years old, but I hope this will help someone out there! Cheers! I looked up the code below in the generated bytecode since I did not understand why the return value should be 2 and not 12. It would be logical if the code in the finally clause would be put in between the assignment i=2; and the return statement return i; However, the bytecode shows that value 12 is stored in variable 1 while value 2 is stored first in variable 1 but then copied to variable 2. (in L4). Or in other words: the compiler saves the return value in a separate variable and then returns that variable, notwithstanding the fact that the assignment i=12 is executed after the assignment i=2 to the same variable. Therefore I conclude that when a variable is returned, its value is saved before the finally clause gets executed and therefore assignments to the to be returned variable in the finally clause will have no effect on the returned value. TRYCATCHBLOCK L0 L1 L2 null
+L3
+LINENUMBER 31 L3
+ICONST_0
+ISTORE 1
+L0
+LINENUMBER 33 L0
+ICONST_2
+ISTORE 1
+L4
+LINENUMBER 34 L4
+ILOAD 1
+ISTORE 2
+L1
+LINENUMBER 37 L1
+BIPUSH 12
+ISTORE 1
+L5
+LINENUMBER 38 L5
+GETSTATIC java/lang/System.out : Ljava/io/PrintStream;
+NEW java/lang/StringBuilder
+DUP
+INVOKESPECIAL java/lang/StringBuilder.<init> ()V
+LDC "In finally block. Value of i = "
+INVOKEVIRTUAL java/lang/StringBuilder.append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+ILOAD 1
+INVOKEVIRTUAL java/lang/StringBuilder.append (I)Ljava/lang/StringBuilder;
+INVOKEVIRTUAL java/lang/StringBuilder.toString ()Ljava/lang/String;
+INVOKEVIRTUAL java/io/PrintStream.println (Ljava/lang/String;)V
+ILOAD 2
+IRETURN
+ Java code was: public static void main(String[] args) {
+
+      System.out.println(Test.test());
+}
+
+public static int test() {
+
+ int i = 0;
+  try {
+   i=2;
+   return i;
+ } finally {
+   i = 12;
+   System.out.println("In finally block. Value of i = "+i);
+ }  
+}
+ finally block won't called if : System.exit() or Thread.currentThread().join() is called. public class Test {
+
+     public static  void main(String[] args) {
+          System.out.println("main method ");
+     try {
+            System.out.println("try");
+
+            System.exit(0);// OR Thread.currentThread().join(); 
+
+        }catch (Exception e) {
+            System.out.println("catch");
+
+        }finally {
+            System.out.println("finally will not called");
+        } 
+}
+
+}

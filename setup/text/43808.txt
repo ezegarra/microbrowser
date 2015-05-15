@@ -1,0 +1,92 @@
+How to prefetch Oracle sequence ID-s in a distributed environment oracle Why not just have the sequence as increment by 100 all the time? each "nextval" gives you 100 sequence numbers to work with SQL> create sequence so_test start with 100 increment by 100 nocache;
+
+Sequence created.
+
+SQL> select so_test.nextval - 99 as first_seq, so_test.currval as last_seq from dual;
+
+ FIRST_SEQ   LAST_SEQ
+---------- ----------
+         1        100
+
+SQL> /
+
+ FIRST_SEQ   LAST_SEQ
+---------- ----------
+       101        200
+
+SQL> /
+
+ FIRST_SEQ   LAST_SEQ
+---------- ----------
+       201        300
+
+SQL>
+ A note on your example.. Watch out for DDL.. It will produce an implicit commit Example of commit produced by DDL SQL> select * from xx;
+
+no rows selected
+
+SQL> insert into xx values ('x');
+
+1 row created.
+
+SQL> alter sequence so_test increment by 100;
+
+Sequence altered.
+
+SQL> rollback;
+
+Rollback complete.
+
+SQL> select * from xx;
+
+Y
+-----
+x
+
+SQL>
+ Matthew has the correct approach here. In my opinion, it is very unusual for an application to reset a sequence's current value after every use. Much more conventional to set the increment size to whatever you need upfront. Also, this way is much more performant. Selecting nextval from a sequence is a highly optimised operation in Oracle, whereas running ddl to alter the sequence is much more expensive. I guess that doesn't really answer the last point in your edited question... Why do you need to fetch the sequence IDs in the first place? In most cases you would insert into a table and return the ID. insert into t (my_pk, my_data) values (mysequence.nextval, :the_data)
+returning my_pk into :the_pk;
+ It sounds like you are trying to pre-optimize the processing. If you REALLY need to pre-fetch the IDs then just call the sequence 100 times. The entire point of a sequence is that it manages the numbering. You're not supposed to assume that you can get 100 consecutive numbers. For when you don't want a fixed size increment, sequences aren't really what you are after, all they really guarantee is that you will be getting a unique number always bigger than the last one you got. There is always the possibility that you'll end up with gaps, and you can't really adjust the increment amount on the fly safely or effectively. I can't really think of any case where I've had to do this kind of thing, but likely the easiest way is just to store the "current" number somewhere and update it as you need it. Something like this. drop table t_so_test;
+
+create table t_so_test (curr_num number(10));
+
+insert into t_so_test values (1);
+create or replace procedure p_get_next_seq (inc IN NUMBER, v_next_seq OUT NUMBER) As
+BEGIN
+  update t_so_test set curr_num = curr_num + inc RETURNING curr_num into v_next_seq;
+END;
+/
+
+
+SQL> var p number;
+SQL> execute p_get_next_seq(100,:p);
+
+PL/SQL procedure successfully completed.
+
+SQL> print p;
+
+         P
+----------
+       101
+
+SQL> execute p_get_next_seq(10,:p);     
+
+PL/SQL procedure successfully completed.
+
+SQL> print p;
+
+         P
+----------
+       111
+
+SQL> execute p_get_next_seq(1000,:p);
+
+PL/SQL procedure successfully completed.
+
+SQL> print p;
+
+         P
+----------
+      1111
+
+SQL>

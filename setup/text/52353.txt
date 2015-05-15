@@ -1,0 +1,347 @@
+In Java, what is the best way to determine the size of an object? memory I doubt you want to do it programmatically unless you just want to do it once and store it for future use. It's a costly thing to do. There's no sizeof() operator in Java, and even if there was, it would only count the cost of the references to other objects and the size of the primitives. One way you could do it is to serialize the thing to a File and look at the size of the file, like this: Serializable myObject;
+ObjectOutputStream oos = new ObjectOutputStream (new FileOutputStream ("obj.ser"));
+oos.write (myObject);
+oos.close ();
+ Of course, this assumes that each object is distinct and doesn't contain non-transient references to anything else. Another strategy would be to take each object and examine its members by reflection and add up the sizes (boolean & byte = 1 byte, short & char = 2 bytes, etc.), working your way down the membership hierarchy. But that's tedious and expensive and ends up doing the same thing the serialization strategy would do. There isn't a method call, if that's what you're asking for. With a little research, I suppose you could write your own. A particular instance has a fixed sized derived from the number of references and primitive values plus instance bookkeeping data. You would simply walk the object graph. The less varied the row types, the easier. If that's too slow or just more trouble than it's worth, there's always good old-fashioned row counting rule-of-thumbs. If you would just like to know how much memory is being used in your JVM, and how much is free, you could try something like this: // Get current size of heap in bytes
+long heapSize = Runtime.getRuntime().totalMemory();
+
+// Get maximum size of heap in bytes. The heap cannot grow beyond this size.
+// Any attempt will result in an OutOfMemoryException.
+long heapMaxSize = Runtime.getRuntime().maxMemory();
+
+// Get amount of free memory within the heap in bytes. This size will increase
+// after garbage collection and decrease as new objects are created.
+long heapFreeSize = Runtime.getRuntime().freeMemory();
+ edit: I thought this might be helpful as the question author also stated he would like to have logic that handles "read as many rows as possible until I've used 32MB of memory." You have to walk the objects using reflection. Be careful as you do: Just allocating an object has some overhead in the JVM. The amount varies by JVM so you might make this value a parameter. At least make it a constant (8 bytes?) and apply to anything allocated. Just because byte is theoretically 1 byte doesn't mean it takes just one in memory. There will be loops in object references, so you'll need to keep a HashMap or somesuch using object-equals as the comparator to eliminate infinite loops. @jodonnell: I like the simplicity of your solution, but many objects aren't Serializable (so this would throw an exception), fields can be transient, and objects can override the standard methods. You have to measure it with a tool, or estimate it by hand, and it depends on the JVM you are using. There is some fixed overhead per object. It's JVM-specific, but I usually estimate 40 bytes. Then you have to look at the members of the class. Object references are 4 (8) bytes in a 32-bit (64-bit) JVM. Primitive types are: boolean and byte: 1 byte char and short: 2 bytes int and float: 4 bytes long and double: 8 bytes Arrays follow the same rules; that is, it's an object reference so that takes 4 (or 8) bytes in your object, and then its length multiplied by the size of its element. Trying to do it programmatically with calls to Runtime.freeMemory() just doesn't give you much accuracy, because of asynchronous calls to the garbage collector, etc. Profiling the heap with -Xrunhprof or other tools will give you the most accurate results. Firstly "the size of an object" isn't a well-defined concept in Java. You could mean the object itself, with just its members, the Object and all objects it refers to (the reference graph). You could mean the size in memory or the size on disk. And the JVM is allowed to optimise things like Strings. So the only correct way is to ask the JVM, which a good profiler (I use YourKit), which probably isn't what you want. However, from the description above it sounds like each row will be self-contained, and not have a big dependency tree, so the serialization method will probably be a good approximation on most JVMs. The easiest way to do this is as follows:  Serializable ser;
+ ByteArrayOutputStream baos = new ByteArrayOutputStream();
+ ObjectOutputStream oos = new ObjectOutputStream(baos);
+ oos.writeObject(ser);
+ oos.close();
+ return baos.size();
+ Remember that if you have objects with common references this will not give the correct result, and size of serialization will not always match size in memory, but it is a good approximation. The code will be a bit more efficient if you initialise the ByteArrayOutputStream size to a sensible value. Some years back Javaworld had an article on determining the size of composite and potentially nested Java objects, they basically walk through creating a sizeof() implementation in Java. The approach basically builds on other work where people experimentally identified the size of primitives and typical Java objects and then apply that knowledge to a method that recursively walks an object graph to tally the total size. It is always going to be somewhat less accurate than a native C implementation simply because of the things going on behind the scenes of a class but it should be a good indicator. Alternatively a SourceForge project appropriately called sizeof that offers a Java5 library with a sizeof() implementation. P.S. Do not use the serialization approach, there is no correlation between the size of a serialized object and the amount of memory it consumes when live. You can use the java.lang.instrument package Compile and put this class in a JAR: import java.lang.instrument.Instrumentation;
+
+public class ObjectSizeFetcher {
+    private static Instrumentation instrumentation;
+
+    public static void premain(String args, Instrumentation inst) {
+        instrumentation = inst;
+    }
+
+    public static long getObjectSize(Object o) {
+        return instrumentation.getObjectSize(o);
+    }
+}
+ Add the following to your MANIFEST.MF: Premain-Class: ObjectSizeFetcher
+ Use getObjectSize: public class C {
+    private int x;
+    private int y;
+
+    public static void main(String [] args) {
+        System.out.println(ObjectSizeFetcher.getObjectSize(new C()));
+    }
+}
+ Invoke with: java -javaagent:ObjectSizeFetcherAgent.jar C
+ The java.lang.instrument.Instrumentation class provides a nice way to get the size of a Java Object, but it requires you to define a premain and run your program with a java agent. This is very boring when you do not need any agent and then you have to provide a dummy Jar agent to your application. So I got an alternative solution using the Unsafe class from the sun.misc. So, considering the objects heap alignment according to the processor architecture and calculating the maximum field offset, you can measure the size of a Java Object. In the example below I use an auxiliary class UtilUnsafe to get a reference to the sun.misc.Unsafe object. private static final int NR_BITS = Integer.valueOf(System.getProperty("sun.arch.data.model"));
+private static final int BYTE = 8;
+private static final int WORD = NR_BITS/BYTE;
+private static final int MIN_SIZE = 16; 
+
+public static int sizeOf(Class src){
+    //
+    // Get the instance fields of src class
+    // 
+    List<Field> instanceFields = new LinkedList<Field>();
+    do{
+        if(src == Object.class) return MIN_SIZE;
+        for (Field f : src.getDeclaredFields()) {
+            if((f.getModifiers() & Modifier.STATIC) == 0){
+                instanceFields.add(f);
+            }
+        }
+        src = src.getSuperclass();
+    }while(instanceFields.isEmpty());
+    //
+    // Get the field with the maximum offset
+    //  
+    long maxOffset = 0;
+    for (Field f : instanceFields) {
+        long offset = UtilUnsafe.UNSAFE.objectFieldOffset(f);
+        if(offset > maxOffset) maxOffset = offset; 
+    }
+    return  (((int)maxOffset/WORD) + 1)*WORD; 
+}
+class UtilUnsafe {
+    public static final sun.misc.Unsafe UNSAFE;
+
+    static {
+        Object theUnsafe = null;
+        Exception exception = null;
+        try {
+            Class<?> uc = Class.forName("sun.misc.Unsafe");
+            Field f = uc.getDeclaredField("theUnsafe");
+            f.setAccessible(true);
+            theUnsafe = f.get(uc);
+        } catch (Exception e) { exception = e; }
+        UNSAFE = (sun.misc.Unsafe) theUnsafe;
+        if (UNSAFE == null) throw new Error("Could not obtain access to sun.misc.Unsafe", exception);
+    }
+    private UtilUnsafe() { }
+}
+ You could generate a heap dump (with jmap, for example) and then analyze the output to find object sizes. This is an offline solution, but you can examine shallow and deep sizes, etc. There is also the Memory Measurer tool, which is simple and published under the commercial-friendly Apache 2.0 license, as discussed in a similar question. It, too, requires a command-line argument to the java interpreter if you want to measure memory byte consumption, but otherwise seems to work just fine, at least in the scenarios I have used it. I wrote a quick test once to estimate on the fly: public class Test1 {
+
+    // non-static nested
+    class Nested { }
+
+    // static nested
+    static class StaticNested { }
+
+    static long getFreeMemory () {
+        // waits for free memory measurement to stabilize
+        long init = Runtime.getRuntime().freeMemory(), init2;
+        int count = 0;
+        do {
+            System.out.println("waiting..." + init);
+            System.gc();
+            try { Thread.sleep(250); } catch (Exception x) { }
+            init2 = init;
+            init = Runtime.getRuntime().freeMemory();
+            if (init == init2) ++ count; else count = 0;
+        } while (count < 5);
+        System.out.println("ok..." + init);
+        return init;
+    }
+
+    Test1 () throws InterruptedException {
+
+        Object[] s = new Object[10000];
+        Object[] n = new Object[10000];
+        Object[] t = new Object[10000];
+
+        long init = getFreeMemory();
+
+        //for (int j = 0; j < 10000; ++ j)
+        //    s[j] = new Separate();
+
+        long afters = getFreeMemory();
+
+        for (int j = 0; j < 10000; ++ j)
+            n[j] = new Nested();
+
+        long aftersn = getFreeMemory();
+
+        for (int j = 0; j < 10000; ++ j)
+            t[j] = new StaticNested();
+
+        long aftersnt = getFreeMemory();
+
+        System.out.println("separate:      " + -(afters - init) + " each=" + -(afters - init) / 10000);
+        System.out.println("nested:        " + -(aftersn - afters) + " each=" + -(aftersn - afters) / 10000);
+        System.out.println("static nested: " + -(aftersnt - aftersn) + " each=" + -(aftersnt - aftersn) / 10000);
+
+    }
+
+    public static void main (String[] args) throws InterruptedException {
+        new Test1();
+    }
+
+}
+ General concept is allocate objects and measure change in free heap space. The key being getFreeMemory(), which requests GC runs and waits for the reported free heap size to stabilize. The output of the above is: nested:        160000 each=16
+static nested: 160000 each=16
+ Which is what we expect, given alignment behavior and possible heap block header overhead. The instrumentation method detailed in the accepted answer here the most accurate. The method I described is accurate but only under controlled conditions where no other threads are creating/discarding objects. long heapSizeBefore = Runtime.getRuntime().totalMemory();
+
+// Code for object construction
+...
+long heapSizeAfter = Runtime.getRuntime().totalMemory();
+long size = heapSizeAfter - heapSizeBefore;
+ size gives you the increase in memory usage of the jvm due to object creation and that typically is the size of the object. Here is a utility I made using some of the linked examples to handle 32-bit, 64-bit and 64-bit with compressed OOP. It uses sun.misc.Unsafe. It uses Unsafe.addressSize() to get the size of a native pointer and Unsafe.arrayIndexScale( Object[].class ) for the size of a Java reference. It uses the field offset of a known class to work out the base size of an object. import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.IdentityHashMap;
+import java.util.Stack;
+import sun.misc.Unsafe;
+
+/** Usage: 
+ * MemoryUtil.sizeOf( object )
+ * MemoryUtil.deepSizeOf( object )
+ * MemoryUtil.ADDRESS_MODE
+ */
+public class MemoryUtil
+{
+    private MemoryUtil()
+    {
+    }
+
+    public static enum AddressMode
+    {
+        /** Unknown address mode. Size calculations may be unreliable. */
+        UNKNOWN,
+        /** 32-bit address mode using 32-bit references. */
+        MEM_32BIT,
+        /** 64-bit address mode using 64-bit references. */
+        MEM_64BIT,
+        /** 64-bit address mode using 32-bit compressed references. */
+        MEM_64BIT_COMPRESSED_OOPS
+    }
+
+    /** The detected runtime address mode. */
+    public static final AddressMode ADDRESS_MODE;
+
+    private static final Unsafe UNSAFE;
+
+    private static final long ADDRESS_SIZE; // The size in bytes of a native pointer: 4 for 32 bit, 8 for 64 bit
+    private static final long REFERENCE_SIZE; // The size of a Java reference: 4 for 32 bit, 4 for 64 bit compressed oops, 8 for 64 bit
+    private static final long OBJECT_BASE_SIZE; // The minimum size of an Object: 8 for 32 bit, 12 for 64 bit compressed oops, 16 for 64 bit
+    private static final long OBJECT_ALIGNMENT = 8;
+
+    /** Use the offset of a known field to determine the minimum size of an object. */
+    private static final Object HELPER_OBJECT = new Object() { byte b; };
+
+
+    static
+    {
+        try
+        {
+            // Use reflection to get a reference to the 'Unsafe' object.
+            Field f = Unsafe.class.getDeclaredField( "theUnsafe" );
+            f.setAccessible( true );
+            UNSAFE = (Unsafe) f.get( null );
+
+            OBJECT_BASE_SIZE = UNSAFE.objectFieldOffset( HELPER_OBJECT.getClass().getDeclaredField( "b" ) );
+
+            ADDRESS_SIZE = UNSAFE.addressSize();
+            REFERENCE_SIZE = UNSAFE.arrayIndexScale( Object[].class );
+
+            if( ADDRESS_SIZE == 4 )
+            {
+                ADDRESS_MODE = AddressMode.MEM_32BIT;
+            }
+            else if( ADDRESS_SIZE == 8 && REFERENCE_SIZE == 8 )
+            {
+                ADDRESS_MODE = AddressMode.MEM_64BIT;
+            }
+            else if( ADDRESS_SIZE == 8 && REFERENCE_SIZE == 4 )
+            {
+                ADDRESS_MODE = AddressMode.MEM_64BIT_COMPRESSED_OOPS;
+            }
+            else
+            {
+                ADDRESS_MODE = AddressMode.UNKNOWN;
+            }
+        }
+        catch( Exception e )
+        {
+            throw new Error( e );
+        }
+    }
+
+
+    /** Return the size of the object excluding any referenced objects. */
+    public static long shallowSizeOf( final Object object )
+    {
+        Class<?> objectClass = object.getClass();
+        if( objectClass.isArray() )
+        {
+            // Array size is base offset + length * element size
+            long size = UNSAFE.arrayBaseOffset( objectClass )
+                    + UNSAFE.arrayIndexScale( objectClass ) * Array.getLength( object );
+            return padSize( size );
+        }
+        else
+        {
+            // Object size is the largest field offset padded out to 8 bytes
+            long size = OBJECT_BASE_SIZE;
+            do
+            {
+                for( Field field : objectClass.getDeclaredFields() )
+                {
+                    if( (field.getModifiers() & Modifier.STATIC) == 0 )
+                    {
+                        long offset = UNSAFE.objectFieldOffset( field );
+                        if( offset >= size )
+                        {
+                            size = offset + 1; // Field size is between 1 and PAD_SIZE bytes. Padding will round up to padding size.
+                        }
+                    }
+                }
+                objectClass = objectClass.getSuperclass();
+            }
+            while( objectClass != null );
+
+            return padSize( size );
+        }
+    }
+
+
+    private static final long padSize( final long size )
+    {
+        return (size + (OBJECT_ALIGNMENT - 1)) & ~(OBJECT_ALIGNMENT - 1);
+    }
+
+
+    /** Return the size of the object including any referenced objects. */
+    public static long deepSizeOf( final Object object )
+    {
+        IdentityHashMap<Object,Object> visited = new IdentityHashMap<Object,Object>();
+        Stack<Object> stack = new Stack<Object>();
+        if( object != null ) stack.push( object );
+
+        long size = 0;
+        while( !stack.isEmpty() )
+        {
+            size += internalSizeOf( stack.pop(), stack, visited );
+        }
+        return size;
+    }
+
+
+    private static long internalSizeOf( final Object object, final Stack<Object> stack, final IdentityHashMap<Object,Object> visited )
+    {
+        // Scan for object references and add to stack
+        Class<?> c = object.getClass();
+        if( c.isArray() && !c.getComponentType().isPrimitive() )
+        {
+            // Add unseen array elements to stack
+            for( int i = Array.getLength( object ) - 1; i >= 0; i-- )
+            {
+                Object val = Array.get( object, i );
+                if( val != null && visited.put( val, val ) == null )
+                {
+                    stack.add( val );
+                }
+            }
+        }
+        else
+        {
+            // Add unseen object references to the stack
+            for( ; c != null; c = c.getSuperclass() )
+            {
+                for( Field field : c.getDeclaredFields() )
+                {
+                    if( (field.getModifiers() & Modifier.STATIC) == 0 
+                            && !field.getType().isPrimitive() )
+                    {
+                        field.setAccessible( true );
+                        try
+                        {
+                            Object val = field.get( object );
+                            if( val != null && visited.put( val, val ) == null )
+                            {
+                                stack.add( val );
+                            }
+                        }
+                        catch( IllegalArgumentException e )
+                        {
+                            throw new RuntimeException( e );
+                        }
+                        catch( IllegalAccessException e )
+                        {
+                            throw new RuntimeException( e );
+                        }
+                    }
+                }
+            }
+        }
+
+        return shallowSizeOf( object );
+    }
+}

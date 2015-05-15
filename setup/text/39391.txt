@@ -1,0 +1,19 @@
+Does new URL(...).openConnection() necessarily imply a POST? http url No it does not. But if the protocol of the URL is HTTP, you'll get a HttpURLConnection as a return object. This class has a setRequestMethod method to specify which HTTP method you want to use. If you want to do more sophisticated stuff you're probably better off using a library like Jakarta HttpClient. If you retrieve the URLConnection object using openConnection() it doesn't actually start communicating with the server. That doesn't happen until you get the stream from the URLConnection(). When you first get the connection you can add/change headers and other connection properties before actually opening it. URLConnection's lifecycle is a bit odd. It doesn't send the headers to the server until you've gotten one of the streams. If you just get the input stream then I believe it does a GET, sends the headers, then lets you read the output. If you get the output stream then I believe it sends it as a POST, as it assumes you'll be writing data to it (You may need to call setDoOutput(true) for the output stream to work). As soon as you get the input stream the output stream is closed and it waits for the response from the server. For example, this should do a POST: URL myURL = new URL("http://example.com/my/path");
+URLConnection conn = myURL.openConnection();
+conn.setDoOutput(true);
+conn.setDoInput(true);
+
+OutputStream os = conn.getOutputStream();
+os.write("Hi there!");
+os.close();
+
+InputStream is = conn.getInputStream();
+// read stuff here
+ While this would do a GET: URL myURL = new URL("http://example.com/my/path");
+URLConnection conn = myURL.openConnection();
+conn.setDoOutput(false);
+conn.setDoInput(true);
+
+InputStream is = conn.getInputStream();
+// read stuff here
+ URLConnection will also do other weird things. If the server specifies a content length then URLConnection will keep the underlying input stream open until it receives that much data, even if you explicitly close it. This caused a lot of problems for us as it made shutting our client down cleanly a bit hard, as the URLConnection would keep the network connection open. This probably probably exists even if you just use getStream() though.

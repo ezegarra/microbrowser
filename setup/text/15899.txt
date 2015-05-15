@@ -1,0 +1,40 @@
+insert/replace XML tag in XmlDocument xml xquery You should be able to do this with xquery try fn:replace(string,pattern,replace) I am newish to xquery myself and I have found it to be a painful query language to work with, but it does work quiet well once you get over the initial learning curve. I do still wish there was an easier way which was as efficient? How about an object oriented approach? You could deserialise the XML to an object, set the location value on the object, then serialise back to XML. XStream makes this really easy. For example, you would define the main object, which in your case is CustomData (I'm using public fields to keep the example simple): public class CustomData {
+  public String tag1;
+  public String tag2;
+  public String location;
+  public String tag3;
+}
+ Then you initialize XStream: XStream xstream = new XStream();
+// if you need to output the main tag in lowercase, use the following line
+xstream.alias("customdata", CustomData.class);
+ Now you can construct an object from XML, set the location field on the object and regenerate the XML: CustomData d = (CustomData)xstream.fromXML(xml);
+d.location = "http://stackoverflow.com";
+xml = xstream.toXML(d);
+ How does that sound? How about an XPath based approach? I like this approach as the logic is super-easy to understand. The code is pretty much self-documenting. If your xml document is available to you as an org.w3c.dom.Document object (as most parsers return), then you could do something like the following: // get the list of customdata nodes
+NodeList customDataNodeSet = findNodes(document, "//customdata" );
+
+for (int i=0 ; i < customDataNodeSet.getLength() ; i++) {
+  Node customDataNode = customDataNodeSet.item( i );
+
+  // get the location nodes (if any) within this one customdata node
+  NodeList locationNodeSet = findNodes(customDataNode, "location" );
+
+  if (locationNodeSet.getLength() > 0) {
+    // replace
+    locationNodeSet.item( 0 ).setTextContent( "http://stackoverflow.com/" );
+  }
+  else {
+    // insert
+    Element newLocationNode = document.createElement( "location" );
+    newLocationNode.setTextContent("http://stackoverflow.com/" );
+    customDataNode.appendChild( newLocationNode );
+  }
+}
+ And here's the helper method findNodes that does the XPath search. private NodeList findNodes( Object obj, String xPathString )
+  throws XPathExpressionException {
+
+  XPath xPath = XPathFactory.newInstance().newXPath();
+  XPathExpression expression = xPath.compile( xPathString );
+  return (NodeList) expression.evaluate( obj, XPathConstants.NODESET );
+}
+ If you don't know the schema the XStream solution probably isn't the way to go. At least XStream is on your radar now, might come in handy in the future!

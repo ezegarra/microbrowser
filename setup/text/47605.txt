@@ -1,0 +1,59 @@
+String concatenation: concat() vs + operator string The + operator can work between a string and a string, char, integer, double or float data type value. It just converts the value to its string representation before concatenation. The concat operator can only be done on and with strings. It checks for data type compatibility and throws an error if they don't match. Except this, the code you provided do the same stuff. I don't think so. a.concat(b) is implemented in String and I think the implementation didn't change much since early java machines. The + operation implementation depends on java version and compiler. Currently + is implemented using StringBuffer to make the operation as fast as possible. Maybe in future this will change. In earlier versions of java + operation on Strings was much slower as it produced intermediate results. I guess that += is implemented using + and similarly optimized. Niyaz is correct, but it's also worth noting that the special + operator can be converted into something more efficient by the Java compiler. Java has a StringBuilder class which represents a non-thread-safe, mutable String. When performing a bunch of String concatenations, the Java compiler silently converts String a = b + c + d;
+ into String a = new StringBuilder(b).append(c).append(d).toString();
+ which for large strings is significantly more efficient. As far as I know, this does not happen when you use the concat method. However, the concat method is more efficient when concatenating an empty String onto an existing String. In this case, the JVM does not need to create a new String object and can simply return the existing one. See the concat documentation to confirm this. So if you're super-concerned about efficiency then you should use the concat method when concatenating possibly-empty Strings, and use + otherwise. However, the performance difference should be negligible and you probably shouldn't ever worry about this. No, not quite. Firstly, there's a slight difference in semantics. If a is null, then a.concat(b) NPEs but a+=b will treat the original value of a as if it were null. Furthermore, the concat() method only accepts String values while the + operator will silently convert the argument to a String (using the toString() method for objects). So the concat() method is more strict in what it accepts. To look under the hood, write a simple class with a += b; public class Concat {
+    String cat(String a, String b) {
+        a += b;
+        return a;
+    }
+}
+ Now disassemble with javap -c (included in the Sun JDK). You should see a listing including: java.lang.String cat(java.lang.String, java.lang.String);
+  Code:
+   0:   new     #2; //class java/lang/StringBuilder
+   3:   dup
+   4:   invokespecial   #3; //Method java/lang/StringBuilder."<init>":()V
+   7:   aload_1
+   8:   invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   11:  aload_2
+   12:  invokevirtual   #4; //Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   15:  invokevirtual   #5; //Method java/lang/StringBuilder.toString:()Ljava/lang/    String;
+   18:  astore_1
+   19:  aload_1
+   20:  areturn
+ So, a += b is the equivalent of a = new StringBuilder()
+    .append(a)
+    .append(b)
+    .toString();
+ The concat method should be faster. However, with more strings the StringBuilder method wins, at least in terms of performance. The source code of String and StringBuilder (and its package-private base class) is available in src.zip of the Sun JDK. You can see that you are building up a char array (resizing as necessary) and then throwing it away when you create the final String. In practice memory allocation is surprisingly fast. How about some simple testing? Used the code below: long start = System.currentTimeMillis();
+
+String a = "a";
+
+String b = "b";
+
+for (int i = 0; i < 10000000; i++) { //ten million times
+     String c = a.concat(b);
+}
+
+long end = System.currentTimeMillis();
+
+System.out.println(end - start);
+ The "a + b" version executed in 2500ms. The a.concat(b) executed in 1200ms. Tested several times. The concat() version execution took half of the time on average. This result surprised me because the concat() method always creates a new string (it returns a "new String(result)". It's well known that: String a = new String("a") // more than 20 times slower than String a = "a"
+ Why wasn't the compiler capable of optimize the string creation in "a + b" code, knowing the it always resulted in the same string? It could avoid a new string creation. If you don't believe the statement above, test for your self. Tom is correct in describing exactly what the + operator does. It creates a temporary StringBuilder, appends the parts, and finishes with toString(). However, all of the answers so far are ignoring the effects of HotSpot runtime optimizations. Specifically, these temporary operations are recognized as a common pattern and are replaced with more efficient machine code at run-time. @marcio: You've created a micro-benchmark; with modern JVM's this is not a valid way to profile code. The reason run-time optimization matters is that many of these differences in code -- even including object-creation -- are completely different once HotSpot gets going. The only way to know for sure is profiling your code in situ. Finally, all of these methods are in fact incredibly fast. This might be a case of premature optimization. If you have code that concatenates strings a lot, the way to get maximum speed probably has nothing to do with which operators you choose and instead the algorithm you're using! I ran a similar test as @marcio but with the following loop instead: String c = a;
+for (long i = 0; i < 100000L; i++) {
+    c = c.concat(b); // make sure javac cannot skip the loop
+    // using c += b for the alternative
+}
+ Just for good measure, I threw in StringBuilder.append() as well. Each test was run 10 times, with 100k reps for each run. Here are the results: StringBuilder wins hands down. The clock time result was 0 for most the runs, and the longest took 16ms. a += b takes about 40000ms (40s) for each run. concat only requires 10000ms (10s) per run. I haven't decompiled the class to see the internals or run it through profiler yet, but I suspect a += b spends much of the time creating new objects of StringBuilder and then converting them back to String. @erickson StringBuilder does not collaborate with String to share the backing char array. Because of threading issues, this could allow you to create mutable Strings. StringBuffer did share up to 1.4, but not since 5.0. Sharing has theoretical multi-threading problems. The 5.0 memory model (actually implemented by 1.4) adds final field semantics that correctly allow Strings to be immutable. Basically, There are 2 important difference between + and concat method. If you are using concat method then you would only be able to cancat only strings while in case of + operator,you can also concatinate string with any data type. For Example : String s=10+"Hello";
+ In this case, output should be 10Hello String s="I";
+String s1=s.concat("am").concat("good").concat("boy");
+System.out.println(s1);
+ In above case You have to provide two strings mandatory. 2.The second and main difference between + and concat is that:- case 1: Suppose I concat the same strings with concat operator in this way     String s="I";
+    String s1=s.concat("am").concat("good").concat("boy");
+    System.out.println(s1);
+ In this case total number of objects created in the pool are 7 like that:- I am good boy Iam Iamgood Iamgoodboy case 2: Now I am going to concatinate the same strings via + operator String s="I"+"am"+"good"+"boy";
+System.out.println(s);
+ In the above case total number of objects created are only 5. Actually when we concatinate the strings via + operator then it maintains a StringBuffer class to perform the same task as follows:-         StringBuffer sb=new StringBuffer("I");  
+        sb.append("am");
+        sb.append("good");
+        sb.append("boy");
+        System.out.println(sb);
+ In this way it will create only 5 objects . So guys these are the basic differences between + and concat method. Enjoy :)

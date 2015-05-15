@@ -1,0 +1,155 @@
+What is reflection, and why is it useful? reflection The name reflection is used to describe code which is able to inspect other code in the same system (or itself). For example, say you have an object of an unknown type in Java, and you would like to call a 'doSomething' method on it if one exists. Java's static typing system isn't really designed to support this unless the object conforms to a known interface, but using reflection, your code can look at the object and find out if it has a method called 'doSomething' and then call it if you want to. So, to give you a code example of this in Java (imagine the object in question is foo) : Method method = foo.getClass().getMethod("doSomething", null);
+method.invoke(foo, null);
+ One very common use case in Java is the usage with annotations. JUnit 4, for example, will use reflection to look through your classes for methods tagged with the @Test annotation, and will then call them when running the unit test. There are some good reflection examples to get you started at http://docs.oracle.com/javase/tutorial/reflect/index.html And finally, yes, the concepts are pretty much similar in other statically types languages which support reflection (like C#). In dynamically typed languages, the use case described above is less necessary (since the compiler will allow any method to be called on any object, failing at runtime if it does not exist), but the second case of looking for methods which are marked or work in a certain way is still common. Reflection is a set of functions which allows you to access the runtime information of your program and modify it behavior (with some limitations). It's useful because it allows you to change the runtime behaivour depending on the meta information of your program, that is, you can check the return type of a function and change the way you handle the situation. In C# for example you can load an assembly (a .dll) in runtime an examine it, navigating through the classes and taking actions according to what you found. It also let you create an instance of a class on runtime, invoke its method, etc. Where can it be useful? Is not useful everytime but for concrete situations. For example you can use it to get the name of the class for loggin purposes, to dinamically create handlers for events according to what's specified on a configuration file and so on... Not every language supports reflection but the principles are usually the same in languages that support it. Reflection is the ability to "reflect" on the structure of your program. Or more concrete. To look at the objects and classes you have and programmatically get back information on the methods, fields, and interfaces they implement. You can also look at things like annotations. It's usefull in a lot of situations. Everywhere you want to be able to dynamically plug in classes into your code. Lot's of object relational mappers use reflection to be able to instantiate objects from databases without knowing in advance what objects they're going to use. Plug-in architectures is another place where reflection is usefull. Being able to dynamically load code and determine if there are types there that implement the right interface to use as a plugin is important in those situations. "Reflection" is a language's ability to inspect and dynamically call classes, methods, attributes, etc. at runtime. For example, all objects in Java has the method getClass, which lets you determine its class even if you don't know it at compile time (like if you declared it as Object) - this might seem trivial, but such reflection is not by default possible in less dynamic languages such as C++. More advanced uses lets you list and call methods, constructors, etc. Reflection is important since it lets you write programs that does not have to "know" everything at compile time, making them more dynamic, since they can be tied together at runtime. The code can be written against known interfaces, but the actual classes to be used can be instantiated using reflection from configuration files. Lots of modern frameworks uses reflection extensively for this very reason. Most other modern languages uses reflection as well, and in script languages like Python can be said to be even more tightly integrated, since it matches more naturally with the general programming model for those languages. Reflection is a key mechanism to allow an application or framework to work with code that might not have even been written yet! Take for example your typical web.xml file. This will contain a list of servlet elements, which contain nested servlet-class elements. The servlet container will process the web.xml file, and create new a new instance of each servlet class through reflection. Another example would be the Java API for XML Parsing (JAXP). Where an XML parser provider is 'plugged-in' via well-known system properties, which are used to construct new instances through reflection. And finally, the most comprehensive example is Spring which uses reflection to create its beans, and for its heavy use of proxies One of my favorite uses of reflection is the below Java dump method. It takes any object as a parameter and uses the Java reflection API print out every field name and value. import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+
+public static String dump(Object o, int callCount) {
+    callCount++;
+    StringBuffer tabs = new StringBuffer();
+    for (int k = 0; k < callCount; k++) {
+        tabs.append("\t");
+    }
+    StringBuffer buffer = new StringBuffer();
+    Class oClass = o.getClass();
+    if (oClass.isArray()) {
+        buffer.append("\n");
+        buffer.append(tabs.toString());
+        buffer.append("[");
+        for (int i = 0; i < Array.getLength(o); i++) {
+            if (i < 0)
+                buffer.append(",");
+            Object value = Array.get(o, i);
+            if (value.getClass().isPrimitive() ||
+                    value.getClass() == java.lang.Long.class ||
+                    value.getClass() == java.lang.String.class ||
+                    value.getClass() == java.lang.Integer.class ||
+                    value.getClass() == java.lang.Boolean.class
+                    ) {
+                buffer.append(value);
+            } else {
+                buffer.append(dump(value, callCount));
+            }
+        }
+        buffer.append(tabs.toString());
+        buffer.append("]\n");
+    } else {
+        buffer.append("\n");
+        buffer.append(tabs.toString());
+        buffer.append("{\n");
+        while (oClass != null) {
+            Field[] fields = oClass.getDeclaredFields();
+            for (int i = 0; i < fields.length; i++) {
+                buffer.append(tabs.toString());
+                fields[i].setAccessible(true);
+                buffer.append(fields[i].getName());
+                buffer.append("=");
+                try {
+                    Object value = fields[i].get(o);
+                    if (value != null) {
+                        if (value.getClass().isPrimitive() ||
+                                value.getClass() == java.lang.Long.class ||
+                                value.getClass() == java.lang.String.class ||
+                                value.getClass() == java.lang.Integer.class ||
+                                value.getClass() == java.lang.Boolean.class
+                                ) {
+                            buffer.append(value);
+                        } else {
+                            buffer.append(dump(value, callCount));
+                        }
+                    }
+                } catch (IllegalAccessException e) {
+                    buffer.append(e.getMessage());
+                }
+                buffer.append("\n");
+            }
+            oClass = oClass.getSuperclass();
+        }
+        buffer.append(tabs.toString());
+        buffer.append("}\n");
+    }
+    return buffer.toString();
+}
+ As per my understanding: Reflection allows programmer to access entities in program dynamically. i.e. while coding an application if programmer is unaware about a class or its methods, he can make use of such class dynamically (at run time) by using reflection. It is frequently used in scenarios where a class name changes frequently. If such a situation arises, then it is complicated for the programmer to rewrite the application and change the name of the class again and again. Instead, by using reflection, there is need to worry about a possibly changing class name. Example : Take for example a remote application which gives your application an object which you obtain using their API Methods . Now based on the object you might need to perform some sort of computation . The provider guarantees that object can be of 3 types and we need to perform computation based on what type of object . So we might implement in 3 classes each containing a different logic .Obviously the object information is available in runtime so you cannot statically code to perform computation hence reflection is used to instantiate the object of the class that you require to perform the computation based on the object received from the provider . Java Reflection makes it possible to inspect classes, interfaces, fields and methods at runtime, without knowing the names of the classes, methods etc. at compile time. Mostly at framework level the maximum benefits of reflection can be achieved. The byte code that is compiled if needs extra modification at run time for examination, modification, addition of more byte code within itself, or another program or another framework at method level, instance variable level, constructor level, annotation level reflection can be useful. Suppose you have a method add(Int a,int b). The equivalent byte code is suppose B1. If suppose you have 1000 methods named add in your system. Now you want to check the value of parameter a and b before method add is called. So, you can glue your code to another program or framework that uses reflection to dynamically examine the byte code value using Object.getClass.getMethod(). There are several classes for examining. It can add more operation before method add is called. But, the program itself or another program or framework does not know about the object that has a method named add. Mostly in dependency injection, aspect oriented programming use of reflection is mostly used. Reflection has many uses. The one I am more familiar with, is to be able to create code on the fly IE: dynamic classes, functions, constructors - based on any data (xml/array/sql results/hardcoded/etc..) Reflection allows instantiation of new objects, invocation of methods, and get/set operations on class variables dynamically at run time without having prior knowledge of its implementation. Class myObjectClass = MyObject.class;
+Method[] method = myObjectClass.getMethods();
+
+//Here the method takes a string parameter if there is no param, put null.
+Method method = aClass.getMethod("method_name", String.class); 
+
+Object returnValue = method.invoke(null, "parameter-value1");
+ In above example the null parameter is the object you want to invoke the method on. If the method is static you supply null. If the method is not static, then while invoking you need to supply a valid MyObject instance instead of null. Reflection also allows you to access private member/methods of a class: public class A{
+
+  private String str= null;
+
+  public A(String str) {
+  this.str= str;
+  }
+}
+ . A obj= new A("Some value");
+
+Field privateStringField = A.class.getDeclaredField("privateString");
+
+//Turn off access check for this field
+privateStringField.setAccessible(true);
+
+String fieldValue = (String) privateStringField.get(obj);
+System.out.println("fieldValue = " + fieldValue);
+ For inspection of classes (also know as introspection) you don't need to import the reflection package (java.lang.reflect). Class metadata can be accessed through java.lang.Class. Reflection is a very powerful API but it may slow down the application if used in excess, as it resolves all the types at runtime. Java Reflection is quite powerful and can be very useful. Java Reflection makes it possible to inspect classes, interfaces, fields and methods at runtime, without knowing the names of the classes, methods etc. at compile time. It is also possible to instantiate new objects, invoke methods and get/set field values using reflection. A quick Java Reflection example to show you what using reflection looks like: Method[] methods = MyObject.class.getMethods();
+
+    for(Method method : methods){
+        System.out.println("method = " + method.getName());
+    }
+ This example obtains the Class object from the class called MyObject. Using the class object the example gets a list of the methods in that class, iterates the methods and print out their names. Exactly how all this works is explained here I just want to add some point to all that was listed. With Reflection API you can write universal toString() method for any object. It is useful at debugging. Here is some example: class ObjectAnalyzer {
+
+   private ArrayList<Object> visited = new ArrayList<Object>();
+
+   /**
+    * Converts an object to a string representation that lists all fields.
+    * @param obj an object
+    * @return a string with the object's class name and all field names and
+    * values
+    */
+   public String toString(Object obj) {
+      if (obj == null) return "null";
+      if (visited.contains(obj)) return "...";
+      visited.add(obj);
+      Class cl = obj.getClass();
+      if (cl == String.class) return (String) obj;
+      if (cl.isArray()) {
+         String r = cl.getComponentType() + "[]{";
+         for (int i = 0; i < Array.getLength(obj); i++) {
+            if (i > 0) r += ",";
+            Object val = Array.get(obj, i);
+            if (cl.getComponentType().isPrimitive()) r += val;
+            else r += toString(val);
+         }
+         return r + "}";
+      }
+
+      String r = cl.getName();
+      // inspect the fields of this class and all superclasses
+      do {
+         r += "[";
+         Field[] fields = cl.getDeclaredFields();
+         AccessibleObject.setAccessible(fields, true);
+         // get the names and values of all fields
+         for (Field f : fields) {
+            if (!Modifier.isStatic(f.getModifiers())) {
+               if (!r.endsWith("[")) r += ",";
+               r += f.getName() + "=";
+               try {
+                  Class t = f.getType();
+                  Object val = f.get(obj);
+                  if (t.isPrimitive()) r += val;
+                  else r += toString(val);
+               } catch (Exception e) {
+                  e.printStackTrace();
+               }
+            }
+         }
+         r += "]";
+         cl = cl.getSuperclass();
+      } while (cl != null);
+
+      return r;
+   }    
+}

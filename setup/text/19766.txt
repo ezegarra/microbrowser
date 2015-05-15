@@ -1,0 +1,82 @@
+How do I make a list with checkboxes in Java Swing? swing I'd probably be looking to use a JTable rather than a JList and since the default rendering of a checkbox is rather ugly, I'd probably be looking to drop in a custom TableModel, CellRenderer and CellEditor to represent a boolean value. Of course, I would imagine this has been done a bajillion times already. Sun has good examples. Create a custom ListCellRenderer and asign it to the JList. This custom ListCellRenderer must return a JCheckbox in the implementantion of getListCellRendererComponent(...) method. But this JCheckbox will not be editable, is a simple paint in the screen is up to you to choose when this JCheckbox must be 'ticked' or not, For example, show it ticked when the row is selected (parameter isSelected), but this way the check status will no be mantained if the selection changes. Its better to show it checked consulting the data below the ListModel, but then is up to you to implement the method who changes the check status of the data, and notify the change to the JList to be repainted. I Will post sample code later if you need it ListCellRenderer Odds are good w/ Java that someone has already implemented the widget or utility you need. Part of the benefits of a large OSS community. No need to reinvent the wheel unless you really want to do it yourself. In this case it would be a good learning exercise in CellRenderers and Editors. My project has had great success with JIDE. The component you want, a Check Box List, is in the JIDE Common Layer (which is OSS and hosted on java.net). The commercial stuff is good too, but you don't need it. http://www.jidesoft.com/products/oss.htm https://jide-oss.dev.java.net/ A wonderful answer is this CheckBoxList. It implements Telcontar's answer (though 3 years before :)... I'm using it in Java 1.6 with no problems. I've also added an addCheckbox method like this (surely could be shorter, haven't used Java in a while): public void addCheckbox(JCheckBox checkBox) {
+    ListModel currentList = this.getModel();
+    JCheckBox[] newList = new JCheckBox[currentList.getSize() + 1];
+    for (int i = 0; i < currentList.getSize(); i++) {
+        newList[i] = (JCheckBox) currentList.getElementAt(i);
+    }
+    newList[newList.length - 1] = checkBox;
+    setListData(newList);
+}
+ I tried out the demo for the Jidesoft stuff, playing with the CheckBoxList I encountered some problems (behaviors that didn't work). I'll modify this answer if I find problems with the CheckBoxList I linked to. I recommend you use a JPanel with a GridLayout of 1 column. Add the checkBoxes to the JPanel, and set the JPanel as the data source of a JScrollPane. And to get the selected CheckBoxes, just call the getComponents() of the JPanel to get the CheckBoxes. Better solution for Java 7 and newer I stumbled upon this question and realized that some of the answers are pretty old and outdated. Nowadays, JList is generic and thus there are better solutions. My solution of the generic JCheckBoxList: import java.awt.Component;
+
+import javax.swing.*;
+import javax.swing.border.*;
+
+import java.awt.event.*;
+
+@SuppressWarnings("serial")
+public class JCheckBoxList extends JList<JCheckBox> {
+  protected static Border noFocusBorder = new EmptyBorder(1, 1, 1, 1);
+
+  public JCheckBoxList() {
+    setCellRenderer(new CellRenderer());
+    addMouseListener(new MouseAdapter() {
+      public void mousePressed(MouseEvent e) {
+        int index = locationToIndex(e.getPoint());
+        if (index != -1) {
+          JCheckBox checkbox = (JCheckBox) getModel().getElementAt(index);
+          checkbox.setSelected(!checkbox.isSelected());
+          repaint();
+        }
+      }
+    });
+    setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+  }
+
+  public JCheckBoxList(ListModel<JCheckBox> model){
+    this();
+    setModel(model);
+  }
+
+  protected class CellRenderer implements ListCellRenderer<JCheckBox> {
+    public Component getListCellRendererComponent(
+        JList<? extends JCheckBox> list, JCheckBox value, int index,
+        boolean isSelected, boolean cellHasFocus) {
+      JCheckBox checkbox = value;
+
+      //Drawing checkbox, change the appearance here
+      checkbox.setBackground(isSelected ? getSelectionBackground()
+          : getBackground());
+      checkbox.setForeground(isSelected ? getSelectionForeground()
+          : getForeground());
+      checkbox.setEnabled(isEnabled());
+      checkbox.setFont(getFont());
+      checkbox.setFocusPainted(false);
+      checkbox.setBorderPainted(true);
+      checkbox.setBorder(isSelected ? UIManager
+          .getBorder("List.focusCellHighlightBorder") : noFocusBorder);
+      return checkbox;
+    }
+  }
+}
+ For dynamically adding JCheckBox lists you need to create your own ListModel or add the DefaultListModel. DefaultListModel<JCheckBox> model = new DefaultListModel<JCheckBox>();
+JCheckBoxList checkBoxList = new JCheckBoxList(model);
+ The DefaultListModel are generic and thus you can use methods specified by JAVA 7 API here like this: model.addElement(new JCheckBox("Checkbox1"));
+model.addElement(new JCheckBox("Checkbox2"));
+model.addElement(new JCheckBox("Checkbox3"));
+ Here is just a little addition to the JCheckBoxList by Rawa. This will add the ability to select using space bar. If multiple items are selected, all will be set to inverted value of the first item.         addKeyListener(new KeyAdapter() {
+        @Override
+        public void keyPressed(KeyEvent e) {
+            int index = getSelectedIndex();
+            if (index != -1 && e.getKeyCode() == KeyEvent.VK_SPACE) {
+                boolean newVal = !((JCheckBox) (getModel()
+                        .getElementAt(index))).isSelected();
+                for (int i : getSelectedIndices()) {
+                    JCheckBox checkbox = (JCheckBox) getModel()
+                            .getElementAt(i);
+                    checkbox.setSelected(newVal);
+                    repaint();
+                }
+            }
+        }
+        });

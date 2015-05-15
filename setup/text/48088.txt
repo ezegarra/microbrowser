@@ -1,0 +1,87 @@
+Returning from a finally block in Java exception return try-catch-finally The examples you provided are reason enough to not use flow-control from finally. Even if there's a contrived example where it's "better," consider the developer who has to maintain your code later and who might not be aware of the subtleties. That poor developer might even be you.... Adding control structures and returns to finally{} blocks are just another example of "just because you can" abuses which are scattered throughout virtually all development languages. Jason was right in suggesting it could easily become a maintenance nightmare - the arguments against early returns from functions apply more-so to this case of "late returns". Finally blocks exist for one purpose, to allow you to completely tidy up after yourself, no matter what happened in all the preceeding code. Principally this is closing / releasing file pointers, database connections etc., though I could see it being stretched to say adding in bespoke auditing. Anything that affects the return of the function should lie in the try{} block. Even if you had a method whereby you checked an external state, did a time consuming operation, then checked that state again in case it became invalid, you would still want the second check inside the try{} - if it sat inside finally{} and the long operation failed, you would then be checking that state a second time needlessly. javac will warn of return in finally if you use the -Xlint:finally. Originally javac emitted no warnings - if something is wrong with the code, it should fail to compile. Unfortunately backwards compatibility means that unanticipated ingenious foolishness cannot be prohibited. Exceptions can be thrown from finally blocks, but in that case the exhibited behaviour is almost certainly what you want. I had a REALLY hard time to track down a bug years ago that was caused by this. The code was something like: Object problemMethod() {
+    Object rtn = null;
+    try {
+        rtn = somethingThatThrewAnException();
+    }
+    finally {
+        doSomeCleanup();
+        return rtn;
+    }
+}
+ What happened is that the exception was thrown down in some other code. It was being caught and logged and rethrown within the somethingThatThrewAnException method. But the exception wasn't being propagated up past problemMethod. After a LONG time of looking at this we finally tracked it down to the return method. The return method in the finally block was basically stopping the exception that happened in the try block from propagating up even though it wasn't caught. Like others have said, while it is legal to return from a finally block according to the Java spec, it is a BAD thing and shouldn't be done. A simple Groovy Test: public class Instance {
+
+  List<String> runningThreads = new ArrayList<String>()
+
+  void test(boolean returnInFinally) {
+
+    println "\ntest(returnInFinally: $returnInFinally)"
+    println "--------------------------------------------------------------------------"
+    println "before execute"
+    String result = execute(returnInFinally, false)
+    println "after execute -> result: " + result
+    println "--------------------------------------------------------------------------"
+
+    println "before execute"
+    try {
+      result = execute(returnInFinally, true)
+      println "after execute -> result: " + result
+    } catch (Exception ex) {
+      println "execute threw exception: " + ex.getMessage()
+    }  
+    println "--------------------------------------------------------------------------\n"
+
+  }
+
+  String execute(boolean returnInFinally, boolean throwError) {
+      String thread = Thread.currentThread().getName()
+      println "...execute(returnInFinally: $returnInFinally, throwError: $throwError) - thread: $thread"
+      runningThreads.add(thread)
+      try {
+        if (throwError) {
+          println "...error in execute, throw exception"
+          throw new Exception("as you liked :-)")
+        }
+        println "...return 'OK' from execute"
+        return "OK"
+      } finally {
+        println "...pass finally block"
+        if (returnInFinally) return "return value from FINALLY ^^"
+        // runningThreads.remove(thread)
+      }
+  }
+}
+
+Instance instance = new Instance()
+instance.test(false)
+instance.test(true)
+ Output: test(returnInFinally: false)
+-----------------------------------------------------------------------------
+before execute
+...execute(returnInFinally: false, throwError: false) - thread: Thread-116
+...return 'OK' from execute
+...pass finally block
+after execute -> result: OK
+-----------------------------------------------------------------------------
+before execute
+...execute(returnInFinally: false, throwError: true) - thread: Thread-116
+...error in execute, throw exception
+...pass finally block
+execute threw exception: as you liked :-)
+-----------------------------------------------------------------------------
+
+
+test(returnInFinally: true)
+-----------------------------------------------------------------------------
+before execute
+...execute(returnInFinally: true, throwError: false) - thread: Thread-116
+...return 'OK' from execute
+...pass finally block
+after execute -> result: return value from FINALLY ^^
+-----------------------------------------------------------------------------
+before execute
+...execute(returnInFinally: true, throwError: true) - thread: Thread-116
+...error in execute, throw exception
+...pass finally block
+after execute -> result: return value from FINALLY ^^
+-----------------------------------------------------------------------------
+ Question: One interesting point for me was to see how Groovy deals with implicit returns. In Groovy it is possible to "return" from a method simply leaving a value at the end (without return). What do you think happens, if you uncomment the runningThreads.remove(..) line in the finally statement - will this overwrite the regular return value ("OK") and cover the exception?!

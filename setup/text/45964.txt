@@ -1,0 +1,52 @@
+How to multiply 10 to an "Integer" object in Java? types casting The string approach is amusing, but almost certainly a bad way to do it. Getting the int value of an Integer, and creating a new one will be very fast, where as parseInt would be fairly expensive to call. Overall, I'd agree with your original approach (which, as others have pointed out, can be done without so much clutter if you have autoboxing as introduced in Java 5). With Java 5's autoboxing, you can simply do:     Integer a = new Integer(2); // or even just Integer a = 2;
+    a *= 10;
+    System.out.println(a);
+ Keep away from the second approach, best bet would be the autoboxing if you're using java 1.5, anything earlier your first example would be best. The solution using the String method is not so good for a variety of reasons. Some are aesthetic reasons others are practical. On a practical front more objects get created by the String version than the more normal form (as you have expressed in your first example). On an aesthetic note, I think that the second version obscures the intent of the code and that is nearly as important as getting it to produce the result you want. The problem with the second way is the way Strings are handled in Java: "0" is converted into a constant String object at compile time. Each time this code is called, s is constructed as a new String object, and javac converts that code to String s = new StringBuilder().append(integerObj.toString()).append("0").toString() (StringBuffer for older versions). Even if you use the same integerObj, i.e., String s1 = integerObj + "0"; String s2 = integerObj + "0"; (s1 == s2) would be false, while s1.equals(s2) would be true. Integer.parseInt internally calls new Integer() anyway, because Integer is immutable. BTW, autoboxing/unboxing is internally the same as the first method. toolkit's answer above is correct and the best way, but it doesn't give a full explanation of what is happening. Assuming Java 5 or later: Integer a = new Integer(2); // or even just Integer a = 2;
+a *= 10;
+System.out.println(a); // will output 20
+ What you need to know is that this is the exact same as doing: Integer a = new Integer(2); // or even just Integer a = 2;
+a = a.intValue() * 10;
+System.out.println(a.intValue()); // will output 20
+ By performing the operation (in this case *=) on the object 'a', you are not changing the int value inside the 'a' object, but actually assigning a new object to 'a'. This is because 'a' gets auto-unboxed in order to perform the multiplication, and then the result of the multiplication gets auto-boxed and assigned to 'a'. Integer is an immutable object. (All wrapper classes are immutable.) Take for example this piece of code: static void test() {
+    Integer i = new Integer(10);
+    System.out.println("StartingMemory: " + System.identityHashCode(i));
+    changeInteger(i);
+    System.out.println("Step1: " + i);
+    changeInteger(++i);
+    System.out.println("Step2: " + i.intValue());
+    System.out.println("MiddleMemory: " + System.identityHashCode(i));
+}
+
+static void changeInteger(Integer i) {
+    System.out.println("ChangeStartMemory: " + System.identityHashCode(i));
+    System.out.println("ChangeStartValue: " + i);
+    i++;
+    System.out.println("ChangeEnd: " + i);
+    System.out.println("ChangeEndMemory: " + System.identityHashCode(i));
+}
+ The output will be: StartingMemory: 1373539035
+ChangeStartMemory: 1373539035
+ChangeStartValue: 10
+ChangeEnd: 11
+ChangeEndMemory: 190331520
+Step1: 10
+ChangeStartMemory: 190331520
+ChangeStartValue: 11
+ChangeEnd: 12
+ChangeEndMemory: 1298706257
+Step2: 11
+MiddleMemory: 190331520
+ You can see the memory address for 'i' is changing (your memory addresses will be different). Now lets do a little test with reflection, add this onto the end of the test() method: System.out.println("MiddleMemory: " + System.identityHashCode(i));
+try {
+    final Field f = i.getClass().getDeclaredField("value");
+    f.setAccessible(true);
+    f.setInt(i, 15);
+    System.out.println("Step3: " + i.intValue());
+    System.out.println("EndingMemory: " + System.identityHashCode(i));
+} catch (final Exception e) {
+    e.printStackTrace();
+}
+ The additional output will be: MiddleMemory: 190331520
+Step2: 15
+MiddleMemory: 190331520
+ You can see that the memory address for 'i' did not change, even though we changed its value using reflection. (DO NOT USE REFLECTION THIS WAY IN REAL LIFE!!)

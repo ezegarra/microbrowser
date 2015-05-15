@@ -1,0 +1,10 @@
+Validating a HUGE XML file xml validation xsd Instead of using a DOMParser, use a SAXParser. This reads from an input stream or reader so you can keep the XML on disk instead of loading it all into memory. SAXParserFactory factory = SAXParserFactory.newInstance();
+factory.setValidating(true);
+factory.setNamespaceAware(true);
+
+SAXParser parser = factory.newSAXParser();
+
+XMLReader reader = parser.getXMLReader();
+reader.setErrorHandler(new SimpleErrorHandler());
+reader.parse(new InputSource(new FileReader ("document.xml")));
+ Use libxml, which performs validation and has a streaming mode. Personally I like to use XMLStarlet which has a command line interface, and works on streams. It is a set of tools built on Libxml2. SAX and libXML will help, as already mentioned. You could also try increasing the maximum heap size for the JVM using the -Xmx option. E.g. to set the maximum heap size to 512MB: java -Xmx512m com.foo.MyClass

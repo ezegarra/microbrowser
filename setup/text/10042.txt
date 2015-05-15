@@ -1,0 +1,158 @@
+How do I implement a Linked List in Java? linked-list Java has a LinkedList implementation, that you might wanna check out. You can download the JDK and it's sources at java.sun.com. Use java.util.LinkedList. Like this: list = new java.util.LinkedList()
+ The obvious solution to developers familiar to Java is to use the LinkedList class already provided in java.util. Say, however, you wanted to make your own implementation for some reason. Here is a quick example of a linked list that inserts a new link at the beginning of the list, deletes from the beginning of the list and loops through the list to print the links contained in it. Enhancements to this implementation include making it a double-linked list, adding methods to insert and delete from the middle or end, and by adding get and sort methods as well. Note: In the example, the Link object doesn't actually contain another Link object - nextLink is actually only a reference to another link. class Link {
+    public int data1;
+    public double data2;
+    public Link nextLink;
+
+    //Link constructor
+    public Link(int d1, double d2) {
+	    data1 = d1;
+	    data2 = d2;
+    }
+
+    //Print Link data
+    public void printLink() {
+	    System.out.print("{" + data1 + ", " + data2 + "} ");
+    }
+}
+
+class LinkList {
+    private Link first;
+
+    //LinkList constructor
+    public LinkList() {
+	    first = null;
+    }
+
+    //Returns true if list is empty
+    public boolean isEmpty() {
+	    return first == null;
+    }
+
+    //Inserts a new Link at the first of the list
+    public void insert(int d1, double d2) {
+	    Link link = new Link(d1, d2);
+	    link.nextLink = first;
+	    first = link;
+    }
+
+    //Deletes the link at the first of the list
+    public Link delete() {
+	    Link temp = first;
+	    first = first.nextLink;
+	    return temp;
+    }
+
+    //Prints list data
+    public void printList() {
+	    Link currentLink = first;
+	    System.out.print("List: ");
+	    while(currentLink != null) {
+		    currentLink.printLink();
+		    currentLink = currentLink.nextLink;
+	    }
+	    System.out.println("");
+    }
+}  
+
+class LinkListTest {
+    public static void main(String[] args) {
+	    LinkList list = new LinkList();
+
+	    list.insert(1, 1.01);
+	    list.insert(2, 2.02);
+	    list.insert(3, 3.03);
+	    list.insert(4, 4.04);
+	    list.insert(5, 5.05);
+
+	    list.printList();
+
+	    while(!list.isEmpty()) {
+		    Link deletedLink = list.delete();
+		    System.out.print("deleted: ");
+		    deletedLink.printLink();
+		    System.out.println("");
+	    }
+	    list.printList();
+    }
+}
+ Its much better to use java.util.LinkedList, because it's probably much more optimized, than the one that you will write. The above linked list display in opposite direction. I think the correct implementation of insert method should be public void insert(int d1, double d2) { 
+    Link link = new Link(d1, d2); 
+
+    if(first==null){
+        link.nextLink = null;
+        first = link; 
+        last=link;
+    }
+    else{
+        last.nextLink=link;
+        link.nextLink=null;
+        last=link;
+    }
+} 
+ //slightly improved code without using collection framework
+
+package com.test;
+
+public class TestClass {
+
+    private static Link last;
+    private static Link first;
+
+    public static void main(String[] args) {
+
+        //Inserting
+        for(int i=0;i<5;i++){
+            Link.insert(i+5);
+        }
+        Link.printList();
+
+        //Deleting
+        Link.deletefromFirst();
+        Link.printList();
+    }
+
+
+    protected  static class Link {
+        private int data;
+        private Link nextlink;
+
+        public Link(int d1) {
+            this.data = d1;
+        }
+
+        public static void insert(int d1) {
+            Link a = new Link(d1);
+            a.nextlink = null;
+            if (first != null) {
+                last.nextlink = a;
+                last = a;
+            } else {
+                first = a;
+                last = a;
+            }
+            System.out.println("Inserted -:"+d1);
+        }
+
+        public static void deletefromFirst() {
+            if(null!=first)
+            {
+                System.out.println("Deleting -:"+first.data);
+                first = first.nextlink;
+            }
+            else{
+                System.out.println("No elements in Linked List");
+            }
+        }
+
+        public static void printList() {
+            System.out.println("Elements in the list are");
+            System.out.println("-------------------------");
+            Link temp = first;
+            while (temp != null) {
+                System.out.println(temp.data);
+                temp = temp.nextlink;
+            }
+        }
+    }
+}

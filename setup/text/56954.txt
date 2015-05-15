@@ -1,0 +1,38 @@
+EasyMock: How do I create a mock of a genericized class without a warning? generics mocking easymock The two obvious routes are to suppress the warning or mock a subclass. private static class SomeClass_Integer extends SomeClass<Integer>();
+private SomeClass<Integer> someClass;
+...
+    someClass = EasyMock.createMock(SomeClass_Integer.class);
+ (Disclaimer: Not even attempted to compile this code, nor have I used EasyMock.) You can annotate the test method with @SuppressWarnings("unchecked"). I agree this is some what of a hack but in my opinion it's acceptable on test code. @Test
+@SuppressWarnings("unchecked")
+public void someTest() {
+    SomeClass<Integer> someClass = EasyMock.createMock(SomeClass.class);
+}
+ AFAIK, you can't avoid the unchecked warning when a class name literal is involved, and the SuppressWarnings annotation is the only way to handle this. Note that it is good form to narrow the scope of the SuppressWarnings annotation as much as possible. You can apply this annotation to a single local variable assignment: 
+public void testSomething() {
+
+    @SuppressWarnings("unchecked")
+    Foo<Integer> foo = EasyMock.createMock(Foo.class);
+
+    // Rest of test method may still expose other warnings
+}
+ or use a helper method: 
+@SuppressWarnings("unchecked")
+private static <T> Foo<T> createFooMock() {
+    return (Foo<T>)EasyMock.createMock(Foo.class);
+}
+
+public void testSomething() {
+    Foo<String> foo = createFooMock();
+
+    // Rest of test method may still expose other warnings
+}
+ I worked around this problem by introducing a subclass, e.g. private abstract class MySpecialString implements MySpecial<String>{};
+ Then create a mock of that abstract class: MySpecial<String> myMock = createControl().createMock(MySpecialString.class);
+ I know this goes against the question, but why not create a List rather than a Mock List? It's less code and easier to work with, for instance if you want to add items to the list. MyItem myItem = createMock(myItem.class);
+List<MyItem> myItemList = new ArrayList<MyItem>();
+myItemList.add(myItem);
+ Instead of MyItem myItem = createMock(myItem.class);
+@SuppressWarnings("unchecked")
+List<MyItem> myItemList = createMock(ArrayList.class);
+expect(myItemList.get(0)).andReturn(myItem);
+replay(myItemList);

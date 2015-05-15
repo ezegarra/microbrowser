@@ -1,0 +1,9 @@
+Is Bouncy Castle API Thread Safe? cryptography bouncycastle It really does not matter if the API/Code is thread safe. CBC encryption in itself is not thread safe. Some terminology - E(X) = Enctrypt message X
+D(X) = Dectrypt X. (Note that D(E(X)) = X)
+IV = Initialization vector. A random sequence to bootstrap the CBC algorithm
+CBC = Cipher block chaining.
+ A really simple CBC implementation can look like: P1, P2, P3 = Plain text messages 1. Generate an IV, just random bits.
+2. Calculate E( P1 xor IV) call this C1
+3. Calculate E( P2 xor C1) call this C2
+4. Calculate E( P3 xor C2) call this C3.
+ As you can see, the result of encrypting P1, P2 and P3 (in that order) is different from encrypting P2, P1 and P3 (in that order). So, in a CBC implementation, order is important. Any algorithm where order is important can not, by definition, be thread safe. You can make a Singleton factory that delivers encryption objects, but you cant trust them to be thread safe. The J2ME version is not thread safe.

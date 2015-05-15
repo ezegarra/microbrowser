@@ -1,0 +1,13 @@
+jQuery and Java applets javascript jquery applet For the first issue, how about trying alert( $("#applet-id")[0].foo() );
+ For the second issue here is a thread with a possible workaround. Quoting the workaround // Prevent memory leaks in IE
+// And  prevent errors on refresh with events  like mouseover in other  browsers
+// Window isn't included so as not to unbind existing unload events
+jQuery(window).bind("unload",
+function() {
+        jQuery("*").add(document).unbind();
+});
+ change that code to: // Window isn't included so as not to unbind existing unload events
+jQuery(window).bind("unload",
+function() {
+        jQuery("*:not('applet, object')").add(document).unbind();
+});

@@ -1,0 +1,29 @@
+Java ConnectionPool connection not closing, stuck in 'sleep' database tomcat You seem to be closing the connection properly - except for the case where prepStmt.close() throws a SQLException, I can't find a connection leak. What pool implementation are you using? When you close a connection, the pool need not close the underlying MySQL connection immediately - after all that is the point of a connection pool! So from MySQL side, the connections would look alive, although your app is not using any; they might simply be held by the TC connection pool. You might want to experiment with the settings of the connection pool.Ask it to shrink the pool when the system is idle. Or, ask it to refresh all connections periodically. Or, have a strict upper bound on the number of concurrent connections it ever gets from MySQL etc. One way to check if your code has a connection leak is to force the ds.getConnection() to always open a new physical connection and conn.close() to release the connection (if your connection pool has settings for those). Then if you watch the connections on MySQL side, you might be able to figure out if the code really has a connection leak or not. One thing that @binil missed, you are not closing the result set in the case of an exception. Depending on the driver implementation this may cause the connection to stay open. Move the result.close() call to the finally block. This is a similar question - Connection Pool Settings for Tomcat This is my response to that question and it fixed the problem for the other guy. It may help you out too. Tomcat Documentation DBCP uses the Jakarta-Commons Database Connection Pool. It relies on number of Jakarta-Commons components: * Jakarta-Commons DBCP
+* Jakarta-Commons Collections
+* Jakarta-Commons Pool
+ I'm using the same connection pooling stuff and I'm setting these properties to prevent the same thing it's just not configured through tomcat. But if the first thing doesn't work try these. testWhileIdle=true
+timeBetweenEvictionRunsMillis=300000
+ Ok I might have this sorted. I have changed the database config resource to the following: *SNIP*
+maxActive="10"
+maxIdle="5"
+maxWait="7000"
+removeAbandoned="true"
+logAbandoned="false"
+removeAbandonedTimeout="3"
+*SNIP*
+ This works well enough for now. What is happening, afaik, is that once I reach the ten connections then Tomcat is checking for abandoned connections (idle time > 3). It does this in a batch job each time that max connections is reached. The potential issue with this is if i need more than 10 queries run at the same time (not unique to me). The important thing is that removeAbandonedTimeout is less than maxWait. Is this what should be happening? ie Is this the way that the pool should operate? If it is is seems, at least to me, that you would wait until something (the connection) is broken before fixing rather than not letting it 'break' in the first place. Maybe I am still not getting it. I am using the same configuration as you are. If the connection in mysql administrator(windows) shows that it is in sleep mode it only means that is pooled but not in use. I checked this running a test program program with multiple threads making random queries to Mysql. if it helps here is my configuration: 		defaultAutoCommit="false"
+		defaultTransactionIsolation="REPEATABLE_READ"
+		auth="Container"
+		type="javax.sql.DataSource"
+		logAbandoned="true" 
+    	  removeAbandoned="true"
+		removeAbandonedTimeout="300" 
+		maxActive="-1"
+		initialSize="15"
+		maxIdle="10"
+		maxWait="10000" 
+		username="youruser"
+		password="youruserpassword"
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://yourhost/yourdatabase"/>
+ The issue us that the connection does not close properly and is stuck in the 'sleep' mode This was actually only half right. The problem I ran into was actually that each app was defining a new connection to the database sever. So each time I closed all the connections App A would make a bunch of new connections as per it's WEB.xml config file and run happily. App B would do the same. The problem is that they are independent pools which try to grab up to the server defined limit. It is a kind of race condition I guess. So when App A has finished with the connections it sits waiting to to use them again until the timeout has passed while App B who needs the connection now is denied the resources even though App A has finished with the and should be back in the pool. Once the timeout has passed, the connection is freed up and B (or C etc) can get at it again. e.g. if the limit is 10 (mySQL profile limit) and each app has been configured to use a max of 10 the there will be 20 attempts at connections. Obviously this is a bad situation. The solution is to RTFM and put the connection details in the right place. This does make shared posting a pain but there are ways around it (such as linking to other xml files from the context). Just to be explicit: I put the connection details in the WEB.xml for each app and the had a fight about it.

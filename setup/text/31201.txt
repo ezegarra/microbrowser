@@ -1,0 +1,31 @@
+How do you get a reference to the enclosing class from an anonymous inner class in Java? oop Use EnclosingClass.this I just found this recently. Use OuterClassName.this. class Outer {
+    void foo() {
+        new Thread() {
+            public void run() {
+                Outer.this.bar();
+            }
+        }.start();
+    }
+    void bar() {
+        System.out.println("BAR!");
+    }
+}
+ Updated If you just want the object itself (instead of invoking members), then Outer.this is the way to go. I believe that generally you can just use "this", or just leave it off completely. The code in the inner class should be able to reference the outer class's members without any problem. The only time you should need to use the more verbose version "Outer.this" is if there is name conflicts. So, to expand on Frank's comment: class Outer {
+  void foo() {
+    new Thread() {
+      public void run() {
+        this.bar();
+        Outer.this.baz();
+      }
+
+      public void baz() { }
+    }.start();
+  }
+  void bar() {
+    System.out.println("BAR!");
+  }
+  void baz() {
+    System.out.println("BAZ!");
+  }
+}
+ You can still use Outer.class to get the class of the outer class object (which will return the same Class object as Outer.this.getClass() but is more efficient) If you want to access statics in the enclosing class, you can use Outer.name where name is the static field or method.

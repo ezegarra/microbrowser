@@ -1,0 +1,1 @@
+Getting started with a custom JXTA PeerGroup p2p jxta The META-INF.services stuff is known by its class name in the API: ServiceLoader. A Google search for ServiceLoader yields some information. I am not really familiar with it, but sometimes it's all about knowing the right search keywords.

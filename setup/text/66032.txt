@@ -1,0 +1,10 @@
+Order of DOM NodeList returned by getChildNodes() xml dom A document-ordered node list is the behavior in other implementations of the DOM, such as Javascript's or Python's. And a randomly-ordered node list would be utterly useless. I think it's safe to depend on nodes being returned in document order. In my experience, yes. The DOM spec isn't any clearer. If you're paranoid, try something like current = node.firstChild;
+while(null != current) {
+    ...
+    current = current.nextSibling;
+}
+ My experience is that every time that I have bothered to look it has been in document order. However, I believe that I read somewhere it is not guaranteed to be in document order. I can't find where I read that right now, so take it as hearsay. I think your best bet if you must have them in document order would be to use FirstChild then NextSibling until there are no more sibs. I'd love to tell you that this is guaranteed (as I believe it is) but the Document Object Model specification itself seems ambiguous in this case. I'm pretty sure that it's always document-order, though. In your example, as presented. I believe so. However, I've experienced real-world experiences where spaces have been interpreted as nodes so: 
+<a><b/><c/><d/></a>
+ is different than 
+<a><b/> <c/><d/></a>
+ if you're looking at index [1], firefox and IE may present different results. I would advise against relying on the order depending on your need. Yes they are ordered as it returns a nodeList, you would have to say getNamedChildNodes to get a list that is not ordered as in namedNodeList.

@@ -1,0 +1,179 @@
+What is the best OpenGL java binding? gui opengl performance swt Personally, I'm not even aware of Java bindings for OpenGL other than JOGL -- I think JOGL is pretty much the standard for Java OpenGL. It works in Windows, Linux, and OS X, but you might want to read over the official documentation for some notes about specific issues in each platform. Keep in mind that the OpenGL paradigm is quite different from Swing/AWT or the Java 2D API; OpenGL is not a drop-in replacement for Swing. JOGL My reasons can be quoted off the previously linked site: JOGL provides full access to the APIs in the OpenGL 2.0 specification as well as nearly all vendor extensions, and integrates with the AWT and Swing widget sets. Also if you want to have some fun learning and poking around, Processing is an excellent way to start (Processing also uses JOGL btw...) I'd suggest checking out LWJGL, the LightWeight Java Game Library. It's got OpenGL bindings, but it also has OpenAL bindings and some great tutorials to get you started. Just keep in mind that Swing/SWT and OpenGL are generally used for entirely different things. You may end up wanting to use a combination of both. Just try LWJGL out and see how well it fits with what you're doing. JOGL is probably the only option worth considering. Notice that there are at least two options for integrating it into an SWT application. There's a GLCanvas that belongs to SWT and a GLCanvas that belongs to AWT. The one in SWT is not feature complete and is not really maintained. It's much better to use the AWT GLCanvas inside a SWT_AWT container. Some code from a recent project: import org.eclipse.swt.*;
+import org.eclipse.swt.layout.*;
+import org.eclipse.swt.widgets.*;
+
+import javax.media.opengl.*;
+import javax.media.opengl.glu.*;
+
+import org.eclipse.swt.awt.SWT_AWT;
+import org.eclipse.swt.events.*;
+
+public class Main implements GLEventListener
+{
+    public static void main(String[] args) 
+    {
+    	Display display = new Display();
+	Main main = new Main();
+	main.runMain(display);
+	display.dispose();
+}
+
+void runMain(Display display)
+{
+	final Shell shell = new Shell(display);
+	shell.setText("Q*bert 3D - OpenGL Exercise");
+	GridLayout gridLayout = new GridLayout();
+	gridLayout.marginHeight = 0;
+	gridLayout.marginWidth = 0;
+
+	shell.setLayout(gridLayout);
+
+	// this allows us to set particular properties for the GLCanvas
+	GLCapabilities glCapabilities = new GLCapabilities();
+
+	glCapabilities.setDoubleBuffered(true);
+	glCapabilities.setHardwareAccelerated(true);
+
+	// instantiate the canvas
+	final GLCanvas canvas = new GLCanvas(glCapabilities);
+
+	// we can't use the default Composite because using the AWT bridge
+	// requires that it have the property of SWT.EMBEDDED
+	Composite composite = new Composite(shell, SWT.EMBEDDED);
+	GridData ld = new GridData(GridData.FILL_BOTH);
+	composite.setLayoutData(ld);
+
+	// set the internal layout so our canvas fills the whole control
+	FillLayout clayout = new FillLayout();
+	composite.setLayout(clayout);
+
+	// create the special frame bridge to AWT
+	java.awt.Frame glFrame = SWT_AWT.new_Frame(composite);
+	// we need the listener so we get the GL events
+	canvas.addGLEventListener(this);
+
+	// finally, add our canvas as a child of the frame
+	glFrame.add(canvas);
+
+	// show it all
+	shell.open();
+	// the event loop.
+	while (!shell.isDisposed ()) {
+		if (!display.readAndDispatch ()) display.sleep ();
+	}
+}
+ JOGL will give you best performance and portability. But be aware that learning JOGL, which is essentially the same as learning OpenGL, is not easy. We've had lots of luck at work using JOGL. The new 2.0 version is at http://jogamp.org/ (the last "old" version is at http://download.java.net/media/jogl/builds/archive/jsr-231-1.1.1a/). For JOGL 2 with SWT specifically, I've got a series of tutorials starting at http://wadeawalker.wordpress.com/2010/10/09/tutorial-a-cross-platform-workbench-program-using-java-opengl-and-eclipse/ that demonstrates exactly how to make cross-platform JOGL SWT applications, complete with installable native binaries. Or if you don't want to use Eclipse RCP, here's an even simpler example that just draws one triangle with JOGL 2 and SWT. To build it, put it in a project with swt.jar (from http://www.eclipse.org/swt/) and the latest JOGL autobuild .jar and .dll files (from http://jogamp.org/). The only problem with this simple example is that it won't be cross-platform without some extra help -- you need the ability that Eclipse RCP gives you to bundle multiple sets of platform libraries together into one project. package name.wadewalker.onetriangle;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.PaintEvent;
+import org.eclipse.swt.events.PaintListener;
+import org.eclipse.swt.graphics.Rectangle;
+import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.opengl.GLCanvas;
+import org.eclipse.swt.opengl.GLData;
+import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Event;
+import org.eclipse.swt.widgets.Listener;
+import org.eclipse.swt.widgets.Shell;
+
+import javax.media.opengl.GL;
+import javax.media.opengl.GLProfile;
+import javax.media.opengl.GL2;
+import javax.media.opengl.GLContext;
+import javax.media.opengl.GLDrawableFactory;
+import javax.media.opengl.glu.GLU;
+
+public class OneTriangle {
+
+    public static void main(String [] args) {
+        GLProfile.initSingleton( true );
+
+        GLProfile glprofile = GLProfile.get( GLProfile.GL2 );
+
+        Display display = new Display();
+        Shell shell = new Shell( display );
+        shell.setLayout( new FillLayout() );
+        Composite composite = new Composite( shell, SWT.NONE );
+        composite.setLayout( new FillLayout() );
+
+        GLData gldata = new GLData();
+        gldata.doubleBuffer = true;
+        // need SWT.NO_BACKGROUND to prevent SWT from clearing the window
+        // at the wrong times (we use glClear for this instead)
+        final GLCanvas glcanvas = new GLCanvas( composite, SWT.NO_BACKGROUND, gldata );
+        glcanvas.setCurrent();
+        final GLContext glcontext = GLDrawableFactory.getFactory( glprofile ).createExternalGLContext();
+
+        // fix the viewport when the user resizes the window
+        glcanvas.addListener( SWT.Resize, new Listener() {
+            public void handleEvent(Event event) {
+                setup( glcanvas, glcontext );
+            }
+        });
+
+        // draw the triangle when the OS tells us that any part of the window needs drawing
+        glcanvas.addPaintListener( new PaintListener() {
+            public void paintControl( PaintEvent paintevent ) {
+                render( glcanvas, glcontext );
+            }
+        });
+
+        shell.setText( "OneTriangle" );
+        shell.setSize( 640, 480 );
+        shell.open();
+
+        while( !shell.isDisposed() ) {
+            if( !display.readAndDispatch() )
+                display.sleep();
+        }
+
+        glcanvas.dispose();
+        display.dispose();
+    }
+
+    private static void setup( GLCanvas glcanvas, GLContext glcontext ) {
+        Rectangle rectangle = glcanvas.getClientArea();
+
+        glcanvas.setCurrent();
+        glcontext.makeCurrent();
+
+        GL2 gl = glcontext.getGL().getGL2();
+        gl.glMatrixMode( GL2.GL_PROJECTION );
+        gl.glLoadIdentity();
+
+        // coordinate system origin at lower left with width and height same as the window
+        GLU glu = new GLU();
+        glu.gluOrtho2D( 0.0f, rectangle.width, 0.0f, rectangle.height );
+
+        gl.glMatrixMode( GL2.GL_MODELVIEW );
+        gl.glLoadIdentity();
+
+        gl.glViewport( 0, 0, rectangle.width, rectangle.height );
+        glcontext.release();        
+    }
+
+    private static void render( GLCanvas glcanvas, GLContext glcontext ) {
+        Rectangle rectangle = glcanvas.getClientArea();
+
+        glcanvas.setCurrent();
+        glcontext.makeCurrent();
+
+        GL2 gl = glcontext.getGL().getGL2();
+        gl.glClear( GL.GL_COLOR_BUFFER_BIT );
+
+        // draw a triangle filling the window
+        gl.glLoadIdentity();
+        gl.glBegin( GL.GL_TRIANGLES );
+        gl.glColor3f( 1, 0, 0 );
+        gl.glVertex2f( 0, 0 );
+        gl.glColor3f( 0, 1, 0 );
+        gl.glVertex2f( rectangle.width, 0 );
+        gl.glColor3f( 0, 0, 1 );
+        gl.glVertex2f( rectangle.width / 2, rectangle.height );
+        gl.glEnd();
+
+        glcanvas.swapBuffers();
+        glcontext.release();        
+    }
+}

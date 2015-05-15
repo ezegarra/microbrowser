@@ -1,0 +1,23 @@
+List in JScrollPane painting outside the viewport swing Have you tried explicitly enabling double-buffering on the JList and/or the components that it is drawing over? (with:setDoubleBuffered(boolean aFlag)) Another thought is that you might need to exit the function immediately after delegating to the EDT. The way your code is written, it looks like the update will happen in both threads if ContentChanged is invoked from a non-EDT thread. Logging in the first if (or set a breakpoint in the if -- but not in the runnable -- should help determine if that is your problem. eg: public void contentsChanged(final ListDataEvent evt)
+{
+    if (!EventQueue.isDispatchThread())
+    {
+        log.debug("Delegating contentsChanged(...) to EDT");
+
+        EventQueue.invokeLater(new Runnable() 
+        {
+            public void run() 
+            {
+                contentsChanged(evt);
+            }
+        });
+        // don't run ensureIndexIsVisible twice:
+        return;
+     }
+
+     if (playbackInProgress)
+     {
+         int index = evt.getIndex0();
+         currentContentList.ensureIndexIsVisible(index);
+     }
+}

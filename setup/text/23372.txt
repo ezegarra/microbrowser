@@ -1,0 +1,11 @@
+Painting javax.microedition.lcdui.Graphics on LWUIT Component java-me lwuit Based on the javadoc for LWUIT and J2ME and guessing that the custom J2ME class is a Canvas it looks like you would have to: Subclass LWUIT's Component class wrapping the custom J2ME component Override the paint() method of the LWUIT Component Subclass the J2ME Graphics class wrapping the LWUIT Graphics class and pass all the method calls through Pass in the wrapped J2ME Graphics implementation to the custom J2ME component's paint method That third step is an ugly one. Check on the LWUIT mailing list to see if anyone has dome this before. From the published APIs I don't see another way to do it. Edit: The hack added in the question looks better than my hack for an Image. What I have may be better for a general case, but I don't know either LWUIT or J2ME well enough to really say that. I do not think any hacking is necessary. You can subclass the LWTUI Component class and then you can pain whatever you want on to the graphic context of the component. You do not get the native lcdui.Graphics object but an object with a same interface that is easy to use. If you really need to pass a lcdui.Graphics to some underlying library to display its output then I would suggest this: Somewhere in your component code (do only when the component contents really need to be changed): private Image buffer = null; // keep this
+
+int[] bufferArray = new int[desiredWidth * desiredHeight];
+javax.microedition.lcdui.Image bufferImage = 
+    Image.createEmptyImage(desiredWidth, desiredHeight);
+thirPartyComponent.paint(bufferImage.getGraphics());
+bufferImage.getRGB(bufferArray,0,1,0,0,desiredWidth, desiredHeight);
+bufferImage = null; //no longer needed
+buffer = Image.createImage(bufferArray, desiredWidth, desiredHeight);
+ In the component paint(g) method: g.drawImage(0,0, buffer);
+ By doing the hack you did you are losing portablity and also sice you are exposing implementation private object you might also break other things. Hope this helps.

@@ -1,0 +1,53 @@
+Is it essential that I use libraries to manipulate XML? xml No - If you can parse it yourself (as you are doing), and it will scale for your needs, you do not need any library. Just ensure that your future needs are going to be met - complex xml creation is better done using libraries - some of which come in very simple flavors too. I think that custom string manipulation is fine, but you have to keep two things in mind: Your code isn't as mature as the library. Allocate time in your plan to handle the bugs that pop-up. Your approach will probably not scale as well as a 3rd party library when the xml starts to grow (both in terms of performance and ease of use). I know a code base that uses custom string manipulation for xml output (and a 3rd party library for input). It was fine to begin with but became a real hassle after a while. Yes, use the library. Somebody took the time and effort to create something that is usually better than what you could come up with. String manipulation is for sending back a single node, but once you start needing to manipulate the DOM, or use an XPath query, the library will save you. No - especially for generating (parsing I would be less inclined to as input text can always surprise you). I think its fine - but be prepared to shift to a library should you find yourself spending more then a few minutes maintaining your own code. I don't think that using the DOM XML API wich comes with the JDK is difficult, it's easy to create Element nodes, attributes, etc... and later is easy convert strings to a DOM document sor DOM documents into a String In the first page google finds from Spain (spanish XML example): public String DOM2String(Document doc)
+{
+    TransformerFactory transformerFactory =TransformerFactory.newInstance();
+    Transformer transformer = null;
+    try{
+        transformer = transformerFactory.newTransformer();
+    }catch (javax.xml.transform.TransformerConfigurationException error){
+        coderror=123;
+        msgerror=error.getMessage();
+        return null;
+    }
+
+    Source source = new DOMSource(doc);
+
+    StringWriter writer = new StringWriter();
+    Result result = new StreamResult(writer);
+    try{
+        transformer.transform(source,result);
+    }catch (javax.xml.transform.TransformerException error){
+        coderror=123;
+        msgerror=error.getMessage();
+        return null;
+    }
+
+    String s = writer.toString();
+    return s;
+}
+
+public Document string2DOM(String s)
+{
+    Document tmpX=null;
+    DocumentBuilder builder = null;
+    try{
+        builder = DocumentBuilderFactory.newInstance().newDocumentBuilder();
+    }catch(javax.xml.parsers.ParserConfigurationException error){
+        coderror=10;
+        msgerror="Error crando factory String2DOM "+error.getMessage();
+        return null;
+    }
+    try{
+        tmpX=builder.parse(new ByteArrayInputStream(s.getBytes()));
+    }catch(org.xml.sax.SAXException error){
+        coderror=10;
+        msgerror="Error parseo SAX String2DOM "+error.getMessage();
+        return null;
+    }catch(IOException error){
+        coderror=10;
+        msgerror="Error generando Bytes String2DOM "+error.getMessage();
+        return null;
+    }
+    return tmpX;
+}
+ It's not essential, but advisable. However, if string manipulation works for you, then go for it! There are plenty of cases where small or simple XML text can be safely built by hand. Just be aware that creating XML text is harder than it looks. Here's some criteria I would consider: First: how much control do you have on the information that goes into the xml? The less control you have on the source data, the more likely you will have trouble, and the more advantageous the library becomes. For example: (a) Can you guarantee that the element names will never have a character that is illegal in a name? (b) How about quotes in an attribute's content? Can they happen, and are you handling them? (c) Does the data ever contain anything that might need to be encoded as an entity (like the less-than which often needs to be output as &lt;); are you doing it correctly? Second, maintainability: is the code that builds the XML easy to understand by someone else? You probably don't want to be stuck with the code for life. I've worked with second-hand C++ code that hand-builds XML and it can be surprisingly obscure. Of course, if this is a personal project of yours, then you don't need to worry about "others": substitute "in a year" for "others" above. I wouldn't worry about performance. If your XML is simple enough that you can hand-write it, any overhead from the library is probably meaningless. Of course, your case might be different, but you should measure to prove it first. Finally, Yes; you can hand build XML text by hand if it's simple enough; but not knowing the libraries available is probably not the right reason. A modern XML library is a quite powerful tool, but it can also be daunting. However, learning the essentials of your XML library is not that hard, and it can be quite handy; among other things, it's almost a requisite in today's job marketplace. Just don't get bogged down by namespaces, schemas and other fancier features until you get the essentials. Good luck. Xml is hard. Parsing yourself is a bad idea, it's even a worse idea to generate content yourself. Have a look at the Xml 1.1 spec. You have to deal with such things as proper encoding, attribute encoding (e.g., produces invalid xml), proper CDATA escaping, UTF encoding, custom DTD entities, and that's without throwing in the mix xml namespaces with the default / empty namespace, namespace attributes, etc. Learn a toolkit, there's plenty available. By not using a library, you risk generating or parsing data that isn't well-formed, which sooner or later will happen. For the same reason document.write isn't allowed in XHTML, you shouldn't write your XML markup as a string. You don't have to use library to parse XML, but check out this question What considerations should be made before reinventing the wheel? before you start writing your own code for parsing/generating xml. The only time I've done something like this in production code was when a collegue and I built a pre-processor so that we could embed XML fragments from other files into a larger XML. On load we would first parse these embed (file references in XML comment strings) and replace them with the actual fragment they referenced. Then we would pass on the combined result to the XML Parser. Yes. It makes no sense to skip essential tool: even writing xml is non-trivial with having to escape those ampersands and lts, not to mention namespace bindings (if needed). And in the end libs can generally read and write xml not only more reliably but more efficiently (esp. so for Java). But you may have been looking at wrong tools, if they seem overcomplicated. Data binding using JAXB or XStream is simple; but for simple straight-forward XML output, I go with StaxMate. It can actually simplify the task in many ways (automatically closes start tags, writes namespace declarations if needde etc).

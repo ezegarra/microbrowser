@@ -1,0 +1,1 @@
+Can the Weblogic default handler display the list of contexts? java-ee weblogic you could write a small webapp that hooks up to the Weblogic JMX and displays the list of deployed webapps and deploy that one at '/'

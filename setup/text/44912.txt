@@ -1,0 +1,65 @@
+Java Delegates? delegates Short story: ­­­­­­­­­­­­­­­­­­­no. No, but here's an article on how to sort of implement them. As it says in what Patrick linked you want to use inner classes instead. Not really, no. You may be able to achieve the same effect by using reflection to get Method objects you can then invoke, and the other way is to create an interface with a single 'invoke' or 'execute' method, and then instantiate them to call the method your interested in (i.e. using an anonymous inner class). You might also find this article interesting / useful : A Java Programmer Looks at C# Delegates While it is nowhere nearly as clean, but you could implement something like C# delegates using a Java Proxy. I have implemented callback/delegate support in Java using reflection. Details and working source are available on my website. Have you read this : Delegates are a useful construct in event-based systems. Essentially Delegates are objects that encode a method dispatch on a specified object. This document shows how java inner classes provide a more generic solution to such problems. What is a Delegate? Really it is very similar to a pointer to member function as used in C++. But a delegate contains the target object alongwith the method to be invoked. Ideally it would be nice to be able to say: obj.registerHandler(ano.methodOne); ..and that the method methodOne would be called on ano when some specific event was received. This is what the Delegate structure achieves. Java Inner Classes It has been argued that Java provides this functionality via inner classes and thus does not need the additional Delegate construct. obj.registerHandler(new Handler() {
+        public void handleIt(Event ev) {
+            methodOne(ev);
+        }
+      } );
+ At first glance this seems correct but at the same time a nuisance. Because for many event processing examples the simplicity of the Delegates syntax is very attractive. General Handler However, if event-based programming is used in a more pervasive manner, say, for example, as a part of a general asynchronous programming environment, there is more at stake. In such a general situation, it is not sufficient to include only the target method and target object instance. In general there may be other parameters required, that are determined within the context when the event handler is registered. In this more general situation, the java approach can provide a very elegant solution, particularly when combined with use of final variables: void processState(final T1 p1, final T2 dispatch) { 
+  final int a1 = someCalculation();
+
+  m_obj.registerHandler(new Handler() {
+    public void handleIt(Event ev) {
+     dispatch.methodOne(a1, ev, p1);
+    }
+  } );
+}
+ final * final * final Got your attention? Note that the final variables are accessible from within the anonymous class method definitions. Be sure to study this code carefully to understand the ramifications. This is potentially a very powerful technique. For example, it can be used to good effect when registering handlers in MiniDOM and in more general situations. By contrast, the Delegate construct does not provide a solution for this more general requirement, and as such should be rejected as an idiom on which designs can be based. Its not true that you cannot do somthing like delegates in Java, take a look at this: Is there an equivilent of C# Anonymous Delegates in Java? No, but they're fakeable using proxies and reflection:   public static class TestClass {
+      public String knockKnock() {
+          return "who's there?";
+      }
+  }
+
+  private final TestClass testInstance = new TestClass();
+
+  @Test public void
+  can_delegate_a_single_method_interface_to_an_instance() throws Exception {
+      Delegator<TestClass, Callable<String>> knockKnockDelegator = Delegator.ofMethod("knockKnock")
+                                                                   .of(TestClass.class)
+                                                                   .to(Callable.class);
+      Callable<String> callable = knockKnockDelegator.delegateTo(testInstance);
+      assertThat(callable.call(), is("who's there?"));
+  }
+ The nice thing about this idiom is that you can verify that the delegated-to method exists, and has the required signature, at the point where you create the delegator (although not at compile-time, unfortunately, although a FindBugs plug-in might help here), then use it safely to delegate to various instances. See the karg code on github for more tests and implementation. No, but it has similar behavior, internally. In C# delegates are used to creates a separate entry point and they work much like a function pointer. In java there is no thing as function pointer (on a upper look) but internally Java needs to do the same thing in order to achieve these objectives. For example, creating threads in Java requires a class extending Thread or implementing Runnable, because a class object variable can be used a memory location pointer. Depending precisely what you mean, you can achieve a similar effect (passing around a method) using the Strategy Pattern. Instead of a line like this declaring a named method signature: // C#
+public delegate void SomeFunction();
+ declare an interface: // Java
+public interface ISomeBehaviour
+{
+   void SomeFunction();
+}
+ For concrete implementations of the method, define a class that implements the behaviour: // Java
+public class TypeABehaviour implements ISomeBehaviour
+{
+   public void SomeFunction()
+   {
+      // TypeA behaviour
+   }
+}
+
+public class TypeBBehaviour implements ISomeBehaviour
+{
+   public void SomeFunction()
+   {
+      // TypeB behaviour
+   }
+}
+ Then wherever you would have had a SomeFunction delegate in C#, use an ISomeBehaviour reference instead: // C#
+SomeFunction doSomething = someMethod;
+doSomething();
+doSomething = someOtherMethod;
+doSomething();
+
+// Java
+ISomeBehaviour someBehaviour = new TypeABehaviour();
+someBehaviour.SomeFunction();
+someBehaviour = new TypeBBehaviour();
+someBehaviour.SomeFunction();
+ Java doesn't have delegates and is proud of it :). From what I read here I found in essence 2 ways to fake delegates: 1. reflection; 2. inner class Reflections are slooooow! Inner class does not cover the simplest use-case: sort function. Do not want to go into details, but the solution with inner class basically is to create a wrapper class for an array of integers to be sorted in ascending order and an class for an array of integers to be sorted in descending order. I know this post is old, but Java 8 has added lambdas, and the concept of a functional interface, which is any interface with only one method. Together these offer similar functionality to C# delegates. See here for more info, or just google Java Lambdas. http://cr.openjdk.java.net/~briangoetz/lambda/lambda-state-final.html Yes & No, but delegate pattern in Java could be thought of this way. This video tutorial is about data exchange between activity - fragments, and it has great essence of delegate sorta pattern using interfaces.

@@ -1,0 +1,218 @@
+What issues should be considered when overriding equals and hashCode in Java? override equals hashcode I am just referring you to items 7 and 8 in Josh Blochs excellent book "Effective Java", it has all the traps and pitfalls you need to know. The relevant chapter is even available online The theory (for the language lawyers and the mathematically inclined): equals() (javadoc) must define an equality relation (it must be reflexive, symmetric, and transitive). In addition, it must be consistent (if the objects are not modified, then it must keep returning the same value). Furthermore, o.equals(null) must always return false. hashCode() (javadoc) must also be consistent (if the object is not modified in terms of equals(), it must keep returning the same value). The relation between the two methods is: Whenever a.equals(b), then a.hashCode() must be same as b.hashCode(). In practice: If you override one, then you should override the other. Use the same set of fields that you use to compute equals() to compute hashCode(). Use the excellent helper classes EqualsBuilder and HashCodeBuilder from the Apache Commons Lang library. An example: public class Person {
+    private String name;
+    private int age;
+    // ...
+
+    public int hashCode() {
+        return new HashCodeBuilder(17, 31). // two randomly chosen prime numbers
+            // if deriving: appendSuper(super.hashCode()).
+            append(name).
+            append(age).
+            toHashCode();
+    }
+
+    public boolean equals(Object obj) {
+       if (!(obj instanceof Person))
+            return false;
+        if (obj == this)
+            return true;
+
+        Person rhs = (Person) obj;
+        return new EqualsBuilder().
+            // if deriving: appendSuper(super.equals(obj)).
+            append(name, rhs.name).
+            append(age, rhs.age).
+            isEquals();
+    }
+}
+ Also remember: When using a hash-based Collection or Map such as HashSet, LinkedHashSet, HashMap, Hashtable, or WeakHashMap, make sure that the hashCode() of the key objects that you put into the collection never changes while the object is in the collection. The bulletproof way to ensure this is to make your keys immutable, which has also other benefits. A clarification about the obj.getClass() != getClass(). This statement is the result of equals() being inheritance unfriendly. The JLS (Java language specification) specifies that if A.equals(B) == true then B.equals(A) must also return true. If you omit that statement inheriting classes that override equals() (and change its behavior) will break this specification. Consider the following example of what happens when the statement is omitted:     class A {
+      int field1;
+
+      A(int field1) {
+        this.field1 = field1;
+      }
+
+      public boolean equals(Object other) {
+        return (other != null && other instanceof A && ((A) other).field1 == field1);
+      }
+    }
+
+    class B extends A {
+        int field2;
+
+        B(int field1, int field2) {
+            super(field1);
+            this.field2 = field2;
+        }
+
+        public boolean equals(Object other) {
+            return (other != null && other instanceof B && ((B)other).field2 == field2 && super.equals(other));
+        }
+    }    
+ Doing new A(1).equals(new A(1)) Also, new B(1,1).equals(new B(1,1)) result give out true, as it should. This looks all very good, but look what happens if we try to use both classes: A a = new A(1);
+B b = new B(1,1);
+a.equals(b) == true;
+b.equals(a) == false;
+ Obviously, this is wrong. If you want to ensure the symmetric condition. a=b if b=a and the Liskov substitution principle call super.equals(other) not only in the case of B instance, but check after for A instance: if (other instanceof B )
+   return (other != null && ((B)other).field2 == field2 && super.equals(other)); 
+if (other instanceof A) return super.equals(other); 
+   else return false;
+ Which will output: a.equals(b) == true;
+b.equals(a) == true;
+ Where, if a is not a reference of B, then it might be a be a reference of class A (because you extend it), in this case you call super.equals() too. There are a couple of ways to do your check for class equality before checking member equality, and I think both are useful in the right circumstances. Use the instanceof operator. Use this.getClass().equals(that.getClass()). I use #1 in a final equals implementation, or when implementing an interface that prescribes an algorithm for equals (like the java.util collection interfaces�the right way to check with with (obj instanceof Set) or whatever interface you're implementing). It's generally a bad choice when equals can be overridden because that breaks the symmetry property. Option #2 allows the class to be safely extended without overriding equals or breaking symmetry. If your class is also Comparable, the equals and compareTo methods should be consistent too. Here's a template for the equals method in a Comparable class: final class MyClass implements Comparable<MyClass>
+{
+
+  …
+
+  @Override
+  public boolean equals(Object obj)
+  {
+    /* If compareTo and equals aren't final, we should check with getClass instead. */
+    if (!(obj instanceof MyClass)) 
+      return false;
+    return compareTo((MyClass) obj) == 0;
+  }
+
+}
+ One gotcha I have found is where two objects contain references to each other (one example being a parent/child relationship with a convenience method on the parent to get all children). These sorts of things are fairly common when doing Hibernate mappings for example. If you include both ends of the relationship in your hashCode or equals tests it's possible to get into a recursive loop which ends in a StackOverflowException. The simplest solution is to not include the getChildren collection in the methods. For an inheritance-friendly implementation, check out Tal Cohen's solution, How Do I Correctly Implement the equals() Method? Summary: In his book Effective Java Programming Language Guide (Addison-Wesley, 2001), Joshua Bloch claims that "There is simply no way to extend an instantiable class and add an aspect while preserving the equals contract." Tal disagrees. His solution is to implement equals() by calling another nonsymmetric blindlyEquals() both ways. blindlyEquals() is overridden by subclasses, equals() is inherited, and never overridden. Example: class Point {
+    private int x;
+    private int y;
+    protected boolean blindlyEquals(Object o) {
+        if (!(o instanceof Point))
+            return false;
+        Point p = (Point)o;
+        return (p.x == this.x && p.y == this.y);
+    }
+    public boolean equals(Object o) {
+        return (this.blindlyEquals(o) && o.blindlyEquals(this));
+    }
+}
+
+class ColorPoint extends Point {
+    private Color c;
+    protected boolean blindlyEquals(Object o) {
+        if (!(o instanceof ColorPoint))
+            return false;
+        ColorPoint cp = (ColorPoint)o;
+        return (super.blindlyEquals(cp) && 
+        cp.color == this.color);
+    }
+}
+ Note that equals() must work across inheritance hierarchies if the Liskov Substitution Principle is to be satisfied. There are some issues worth noticing if you're dealing with classes that are persisted using an Object-Relationship Mapper (ORM) like Hibernate. If you didn't think this was unreasonably complicated already! Lazy loaded objects are subclasses If your objects are persisted using an ORM, in many cases you will be dealing with dynamic proxies to avoid loading object too early from the data store. These proxies are implemented as subclasses of your own class. This means thatthis.getClass() == o.getClass() will return false. For example: Person saved = new Person("John Doe");
+Long key = dao.save(saved);
+dao.flush();
+Person retrieved = dao.retrieve(key);
+saved.getClass().equals(retrieved.getClass()); // Will return false if Person is loaded lazy
+ If you're dealing with an ORM using o instanceof Person is the only thing that will behave correctly. Lazy loaded objects have null-fields ORMs usually use the getters to force loading of lazy loaded objects. This means that person.name will be null if person is lazy loaded, even if person.getName() forces loading and returns "John Doe". In my experience, this crops up more often in hashCode and equals. If you're dealing with an ORM, make sure to always use getters, and never field references in hashCode and equals. Saving an object will change its state Persistent objects often use a id field to hold the key of the object. This field will be automatically updated when an object is first saved. Don't use an id field in hashCode. But you can use it in equals. A pattern I often use is if (this.getId() == null) {
+    return this == other;
+} else {
+    return this.getId() == other.getId();
+}
+ But: You cannot include getId() in hashCode(). If you do, when an object is persisted, it's hashCode changes. If the object is in a HashSet, you'll "never" find it again. In my Person example, I probably would use getName() for hashCode and getId plus getName() (just for paranoia) for equals. It's okay if there are some risk of "collisions" for hashCode, but never okay for equals. hashCode should use the non-changing subset of properties from equals For equals, look into Secrets of Equals by Angelika Langer. I love it very much. She's also a great FAQ about Generics in Java. View her other articles here (scroll down to "Core Java"), where she also goes on with Part-2 and "mixed type comparison". Have fun reading them! Still amazed that none recommended the guava library for this.  //Sample taken from a current working project of mine just to illustrate the idea
+
+    @Override
+    public int hashCode(){
+        return Objects.hashCode(this.getDate(), this.datePattern);
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if ( ! obj instanceof DateAndPattern ) {
+            return false;
+        }
+        return Objects.equal(((DateAndPattern)obj).getDate(), this.getDate())
+                && Objects.equal(((DateAndPattern)obj).getDate(), this.getDatePattern());
+    }
+ Logically we have: a.getClass().equals(b.getClass()) && a.equals(b) ⇒ a.hashCode() == b.hashCode() But not vice-versa! equals() method is used to determine the equality of two objects. as int value of 10 is always equal to 10. But this equals() method is about equality of two objects. When we say object, it will have properties. To decide about equality those properties are considered. It is not necessary that all properties must be taken into account to determine the equality and with respect to the class definition and context it can be decided. Then the equals() method can be overridden. we should always override hashCode() method whenever we override equals() method. If not, what will happen? If we use hashtables in our application, it will not behave as expected. As the hashCode is used in determining the equality of values stored, it will not return the right corresponding value for a key. Default implementation given is hashCode() method in Object class uses the internal address of the object and converts it into integer and returns it. public class Tiger {
+  private String color;
+  private String stripePattern;
+  private int height;
+
+  @Override
+  public boolean equals(Object object) {
+    boolean result = false;
+    if (object == null || object.getClass() != getClass()) {
+      result = false;
+    } else {
+      Tiger tiger = (Tiger) object;
+      if (this.color == tiger.getColor()
+          && this.stripePattern == tiger.getStripePattern()) {
+        result = true;
+      }
+    }
+    return result;
+  }
+
+  // just omitted null checks
+  @Override
+  public int hashCode() {
+    int hash = 3;
+    hash = 7 * hash + this.color.hashCode();
+    hash = 7 * hash + this.stripePattern.hashCode();
+    return hash;
+  }
+
+  public static void main(String args[]) {
+    Tiger bengalTiger1 = new Tiger("Yellow", "Dense", 3);
+    Tiger bengalTiger2 = new Tiger("Yellow", "Dense", 2);
+    Tiger siberianTiger = new Tiger("White", "Sparse", 4);
+    System.out.println("bengalTiger1 and bengalTiger2: "
+        + bengalTiger1.equals(bengalTiger2));
+    System.out.println("bengalTiger1 and siberianTiger: "
+        + bengalTiger1.equals(siberianTiger));
+
+    System.out.println("bengalTiger1 hashCode: " + bengalTiger1.hashCode());
+    System.out.println("bengalTiger2 hashCode: " + bengalTiger2.hashCode());
+    System.out.println("siberianTiger hashCode: "
+        + siberianTiger.hashCode());
+  }
+
+  public String getColor() {
+    return color;
+  }
+
+  public String getStripePattern() {
+    return stripePattern;
+  }
+
+  public Tiger(String color, String stripePattern, int height) {
+    this.color = color;
+    this.stripePattern = stripePattern;
+    this.height = height;
+
+  }
+}
+ Example Code Output: bengalTiger1 and bengalTiger2: true 
+bengalTiger1 and siberianTiger: false 
+bengalTiger1 hashCode: 1398212510 
+bengalTiger2 hashCode: 1398212510 
+siberianTiger hashCode: –1227465966
+ There are two methods in super class as java.lang.Object. We need to override them to custom object. public boolean equals(Object obj)
+public int hashCode()
+ Equal objects must produce the same hash code as long as they are equal, however unequal objects need not produce distinct hash codes. public class Test
+{
+    private int num;
+    private String data;
+    public boolean equals(Object obj)
+    {
+        if(this == obj)
+            return true;
+        if((obj == null) || (obj.getClass() != this.getClass()))
+            return false;
+        // object must be Test at this point
+        Test test = (Test)obj;
+        return num == test.num &&
+        (data == test.data || (data != null && data.equals(test.data)));
+    }
+
+    public int hashCode()
+    {
+        int hash = 7;
+        hash = 31 * hash + num;
+        hash = 31 * hash + (null == data ? 0 : data.hashCode());
+        return hash;
+    }
+
+    // other methods
+}
+ If you want get more, please check this link as http://www.javaranch.com/journal/2002/10/equalhash.html This is another example, http://java67.blogspot.com/2013/04/example-of-overriding-equals-hashcode-compareTo-java-method.html Have Fun! @.@

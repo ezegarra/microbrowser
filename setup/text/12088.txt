@@ -1,0 +1,44 @@
+Do you obfuscate your commercial Java code? obfuscation I guess it really comes down to what your Java code is for, how it's distributed and who your clients are. We don't obfuscate anything, as we've never found one that was particularly good and it tends to be more trouble than it's worth. If someone has access to our JAR files and has the knowledge to be able to sniff around inside them, then there's far more worrying things that they can do than rip off our source code. I use proguard for JavaME development. It's not only very very good at making jar files smaller (Essential for mobile) but it is useful as a nicer way of doing device-specific code without resorting to IDE-unfriendly preprocessing tools such as antenna. E.g. public void doSomething()
+{
+    /* Generated config class containing static finals: */
+    if (Configuration.ISMOTOROLA)
+    {
+        System.out.println("This is a motorola phone");
+    }
+    else
+    {
+        System.out.println("This is not a motorola phone");
+    }
+}
+ This gets compiled, obfuscated, and the class file ends up as though you had written: public void doSomething()
+{
+    System.out.println("This is a motorola phone");
+}
+ So you can have variants of code to work around manufacturer bugs in JVM/library implementations without bulking out the final executable class files. I believe that some commercial obfuscators can also merge class files together in certain cases. This is useful because the more classes you have, the larger the size overhead you have in the zip (jar) file. If you do obfuscate, stay away from obfuscators that modify the code by changing code flow and/or adding exception blocks and such to make it hard to disassemble it. To make the code unreadable it is usually enough to just change all names of methods, fields and classes. The reason to stay away from changing code flow is that some of those changes makes it impossible for the JVM to efficiently optimize the code. In effect it will actually degrade the performance of your application. I spent some time this year trying out various Java obfuscators, and I found one to be miles ahead of the rest: JBCO. It's unfortunately a bit cumbersome to set up, and has no GUI, but in terms of the level of obfuscation it produces, it is unparalleled. You try feeding it a simple loop, and if your decompiler doesn't crash trying to load it, you will see something like this:     if(i < ll1) goto _L6; else goto _L5
+_L5:
+    char ac[] = run(stop(lI1l));
+    l7 = (long)ac.length << 32 & 0xffffffff00000000L ^ l7 & 0xffffffffL;
+    if((int)((l7 & 0xffffffff00000000L) >> 32) != $5$)
+    {
+        l = (long)III << 50 & 0x4000000000000L ^ l & 0xfffbffffffffffffL;
+    } else
+    {
+        for(l3 = (long)III & 0xffffffffL ^ l3 & 0xffffffff00000000L; (int)(l3 & 0xffffffffL) < ll1; l3 = (long)(S$$ + (int)(l3 & 0xffffffffL)) ^ l3 & 0xffffffff00000000L)
+        {
+            for(int j = III; j < ll1; j++)
+            {
+                l2 = (long)actionevent[j][(int)(l3 & 0xffffffffL)] & 65535L ^ l2 & 0xffffffffffff0000L;
+                l6 = (long)(j << -351) & 0xffffffffL ^ l6 & 0xffffffff00000000L;
+                l1 = (long)((int)(l6 & 0xffffffffL) + j) & 0xffffffffL ^ l1 & 0xffffffff00000000L;
+                l = (long)((int)(l1 & 0xffffffffL) + (int)(l3 & 0xffffffffL)) << 16 & 0xffffffff0000L ^ l & 0xffff00000000ffffL;
+                l = (long)ac[(int)((l & 0xffffffff0000L) >> 16)] & 65535L ^ l & 0xffffffffffff0000L;
+                if((char)(int)(l2 & 65535L) != (char)(int)(l & 65535L))
+                {
+                    l = (long)III << 50 & 0x4000000000000L ^ l & 0xfffbffffffffffffL;
+                }
+            }
+
+        }
+
+    }
+ You didn't know Java had goto's? Well, the JVM supports them =) I use ProGuard and highly recommend it. While obfuscation does protect your code from casual attackers, it's main benefit is the minimizing effect of removing unused classes and methods and shortening all identifiers to 1 or 2 characters. I think that for the most part obfuscation is pointless: even with full source code it's generally hard enough to figure out what the heck intention was (assuming there are no comments, and no meaningful names for local variables -- which is the case when re-generating sources from byte code). Obfuscation just decorates the cake. I think developers and especially their managers tend to greatly over-exaggerate risk of someone seeing the source code. While good decompilers can produce nice looking source code, it's not trivial to work with it, and costs associated (not to mention legal risks) are high enough to make this approach seldom useful. I have only decompiled to debug problems with closed-source vendors' products (deadlocks in DB abstraction layer, ugh). Bytecode was actually obfuscated, I think, but we nonetheless found the underlying problem -- it was an actual design problem. I think that the old (classical) way of the obfuscation is gradually losing its relevance. Because in most cases a classical obfuscators breaking a stack trace (it is not good for support your clients) Nowadays the main point to not protect some algorithms, but to protect a sensitive data: API logins/passwords/keys, code which responsible for licensing (piracy still here, especially Western Europe, Russia, Asia, IMHO), advertisement account IDs, etc. Interesting fact: we have all this sensitive data in Strings. Actually Strings is about 50-80% of logic of our applications. It seems to me that future of obfuscation is "String encryption tools". But now "String encryption" feature is available only in commercial obfuscators, such as: Allatori, Zelix KlassMaster, Smokescreen, Stringer Java Obfuscation Toolkit, DashO. N.B. I'm CEO at Licel LLC. Developer of Stringer Java Obfuscator.

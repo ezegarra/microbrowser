@@ -1,0 +1,50 @@
+Detach an entity from JPA/EJB3 persistence context orm jpa As far as I know, the only direct ways to do it are: Commit the txn - Probably not a reasonable option Clear the Persistence Context - EntityManager.clear() - This is brutal, but would clear it out Copy the object - Most of the time your JPA objects are serializable, so this should be easy (if not particularly efficient). If there aren't too many properties in the bean, you might just create a new instance and set all of its properties manually from the persisted bean. This could be implemented as a copy constructor, for example: public Thing(Thing oldBean) {
+  this.setPropertyOne(oldBean.getPropertyOne());
+  // and so on
+}
+ Then: Thing newBean = new Thing(oldBean);
+ Unfortunately, there's no way to disconnect one object from the entity manager in the current JPA implementation, AFAIR. EntityManager.clear() will disconnect all the JPA objects, so that might not be an appropriate solution in all the cases, if you have other objects you do plan to keep connected. So your best bet would be to clone the objects and pass the clones to the code that changes the objects. Since primitive and immutable object fields are taken care of by the default cloning mechanism in a proper way, you won't have to write a lot of plumbing code (apart from deep cloning any aggregated structures you might have). (may be too late to answer, but can be useful for others) I'm developing my first system with JPA right now. Infortunately I'm faced with this problem when this system is almost complete. Simply put. Use Hibernate, or wait for JPA 2.0. In Hibernate, you can use 'session.evict(object)' to remove one object from session. In JPA 2.0, in draft right now, there is the 'EntityManager.detach(object)' method to detach one object from persistence context. Mauricio Kanada, thanks to you for this advice, method evict() works nice. I use JPA from SEAM, there is built in support of JPA Entity Manager, and it is possible to access hibernate delegate Session and thus this method "evict". Many thanks, Zmicer this is quick and dirty, but you can also serialize and deserialize the object. I think you can also use method EntityManager.refresh(Object o) if primary key of the entity has not been changed. This method will restore original state of the entity. If you need to detach an object from the EntityManager and you are using Hibernate as your underlying ORM layer you can get access to the Hibernate Session object and use the Session.evict(Object) method that Mauricio Kanada mentioned above. public void detach(Object entity) {
+    org.hibernate.Session session = (Session) entityManager.getDelegate();
+    session.evict(entity);
+}
+ Of course this would break if you switched to another ORM provider but I think this is preferably to trying to make a deep copy. Since I am using SEAM and JPA 1.0 and my system has a fuctinality that needs to log all fields changes, i have created an value object or data transfer object if same fields of the entity that needs to be logged. The constructor of the new pojo is:     public DocumentoAntigoDTO(Documento documentoAtual) {
+    Method[] metodosDocumento = Documento.class.getMethods();
+    for(Method metodo:metodosDocumento){
+        if(metodo.getName().contains("get")){
+            try {
+                Object resultadoInvoke = metodo.invoke(documentoAtual,null);
+                Method[] metodosDocumentoAntigo = DocumentoAntigoDTO.class.getMethods();
+                for(Method metodoAntigo : metodosDocumentoAntigo){
+                    String metodSetName = "set" + metodo.getName().substring(3);
+                    if(metodoAntigo.getName().equals(metodSetName)){
+                        metodoAntigo.invoke(this, resultadoInvoke);
+                    }
+                }
+            } catch (IllegalArgumentException e) {
+                e.printStackTrace();
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+ If using EclipseLink you also have the options, Use the Query hint, "eclipselink.maintain-cache"="false" - all returned objects will be detached. Use the EclipseLink JpaEntityManager copy() API to copy the object to the desired depth. If you get here because you actually want to pass an entity across a remote boundary then you just put some code in to fool the hibernazi. for(RssItem i : result.getChannel().getItem()){
+}
+ Cloneable wont work because it actually copies the PersistantBag across. And forget about using serializable and bytearray streams and piped streams. creating threads to avoid deadlocks kills the entire concept. No matter which JPA implementation you use, Just use entityManager.detach(object) it's now in JPA 2.0 and part of JEE6. In JPA 1.0 (tested using EclipseLink) you could retrieve the entity outside of a transaction. For example, with container managed transactions you could do: public MyEntity myMethod(long id) {
+    final MyEntity myEntity = retrieve(id);
+    // myEntity is detached here
+}
+
+@TransactionAttribute(TransactionAttributeType.NOT_SUPPORTED)
+public MyEntity retrieve(long id) {
+    return entityManager.find(MyEntity.class, id);
+}
+ Do deal with a similar case I have created a DTO object that extends the persistent entity object as follows: class MyEntity
+{
+   public static class MyEntityDO extends MyEntity {}
+
+}
+ Finally, an scalar query will retrieve the desired non managed attributes: (Hibernate) select p.id, p.name from MyEntity P
+(JPA)       select new MyEntity(p.id, p.name) from myEntity P

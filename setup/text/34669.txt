@@ -1,0 +1,34 @@
+How to keep a "things done" count in a recursive algorithm in Java? recursion coding-style integer final It's kind of a hack, but sometimes I use an AtomicInteger, which is mutable, to do things like this. I've also seen cases where an int[] of size 1 is passed in. The current solution I am using is: int[] counter = {0};
+ and then pass it to the recursive algorithm: public List<Thing> doIt (String aString, int[] counter) { ... }
+ and when I want to increment it: counter[0]++;
+ Not super elegant, but it works... Integers are immutable, which means that when you pass it as an argument it creates a copy rather than a reference to the same item. (explanation). To get the behavior you're looking for, you can write your own class which is like Integer only mutable. Then, just pass it to the recursive function, it is incremented within the recursion, and when you access it again after the recursion is over it will still maintain its new values. Edit: Note that using an int[] array is a variation on this method... In Java, arrays are also passed by reference rather than copied like primitives or immutable classes. Since you've already discovered the pseudo-mutable integer "hack," how about this option: Does it make sense for you to make a separate Parser class? If you do this, you can store the current state in a member variable. You probably need to think about how you're going to handle any thread safety issues, and it might be overkill for this particular application, but it might work for you. To be honest I would recode the function to make it a linear algorithm that uses a loop. This way you have no chance of running out of heap space if you are stepping through an extremely large string. Also, you would not need to have a the extra parameter just to keep track of the count. This also would probably have the result of making the algorithm faster because it does not need to make a function call for every character. Unless of course there is a specific reason it needs to be recursive. One possibility I can think of is to store the count in a member variable of the class. This of course assumes that the public doIt method is only called by a single thread. Another option is to refactor the public method to call a private helper method. The private method takes the list as a parameter and returns the count. For example: public List<Thing> doIt(String aString) {
+    List<Thing> list = new ArrayList<Thing>();
+    int count = doItHelper(aString, list, 0);
+    // ...
+    return list;
+}
+
+private int doItHelper(String aString, List<Thing> list, int count) {
+    // ...
+    // do something that updates count
+    count = doItHelper(aString, list, count);
+    // ...
+    return count;
+}
+ This assumes that you can do the error handling in the public doIt method, since the count variable isn't actually passed back to the caller. If you need to do that, you could of course throw an exception: public List<Thing> doIt(String aString) throws SomeCustomException {
+    List<Thing> list = new ArrayList<Thing>();
+    int count = doItHelper(aString, list, 0);
+    // ...
+    if (someErrorOccurred) {
+        throw new SomeCustomException("Error occurred at chracter index " + count, count);
+    }
+    return list;
+}
+ It's difficult to know whether that will help without knowing more about how your algorithm actually works. You could just use a static int class variable that gets incremented each time your doIt method is called. You could also do: private int recurse (int i) {
+
+    if (someConditionkeepOnGoing) {
+        i = recurse(i+1);
+    }
+
+    return i;
+}

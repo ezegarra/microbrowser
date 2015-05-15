@@ -1,0 +1,63 @@
+shortcut for creating a Map from a List in groovy? collections groovy expandometaclass I can't find anything built in... but using the ExpandoMetaClass I can do this: ArrayList.metaClass.collectMap = {Closure callback->
+    def map = [:]
+    delegate.each {
+        def r = callback.call(it)
+        map[r[0]] = r[1]
+    }
+    return map
+}
+ this adds the collectMap method to all ArrayLists... I'm not sure why adding it to List or Collection didn't work.. I guess that's for another question... but now I can do this... assert ["foo":"oof", "42":"24", "bar":"rab"] ==
+            ["foo", "42", "bar"].collectMap { return [it, it.reverse()] }
+ from List to calculated Map with one closure... exactly what I was looking for. Edit: the reason I couldn't add the method to the interfaces List and Collection was because I did not do this: List.metaClass.enableGlobally()
+ after that method call, you can add methods to interfaces.. which in this case means my collectMap method will work on ranges like this: (0..2).collectMap{[it, it*2]}
+ which yields the map: [0:0, 1:2, 2:4] Also, if you're use google collections (http://code.google.com/p/google-collections/), you can do something like this:   map = Maps.uniqueIndex(list, Functions.identity());
+ ok... I've played with this a little more and I think this is a pretty cool method... def collectMap = {Closure callback->
+    def map = [:]
+    delegate.each {
+        def r = callback.call(it)
+        map[r[0]] = r[1]
+    }
+    return map
+}
+ExpandoMetaClass.enableGlobally()
+Collection.metaClass.collectMap = collectMap
+Map.metaClass.collectMap = collectMap
+ now any subclass of Map or Collection have this method... here I use it to reverse the key/value in a Map [1:2, 3:4].collectMap{[it.value, it.key]} == [2:1, 4:3]
+ and here I use it to create a map from a list [1,2].collectMap{[it,it]} == [1:1, 2:2]
+ now I just pop this into a class that gets called as my app is starting and this method is available throughout my code. EDIT: to add the method to all arrays... Object[].metaClass.collectMap = collectMap
+ What about something like this? // setup
+class Pair { 
+    String k; 
+    String v; 
+    public Pair(def k, def v) { this.k = k ; this.v = v; }
+}
+def list = [ new Pair('a', 'b'), new Pair('c', 'd') ]
+
+// the idea
+def map = [:]
+list.each{ it -> map.putAt(it.k, it.v) }
+
+// verify
+println map['c']
+ Check out "inject". Real functional programming wonks call it "fold". columns.inject([:]) { memo, entry ->
+    memo[entry.name] = entry.val
+    return memo
+}
+ And, while you're at it, you probably want to define methods as Categories instead of right on the metaClass. That way, you can define it once for all Collections: class PropertyMapCategory {
+    static Map mapProperty(Collection c, String keyParam, String valParam) {
+        return c.inject([:]) { memo, entry ->
+            memo[entry[keyParam]] = entry[valParam]
+            return memo
+        }
+    }
+}
+ Example usage: use(PropertyMapCategory) {
+    println columns.mapProperty('name', 'val')
+}
+ Was the groupBy method not available when this question was asked? I've recently came across the need to do exactly that: converting a list into a map. This question was posted before Groovy version 1.7.9 came out, so the method collectEntries didn't exist yet. It works exactly as the collectMap method that was proposed: Map rowToMap(row) {
+    row.columns.collectEntries{[it.name, it.val]}
+}
+ If for some reason you are stuck with an older Groovy version, the inject method can also be used (as proposed here). This is a slightly modified version that takes only one expression inside the closure (just for the sake of character saving!): Map rowToMap(row) {
+    row.columns.inject([:]) {map, col -> map << [(col.name): col.val]}
+}
+ The + operator can also be used instead of the <<.

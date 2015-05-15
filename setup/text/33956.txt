@@ -1,0 +1,57 @@
+How to get facet ranges in solr results? lucene solr There may well be a better Solr-specific answer, but I work with straight Lucene, and since you're not getting much traction I'll take a stab. There, I'd create a populate a Filter with a FilteredQuery wrapping the original Query. Then I'd get a FieldCache for the field of interest. Enumerate the hits in the filter's bitset, and for each hit, you get the value of the field from the field cache, and add it to a SortedSet. When you've got all of the hits, divide the size of the set into the number of ranges you want (five to seven is a good number according the user interface guys), and rather than a single-valued constraint, your facets will be a range query with the lower and upper bounds of each of those subsets. I'd recommend using some special-case logic for a small number of values; obviously, if you only have four distinct values, it doesn't make sense to try and make 5 range refinements out of them. Below a certain threshold (say 3*your ideal number of ranges), you just show the facets normally rather than ranges. To answer your first question, you can get facet ranges by using the the generic facet query support. Here's an example: http://localhost:8983/solr/select?q=video&rows=0&facet=true&facet.query=price:[*+TO+500]&facet.query=price:[500+TO+*]
+ As for your second question (automatically suggesting facet ranges), that's not yet implemented. Some argue that this kind of querying would be best implemented on your application rather that letting Solr "guess" the best facet ranges. Here are some discussions on the topic: (Archived) https://web.archive.org/web/20100416235126/http://old.nabble.com/Re:-faceted-browsing-p3753053.html (Archived) https://web.archive.org/web/20090430160232/http://www.nabble.com/Re:-Sorting-p6803791.html (Archived) https://web.archive.org/web/20090504020754/http://www.nabble.com/Dynamically-calculated-range-facet-td11314725.html You can use solr facet ranges http://wiki.apache.org/solr/SimpleFacetParameters#Facet_by_Range I have worked out how to calculate sensible dynamic facets for product price ranges. The solution involves some pre-processing of documents and some post-processing of the query results, but it requires only one query to Solr, and should even work on old version of Solr like 1.4. Round up prices before submission First, before submitting the document, round up the the price to the nearest "nice round facet boundary" and store it in a "rounded_price" field. Users like their facets to look like "250-500" not "247-483", and rounding also means you get back hundreds of price facets not millions of them. With some effort the following code can be generalised to round nicely at any price scale:     public static decimal RoundPrice(decimal price)
+    {
+        if (price < 25)
+            return Math.Ceiling(price);
+        else if (price < 100)
+            return Math.Ceiling(price / 5) * 5;
+        else if (price < 250)
+            return Math.Ceiling(price / 10) * 10;
+        else if (price < 1000)
+            return Math.Ceiling(price / 25) * 25;
+        else if (price < 2500)
+            return Math.Ceiling(price / 100) * 100;
+        else if (price < 10000)
+            return Math.Ceiling(price / 250) * 250;
+        else if (price < 25000)
+            return Math.Ceiling(price / 1000) * 1000;
+        else if (price < 100000)
+            return Math.Ceiling(price / 2500) * 2500;
+        else
+            return Math.Ceiling(price / 5000) * 5000;
+    }
+ Permissible prices go 1,2,3,...,24,25,30,35,...,95,100,110,...,240,250,275,300,325,...,975,1000 and so forth. Get all facets on rounded prices Second, when submitting the query, request all facets on rounded prices sorted by price: facet.field=rounded_price. Thanks to the rounding, you'll get at most a few hundred facets back. Combine adjacent facets into larger facets Third, after you have the results, the user wants see only 3 to 7 facets, not hundreds of facets. So, combine adjacent facets into a few large facets (called "segments") trying to get a roughly equal number of documents in each segment. The following rather more complicated code does this, returning tuples of (start, end, count) suitable for performing range queries. The counts returned will be correct provided prices were been rounded up to the nearest boundary:     public static List<Tuple<string, string, int>> CombinePriceFacets(int nSegments, ICollection<KeyValuePair<string, int>> prices)
+    {
+        var ranges = new List<Tuple<string, string, int>>();
+        int productCount = prices.Sum(p => p.Value);
+        int productsRemaining = productCount;
+        if (nSegments < 2)
+            return ranges;
+        int segmentSize = productCount / nSegments;
+        string start = "*";
+        string end = "0";
+        int count = 0;
+        int totalCount = 0;
+        int segmentIdx = 1;
+        foreach (KeyValuePair<string, int> price in prices)
+        {
+            end = price.Key;
+            count += price.Value;
+            totalCount += price.Value;
+            productsRemaining -= price.Value;
+            if (totalCount >= segmentSize * segmentIdx)
+            {
+                ranges.Add(new Tuple<string, string, int>(start, end, count));
+                start = end;
+                count = 0;
+                segmentIdx += 1;
+            }
+            if (segmentIdx == nSegments)
+            {
+                ranges.Add(new Tuple<string, string, int>(start, "*", count + productsRemaining));
+                break;
+            }
+        }
+        return ranges;
+    }
+ Filter results by selected facet Fourth, suppose ("250","500",38) was one of the resulting segments. If the user selects "$250 to $500" as a filter, simply do a filter query fq=price:[250 TO 500]

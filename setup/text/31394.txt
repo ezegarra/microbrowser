@@ -1,0 +1,2 @@
+Java: Programatic Way to Determine Current Windows User windows You're actually really close. This is what you're looking for: System.getProperty("user.name")
+ The commonly available system properties are documented in the System.getProperties() method. As Chris said "user.name" is the property to get the user running your app.

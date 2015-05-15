@@ -1,0 +1,3 @@
+Java Compiler Options to produce .exe files windows compiler-construction gnu Here is an in length discussion about the topic. It includes discussion about different compilers and IDEs. To compile the Java program MyJavaProg.java, type: gcj -c -g -O MyJavaProg.java
+ To link it, use the command: gcj --main=MyJavaProg -o MyJavaProg MyJavaProg.o
+ and then linking to create an executable mycxxprog.exe g++ -o mycxxprog.exe mycxxprog.o

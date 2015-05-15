@@ -1,0 +1,12 @@
+Why does windows XP minimize my swing full screen window on my second screen? windows swing Usually when an application is in "full screen" mode it will take over the entire desktop. For a user to get to another window they would have to alt-tab to it. At that point windows would minimize the full screen app so that the other application could come to the front. This sounds like it may be a bug (undocumented feature...) in windows. It should probably not be doing this for a dual screen setup. One option to fix this is rather than setting it to be "full screen" just make the window the same size as the screen with location (0,0). You can get screen information from the GraphicsConfigurations on the GraphicsDevice. The following code works (thank you John). With no full screen and a large "always on top" window. But I still don't know why windows caused this stranged behavior... private Window initFullScreenWindow() {
+	GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+	GraphicsDevice[] gds = ge.getScreenDevices();
+	GraphicsDevice gd = gds[1];
+	JWindow window = new JWindow(gd.getDefaultConfiguration());
+	window.setContentPane(getJFSPanel());
+	window.setLocation(1280, 0);
+	window.setSize(gd.getDisplayMode().getWidth(), gd.getDisplayMode().getHeight());
+	window.setAlwaysOnTop(true);
+	//gd.setFullScreenWindow(window);
+	return window;
+}
