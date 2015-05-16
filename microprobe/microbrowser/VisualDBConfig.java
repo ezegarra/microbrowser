@@ -14,7 +14,7 @@ public class VisualDBConfig {
     public static final Calendar CAL = GregorianCalendar.getInstance();
     
     public static Level LOGGING_LEVEL_PREFUSE = Level.SEVERE;
-    public static Level LOGGING_LEVEL_MICROPROBE = Level.SEVERE;
+    public static Level LOGGING_LEVEL_MICROPROBE = Level.ALL;
     
 	public static int DETAIL_VIEW_MAX_RELATED = 70;
 	

@@ -56,24 +56,53 @@ public class DiscussionDetailPaneControl extends ControlAdapter {
      * @see prefuse.controls.Control#itemEntered(prefuse.visual.VisualItem, java.awt.event.MouseEvent)
      */
     public void itemEntered(VisualItem item, MouseEvent e) {
-
+		logger.info("item=" + item.getInt("id") + ", type=" + item.getInt("type") );
+		
     	int type = item.getInt("type");
         // mark the current item as selected from the list
     	if ( type == VisualDBConstants.NODE_TYPE_ANSWER || type == VisualDBConstants.NODE_TYPE_ANSWER_ACCEPTED) {
+            
+        	TraceService.log(TraceService.EVENT_DIAG_DETAIL_ITEMENTERED_ANSWER, "id="+ item.getString("id")+", type=" + item.getInt("type"));
+        	
     		discussionDetailsPane.showSelectedAnswer(item, VisualDBConstants.ORIGIN_VIEW_DETAILS_DIAGRAM);
     		discussionDetailsPane.setSelectedAnswer(item);
     	} else {
             discussionDetailsPane.selectItemFromList(item);    		
     	}
-        
-    	TraceService.log(TraceService.EVENT_DIAG_DETAIL_ITEMENTERED, "id="+ item.getString("id")+", type=" + item.getInt("type"));
+
+    	String event = null;
+    	
+    	switch ( type ) {
+    	case VisualDBConstants.NODE_TYPE_ANSWER:
+    	case VisualDBConstants.NODE_TYPE_ANSWER_ACCEPTED:
+    		event = TraceService.EVENT_DIAG_DETAIL_ITEMENTERED_ANSWER;
+    		break;
+    	case VisualDBConstants.NODE_TYPE_PATTERN:
+    		event = TraceService.EVENT_DIAG_DETAIL_ITEMENTERED_PATTERN;
+    		break;
+    	case VisualDBConstants.NODE_TYPE_DISCUSSION:
+    		event = TraceService.EVENT_DIAG_DETAIL_ITEMENTERED_DISCUSSION;
+    		break;
+    	case VisualDBConstants.NODE_TYPE_LABEL:
+    		event = TraceService.EVENT_DIAG_DETAIL_ITEMENTERED_LABEL;
+    		break;
+    	case VisualDBConstants.NODE_TYPE_AGGREGATE:
+    		event = TraceService.EVENT_DIAG_DETAIL_ITEMENTERED_AGGREGATE;
+    		break;
+    	}
+    	
+    	if ( event != null ) {
+    		TraceService.log(event, "id="+ item.getString("id")+", type=" + item.getInt("type"));
+    	}
+    	
     }
     
     /**
      * @see prefuse.controls.Control#itemExited(prefuse.visual.VisualItem, java.awt.event.MouseEvent)
      */
     public void itemExited(VisualItem item, MouseEvent e) {
-    	
+		logger.info("item=" + item.getInt("id") + ", type=" + item.getInt("type") );
+		
         Display d = (Display)e.getSource();
         d.setToolTipText(null);
         d.setCursor(Cursor.getDefaultCursor());

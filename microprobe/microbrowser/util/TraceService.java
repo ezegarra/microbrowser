@@ -55,7 +55,11 @@ public class TraceService {
 	public static final String EVENT_DIAG_ITEMCLICKED			= "diag_itemclicked";
 	public static final String EVENT_DIAG_ITEMEXITED			= "diag_itemexited";
 	public static final String EVENT_DIAG_ITEMDRAGGED 			= "diag_itemdragged";
-	public static final String EVENT_DIAG_DETAIL_ITEMENTERED 	= "diag_detail_itementered";
+	public static final String EVENT_DIAG_DETAIL_ITEMENTERED_ANSWER 	= "diag_detail_itementered_answer";
+	public static final String EVENT_DIAG_DETAIL_ITEMENTERED_PATTERN 	= "diag_detail_itementered_pattern";
+	public static final String EVENT_DIAG_DETAIL_ITEMENTERED_DISCUSSION	= "diag_detail_itementered_discussion";
+	public static final String EVENT_DIAG_DETAIL_ITEMENTERED_LABEL 		= "diag_detail_itementered_label";
+	public static final String EVENT_DIAG_DETAIL_ITEMENTERED_AGGREGATE 	= "diag_detail_itementered_aggregate";
 	public static final String EVENT_DIAG_DETAIL_ITEMEXITED 	= "diag_detail_itemexited";
 	public static final String EVENT_DIAG_DETAIL_ITEMCLICKED 	= "diag_detail_itemclicked";
 	public static final String EVENT_SEARCH_UPDATE				= "search_update";

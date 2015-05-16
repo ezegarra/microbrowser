@@ -46,7 +46,7 @@ public class MicroBrowserApplication extends JPanel {
 		super();
 		_instance = this;
 		Logger.getLogger("prefuse").setLevel(VisualDBConfig.LOGGING_LEVEL_PREFUSE);
-		Logger.getLogger("visualdb").setLevel(VisualDBConfig.LOGGING_LEVEL_MICROPROBE);
+		Logger.getLogger("microbrowser").setLevel(VisualDBConfig.LOGGING_LEVEL_MICROPROBE);
 	}
 	
 	public static void main(String[] argv)
