@@ -8,7 +8,7 @@ import prefuse.visual.VisualItem;
 
 public class DiscussionRenderer extends ShapeRenderer {
 
-    private int m_baseSize = 30;
+    private int m_baseSize = 20;
 	
 	protected Shape getRawShape(VisualItem item) {
 		Shape s;
@@ -35,7 +35,9 @@ public class DiscussionRenderer extends ShapeRenderer {
 				s = triangle_up((float)x, (float)y, (float)width);
 				break;
 			case VisualDBConstants.SHAPE_QUESTION_ANSWERED:
-				s = hexagon((float)x, (float)y, (float)height);
+				//s = hexagon((float)x, (float)y, (float)height);
+				s = cross((float)x, (float)y, (float)height);
+				//s = rectangle((float)x, (float)y, (float)width, (float)width);
 				break;
 			case VisualDBConstants.SHAPE_QUESTION_UNANSWERED:
 				s = diamond((float)x, (float)y, (float)width);
