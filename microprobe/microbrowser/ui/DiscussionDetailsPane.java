@@ -28,7 +28,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import microbrowser.VisualDBApplication;
+import microbrowser.MicroBrowserApplication;
 import microbrowser.VisualDBConfig;
 import microbrowser.VisualDBConstants;
 import microbrowser.action.EdgeStrokeColorAction;
@@ -97,7 +97,7 @@ public class DiscussionDetailsPane extends JPanel {
 
 	private Visualization m_vis = null;
 	private Display display = null;
-	public VisualDBApplication parent = null;
+	public MicroBrowserApplication parent = null;
 	protected Node theNode = null;
 
 	private DiscussionRenderer m_nodeRenderer;
@@ -120,7 +120,7 @@ public class DiscussionDetailsPane extends JPanel {
 	private DefaultListModel answersListMenuModel = new DefaultListModel();
 	private JList answersList = null;
 	
-	public DiscussionDetailsPane(VisualDBApplication parent, int threadid) {
+	public DiscussionDetailsPane(MicroBrowserApplication parent, int threadid) {
 		super(new BorderLayout());
 
 		this.parent = parent;
@@ -747,7 +747,7 @@ public class DiscussionDetailsPane extends JPanel {
 	 * @param threadid
 	 * @return
 	 */
-	public static JPanel demo(VisualDBApplication parent, int threadid) {
+	public static JPanel demo(MicroBrowserApplication parent, int threadid) {
 		DiscussionDetailsPane pane = new DiscussionDetailsPane(parent, threadid);
 
 		return pane;

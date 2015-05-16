@@ -9,11 +9,11 @@ import prefuse.util.ui.JPrefuseApplet;
 public class VisualDBPanelApplet extends JPrefuseApplet implements ActionListener {
 	private static final long serialVersionUID = -8268092529831579329L;
 	JSObject win;
-	VisualDBApplication visualDBPanel = null;
+	MicroBrowserApplication visualDBPanel = null;
 	
     public void init() {
     	
-    	visualDBPanel = (VisualDBApplication) microbrowser.VisualDBApplication.createVisualization();
+    	visualDBPanel = (MicroBrowserApplication) microbrowser.MicroBrowserApplication.createVisualization();
     	this.getContentPane().add(visualDBPanel);    
         win = JSObject.getWindow(this);
         

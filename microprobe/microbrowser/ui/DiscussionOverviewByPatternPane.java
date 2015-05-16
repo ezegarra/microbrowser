@@ -34,7 +34,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import microbrowser.VisualDBApplication;
+import microbrowser.MicroBrowserApplication;
 import microbrowser.VisualDBConfig;
 import microbrowser.VisualDBConstants;
 import microbrowser.action.EdgeVisibilityAction;
@@ -141,7 +141,7 @@ public class DiscussionOverviewByPatternPane extends DiscussionOverviewPane {
     private ListQueryBinding   typesQ    = null;
     private SearchQueryBinding searchQ   = null;
     
-	public DiscussionOverviewByPatternPane(VisualDBApplication parent) {
+	public DiscussionOverviewByPatternPane(MicroBrowserApplication parent) {
 		//this.display = display;
 		super(parent);
 		
@@ -797,7 +797,7 @@ public class DiscussionOverviewByPatternPane extends DiscussionOverviewPane {
 		return footerBox;
 	}
 
-	public static DiscussionOverviewByPatternPane demo(VisualDBApplication parent) {
+	public static DiscussionOverviewByPatternPane demo(MicroBrowserApplication parent) {
 		DiscussionOverviewByPatternPane pane = new DiscussionOverviewByPatternPane(parent);
 
 		return pane;

@@ -23,7 +23,7 @@ import javax.swing.ListSelectionModel;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 
-import microbrowser.VisualDBApplication;
+import microbrowser.MicroBrowserApplication;
 import microbrowser.data.io.GraphMLDataReader;
 import microbrowser.render.AnswersListRenderer;
 import microbrowser.render.VisualDBListRenderer;
@@ -40,11 +40,11 @@ public class PatternsDetailsPane extends DiscussionDetailsPane {
 	private JEditorPane patternDescription = new JEditorPane("text/html", "");
 	private JEditorPane patternSolution = new JEditorPane("text/html", "");
 	
-	public PatternsDetailsPane(VisualDBApplication parent, int threadid) {
+	public PatternsDetailsPane(MicroBrowserApplication parent, int threadid) {
 		super(parent, threadid);		
 	}
 
-	public static JPanel demo(VisualDBApplication parent, int threadid) {
+	public static JPanel demo(MicroBrowserApplication parent, int threadid) {
 		PatternsDetailsPane pane = new PatternsDetailsPane(parent, threadid);
 
 		return pane;

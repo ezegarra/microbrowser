@@ -29,18 +29,18 @@ import microbrowser.util.TraceService;
 import prefuse.data.Node;
 import prefuse.util.ui.UILib;
 
-public class VisualDBApplication extends JPanel {
+public class MicroBrowserApplication extends JPanel {
 	private static final long serialVersionUID = -2310029621999732548L;
 
-	private static Logger logger = Logger.getLogger(VisualDBApplication.class.getName());
-	private static VisualDBApplication _instance = null;
+	private static Logger logger = Logger.getLogger(MicroBrowserApplication.class.getName());
+	private static MicroBrowserApplication _instance = null;
 	private static JFrame _frame = null;
 	
 	public JMenuBar menubar = new JMenuBar();
 	public JTabbedPane tabbedPane = new JTabbedPane();
 	public DiscussionOverviewPane discussionOverviewPane;	
 	
-	public VisualDBApplication() {
+	public MicroBrowserApplication() {
 		super();
 		_instance = this;
 		Logger.getLogger("prefuse").setLevel(VisualDBConfig.LOGGING_LEVEL_PREFUSE);
@@ -69,7 +69,7 @@ public class VisualDBApplication extends JPanel {
 		
 		_frame = new JFrame("MicroBrowser - A visual browser of discussion threads");
 		_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		final VisualDBApplication panel = createVisualization();
+		final MicroBrowserApplication panel = createVisualization();
 		//frame.setSize(new Dimension(VisualDBConfig.WINDOW_SIZE_WIDTH, VisualDBConfig.WINDOW_SIZE_HEIGHT));
 		_frame.setContentPane(panel);
 		_frame.setJMenuBar(panel.menubar);
@@ -288,9 +288,9 @@ public class VisualDBApplication extends JPanel {
 	 * 
 	 * @return VisualDBPanel object with visualization information
 	 */
-	public static VisualDBApplication createVisualization() {
+	public static MicroBrowserApplication createVisualization() {
 
-		VisualDBApplication visualDBPanel = new VisualDBApplication();
+		MicroBrowserApplication visualDBPanel = new MicroBrowserApplication();
 		visualDBPanel.setupUI();
 
 		return visualDBPanel;

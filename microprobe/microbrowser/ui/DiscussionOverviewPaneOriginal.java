@@ -34,7 +34,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import microbrowser.VisualDBApplication;
+import microbrowser.MicroBrowserApplication;
 import microbrowser.VisualDBConfig;
 import microbrowser.VisualDBConstants;
 import microbrowser.action.EdgeStrokeColorAction;
@@ -104,7 +104,7 @@ import com.michaelbaranov.microba.common.PolicyListener;
 public class DiscussionOverviewPaneOriginal extends DiscussionOverviewByPatternPane /*JPanel*/ {
 	private static final long serialVersionUID = -8279873905415635170L;
 	
-	public VisualDBApplication parent;
+	public MicroBrowserApplication parent;
 	public Visualization m_vis = null;
 	private Display display = null;
 	private Display overview = null;
@@ -119,7 +119,7 @@ public class DiscussionOverviewPaneOriginal extends DiscussionOverviewByPatternP
 	private DefaultListModel listMenuModel;
 	private JScrollPane listScrollPane;
 	
-	public DiscussionOverviewPaneOriginal(VisualDBApplication parent) {
+	public DiscussionOverviewPaneOriginal(MicroBrowserApplication parent) {
 		super(parent);
 		//this.display = display;
 		this.parent = parent;
@@ -668,7 +668,7 @@ public class DiscussionOverviewPaneOriginal extends DiscussionOverviewByPatternP
 		return footerBox;
 	}
 
-	public static DiscussionOverviewPaneOriginal demo(VisualDBApplication parent) {
+	public static DiscussionOverviewPaneOriginal demo(MicroBrowserApplication parent) {
 		DiscussionOverviewPaneOriginal pane = new DiscussionOverviewPaneOriginal(parent);
 
 		return pane;

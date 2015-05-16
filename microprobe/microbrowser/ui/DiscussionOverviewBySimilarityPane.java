@@ -42,7 +42,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
-import microbrowser.VisualDBApplication;
+import microbrowser.MicroBrowserApplication;
 import microbrowser.VisualDBConfig;
 import microbrowser.VisualDBConstants;
 import microbrowser.action.EdgeStrokeColorAction;
@@ -165,7 +165,7 @@ public class DiscussionOverviewBySimilarityPane extends DiscussionOverviewPane {
     
     private Rectangle2D m_dataB = new Rectangle2D.Double();
     
-	public DiscussionOverviewBySimilarityPane(VisualDBApplication parent) {
+	public DiscussionOverviewBySimilarityPane(MicroBrowserApplication parent) {
 		super(parent);
 		
 		this.listMenuModel = new DefaultListModel();
@@ -955,7 +955,7 @@ public class DiscussionOverviewBySimilarityPane extends DiscussionOverviewPane {
 		return footerBox;
 	}
 
-	public static DiscussionOverviewBySimilarityPane demo(VisualDBApplication parent) {
+	public static DiscussionOverviewBySimilarityPane demo(MicroBrowserApplication parent) {
 		DiscussionOverviewBySimilarityPane pane = new DiscussionOverviewBySimilarityPane(parent);
 
 		return pane;
