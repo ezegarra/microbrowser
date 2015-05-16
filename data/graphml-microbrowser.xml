@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
   http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
 
-  <!-- prefuse GraphML Writer | Fri May 15 06:09:31 EDT 2015 -->
+  <!-- prefuse GraphML Writer | Sat May 16 07:26:27 EDT 2015 -->
   <key id="id" for="node" attr.name="id" attr.type="int">
     <default>-1</default>
   </key>
@@ -21117,6 +21117,114 @@ C:\Application&amp;gt;
       <data key="title">Well answered / Well Asked</data>
       <data key="body">Questions/answers that are generally agreed to be relevant and presented in a good manner.</data>
       <data key="solution"></data>
+      <data key="x">0.0</data>
+      <data key="y">0.0</data>
+      <data key="viewcount">0</data>
+      <data key="answercount">0</data>
+      <data key="acceptedanswerid">-1</data>
+      <data key="owner">Anonymous</data>
+      <data key="lasteditdate">1431684486200L</data>
+      <data key="lastactivitydate">0L</data>
+      <data key="tags"></data>
+      <data key="score">0</data>
+      <data key="searchfield"></data>
+    </node>
+    <node id="515">
+      <data key="id">-1851744200</data>
+      <data key="type">0</data>
+      <data key="title">Sample Patter</data>
+      <data key="body">This is the pattern I want to create	</data>
+      <data key="solution">tes tl; lkewjr lkjwer;welkj rcwer</data>
+      <data key="x">0.0</data>
+      <data key="y">0.0</data>
+      <data key="viewcount">0</data>
+      <data key="answercount">0</data>
+      <data key="acceptedanswerid">-1</data>
+      <data key="owner">Anonymous</data>
+      <data key="lasteditdate">1431684486200L</data>
+      <data key="lastactivitydate">0L</data>
+      <data key="tags"></data>
+      <data key="score">0</data>
+      <data key="searchfield"></data>
+    </node>
+    <node id="516">
+      <data key="id">1390456280</data>
+      <data key="type">0</data>
+      <data key="title">ggggvvvvv</data>
+      <data key="body">vvvv</data>
+      <data key="solution">vvvvv</data>
+      <data key="x">0.0</data>
+      <data key="y">0.0</data>
+      <data key="viewcount">0</data>
+      <data key="answercount">0</data>
+      <data key="acceptedanswerid">-1</data>
+      <data key="owner">Anonymous</data>
+      <data key="lasteditdate">1431684486200L</data>
+      <data key="lastactivitydate">0L</data>
+      <data key="tags"></data>
+      <data key="score">0</data>
+      <data key="searchfield"></data>
+    </node>
+    <node id="517">
+      <data key="id">1835104647</data>
+      <data key="type">0</data>
+      <data key="title">test test</data>
+      <data key="body">tes test test</data>
+      <data key="solution">test test test</data>
+      <data key="x">0.0</data>
+      <data key="y">0.0</data>
+      <data key="viewcount">0</data>
+      <data key="answercount">0</data>
+      <data key="acceptedanswerid">-1</data>
+      <data key="owner">Anonymous</data>
+      <data key="lasteditdate">1431684486200L</data>
+      <data key="lastactivitydate">0L</data>
+      <data key="tags"></data>
+      <data key="score">0</data>
+      <data key="searchfield"></data>
+    </node>
+    <node id="518">
+      <data key="id">206153966</data>
+      <data key="type">0</data>
+      <data key="title">vvvvvvvvvvv</data>
+      <data key="body">vvvvvvvvvvvvvvvvvvvvvvvvvvvv</data>
+      <data key="solution">vvvvvvvvvvvvvvvvvvvvvvvvvvv</data>
+      <data key="x">0.0</data>
+      <data key="y">0.0</data>
+      <data key="viewcount">0</data>
+      <data key="answercount">0</data>
+      <data key="acceptedanswerid">-1</data>
+      <data key="owner">Anonymous</data>
+      <data key="lasteditdate">1431684486200L</data>
+      <data key="lastactivitydate">0L</data>
+      <data key="tags"></data>
+      <data key="score">0</data>
+      <data key="searchfield"></data>
+    </node>
+    <node id="519">
+      <data key="id">-903035267</data>
+      <data key="type">0</data>
+      <data key="title">vvvvvvvvvvvvvvvvvvvvvv</data>
+      <data key="body">vvvvvvvvvvvvvvvvvvvvvvvvv</data>
+      <data key="solution">vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</data>
+      <data key="x">0.0</data>
+      <data key="y">0.0</data>
+      <data key="viewcount">0</data>
+      <data key="answercount">0</data>
+      <data key="acceptedanswerid">-1</data>
+      <data key="owner">Anonymous</data>
+      <data key="lasteditdate">1431684486200L</data>
+      <data key="lastactivitydate">0L</data>
+      <data key="tags"></data>
+      <data key="score">0</data>
+      <data key="searchfield"></data>
+    </node>
+    <node id="520">
+      <data key="id">-367441353</data>
+      <data key="type">0</data>
+      <data key="title">vvvvvvvvvvvvvvvvvvvvvv</data>
+      <data key="body">vvvvvvvvvvvvvvvvvvvvvvvvv</data>
+      <data key="solution">vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</data>
       <data key="x">0.0</data>
       <data key="y">0.0</data>
       <data key="viewcount">0</data>
@@ -86718,6 +86826,20 @@ C:\Application&amp;gt;
       <data key="id">30428_62447</data>
       <data key="type">1</data>
       <data key="similarity">0.33333333333333326</data>
+      <data key="lasteditdate">1431684486200L</data>
+      <data key="lastactivitydate">1431684486200L</data>
+    </edge>
+    <edge id="9370" source="123" target="515">
+      <data key="id">0.6771283774467274</data>
+      <data key="type">2</data>
+      <data key="similarity">1.0</data>
+      <data key="lasteditdate">1431684486200L</data>
+      <data key="lastactivitydate">1431684486200L</data>
+    </edge>
+    <edge id="9371" source="48" target="519">
+      <data key="id">0.4686905205621903</data>
+      <data key="type">2</data>
+      <data key="similarity">1.0</data>
       <data key="lasteditdate">1431684486200L</data>
       <data key="lastactivitydate">1431684486200L</data>
     </edge>

@@ -131,7 +131,7 @@ public class VDBConnector {
 		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
-		String sql = "INSERT INTO VISUAL_PATTERNS VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO VISUAL.PATTERNS VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 		Timestamp _date = new Timestamp(System.currentTimeMillis());
 		try {
 			conn = getConnection();

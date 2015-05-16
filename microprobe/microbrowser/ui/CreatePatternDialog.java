@@ -27,6 +27,7 @@ import microbrowser.data.io.GraphMLDataReader;
 import microbrowser.data.io.GraphMLGenerator;
 import microbrowser.data.io.VDBConnector;
 import microbrowser.util.GraphUtil;
+import microbrowser.util.TraceService;
 import prefuse.Visualization;
 import prefuse.data.Graph;
 import prefuse.data.Node;
@@ -151,12 +152,14 @@ public class CreatePatternDialog extends JDialog implements ActionListener {
 				
 				GraphMLGenerator.writeGraph(this.graph, VisualDBConstants.GRAPH_FILE_NAME);
 				GraphMLGenerator.writeGraph(GraphMLDataReader.getSourceGraph(), VisualDBConstants.GRAPH_FILE_NAME_COMPLETE);
-				
-				// fire an event to notify property listeners of the new pattern
-				this.firePropertyChange("patternName", "", this.patternNameText.getText());
+				// Record pattern creation
+				TraceService.log(TraceService.EVENT_PATTERN_CREATE, pattern.getString("title"));
 								
 				this.dispose();
 				
+				// fire an event to notify property listeners of the new pattern
+				this.firePropertyChange("patternName", "", this.patternNameText.getText());
+
 				// save to database
 				if ( VisualDBConfig.DATABASE_ENABLED) {
 					VDBConnector.createPattern(pattern.getInt("id"), this.patternNameText.getText(), this.patternDescriptionText.getText(), this.patternSolutionText.getText());					

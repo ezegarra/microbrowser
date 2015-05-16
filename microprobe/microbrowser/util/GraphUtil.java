@@ -101,8 +101,6 @@ public abstract class GraphUtil {
 		n.setString("title", title);
 		n.setString("body", description);
 		n.setString("solution", solution);
-
-		TraceService.log(TraceService.EVENT_PATTERN_CREATE, n.getString("id"));
 		
 		return n;
 	}

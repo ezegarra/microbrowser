@@ -69,6 +69,7 @@ public class TraceService {
 		sdf2					= new SimpleDateFormat("yyyy-MM-dd hh:mm:ss:SSSS");
 		String dateStr 			= sdf.format(cal.getTime());
 		trace_file_name 		= "data/trace/trace_" + dateStr + ".data";
+		trace_file_name		 	= "data/trace/trace.data";
 		trace_file				= new File(trace_file_name);
 	}
 	

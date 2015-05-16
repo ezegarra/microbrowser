@@ -7,6 +7,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.logging.Logger;
 
 import javax.swing.JFrame;
@@ -153,16 +155,29 @@ public class MicroBrowserApplication extends JPanel {
 			@Override
 			public void windowDeactivated(WindowEvent e) {
 				TraceService.log(TraceService.EVENT_PATTERN_CREATE_CLOSE);
+
+				// reload the graph by reopening the panel
+				//openDiscussionOverview();
+			}
+		});
+		createPatternDialog.addPropertyChangeListener("patternName", new PropertyChangeListener() {
+			
+			@Override
+			public void propertyChange(PropertyChangeEvent evt) {
+				System.out.println("complete");
+				TraceService.log("TESTING");
+				openDiscussionOverview();
+				
 			}
 		});
 		createPatternActionButton.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent e) {
+				
+				TraceService.log(TraceService.EVENT_PATTERN_CREATE_OPEN);
+
 				createPatternDialog.reset();
 				createPatternDialog.setVisible(true);
-				TraceService.log(TraceService.EVENT_PATTERN_CREATE_OPEN);
 				
-				// reload the graph by reopening the panel
-				openDiscussionOverview();	
 			}
 		});
 

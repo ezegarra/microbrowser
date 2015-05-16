@@ -1,1 +1,11 @@
 Sat May 16 06:37:13 EDT 2015 : Apache Derby Network Server - 10.9.1.0 - (1344872) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Sat May 16 06:39:11 EDT 2015:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-014d-5c4c-9894-00000de57bb0 
+on database directory C:\projects\research\git\microbrowser\MICROBROWSERDB  with class loader sun.misc.Launcher$AppClassLoader@66d3c617 
+Loaded from file:/C:/derby/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_31-b13
+user.dir=C:\projects\research\git\microbrowser
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
