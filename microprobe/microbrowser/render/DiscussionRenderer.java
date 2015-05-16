@@ -38,6 +38,7 @@ public class DiscussionRenderer extends ShapeRenderer {
 				//s = hexagon((float)x, (float)y, (float)height);
 				s = cross((float)x, (float)y, (float)height);
 				//s = rectangle((float)x, (float)y, (float)width, (float)width);
+				s = ellipse((float)x, (float)y, (float)width, (float)height);
 				break;
 			case VisualDBConstants.SHAPE_QUESTION_UNANSWERED:
 				s = diamond((float)x, (float)y, (float)width);
@@ -47,7 +48,9 @@ public class DiscussionRenderer extends ShapeRenderer {
 				width = width > SIZE_LIMIT? SIZE_LIMIT : width;
 				height = height > SIZE_LIMIT ? SIZE_LIMIT : height;
 
-				s = ellipse((float)x, (float)y, (float)width, (float)height);
+				//s = ellipse((float)x, (float)y, (float)width, (float)height);
+				//s = cross((float)x, (float)y, (float)height);
+				s = rectangle((float)x, (float)y, (float)width, (float)width);
 				break;
 			default: 
 				s = ellipse(x, y, width, width);
