@@ -367,7 +367,7 @@ public class DiscussionDetailsPane extends JPanel {
 			@Override
 			public void actionPerformed(ActionEvent e) {
 
-				TraceService.log(TraceService.EVENT_PATTERN_CHANGE_OPEN);
+				TraceService.log(TraceService.EVENT_PATTERN_SELECT_OPEN);
 
 				SelectPatternDialog d = new SelectPatternDialog(null, theNode);
 				d.addWindowListener(new WindowAdapter() {

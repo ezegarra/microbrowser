@@ -142,8 +142,8 @@ public class VDBConnector {
 			pstmt.setString(3, description);
 			pstmt.setString(4, solution);
 			pstmt.setTimestamp(5, _date);
-			pstmt.setInt(6, 1);
-			pstmt.setInt(7, 1);
+			pstmt.setInt(6, 2);
+			pstmt.setInt(7, 2);
 			pstmt.setTimestamp(8, _date);
 			pstmt.setString(9, "");
 			System.out.println("Created " + pstmt.executeUpdate() + " pattern.");

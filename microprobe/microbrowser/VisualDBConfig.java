@@ -16,7 +16,7 @@ public class VisualDBConfig {
     public static Level LOGGING_LEVEL_PREFUSE = Level.SEVERE;
     public static Level LOGGING_LEVEL_MICROPROBE = Level.ALL;
     
-	public static int DETAIL_VIEW_MAX_RELATED = 70;
+	public static int DETAIL_VIEW_MAX_RELATED = 50;
 	
 	public static final int AGGREGATE_TYPE 	= VisualDBConstants.AGGREGATE_TYPE_PATTERN;
 	//public static final int AGGREGATE_TYPE 	= VisualDBConstants.AGGREGATE_TYPE_TAG;
@@ -24,7 +24,7 @@ public class VisualDBConfig {
     public static int DISPLAY_SIZE_WIDTH = 700;
     public static int DISPLAY_SIZE_HEIGHT = 450;
     
-	public static int SLIDER_INITIAL_VALUE 	= 60;
+	public static int SLIDER_INITIAL_VALUE 	= 90;
 	public static int SLIDER_MAX_VALUE 		= 500;
 	public static double SLIDER_SIMILARITY_VALUE = 0.95;
 	

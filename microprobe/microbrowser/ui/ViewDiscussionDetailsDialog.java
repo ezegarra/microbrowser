@@ -301,7 +301,7 @@ public class ViewDiscussionDetailsDialog extends JDialog implements ActionListen
 			d.addWindowListener(this);
 			d.setVisible(true);
 
-			TraceService.log(TraceService.EVENT_PATTERN_CHANGE_OPEN);
+			TraceService.log(TraceService.EVENT_PATTERN_SELECT_OPEN);
 			
 		}
 		else if ( e.getSource() == this.submitAnswerButton) {

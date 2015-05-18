@@ -197,7 +197,7 @@ public class SelectPatternDialog extends JDialog implements ActionListener, List
 	public void actionPerformed(ActionEvent e) {
 		if ( e.getSource() == this.cancelButton) {
 			this.dispose();
-			TraceService.log(TraceService.EVENT_PATTERN_CHANGE_CANCEL);
+			TraceService.log(TraceService.EVENT_PATTERN_SELECT_CANCEL);
 
 		}
 		else if ( e.getSource() == this.selectPatternButton && this.patternList.getSelectedValue() != null) {
@@ -234,6 +234,7 @@ public class SelectPatternDialog extends JDialog implements ActionListener, List
 
 	@Override
 	public void valueChanged(ListSelectionEvent e) {
+		
 		if ( e.getSource() == this.patternList ) {
 			
 			this.patternDescriptionText.setText("");
@@ -250,6 +251,11 @@ public class SelectPatternDialog extends JDialog implements ActionListener, List
 				if ( n != null ) {					
 					this.patternDescriptionText.setText(n.getString("body"));
 					this.patternSolutionText.setText(n.getString("solution"));
+					
+					// ignore events that occur when the list is still adjusting
+					if ( e.getValueIsAdjusting()) {
+						TraceService.log(TraceService.EVENT_PATTERN_SELECT_VIEW_PATTERN, "pattern=" + n.getString("title") + ", isAdjusting=" + e.getValueIsAdjusting());						
+					}
 				}				
 			}
 		}

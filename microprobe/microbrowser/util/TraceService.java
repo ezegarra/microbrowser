@@ -33,9 +33,10 @@ public class TraceService {
 	public static final String EVENT_PATTERN_CREATE_OPEN		= "pattern_create_open";
 	public static final String EVENT_PATTERN_CREATE_CLOSE		= "pattern_create_close";
 	public static final String EVENT_PATTERN_CREATE				= "pattern_create";
-	public static final String EVENT_PATTERN_CHANGE_OPEN		= "pattern_change_open";
-	public static final String EVENT_PATTERN_CHANGE				= "pattern_change";
-	public static final String EVENT_PATTERN_CHANGE_CANCEL		= "pattern_change_cancel";
+	public static final String EVENT_PATTERN_SELECT_OPEN			= "pattern_select_open";
+	public static final String EVENT_PATTERN_CHANGE					= "pattern_change";
+	public static final String EVENT_PATTERN_SELECT_VIEW_PATTERN 	= "pattern_select_view_pattern";
+	public static final String EVENT_PATTERN_SELECT_CANCEL			= "pattern_select_cancel";
 	public static final String EVENT_PATTERN_OPEN				= "pattern_open";
 	public static final String EVENT_LIST_MOUSEENTERED			= "list_mouseentered";
 	public static final String EVENT_LIST_MOUSEEXITED			= "list_mouseexited";

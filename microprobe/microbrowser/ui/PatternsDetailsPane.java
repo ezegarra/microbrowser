@@ -113,7 +113,7 @@ public class PatternsDetailsPane extends DiscussionDetailsPane {
 				});
 				d.setVisible(true);
 
-				TraceService.log(TraceService.EVENT_PATTERN_CHANGE_OPEN);
+				TraceService.log(TraceService.EVENT_PATTERN_SELECT_OPEN);
 			}
 		});
 		Box infoPanel = UILib.getBox(new Component[] { title, pattern, changePattern }, true, 10, 0);
