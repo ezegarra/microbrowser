@@ -51,6 +51,8 @@ public class MicroBrowserApplication extends JPanel {
 	
 	public static void main(String[] argv)
 	{
+		TraceService.log(TraceService.EVENT_APPLICATION_START);
+
 		// Prompt for options
 		// 1 - prompt for experiment mode
 		Object[] possibilities = {
@@ -87,6 +89,14 @@ public class MicroBrowserApplication extends JPanel {
 			  }
 		});
 
+		_frame.addWindowListener(new WindowAdapter() {
+	          @Override
+	            public void windowClosing(WindowEvent e)
+	            {
+	                e.getWindow().dispose();
+	                TraceService.log(TraceService.EVENT_APPLICATION_STOP);
+	            }
+		});
 		_frame.pack();
 		_frame.setVisible(true);
 		_frame.setLocationRelativeTo(null);

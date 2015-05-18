@@ -13,6 +13,8 @@ public class TraceService {
 	private static File 	trace_file 		= null;
 	private static SimpleDateFormat sdf2	= null;
 	
+	public static final String EVENT_APPLICATION_START			= "application_start";
+	public static final String EVENT_APPLICATION_STOP			= "application_stop";
 	public static final String EVENT_SETUP_RESIZEWIN			= "setup_resizewin";
 	public static final String EVENT_SETUP_LOADDATA_BEGIN		= "setup_loaddata_begin";
 	public static final String EVENT_SETUP_LOADDATA_END			= "setup_loaddata_end";	
@@ -74,7 +76,7 @@ public class TraceService {
 		sdf2					= new SimpleDateFormat("yyyy-MM-dd hh:mm:ss:SSSS");
 		String dateStr 			= sdf.format(cal.getTime());
 		trace_file_name 		= "data/trace/trace_" + dateStr + ".data";
-		trace_file_name		 	= "data/trace/trace.data";
+		//trace_file_name		 	= "data/trace/trace.data";
 		trace_file				= new File(trace_file_name);
 	}
 	
