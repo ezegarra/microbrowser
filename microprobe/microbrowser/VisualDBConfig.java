@@ -24,8 +24,8 @@ public class VisualDBConfig {
     public static int DISPLAY_SIZE_WIDTH = 700;
     public static int DISPLAY_SIZE_HEIGHT = 450;
     
-	public static int SLIDER_INITIAL_VALUE 	= 90;
-	public static int SLIDER_MAX_VALUE 		= 500;
+	public static int SLIDER_INITIAL_VALUE 	= 600;
+	public static int SLIDER_MAX_VALUE 		= 600;
 	public static double SLIDER_SIMILARITY_VALUE = 0.95;
 	
 	public static int RANGE_SLIDER_MIN_VALUE = DateLib.getDateAsInt(TimeLib.getDate(CAL, 2008, 0, 1));

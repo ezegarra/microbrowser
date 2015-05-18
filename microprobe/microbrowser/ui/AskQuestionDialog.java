@@ -31,6 +31,7 @@ import microbrowser.util.GraphUtil;
 import prefuse.Visualization;
 import prefuse.data.Graph;
 import prefuse.data.Node;
+import prefuse.data.search.KeywordSearchTupleSet;
 import prefuse.data.search.PrefixSearchTupleSet;
 
 public class AskQuestionDialog extends JDialog implements ActionListener {
@@ -128,14 +129,15 @@ public class AskQuestionDialog extends JDialog implements ActionListener {
 				Node n = GraphUtil.createQuestionNode(this.graph, this.questionTitleText.getText(), this.questionBodyText.getText());
 				GraphUtil.createQuestionNode(GraphMLDataReader.getSourceGraph(), this.questionTitleText.getText(), this.questionBodyText.getText());
 				
-				Node root = this.graph.getNode(1);
+				//Node root = this.graph.getNode(1);
 				
-				GraphUtil.createEdge(this.graph, VisualDBConstants.EDGE_TYPE_PATTERN2THREAD, root, n);
-				GraphMLGenerator.writeGraph(this.graph, VisualDBConstants.GRAPH_FILE_NAME);
-				GraphMLGenerator.writeGraph(GraphMLDataReader.getSourceGraph(), VisualDBConstants.GRAPH_FILE_NAME_COMPLETE);
+				//GraphUtil.createEdge(this.graph, VisualDBConstants.EDGE_TYPE_PATTERN2THREAD, root, n);
+				//GraphMLGenerator.writeGraph(this.graph, VisualDBConstants.GRAPH_FILE_NAME);
+				//GraphMLGenerator.writeGraph(GraphMLDataReader.getSourceGraph(), VisualDBConstants.GRAPH_FILE_NAME_COMPLETE);
 		
-				PrefixSearchTupleSet st = (PrefixSearchTupleSet) m_vis.getFocusGroup(Visualization.SEARCH_ITEMS);
-				st.index(n, "body");
+				KeywordSearchTupleSet st = (KeywordSearchTupleSet) m_vis.getFocusGroup(Visualization.SEARCH_ITEMS);
+				st.index(n, "searchfield");
+				
 				this.dispose();
 				
 			

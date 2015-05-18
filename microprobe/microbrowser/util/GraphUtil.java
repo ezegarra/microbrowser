@@ -74,6 +74,7 @@ public abstract class GraphUtil {
 		currdate.set(Calendar.MILLISECOND, currdate.getActualMinimum(Calendar.MILLISECOND));
 		n.setLong("lastactivitydate", currdate.getTimeInMillis());
 		n.setLong("lasteditdate", currdate.getTimeInMillis());
+		n.set( "searchfield"		, title + " " + body);
 
 		TraceService.log(TraceService.EVENT_QUESTION_CREATE, n.getString("id"));
 		logger.info("node=" + n);
