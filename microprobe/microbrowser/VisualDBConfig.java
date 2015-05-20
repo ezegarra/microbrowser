@@ -34,7 +34,8 @@ public class VisualDBConfig {
 	public static int RANGE_SLIDER_HIGH_VALUE = RANGE_SLIDER_MAX_VALUE;
 	
 	public static String EXPERIMENT_MODE = VisualDBConstants.EXPERIMENT_MODE_PATTERN_LEADERBOARD;
-
+	public static String EXPERIMENT_SUBJECT = "";
+	
 	public static String DISPLAY_MODE = VisualDBConstants.DISPLAY_MODE_SIMILARITY;
 
 	

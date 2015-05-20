@@ -347,6 +347,8 @@ public class DiscussionDetailsPane extends JPanel {
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
+				TraceService.log(TraceService.EVENT_ANSWER_CREATE_OPEN);				
+
 				SubmitAnswerDialog d = new SubmitAnswerDialog(null, theNode);
 				d.addWindowListener(new WindowAdapter() {
 					public void windowClosed(WindowEvent e) {
@@ -356,9 +358,7 @@ public class DiscussionDetailsPane extends JPanel {
 						parent.openDiscussionOverview(false);
 					}
 				});
-				d.setVisible(true);
-				
-				TraceService.log(TraceService.EVENT_ANSWER_CREATE_OPEN);				
+				d.setVisible(true);				
 			}
 		});
 		

@@ -15,6 +15,7 @@ import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTabbedPane;
 
@@ -55,21 +56,23 @@ public class MicroBrowserApplication extends JPanel {
 
 		// Prompt for options
 		// 1 - prompt for experiment mode
-		Object[] possibilities = {
-				VisualDBConstants.EXPERIMENT_MODE_PATTERN_LEADERBOARD,
-				VisualDBConstants.EXPERIMENT_MODE_PATTERN_ONLY,
-				VisualDBConstants.EXPERIMENT_MODE_LEADERBOARD_ONLY,
-				VisualDBConstants.EXPERIMENT_MODE_NO_CONDITION};
+//		Object[] possibilities = {
+//				VisualDBConstants.EXPERIMENT_MODE_PATTERN_LEADERBOARD,
+//				VisualDBConstants.EXPERIMENT_MODE_PATTERN_ONLY,
+//				VisualDBConstants.EXPERIMENT_MODE_LEADERBOARD_ONLY,
+//				VisualDBConstants.EXPERIMENT_MODE_NO_CONDITION};
+		Object[] possibilities = {"S01", "S02", "S03", "S04", "S05", "S06", "S07", "S08", "S09", "S10", "S11", "S12", ""};
 		
 		// initialize the experiment mode
-//		VisualDBConfig.EXPERIMENT_MODE = (String)JOptionPane.showInputDialog(
-//		                    null,
-//		                    "Select the experiment mode:",
-//		                    "Experiment Mode Selection",
-//		                    JOptionPane.PLAIN_MESSAGE,
-//		                    null,
-//		                    possibilities,
-//		                    "ham");
+		//VisualDBConfig.EXPERIMENT_MODE = (String)JOptionPane.showInputDialog(
+		VisualDBConfig.EXPERIMENT_SUBJECT = (String)JOptionPane.showInputDialog(
+		                    null,
+		                    "Select the experiment mode:",
+		                    "Experiment Mode Selection",
+		                    JOptionPane.PLAIN_MESSAGE,
+		                    null,
+		                    possibilities,
+		                    "ham");
 		
 		_frame = new JFrame("MicroBrowser - A visual browser of discussion threads");
 		_frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -148,9 +151,9 @@ public class MicroBrowserApplication extends JPanel {
 		});
 		askQuestionActionButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				TraceService.log(TraceService.EVENT_QUESTION_CREATE_OPEN);
 				askQuestionDialog.reset();
 				askQuestionDialog.setVisible(true);
-				TraceService.log(TraceService.EVENT_QUESTION_CREATE_OPEN);
 				
 				// reload the graph by reopening the panel
 				//openDiscussionOverview();
@@ -266,16 +269,10 @@ public class MicroBrowserApplication extends JPanel {
 			tabbedPane.remove(1);
 		}
 		
+		
 		int type = item.getInt("type");
-		if ( VisualDBConstants.NODE_TYPE_PATTERN == type ) {
-			tabbedPane.addTab(item.getString("title"), PatternsDetailsPane.demo(this,item.getInt("id")));
-		} else {			
-			tabbedPane.addTab(item.getString("title"), DiscussionDetailsPane.demo(this,item.getInt("id")));
-		}
-		tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
-		
-		
 		String event = "";
+
 		switch ( type ) {
 			case VisualDBConstants.NODE_TYPE_DISCUSSION:
 				event = TraceService.EVENT_DISCUSSION_OPEN;
@@ -286,6 +283,14 @@ public class MicroBrowserApplication extends JPanel {
 		}
 
 		TraceService.log(event, item.getString("id"));
+		
+
+		if ( VisualDBConstants.NODE_TYPE_PATTERN == type ) {
+			tabbedPane.addTab(item.getString("title"), PatternsDetailsPane.demo(this,item.getInt("id")));
+		} else {			
+			tabbedPane.addTab(item.getString("title"), DiscussionDetailsPane.demo(this,item.getInt("id")));
+		}
+		tabbedPane.setSelectedIndex(tabbedPane.getTabCount()-1);
 		
 		return;
 	}

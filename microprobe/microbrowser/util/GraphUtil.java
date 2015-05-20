@@ -49,7 +49,7 @@ public abstract class GraphUtil {
 	public static Node createQuestionNode(Graph graph, Discussion source) {
 		Node n = createQuestionNode(graph, source.getOriginalNode());
 				
-		TraceService.log(TraceService.EVENT_QUESTION_CREATE, n.getString("id"));
+		TraceService.log(TraceService.EVENT_SETUP_QUESTION_CREATE, n.getString("id"));
 
 		return n;
 	}
@@ -76,7 +76,7 @@ public abstract class GraphUtil {
 		n.setLong("lasteditdate", currdate.getTimeInMillis());
 		n.set( "searchfield"		, title + " " + body);
 
-		TraceService.log(TraceService.EVENT_QUESTION_CREATE, n.getString("id"));
+		TraceService.log(TraceService.EVENT_SETUP_QUESTION_CREATE, n.getString("id"));
 		logger.info("node=" + n);
 		return n;
 	}
@@ -117,7 +117,7 @@ public abstract class GraphUtil {
 		n.setString("body"	, answer.getBody());
 		n.setInt("score"	, answer.getScore());
 
-		TraceService.log(TraceService.EVENT_ANSWER_CREATE, n.getInt("id"));
+		TraceService.log(TraceService.EVENT_SETUP_ANSWER_CREATE, n.getInt("id"));
 		
         // clock out
         long time = System.currentTimeMillis()-timein;
@@ -149,7 +149,7 @@ public abstract class GraphUtil {
 		e.setString("id", String.valueOf(Math.random()));
 		e.setInt("type", type);
 		e.setDouble("similarity", type == VisualDBConstants.EDGE_TYPE_PATTERN2PATTERN || type==VisualDBConstants.EDGE_TYPE_PATTERN2THREAD ? 1.0 : 0.0);
-		TraceService.log(TraceService.EVENT_EDGE_CREATE, e);
+		TraceService.log(TraceService.EVENT_SETUP_EDGE_CREATE, e);
 
 		return e;
 	}
@@ -182,7 +182,7 @@ public abstract class GraphUtil {
 				logger.info("Found edge " + e);
 				// remove the edge
 				graph.removeEdge(e);							
-				TraceService.log(TraceService.EVENT_EDGE_REMOVE, e);
+				TraceService.log(TraceService.EVENT_SETUP_EDGE_REMOVE, e);
 			}
 		}
 	}

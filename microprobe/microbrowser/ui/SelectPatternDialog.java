@@ -253,7 +253,7 @@ public class SelectPatternDialog extends JDialog implements ActionListener, List
 					this.patternSolutionText.setText(n.getString("solution"));
 					
 					// ignore events that occur when the list is still adjusting
-					if ( e.getValueIsAdjusting()) {
+					if ( !e.getValueIsAdjusting()) {
 						TraceService.log(TraceService.EVENT_PATTERN_SELECT_VIEW_PATTERN, "pattern=" + n.getString("title") + ", isAdjusting=" + e.getValueIsAdjusting());						
 					}
 				}				

@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
+import microbrowser.VisualDBConfig;
+
 public class TraceService {
 
 	private static String 	trace_file_name = null;
@@ -20,12 +22,13 @@ public class TraceService {
 	public static final String EVENT_SETUP_LOADDATA_END			= "setup_loaddata_end";	
 	public static final String EVENT_SETUP_CREATEACTIONS_BEGIN	= "setup_createactions_begin";
 	public static final String EVENT_SETUP_CREATEACTIONS_END	= "setup_createactions_end";	
+	public static final String EVENT_SETUP_ANSWER_CREATE 		= "setup_answer_create";
+	public static final String EVENT_SETUP_EDGE_CREATE			= "setup_edge_create";
+	public static final String EVENT_SETUP_EDGE_REMOVE			= "setup_edge_remove";
+	public static final String EVENT_SETUP_QUESTION_CREATE		= "setup_question_create";
 	public static final String EVENT_DISCUSSION_OPEN			= "discussion_open";
 	public static final String EVENT_QUESTION_CREATE_OPEN		= "question_create_open";
 	public static final String EVENT_QUESTION_CREATE_CLOSE		= "question_create_close";
-	public static final String EVENT_QUESTION_CREATE			= "question_create";
-	public static final String EVENT_EDGE_CREATE				= "edge_create";
-	public static final String EVENT_EDGE_REMOVE				= "edge_remove";
 	public static final String EVENT_ANSWER_OPEN_UNKNOWN		= "answer_open_unknown";
 	public static final String EVENT_ANSWER_OPEN_DETAILS_DIAGRAM		= "answer_open_details_diagram";
 	public static final String EVENT_ANSWER_OPEN_DETAILS_LIST_ANSWER	= "answer_open_details_list_answer";
@@ -75,8 +78,13 @@ public class TraceService {
 		SimpleDateFormat sdf 	= new SimpleDateFormat("yyyy-MM-dd-hh-mm"); 
 		sdf2					= new SimpleDateFormat("yyyy-MM-dd hh:mm:ss:SSSS");
 		String dateStr 			= sdf.format(cal.getTime());
-		trace_file_name 		= "data/trace/trace_" + dateStr + ".data";
-		//trace_file_name		 	= "data/trace/trace.data";
+
+		if ( VisualDBConfig.EXPERIMENT_SUBJECT.equals("")) {
+			trace_file_name		 	= "data/trace/trace.data";			
+		} else {
+			trace_file_name 		= "data/trace/"+ VisualDBConfig.EXPERIMENT_SUBJECT +"/trace_" + dateStr + ".data";
+		}
+		
 		trace_file				= new File(trace_file_name);
 	}
 	

@@ -21,7 +21,6 @@ import javax.swing.JEditorPane;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import microbrowser.VisualDBConstants;
 import microbrowser.data.io.VDBConnector;
 import microbrowser.util.TraceService;
 import prefuse.data.Node;

@@ -185,10 +185,7 @@ public class ViewDiscussionDetailsDialog extends JDialog implements ActionListen
 					if ( index != -1 ) {
 						VisualItem item = (VisualItem) list.getModel().getElementAt(index);
 						
-						// open thread details
-						ViewDiscussionDetailsDialog threadDetailsDialog = new ViewDiscussionDetailsDialog(null, (Graph)item.getVisualization().getVisualGroup("graph"), item);
-						threadDetailsDialog.setVisible(true);
-						
+						// log event
 						String event = "";
 						switch ( item.getInt("type")) {
 							case VisualDBConstants.NODE_TYPE_DISCUSSION:
@@ -200,6 +197,12 @@ public class ViewDiscussionDetailsDialog extends JDialog implements ActionListen
 						}
 
 						TraceService.log(event, item.getString("id"));
+						
+						// open thread details
+						ViewDiscussionDetailsDialog threadDetailsDialog = new ViewDiscussionDetailsDialog(null, (Graph)item.getVisualization().getVisualGroup("graph"), item);
+						threadDetailsDialog.setVisible(true);
+						
+
 					}					
 				}
 			}
@@ -297,19 +300,20 @@ public class ViewDiscussionDetailsDialog extends JDialog implements ActionListen
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		if ( e.getSource() == this.changePatternButton) {
+			TraceService.log(TraceService.EVENT_PATTERN_SELECT_OPEN);
+			
 			SelectPatternDialog d = new SelectPatternDialog(this, (Node)this.item);
 			d.addWindowListener(this);
 			d.setVisible(true);
 
-			TraceService.log(TraceService.EVENT_PATTERN_SELECT_OPEN);
-			
 		}
 		else if ( e.getSource() == this.submitAnswerButton) {
+			TraceService.log(TraceService.EVENT_ANSWER_CREATE_OPEN);
+
 			SubmitAnswerDialog d = new SubmitAnswerDialog(this, (Node)this.item);
 			d.addWindowListener(this);
 			d.setVisible(true);
 			
-			TraceService.log(TraceService.EVENT_ANSWER_CREATE_OPEN);
 		}
 	}
 
